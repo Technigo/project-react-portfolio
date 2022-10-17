@@ -1,13 +1,464 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --heading: #212729 /*#1A3C40 */;
+  --ligtherGreen: #417D7A;
+  --primary: #F7F7F2;
+  --secondary: #EDE6DB;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:var(--primary);
+  font-family: 'Montserrat', serif;  
+}
+
+
+/* HEADINGS */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+h2, h3 {
+  background: var(--heading);
+  color: #FCF8EC;
+  justify-self: center;
+  margin: 8px auto 40px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+}
+.hero h2 {
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  text-transform: lowercase;
+}
+.hero h3 {
+  background-color: transparent;
+  color: #FCF8EC;
+  margin: 0;
+  padding: 0;
+}
+.project h3, h4 {
+  background-color: transparent;
+  color: var(--heading);
+  display: inline;
+  font-size: 17px;
+  margin: 20px 0 15px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+.sub-heading {
+  background: none;
+  color: var(--heading);
+  margin: 30px auto 20px;
+  text-transform: uppercase;
+}
+.code-thoughts h3 {
+  font-size: 17px;
+  font-weight: 700;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+.skills h3 {
+  background-color: transparent;
+  color: var(--heading);
+  font-size: 17px;
+  margin: 0 auto;
+}
+
+/* Other text formating */
+p {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;    
+  font-size: 17px;
+  line-height: 29px;
+  max-width: 600px; 
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+  width: 100%;
+}
+.date {
+  color: var(--heading);
+  font-size: 16px;
+  margin-right: 4px;
+}
+/* HEADER */
+.hero {
+  background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(./images/hero-img.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  width: 100%;
+}
+.hero-container {
+  position: relative;
+  width: 90%;
+}
+.hero-text {
+  color: #FCF8EC;
+  position: absolute;
+  left: 1rem;
+  top: 7rem;
+}
+.logo-container {
+  height: 5rem;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+.logo {
+  height: 3rem;
+  margin: 0 .1rem;
+  width: 3rem;
+}
+
+.portrait-img {
+  border: solid white 2px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: -1rem;
+  top: 49vh;
+  width: 7rem;
+}
+/* MAIN CONTENT */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section, footer {
+  padding: 2rem 1.5rem;
+}
+.intro {
+  align-items: center;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+}
+.line {
+  border: 1px solid var(--ligtherGreen);
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 40px;
+}
+.dot {
+  background-color: var(--ligtherGreen);
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-right: 8px;
+}
+.intro-text {
+  letter-spacing: 1px;
+}
+
+.bg-darker {
+  background-color: var(--secondary);
+}
+.tech {
+  text-align: center;
+}
+.show-off {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  margin: 1rem 0; 
+}
+.project-image {
+  align-items: center;
+  color: var(--heading);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;  
+  position: relative;
+  transition: 0.5s ease;
+  width: 100%;
+}
+.image-of-project {
+  height: 60%;
+  max-width: 500px;
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%; 
+}
+
+.project-image-overlay {
+  background-color: rgba(237, 230, 219, 0.5);
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease;
+  width: 100%;
+}
+.overlay-text {
+  font-size: 2rem;
+  font-weight: 400;
+  position: absolute; 
+}
+.other-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;;
+}
+.other-project {
+  align-self: flex-start;
+  position: relative;
+}  
+.other-text {
+  min-width: 300px;
+}
+.test {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 192px 1fr;
+}
+.other-repo-tag {
+  width: 192px;
+  text-align: center;
+}
+.other-image-container {
+  display: none;
+}
+.tag-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3px;
+}
+.tag-wrapper p {
+  background-color: var(--ligtherGreen);
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px; 
+  font-weight: bold;
+  line-height: 12px;
+  padding: 4px;
+  margin: 3px;
+  text-decoration: none;
+}
+.tag-wrapper .repo-tag  {
+  background-color: var(--secondary);
+  box-shadow: 2px 2px 2px var(--heading);
+  color: var(--heading);
+  border: 1px solid var(--heading);
+  padding: 8px;
+}
+
+.more-arrows {
+  color: var(--heading);
+  font-weight: 700;
+}
+.thought-description {
+  font-weight: 300;
+}
+
+.other-thoughts {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.skill-wrapper {
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-template-columns: 1fr 1fr;  
+}
+.list-section {
+  display: block;
+  justify-self: center;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+li {
+ padding: 4px; 
+}
+.list-section3 {
+  grid-column: 2;
+}
+.list-section4 {
+  grid-column: 2;
+}
+.FMlogo-container {
+ display: flex;
+ justify-content: center;
+}
+.dark-logo {
+  height: 48px;
+  filter: invert(13%) sepia(18%) saturate(351%) hue-rotate(149deg) brightness(20%) contrast(95%);
+  margin: 0 .5rem;
+  width: 48px;
+}
+/* FOOTER */
+footer {
+  background-color: var(--ligtherGreen);
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footer-heading {
+  background: none;
+}
+footer p{
+  color: #FFF;
+  display: block;
+  font-family: 'Montserrat', serif;
+  margin: 0 auto;
+}
+/* To provide additional information to screen readers without disturbing the visual layout */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media (min-width: 600px) {
+  h1 {
+      font-weight: 700;
+      font-size: 50px;
+      letter-spacing: .2rem;
+  }
+  .hero {
+      display: flex;
+      justify-content: center;
+  }
+  .hero-container {
+      position: relative;
+      max-width: 1000px;
+      width: 90%;
+  }
+  .hero-text {
+      top: 10rem; 
+  }
+  .portrait-img {
+      right: 1rem;
+      top: 43vh;
+      width: 20vh;
+  }
+  .intro {
+      align-items: center;
+      display: flex;
+      height: 40vh;
+      justify-content: center;
+  }
+  .grid-wrapper {
+      display: grid ;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      width: 90vw;
+  }
+
+  .other-wrapper {
+      justify-content: left;
+      width: 60vw;
+      gap: 1.5rem;
+  }
+  .other-image-container {
+    position: relative;
+    display: flex;
+  }
+  .other-project-img {
+      aspect-ratio: 5 / 3;
+      display: inherit; 
+      float: left;
+      margin-right: 2rem;
+      object-fit: cover;
+      width: 12rem;
+  }
+
+  .other-repo-tag {
+    position: absolute;
+    bottom: -2rem;
+    left: 220px;
+  }
+  .code-thoughts h3 {
+      font-size: 17px;
+      font-weight: 700;
+      padding-left: 0;
+      text-transform: uppercase;
+  }
+  .other-thoughts {
+      justify-content: left; 
+      width: 60vw;
+  }
+
+  .skill-wrapper {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .list-section {
+      justify-self: center;
+  }
+  .list-section1 {
+      grid-column: 1;
+  }
+  .list-section2 {
+      grid-column: 1;
+  }
+  .list-section3 {
+      grid-column: 2;
+  }
+  .list-section4 {
+      grid-column: 3;
+  }
+  .dark-logo {
+      height: 4rem;
+      width: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-wrapper {
+    width: 60vw;
+  }
+  .project {
+  transition: transform .5s;
+  transition-timing-function: linear;
+  }
+  .project:hover {
+      transform: scale(1.1);
+  }
+  .project-image:hover {
+    /* This causes the text to fade, color is the text color */
+    color: transparent;
+  }
+  .project-image-overlay:hover {
+      background-color: transparent;
+  }
+  .logo:hover{
+      transform:scale(1.2);
+  }
+  .logo {
+      transition: transform .5s;
+      transition-timing-function: linear;
+  }
+  .hero-container {
+    max-width: 1000px;
+}
 }
