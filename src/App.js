@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+// import { ThemeProvider } from 'styled-components';
+import GlobalStyles from 'components/styled/Global';
+import Header from './components/Header';
 
-export const App = () => {
+const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <>
+      <GlobalStyles />
+      <div className="outer-wrapper">
+        <Header />
+      </div>
+    </>
+  );
+};
+
+export default App;

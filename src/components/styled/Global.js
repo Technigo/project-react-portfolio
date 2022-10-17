@@ -1,4 +1,7 @@
-*,
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles = createGlobalStyle`
+  *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -33,3 +36,6 @@ code {
   min-height: 100vh;
   min-width: 100vw;
 }
+`;
+
+export default GlobalStyles;
