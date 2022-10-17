@@ -1,9 +1,8 @@
 import React from 'react'
+import { Projects } from 'components/projects'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <Projects />
   )
 }
