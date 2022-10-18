@@ -35,6 +35,7 @@ export const WhitePinkH2 = styled.h2`
   text-align: center;
   padding: 5px;
   margin-bottom: 5vh;
+  display: inline-block;
 `
 
 export const PinkH3 = styled.h3`
