@@ -1,15 +1,67 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import styled from 'styled-components';
 import profileImage from '../images/portrait.webp';
-// import styled from 'styled-components';
+import heroImage from '../images/hero-img.webp'
 
-// const StyledHeader = styled.header`
+const StyledHeader = styled.header`
+  background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  width: 100%;
 
-// `
+  h2 {
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  text-transform: lowercase;
+  }
+
+  h3 {
+  background-color: transparent;
+  color: #FCF8EC;
+  margin: 0;
+  padding: 0;
+  }
+  .hero-container {
+  position: relative;
+  width: 90%;
+}
+.hero-text {
+  color: #FCF8EC;
+  position: absolute;
+  left: 1rem;
+  top: 7rem;
+}
+.logo-container {
+  height: 5rem;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+.logo {
+  height: 3rem;
+  margin: 0 .1rem;
+  width: 3rem;
+}
+
+.portrait-img {
+  border: solid white 2px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  right: -1rem;
+  top: 49vh;
+  width: 7rem;
+}
+`
 
 const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
-    <header className="hero">
+    <StyledHeader className="hero">
       <div className="hero-container">
         <div className="hero-text">
           <h3 className="name-heading">Portfolio: Elin Segelöv</h3>
@@ -30,7 +82,7 @@ const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
 
         <img src={profileImage} className="portrait-img" alt="Portrait" />
       </div>
-    </header>
+    </StyledHeader>
   )
 }
 

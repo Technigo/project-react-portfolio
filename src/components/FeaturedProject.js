@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+import StyledProject from './Project.style';
 
 const FeaturedProject = (
   {
@@ -12,7 +14,7 @@ const FeaturedProject = (
   }
 ) => {
   return (
-    <div className="project top-project project-1">
+    <StyledFeaturedProject className="project">
       <a href={deployedLink}>
         <div className="project-image">
           <div className="project-image-overlay" />
@@ -26,8 +28,12 @@ const FeaturedProject = (
         </div>
       </a>
       <a href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></a>
-    </div>
+    </StyledFeaturedProject>
   )
 }
 
 export default FeaturedProject;
+
+const StyledFeaturedProject = styled(StyledProject)`
+
+`

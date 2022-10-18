@@ -1,12 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import BigThought from './BigThought';
 import OtherThought from './OtherThought';
+import { GridWrapper } from './ReusableStyles.style';
 
 const Thoughts = () => {
   return (
     <section className="code-thoughts show-off">
       <h2 className="grid-heading">My thoughts</h2>
-      <div className="grid-wrapper thoughts-wrapper">
+      <StyledGridWrapperThoughts className="grid-wrapper thoughts-wrapper">
         <BigThought
           thoughtLink="https://medium.com/@elin.segelov/from-cleaning-toilets-to-cleaning-up-my-own-code-via-a-few-years-of-social-work-33e0aaf20722"
           thoughtImage="https://cdn-images-1.medium.com/max/1600/1*ag_0Ck6C2msskyeNuWjp9g.jpeg"
@@ -23,8 +25,9 @@ const Thoughts = () => {
           thoughtTitle="Code and accessibility"
           overlayText="Code and accessibility"
           thoughtDescription="Thoughts about accessibility in the digital world." />
-      </div>
-      <div className="other other-thoughts">
+      </StyledGridWrapperThoughts>
+
+      <StyledOtherSthoughts className="other other-thoughts">
         <h3 className="sub-heading">More Thoughts</h3>
         <OtherThought
           thoughtLink="#"
@@ -35,9 +38,20 @@ const Thoughts = () => {
           thoughtLink="#"
           publishDate="Fall 2022"
           thoughtTitle="Placeholder"/> */}
-      </div>
+      </StyledOtherSthoughts>
     </section>
   )
 }
 
 export default Thoughts;
+
+const StyledGridWrapperThoughts = styled(GridWrapper)`
+  
+`
+const StyledOtherSthoughts = styled.div`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+`

@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import StyledProject from './Project.style';
 
 const OtherProject = (
   {
@@ -11,7 +13,7 @@ const OtherProject = (
   }
 ) => {
   return (
-    <div className="project other other-project">
+    <StyledOther className="project other other-project">
       <a href={deployedLink} className="test">
         <div className="other-image-container">
           <div className="project-image-overlay" />
@@ -28,8 +30,31 @@ const OtherProject = (
       <a href={repoLink} className="tag-wrapper">
         <p className="repo-tag other-repo-tag">Repo on GitHub</p>
       </a>
-    </div>
+    </StyledOther>
   )
 }
 
 export default OtherProject;
+
+const StyledOther = styled(StyledProject)`
+  align-self: flex-start;
+  position: relative;
+  
+  a {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 192px 1fr;
+  }
+
+/*   .other-image-container {
+  display: none;
+  } */
+
+  .other-text {
+  min-width: 300px;
+  }
+  .other-repo-tag {
+  width: 192px;
+  text-align: center;
+}
+`

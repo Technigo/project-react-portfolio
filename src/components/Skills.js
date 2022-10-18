@@ -1,8 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+import { DarkerContainer } from './DarkerContainer.syled';
 
 const Skills = () => {
   return (
-    <section className="skills bg-darker">
+    <StyledSkillsWrapper className="skills bg-darker">
       <h2 className="grid-headig">SKILLS</h2>
       <div className="skill-wrapper">
         <div className="list-section list-section1">
@@ -47,8 +49,12 @@ const Skills = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </StyledSkillsWrapper>
   )
 }
 
 export default Skills;
+
+const StyledSkillsWrapper = styled(DarkerContainer)`
+
+`

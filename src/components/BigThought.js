@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+import StyledProject from './Project.style';
 
 const BigThought = (
   {
@@ -12,7 +14,7 @@ const BigThought = (
 ) => {
   return (
     <a href={thoughtLink}>
-      <article className="big-thought project">
+      <StyledBigThoughtWrapper className="project">
         <div className="project-image">
           <div className="project-image-overlay" />
           <img src={thoughtImage} className="image-of-project" alt={thoughtTitle} />
@@ -23,9 +25,13 @@ const BigThought = (
         <p className="thought-description">
           {thoughtDescription} <span className="more-arrows" aria-hidden="true"> &gt;&gt;</span>
         </p>
-      </article>
+      </StyledBigThoughtWrapper>
     </a>
   )
 }
 
 export default BigThought;
+
+const StyledBigThoughtWrapper = styled(StyledProject)`
+
+`
