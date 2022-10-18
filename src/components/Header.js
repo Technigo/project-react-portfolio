@@ -48,7 +48,7 @@ export default Header;
 
 const StyledHeader = styled.header`
   position: relative;
-  background: rgb(255, 132, 24);
+  background: var(--main-color);
   background: linear-gradient(
     354deg,
     rgba(128, 136, 255, 1) 0%,

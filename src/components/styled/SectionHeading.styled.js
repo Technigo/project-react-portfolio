@@ -7,8 +7,8 @@ const SectionHeading = styled.h3`
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.2rem 0.4rem;
-  width: fit-content;
   margin: 0 auto 2rem;
+  width: fit-content;
   text-transform: uppercase;
 `
 
