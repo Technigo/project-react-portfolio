@@ -5,7 +5,7 @@ import { WhitePinkH2, SkillHeader } from '../Styled components/HeadlineStyles'
 
 const Skills = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper gray>
       <InnerWrapper>
         <WhitePinkH2>SKILLS</WhitePinkH2>
         <SkillSection>

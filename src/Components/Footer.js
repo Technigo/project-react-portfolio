@@ -3,7 +3,7 @@ import { OuterWrapper, InnerWrapper } from '../Styled components/GlobalStyles'
 
 const Footer = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper purple>
       <InnerWrapper>
           Text
       </InnerWrapper>

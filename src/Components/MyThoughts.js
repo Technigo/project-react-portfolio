@@ -9,7 +9,6 @@ const MyThoughts = () => {
     <OuterWrapper>
       <InnerWrapper>
         <WhitePinkH2>MY THOUGHTS</WhitePinkH2>
-
         {MediumArticles.map((article) => {
           return (
             <div>

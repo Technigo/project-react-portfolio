@@ -10,6 +10,8 @@ export const OuterWrapper = styled.section`
 
 export const InnerWrapper = styled.section`
   width: 80%;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
   display: flex; 
   flex-direction: column;
 
