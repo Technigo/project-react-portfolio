@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { HeaderHeadlineOne, HeaderHeadlineTwo, HeaderHeadlineThree } from '../Styled components/HeadlineStyles'
+import { A, SrOnly } from '../Styled components/GlobalStyles'
+import Jessika from '../Images/Jessika.jpeg'
+import Background from '../Images/Background.jpg'
 
 const Header = () => {
   return (
@@ -12,27 +15,27 @@ const Header = () => {
           <HeaderHeadlineThree> + communicator & administrator</HeaderHeadlineThree>
         </HeadlineContainer>
         <SocMediaContainer>
-          <a href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
+          <A href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
             <img src="./linkedin.png" alt="" />
-            <div class = "sr-only">
+            <SrOnly>
               <p>Linkedin</p>
-            </div>
-          </a>
-          <a href="https://github.com/jessikalind">
-            <img src="./github.png" alt="" /> 
-            <div class = "sr-only">
+            </SrOnly>
+          </A>
+          <A href="https://github.com/jessikalind">
+            <img src="./github.png" alt="" />
+            <SrOnly>
               <p>Github</p>
-            </div>
-          </a>
-          <a href="https://stackoverflow.com/c/technigo/users/369">
+            </SrOnly>
+          </A>
+          <A href="https://stackoverflow.com/c/technigo/users/369">
             <img src="./stacko.png" alt="" />
-            <div class = "sr-only">
+            <SrOnly>
               <p>Stackoverflow</p>
-            </div>
-          </a>
+            </SrOnly>
+          </A>
         </SocMediaContainer>
-        <img class ="profile-pic" src="./Jessika.jpeg" alt="Picture of Jessika Lind" />
-        </HeaderInnerWrapper>
+        <ProfilePic src={Jessika} alt="Picture of Jessika Lind" />
+      </HeaderInnerWrapper>
     </HeaderSection>
   )
 }
@@ -40,7 +43,7 @@ const Header = () => {
 export default Header
 
 const HeaderSection = styled.header`
-  background-color: black;
+  background-image: url(${Background});
   width: 100%;
   display: flex;
   align-items:center;
@@ -53,6 +56,17 @@ const HeaderInnerWrapper = styled.section`
   grid-template-rows: 1fr 3fr;
   position: relative;
   height: 55vh;
+
+  @media (min-width: 668px) and (max-width: 1024px) {
+    width: 60%
+  }
+  @media (min-width: 1025px) {
+    width: 60%
+  }
+  @media (min-width: 1600px) {
+    width: 50%;
+  }
+
 `
 const HeadlineContainer = styled.div`
   color: white;
@@ -68,4 +82,12 @@ const SocMediaContainer = styled.div`
   align-self: center;
   padding-top: 7vh;
   display: flex;
+`
+const ProfilePic = styled.img`
+  width: 140px;
+  border-radius: 50%;
+  border: solid 2px white;
+  position: absolute;
+  right: 10vw;
+  bottom: -5vh;
 `
