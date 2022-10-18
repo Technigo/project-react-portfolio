@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import profileImage from '../images/portrait.webp'
+import profileImage from '../images/portrait.webp';
+// import styled from 'styled-components';
+
+// const StyledHeader = styled.header`
+
+// `
 
 const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (

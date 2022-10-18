@@ -1,5 +1,8 @@
+/* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+// import { gitHubEndpoint } from '../utils/urls'
+// import * as dotenv from 'dotenv'
 import FeaturedProject from './FeaturedProject';
 import OtherProject from './OtherProject';
 import weatherAppImg from '../images/thumbnail-weatherapp.webp';
@@ -8,31 +11,89 @@ import musicReleasesImg from '../images/thumbnail-music-releases.webp'
 import guessWhoImg from '../images/thumbnail-guesswho.webp'
 import chatBotImg from '../images/thumbnail-chatbot.webp'
 import newsSiteImg from '../images/thumbnail-newssite.webp'
+// import { projectsForDisplay } from '../utils/projectsForDisplay' Can't import the named export 'projectsForDisplay'.'includes'
+// (imported as 'projectsForDisplay') from default-exporting module (only default export is available)
 
 const Projects = () => {
-/*  JOBBAR VIDARE MED DET HÄR
-const [repos, setRepos] = useState([])
+  const [repos, setRepos] = useState([]);
+  const featuredForDisplay = ['project-happy-thoughts', 'project-movies', 'project-music-releases', 'project-guess-who']
+  const otherForDisplay = ['project-chatbot', 'project-news-site']
   useEffect(() => {
     fetch('https://api.github.com/users/ElinSegelov/repos')
       .then((data) => data.json())
       .then((fetchedRepos) => setRepos(fetchedRepos))
       .catch((error) => console.error(error))
   }, []);
-  const allRepos = repos.map((repo) => {
-    return (
-      <div key={repo.id}>
-        <p>{repo.name}</p>
-        <img src={`https://raw.githubusercontent.com/ElinSegelov/${repo.name}/master/code/images/thumbnail.webp`} alt={repo.name} />
 
-      </div>
+  const featured = (repos.filter((repo) => featuredForDisplay.includes(repo.name)));
+  const other = (repos.filter((repo) => otherForDisplay.includes(repo.name)));
+
+  /*   const featuedOne = featured[0]
+  const featuedTwo = featured[1]
+  const featuedThree = featured[2]
+  const featuedFour = featured[3] */
+
+  const allFeatured = featured.map((repo) => {
+    return (
+
+      <FeaturedProject
+        key={repo.id}
+        deployedLink={repo.homepage}
+        projectImage="https://picsum.photos/200/300"
+        projectTitle={repo.name}
+        overlayText={repo.name}
+        projectDescription={repo.description}
+        techPTags={
+          <>
+            <p>React</p>
+            <p>CSS3</p>
+            <p>JSX</p>
+            <p>API</p>
+          </>
+        }
+        repoLink={repo.html_url} />
     )
   })
+
+  const allOther = other.map((repo) => {
+    return (
+
+      <OtherProject
+        key={repo.id}
+        deployedLink={repo.homepage}
+        projectImage="https://picsum.photos/200/300"
+        projectTitle={repo.name}
+        overlayText={repo.name}
+        projectDescription={repo.description}
+        techPTags={
+          <>
+            <p>React</p>
+            <p>CSS3</p>
+            <p>JSX</p>
+            <p>API</p>
+          </>
+        }
+        repoLink={repo.html_url} />
+    )
+  })
+
   return (
-    <div>
-      {allRepos}
-    </div>
-  ) */
-  return (
+    <section className="featured-projects bg-darker show-off">
+      <h2 className="grid-heading">Featured Projects</h2>
+      <div className="grid-wrapper projects-wrapper">
+        {allFeatured}
+      </div>
+      <div className="other-wrapper">
+        <h3 className="sub-heading">Other Projects</h3>
+        {allOther}
+      </div>
+    </section>
+  )
+}
+
+export default Projects;
+
+/* return (
     <section className="featured-projects bg-darker show-off">
       <h2 className="grid-heading">Featured Projects</h2>
 
@@ -40,7 +101,7 @@ const [repos, setRepos] = useState([])
         <FeaturedProject
           deployedLink="https://wondrous-longma-306268.netlify.app/"
           projectImage={happyThoughtsImg}
-          projectTitle="Project: Happy thoughts"
+          projectTitle={featuredOne.title}
           overlayText="Happy Thoughts"
           projectDescription="A Twitter-like message feed fetching and posting to API."
           techPTags={
@@ -58,7 +119,8 @@ const [repos, setRepos] = useState([])
           projectImage={musicReleasesImg}
           projectTitle="Project: Music Releases"
           overlayText="Music Releases"
-          projectDescription="Summary of reacently released singles and albums using data from a mocked up API fetch."
+          projectDescription="Summary of reacently released singles and albums using data
+          from a mocked up API fetch."
           techPTags={
             <>
               <p>React</p>
@@ -102,6 +164,7 @@ const [repos, setRepos] = useState([])
 
       <div className="other-wrapper">
         <h3 className="sub-heading">Other Projects</h3>
+
         <OtherProject
           deployedLink="https://www.svt.se"
           projectImage={chatBotImg}
@@ -133,7 +196,4 @@ const [repos, setRepos] = useState([])
           repoLink="https://www.google.com" />
       </div>
     </section>
-  )
-}
-
-export default Projects;
+  ) */
