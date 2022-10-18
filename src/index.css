@@ -1,5 +1,16 @@
+
+/*
+font-family: 'Roboto', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+colors:  #6fb9bd #96A749 #D64819 #E6836C #e9722d
+*/
+
+
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,3 +22,442 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/*
+
+INTRO
+.intro {
+  display: block;
+  background-color: rgb(253, 248, 240);
+  width: 100vw;
+  padding: 5%;
+  padding-top: 10%;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro img {
+  width: 50px;
+  height: auto;
+}
+
+TECH
+.tech {
+  height: 150px;
+  width: 100vw;
+  padding: 5%;
+}
+
+.tech p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+FEATURED PROJECTS
+.featured-projects {
+  background-color: rgb(253, 248, 240);
+  width: 100vw;
+  padding: 5%;
+}
+
+.featured-projects a {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 270px;
+  padding-bottom: 8%;
+}
+
+.featured-projects img {
+  opacity: 1.0;
+  width: 300px;
+  padding: 8% 5%;
+} 
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.featured-projects p {
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.box-text {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-top: 2%;
+}
+
+h4 { 
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif; 
+  padding: 2%;
+}
+
+.box-text mark {
+  color: black;
+  background:  #cee663;
+  border: 3px solid #cee663;
+}
+
+.the-next-thing {
+  display: none;
+}
+
+.the-second-next-thing {
+  display: none;
+}
+
+MY THOUGHTS
+.my-thoughts {
+  height: 150px;
+  width: 100vw;
+  padding: 5%;
+}
+
+SKILLS
+.skills {
+  background-color: rgb(253, 248, 240);
+  width: 100vw;
+  padding: 5%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  text-align: center;    
+  padding-top: 5%; 
+}
+.code-skills {
+  grid-column-start: 1;
+}
+
+.tools-i-know {
+  grid-column-start: 2;
+}
+
+.upcoming-skills {
+  grid-column-start: 1;
+}
+
+.skills h3 {
+  color: #D64819;
+  font-weight: bold;
+}
+
+.skills p {
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+MORE INFO
+.more-info {
+  width: 100vw;
+  padding: 5%;
+}
+
+.more-info .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.more-info a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 8px;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.more-info img {
+  filter: hue-rotate(20deg);
+  width: 60%;
+  height: auto;
+}
+
+FOOTER
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px; 
+  width: 100vw;
+  background: #48a0a4; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer h2 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 21px;
+  padding-bottom: 10%;
+}
+
+footer p {
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+TABLET
+@media (min-width: 668px) and (max-width:1024px) {
+
+      
+  INTRO
+  .intro {
+      display: flex;
+      justify-content: center;
+      padding-top: 5%;
+  }
+
+  .intro p {
+      font-size: 18px;
+  }
+
+  TECH   
+  .tech p {
+      font-size: 18px;
+      line-height: 30px;
+      padding: 5% 0%;
+  }
+
+  FEATURED PROJECTS
+  .featured-projects img {
+      opacity: 0.5;
+      padding: 8% 2%;
+  }
+
+  .featured-projects img:hover {
+      opacity: 1.0;
+  }      
+  
+  .projects-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+  }
+
+  .guess-who {
+      grid-column-start: 1;
+      justify-self: left;
+  }
+
+  .the-weather-app {
+      grid-column-start: 2;
+      justify-self: center;
+  }
+
+  .the-next-thing {
+      display: block;
+      grid-column-start: 1;
+      justify-self: left;
+  }
+
+  .the-second-next-thing {
+      display: block;
+      grid-column-start: 2;
+      justify-self: center;
+  }
+
+  .other-projects a {
+      display: grid;
+      grid-template-columns: 90px auto;
+      width: 100%;
+  }
+
+  .other-projects .box-text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 1%;
+      width: 35%;
+  }
+
+  SKILLS
+  .skills-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+  .code-skills {
+      grid-column-start: 1;
+  }
+  
+  .tools-i-know {
+      grid-column-start: 2;
+  }
+  
+  .upcoming-skills {
+      grid-column-start: 3;
+  }
+
+  MORE INFO
+  .more-info a {
+      font-size: 16px;
+      line-height: 30px;
+  }
+
+  FOOTER
+  footer {
+      height: 300px; 
+      padding-bottom: 5%;
+  }
+
+  footer h2 {
+      font-size: 25px;
+      padding-bottom: 3%;
+  }
+
+  footer p {
+      font-size: 18px;
+  }
+}    
+
+DESKTOP
+@media (min-width: 1025px) {
+
+
+  /* INTRO 
+  .intro {
+      display: flex;
+      justify-content: center;
+      padding-top: 5%;
+  }
+
+  .intro p {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  /* TECH 
+  .tech {
+      height: 150px;
+  }
+  
+  .tech p {
+      font-size: 18px;
+      line-height: 30px;
+      padding: 5%;
+  }
+
+  /* FEATURED PROJECTS 
+
+  .featured-projects img {
+      opacity: 0.5;
+      padding: 8% 2%;
+  }
+
+  .featured-projects img:hover {
+      opacity: 1.0;
+  }      
+  
+  .projects-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px;
+  }
+
+  .guess-who {
+      grid-column-start: 1;
+      width: 65%;
+      justify-self: left;
+  }
+
+  .the-weather-app {
+      grid-column-start: 2;
+      width: 65%;
+      justify-self: center;
+  }
+
+  .the-next-thing {
+      display: block;
+      grid-column-start: 1;
+      width: 65%;
+      justify-self: left;
+  }
+
+  .the-second-next-thing {
+      display: block;
+      grid-column-start: 2;
+      width: 65%;
+      justify-self: center;
+  }
+
+  .other-projects a {
+      display: grid;
+      grid-template-columns: 90px auto;
+      width: 100%;
+  }
+
+  .other-projects .box-text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 1%;
+      width: 35%;
+  }
+
+  /* SKILLS 
+  .skills-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+  }
+  .code-skills {
+      grid-column-start: 1;
+  }
+  
+  .tools-i-know {
+      grid-column-start: 2;
+  }
+  
+  .upcoming-skills {
+      grid-column-start: 3;
+  }
+
+  /* MORE INFO 
+  .more-info a {
+      font-size: 16px;
+      line-height: 30px;
+  }
+
+  .more-info img:hover {
+      filter: invert(25%)
+  }
+
+  /* FOOTER 
+  footer {
+      height: 300px; 
+      padding-bottom: 5%;
+  }
+
+  footer h2 {
+      font-size: 25px;
+      padding-bottom: 3%;
+  }
+
+  footer p {
+      font-size: 18px;
+  }
+}
+
+*/
