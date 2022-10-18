@@ -3,6 +3,7 @@ import React from 'react'
 import { Header, Title, Name } from 'styledcomponents/Header.js'
 import AboutSection from 'components/AboutSection';
 import './index.css';
+import TechStack from 'components/TechStack';
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
         <Title> frontend developer </Title>
       </Header>
       <AboutSection />
+      <TechStack />
     </div>
   )
 }
