@@ -1,13 +1,15 @@
 import React from 'react';
 
 import Header from 'components/Header'
-/* import HeaderLinks from 'components/HeaderLinks' */
+import { Body } from './MainStyle'
 
 const Main = () => {
   return (
     <div>
+      <Body>
         Hello world!
-      <Header />
+        <Header />
+      </Body>
     </div>
   )
 }
