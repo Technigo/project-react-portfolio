@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import liIcon from '../assets/linkedin_icon.png';
 import ghIcon from '../assets/github_icon.png';
 import soIcon from '../assets/stack_overflow_icon.png';
+import profilePic from '../assets/profile_pic.jpeg';
 
 const Header = () => {
   return (
@@ -33,13 +34,14 @@ const Header = () => {
             alt="link to my profile on stack overflow" />
         </a>
       </IconsContainer>
+
       <HeadingsContainer>
         <NameHeading>Portfolio: Fredrik Holm</NameHeading>
         <TitleHeading1>Frontend developer</TitleHeading1>
         <TitleHeading2>with organizational skills</TitleHeading2>
       </HeadingsContainer>
 
-      <ProfileImage src="./img/profile-pic.jpeg" alt="me" />
+      <ProfileImage src={profilePic} alt="me" />
     </StyledHeader>
   );
 };
@@ -58,7 +60,11 @@ const StyledHeader = styled.header`
   width: 100%;
   height: 400px;
   padding-top: 1px;
-`
+  
+  @media (max-width: 650px) {
+    height: 490px;
+  }
+`;
 
 const IconsContainer = styled.div`
   display: flex;
@@ -72,12 +78,28 @@ const IconsContainer = styled.div`
     height: auto;
     width: 55px;
   }
-`
+
+  @media (max-width: 1200px) {
+    right: 3rem;
+  }
+
+  @media (max-width: 650px) {
+    right: 2rem;
+  }
+`;
 
 const HeadingsContainer = styled.div`
   color: white;
   margin: 7.5rem 0 0 4.5rem;
-`
+
+  @media (max-width: 1200px) {
+    margin-left: 3rem;
+  }
+
+  @media (max-width: 650px) {
+    margin: 10rem 0 0 2rem;
+  }
+`;
 
 const NameHeading = styled.h1`
   font-family: var(--sub-font);
@@ -85,18 +107,34 @@ const NameHeading = styled.h1`
   letter-spacing: 0.5px;
   margin-bottom: 0.4rem;
   text-transform: uppercase;
-`
+
+  @media (max-width: 650px) {
+    font-size: 1.1rem;
+  }
+`;
 
 const TitleHeading1 = styled.h2`
   font-family: var(--main-font);
   font-size: 3rem;
   font-weight: 700;
-`
+
+  @media (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 2.3rem;
+  }
+`;
 
 const TitleHeading2 = styled.h2`
   font-size: 1.5rem;
-  font-weight: 400;
-`
+
+  @media (max-width: 650px) {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+`;
 
 const ProfileImage = styled.img`
   position: absolute;
@@ -106,4 +144,14 @@ const ProfileImage = styled.img`
   border-radius: 50%;
   width: 200px;
   height: auto;
-`
+
+  @media (max-width: 1200px) {
+    right: 3rem;
+  }
+
+  @media (max-width: 650px) {
+    width: 150px;
+    right: 2rem;
+    bottom: -1rem;
+  }
+`;
