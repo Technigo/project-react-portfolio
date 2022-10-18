@@ -48,8 +48,8 @@ const StyledName = styled.div`
 const StyledTitle = styled.div`
     position: absolute;
     width: auto;
-    height: 243px;
-    left: 20px;
+    
+    left: 10vw;
     top: 239px;
 
     font-family: 'Montserrat', sans-serif;

@@ -9,11 +9,9 @@ export const Summary = ({ summaryText }) => {
       <div>
         <StyledSummaryText>
           <div>{summaryText}</div>
-
         </StyledSummaryText>
       </div>
     </StyledSummaryBackground>
-
   )
 };
 
@@ -21,9 +19,13 @@ const StyledSummaryBackground = styled.div`
 color: black;
 
     width: 100%;
-    height: 200px;
+    height: 30vh;
     left: 0px;
     top: 0px;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const StyledSummaryText = styled.div`
@@ -36,3 +38,4 @@ const StyledSummaryText = styled.div`
     padding: 25px 50px 80px 50px;
     max-width: 600px;
 `;
+
