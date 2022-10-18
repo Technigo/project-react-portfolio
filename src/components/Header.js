@@ -10,23 +10,25 @@ import headerpicture from './images/headerpicture.jpg'
 
 export const Header = () => {
   return (
-    <HeaderStyle>
-      <SoMeHeader>
-        <SoMeLink> <a href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></a></SoMeLink>
-        <SoMeLink><a href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></a></SoMeLink>
-        <SoMeLink><a href="https://stackoverflow.com/c/technigo/users/392"><img src={stack} alt="Stack Overflow" /></a></SoMeLink>
-      </SoMeHeader>
-      <HeaderText>
-        <h3>PORTFOLIO: MARIA WESTLING</h3>
-        <h1>frontend developer</h1>
-        <h2>+ objects conservator</h2>
-      </HeaderText>
-      <ProfileImage src={profileimg} alt="profile" />
-    </HeaderStyle>
+    <HeaderWrapper>
+      <HeaderContent>
+        <SoMeHeader>
+          <SoMeLink> <a href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></a></SoMeLink>
+          <SoMeLink><a href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></a></SoMeLink>
+          <SoMeLink><a href="https://stackoverflow.com/c/technigo/users/392"><img src={stack} alt="Stack Overflow" /></a></SoMeLink>
+        </SoMeHeader>
+        <HeaderText>
+          <h3>PORTFOLIO: MARIA WESTLING</h3>
+          <h1>frontend developer</h1>
+          <h2>+ objects conservator</h2>
+        </HeaderText>
+        <ProfileImage src={profileimg} alt="profile" />
+      </HeaderContent>
+    </HeaderWrapper>
   )
 }
 
-export const HeaderStyle = styled.header`
+export const HeaderWrapper = styled.header`
 padding: 20px;
 width: 100%;
 position: relative;
@@ -34,6 +36,8 @@ height: 520px;
 background-image: url(${headerpicture});
 color: #F1EFDC;
 font-family: 'Montserrat', sans-serif;
+`
+export const HeaderContent = styled.div`
 `
 
 export const SoMeHeader = styled.div`
@@ -43,7 +47,7 @@ justify-content: flex-end;
 gap: 7px;
 `
 export const HeaderText = styled.div`
-
+width: 90%;
 `
 
 export const ProfileImage = styled.img`
