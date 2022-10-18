@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Header, Title, Name } from 'styledcomponents/Header.js'
+import AboutSection from 'components/AboutSection';
 import './index.css';
 
 export const App = () => {
@@ -10,7 +11,7 @@ export const App = () => {
         <Name> Cecilia Frånlund</Name>
         <Title> frontend developer </Title>
       </Header>
-      Find me in src/app.js!
+      <AboutSection />
     </div>
   )
 }

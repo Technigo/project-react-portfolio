@@ -13,7 +13,7 @@ export const Header = styled.header`
 export const Title = styled.h1`
     position: absolute;
     width: 300px;
-    top: 36%;
+    top: 35%;
     left: 10%;
     color: white;
     font-size: 2.8rem;
@@ -31,4 +31,4 @@ export const Name = styled.h3`
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: red;
-`
+`;
