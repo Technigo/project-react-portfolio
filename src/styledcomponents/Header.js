@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 export const Header = styled.header`
   background-color: #a19595;
   width: 100%;
-  height: 70vh;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

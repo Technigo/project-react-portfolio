@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro'
 
-import { Section, SectionTitle, TextWrapper, Wrapper } from 'styledcomponents/Section';
+import { Highlight, Section, SectionTitle, TextWrapper, Wrapper } from 'styledcomponents/Section';
 
 const TechStackWrap = styled(TextWrapper)`
-padding-left: 20%;
-padding-right: 20%;
+padding-left: 10%;
+padding-right: 10%;
 text-align: center;
+font-size: 1.3rem;
 `;
 
 const TechStack = () => {
@@ -14,10 +15,11 @@ const TechStack = () => {
     <Section primary>
       <Wrapper>
         <SectionTitle>Tech Stack</SectionTitle>
-        <TechStackWrap>JavaScript ES6, HTML5, React, CSS, Flexbox,
-         web Accessibly, API:s,
-         Agile methodologies, mob-programming,
-         pair-programming, GitHub.
+        <TechStackWrap>
+          <Highlight>JavaScript ES6 </Highlight>| HTML5 |<Highlight> React </Highlight> |
+          <Highlight> CSS </Highlight>| Flexbox | web Accessibly |  API:s |
+          <Highlight> Agile Methodologies</Highlight>  |  mob-programming |
+         pair-programming |  <Highlight>GitHub</Highlight>
         </TechStackWrap>
       </Wrapper>
     </Section>

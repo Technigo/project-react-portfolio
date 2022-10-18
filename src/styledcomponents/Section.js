@@ -15,6 +15,7 @@ export const TextWrapper = styled.div`
 padding: 20px;
 background-color: antiquewhite;
 `;
+
 /* ---texts within secitons---*/
 export const SectionTitle = styled.h2`
   font-family: 'Montserrat', sans-serif;
@@ -35,4 +36,14 @@ export const SubTitle = styled.h2`
   margin: 0 auto;
   margin-bottom: 20px;
   color: black;
+`;
+
+/* ------- */
+export const Highlight = styled.span`
+  font-weight: 600;
+  color: red;
+
+  &:hover{
+    color:blue
+  }
 `;
