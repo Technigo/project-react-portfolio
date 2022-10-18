@@ -3,6 +3,16 @@ import styled from 'styled-components';
 const StyledProject = styled.article`
   margin: 1rem 0; 
 
+  h3, h4 {
+  background-color: transparent;
+  color: var(--heading);
+  display: inline;
+  font-size: 17px;
+  margin: 20px 0 15px;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
   //div runt bild och overlay
   .project-image {
   align-items: center;

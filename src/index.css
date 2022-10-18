@@ -34,7 +34,7 @@ h2, h3 {
   width: fit-content;
 } */
 
-.project h3, h4 {
+/* .project h3, h4 {
   background-color: transparent;
   color: var(--heading);
   display: inline;
@@ -42,25 +42,25 @@ h2, h3 {
   margin: 20px 0 15px;
   padding-left: 0;
   text-transform: uppercase;
-}
-.sub-heading {
+} */
+/* .sub-heading {
   background: none;
   color: var(--heading);
   margin: 30px auto 20px;
   text-transform: uppercase;
-}
-.code-thoughts h3 {
+} */
+/* .code-thoughts h3 {
   font-size: 17px;
   font-weight: 700;
   padding-left: 0;
   text-transform: uppercase;
-}
-.skills h3 {
+} */
+/* .skills h3 {
   background-color: transparent;
   color: var(--heading);
   font-size: 17px;
   margin: 0 auto;
-}
+} */
 
 /* Other text formating */
 /* p {
@@ -91,9 +91,9 @@ a {
   flex-direction: column;
   justify-content: center;
 } */
-section, footer {
+/* section, footer {
   padding: 2rem 1.5rem;
-}
+} */
 /* .intro {
   align-items: center;
   display: flex;
@@ -230,7 +230,7 @@ section, footer {
   grid-auto-flow: column dense;
   grid-template-columns: 1fr 1fr;  
 }
-.list-section {
+/* .list-section {
   display: block;
   justify-self: center;
   text-align: center;
@@ -241,14 +241,14 @@ ul {
 }
 li {
  padding: 4px; 
-}
-.list-section3 {
+} */
+/* .list-section3 {
   grid-column: 2;
 }
 .list-section4 {
   grid-column: 2;
-}
-.FMlogo-container {
+} */
+/* .FMlogo-container {
  display: flex;
  justify-content: center;
 }
@@ -257,9 +257,9 @@ li {
   filter: invert(13%) sepia(18%) saturate(351%) hue-rotate(149deg) brightness(20%) contrast(95%);
   margin: 0 .5rem;
   width: 48px;
-}
+} */
 /* FOOTER */
-footer {
+/* footer {
   background-color: var(--ligtherGreen);
   padding-bottom: 40px;
   text-align: center;
@@ -272,7 +272,7 @@ footer p{
   display: block;
   font-family: 'Montserrat', serif;
   margin: 0 auto;
-}
+} */
 /* To provide additional information to screen readers without disturbing the visual layout */
 .sr-only {
   border: 0;
@@ -344,12 +344,7 @@ footer p{
     bottom: -2rem;
     left: 220px;
   }
-  .code-thoughts h3 {
-      font-size: 17px;
-      font-weight: 700;
-      padding-left: 0;
-      text-transform: uppercase;
-  }
+
   .other-thoughts {
       justify-content: left; 
       width: 60vw;
@@ -360,7 +355,7 @@ footer p{
       grid-gap: 2rem;
       grid-template-columns: repeat(3, 1fr);
   }
-  .list-section {
+/*   .list-section {
       justify-self: center;
   }
   .list-section1 {
@@ -374,7 +369,7 @@ footer p{
   }
   .list-section4 {
       grid-column: 3;
-  }
+  } */
   .dark-logo {
       height: 4rem;
       width: 4rem;

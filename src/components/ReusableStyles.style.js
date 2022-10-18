@@ -31,3 +31,17 @@ export const GridWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 90vw;
 `
+
+export const StyledListSection = styled.div`
+  display: block;
+  justify-self: center;
+  text-align: center;
+ 
+  ul {
+  list-style-type: none;
+  margin-bottom: 16px;
+  }
+  li {
+  padding: 4px; 
+  }
+`

@@ -19,6 +19,10 @@ body {
   font-family: 'Montserrat', serif;  
 }
 
+section, footer {
+  padding: 2rem 1.5rem;
+} 
+
 h1 {
   font-size: 40px;
   font-weight: 700;

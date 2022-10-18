@@ -106,6 +106,13 @@ const StyledOtherWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  
+  h3 {
+  background: none;
+  color: var(--heading);
+  margin: 30px auto 20px;
+  text-transform: uppercase;
+}
 `
 const StyledGridWrapperProject = styled(GridWrapper)`
   

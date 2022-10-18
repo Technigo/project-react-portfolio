@@ -27,7 +27,7 @@ const Thoughts = () => {
           thoughtDescription="Thoughts about accessibility in the digital world." />
       </StyledGridWrapperThoughts>
 
-      <StyledOtherSthoughts className="other other-thoughts">
+      <StyledOtherThoughts className="other other-thoughts">
         <h3 className="sub-heading">More Thoughts</h3>
         <OtherThought
           thoughtLink="#"
@@ -38,7 +38,7 @@ const Thoughts = () => {
           thoughtLink="#"
           publishDate="Fall 2022"
           thoughtTitle="Placeholder"/> */}
-      </StyledOtherSthoughts>
+      </StyledOtherThoughts>
     </section>
   )
 }
@@ -48,10 +48,20 @@ export default Thoughts;
 const StyledGridWrapperThoughts = styled(GridWrapper)`
   
 `
-const StyledOtherSthoughts = styled.div`
+const StyledOtherThoughts = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
+
+  h3 {
+  font-size: 17px;
+  font-weight: 700;
+  padding-left: 0;
+  text-transform: uppercase;
+  background: none;
+  color: var(--heading);
+  margin: 30px auto 20px;
+}
 `
