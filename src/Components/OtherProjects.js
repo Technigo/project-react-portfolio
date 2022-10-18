@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const MyTech = styled.div`
+const OtherProjectsContainer = styled.div`
 font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -12,14 +12,17 @@ font-family: 'Montserrat', sans-serif;
     margin-right: 5%;
 `
 
-const Tech = () => {
+const Arrow = styled.span`
+color: #FF7777;
+    font-weight: 600;   
+`
+
+const OtherProjects = () => {
   return (
-    <MyTech>
-      <p>HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s,
-        mob-programming, pair-programming, Github, Slack, Figma, Node, React
-      </p>
-    </MyTech>
+    <OtherProjectsContainer>
+      Om projektet <Arrow />
+    </OtherProjectsContainer>
   )
 }
 
-export default Tech
+export default OtherProjects

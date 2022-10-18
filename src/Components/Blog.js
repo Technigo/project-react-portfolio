@@ -2,7 +2,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const MyTech = styled.div`
+const MyThoughts = styled.div`
+background: #F4F4F4;
 font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -12,14 +13,12 @@ font-family: 'Montserrat', sans-serif;
     margin-right: 5%;
 `
 
-const Tech = () => {
+const Blog = () => {
   return (
-    <MyTech>
-      <p>HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s,
-        mob-programming, pair-programming, Github, Slack, Figma, Node, React
-      </p>
-    </MyTech>
+    <MyThoughts>
+   Blog post
+    </MyThoughts>
   )
 }
 
-export default Tech
+export default Blog
