@@ -90,10 +90,11 @@
     "prefer-template": "error",
     "react/destructuring-assignment": "off",
     "react/forbid-prop-types": "off",
-    "react/jsx-closing-bracket-location": [
-      {
+    "react/jsx-closing-bracket-location": [ 
+      "error", 
+      { 
         "selfClosing": "after-props",
-        "nonEmpty": "after-props"
+        "nonEmpty": "after-props" 
       }
     ],
     "react/jsx-curly-spacing": [
