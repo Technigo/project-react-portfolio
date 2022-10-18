@@ -35,7 +35,7 @@ const Header = () => {
   );
 };
 
-export const HeaderContainer = styled.header`
+const HeaderContainer = styled.header`
   background-image: url(${backimgbasicbrush});
   width: 100%;
   height: 400px;
@@ -52,7 +52,7 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const HeaderIcons = styled.div`
+const HeaderIcons = styled.div`
   position: absolute;
   right: 10%;
   top: 8%;
@@ -87,7 +87,7 @@ export const HeaderIcons = styled.div`
 }
 `;
 
-export const HeaderTitle = styled.div`
+const HeaderTitle = styled.div`
   position: absolute;
   top: 30%;
   left: 10%;
@@ -127,7 +127,7 @@ export const HeaderTitle = styled.div`
     }
   }
 `;
-export const HeaderImage = styled.div`
+const HeaderImage = styled.div`
   img {
     object-fit: cover;
     object-position: top center;
