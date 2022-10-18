@@ -1,9 +1,8 @@
 import React from 'react'
+import FetchInfo from './components/FetchInfo'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js! Hello!
-    </div>
+    <FetchInfo />
   )
 }
