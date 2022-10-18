@@ -33,6 +33,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "linebreak-style": ["error", "windows"],
     "arrow-body-style": "off",
     "class-methods-use-this": "off",
     "brace-style": [
@@ -113,6 +114,17 @@
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-direct-mutation-state": "error",
+    "react/button-has-type":"off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": [
+          "function-declaration",
+          "arrow-function"
+        ],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/no-multi-comp": [
       "error",
       {
@@ -126,6 +138,7 @@
     "react/jsx-indent": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "semi": "off"
+    "semi": "off",
+    "no-underscore-dangle":"off"
   }
 }
