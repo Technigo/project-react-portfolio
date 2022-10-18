@@ -9,4 +9,5 @@ export const OuterWrapper = styled.section`
 
 export const InnerWrapper = styled.section`
   width: 80%;
+  background-color: ${(props) => (props.gray ? '#F4F4F4;' : 'white')}
 `
