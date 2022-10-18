@@ -1,0 +1,448 @@
+
+
+/*pictures not used:
+idea: https://images.pexels.com/photos/7203727/pexels-photo-7203727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+*/
+
+/*COLORS:
+light green C2E8CE
+greyish F2EEE5
+orangebrown F6AD7B
+brownpurple BE7575
+green avo 9DAB86
+beige D7C79E
+salmon E08F62
+rust A35638
+
+*/
+
+
+@font-face {
+    font-family: 'Aloevera' ;
+    src: url('./fonts/Aloevera-OVoWO.ttf') format('truetype');
+ }
+ 
+
+ body{
+    margin: 0px;
+    font-family: "Montserrat";
+}
+
+h1{
+    font-family: "Aloevera";
+    margin: 0px 60px 0px -190px;
+    color: #F6AD7B;
+    font-size: 60px;
+    text-align: left;
+}
+
+h2 {
+    background-color: #F6AD7B;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Raleway Dots', cursive;
+    margin-top: 10px;
+    padding: 6px;
+    color: white;
+    font-size: 20px;
+}
+
+h3 {
+    width: fit-content;
+    text-align: center;
+    font-family: 'Raleway Dots', cursive;
+    margin-top: 10px;
+    padding: 6px;
+    color: black;
+    font-size: 18px;
+}
+
+ul{
+    color:#516a59;
+    text-decoration: underline;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 3px;
+    padding: 0px;
+}
+
+li{
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-media-links{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-right: 60px;
+    justify-content: right;
+}
+
+
+
+.logo img {
+    height: 30px;
+    width: 30px;
+}
+
+.profile-pic {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left:60%;
+    top: 70%;
+    border-radius: 50%;
+    background: url("./images/profile_pic2.jpg");
+    background-position: -19px 560px;
+    background-size: 232px;
+}
+
+.outer-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0px;  
+}
+
+.inner-wrapper{
+    width: 100%;
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(235, 226, 218);
+    margin: 0px 0px; 0px; 0px;
+
+}
+
+p{
+    line-height: 1.4;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    margin: 0px 10px 0px 0px;
+    font-size: 16px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.section{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+.section p a{
+    color:#f09254;
+}
+
+.section.header {
+    background: url("./images/nailpolish.jpg") no-repeat;
+    background-color: #F6AD7B;
+    height: 540px;
+    background-size: 1000px;
+    background-position-y: -100px;
+    background-position-x: -120px;
+  }
+
+  .header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2px;
+
+}
+
+.header-text h2{
+margin: 0px 0px 0px -190px;
+top: 0px;
+}
+
+.header-text h3{
+margin: 0px 0px 0px -190px;
+
+}
+
+h3.name{
+margin: 300px 0px 0px -190px;
+}
+
+.section.intro{
+top: 550px;
+height: 300px;
+}
+
+.section.intro img{
+   padding-right: 5px;
+}
+
+.section.tech{
+ height: 170px;
+ top: 800px;
+ }
+
+
+ .section.wrapper{
+    min-height: 200px;
+    top: 970px;
+
+ }
+.section.projects {
+
+   /*Makes h2 an exception to the following rules of section projects*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-top: 60px;
+    }
+
+/*DIVS for projects*/
+.projectDiv{
+    min-height: 150px;
+    min-width: 250px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.projectDiv img{
+    width: 410px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+
+.section.skills{
+min-height: 200px;
+top:2390px;
+text-align: left;
+}
+
+.skills-lists{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-lists div{
+justify-content: left;
+width: 170px;
+}
+
+.tools{
+    margin: 20px 0px 20px 20px;
+}
+.upcoming{
+    margin: 20px 0px 20px 20px;
+}
+.other{
+    margin: 20px 0px 20px 15px;
+}
+.code{
+    margin: 20px 0px 20px 15px;
+}
+
+.section.more{
+min-height: 200px;
+top: 2830px;
+align-items:center;
+flex-direction: column;
+} 
+
+
+
+.section.more img{
+margin-top: 10px;
+height: 40px;
+width: 40px;
+border: tan solid 1.5px;
+border-radius: 50%;
+padding: 1px;
+
+} 
+
+.big-social-media-links{
+display: flex; 
+flex-direction: row;
+gap: 10px;
+margin: 10px;
+ }
+
+
+.section.footer{
+    position: absolute;
+    left:10px;
+    height: 200px;
+    top:3000px;
+    background-color:tan;
+    font-size: 16px;
+    }
+
+.section.footer p{
+font-size: 12px;
+}
+
+
+
+/*SMALLER DEVICES*/
+@media (max-width: 448px){
+    h1{
+        margin-top: 0x;
+        margin-left: -20px;/* 300px 60px 0px -10px; */
+        font-size: 40px;
+    }
+
+    .header-text h2{
+        font-size: 18px;
+        margin-left: -20px;
+    }
+    .header-text h3{
+        font-size: 18px;
+        margin-left: -20px;
+    }
+        h3.name{
+        margin: 200px 0px 0px -20px;
+        }
+
+        .profile-pic {
+            left:60%;
+            top: 75%;
+
+        }
+}
+    /*TABLETS*/
+@media (min-width: 667px) and (max-width: 1024px){
+    .outer-wrapper{
+    width: 100%;
+    }
+
+    .inner-wrapper{
+    width: 100%;
+    }
+    .social-media-links{
+    justify-content: flex-end;
+    margin-right: 40px;
+    }
+
+    .section{
+    width: 100%;
+    }
+
+    .profile-pic{
+    width: 150px;
+    height: 150px;
+    }
+
+
+}
+
+/*DESKTOP*/
+@media (min-width: 1025px){
+    .outer-wrapper{
+        width: 100%;
+    }
+
+
+    .inner-wrapper{
+        width:100%;
+        height: 2900px;
+    }
+
+    .social-media-links{
+        justify-content: flex-end;
+        margin-right: 70px;
+        }
+
+    .section.header {
+        background-size: 2500px;
+        background-position-y: -600px;
+        background-position-x: -350px;
+      }
+
+    .section.header h3 {
+        font-size: 20px;
+      }
+
+
+
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+        left:60%;
+        top: 80%;
+        }
+
+     .logo-labels{
+            display: grid;
+            grid-template: 80px / auto auto auto;
+            padding: 0px;
+            margin: 0px;
+            gap: 7px;
+          }
+          
+
+     .section.projects{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;;
+     }
+
+     .projectDiv{
+        border: #F2EEE5 solid;
+        font-size: 24px;
+    }
+    
+    .projectDiv img{
+        width: 610px;
+        height:auto;
+
+    }
+
+    .section.skills{
+        top:2100px;
+    }
+
+
+    .section.more{
+        top: 2500px;
+    }
+
+    .section.footer{
+        top: 2700px;
+        min-height: 230px;
+        padding-top: 30px;
+    }
+
+    h3.name{
+    color:white;
+     }
+
+     .header-text h3{
+    color:white;
+    top: 300px;
+ }
+
+
+}
+
