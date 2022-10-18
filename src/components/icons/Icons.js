@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import GithubHeader from './GithubHeader.svg'
 import LinkedInHeader from './LinkedInHeader.svg'
 import StackOverflowHeader from './stackoverflow-icon.svg'
@@ -8,10 +8,10 @@ export const Icons = () => {
   const StyledIcons = styled.img`
     border-radius: 50%;
     border: 2px solid black;
-    padding: 10px;
-    width: 40px;
+    padding: 1%;
+    width: 10vw;
     filter: invert(1);
-    margin: 8px;
+    margin: 1%;
 `
   return (
     <>
