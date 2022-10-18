@@ -1,14 +1,8 @@
-import React from 'react';
-import { Footer } from 'components/Footer';
-import { Header } from 'components/Header';
-import { Intro } from 'components/Intro';
+import React from 'react'
+import Portfolio from 'Portfolio'
 
 export const App = () => {
   return (
-    <div>
-      <Header />
-      <Intro />
-      <Footer />
-    </div>
+    <Portfolio />
   )
 }

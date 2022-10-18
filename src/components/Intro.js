@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { IntroWrapper, Line, Dot } from 'StyledComponents/IntroStyle.js'
+// import { OuterWrapper, InnerWrapper } from 'StyledComponents/GlobalStyles';
 
 export const Intro = () => {
   return (
-    <IntroWrapper>
+    <IntroWrapper grey>
       <Line /><Dot />  Coming from a background within biology and environmental
       science, I have now taken on the challange to become a frontend developer.
       Combining my experience from project and business development,
