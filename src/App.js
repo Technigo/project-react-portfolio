@@ -1,9 +1,12 @@
 import React from 'react'
+import { OuterWrapper, InnerWrapper } from './Styled components/GlobalStyles'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <OuterWrapper>
+      <InnerWrapper>
+          Text
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
