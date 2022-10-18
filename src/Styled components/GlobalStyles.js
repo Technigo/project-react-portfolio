@@ -10,6 +10,8 @@ export const OuterWrapper = styled.section`
 
 export const InnerWrapper = styled.section`
   width: 80%;
+  display: flex; 
+  flex-direction: column;
 
   @media (min-width: 668px) and (max-width: 1024px) {
     width: 60%;
@@ -21,17 +23,19 @@ export const InnerWrapper = styled.section`
     width: 50%;
   }
 `
-
-export const StyledLink = styled.a`
-    text-decoration: none;
-    outline: none;
-    color: inherit;
-`
-
 export const P = styled.p`
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 29px; 
+`
+export const A = styled.a`
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+
+  &&:Hover {
+    text-decoration: underline;
+  }
 `

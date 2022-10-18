@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
     <OuterWrapper gray>
       <InnerWrapper>
         <WhitePinkH2>FEATURED PROJECTS</WhitePinkH2>
-        {filteredProjects.map((project) => <div>{project.name}</div>)}
+        {filteredProjects.map((project) => <div>{project.name} {project.html_url}</div>)}
       </InnerWrapper>
     </OuterWrapper>
   )

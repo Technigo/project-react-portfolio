@@ -47,3 +47,13 @@ export const PinkH3 = styled.h3`
   color: #FF7777;
   padding: 2vh 0px 1px 0px; 
 `
+
+export const SkillHeader = styled.h3`
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FF7777;
+  text-align: center;
+`
