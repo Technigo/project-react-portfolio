@@ -3,16 +3,25 @@
 }
 
 :root {
-  --primary: white;
-  --secondary: #f4f4f4;
-  --third: #7d6081;
-  --fourth: #645caa;
-  --fifth: #4d4d54;
-  --sixth: #9b637c;
-  --seventh: #4d4d54;
+  --primaryBackground: #7d6081;
+  --secondaryBackground:white;
+  --thirdBackground:  #f4f4f4;
+  --fourthTitle: #9b637c;
+  --fifthSubTitle: #4d4d54;
+  --sixthTitleSubtitle: #645caa;
+  --seventhText: #4d4d54;
 }
 
+body {
+  background-color: var(--secondaryBackground);
+  width: 100%;
+  color: var(--seventhText);
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 32px;
 
+}
 
 /*
 

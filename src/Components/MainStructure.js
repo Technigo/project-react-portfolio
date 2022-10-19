@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from 'react';
+
+import React from 'react';
+
 import Header from './Header';
-import Footer from './Footer';
+import Intro from './Intro';
+import Tech from './Tech';
 import Projects from './Projects';
+import OtherProjects from './OtherProjects.js';
+import Skills from './Skills';
+import Footer from './Footer';
 
 const MainStructure = () => {
-  const [gitData, setGitData] = useState([]);
-
-  const fetchData = () => {
-    fetch('https://api.github.com/users/petrasson/repos')
-      .then((res) => res.json())
-      .then((data) => setGitData(data))
-      .catch((error) => console.error('error', error))
-      .finally(() => console.log('data', gitData))
-  }
-  useEffect(() => { fetchData() }, []);
-
   return (
     <div>
       <Header />
+      <Intro />
+      <Tech />
       <Projects />
+      <OtherProjects />
+      <Skills />
       <Footer />
     </div>
   );
