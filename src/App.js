@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import GlobalStyles from 'components/styled/Global';
 import { OuterWrapper, InnerWrapper } from 'components/styled/Wrappers.styled';
 import Header from './components/Header';
@@ -10,6 +10,15 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 
 const App = () => {
+  const [repos, setRepos] = useState([]);
+  console.log(repos)
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/karlfredrikholm/repos')
+      .then((res) => res.json())
+      .then((data) => setRepos(data))
+  }, []);
+
   return (
     <>
       <GlobalStyles />
@@ -18,7 +27,7 @@ const App = () => {
           <Header />
           <Summary />
           <Tech />
-          <FeatProjects />
+          <FeatProjects repos={repos} />
           <Skills />
           <Footer />
         </InnerWrapper>
