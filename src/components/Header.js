@@ -1,8 +1,30 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components';
 import profileImage from '../images/portrait.webp';
 import heroImage from '../images/hero-img.webp'
+import Logos from './Logos';
+
+const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
+  return (
+    <StyledHeader className="hero">
+      <HeroContainer className="hero-container">
+        <div className="hero-text">
+          <h3 className="name-heading">Portfolio: Elin Segelöv</h3>
+          <h1>frontend <br /> developer</h1>
+          <h2 className="">with a background in social work</h2>
+        </div>
+        <Logos
+          githubLogo={githubLogo}
+          linkedinLogo={linkedinLogo}
+          stackOverflowLogo={stackOverflowLogo} />
+
+        <img src={profileImage} className="portrait-img" alt="Portrait" />
+      </HeroContainer>
+    </StyledHeader>
+  )
+}
+
+export default Header;
 
 const StyledHeader = styled.header`
   background-image: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImage});
@@ -26,10 +48,7 @@ const StyledHeader = styled.header`
   margin: 0;
   padding: 0;
   }
-  .hero-container {
-  position: relative;
-  width: 90%;
-}
+
 .hero-text {
   color: #FCF8EC;
   position: absolute;
@@ -42,11 +61,6 @@ const StyledHeader = styled.header`
   right: 1rem;
   top: 2rem;
 }
-.logo {
-  height: 3rem;
-  margin: 0 .1rem;
-  width: 3rem;
-}
 
 .portrait-img {
   border: solid white 2px;
@@ -57,33 +71,31 @@ const StyledHeader = styled.header`
   top: 49vh;
   width: 7rem;
 }
-`
+@media (min-width: 600px) {
+  display: flex;
+  justify-content: center;
 
-const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
-  return (
-    <StyledHeader className="hero">
-      <div className="hero-container">
-        <div className="hero-text">
-          <h3 className="name-heading">Portfolio: Elin Segelöv</h3>
-          <h1>frontend <br /> developer</h1>
-          <h2 className="">with a background in social work</h2>
-        </div>
-        <div className="logo-container">
-          <a href="https://www.linkedin.com/in/elin-s-683a867a/" aria-label="Link to LinkedIn profile">
-            <img src={linkedinLogo} className="logo" alt="LinkedIn logo" />
-          </a>
-          <a href="https://github.com/ElinSegelov" aria-label="Link to LinkedIn profile">
-            <img src={githubLogo} className="logo" alt="github logo" />
-          </a>
-          {/* <a href="https://stackoverflow.com/c/technigo/users/375" aria-label="Link to LinkedIn profile">
-            <img src={stackOverflowLogo} className="logo" alt="StackOverflow logo"/>
-          </a> */}
-        </div>
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: .2rem;
+  }
 
-        <img src={profileImage} className="portrait-img" alt="Portrait" />
-      </div>
-    </StyledHeader>
-  )
+  .hero-text {
+    top: 10rem; 
+  }
+  .portrait-img {
+    right: 1rem;
+    top: 43vh;
+    width: 20vh;
+  }
 }
+`
+const HeroContainer = styled.div`
+  position: relative;
+  width: 90%;
 
-export default Header;
+  @media (min-width: 600px) {
+    max-width: 1000px;
+  }
+`

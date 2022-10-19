@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <StyledSkillsWrapper className="skills bg-darker">
       <h2 className="grid-headig">SKILLS</h2>
-      <div className="skill-wrapper">
+      <StyledSkillsContainer className="skill-wrapper">
         <FirstListSection>
           <ListSection
             heading="Code"
@@ -27,9 +27,9 @@ const Skills = () => {
         <FourthListSection>
           <ListSection
             heading="More"
-            ListItems={['Interpersonal skills', 'Communicative', 'Problem solver']} />
+            ListItems={['Pair-programming', 'Mob-programming', 'Interpersonal skills', 'Communicative', 'Problem solver']} />
         </FourthListSection>
-      </div>
+      </StyledSkillsContainer>
     </StyledSkillsWrapper>
   )
 }
@@ -44,6 +44,19 @@ h3 {
   margin: 0 auto;
 }
 `
+const StyledSkillsContainer = styled.div`
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-template-columns: 1fr 1fr;  
+  
+  @media (min-width: 600px) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+`
+
 const FirstListSection = styled(StyledListSection)`
   @media (min-width: 600px) {
     grid-column: 1;

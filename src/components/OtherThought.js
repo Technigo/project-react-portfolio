@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import MoreArrows from './MoreArrows';
 
 const OtherThought = (
   {
@@ -12,7 +13,7 @@ const OtherThought = (
     <StyledOtherThoughtLink className="underline" href={thoughtLink}>
       <p className="date underline">
         {publishDate}. <strong>{thoughtTitle}</strong>
-        <span className="more-arrows" aria-hidden="true"> &gt;&gt;</span>
+        <MoreArrows />
       </p>
     </StyledOtherThoughtLink>
   )

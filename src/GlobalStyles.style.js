@@ -52,6 +52,17 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
 `
 
 export default GlobalStyles

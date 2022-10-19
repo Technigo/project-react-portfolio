@@ -105,15 +105,30 @@ const StyledProjectSection = styled.section`
 const StyledOtherWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  
+  @media (min-width: 600px) {
+    justify-content: left;
+      width: 60vw;
+      gap: 1.5rem;
+  }
+  
   
   h3 {
   background: none;
   color: var(--heading);
   margin: 30px auto 20px;
   text-transform: uppercase;
+
 }
 `
-const StyledGridWrapperProject = styled(GridWrapper)`
-  
+const StyledGridWrapperProject = styled.div`
+  @media (min-width: 600px) {
+    display: grid ;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
 `

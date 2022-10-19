@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import StyledProject from './Project.style';
+import { StyledTagWrapper, StyledRepoTag } from './ReusableStyles.style';
 
 const FeaturedProject = (
   {
@@ -23,11 +24,11 @@ const FeaturedProject = (
         </div>
         <h3>{projectTitle}.</h3>
         <p>{projectDescription}</p>
-        <div className="tag-wrapper">
+        <StyledTagWrapper className="tag-wrapper">
           {techPTags}
-        </div>
+        </StyledTagWrapper>
       </a>
-      <a href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></a>
+      <StyledRepoTag href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></StyledRepoTag>
     </StyledFeaturedProject>
   )
 }

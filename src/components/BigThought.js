@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import StyledProject from './Project.style';
+import MoreArrows from './MoreArrows';
 
 const BigThought = (
   {
@@ -23,7 +24,7 @@ const BigThought = (
         <p className="date">{publishDate}</p>
         <h3>{thoughtTitle}.</h3>
         <p className="thought-description">
-          {thoughtDescription} <span className="more-arrows" aria-hidden="true"> &gt;&gt;</span>
+          {thoughtDescription} <MoreArrows />
         </p>
       </StyledBigThoughtWrapper>
     </a>
@@ -33,5 +34,7 @@ const BigThought = (
 export default BigThought;
 
 const StyledBigThoughtWrapper = styled(StyledProject)`
-
+  .thought-description {
+  font-weight: 300;
+  }
 `

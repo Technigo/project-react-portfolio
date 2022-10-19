@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import StyledProject from './Project.style';
+import { StyledTagWrapper, StyledRepoTag } from './ReusableStyles.style';
+import MoreArrows from './MoreArrows';
 
 const OtherProject = (
   {
@@ -21,15 +23,15 @@ const OtherProject = (
         </div>
         <div className="other-text">
           <h4 className="underline">{projectTitle}</h4>
-          <p className="underline">{projectDescription}<span className="more-arrows" aria-hidden="true"> &gt;&gt;</span></p>
-          <div className="tag-wrapper">
+          <p className="underline">{projectDescription} <MoreArrows /></p>
+          <StyledTagWrapper className="tag-wrapper">
             {techPTags}
-          </div>
+          </StyledTagWrapper>
         </div>
       </a>
-      <a href={repoLink} className="tag-wrapper">
+      <StyledRepoTag href={repoLink} className="tag-wrapper">
         <p className="repo-tag other-repo-tag">Repo on GitHub</p>
-      </a>
+      </StyledRepoTag>
     </StyledOther>
   )
 }
@@ -46,9 +48,9 @@ const StyledOther = styled(StyledProject)`
     grid-template-columns: 192px 1fr;
   }
 
-/*   .other-image-container {
+  .other-image-container {
   display: none;
-  } */
+  }
 
   .other-text {
   min-width: 300px;
@@ -57,4 +59,26 @@ const StyledOther = styled(StyledProject)`
   width: 192px;
   text-align: center;
 }
+
+@media (min-width: 600px) {
+  .other-image-container {
+    position: relative;
+    display: flex;
+  }
+  img {
+    aspect-ratio: 5 / 3;
+    display: inherit; 
+    float: left;
+    margin-right: 2rem;
+    object-fit: cover;
+    width: 12rem;
+  }
+
+  .other-repo-tag {
+    position: absolute;
+    bottom: -2rem;
+    left: 220px;
+  }
+}
+
 `

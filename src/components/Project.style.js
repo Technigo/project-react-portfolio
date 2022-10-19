@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledProject = styled.article`
+const StyledProject = styled.div`
   margin: 1rem 0; 
 
   h3, h4 {
@@ -43,6 +43,28 @@ img {
   font-size: 2rem;
   font-weight: 400;
   position: absolute; 
+}
+
+@media (min-width: 1200px) {
+  transition: transform .5s;
+  transition-timing-function: linear;
+  background-color: transparent;
+  
+  &:hover {
+      transform: scale(1.1);
+  }
+
+  .project-image {
+    &:hover {
+    color: transparent;
+    }
+  }
+
+  .project-image-overlay {
+    &:hover{
+      background-color: transparent;
+    }
+  }
 }
 `
 

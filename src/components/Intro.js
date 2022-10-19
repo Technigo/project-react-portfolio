@@ -40,4 +40,10 @@ p {
   width: 10px;
   margin-right: 8px;
 }
+@media (min-width: 600px) {
+  align-items: center;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+}
 `

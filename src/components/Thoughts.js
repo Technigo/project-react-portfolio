@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import BigThought from './BigThought';
 import OtherThought from './OtherThought';
-import { GridWrapper } from './ReusableStyles.style';
+// import { GridWrapper } from './ReusableStyles.style';
 
 const Thoughts = () => {
   return (
-    <section className="code-thoughts show-off">
+    <StyledProjectSection className="code-thoughts show-off">
       <h2 className="grid-heading">My thoughts</h2>
       <StyledGridWrapperThoughts className="grid-wrapper thoughts-wrapper">
         <BigThought
@@ -39,14 +39,32 @@ const Thoughts = () => {
           publishDate="Fall 2022"
           thoughtTitle="Placeholder"/> */}
       </StyledOtherThoughts>
-    </section>
+    </StyledProjectSection>
   )
 }
 
 export default Thoughts;
 
-const StyledGridWrapperThoughts = styled(GridWrapper)`
+const StyledProjectSection = styled.section`
+  background-color: var(--secondary);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`
+
+const StyledGridWrapperThoughts = styled.div`
   
+  @media (min-width: 600px) {
+    display: grid ;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+  @media (min-width: 1200px) {
+    width: 60vw;
+    /* align-items: center;
+  justify-content: center; */
+  }
 `
 const StyledOtherThoughts = styled.div`
   align-items: flex-start;
@@ -63,5 +81,9 @@ const StyledOtherThoughts = styled.div`
   background: none;
   color: var(--heading);
   margin: 30px auto 20px;
+}
+@media (min-width: 600px) {
+  justify-content: left; 
+  width: 60vw;
 }
 `
