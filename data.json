@@ -1,0 +1,139 @@
+[
+  {
+    "id": "project-8",
+    "title": "Popular Movies",
+    "description": "React apps with multiple pages using routes",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "API" },
+      { "name": "React" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/project-movies"
+      }
+    ]
+  },
+  {
+    "id": "project-7",
+    "title": "Happy Thoughts",
+    "description": "Practice how to react to changes in state or a component mounting using useEffect.",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://technigo-happy-thoughts.netlify.app/",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "API" },
+      { "name": "React useEffect" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/project-happy-thoughts"
+      }
+    ]
+  },
+  {
+    "id": "project-6",
+    "title": "Mad Lib - Dragon Sneeze",
+    "description": "Typeform-like survey to collect data from users made into a mad lib story.",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://mad-lib-dragon-sneeze.netlify.app//",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "React State" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/project-survey"
+      }
+    ]
+  },
+  {
+    "id": "project-5",
+    "title": "Music releases",
+    "description": "First project using JSX and react with JSON api. Project was to fetch data and show cover albums with links using map.",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://music-releases-saralie-antonella.netlify.app/",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "API" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/project-music-releases"
+      }
+    ]
+  },
+  {
+    "id": "project-4",
+    "title": "Weather App",
+    "description": "Web application built in JavaScript with external API",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://stockholm-weather.netlify.app/",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "API" },
+      { "name": "Pair programming" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/juliaostedt/project-weather-app"
+      }
+    ]
+  },
+  {
+    "id": "project-3",
+    "title": "Guess who",
+    "description": "Game created to learn basic JavaScript",
+    "image": "/link-to-image/image3.jpg",
+    "netlifyLink": "https://guess-who-by-saralie.netlify.app/",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/project-guess-who"
+      }
+    ]
+  },
+  {
+    "id": "project-2",
+    "title": "Business site",
+    "description": "A business site with an accordion, styling, and header to practice JavaScript",
+    "image": "/link-to-image/image2.jpg",
+    "netlifyLink": "https://astounding-fairy-f2a605.netlify.app",
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "Mob programming" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Petrasoderstrom1612/project-business-site"
+      }
+    ]
+  },
+  {
+    "id": "project-1",
+    "title": "News Site",
+    "description": "Project to build a simple website using responsive design",
+    "image": "/img/image1.jpg",
+    "netlifyLink": "https://re-discover-saralie-news-site.netlify.app/",
+    "tags": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "responsive" },
+      {
+        "name": "GitHub",
+        "githubLink": "https://github.com/Scarylie/Project-news-site-Re-Discover"
+      }
+    ]
+  }
+]
