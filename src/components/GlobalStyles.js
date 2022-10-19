@@ -42,6 +42,10 @@ margin: 2%;
     color: #614124;
     font-size: 15px;
 `
+export const OverlinedHeading = styled(Heading)`
+margin: 0;
+text-decoration: overline #614124;
+`
 
 export const Title = styled.h2`
 font-size: 18px;

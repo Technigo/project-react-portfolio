@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BUSINESSSITE_URL } from 'utils/Urls'
-import { SectionTitle, Wrapper, Heading, TagIcons, ProjectParagraph } from './GlobalStyles';
+import { SectionTitle, Wrapper, TagIcons, ProjectParagraph, OverlinedHeading } from './GlobalStyles';
 
 export const OtherProjects = () => {
   return (
@@ -13,7 +13,7 @@ export const OtherProjects = () => {
             href={BUSINESSSITE_URL}
             target="_blank"
             rel="noreferrer">
-            <OtherProjectsHeading>Business Site: Stockholm Tour.</OtherProjectsHeading>
+            <OverlinedHeading>Business Site: Stockholm Tour.</OverlinedHeading>
           </a>
           <ProjectParagraph primary>A website created in mob programming session that
              contains forms and JavaScript for people who wants to sign up for an event
@@ -38,7 +38,7 @@ padding-top: 5%;
 const OtherProjectsDisplay = styled.div`
  margin-bottom: 2%;
 a{
-    text-decoration: overline #614124;
+    text-decoration: none;
     font-size: 15px;
     display: inline-block;
     font-weight: 800;
@@ -48,9 +48,6 @@ a{
     }
 }
 }    
-`
-const OtherProjectsHeading = styled(Heading)`
-margin: 0;
 `
 
 const OtherProjectsTags = styled(TagIcons)`
