@@ -46,7 +46,11 @@ export const ProfilePic = styled.img`
     object-fit: cover;
   
 
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1224px) {
+      right: 150px;
+  }
+
+  @media (min-width: 1225px) {
       right: 150px;
       width: 200px;
       height: 200px;

@@ -6,7 +6,6 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
     }
 `
 export const ContainerWhite = styled.section`
@@ -22,7 +21,7 @@ export const ContainerWhite = styled.section`
     }
 
     @media (min-width: 992px) {
-        padding: 50px 180px;
+        padding: 50px 15%;
     }
 `;
 
@@ -78,12 +77,6 @@ export const SubHeadings = styled.h3`
     font-size: 1.1em;
 `
 
-export const FooterHeading = styled(SectionHeadings)`
-    color: #ffffff;
-    background-color: transparent;
-    padding-bottom: 1rem;
-`
-
 export const SectionText = styled.p`
     font-weight: 400;
     font-size: 1.062em;
@@ -105,10 +98,6 @@ export const SectionText = styled.p`
     }
 
  `
-export const FooterText = styled(SectionText)`
-    color: #fff;
-`
-
 export const ArticleText = styled.p`
     font-family: 'Roboto';
     line-height: 1.81em;
@@ -118,7 +107,6 @@ export const ArticleText = styled.p`
     color: black;
     font-size: 1.1em;
 `
-
 export const Tags = styled.li`
     border-radius: 4px;
     background: none;

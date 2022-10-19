@@ -17,8 +17,13 @@ export const SkillsWrapper = styled.div`
         font-size: 1rem;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 15%;
     }
 
 `

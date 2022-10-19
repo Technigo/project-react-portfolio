@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { FooterHeading, FooterText } from 'Globalstyles';
-import { StyledFooter } from './Footer.styles';
+import { StyledFooter, FooterHeading, FooterText } from './Footer.styles';
 
 const Footer = () => {
   return (
