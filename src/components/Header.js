@@ -9,7 +9,7 @@ export const Header = ({ name, title, titleTwo }) => {
   titleTwo = '& graphic designer';
 
   return (
-    <StyledHeader style={{ backgroundColor: 'violet' }}>
+    <StyledHeader>
       <div>
         <StyledTitle>
           <div>
