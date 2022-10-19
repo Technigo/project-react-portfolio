@@ -1,10 +1,19 @@
 import React from 'react'
+/* import styled from 'styled-components' */
 import myPicture from 'images/my-picture.jpg'
+
+/* const TextHeader = styled.div`
+position: absolute;
+color: black;
+font-family: 'Cabin', sans-serif;
+letter-spacing: 0.04em;
+line-height: 50px;
+` */
 
 const Header = ({ lnIcon, gitHubIcon }) => {
   return (
     <header className="header">
-      <div className="header-container">
+      <div className="container">
         <div className="header-icons">
           <a href="https://www.linkedin.com/in/antonella-cardozo-187562b7/" tabIndex="0" target="_blank" rel="noreferrer">
             <img
