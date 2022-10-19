@@ -7,47 +7,41 @@ import SectionSubHeading from './styled/SectionSubHeading.styled';
 import Paragraph from './styled/Paragraph.styled';
 // import Topic from './styled/Topic.styled';
 // import TopicsContainer from './styled/TopicsContainer.styled';
-import ProjectImage from './styled/ProjectImage.styled';
+import ProjectImg from './styled/ProjectImg.styled';
 
 const FeatProjects = () => {
   return (
     <SectionContainer bg>
       <SectionMainHeading>Featured Projects</SectionMainHeading>
       <ArticleGrid>
+
         <ArticleCard>
-          <div src={ProjectImage} alt="screen shot of web app" />
+          <ProjectImg project1 />
           <SectionSubHeading>Happy Thoughts</SectionSubHeading>
-          <Paragraph grid>description</Paragraph>
+          <Paragraph grid>React project made to practice get/post requests to API.</Paragraph>
         </ArticleCard>
+
         <ArticleCard>
-          <img src={ProjectImage} alt="screen shot of web app" />
-          <SectionSubHeading>Project Movies</SectionSubHeading>
-          <Paragraph grid>description</Paragraph>
+          <ProjectImg project2 />
+          <SectionSubHeading>Movies</SectionSubHeading>
+          <Paragraph grid>Project made to learn React Router, the useParams hook etc.</Paragraph>
         </ArticleCard>
+
         <ArticleCard>
-          <img src={ProjectImage} alt="screen shot of web app" />
+          <ProjectImg project3 />
           <SectionSubHeading>Survey</SectionSubHeading>
-          <Paragraph grid>description</Paragraph>
+          <Paragraph grid>Survey made to get familiar with React and the useState hook.</Paragraph>
         </ArticleCard>
+
         <ArticleCard>
-          <img src={ProjectImage} alt="screen shot of web app" />
+          <ProjectImg project4 />
           <SectionSubHeading>Weather Web App</SectionSubHeading>
-          <Paragraph grid>description</Paragraph>
+          <Paragraph grid>JS project done in pairs to practice working with an API.</Paragraph>
         </ArticleCard>
+
       </ArticleGrid>
     </SectionContainer>
   )
 };
 
 export default FeatProjects;
-
-/* <TopicsContainer>
-{project.topics.sort().reverse().map((topic) => (
-  <Topic>{topic}</Topic>
-))}
-</TopicsContainer> */
-/*
-{repos.filter((project) => (project.description */
-
-/*           <a href={project.html_url}>View repository</a>
-          <a href={project.homepage}>View it live</a> */

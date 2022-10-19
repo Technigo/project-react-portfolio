@@ -17,6 +17,7 @@ const App = () => {
     fetch('https://api.github.com/users/karlfredrikholm/repos')
       .then((res) => res.json())
       .then((data) => setRepos(data))
+      .catch((error) => console.error(error))
   }, []);
 
   console.log(repos)

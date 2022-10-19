@@ -8,7 +8,7 @@ const ArticleGrid = styled.div`
   width: var(--width);
 
   @media (max-width: 650px) {
-    grid: 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 

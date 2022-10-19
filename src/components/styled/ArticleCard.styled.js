@@ -5,7 +5,7 @@ const ArticleCard = styled.article`
   grid: 1fr;
   ${(props) => (props.other ? { margin: 'var(--margin)', width: 'var(--width)' } : null)};
 
-  & img {
+  & div {
     width: 100%;
     margin-bottom: 0.5rem;
     filter: grayscale(50%);
