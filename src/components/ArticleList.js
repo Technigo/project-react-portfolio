@@ -1,34 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const Container = styled.section`
-background: white;
-padding-right: 4em; 
-padding-left: 4em; 
-padding-top: 2em; 
-padding-bottom: 2em; 
-display: grid; 
-grid-template-columns: 1fr 1fr 1fr; 
-@media (min-width: 768px) {
-  padding-right: 10em; 
-  padding-left: 10em;
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em;
-    
-  }`
-
-const SectionHeader = styled.h2`
-  text-align: center;
-  background-color: rgb(185, 0, 91);
-  font-size: 30px;
-  text-transform: uppercase;
-  color: white;
-  padding:3px;
-  font-family:'montserrat', sans-serif;
-  grid-column: 2 / 2;`
+import { ContainerWhite, HeaderContainer, SectionHeader } from 'GlobalStyles';
 
 const Link = styled.a`
 font-family:"Roboto", sans-serif;
@@ -43,8 +15,10 @@ grid-column: 1 / 2; `
 
 const ArticletList = () => {
   return (
-    <Container>
-      <SectionHeader>More thoughts</SectionHeader>
+    <ContainerWhite>
+      <HeaderContainer>
+        <SectionHeader>More thoughts</SectionHeader>
+      </HeaderContainer>
       <List>
         <Link
           href=""
@@ -54,7 +28,7 @@ const ArticletList = () => {
         </Link>
       </List>
 
-    </Container>
+    </ContainerWhite>
   )
 }
 export default ArticletList

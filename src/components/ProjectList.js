@@ -1,69 +1,21 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { ContainerColored, HeaderContainer, SectionHeader, TagWrapper, TagWrapperText } from 'GlobalStyles';
 
 /* ---------- Styled components ----------- */
-const Container = styled.section`
-background: Lightgrey;
-padding-right: 4em; 
-padding-left: 4em; 
-padding-top: 2em; 
-padding-bottom: 2em; 
-display: grid; 
-grid-template-columns: 1fr 1fr 1fr; 
-
-@media (min-width: 768px) {
-  padding-right: 10em; 
-  padding-left: 10em;
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em;
-    
-  }
-  
-   `
-const SectionHeader = styled.h2`
-color:white;
-text-align: center; 
-padding: 3px; 
-grid-column: 2 / 2;`
 
 const Link = styled.a`
 font-family:"Roboto", sans-serif;
 
  `
-
 const List = styled.div`
 display: grid; 
 grid-column: 1 / 2; 
 display: flex; 
 flex-direction:column; 
 `
-const TagWrapper = styled.div`
-display: flex;`
-
 const Icons = styled.span`
 color: orange; `
-
-const TagWrapperText = styled.p`
- font-family: "Roboto", sans-serif;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(185, 0, 91);
-    text-decoration: none;
-    text-align: center;
-    font-size: 12px; 
-    line-height: 12px;
-    padding: 4px;
-    margin: 3px;
-    border-radius: 5px;
-`
-const HeaderContainer = styled.div`
-  display: flex; 
-  justify-content: center;
-  grid-column: span 5; 
-`
 
 const ProjectList = () => {
   /*  -----------------Calling API----------------- */
@@ -83,7 +35,7 @@ const ProjectList = () => {
     .catch((error) => alert(error, 'error'))
 
   return (
-    <Container>
+    <ContainerColored>
       <HeaderContainer>
         <SectionHeader>Other Projects</SectionHeader>
       </HeaderContainer>
@@ -107,7 +59,7 @@ const ProjectList = () => {
         </List>
       ))}
 
-    </Container>
+    </ContainerColored>
   )
 }
 export default ProjectList

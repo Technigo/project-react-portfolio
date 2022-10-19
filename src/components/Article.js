@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { HeaderContainer, SectionHeader } from 'GlobalStyles';
 
 const Container = styled.article`
 background: white;
@@ -22,19 +23,6 @@ grid-template-columns: 1fr 1fr;
   }
 
  `
-const HeaderContainer = styled.div`
- display: flex; 
- justify-content: center;
- grid-column: span 3; 
-`
-const SectionHeader = styled.h2`
-text-align: center;
-  background-color: rgb(185, 0, 91);
-  font-size: 30px;
-  text-transform: uppercase;
-  color: white;
-  padding:3px;
-  font-family:'montserrat', sans-serif;`
 
 /* const SmallContainer = styled.div`
 display: grid;

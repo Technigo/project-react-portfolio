@@ -1,46 +1,13 @@
 
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { ContainerColored, SectionHeader, HeaderContainer } from 'GlobalStyles';
 
-const Container = styled.article`
-background: Lightgrey;
-padding-right: 4em; 
-padding-left: 4em; 
-padding-top: 2em; 
-padding-bottom: 2em; 
-flex-direction: row; 
- display: grid; 
-grid-template-columns: 1fr 1fr; 
-
- @media (min-width: 768px) {
-  padding-right: 10em; 
-  padding-left: 10em;
- 
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em; }
-
- `
 const SmallContainer = styled.div`
 display: flex; 
 flex-direction: row; 
 grid-auto-flow: dense;  
 `
-const HeaderContainer = styled.div`
-  display: flex; 
-  justify-content: center;
-  grid-column: span 4; 
-`
-const SectionHeader = styled.h2`
-   text-align: center;
-  background-color: rgb(185, 0, 91);
-  font-size: 30px;
-  text-transform: uppercase;
-  color: white;
-  padding:3px;
-  font-family:'montserrat', sans-serif;`
 
 const ProjectContainer = styled.div`
 display: flex;
@@ -70,7 +37,7 @@ const Projects = () => {
     .catch((error) => alert(error, 'error'))
 
   return (
-    <Container>
+    <ContainerColored>
       <HeaderContainer>
         <SectionHeader>Projects</SectionHeader>
       </HeaderContainer>
@@ -104,7 +71,7 @@ const Projects = () => {
           </p>
         </div> */}
       </SmallContainer>
-    </Container>
+    </ContainerColored>
   )
 }
 export default Projects

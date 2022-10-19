@@ -1,27 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ContainerColored, Pitch } from 'GlobalStyles';
 
-const Container = styled.div`
-  background-color: rgba(240, 234, 237, 0.8);
-  padding-right: 6em; 
-  padding-left: 6em; 
-  padding-top: 2em; 
-  padding-bottom: 2em; 
-
-  @media (min-width: 768px) {
-  padding-right: 10em; 
-  padding-left: 10em;
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em;
-    
-  }
-   `
-const Pitch = styled.p`
-  font-family:"Roboto", sans-serif;
-  `
 const Line = styled.span`
   border: 1px solid rgb(185, 0, 91);
   width: 40px;
@@ -40,7 +20,7 @@ const Dot = styled.span`
 
 const ElevatorPitch = () => {
   return (
-    <Container>
+    <ContainerColored>
       <Pitch>
         <Line />
         <Dot />
@@ -49,7 +29,7 @@ const ElevatorPitch = () => {
         lorem lorem lorem lorem loren mloren
         lorem lorem lorem lorem loren mloren
       </Pitch>
-    </Container>
+    </ContainerColored>
   )
 }
 

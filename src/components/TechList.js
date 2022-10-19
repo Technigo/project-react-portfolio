@@ -8,7 +8,7 @@ flex-direction: row;
 justify-content: space-evenly; 
 font-family:"Roboto", sans-serif;
 gap: 10px; 
-background-color: lightgrey; 
+background-color: rgba(240, 234, 237, 0.8); 
 
 `
 const HeaderContainer = styled.div`
