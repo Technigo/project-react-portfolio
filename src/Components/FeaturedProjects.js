@@ -1,7 +1,8 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper } from '../Styled components/GlobalStyles'
+import { TagContainer, Tag } from 'Styled components/TagStyles'
+import { OuterWrapper, InnerWrapper, P } from '../Styled components/GlobalStyles'
 import { WhitePinkH2, PinkH3 } from '../Styled components/HeadlineStyles'
 
 const GitHubAPI = 'https://api.github.com/users/jessikalind/repos'
@@ -26,6 +27,9 @@ const FeaturedProjects = () => {
           <ProjectWrapper>
             <WillBeImage />
             <PinkH3>{project.name}</PinkH3>
+            <P>{project.description}</P>
+            <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
+            </TagContainer>
           </ProjectWrapper>)}
       </InnerWrapperFeaturedProjects>
     </OuterWrapper>

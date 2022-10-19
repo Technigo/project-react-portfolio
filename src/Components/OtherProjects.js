@@ -1,6 +1,6 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
+import { TagContainer, Tag } from 'Styled components/TagStyles'
 import { OuterWrapper, InnerWrapper, P, A } from '../Styled components/GlobalStyles'
 import { WhitePinkH2, PinkH3 } from '../Styled components/HeadlineStyles'
 
@@ -36,21 +36,3 @@ const OtherProjects = () => {
 }
 
 export default OtherProjects
-
-const TagContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1vw;
-  padding-top: 20px;
-`
-const Tag = styled.div`
-  background-color:#FDDFE7;
-  color: black;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 11px;
-  padding: 7px; 
-`
