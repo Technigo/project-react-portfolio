@@ -1,0 +1,127 @@
+
+{
+  "tech": [
+    "HTML",
+    "CSS",
+    "Flexbox",
+    "Javascript",
+    "React",
+    "Web Accessibility",
+    "API:s",
+    "Github"
+  ],
+  "projects": [
+    {
+      "project":
+        {
+          "href": "https://silver-profiterole-7224fd.netlify.app/",
+          "image": {
+            "alt": "",
+            "src": ""
+          }, 
+          "title": "Weather app",
+          "description": "Responsive website connected with weather API",
+          "tags": [
+            "API",
+            "HTML",
+            "CSS",
+            "Javascript"
+          ],
+          "github-href": "https://github.com/JosefineEngdahl/project-weather-app"
+        }
+    },
+    {
+      "project":
+        {
+          "href": "https://the-music-release-project.netlify.app/",
+          "image": {
+            "alt": "",
+            "src": ""
+          }, 
+          "title": "Music page",
+          "description": "Responsive music release page made using React",
+          "tags": [
+            "React",
+            "HTML",
+            "CSS",
+            "Javascript"
+          ],
+          "github-href": "https://github.com/Technigo/project-music-releases/pull/221?"
+        }
+    },
+    {
+      "project":
+        {
+          "href": "https://creative-lolly-f0d26c.netlify.app/",
+          "image": {
+            "alt": "",
+            "src": ""
+          }, 
+          "title": "Guess who",
+          "description": "Simple game, practicing working with arrays",
+          "tags": [
+            "HTML",
+            "CSS",
+            "Javascript"
+          ],
+          "github-href": "https://github.com/erilinus/project-guess-who"
+        }
+    },
+    {
+      "project":
+        {
+          "href": "https://subtle-paletas-e779d4.netlify.app/",
+          "image": {
+            "alt": "",
+            "src": ""
+          }, 
+          "title": "Chatbot",
+          "description": "Practice using if-statements to create a chatbot that tells jokes.",
+          "tags": [
+            "HTML",
+            "CSS",
+            "Javascript"
+          ],
+          "github-href": "https://github.com/erilinus/project-chatbot"
+        }
+    }
+  ],
+  "Skills": [
+    {
+      "code": [
+        "Github",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React"
+      ],
+      "toolbox": [
+        "Figma",
+        "Invision",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "more": [
+        "WCAG 2.1",
+        "Graphic design",
+        "Design system"
+      ],
+      "upcoming": [
+        "Redux",
+        "Node.js"
+      ]
+    }
+  ],
+  "some-links": [
+    {
+      "linkedin": "https://linkedin.com/in/linusje",
+      "github": "https://github.com/erilinus",
+      "stackoverflow": "https://stackoverflow.com/c/technigo/users/364"
+    }
+  ],
+  "contact": {
+    "name": "Linus Eriksson",
+    "number": "+46 72 51 66 086",
+    "email": "erilinus@gmail.com"
+  }
+}

@@ -27,3 +27,7 @@ div {
   margin: 0;
   padding: 0;
 }
+
+p {
+  font-size: 1.125rem;
+}
