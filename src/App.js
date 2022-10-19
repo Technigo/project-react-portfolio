@@ -3,7 +3,8 @@ import { Header } from './components/Header';
 import { Intro } from './components/Intro';
 import { Tech } from './components/Tech';
 import { FeatProjects } from './components/FeatProjects';
-import { Other } from './components/Other';
+import { MyThoughts } from './components/MyThoughts';
+import { ForMore } from './components/ForMore';
 import { Footer } from './components/Footer';
 
 export const App = () => {
@@ -13,7 +14,8 @@ export const App = () => {
       <Intro />
       <Tech />
       <FeatProjects />
-      <Other />
+      <MyThoughts />
+      <ForMore />
       <Footer />
     </>
   )

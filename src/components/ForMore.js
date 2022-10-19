@@ -4,7 +4,7 @@ import { SoMeLinks } from './SoMeLinks';
 import linkedinRed from '../assets/linkedinRed.svg';
 import githubRed from '../assets/githubRed.svg';
 
-export const Other = () => {
+export const ForMore = () => {
   return (
     <OuterWrapper>
       <MainHeadline>FOR MORE</MainHeadline>
