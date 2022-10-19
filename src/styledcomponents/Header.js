@@ -126,6 +126,6 @@ const ProfileImage = styled.img`
       right: 15%;
   }
   @media (min-width: 1600px) {
-      right: 28%;
+      right: 20%;
   }
  `;

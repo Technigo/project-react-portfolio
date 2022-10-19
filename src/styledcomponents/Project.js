@@ -6,6 +6,7 @@ export const ProjectGrid = styled.div`
   margin-top: 20px;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr;
     width: 90%;
     margin: 0 auto;
   }
@@ -45,6 +46,8 @@ export const Overlay = styled.div`
   display: flex;
   position: relative;
   margin: 0 auto;
+  z-index: 1;
+  opacity: 70%;
   
   &:hover{
     opacity: 0;
