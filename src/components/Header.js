@@ -70,6 +70,6 @@ const ProfilePicture = styled.img`
     bottom: -30px;
     width: 50%;
     max-width: 250px;
-    border: 2px solid #a0a0a0;
+    border: 2px solid #feffff;
     border-radius: 50%;
     `

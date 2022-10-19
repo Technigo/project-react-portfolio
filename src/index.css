@@ -14,9 +14,8 @@ body {
     monospace;
 } */
 
-h1 {
+h1, h4 {
   font-family: 'Roboto', sans-serif;
-
 }
 
 p {

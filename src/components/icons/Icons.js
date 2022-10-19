@@ -1,23 +1,36 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import GithubHeader from './GithubHeader.svg'
-import LinkedInHeader from './LinkedInHeader.svg'
-import StackOverflowHeader from './stackoverflow-icon.svg'
+import Github from './Github.svg'
+import LinkedIn from './LinkedIn.svg'
+import StackOverflow from './StackOverflow.svg'
 
 export const Icons = () => {
-  const StyledIcons = styled.img`
-    border-radius: 50%;
-    border: 2px solid black;
-    padding: 1%;
-    width: 10vw;
-    filter: invert(1);
-    margin: 1%;
-`
   return (
     <>
-      <StyledIcons src={GithubHeader} alt="Github icon" />
-      <StyledIcons src={LinkedInHeader} alt="Linked in icon" />
-      <StyledIcons src={StackOverflowHeader} alt="Stack Overflow icon" />
+      <StyledLink href="https://www.linkedin.com/in/linneaajger" aria-label="link to Linneas linkedin-profile">
+        <StyledIcons src={LinkedIn} alt="Linked in icon" />
+      </StyledLink>
+      <StyledLink href="https://github.com/LinneaAjger" aria-label="link to Linneas github account">
+        <StyledIcons src={Github} alt="Github icon" />
+      </StyledLink>
+      <StyledLink href="https://stackoverflow.com/users/19495108/linnea-a" aria-label="link to Linneas stack Overflow account">
+        <StyledIcons src={StackOverflow} alt="Stack Overflow icon" />
+      </StyledLink>
     </>
   )
 }
+
+const StyledIcons = styled.img`
+margin: 10px;
+width: 20px;
+`
+
+const StyledLink = styled.a`
+border: 2px solid white;
+border-radius: 50%;
+width: 40px;
+display: flex;
+justify-content: center;
+margin: 3px;
+  
+`
