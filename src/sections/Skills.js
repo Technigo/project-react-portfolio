@@ -3,15 +3,14 @@ import React from 'react';
 
 import { OuterWrapper, InnerWrapper } from 'styles/MainStyles';
 
-const Tech = () => {
+const Skills = () => {
   return (
     <OuterWrapper className="background">
       <InnerWrapper>
-        <h2>Tech</h2>
-        <p>Tech info goes in here</p>
+        <h2>Skills</h2>
+        <p>Skill info goes in here</p>
       </InnerWrapper>
     </OuterWrapper>
   );
 };
-export default Tech;
-
+export default Skills;

@@ -1,18 +1,21 @@
 import React from 'react';
-import Header from 'components/Header';
 
-// import {OuterWrapper, InnerWrapper} from 'styles/MainStyles';
+import Header from 'sections/Header';
 import Description from 'sections/Description';
 import Tech from 'sections/Tech';
 import Projects from 'sections/Projects';
+import Skills from 'sections/Skills';
+import Footer from 'sections/Footer';
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Description />
       <Tech />
       <Projects />
-    </div>
+      <Skills />
+      <Footer />
+    </>
   )
 }

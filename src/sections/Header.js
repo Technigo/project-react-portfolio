@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
     h1 {
       font-size: 3.313rem;
       line-height: 3.5rem;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase;
     }
 
