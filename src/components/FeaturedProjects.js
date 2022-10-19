@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Overlay, ProjectGrid } from 'styledcomponents/Project';
+import { ProjectGrid } from 'styledcomponents/Project';
 import { Section, SectionTitle } from 'styledcomponents/Section';
 import ProjectCard from './ProjectCard';
 
@@ -9,7 +9,7 @@ const FeaturedProjects = () => {
     <Section>
       <SectionTitle>Featured projects </SectionTitle>
       <ProjectGrid>
-        <ProjectCard /> 
+        <ProjectCard />
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
