@@ -51,11 +51,6 @@ const Header = () => {
       line-height: 22px;
     }
 
-    .lighter {
-      font-weight: 300;
-      color: black;
-    }
-
     .header-title {
       margin: 15px 0 8px 0;
       font-weight: 600;

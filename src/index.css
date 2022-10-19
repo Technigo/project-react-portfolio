@@ -10,6 +10,7 @@
   --fifthSubTitle: #4d4d54;
   --sixthTitleSubtitle: #645caa;
   --seventhText: #4d4d54;
+  --buttonBackground:	#cacae0;
 }
 
 body {
@@ -22,6 +23,41 @@ body {
   line-height: 32px;
 
 }
+
+/* .title{
+  /* margin: auto; 
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  align-self: center;
+  letter-spacing: 1px;
+  color: var(--seventhText); 
+  display: inline;
+  justify-content: center;
+} */
+
+.subtitle {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: var(--sixthTitleSubtitle);
+  font-weight: 800;
+  line-height: 30px;
+  margin: 20px 0 10px 0;
+}
+
+.lighter {
+  font-weight: 300;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+.project-button {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 20px 0px;
+  }
 
 /*
 

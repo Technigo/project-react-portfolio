@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
+import TitleButtonStyle from './Shared/TitleButton';
+import TypeBox from './Shared/TypeBox';
 
 const OtherProjects = () => {
   const OtherProjectStyle = styled.div`
@@ -16,26 +18,30 @@ const OtherProjects = () => {
   return (
     <ContentWrapper as="section">
       <OtherProjectStyle>
-        <div className="box-title"><h2 className="title-small">OTHER PROJECTS</h2></div>
-        <div className="box">
+        <TitleButtonStyle />
+        <div className="project-row">
+          <a href="https://kristinandpetrasmusicapp.netlify.app/" target="_blank" rel="noreferrer">
+            <h2 className="subtitle">MUSIC RELEASES <span className="lighter"> - A project in React, fetching data from an API. &gt;&gt;</span></h2>
+          </a>
+          <div className="project-button">
+            <TypeBox
+              type1="HTML5"
+              type2="CSS3"
+              type3="Javascript"
+              type4="React" />
+          </div>
+
           <div className="project-row">
-            <a href="https://kristinandpetrasmusicapp.netlify.app/" target="_blank" rel="noreferrer">
-              <p className="text" role="contentinfo"><span className="project-title-other">MUSIC RELEASES </span> - A project in React, fetching data from an API.</p>
+            <a href="https://chat-bot-table-booker.netlify.app/" target="_blank" rel="noreferrer">
+              <h2 className="subtitle">CHATBOT <span className="lighter"> - A project focusing on basic javascript. &gt;&gt;</span></h2>
             </a>
           </div>
           <div className="project-button">
-            <p className="button">HTML5</p>
-            <p className="button">CSS3</p>
-            <p className="button">Javascript</p>
-            <p className="button">React</p>
-          </div>
-          <div className="project-row">
-            <a href="https://chat-bot-table-booker.netlify.app/" target="_blank" rel="noreferrer"><p className="text" role="contentinfo"><span className="project-title-other">CHATBOT</span> - A project focusing on basic javascript. &gt;&gt;</p></a>
-          </div>
-          <div className="project-button">
-            <p className="button">HTML5</p>
-            <p className="button">CSS3</p>
-            <p className="button">Javascript</p>
+            <TypeBox
+              type1="HTML5"
+              type2="CSS3"
+              type3="Javascript"
+              type4="React" />
           </div>
         </div>
       </OtherProjectStyle>

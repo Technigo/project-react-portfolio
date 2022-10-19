@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
 import TitleButtonStyle from './Shared/TitleButton';
+import TypeBox from './Shared/TypeBox';
 
 const Projects = () => {
   const ProjectStyle = styled.div`
@@ -13,6 +14,7 @@ const Projects = () => {
   // font-family: Montserrat, sans-serif;
   // font-weight: 400;
   // text-align: center;
+  
 `
 
   return (
@@ -31,10 +33,11 @@ const Projects = () => {
               <p className="text" role="contentinfo">A multi-page application showing information about the latest movies. Using React Router and combining `useState` with `useEffect`, passing information in the URL and pick this up in React router to load dynamic content.</p>
             </div>
             <div className="project-button">
-              <p className="button">HTML5</p>
-              <p className="button">CSS3</p>
-              <p className="button">Javascript</p>
-              <p className="button">React</p>
+              <TypeBox
+                type1="HTML5"
+                type2="CSS3"
+                type3="Javascript"
+                type4="React" />
             </div>
           </div>
 
@@ -49,10 +52,11 @@ const Projects = () => {
               <p className="text">A web app that will let you write and post a happy thought. It&apos;s built in react, fetching data using an API. In this project we have been practising `useState` with `useEffect`.</p>
             </div>
             <div className="project-button">
-              <p className="button">HTML5</p>
-              <p className="button">CSS3</p>
-              <p className="button">Javascript</p>
-              <p className="button">React</p>
+              <TypeBox
+                type1="HTML5"
+                type2="CSS3"
+                type3="Javascript"
+                type4="React" />
             </div>
           </div>
 
@@ -67,9 +71,10 @@ const Projects = () => {
               <p className="text" role="contentinfo">A digital version of the classical bord game Guess who, built in javascript. </p>
             </div>
             <div className="project-button">
-              <p className="button">HTML5</p>
-              <p className="button">CSS3</p>
-              <p className="button">Javascript</p>
+              <TypeBox
+                type1="HTML5"
+                type2="CSS3"
+                type3="Javascript" />
             </div>
           </div>
 
@@ -84,9 +89,10 @@ const Projects = () => {
               <p className="text" role="contentinfo">A webb app showing the weather in different cities, fetching data from an API.</p>
             </div>
             <div className="project-button">
-              <p className="button">HTML5</p>
-              <p className="button">CSS3</p>
-              <p className="button">Javascript</p>
+              <TypeBox
+                type1="HTML5"
+                type2="CSS3"
+                type3="Javascript" />
             </div>
           </div>
         </div>

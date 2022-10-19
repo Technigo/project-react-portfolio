@@ -10,3 +10,5 @@ const fetchData = () => {
     .finally(() => console.log('data', gitData))
 }
 useEffect(() => { fetchData() }, []);
+
+
