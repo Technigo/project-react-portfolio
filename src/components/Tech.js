@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 import React from 'react-dom'
+import Global from './Global';
 
 const Tech = () => {
   return (
     <StyledTech>
       <div className="tech-section">
-        <h2 className="first-title">TECH</h2>
+        <Global>Tech</Global>
         <div className="tech-container">
           <p> HTML, CSS, Flexbox, JavaScript ES6,
             JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web

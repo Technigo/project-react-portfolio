@@ -4,17 +4,14 @@ import React from 'react-dom'
 const Intro = () => {
   return (
     <StyledIntro>
-      <div className="intro">
-        <p><span className="line" /><span className="dot" />
-        I am a driven and ambitious frontend developer.
-        </p>
-      </div>
+      <p><span className="line" /><span className="dot" />
+      I am a driven and ambitious frontend developer.
+      </p>
     </StyledIntro>
   );
 }
 
 const StyledIntro = styled.div`
-.intro {
   border: 2px solid green;
   display: flex;
   flex-direction: column;

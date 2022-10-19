@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Background>
       <img className="header-image" src={HeaderImg} alt="background of shapes" />
-      <Profile> <img className="profile" src={ProfileImg} alt="profile" /></Profile>
+      <ProfileImage src={ProfileImg} alt="profile" />
       <HeaderText>
         <h2 className="name">PROTFOLIO: KRISTIN LARSSON</h2>
         <h2 className="frontend">frontend developer</h2>
@@ -29,7 +29,7 @@ height: 450px;
 filter: brightness(70%); }
 `
 
-const Profile = styled.div`
+const ProfileImage = styled.img`
 position: absolute;
 width: 180px;
 right: 10%;
@@ -39,13 +39,13 @@ border-radius: 50%;
 `
 
 const HeaderText = styled.div`
-    width: 220px;
-    height: 202px;
-    top: 121px;
-    left: 10%;
-    text-align: left;
-    position: absolute;
-    color: rgb(255, 255, 255);
+width: 220px;
+height: 202px;
+top: 121px;
+left: 10%;
+text-align: left;
+position: absolute;
+color: rgb(255, 255, 255);
 
 .name {
     font-family: "Roboto", sans-serif;

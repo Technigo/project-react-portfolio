@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import React from 'react-dom'
+import Global from './Global';
 
 const Mythoughts = () => {
   return (
     <StyledMythoughts>
-      <h2 className="first-title">MY THOUGHTS</h2>
+      <Global>My Thoughts</Global>
     </StyledMythoughts>
   );
 }
