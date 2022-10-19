@@ -5,7 +5,7 @@ import React from 'react'
 export const Projects = () => {
     return (
         <div> 
-            <h4>Project</h4>
+            <h3>Featured Projects</h3>
         </div>
     )
 }

@@ -3,6 +3,7 @@
 
 body {
   margin: 0;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -15,18 +16,99 @@ code {
     monospace;
 }
 
-h1 {
-font-family: "Montserrat";
-font-size: 42px;
-font-weight: bolder;
-padding: 5px;
+
+
+h3 {
+  width: auto;
+  display: flex;
+  font-weight: bolder;
+  background-color:  #c85c3b;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  margin: 25px 0 0 0; 
+  text-transform: uppercase;
 }
 
-h2 {
+
+h4 {
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 22px;
+  color: #ba4622;
+  font-weight: bold;
+}
+
+
+h5 {
+  font-weight: bold;
   font-family: "Montserrat";
-  font-size: 30px;
+  color: #ba4622;
+  line-height: 20px; 
+  font-size: 20px;
+  margin: 10px 0 0 10px; 
+  text-transform: uppercase;
 }
 
 p {
- color: red; 
+ 
+  /* border: solid red 2px; */
+  color: black;
+  line-height: 30px; 
+  font-size: 16px;
+  /* display: flex; */
+  text-align: center;
 }
+    
+  @media (min-width: 668px) {
+h4{
+    font-size: 26px;
+    }
+
+    p {
+      font-size: 20px;
+
+    }
+    
+  }
+    @media (min-width: 1024px) {
+
+      h4{
+        font-size: 28px;
+        }
+    
+        p {
+          font-size: 20px;
+    
+        }
+        
+      }
+      
+  
+
+
+b {
+
+  font-weight: bolder;
+}
+
+a {
+
+  text-decoration: none;  
+}
+
+.line {
+  border: 1px solid #333;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;}

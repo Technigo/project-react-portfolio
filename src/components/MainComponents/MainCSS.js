@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Intro } from 'components/MainComponents/Intro'
 import { Skills } from 'components/MainComponents/Skills'
 import { Projects } from 'components/MainComponents/Projects'
@@ -16,20 +16,20 @@ export const Main= () => {
             <Intro/>
         </Body>
 
-         <Body Skills> 
-            <Skills/>
+        <Body Tech> 
+             <Tech/>
         </Body>
 
         <Body Projects> 
             <Projects/>
         </Body>
 
-        <Body Tech> 
-             <Tech/>
-        </Body>
-
-        <Body Thoughts> 
+        {/* <Body Thoughts> 
             <Thoughts/>
+        </Body> */}
+
+        <Body Skills> 
+            <Skills/>
         </Body>
 
         <Body ForMore> 
@@ -41,7 +41,12 @@ export const Main= () => {
 }
 
 const Body = styled.div `
+width: 100 vw;
 height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;  
+margin: auto; 
 
 background-color: ${(props) => 
     props.Intro ? "#f6f5f0" :
@@ -51,4 +56,8 @@ background-color: ${(props) =>
     props.Thoughts ? "#ffffff" :
     props.ForMore ?  "rgb(132, 172, 180)" 
     : "none"};
+
+//     ${(props) => props.Intro && css` 
+// `}  
+
 `

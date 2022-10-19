@@ -17,7 +17,7 @@ export const Header = () => {
     return (
     <HeadNav> 
         <Hero
-        autoplay muted loop playsinline 
+        autoPlay muted loop playsinline 
         className="hero-video" 
         src={HeroVideo}>
         </Hero>
@@ -54,14 +54,45 @@ export const Header = () => {
             </a>
              
         <Text>
-            <p>PORTFOLIO: <b>JOSEFINE ENGDAHL</b></p>
-            <h1 class="main-heading">frontend developer </h1>
-            <h2 class="second-heading" > & business controller</h2>
+            <SmallHead>PORTFOLIO: <b>JOSEFINE ENGDAHL</b></SmallHead>
+            <BigHead>frontend developer </BigHead>
+            <MediumHead> & business controller</MediumHead>
        </Text>
     </HeadNav>
   
  )
 }
+
+const BigHead= styled.div `
+font-family: "Montserrat";
+font-size: 42px;
+font-weight: bolder;
+padding: 5px;
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    font-size: 55px;    
+}
+
+@media (min-width: 1024px) {
+font-size: 66px;   
+}
+`
+
+const MediumHead= styled.div `
+font-family: "Montserrat";
+  font-size: 30px;
+
+  @media (min-width: 1024px) {
+    font-size: 40px;   
+    }
+`
+
+const SmallHead= styled.div `
+@media (min-width: 1024px) {
+    font-size: 25px;   
+    }
+
+`
 
 const HeadNav = styled.div `
 width: 100 vw;
@@ -70,13 +101,20 @@ position: relative;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-`
 
+@media (min-width: 668px) and (max-width: 1024px) {
+height: 50vh;      
+}
+`
 const Hero = styled.video `
 width: 100%;
 height: 65vh;
 object-fit: cover;
 position: relative; 
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    height: 50vh;
+    }
 `
 
 const ProfileImage = styled.img`
@@ -86,6 +124,18 @@ bottom: -10%;
 border-radius: 50%;
 border: 2px solid white;
 position: absolute;
+
+@media (min-width: 668px) and (max-width: 1024px) {   
+width: 175px;  
+right: 10%; 
+}
+
+@media (min-width: 1024px) {
+width: auto;
+right: 15%;
+
+ }
+
 `
 const Icon = styled.img`
 width: 3em;
@@ -93,6 +143,7 @@ right: 50px;
 display: column;
 top: 7%;
 position: absolute;
+
 `
 const Icon2 =styled(Icon) `
 right: 105px;
@@ -108,4 +159,19 @@ color: white;
 top: 25%;
 left: 10%;
 width: 80%; 
+
+@media (min-width: 668px) and (max-width: 1024px) {
+top: 30%;
+ width: 50%;
+left: 15%;
+}
+
+@media (min-width: 1024px) {
+
+    top: 30%; 
+    width: 40%;  
+    left: 20%;
+
+}
+
 `
