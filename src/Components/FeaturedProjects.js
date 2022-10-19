@@ -13,7 +13,8 @@ const FeaturedProjects = () => {
       .then((data) => setProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => project.name === 'project-movies')
+  const filteredProjects = projects.filter((project) => !['project-movies', 'project-happy-thoughts'].includes(project))
+  // project.name.includes('project-movies', 'project-happy-thoughts'))
 
   return (
     <OuterWrapper gray>
