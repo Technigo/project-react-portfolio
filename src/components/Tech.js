@@ -39,10 +39,14 @@ const StyledHeading = styled.div`
     text-align: center;
     font-size: 25px;
     color: white;
-    margin-top: 80px; 
+    margin-top: 80px;
     background-color: #E8415E;
-    padding: 2px 0px;
-    display: block;
+    padding: 2px 5px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  width: fit-content;
+  
 `
 
 const StyledTechText = styled.div`
