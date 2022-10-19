@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-// import Github from '../Assets/linkedin_logotype.svg';
-// import Inkedin from '../Assets/github_logotype';
+import Github from '../../Assets/linkedin_logotype.svg';
+import Inkedin from '../../Assets/github_logotype.svg';
 
 const Icons = () => {
-  const IconsStyle = styled.div`
+  const IconsStyle = styled.img`
   font-size: 2em;
   padding: 10px;
   `;
 
   return (
     <div>
-      <IconsStyle>Icons</IconsStyle>
+      <IconsStyle src={Github} alt="Github Logo" />
+      <IconsStyle src={Inkedin} alt="LinkedIn Logo" />
     </div>
   );
 };

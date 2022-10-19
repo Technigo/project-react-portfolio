@@ -15,7 +15,9 @@ const Footer = () => {
   text-align: center;
 `
   return (
-    <ContentWrapper as="footer" textColor="var(--secondaryBackground)">
+    <ContentWrapper
+      as="footer"
+      backgroundColor="var(--primaryBackground)">
       <FooterStyle>
         <h2 className="contact">CONTACT</h2>
         <p className="text" role="contentinfo">Petra Eriksson</p>

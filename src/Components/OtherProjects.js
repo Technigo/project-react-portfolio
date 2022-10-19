@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
-import TitleButtonStyle from './Shared/TitleButton';
 import TypeBox from './Shared/TypeBox';
 
 const OtherProjects = () => {
@@ -18,10 +17,10 @@ const OtherProjects = () => {
   return (
     <ContentWrapper as="section">
       <OtherProjectStyle>
-        <TitleButtonStyle />
+        <div className="box-title"><h2 className="sub-title">OTHER PROJECTS</h2></div>
         <div className="project-row">
           <a href="https://kristinandpetrasmusicapp.netlify.app/" target="_blank" rel="noreferrer">
-            <h2 className="subtitle">MUSIC RELEASES <span className="lighter"> - A project in React, fetching data from an API. &gt;&gt;</span></h2>
+            <h2 className="small-title">MUSIC RELEASES <span className="lighter"> - A project in React, fetching data from an API. &gt;&gt;</span></h2>
           </a>
           <div className="project-button">
             <TypeBox
@@ -33,7 +32,7 @@ const OtherProjects = () => {
 
           <div className="project-row">
             <a href="https://chat-bot-table-booker.netlify.app/" target="_blank" rel="noreferrer">
-              <h2 className="subtitle">CHATBOT <span className="lighter"> - A project focusing on basic javascript. &gt;&gt;</span></h2>
+              <h2 className="small-title">CHATBOT <span className="lighter"> - A project focusing on basic javascript. &gt;&gt;</span></h2>
             </a>
           </div>
           <div className="project-button">

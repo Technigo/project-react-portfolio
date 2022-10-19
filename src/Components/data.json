@@ -1,0 +1,44 @@
+[
+ {
+    "id": 0,
+    "url": "https://www.spotify.com",
+    "coverName": "name1",
+    "descriptionText": "description1",
+    "photo": "photo"
+  },
+  {
+    "id": 1,
+    "url": "https://www.spotify.com",
+    "coverName": "name2",
+    "descriptionText": "description2",
+    "photo": "photo"
+  }, 
+  {
+    "id": 2,
+    "url": "https://www.spotify.com",
+    "coverName": "name3",
+    "descriptionText": "description3",
+    "photo": "photo"
+  }, 
+  {
+    "id": 3,
+    "url": "https://www.spotify.com",
+    "coverName": "name4",
+    "descriptionText": "description4",
+    "photo": "photo"
+  }, 
+  {
+    "id": 4,
+    "url": "https://www.spotify.com",
+    "coverName": "name5",
+    "descriptionText": "description5",
+    "photo": "photo"
+  }, 
+  {
+    "id": 5,
+    "url": "https://www.spotify.com",
+    "coverName": "name6",
+    "descriptionText": "description6",
+    "photo": "photo"
+  }
+]

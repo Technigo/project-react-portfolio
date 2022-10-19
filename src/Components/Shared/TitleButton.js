@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-export const ColorTitle = () => {
+export const ColorTitle = (props) => {
   const TitleButtonStyle = styled.div`
-  background-color: var(--firstBackground); 
+  background-color: ${props.backgroundColor};
   padding: 15 0 30px 0;
   margin: 0;
   display: flex;
