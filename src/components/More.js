@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hidden } from './GlobalStyles';
+import { Hidden } from './styled-components/GlobalStyles';
 
 const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
   return (
