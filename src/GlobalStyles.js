@@ -11,17 +11,21 @@ const GlobalStyles = createGlobalStyle`
 
 export const ContainerBeige = styled.section`
     background-color: #F3EFE7;
-
     width: 100%;
-    height: 30vh;
-    left: 0px;
-    top: 0px;
-
-    display: block;
+    padding: 50px 0 50px 0;
 `
 
 export const ContainerWhite = styled(ContainerBeige)`
     background-color: #ffffff;
+`
+
+export const StyledGrid = styled.section`
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin: 50px 250px;
 `
 
 export const Subheading = styled.h2`
@@ -31,7 +35,6 @@ export const Subheading = styled.h2`
     text-align: center;
     font-size: 25px;
     color: white;
-    margin-top: 80px;
 
     background-color: #E8415E;
     padding: 2px 10px;
@@ -44,7 +47,7 @@ export const SectionText = styled.p`
     font-size: 15px;
     line-height: 25px;
     margin: 0 auto;
-    padding: 25px 50px 80px 50px;
+    padding: 25px 50px;
     max-width: 600px;
 `
 

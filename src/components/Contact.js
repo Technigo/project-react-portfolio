@@ -27,7 +27,7 @@ export const ContainerColored = styled.section`
     text-align: center;
     font-size: 20px;
     color: white;
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
     .contact__details {

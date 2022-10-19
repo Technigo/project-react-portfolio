@@ -38,12 +38,11 @@ export const StyledSkills = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 50px auto;
+    margin: 50px auto 25px;
     max-width: 768px;
 
     .column1, .column2, .column3 {
         flex: 33.33%;
-        height: 250px;
         text-align: center;
         min-width: 120px;
     }
