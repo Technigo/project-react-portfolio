@@ -2,27 +2,33 @@ import React from 'react'
 // import styled from 'styled-components'
 import { Header } from './components/Header'
 import { Intro } from './components/Intro'
+import { ForMore } from './components/ForMore'
 import { Footer } from './components/Footer'
 import { Knowledge } from './components/Knowledge'
+import { FeaturedProjects } from './components/FeaturedProjects'
 // import { OuterWrapper } from './components/styling'
 
 export const App = () => {
   return (
     <div>
-      {/* <OuterWrapper/> */}
       <Header />
       <Intro />
       <Knowledge />
+      <FeaturedProjects />
+      <ForMore />
       <Footer />
-      {/* </OuterWrapper> */}
     </div>
   )
 }
 
-// export const OuterWrapper = styled.section`
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `
+const options = {
+  method: 'GET',
+  headers: {
+    Authorization: 'token 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'
+  }
+}
+
+fetch('https://api.github.com/users/marwebdesign/repos', options)
+  .then((data) => data.json())
+  // .then((response) => console.log(response))
+  .then((response) => console.log(response[0].name))

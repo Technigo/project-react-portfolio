@@ -1,17 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { InnerWrapper } from './Styling'
 
 export const Footer = () => {
   return (
     <FooterWrapper>
-      <FooterText>
-        <h4>CONTACT</h4>
-        <FooterInformation>
-          <p>Maria Westling</p>
-          <p>+46 70 398 45 54</p>
-          <p>maria_westling@hotmail.com</p>
-        </FooterInformation>
-      </FooterText>
+      <InnerWrapper>
+        <FooterContent>
+          <FooterHeading>CONTACT</FooterHeading>
+          <FooterText>
+            <p>Maria Westling</p>
+            <p>+46 70 398 45 54</p>
+            <p>maria_westling@hotmail.com</p>
+          </FooterText>
+        </FooterContent>
+      </InnerWrapper>
     </FooterWrapper>
   )
 }
@@ -23,9 +26,21 @@ display: flex;
 justify-content: center;
 `
 
-export const FooterText = styled.div`
+export const FooterContent = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+color: white;
+`
+export const FooterHeading = styled.h3`
+font-weight: 700;
+padding-bottom: 25px;
+font-size: 21px;
 `
 
-export const FooterInformation = styled.div`
-
+export const FooterText = styled.div`
+font-size: 15px;
+line-height: 25px;
 `
