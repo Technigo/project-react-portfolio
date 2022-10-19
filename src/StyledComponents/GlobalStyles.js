@@ -12,4 +12,22 @@ export const InnerWrapper = styled.section`
     width: 80%;
     padding-top: 7vh;
     padding-bottom: 7vh;
+    display: flex; 
+    flex-direction: column;
+
+    @media (min-width: 668px) {
+        width: 60%;
+    }
+
+    @media (min-width: 1025px) {
+        width: 50%;
+    }
 `;
+
+export const P = styled.p`
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+`

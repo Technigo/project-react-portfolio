@@ -7,6 +7,7 @@ import FeaturedProjects from 'components/FeaturedProjects';
 import Thoughts from 'components/Thoughts';
 import Skills from 'components/Skills';
 import More from 'components/More';
+import OtherProjects from 'components/OtherProjects';
 
 const Portfolio = () => {
   return (
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <Tech />
       <FeaturedProjects />
       <Thoughts />
+      <OtherProjects />
       <Skills />
       <More />
       <Footer />

@@ -1,10 +1,17 @@
 import React from 'react';
-import { Techwrapper } from 'StyledComponents/TechStyle';
+import { SectionHeading } from 'StyledComponents/HeadlineStyles';
+import { InnerWrapper, OuterWrapper, P } from 'StyledComponents/GlobalStyles'
 
 export const Tech = () => {
   return (
-    <Techwrapper>
-            Tech I know...
-    </Techwrapper>
+    <OuterWrapper>
+      <InnerWrapper>
+        <SectionHeading>TECH</SectionHeading>
+        <P>
+        HTML, CSS, Flexbox, Bootstrap, JavaScript ES6, JSX, React, React Hooks, Redux, Node.js,
+        Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+        </P>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
