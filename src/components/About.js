@@ -7,11 +7,10 @@ const About = () => {
   return (
     <FlexWrapper>
       <Section first>
-        <LineCircle>
-          <Line /><Circle />
-        </LineCircle>
         <SectionText>
-        Hello! My name is Hanna, and I am an aspiring front-end developer.
+          <LineCircle>
+            <Line /><Circle />
+          </LineCircle> Hello! My name is Hanna, and I am an aspiring front-end developer.
         I also have a bachelors degree in Strategic Communication from Lund University.
         I love digital design, being creative as well as the logical sides that come with
         programming. I am passionate about everything that has to do with dogs,
