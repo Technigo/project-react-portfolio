@@ -1,26 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Overlay, OverlayText, ProjectBox, ProjectDescription, ProjectTitle, ProjectWrap } from 'styledcomponents/Project';
 import styled from 'styled-components/macro'
 import Cecilia from '../images/Cecilia.jpeg'
 
 const ProjectCard = () => {
-  const [repos, setRepos] = useState([]);
-
-  fetch('https://api.github.com/users/Sneezan/repos')
-    .then((res) => res.json())
-    .then((json) => {
-      setRepos(json);
-    });
-  console.log(repos);
-
   return (
     <ProjectWrap>
-      <ProjectBox key={repos.id}>
+      <ProjectBox>
         <Overlay> <OverlayText>THE MOVIE PROJECT</OverlayText></Overlay>
         <ProjectBackground src={Cecilia} alt="cecilia" />
       </ProjectBox>
       <ProjectTitle>
-        TITLES!
+              TITLE
       </ProjectTitle>
       <ProjectDescription> This is a description of a project</ProjectDescription>
     </ProjectWrap>

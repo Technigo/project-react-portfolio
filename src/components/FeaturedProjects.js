@@ -10,9 +10,6 @@ const FeaturedProjects = () => {
       <SectionTitle>Featured projects </SectionTitle>
       <ProjectGrid>
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </ProjectGrid>
     </Section>
   );

@@ -5,8 +5,7 @@ export const ProjectGrid = styled.div`
   gap: 10px;
   margin-top: 20px;
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr;
+    grid-template-columns: repeat(2, 1fr);
     width: 90%;
     margin: 0 auto;
   }
