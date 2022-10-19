@@ -1,0 +1,102 @@
+{
+  "Tech": {
+    "items": [
+      {
+        "Technique": "HTML",
+        "id": "1"
+      },
+      {
+        "Technique": "CSS",
+        "id": "2"
+      }
+    ]
+      },
+
+    "Skills": {
+      "Code": [
+        {
+          "Skill": "React",
+          "id": "1"
+        },
+        {
+          "Skill": "React2",
+          "id": "2"
+        },
+        {
+          "Skill": "React3",
+          "id": "3"
+        }
+      ],
+     "Tools": [
+      {
+        "Skill":"Jira",
+        "id": "1"
+       },
+       {
+        "Skill":"VsCode",
+        "id": "2"
+       }
+
+      ],
+      "Other": [
+        {
+          "Skill":"Software Testing",
+          "id": "1"
+         },
+         {
+          "Skill":"Project Management",
+          "id": "2"
+         },
+         {
+          "Skill":"Test Management",
+          "id": "3"
+         },
+         {
+          "Skill":"Leadership",
+          "id": "4"
+         }
+  
+        ],
+        "Upcoming": [
+          {
+            "Skill":"Node.js",
+            "id": "1"
+           },
+           {
+            "Skill":"Adobe Illustrator",
+            "id": "2"
+           }
+    
+          ]
+    },
+    "Projects": {
+      "Project": [
+        {
+          "Project Name": "Project week 1",
+          "id": "1",
+          "url": "http:google.com"
+        },
+        {
+          "Project Name": "Project week 2",
+          "id": "2",
+          "url": "http:google.com"
+        },
+        {
+          "project Name": "Project week 3",
+          "id": "3",
+          "url": "http:google.com"
+        },
+        {
+          "project Name": "Project week 4",
+          "id": "4",
+          "url": "http:google.com"
+        },
+        {
+          "project Name": "Project week 5",
+          "id": "5",
+          "url": "http:google.com"
+        }
+      ]
+    }  
+    
+    }
