@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import linkedinLogo from '../images/linkedin-logo.svg';
+import githubLogo from '../images/github-logo.svg';
+import stackoverflowLogo from '../images/stackoverflow-logo.svg';
 
 const Footer = () => {
   return (
@@ -10,32 +13,26 @@ const Footer = () => {
         petrasoderstrom1612@gmail.com
         </a>
       </div>
-      <div>
+      <section>
         <a href="https://www.linkedin.com/in/petra-soderstrom" target="_blank" rel="noreferrer">
-          <div>
-            <img
-              aria-label="visit my linked in"
-              src="images/linkedin-logo-pink.png"
-              alt="linked-in-icon" />
-          </div>
+          <img
+            aria-label="visit my linked in"
+            src={linkedinLogo}
+            alt="linked-in-icon" />
         </a>
         <a href="https://github.com/Petrasoderstrom1612" target="_blank" rel="noreferrer">
-          <div>
-            <img
-              aria-label="visit my github"
-              src="images/github-logo-pink.png"
-              alt="github-icon" />
-          </div>
+          <img
+            aria-label="visit my github"
+            src={githubLogo}
+            alt="github-icon" />
         </a>
         <a href="https://www.instagram.com/petra_kodar/" target="_blank" rel="noreferrer">
-          <div>
-            <img
-              aria-label="visit my github"
-              src="images/instagram-logo-pink.png"
-              alt="instagram-icon" />
-          </div>
+          <img
+            aria-label="visit my github"
+            src={stackoverflowLogo}
+            alt="instagram-icon" />
         </a>
-      </div>
+      </section>
     </FooterStyler>
   )
 }
@@ -43,8 +40,24 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyler = styled.footer`
+
+background-color: rgb(49, 225, 247);
+
+a{
 display: flex;
 justify-content: center;
-flex-direction: column;
-border-style: solid;
+flex-direction: row;
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  }
+
+section{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
 `
