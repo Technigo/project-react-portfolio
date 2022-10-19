@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
+import { OuterWrapper, InnerWrapper } from 'StyledComponents/GlobalComponents'
 
 const BackgroundInfo = styled.div`
 font-family: 'Montserrat', sans-serif;
@@ -8,8 +9,6 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
     background: #F4F4F4;
 `
 
@@ -30,9 +29,11 @@ height: 10px;
 
 const AboutMe = () => {
   return (
-    <BackgroundInfo>
+    <OuterWrapper>
+      <InnerWrapper>
+        <BackgroundInfo>
 
-      <p> <Line /> <Dot /> Hello! Im an aspiring frontend developer with 8 years of
+          <p> <Line /> <Dot /> Hello! Im an aspiring frontend developer with 8 years of
         experience within office administration
         and with a degree in journalism, and a bachelors
         degree in culture. Autumn of 2021 I decided that
@@ -40,8 +41,10 @@ const AboutMe = () => {
         tech and started to learn how to code. My best soft
         skills are that Im paying a lot of attention to
         details and that Im ambitious.
-      </p>
-    </BackgroundInfo>
+          </p>
+        </BackgroundInfo>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
 

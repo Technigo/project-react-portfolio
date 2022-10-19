@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
+import { OuterWrapper, InnerWrapper, Title } from 'StyledComponents/GlobalComponents'
 
 const OtherProjectsContainer = styled.div`
 font-family: 'Montserrat', sans-serif;
@@ -8,20 +9,26 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
-const Arrow = styled.span`
-color: #FF7777;
-    font-weight: 600;   
+export const Arrow = styled.span`
+color: red;
+font-weight: 600;   
 `
 
 const OtherProjects = () => {
   return (
-    <OtherProjectsContainer>
-      Om projektet <Arrow />
-    </OtherProjectsContainer>
+    <OuterWrapper>
+      <InnerWrapper>
+        <OtherProjectsContainer>
+          <Title>Other projects</Title>
+      Om projektet <Arrow>>></Arrow>
+        </OtherProjectsContainer>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
 

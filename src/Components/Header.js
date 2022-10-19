@@ -1,7 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-/* import OuterWrapper from 'StyledComponents/GlobalComponents'; */
+import { OuterWrapper } from '../StyledComponents/GlobalComponents'
+import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
+import background from '../images/background.jpg'
 
 const Headerbackground = styled.header`
 width: 100%;
@@ -9,7 +11,7 @@ width: 100%;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    background-color: lightblue;
+    background-image: url(${background});
 `;
 
 const ProfileImage = styled.img`
@@ -18,6 +20,8 @@ position: absolute;
     bottom: -10%;
     border: 2px solid white;
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
 `
 
 const TextContainer = styled.div`
@@ -35,14 +39,16 @@ position: absolute;
 
 const Header = () => {
   return (
-    <Headerbackground>
-      <ProfileImage src="/images/ceciliaportfolio.jpg" />
-      <TextContainer>
-        <h3 className="first-heading">Portfolio: Cecilia Rådén</h3>
-        <h1 className="second-heading">frontend developer</h1>
-        <h2 className="third-heading">with an administrative background</h2>
-      </TextContainer>
-    </Headerbackground>
+    <OuterWrapper>
+      <Headerbackground>
+        <ProfileImage src={ceciliaportfolio} alt="Picture of Cecilia" />
+        <TextContainer>
+          <h3 className="first-heading">Portfolio: Cecilia Rådén</h3>
+          <h1 className="second-heading">frontend developer</h1>
+          <h2 className="third-heading">with an administrative background</h2>
+        </TextContainer>
+      </Headerbackground>
+    </OuterWrapper>
   )
 }
 

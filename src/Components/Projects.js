@@ -1,9 +1,13 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
+import { InnerWrapper, OuterWrapper, Title } from 'StyledComponents/GlobalComponents'
 
 const MyProjects = styled.div`
 background: #F4F4F4;
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 
 const TextContainerProjects = styled.h1`
@@ -30,21 +34,32 @@ font-family: "Roboto", sans-serif;
 `
 
 const Projects = () => {
+/*  const [projects, SetProjects] = useState([])
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/CeciliaMichele/repos')
+      .then((res) => res.json())
+      .then((data) => SetProjects(data))
+  }, []) */
+
   return (
-    <MyProjects>
-      <TextContainerProjects>
-        <h1>Namn på projekt</h1>
-        <p>Om Projektet</p>
-        <Tags>
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>JavaScript</p>
-          <p>React</p>
-          <p>Pair-Programming</p>
-          <p>API</p>
-        </Tags>
-      </TextContainerProjects>
-    </MyProjects>
+    <OuterWrapper>
+      <InnerWrapper>
+        <MyProjects>
+          <Title>Featured projects</Title>
+          <TextContainerProjects>
+            <Tags>
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>JavaScript</p>
+              <p>React</p>
+              <p>Pair-Programming</p>
+              <p>API</p>
+            </Tags>
+          </TextContainerProjects>
+        </MyProjects>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
 
