@@ -6,6 +6,7 @@ import heroLinkedin from 'assets/linkedin-icon.svg';
 import heroGithub from 'assets/github-icon.svg';
 import heroStackOverflow from 'assets/stackoverflow-icon.svg';
 import profileImage from 'assets/profileImage-4.jpg';
+import { GITHUB_URL, LINKEDIN_URL, STACKOVERFLOW_URL } from 'utils/Urls';
 
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
@@ -120,13 +121,13 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <HeaderIcons>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
           <img src={heroLinkedin} alt="LinkedIn icon for the header" />
         </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
           <img src={heroGithub} alt="Github icon for the header" />
         </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
           <img
             src={heroStackOverflow}
             alt="Stack Overflow icon for the header" />
@@ -134,8 +135,8 @@ export const Header = () => {
       </HeaderIcons>
       <HeaderTitle>
         <h3>Portfolio: Sofia Andersson</h3>
-        <h1>Front-End</h1>
-        <h1>Developer</h1>
+        <h1>frontend</h1>
+        <h1>developer</h1>
       </HeaderTitle>
       <HeaderImage>
         <img src={profileImage} alt="Mrs Cakes" />
