@@ -5,19 +5,21 @@ import Header from './components/Header';
 import Summary from './components/Summary';
 import Tech from './components/Tech';
 import FeatProjects from './components/FeatProjects';
-
+import OtherProjects from './components/OtherProjects';
+import Thoughts from './components/Thoughts';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 
 const App = () => {
   const [repos, setRepos] = useState([]);
-  console.log(repos)
 
   useEffect(() => {
     fetch('https://api.github.com/users/karlfredrikholm/repos')
       .then((res) => res.json())
       .then((data) => setRepos(data))
   }, []);
+
+  console.log(repos)
 
   return (
     <>
@@ -27,7 +29,9 @@ const App = () => {
           <Header />
           <Summary />
           <Tech />
-          <FeatProjects repos={repos} />
+          <FeatProjects />
+          <OtherProjects repos={repos} />
+          <Thoughts />
           <Skills />
           <Footer />
         </InnerWrapper>

@@ -5,23 +5,32 @@ import ArticleCard from './styled/ArticleCard.styled';
 import SectionMainHeading from './styled/SectionMainHeading.styled';
 import SectionSubHeading from './styled/SectionSubHeading.styled';
 import Paragraph from './styled/Paragraph.styled';
-import TopicLabels from './styled/TopicLabel.styled';
+// import Topic from './styled/Topic.styled';
+// import TopicsContainer from './styled/TopicsContainer.styled';
 
-const FeatProjects = ({ repos }) => {
+const FeatProjects = () => {
   return (
     <SectionContainer bg>
       <SectionMainHeading>Featured Projects</SectionMainHeading>
       <ArticleGrid>
-        {repos.map((project) => (project.description
-          ? <ArticleCard key={project.id}>
-            <SectionSubHeading>{project.name}</SectionSubHeading>
-            <Paragraph grid>{project.description}</Paragraph>
-            <TopicLabels><p>{project.topics}</p></TopicLabels>
-          </ArticleCard>
-          : null))}
+        <ArticleCard>
+          <SectionSubHeading>name</SectionSubHeading>
+          <Paragraph grid>description</Paragraph>
+        </ArticleCard>
       </ArticleGrid>
     </SectionContainer>
   )
 };
 
 export default FeatProjects;
+
+/* <TopicsContainer>
+{project.topics.sort().reverse().map((topic) => (
+  <Topic>{topic}</Topic>
+))}
+</TopicsContainer> */
+/*
+{repos.filter((project) => (project.description */
+
+/*           <a href={project.html_url}>View repository</a>
+          <a href={project.homepage}>View it live</a> */
