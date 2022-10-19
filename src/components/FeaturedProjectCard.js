@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FeaturedProject from 'FeaturedProject.json';
 
-const FeaturedProjectCard2 = ({ color, tagColor }) => {
+const FeaturedProjectCard = ({ color, tagColor }) => {
   const GITHUB_NAME = 'Sofia-Andersson';
 
   return (
@@ -38,7 +38,7 @@ const FeaturedProjectCard2 = ({ color, tagColor }) => {
   );
 };
 
-export default FeaturedProjectCard2;
+export default FeaturedProjectCard;
 
 const Wrapper = styled.div`
   width: 80%;
@@ -58,7 +58,7 @@ const Wrapper = styled.div`
 `;
 
 const SectionHeader = styled.h2`
-  font-size: 50px;
+  font-size: 48px;
   line-height: 1;
   padding: 10px 15px;
   margin-bottom: 100px;

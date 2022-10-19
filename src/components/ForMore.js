@@ -12,11 +12,15 @@ export const ForMoreContainer = styled.section`
   position: relative;
 `;
 
-export const ForMoreHeading = styled.section`
-  position: absolute;
+export const ForMoreHeading = styled.h2`
   font-size: 48px;
-  background-color: #fa392f;
+  line-height: 1;
+  padding: 10px 15px;
+  margin-bottom: 100px;
+  font-family: "Montserrat Bold";
+  background-color: ${(props) => props.color};
   color: white;
+  display: inline;
   
   @media (max-width: 1023px) {
   font-size: 22px;
@@ -110,10 +114,10 @@ export const ForMoreIcons = styled.div`
   }
 `;
 
-export const ForMore = () => {
+export const ForMore = ({ color }) => {
   return (
     <ForMoreContainer>
-      <ForMoreHeading>FOR MORE</ForMoreHeading>
+      <ForMoreHeading color={color}>FOR MORE</ForMoreHeading>
       <ForMoreIcons>
         <div className="iconContainer">
           <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
