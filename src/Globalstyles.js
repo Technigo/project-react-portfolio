@@ -41,18 +41,6 @@ export const GridWrapper = styled.div`
     }
 `;
 
-export const ProjectCard = styled.article`
-    width: 100%;
-    max-width: 1300px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 50px;
-    background-color: ${({ bgColor }) => (bgColor ? '#ffffff' : '#eeeeee')};
-    @media screen and (max-width: 960px) {
-    padding: 0 30px;
-    }
-`;
-
 export const SectionHeadings = styled.h2`
     font-family: 'Montserrat';
     font-style: normal;
