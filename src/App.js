@@ -1,8 +1,15 @@
 import React from 'react'
-import FetchInfo from './components/FetchInfo'
+import { Reset } from 'styled-reset'
+import { GlobalStyle } from './Global'
+import { Main } from './components/Main'
 
 export const App = () => {
   return (
-    <FetchInfo />
+    <>
+      <Reset />
+      <GlobalStyle />
+      <Main />
+    </>
   )
 }
+
