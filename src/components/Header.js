@@ -1,14 +1,23 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { Icons } from './icons/Icons'
+import { Icons } from './Icons'
 import header2 from './images/header2.jpg'
 import profile3 from './images/profile3.jpeg'
+import { IconGroup } from './globalStyling'
 
 export const Header = () => {
   return (
     <HeaderStyling>
-      <IconGroup>
-        <Icons />
+      <IconGroup
+        position="absolute"
+        top="5%"
+        right="7%"
+        justifyContent="flex-end">
+        <Icons
+          iconWidth="20px"
+          iconMargin="10px"
+          boxMargin="3px"
+          boxWidth="40px" />
       </IconGroup>
       <Headlines>
         <h1>PORTFOLIO: <span>LINNÉA AJGER</span></h1>
@@ -56,14 +65,6 @@ const Headlines = styled.div`
     }
     `
 
-const IconGroup = styled.div`
-    position: absolute;
-    top: 5%;
-    right: 7%;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  `
 const ProfilePicture = styled.img`
     position: absolute;
     right: 10%;

@@ -37,3 +37,12 @@ export const StyledH4 = styled.h4`
     color: #2f694d;
     text-transform: uppercase;
 `
+
+export const IconGroup = styled.div`
+    position: ${(props) => (props.position)};
+    top: ${(props) => (props.top)};
+    right: ${(props) => (props.right)};
+    display: flex;
+    width: 100%;
+    justify-content:${(props) => (props.justifyContent)};
+  `
