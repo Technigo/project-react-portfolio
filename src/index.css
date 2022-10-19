@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-pink: #FBEAE4;
+
+  --font-main: 'Poppins';
+}
+
+*,
+body,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
