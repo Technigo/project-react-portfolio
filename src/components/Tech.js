@@ -8,10 +8,17 @@ const Tech = () => {
       <div className="tech-section">
         <Global>Tech</Global>
         <div className="tech-container">
-          <p> HTML, CSS, Flexbox, JavaScript ES6,
-            JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web
-            Accessibility, API:s, mob-programming, pair-programming, Github.
-          </p>
+          <TechText>
+            <span className="highlight">HTML</span>,
+            <span className="highlight">CSS</span>,
+            <span className="highlight">Flexbox</span>,
+            <span className="highlight">Grids</span>,
+            <span className="highlight">JavaScript ES6</span>, Wordpress, Hybris CMS, Wix website creator, JSX,
+            <span className="highlight">React</span>, React Hooks, Redux, Vue,
+            Node.js, Mongo DB, PHP, SQL, Webb accessibility, API:S,
+            mob-programming, pair-programming, Github,
+            <span className="highlight">Adobe Creative Suite</span>.
+          </TechText>
         </div>
       </div>
     </StyledTech>
@@ -20,21 +27,39 @@ const Tech = () => {
 
 const StyledTech = styled.div`
 .tech-section {
-    width: 100%;
-    height: 300px;
-    padding-top: 35px;
-    text-align: center;
-    background-color:#FFF6EA;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lime;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  background-color:#FFF6EA;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 35px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+`
+
+const TechText = styled.p`
+width: 80%;
+font-style: 400;
+line-height: 29px;
+margin: 0;
+word-wrap: break-word;
+text-align: center;
+
+.highlight {
+  color: #d54887;
 }
 `
 

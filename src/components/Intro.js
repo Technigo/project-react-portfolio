@@ -12,13 +12,12 @@ const Intro = () => {
 }
 
 const StyledIntro = styled.div`
-  border: 2px solid green;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  text-align: left;
-  align-items: center;
-  justify-content: center;  
+border: 2px solid hotpink;
+display: flex;
+flex-direction: column;
+height: 350px;
+align-items: center;
+justify-content: center;  
 }
 
 .line {
