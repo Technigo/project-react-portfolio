@@ -1,14 +1,10 @@
 import styled from 'styled-components/macro'
 
-export const Body = styled.body`
-    background-color: white;
+export const OuterWrapper = styled.div`
+background-color: white;
     font-family: "Montserrat", "Roboto", sans-serif;
-`
-export const OuterWrapper = styled.section`
-  width: 100%;
-  margin: 0;
-  text-align: left;
-  padding: 2rem 0; //används ej nu - se över
+  //margin-left: 5vw;
+    //margin-right: 5vw;
 `
 export const InnerWrapper = styled.div`
   width: 80%;
@@ -41,9 +37,12 @@ export const Text = styled.p`
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
-    line-height: 4vh;
+    line-height: 3vh;
     padding: 1rem 0;
     // props för InfoP
+    @media (min-width: 1024px) {
+        line-height: 4vh;
+        }
 `
 export const Link = styled.a`
     border-radius: 50%;
@@ -85,4 +84,12 @@ export const Icon = styled.svg`
         transform: translate(-40%, -40%);
     }
     }
+    `
+export const H5Head = styled.h5`
+    color: #990000;
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      text-align: center;
     `

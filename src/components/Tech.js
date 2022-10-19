@@ -22,7 +22,7 @@ const Tech = () => {
 
 export default Tech
 
-const H4Wrapper = styled.div`
+export const H4Wrapper = styled.div`
     display: flex;
     justify-content: center;
 `

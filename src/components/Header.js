@@ -14,7 +14,7 @@ const Header = () => {
         <SocialLinks />
       </LinkContainer>
       <HeaderInfo tabIndex="0">
-        <h3>Portfolio: <span>Sarah Kneedler</span></h3>
+        <h3>Portfolio: <SpanName>Sarah Kneedler</SpanName></h3>
         <h1>frontend developer</h1>
         <h2>+ with a philosophy bachelor in social work</h2>
       </HeaderInfo>
@@ -34,12 +34,20 @@ export default Header;
 const HeaderBackground = styled.header`
     background-image: url(${HeadImg});;
     position: relative;
-    height: 60vh;
+    height: 45vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 768px) {
+      height: 50vh;
+    }
+
+    @media (min-width: 1024px) {
+      height: 60vh;
+    }
     `
 const LinkContainer = styled.nav`
     display: flex;
@@ -52,6 +60,11 @@ const LinkContainer = styled.nav`
       margin-right: 10vw;
       margin-top: 10vh;
     };
+
+    @media (min-width: 1024px) {
+      margin-right: 17vw;
+      margin-top: 13vh;
+    }
     `
 const HeaderInfo = styled.div`
     display: flex;
@@ -60,18 +73,18 @@ const HeaderInfo = styled.div`
     width: 70vw;
     height: 25vh;
     left: 10%;
-    top: 30%;
+    top: 25%;
     color: white; 
 
     @media (min-width: 768px) {
-        width: 380px;
-      left: 12vw;
-      top: 25vh;
+        width: 35vw;
+        left: 12vw;
+        top: 15vh;
     }
 
     @media (min-width: 1024px) {
-      left: 23vw;
-      top: 25vh;
+      top: 20vh;
+      left: 20vw;
     }
 
     h1 {
@@ -84,6 +97,10 @@ const HeaderInfo = styled.div`
     @media (min-width: 768px) {
         font-size: 40px;
     }
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+    }
   }
   h2 {
     font-weight: 400;
@@ -91,6 +108,9 @@ const HeaderInfo = styled.div`
 
     @media (min-width: 768px) {
         font-size: 30px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 35px;
     }
   }
   h3 {
@@ -101,45 +121,53 @@ const HeaderInfo = styled.div`
     @media (min-width: 768px) {
         font-size: 19px
     }
-  }
-  span {
-    font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-weight: 400;
-    display: block;
-    font-weight: bold;
-
-    @media (min-width: 768px) {
-    font-size: 19px;
-      display: inline
+    @media (min-width: 1024px) {
+      font-size: 24px;
     }
+  }
+`
+const SpanName = styled.span`
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  display: block;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 19px;
+    display: inline
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    display: inline
   }
 `
 const ProfileImg = styled.img`
     position: absolute;
     right: 10%;
-    bottom: -15%;
-    width: 180px;
-    height: 180px;
+    bottom: -6vh;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     border: 2px solid whitesmoke;
     overflow: hidden;
     object-fit: cover;
     
     @media (min-width: 768px) {
-        height: 230px;
-      width: 230px;
+        height: 10rem;
+      width: 10rem;
       border: 3px solid white;
-      right: 12vw;
-      top: 325px;
+      right: 15vw;
+      bottom: -6vh;
         //Ändra dessa 
     }
 
     @media (min-width: 1024px) {
-        height: 250px;
-      width: 250px;
+        height: 13rem;
+      width: 13rem;
       right: 18vw;
-      top: 300px;
+      bottom: -7vh;
     }
   `
