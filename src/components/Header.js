@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from 'images/Portfolio-image.jpg'
+import backgroundImg from 'images/Header-image.jpg'
 
 export const Header = ({ name, title, titleTwo }) => {
   name = 'Portfolio: Ulrika Öhman';
@@ -26,10 +27,11 @@ export const Header = ({ name, title, titleTwo }) => {
 };
 
 const StyledHeader = styled.header`
+background-image: url(${backgroundImg});
     color: blue;
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     left: 0px;
     top: 0px;
 

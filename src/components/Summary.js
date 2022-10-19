@@ -1,34 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Summary = ({ summaryText }) => {
-  summaryText = 'Hello! I am a creative and experienced graphic designer with frontend developer skills. I am all about problem solving and creating awesome, meaningful products for people to love.';
-
+export const Summary = () => {
   return (
-    <StyledSummaryBackground style={{ backgroundColor: '#F3EFE7' }}>
-      <div>
-        <StyledSummaryText>
-          <div>{summaryText}</div>
-        </StyledSummaryText>
+    <StyledSummary style={{ backgroundColor: '#F3EFE7' }}>
+      <div className="summary__container">
+        <p>
+        Hello! I am a creative and experienced graphic designer with frontend developer skills.
+        I’m all about problem solving and creating awesome, meaningful products for people to love.
+        </p>
       </div>
-    </StyledSummaryBackground>
+    </StyledSummary>
   )
 };
 
-const StyledSummaryBackground = styled.div`
-color: black;
-
+const StyledSummary = styled.div`
     width: 100%;
     height: 30vh;
     left: 0px;
     top: 0px;
 
     display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+    align-items: center;
+    justify-content: center;
 
-const StyledSummaryText = styled.div`
+p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -37,5 +33,6 @@ const StyledSummaryText = styled.div`
     margin: 0 auto;
     padding: 25px 50px 80px 50px;
     max-width: 600px;
+}
 `;
 
