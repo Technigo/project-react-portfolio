@@ -2,6 +2,13 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+:root {
+    --main-beige: rgb(247, 236, 222);
+    --main-pastel-beige: rgb(233, 218, 193);
+    --main-peach: rgb(250, 112, 112);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -12,10 +19,66 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     font-family: 'Cabin', sans-serif;
 }
+
+section:nth-child(2n) {
+    background-color: var(--main-pastel-beige);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section:nth-child(2n+1) {
+    background-color: var(--main-beige);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+h2 span {
+    background-color: var(--main-peach);
+    padding: 0 0.2em;
+    border-radius: 5px;
+}
+
+a:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--main-peach);
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
 `
 export const Container = styled.div`
 width: 327px;
 margin: 0 auto;
 `
+export const Hidden = styled.span`
+    position:absolute;
+    left:-10000px;
+    top: auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}`
 
 export default GlobalStyles;

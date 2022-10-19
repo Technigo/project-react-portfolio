@@ -1,4 +1,5 @@
 import React from 'react';
+import { Hidden } from './GlobalStyles';
 
 const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
   return (
@@ -17,7 +18,7 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
                 className="header-icon"
                 src={lnIcon}
                 alt="linkedin icon" />
-              <span className="sr-only">LinkedIn</span>
+              <Hidden LinkedIn />
             </a>
             <p>LINKEDIN</p>
           </div>
@@ -32,7 +33,7 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
                 className="header-icon"
                 src={gitHubIcon}
                 alt="github icon" />
-              <span className="sr-only">Github</span>
+              <Hidden GITHUB />
             </a>
             <p>GITHUB</p>
           </div>
@@ -47,7 +48,7 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
                 className="header-icon"
                 src={discordIcon}
                 alt="discord icon" />
-              <span className="sr-only">Discord</span>
+              <Hidden DISCORD />
             </a>
             <p>DISCORD</p>
           </div>
