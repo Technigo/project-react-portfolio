@@ -7,6 +7,7 @@ import SectionSubHeading from './styled/SectionSubHeading.styled';
 import Paragraph from './styled/Paragraph.styled';
 // import Topic from './styled/Topic.styled';
 // import TopicsContainer from './styled/TopicsContainer.styled';
+import ProjectImage from './styled/ProjectImage.styled';
 
 const FeatProjects = () => {
   return (
@@ -14,7 +15,23 @@ const FeatProjects = () => {
       <SectionMainHeading>Featured Projects</SectionMainHeading>
       <ArticleGrid>
         <ArticleCard>
-          <SectionSubHeading>name</SectionSubHeading>
+          <div src={ProjectImage} alt="screen shot of web app" />
+          <SectionSubHeading>Happy Thoughts</SectionSubHeading>
+          <Paragraph grid>description</Paragraph>
+        </ArticleCard>
+        <ArticleCard>
+          <img src={ProjectImage} alt="screen shot of web app" />
+          <SectionSubHeading>Project Movies</SectionSubHeading>
+          <Paragraph grid>description</Paragraph>
+        </ArticleCard>
+        <ArticleCard>
+          <img src={ProjectImage} alt="screen shot of web app" />
+          <SectionSubHeading>Survey</SectionSubHeading>
+          <Paragraph grid>description</Paragraph>
+        </ArticleCard>
+        <ArticleCard>
+          <img src={ProjectImage} alt="screen shot of web app" />
+          <SectionSubHeading>Weather Web App</SectionSubHeading>
           <Paragraph grid>description</Paragraph>
         </ArticleCard>
       </ArticleGrid>
