@@ -5,13 +5,13 @@ import { BLOOMSY_URL, LOVELITS_URL } from 'utils/Urls';
 import Bloomsy from 'assets/newssite.png'
 import Lovelits from 'assets/chatbot.png'
 
-import { SectionTitle, Wrapper, Heading, Paragraph, TagIcons } from './GlobalStyles';
+import { SectionTitle, Wrapper, Heading, ProjectParagraph, TagIcons, GridWrapper } from './GlobalStyles';
 
 export const FeaturedProjects = () => {
   return (
     <Wrapper primary>
       <SectionTitle>FEATURED PROJECTS</SectionTitle>
-      <ProjectList>
+      <GridWrapper>
         <ProjectCard>
           <a
             href={BLOOMSY_URL}
@@ -64,24 +64,11 @@ export const FeaturedProjects = () => {
             <p className="tag-github-icon">Github</p>
           </TagIcons>
         </ProjectCard>
-      </ProjectList>
+      </GridWrapper>
     </Wrapper>
   )
 };
 
-const ProjectList = styled.article`
-  display: grid;
-  grid-template-columns: 100%;
-
-  @media (min-width: 668px) and (max-width: 1023px){
-    grid-template-columns: 50% 50%;
-}
-
-    @media (min-width: 1024px){
-        grid-template-columns: 50% 50%;
-    }
-         
-`
 const ProjectCard = styled.div`
 display: grid;
 grid-template-columns: 100%;
@@ -146,7 +133,3 @@ position: absolute;
     }
 `
 
-const ProjectParagraph = styled(Paragraph)`
-line-height: 20px;
-margin: 5% 2%;
-`

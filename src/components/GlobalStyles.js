@@ -31,6 +31,12 @@ line-height: 30px;
   font-size: 16px;
 }
 `
+export const ProjectParagraph = styled(Paragraph)`
+line-height: 20px;
+margin: 5% 2%;
+display: inline;
+`
+
 export const Heading = styled.h3`
 margin: 2%;
     color: #614124;
@@ -102,7 +108,7 @@ display: inline-block;
     background-color: #006f45;
     margin: 0 5px 5px 0;
     padding: 5px;
-    color: white;
+    color: ${(props) => (props.primary ? '#006f45' : 'white')};
     font-size: 10px;
     }
 
@@ -121,4 +127,17 @@ display: inline-block;
     font-size: 12px;
   }
 }
+`
+export const GridWrapper = styled.section`
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media (min-width: 668px) and (max-width: 1023px){
+    grid-template-columns: 50% 50%;
+}
+
+    @media (min-width: 1024px){
+        grid-template-columns: 50% 50%;
+    }
+         
 `
