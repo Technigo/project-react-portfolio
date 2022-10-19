@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
 `
 export const ContainerWhite = styled.section`
@@ -53,7 +54,7 @@ export const ProjectCard = styled.article`
     }
 `;
 
-export const SubHeadings = styled.h2`
+export const SectionHeadings = styled.h2`
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -66,6 +67,22 @@ export const SubHeadings = styled.h2`
     padding: 0 1%;
     margin-bottom: 20px;
 `;
+
+export const SubHeadings = styled.h3`
+    font-family: 'Roboto';
+    padding: 10px 0;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #f96666;
+    font-size: 1.1em;
+`
+
+export const FooterHeading = styled(SectionHeadings)`
+    color: #ffffff;
+    background-color: transparent;
+    padding-bottom: 1rem;
+`
 
 export const SectionText = styled.p`
     font-weight: 400;
@@ -88,6 +105,19 @@ export const SectionText = styled.p`
     }
 
  `
+export const FooterText = styled(SectionText)`
+    color: #fff;
+`
+
+export const ArticleText = styled.p`
+    font-family: 'Roboto';
+    line-height: 1.81em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: black;
+    font-size: 1.1em;
+`
 
 export const Tags = styled.li`
     border-radius: 4px;

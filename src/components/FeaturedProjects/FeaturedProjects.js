@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerWhite, SubHeadings } from 'Globalstyles';
+import { ContainerWhite, SectionHeadings } from 'Globalstyles';
 
 const FeaturedProjects = () => {
   return (
     <ContainerWhite>
-      <SubHeadings>FEATURED PROJECTS</SubHeadings>
+      <SectionHeadings>FEATURED PROJECTS</SectionHeadings>
     </ContainerWhite>
   )
 }

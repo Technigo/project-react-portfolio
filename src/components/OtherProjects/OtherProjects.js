@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerGrey, SubHeadings } from 'Globalstyles';
+import { ContainerGrey, SectionHeadings } from 'Globalstyles';
 
 const OtherProjects = () => {
   return (
     <ContainerGrey>
-      <SubHeadings>OTHER PROJECTS</SubHeadings>
+      <SectionHeadings>OTHER PROJECTS</SectionHeadings>
     </ContainerGrey>
   )
 }

@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerGrey, SubHeadings } from 'Globalstyles';
+import { ContainerGrey, SectionHeadings } from 'Globalstyles';
 
 const ForMore = () => {
   return (
     <ContainerGrey>
-      <SubHeadings>FOR MORE</SubHeadings>
+      <SectionHeadings>FOR MORE</SectionHeadings>
     </ContainerGrey>
   )
 }

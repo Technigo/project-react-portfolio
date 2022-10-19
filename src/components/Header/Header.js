@@ -1,7 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { HeaderSocialBar } from 'components/SocialBars/SocialBar.styles'
-import { StyledHeader, HeaderText, ProfilePic } from './Header.styles.js';
+import { StyledHeader, HeaderText, ProfilePic, HeaderSocialBar } from './Header.styles.js';
 
 const Header = () => {
   return (
