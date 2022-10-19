@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionHeading = styled.h3`
+const SectionMainHeading = styled.h3`
   background-color: var(--main-color);
   color: white;
   font-size: 1.5rem;
@@ -12,4 +12,4 @@ const SectionHeading = styled.h3`
   text-transform: uppercase;
 `
 
-export default SectionHeading;
+export default SectionMainHeading;

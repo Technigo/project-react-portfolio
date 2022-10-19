@@ -6,6 +6,10 @@ const SectionSubHeading = styled.h4`
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: capitalize;
+
+  @media (max-width: 650px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export default SectionSubHeading;

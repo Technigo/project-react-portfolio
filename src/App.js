@@ -4,6 +4,7 @@ import { OuterWrapper, InnerWrapper } from 'components/styled/Wrappers.styled';
 import Header from './components/Header';
 import Summary from './components/Summary';
 import Tech from './components/Tech';
+import FeatProjects from './components/FeatProjects';
 
 import Skills from './components/Skills';
 import Footer from './components/Footer';
@@ -17,6 +18,7 @@ const App = () => {
           <Header />
           <Summary />
           <Tech />
+          <FeatProjects />
           <Skills />
           <Footer />
         </InnerWrapper>
