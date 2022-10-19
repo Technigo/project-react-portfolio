@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BigThought from './BigThought';
 import OtherThought from './OtherThought';
+import { SubHeading } from './ReusableStyles.style';
 // import { GridWrapper } from './ReusableStyles.style';
 
 const Thoughts = () => {
@@ -11,7 +12,7 @@ const Thoughts = () => {
       <StyledGridWrapperThoughts className="grid-wrapper thoughts-wrapper">
         <BigThought
           thoughtLink="https://medium.com/@elin.segelov/from-cleaning-toilets-to-cleaning-up-my-own-code-via-a-few-years-of-social-work-33e0aaf20722"
-          thoughtImage="https://cdn-images-1.medium.com/max/1600/1*ag_0Ck6C2msskyeNuWjp9g.jpeg"
+          thoughtImage="https://miro.medium.com/max/1024/1*ag_0Ck6C2msskyeNuWjp9g.jpeg"
           publishDate="October 2022"
           thoughtTitle="From cleaning toilets to cleaning up my own code"
           overlayText="Changing careers"
@@ -21,17 +22,17 @@ const Thoughts = () => {
         <BigThought
           thoughtLink="#"
           thoughtImage="https://picsum.photos/200/300"
-          publishDate="Comming soon"
+          publishDate="Coming soon"
           thoughtTitle="Code and accessibility"
           overlayText="Code and accessibility"
           thoughtDescription="Thoughts about accessibility in the digital world." />
       </StyledGridWrapperThoughts>
 
       <StyledOtherThoughts className="other other-thoughts">
-        <h3 className="sub-heading">More Thoughts</h3>
+        <SubHeading className="sub-heading">More Thoughts</SubHeading>
         <OtherThought
           thoughtLink="#"
-          publishDate="Comming soon"
+          publishDate="Coming soon"
           thoughtTitle="Aquiering a hobby" />
         {/*
         <OtherThought
@@ -46,7 +47,6 @@ const Thoughts = () => {
 export default Thoughts;
 
 const StyledProjectSection = styled.section`
-  background-color: var(--secondary);
   align-items: center;
   display: flex;
   flex-direction: column;

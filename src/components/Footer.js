@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NoBackgroundH2 } from './ReusableStyles.style';
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <h2 className="footer-heading">Contact</h2>
+      <NoBackgroundH2 className="footer-heading">Contact</NoBackgroundH2>
       <p>Elin Segelöv</p>
       <a href="mailto:elin.segelov@gmail.com">
         <p><span className="sr-only">E-mail</span>elin.segelov@gmail.com</p>
@@ -20,9 +21,6 @@ const StyledFooter = styled.footer`
   padding-bottom: 40px;
   text-align: center;
 
-h2 {
-  background: none;
-}
 p {
   color: #FFF;
   display: block;

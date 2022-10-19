@@ -1,11 +1,11 @@
 import React from 'react'
 // import styled from 'styled-components';
 // import styled from 'styled-components'
-import { StyledLogo } from './ReusableStyles.style';
+import { LogoContainer, StyledLogo } from './ReusableStyles.style';
 
 const Logos = ({ linkedinLogo, githubLogo }) => {
   return (
-    <div className="logo-container">
+    <LogoContainer className="logo-container">
       <a href="https://www.linkedin.com/in/elin-s-683a867a/" aria-label="Link to LinkedIn profile">
         <StyledLogo src={linkedinLogo} className="logo" alt="LinkedIn logo" />
       </a>
@@ -15,7 +15,7 @@ const Logos = ({ linkedinLogo, githubLogo }) => {
       {/* <a href="https://stackoverflow.com/c/technigo/users/375" aria-label="Link to LinkedIn profile">
             <StyledLogo src={stackOverflowLogo} className="logo" alt="StackOverflow logo"/>
           </a> */}
-    </div>
+    </LogoContainer>
 
   )
 }

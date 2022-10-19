@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components';
-import { StyledLogo } from './ReusableStyles.style';
+import { LogoContainer, StyledLogo } from './ReusableStyles.style';
 
 const ForMore = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
@@ -36,9 +36,6 @@ const DarkLogo = styled(StyledLogo)`
   }
 `
 
-const StyledDarkLogoContainer = styled.div`
- display: flex;
- justify-content: center;
-
-  
+const StyledDarkLogoContainer = styled(LogoContainer)`
+  position: static;
 `

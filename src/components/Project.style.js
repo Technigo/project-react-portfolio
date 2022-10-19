@@ -13,8 +13,20 @@ const StyledProject = styled.div`
   text-transform: uppercase;
 }
 
-  //div runt bild och overlay
-  .project-image {
+@media (min-width: 1200px) {
+  transition: transform .5s;
+  transition-timing-function: linear;
+  background-color: transparent;
+  
+  &:hover {
+      transform: scale(1.1);
+  }
+}
+`
+
+export default StyledProject;
+
+export const ImageContainerWithOverlay = styled.div`
   align-items: center;
   color: var(--heading);
   display: flex;
@@ -23,7 +35,7 @@ const StyledProject = styled.div`
   position: relative;
   transition: 0.5s ease;
   width: 100%;
-}
+
 img {
   height: 60%;
   max-width: 500px;
@@ -32,7 +44,7 @@ img {
   width: 100%; 
 }
 
-.project-image-overlay {
+div {
   background-color: rgba(237, 230, 219, 0.5);
   height: 100%;
   position: absolute;
@@ -46,19 +58,9 @@ img {
 }
 
 @media (min-width: 1200px) {
-  transition: transform .5s;
-  transition-timing-function: linear;
-  background-color: transparent;
-  
-  &:hover {
-      transform: scale(1.1);
-  }
-
-  .project-image {
     &:hover {
     color: transparent;
     }
-  }
 
   .project-image-overlay {
     &:hover{
@@ -67,5 +69,3 @@ img {
   }
 }
 `
-
-export default StyledProject;

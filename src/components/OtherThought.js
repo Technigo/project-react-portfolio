@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MoreArrows from './MoreArrows';
+import { Date } from './ReusableStyles.style';
 
 const OtherThought = (
   {
@@ -11,10 +12,10 @@ const OtherThought = (
 ) => {
   return (
     <StyledOtherThoughtLink className="underline" href={thoughtLink}>
-      <p className="date underline">
+      <Date className="date underline">
         {publishDate}. <strong>{thoughtTitle}</strong>
         <MoreArrows />
-      </p>
+      </Date>
     </StyledOtherThoughtLink>
   )
 }
@@ -22,9 +23,10 @@ const OtherThought = (
 export default OtherThought;
 
 const StyledOtherThoughtLink = styled.a`
-text-decoration: underline;
-  width: 100%;
-  color: var(--heading);
-  font-size: 16px;
-  margin-right: 4px;
+  p {
+    color: var(--heading);
+    font-size: 16px;
+    margin-right: 4px;
+    text-decoration: underline;
+  }
 `

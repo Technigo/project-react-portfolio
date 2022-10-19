@@ -6,16 +6,11 @@ import styled from 'styled-components';
 // import * as dotenv from 'dotenv'
 import FeaturedProject from './FeaturedProject';
 import OtherProject from './OtherProject';
-import weatherAppImg from '../images/thumbnail-weatherapp.webp';
-import happyThoughtsImg from '../images/thumbnail-happy-thoughts.webp'
-import musicReleasesImg from '../images/thumbnail-music-releases.webp'
-import guessWhoImg from '../images/thumbnail-guesswho.webp'
-import chatBotImg from '../images/thumbnail-chatbot.webp'
-import newsSiteImg from '../images/thumbnail-newssite.webp'
+
 // import { projectsForDisplay } from '../utils/projectsForDisplay' Can't import the named export 'projectsForDisplay'.'includes'
 // (imported as 'projectsForDisplay') from default-exporting module (only default export is available)
 import StyledProject from './Project.style';
-import { GridWrapper } from './ReusableStyles.style'
+import { GridWrapper, SubHeading } from './ReusableStyles.style'
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
@@ -42,18 +37,10 @@ const Projects = () => {
       <FeaturedProject
         key={repo.id}
         deployedLink={repo.homepage}
-        projectImage="https://picsum.photos/200/300"
+        defaultBranch={repo.default_branch}
         projectTitle={repo.name}
-        overlayText={repo.name}
         projectDescription={repo.description}
-        techPTags={
-          <>
-            <p>React</p>
-            <p>CSS3</p>
-            <p>JSX</p>
-            <p>API</p>
-          </>
-        }
+        techTags={repo.topics}
         repoLink={repo.html_url} />
     )
   })
@@ -66,16 +53,8 @@ const Projects = () => {
         deployedLink={repo.homepage}
         projectImage="https://picsum.photos/200/300"
         projectTitle={repo.name}
-        overlayText={repo.name}
         projectDescription={repo.description}
-        techPTags={
-          <>
-            <p>React</p>
-            <p>CSS3</p>
-            <p>JSX</p>
-            <p>API</p>
-          </>
-        }
+        techTags={repo.topics}
         repoLink={repo.html_url} />
     )
   })
@@ -87,7 +66,7 @@ const Projects = () => {
         {allFeatured}
       </StyledGridWrapperProject>
       <StyledOtherWrapper className="other-wrapper">
-        <h3 className="sub-heading">Other Projects</h3>
+        <SubHeading className="sub-heading">Other Projects</SubHeading>
         {allOther}
       </StyledOtherWrapper>
     </StyledProjectSection>
@@ -112,14 +91,6 @@ const StyledOtherWrapper = styled.div`
       gap: 1.5rem;
   }
   
-  
-  h3 {
-  background: none;
-  color: var(--heading);
-  margin: 30px auto 20px;
-  text-transform: uppercase;
-
-}
 `
 const StyledGridWrapperProject = styled.div`
   @media (min-width: 600px) {

@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <StyledIntro className="intro bg-darker">
       <p className="intro-text">
-        <span className="line" /><span className="dot" />
+        <Line className="line" /><Dot className="dot" />
         Hi there! I'm a frontend developer with fullstack ambition and a background in social
         work. I am passionate about code and have a big interest in CSS.
       </p>
@@ -25,25 +25,20 @@ const StyledIntro = styled(DarkerContainer)`
 
 p {
   letter-spacing: 1px;
-}
-.line {
+}`
+
+const Line = styled.span`
   border: 1px solid var(--ligtherGreen);
   display: inline-block;
   margin-bottom: 4px;
   width: 40px;
-}
-.dot {
+`
+
+const Dot = styled.span`
   background-color: var(--ligtherGreen);
   border-radius: 50%;
   display: inline-block;
   height: 10px;
   width: 10px;
   margin-right: 8px;
-}
-@media (min-width: 600px) {
-  align-items: center;
-  display: flex;
-  height: 40vh;
-  justify-content: center;
-}
 `

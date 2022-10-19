@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const NoBackgroundH2 = styled.h2`
+  background: none;
+`
+
 export const StyledTagWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +19,7 @@ export const StyledTagWrapper = styled.div`
   line-height: 12px;
   padding: 4px;
   margin: 3px;
-  text-decoration: none;
+  text-transform: uppercase;
 }
 a {
   background-color: var(--secondary);
@@ -74,5 +78,31 @@ transition-timing-function: linear;
 &:hover {
   transform:scale(1.2);
 }
-}
+}`
+
+export const SubHeading = styled.h3`
+  background: none;
+  color: var(--heading);
+  margin: 30px auto 20px;
+  text-transform: uppercase;
+`
+
+export const LogoContainer = styled.div`
+  height: 5rem;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+export const Date = styled.p`
+  color: var(--heading);
+  font-size: 16px;
+  margin-right: 4px;
+`
+
+export const OverlayText = styled.p`
+text-transform: capitalize
 `
