@@ -1,17 +1,16 @@
 import React from 'react';
-import linkedinWhite from '../assets/linkedinWhite.svg';
-import githubWhite from '../assets/githubWhite.svg';
+import { NavBar } from '../styles/GlobalStyles'
 
-export const SoMeLinks = () => {
+export const SoMeLinks = ({ image1, image2, alignment }) => {
   // Display social media links that open in a new tab
   return (
-    <nav>
+    <NavBar alignment={alignment}>
       <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/" target="_blank" rel="noopener noreferrer">
-        <img src={linkedinWhite} alt="white linkedin icon" />
+        <img src={image1} alt="linkedin icon" />
       </a>
       <a href="https://github.com/brucette" target="_blank" rel="noopener noreferrer">
-        <img src={githubWhite} alt="white github icon" />
+        <img src={image2} alt="github icon" />
       </a>
-    </nav>
+    </NavBar>
   )
 }
