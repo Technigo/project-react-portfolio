@@ -1,11 +1,48 @@
 import React from 'react';
-import { InnerWrapper, /* Devices, */MainHeader } from 'styles/mainStyles';
+import BottomLinks from './BottomLinks';
+import Knowledge from './Knowledge';
+import Presentation from './Presentation';
+// eslint-disable-next-line import/no-cycle
+import Projects from './Projects';
+import Skills from './Skills';
+import Thoughts from './Thoughts';
 
-const Main = ({ category }) => {
+const Main = () => {
   return (
-    <InnerWrapper>
-      <MainHeader>{category}</MainHeader>
-    </InnerWrapper>
+    <>
+      <Presentation />
+      <Knowledge />
+      <Projects />
+      <Thoughts />
+      <Skills />
+      <BottomLinks />
+
+      {/* <MainSections coloredBackground>
+        <InnerWrapper>
+          <MainHeader>{category}</MainHeader>
+        </InnerWrapper>
+      </MainSections>
+      <MainSections>
+        <InnerWrapper>
+          <MainHeader>{category}</MainHeader>
+        </InnerWrapper>
+      </MainSections>
+      <MainSections coloredBackground>
+        <InnerWrapper>
+          <MainHeader>{category}</MainHeader>
+        </InnerWrapper>
+      </MainSections>
+      <MainSections>
+        <InnerWrapper>
+          <MainHeader>{category}</MainHeader>
+        </InnerWrapper>
+      </MainSections>
+      <MainSections coloredBackground>
+        <InnerWrapper>
+          <MainHeader>{category}</MainHeader>
+        </InnerWrapper>
+      </MainSections> */}
+    </>
   )
 }
 

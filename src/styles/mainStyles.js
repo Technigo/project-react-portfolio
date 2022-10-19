@@ -21,7 +21,7 @@ export const Devices = {
 };
 
 export const OuterWrapper = styled.div`
-  background-color: antiquewhite;
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,7 @@ export const InnerWrapper = styled.div`
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
+  padding: 5% 0%;
 
   @media ${Devices.tablet} {
     width: 80%;
@@ -42,6 +43,12 @@ export const InnerWrapper = styled.div`
   @media ${Devices.laptop} {
     width: 60%;
   }
+`
+
+export const MainSections = styled.section`
+  background-color: ${(props) => (props.coloredBackground ? 'rgb(253, 248, 240)' : '#FFF')};
+  width: 100vw;
+  padding: 5%;
 `
 
 export const LinkedItems = styled.a`
@@ -59,17 +66,18 @@ export const LinkedItems = styled.a`
 `
 
 export const MainHeader = styled.h2`
+  color: white;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
   background-color: #e9722d;
-  margin: 5%;
+  margin: 5% 10%;
 
   @media ${Devices.tablet} {
   font-size: 25px;
-  padding: 2%;
+  padding: 2% 0%;
   }
 `
 
@@ -86,3 +94,11 @@ export const SecondHeader = styled.h3`
   }
 `
 
+export const MainText = styled.p`
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  font-family: 'Montserrat', sans-serif;
+`

@@ -22,6 +22,7 @@ const Header = () => {
 
 export default Header;
 
+// Styled components
 const Background = styled.div`
     position: relative;
     height: 400px;
@@ -42,6 +43,7 @@ const Background = styled.div`
 
 const CloneWrapper = styled(InnerWrapper)`
   padding: 20% 7% 10% 7%;
+  background-color: transparent;
 
   @media ${Devices.tablet} {
     padding: 10% 7%;

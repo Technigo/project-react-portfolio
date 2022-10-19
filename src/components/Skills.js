@@ -1,14 +1,14 @@
 import React from 'react';
 import { InnerWrapper, /* Devices, */MainHeader, MainSections } from 'styles/mainStyles';
 
-const Projects = () => {
+const Skills = () => {
   return (
     <MainSections coloredBackground>
       <InnerWrapper>
-        <MainHeader>FEATURED PROJECTS</MainHeader>
+        <MainHeader>SKILLS</MainHeader>
       </InnerWrapper>
     </MainSections>
   )
 }
 
-export default Projects;
+export default Skills;
