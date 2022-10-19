@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { InnerWrapper } from './Styling'
 import github from './images/icons/github.svg'
 import linkedin from './images/icons/linkedin.svg'
 import stack from './images/icons/stack.svg'
@@ -11,7 +12,7 @@ import headerpicture from './images/headerpicture.jpg'
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <HeaderContent>
+      <InnerWrapper>
         <SoMeHeader>
           <SoMeLink> <a href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></a></SoMeLink>
           <SoMeLink><a href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></a></SoMeLink>
@@ -23,13 +24,12 @@ export const Header = () => {
           <h2>+ objects conservator</h2>
         </HeaderText>
         <ProfileImage src={profileimg} alt="profile" />
-      </HeaderContent>
+      </InnerWrapper>
     </HeaderWrapper>
   )
 }
 
 export const HeaderWrapper = styled.header`
-padding: 20px;
 width: 100%;
 position: relative;
 height: 520px;
@@ -37,17 +37,15 @@ background-image: url(${headerpicture});
 color: #F1EFDC;
 font-family: 'Montserrat', sans-serif;
 `
-export const HeaderContent = styled.div`
-`
 
 export const SoMeHeader = styled.div`
-padding: 10px;
+/* padding: 10px; */
 display: flex;
 justify-content: flex-end;
 gap: 7px;
 `
 export const HeaderText = styled.div`
-width: 90%;
+/* width: 90%; */
 `
 
 export const ProfileImage = styled.img`
