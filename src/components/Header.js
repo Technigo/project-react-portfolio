@@ -1,29 +1,24 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaUserGraduate } from 'react-icons/fa';
-// import { FontAwesomeIcon } from '@fontawesome/react-fontawesome'
+import { Icons } from './Icons'
 import myPicture from '../Pictures/myPicture.jpg';
 import backgroundPic from '../Pictures/backgroundPic.PNG';
+import { Pitch } from './Pitch';
 
 export const Header = () => {
   return (
-    <StyledHeader>
-      <div className="headerTitle">
-        <h1>Portfolio:</h1>
-        <h1>Kaja Wilbik</h1>
-        <h2>Front-end developer</h2>
-      </div><img src={myPicture} alt="Kajas profile" />
-      <IconsHeader>
-        <a
-          href="https://www.linkedin.com/in/kaja-wilbik/"
-          target="_blank"
-          rel="noreferrer">
-          <FaUserGraduate />
-        </a>
-      </IconsHeader>
-
-    </StyledHeader>
+    <>
+      <StyledHeader>
+        <div className="headerTitle">
+          <h1>Portfolio:</h1>
+          <h1>Kaja Wilbik</h1>
+          <h2>Front-end developer</h2>
+        </div><img src={myPicture} alt="Kajas profile" />
+        <Icons />
+      </StyledHeader>
+      <Pitch />
+    </>
   )
 }
 
@@ -31,6 +26,7 @@ const StyledHeader = styled.header`
  background-image: url(${backgroundPic});
  display: flex;
     height: 520px;
+    width: 100vw;
     left: 0px;
     top: 0px;
     background-repeat: no-repeat;
@@ -73,7 +69,4 @@ img {
     text-align: center;
    }
 }
- `
-const IconsHeader = styled.i`
- font-size: 20px;
  `
