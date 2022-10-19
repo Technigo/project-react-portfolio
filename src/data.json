@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Happy thoughts",
+        "title-description": "A site where you can send happy thoughts",
+        "project-description": "Site built with React where you can send happy thoughts, list all thoughts and like them.",
+        "repo-name": "project-happy-thoughts",
+        "tags": [
+            "React",
+            "HTML",
+            "CSS"
+          ]
+      }
+      
+    {
+        "title": "Personal greeting",
+        "title-description": "A site where you can make a personal greeting",
+        "project-description": "A Typeform-like survey, built with React state and controlled forms.",
+        "repo-name": "project-survey",
+        "tags": [
+            "React",
+            "HTML",
+            "CSS"
+          ]
+      }
+
+    {
+        "title": "Weather app",
+        "title-description": "An app that tells today's weather",
+        "project-description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+        "repo-name": "project-weather-app",
+        "tags": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+      }
+
+      {
+        "title": "Guess who",
+        "title-description": "A digital version of the classic board game Guess Who",
+        "project-description": "A digital version of the classic board game Guess Who built in JavaScript.",
+        "repo-name": "project-guess-who",
+        "tags": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+      }
+  ]

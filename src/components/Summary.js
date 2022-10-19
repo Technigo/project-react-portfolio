@@ -1,19 +1,18 @@
 import React from 'react'
-import styled from 'styled-components'
+import { ContainerBeige, SectionText } from 'GlobalStyles';
 
 export const Summary = () => {
   return (
-    <StyledSummary style={{ backgroundColor: '#F3EFE7' }}>
-      <div className="summary__container">
-        <p>
+    <ContainerBeige>
+      <SectionText>
         Hello! I am a creative and experienced graphic designer with frontend developer skills.
         I’m all about problem solving and creating awesome, meaningful products for people to love.
-        </p>
-      </div>
-    </StyledSummary>
+      </SectionText>
+    </ContainerBeige>
   )
 };
 
+/*
 const StyledSummary = styled.div`
     width: 100%;
     height: 30vh;
@@ -35,4 +34,4 @@ p {
     max-width: 600px;
 }
 `;
-
+*/

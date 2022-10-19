@@ -71,3 +71,4 @@ const StyledTitle = styled.div`
     line-height: 40px;
     color: white;
 `;
+
