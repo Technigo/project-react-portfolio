@@ -1,6 +1,7 @@
+/* eslint-disable implicit-arrow-linebreak */
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, P } from '../Styled components/GlobalStyles'
+import { OuterWrapper, InnerWrapper, P, A } from '../Styled components/GlobalStyles'
 import { WhitePinkH2, PinkH3 } from '../Styled components/HeadlineStyles'
 
 const GitHubAPI = 'https://api.github.com/users/jessikalind/repos'
@@ -23,14 +24,12 @@ const OtherProjects = () => {
         {filteredProjects.map((project) =>
           <div>
             <PinkH3>{project.name}</PinkH3>
-            <P>{project.html_url}</P>
-            <P>{project.description}</P>
-            <TagContainer>{project.topics.map((topic) =>
-              <Tag>{topic}</Tag>
-            )}
+            <A href={project.html_url}>
+              <P>{project.description}</P>
+            </A>
+            <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
             </TagContainer>
-          </div>
-        )}
+          </div>)}
       </InnerWrapper>
     </OuterWrapper>
   )
