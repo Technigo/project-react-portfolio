@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Title } from 'StyledComponents/GlobalComponents'
+import { OuterWrapper, InnerWrapper, Title, TitleContainer, RedTitle } from 'StyledComponents/GlobalComponents'
 import mind from '../images/mind.jpg'
-import { Arrow } from '../Components/OtherProjects'
+import { Arrow } from './OtherProjects'
 
 const MyThoughts = styled.div`
 background: #F4F4F4;
@@ -14,13 +14,6 @@ font-family: 'Montserrat', sans-serif;
     line-height: 50px;
  
 `
-
-const HeaderContainer = styled.div`
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-`
-
 const ArticleContainer = styled.div`
  display: flex;
     flex-direction: column;
@@ -39,9 +32,9 @@ const Blog = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <HeaderContainer>
+        <TitleContainer>
           <Title>My Thougths</Title>
-        </HeaderContainer>
+        </TitleContainer>
         <MyThoughts>
           <ArticleContainer>
             <div>
@@ -56,7 +49,7 @@ const Blog = () => {
                   width={500} />
 
                 <div>
-                  <p>October 2022</p>
+                  <RedTitle>October 2022</RedTitle>
                   <h4>What experiences can a administrator bring into tech?</h4>
                   <p> As I threw myself into the world of tech one year ago,
                     I had this recurrent thought about the fact that my background
@@ -64,7 +57,7 @@ const Blog = () => {
                     new career, shouldn’t it be something that is applicable on my
                      earlier experience? These are my thoughts now, 2 months into the
                      Technigo bootcamp, where I’m currently changing the path
-                     of my career — totally. <Arrow> >> </Arrow>
+                     of my career — totally. <Arrow> &gt;&gt; </Arrow>
                   </p>
                 </div>
               </Link>

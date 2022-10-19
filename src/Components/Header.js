@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-import { OuterWrapper } from '../StyledComponents/GlobalComponents'
+import { OuterWrapper, SoMeIcons } from '../StyledComponents/GlobalComponents'
 import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
 import background from '../images/background.jpg'
 
@@ -31,16 +31,20 @@ color: #FFFFFF;
 left: 24px;
     top: 50px;
 `
-/* const SoMeIcons = styled.div`
+const ClonedSoMeIcons = styled(SoMeIcons)`
 position: absolute;
     right: 20%;
     top: 10%;
-` */
+`
 
 const Header = () => {
   return (
     <OuterWrapper>
       <Headerbackground>
+        <ClonedSoMeIcons>
+          <i className="fa-brands fa-linkedin fa-2xl" aria-label="My Linkedin" />
+          <i className="fa-brands fa-github-square fa-2xl" aria-label="My Github" />
+        </ClonedSoMeIcons>
         <ProfileImage src={ceciliaportfolio} alt="Picture of Cecilia" />
         <TextContainer>
           <h3 className="first-heading">Portfolio: Cecilia Rådén</h3>

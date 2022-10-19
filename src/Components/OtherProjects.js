@@ -25,7 +25,7 @@ const OtherProjects = () => {
       <InnerWrapper>
         <OtherProjectsContainer>
           <Title>Other projects</Title>
-      Om projektet <Arrow>>></Arrow>
+      Om projektet <Arrow>&gt;&gt; </Arrow>
         </OtherProjectsContainer>
       </InnerWrapper>
     </OuterWrapper>

@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Title } from 'StyledComponents/GlobalComponents'
+import { OuterWrapper, InnerWrapper, Title, TitleContainer } from 'StyledComponents/GlobalComponents'
 
 const MyTech = styled.div`
 font-family: 'Montserrat', sans-serif;
@@ -19,9 +19,12 @@ const Tech = () => {
     <OuterWrapper>
       <InnerWrapper>
         <MyTech>
-          <Title>Tech</Title>
-          <p>HTML, CSS, Flexbox, JavaScript, Web Accessibly, API:s,
-        mob-programming, pair-programming, Github, Slack, Figma, Node, React
+          <TitleContainer>
+            <Title>Tech</Title>
+          </TitleContainer>
+          <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX,
+            React, React Hooks, Redux, Node.js, Web accessibility,
+            API:s, mob-programming, pair-programming, GitHub
           </p>
         </MyTech>
       </InnerWrapper>

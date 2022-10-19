@@ -26,12 +26,30 @@ export const InnerWrapper = styled.div`
   @media (min-width: 1600px) {
     width: 60%;
   }
+`
 
+export const TitleContainer = styled.div`
+   display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const Title = styled.h1`
  font-family:'Montserrat', sans-serif;
     background-color: #FA382F;
     color: white;
-    
+    font-size: 30px;
+    align-self: center;
+  justify-self: center;
+  text-align: center;
+`
+
+export const RedTitle = styled.h1`
+ font-family:'Montserrat', sans-serif;
+  color: red;
+  font-size: 24px;
+`
+
+export const SoMeIcons = styled.i`
+color: red;
 `

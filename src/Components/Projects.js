@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { InnerWrapper, OuterWrapper, Title } from 'StyledComponents/GlobalComponents'
 
@@ -16,16 +16,18 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+`
+
+const TagsContainer = styled.div`
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 `
 
 const Tags = styled.div`
 font-family: "Roboto", sans-serif;
-  color: black;
   font-weight: bold;
   background-color: #FDDFE7;
-  text-decoration: none;
   font-size: 12px; 
   line-height: 12px;
   padding: 4px;
@@ -34,13 +36,15 @@ font-family: "Roboto", sans-serif;
 `
 
 const Projects = () => {
-/*  const [projects, SetProjects] = useState([])
+  const [projects, SetProjects] = useState([])
 
   useEffect(() => {
-    fetch('https://api.github.com/users/CeciliaMichele/repos')
+    fetch('https://api.github.com/users/ceciliamichele/repos')
       .then((res) => res.json())
       .then((data) => SetProjects(data))
-  }, []) */
+  })
+
+  const filteredProjects = projects.filter((project) => project.name.includes('project-'));
 
   return (
     <OuterWrapper>
@@ -48,15 +52,19 @@ const Projects = () => {
         <MyProjects>
           <Title>Featured projects</Title>
           <TextContainerProjects>
-            <Tags>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript</p>
-              <p>React</p>
-              <p>Pair-Programming</p>
-              <p>API</p>
-            </Tags>
+            {filteredProjects.map((project) => (
+              <div key={project.id}>
+                <p>{project.name}</p>
+              </div>
+            ))}
           </TextContainerProjects>
+          <TagsContainer>
+            <Tags>HTML5</Tags>
+            <Tags>CSS3</Tags>
+            <Tags>JavaScript</Tags>
+            <Tags>React</Tags>
+          </TagsContainer>
+
         </MyProjects>
       </InnerWrapper>
     </OuterWrapper>
