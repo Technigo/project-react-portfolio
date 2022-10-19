@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  background: Lightgrey;
+  background-color: rgba(240, 234, 237, 0.8);
   padding-right: 6em; 
   padding-left: 6em; 
   padding-top: 2em; 

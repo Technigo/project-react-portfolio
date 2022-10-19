@@ -8,16 +8,14 @@ padding-right: 4em;
 padding-left: 4em; 
 padding-top: 2em; 
 padding-bottom: 2em; 
-display:flex; 
-flex-direction: column; 
-/* display: grid; 
-grid-template-columns: 1fr 1fr 1fr;  */
+flex-direction: row; 
+ display: grid; 
+grid-template-columns: 1fr 1fr; 
 
  @media (min-width: 768px) {
   padding-right: 10em; 
   padding-left: 10em;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr;  
+ 
     
   }
   @media (min-width: 1024px) {
@@ -26,8 +24,9 @@ grid-template-columns: 1fr 1fr 1fr;  */
 
  `
 const SmallContainer = styled.div`
-display: grid; 
-grid-column: span 4; 
+display: flex; 
+flex-direction: row; 
+grid-auto-flow: dense;  
 `
 const HeaderContainer = styled.div`
   display: flex; 
@@ -44,7 +43,16 @@ const SectionHeader = styled.h2`
   font-family:'montserrat', sans-serif;`
 
 const ProjectContainer = styled.div`
-display: grid; `
+display: flex;
+flex-direction: column; 
+`
+const Row = styled.div`
+display: flex; 
+flex-direction: column; `
+
+const Img = styled.img`
+width: 100px; 
+height:100px; `
 
 const Projects = () => {
   const [projects, setProjects] = useState([])
@@ -67,24 +75,29 @@ const Projects = () => {
         <SectionHeader>Projects</SectionHeader>
       </HeaderContainer>
       <SmallContainer>
-        {projects.filter((project) => project.fork === true).slice(0, 4).map((project) => (
-          <ProjectContainer key={project.id}>
-            <a
-              href={project.html_url}
-              target="_blank"
-              rel="noreferrer">
-              <img
-                src=""
-                alt="hello" />
-            </a>
-            <div className="text-container">
-              <h4> {project.name}</h4>
-              <p> lorem lorem lorem lorem </p>
-              <p> wrapper</p>
-            </div>
-          </ProjectContainer>
-        ))}
+        <Row>
+          {projects.filter((project) => project.fork === true).slice(0, 4).map((project) => (
+            <ProjectContainer key={project.id}>
+              <a
+                href={project.html_url}
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src=""
+                  alt="hello" />
+              </a>
 
+              <h4> {project.name}</h4>
+            </ProjectContainer>
+
+          ))}
+          <div className="text-container">
+            <p> lorem lorem lorem lorem </p>
+            <p> wrapper</p>
+          </div>
+
+          <Img src="/assets/chatbot.jpg" alt="chatbot" />
+        </Row>
         {/*   <div className="overlay">
           <p className="overlay-text">
                 Heding
