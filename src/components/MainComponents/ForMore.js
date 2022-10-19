@@ -64,13 +64,14 @@ const SocialMediaContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 text-align: center;
-margin:25px 0px 0px 0px;  
+margin:25px 0px 0px 0px;   
 `
 
 const SocialMedia = styled.a`
 display: flex;
 flex-direction: column;
-align-items: center; 
+align-items: center;
+border: solid red 2px;  
 font-size: 15px;
 margin: 10px;
 color: white;
@@ -80,6 +81,8 @@ margin: 7px;
 width: 4em;
 right: 10%;
 top: 7%;
+
+
 
 
 

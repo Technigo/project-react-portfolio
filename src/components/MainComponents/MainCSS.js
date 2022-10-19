@@ -24,9 +24,9 @@ export const Main= () => {
             <Projects/>
         </Body>
 
-        {/* <Body Thoughts> 
+         <Body Thoughts> 
             <Thoughts/>
-        </Body> */}
+        </Body> 
 
         <Body Skills> 
             <Skills/>

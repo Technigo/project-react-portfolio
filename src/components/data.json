@@ -3,8 +3,76 @@
   {
 		"title": "Guess who?",
 		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "/guesswho.jpg",
+		"Image":"https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML5",
+			"CSS3"
+		]
+
+	},
+
+	{
+		"title": "Chat Bot",
+		"titleDescription": "Boardgame built in JavaScript",
 		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-		"Image": "components/images/stack_overflow_icon.png",
+		"Image": "file:///Users/josefineengdahl/Desktop/bubble.jpg",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML5",
+			"CSS3"
+		]
+
+	},
+
+	{
+		"title": "nr 3",
+		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML5",
+			"CSS3"
+		]
+
+	},
+
+	{
+		"title": "nr 4",
+		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
+		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML5",
+			"CSS3"
+		]
+
+	},
+
+	{
+		"title": "nr 5",
+		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML5",
+			"CSS3"
+		]
+
+	},
+
+	{
+		"title": "nr 6",
+		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
    		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
 		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
 		"tags": [
