@@ -3,9 +3,24 @@ import { SectionHeader } from './styled/SectionHeader'
 
 export const Skills = () => {
   return (
-    <div>
-      <SectionHeader>SKILLS</SectionHeader>
-      My Skills section!
-    </div>
+    <section className="outer-wrapper" id="other-skills">
+      <div className="inner-wrapper">
+        <SectionHeader>SKILLS</SectionHeader>
+        <div className="skills-container">
+          <ul>
+            <li>CATEGORY</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+          </ul>
+          <ul>
+            <li>CATEGORY</li>
+            <li>Skill</li>
+            <li>Skill</li>
+            <li>Skill</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   )
 }
