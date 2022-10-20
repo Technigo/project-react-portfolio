@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Tags = () => {
   return (
     <TagWrapper>
-      <p>HTML</p>
+      <p>tags</p>
     </TagWrapper>
   );
 };
@@ -16,7 +16,6 @@ export const Tags = () => {
 //   })}
 export const TagWrapper = styled.div`
   display: flex;
-  justify-content: center;
 
   p {
     font-family: 'Roboto', sans-serif;
@@ -26,8 +25,8 @@ export const TagWrapper = styled.div`
     text-decoration: none;
     font-size: 12px;
     line-height: 12px;
-    padding: 10px 16px;
-    margin: 3px;
+    padding: 5px 8px;
+    margin: 3px 0;
     border-radius: 4px;
     display: flex;
     align-items: center;
