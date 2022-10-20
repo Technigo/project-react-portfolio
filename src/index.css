@@ -23,94 +23,87 @@ code {
     monospace;
 }
 
-
-/*
-
-INTRO
-.intro {
-  display: block;
-  background-color: rgb(253, 248, 240);
-  width: 100vw;
-  padding: 5%;
-  padding-top: 10%;
+/* FEATURED PROJECTS */
+.test {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.intro p {
-  font-size: 16px;
-  line-height: 30px;
-  font-family: 'Montserrat', sans-serif;
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  transition: 0.5s ease;
 }
 
-
-TECH
-.tech {
-  height: 150px;
-  width: 100vw;
-  padding: 5%;
+.test:hover > .image-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
 }
 
-.tech p {
-  text-align: center;
-  font-size: 16px;
-  line-height: 30px;
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
-  font-family: 'Montserrat', sans-serif;
+.image-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 20%;
 }
 
-FEATURED PROJECTS
+.test:hover > .image-text {
+  opacity: 1;        
+}
+
 .featured-projects {
-  background-color: rgb(253, 248, 240);
-  width: 100vw;
-  padding: 5%;
-}
-
-.featured-projects a {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 270px;
-  padding-bottom: 8%;
-}
-
-.featured-projects img {
-  opacity: 1.0;
-  width: 300px;
-  padding: 8% 5%;
+  width: 100%;
 } 
 
-.title {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: 'Roboto', sans-serif; 
+
+/* TABLET */
+@media (min-width: 668px) and (max-width:1024px) {
+
+  /* FEATURED PROJECTS */
+  .box-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 1%;
+    width: 35%;
+  }
+
+}  
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+  /* FEATURED PROJECTS */
+
+  .featured-projects img {
+      opacity: 0.5;
+      padding: 8% 2%;
+  }
+
+  .featured-projects img:hover {
+      opacity: 1.0;
+  }   
+
+  .other-projects a {
+    display: grid;
+    grid-template-columns: 90px auto;
+    width: 100%;
 }
 
-.featured-projects p {
-  color: black;
-  font-size: 16px;
-  line-height: 30px;
-  font-family: 'Roboto', sans-serif; 
+  .other-projects .box-text {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 1%;
+      width: 35%;
+  }
 }
 
-.box-text {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  padding-top: 2%;
-}
-
-h4 { 
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif; 
-  padding: 2%;
-}
-
-.box-text mark {
-  color: black;
-  background:  #cee663;
-  border: 3px solid #cee663;
-}
+/*
 
 .the-next-thing {
   display: none;
@@ -168,40 +161,8 @@ SKILLS
 TABLET
 @media (min-width: 668px) and (max-width:1024px) {
 
-      
-  INTRO
-  .intro {
-      display: flex;
-      justify-content: center;
-      padding-top: 5%;
-  }
-
-  .intro p {
-      font-size: 18px;
-  }
-
-  TECH   
-  .tech p {
-      font-size: 18px;
-      line-height: 30px;
-      padding: 5% 0%;
-  }
-
   FEATURED PROJECTS
-  .featured-projects img {
-      opacity: 0.5;
-      padding: 8% 2%;
-  }
-
-  .featured-projects img:hover {
-      opacity: 1.0;
-  }      
-  
-  .projects-grid {
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 20px;
-  }
+ 
 
   .guess-who {
       grid-column-start: 1;
@@ -231,12 +192,7 @@ TABLET
       width: 100%;
   }
 
-  .other-projects .box-text {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      padding-top: 1%;
-      width: 35%;
-  }
+
 
   SKILLS
   .skills-grid {
@@ -260,45 +216,8 @@ DESKTOP
 @media (min-width: 1025px) {
 
 
-  /* INTRO 
-  .intro {
-      display: flex;
-      justify-content: center;
-      padding-top: 5%;
-  }
+   
 
-  .intro p {
-      font-size: 18px;
-      line-height: 30px;
-  }
-
-  /* TECH 
-  .tech {
-      height: 150px;
-  }
-  
-  .tech p {
-      font-size: 18px;
-      line-height: 30px;
-      padding: 5%;
-  }
-
-  /* FEATURED PROJECTS 
-
-  .featured-projects img {
-      opacity: 0.5;
-      padding: 8% 2%;
-  }
-
-  .featured-projects img:hover {
-      opacity: 1.0;
-  }      
-  
-  .projects-grid {
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 10px;
-  }
 
   .guess-who {
       grid-column-start: 1;
@@ -326,18 +245,7 @@ DESKTOP
       justify-self: center;
   }
 
-  .other-projects a {
-      display: grid;
-      grid-template-columns: 90px auto;
-      width: 100%;
-  }
 
-  .other-projects .box-text {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      padding-top: 1%;
-      width: 35%;
-  }
 
   /* SKILLS 
   .skills-grid {

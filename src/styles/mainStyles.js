@@ -21,7 +21,7 @@ export const Devices = {
 };
 
 export const OuterWrapper = styled.div`
-  background-color: red;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +92,17 @@ export const SecondHeader = styled.h3`
   @media ${Devices.tablet} {
     font-size: 24px;
   }
+`
+
+export const Title = styled.h3`
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif; 
+  text-decoration: none;
+  color: #D64819;
+  white-space: nowrap; 
+  padding-top: 5%;
 `
 
 export const MainText = styled.p`
