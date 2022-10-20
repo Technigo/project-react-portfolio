@@ -8,8 +8,8 @@ export const TechSkills = () => {
     <Wrapper>
       <SectionTitle>TECH</SectionTitle>
       <TechSkillsText primary>HTML, CSS,
-        Flexbox, JavaScript, APIs, React, mob-programming, pair-programming,
-        Agile Methodology, Github.
+      JavaScript, APIs, React, Github, Mob-programming, Pair-programming,
+        Agile Methodology.
       </TechSkillsText>
     </Wrapper>
   )
@@ -17,4 +17,10 @@ export const TechSkills = () => {
 
 const TechSkillsText = styled(Paragraph)`
 text-align: center;
+margin-top: 5%;
+
+  @media (min-width: 1024px){
+    margin-top: 0;
+    font-size: 18px;
+  }
 `
