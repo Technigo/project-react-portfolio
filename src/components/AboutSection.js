@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Section, Wrapper } from 'components/Section';
 import { About, AboutWrapper, Line, Dot } from 'components/About.js'
 
