@@ -15,7 +15,7 @@
     "parser": "@babel/eslint-parser",
     "requireConfigFile": false,
     "sourceType": "module",
-    "ecmaVersion": 2017,
+    "ecmaVersion": 6,
     "ecmaFeatures": {
       "jsx": true,
       "experimentalObjectRestSpread": true,
