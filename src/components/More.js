@@ -1,11 +1,11 @@
 import React from 'react';
-import { Hidden } from './styled-components/GlobalStyles';
+import { Hidden, Container } from './styled-components/GlobalStyles';
 
 const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
   return (
     <section>
-      <div className="container">
-        <h2 className="heading-text"><span>FOR MORE</span></h2>
+      <Container>
+        <h2><span>FOR MORE</span></h2>
         <div className="end-icons-wrapper">
           <div className="icon-element">
             <a
@@ -15,7 +15,6 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
               rel="noreferrer"
               href="https://www.linkedin.com/in/antonella-cardozo-187562b7/">
               <img
-                className="header-icon"
                 src={lnIcon}
                 alt="linkedin icon" />
               <Hidden LinkedIn />
@@ -30,7 +29,6 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
               rel="noreferrer"
               href="https://github.com/Sailornina">
               <img
-                className="header-icon"
                 src={gitHubIcon}
                 alt="github icon" />
               <Hidden GITHUB />
@@ -45,7 +43,6 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
               rel="noreferrer"
               href="http://discordapp.com/users/Sailornina">
               <img
-                className="header-icon"
                 src={discordIcon}
                 alt="discord icon" />
               <Hidden DISCORD />
@@ -53,7 +50,7 @@ const More = ({ lnIcon, gitHubIcon, discordIcon }) => {
             <p>DISCORD</p>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

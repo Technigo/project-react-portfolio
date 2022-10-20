@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -62,6 +63,12 @@ a:hover {
     font-weight: bold;
 }
 
+header {
+height: 520px;
+position: relative;
+background-size: cover;
+}
+
 footer {
     background-color: var(--main-peach);
     padding-top: 84px;
@@ -69,8 +76,19 @@ footer {
 }
 `
 export const Container = styled.div`
-width: 327px;
+width: 327vw;
 margin: 0 auto;
+
+@media (min-width: 768px){
+        width: 440vw;
+        margin: 0 auto;
+}
+
+@media (min-width: 1024px){
+        width: 60vw;
+        margin: 0 auto;
+        position:relative;
+    }
 `
 export const Hidden = styled.span`
     position:absolute;
@@ -79,6 +97,6 @@ export const Hidden = styled.span`
     width:1px;
     height:1px;
     overflow:hidden;
-}`
+`
 
 export default GlobalStyles;

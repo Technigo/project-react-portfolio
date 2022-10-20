@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from './styled-components/GlobalStyles';
 
 const Skills = () => {
   return (
     <section>
-      <div className="container">
-        <h2 className="heading-text"><span>SKILLS</span></h2>
+      <Container>
+        <h2><span>SKILLS</span></h2>
         <div className="all-skills-group">
           <div>
             <h4 className="skills-subheading">CODE</h4>
@@ -33,7 +34,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

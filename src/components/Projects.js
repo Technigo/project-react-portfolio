@@ -1,11 +1,20 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
+import { Container } from './styled-components/GlobalStyles'
 
 const Projects = () => {
   const [repos, setRepos] = useState([])
   const API_GITHUB = 'https://api.github.com/users/Sailornina/repos'
 
+  const options = {
+    method: 'GET',
+    headers: {
+      Authorization: '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'
+    }
+  }
+
   useEffect(() => {
-    fetch(API_GITHUB)
+    fetch(API_GITHUB, options)
       .then((res) => res.json())
       .then((json) => {
         setRepos(json)
@@ -14,7 +23,11 @@ const Projects = () => {
 
   console.log(repos)
   return (
-    <section>Hi!</section>
+    <section>
+      <Container>
+        <h2><span>FEATURED PROJECTS</span></h2>
+      </Container>
+    </section>
   )
 }
 
