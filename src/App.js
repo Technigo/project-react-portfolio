@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from 'components/Header';
 import { AboutMe } from 'components/AboutMe';
 import { Technologies } from 'components/Techologies';
-import { FeaturesProjects } from 'components/FeaturedProjects';
+import { FeaturedProjects } from 'components/FeaturedProjects';
 import { Articles } from 'components/Articles';
 import { Skills } from 'components/Skills';
 import { More } from 'components/More';
@@ -14,7 +14,7 @@ export const App = () => {
       <Header />
       <AboutMe />
       <Technologies />
-      <FeaturesProjects />
+      <FeaturedProjects />
       <Articles />
       <Skills />
       <More />
