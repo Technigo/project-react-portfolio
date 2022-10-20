@@ -1,51 +1,60 @@
 import React from 'react'
 import styled from 'styled-components';
+import OtherProject from './OtherProject.json'
+import { ProjectTags, SectionHeader } from './GlobalStyleComponents'
 
-const OtherProjects = ({ subTitle }) => {
+const OtherProjects = ({ tagColor }) => {
   return (
-    <OtherProjectContainer>
-      <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
-        <InfoContainer>
-          <SubTitle>{subTitle}</SubTitle>
-          <SubParagraph>
-              Project to display the weather in a chosen city with info from an
-              API
-          </SubParagraph>
-        </InfoContainer>
-      </a>
-      <SkillTagContainer>
-        <SkillTag>HTML</SkillTag>
-        <SkillTag>CSS</SkillTag>
-        <SkillTag>JavaScript</SkillTag>
-      </SkillTagContainer>
-    </OtherProjectContainer>
+    <><OtherProjectHeader>OTHER PROJECTS</OtherProjectHeader>
+      <OtherProjectContainer>
+        {OtherProject.map((project) => {
+          return (
+            <><a href={project.netlify}>
+              <InfoContainer>
+                <SubTitle>{project.title}</SubTitle>
+                <SubParagraph>
+                  {project.description}<SubParagraphArrows>{'>>>'}</SubParagraphArrows>
+                </SubParagraph>
+              </InfoContainer>
+          </a> {/* eslint-disable-line */}
+            <SkillTagContainer>
+              {project.tags.map((tag) => (
+                <ProjectTags key={tag} tagColor={tagColor}>
+                  {tag}
+                </ProjectTags>
+              ))}
+            </SkillTagContainer>
+            </>
+          );
+        })}
+      </OtherProjectContainer>
+    </>
   );
 };
 export default OtherProjects;
 
-export const InfoContainer = styled.div`
+const OtherProjectHeader = styled(SectionHeader)`
+background: transparent;
+color: #54BAB9;
+text-align: center;
+`;
+
+const InfoContainer = styled.div`
   display: flex;
 `;
 
-export const SkillTagContainer = styled.div`
+const SkillTagContainer = styled.div`
   display: flex;
 `;
 
-export const OtherProjectContainer = styled.div`
+const OtherProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
 `;
 
-export const SkillTag = styled.p`
-  background-color: pink;
-  display: inline-block;
-  margin: 3%;
-  padding: 1%;
-`;
-
-export const SubTitle = styled.h4`
+const SubTitle = styled.h4`
   color: red;
   text-decoration: underline;
   margin-right: 1%;
@@ -55,10 +64,15 @@ export const SubTitle = styled.h4`
   margin-block-start: 1em;
 `;
 
-export const SubParagraph = styled.p`
+const SubParagraph = styled.p`
   color: black;
   text-decoration: underline;
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;
+`;
+
+const SubParagraphArrows = styled.span`
+  color: #54BAB9;
+  font-weight: bold;
 `;
