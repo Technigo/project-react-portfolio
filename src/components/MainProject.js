@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/macro';
 import { ProjectCard, Image, SmallHeadline } from 'styles/GlobalStyles';
-import happyThoughts from '../assets/happyThoughts.png';
 
 export const MainProject = () => {
   const [projects, setProjects] = useState([]);
 
-  // Get all my repos on GitHub via API call:
+  // Get all my projects on GitHub via API call:
   useEffect(() => {
     fetch('https://api.github.com/users/brucette/repos')
       .then((response) => response.json())
@@ -14,28 +13,32 @@ export const MainProject = () => {
       .catch((error) => console.error(error))
   }, []);
 
+  // Filtered array with relevant projects:
+  const relProjects = projects.filter((item) => item.name.includes('project-') && (!item.name.includes('portfolio')));
+
+  // array for 4 favourite projects:
+  // const mainFour = relProjects.filter((item) => item.name.includes('happy-thoughts') ||
+  // (item.name.includes('movies')) || (item.name.includes('survey')) ||
+  // (item.name.includes('weather')));
+
   return (
-  // start a map here?
-    projects.map((project) => {
-      return (
-        <ProjectCard key={project.id} href="#" target="_blank" rel="noopener noreferrer">
-          <ImageContainer>
-            <ImageOverlay />
-            <Image src={happyThoughts} alt="" />
-            <OverlayTitle>{project.name}</OverlayTitle>
-          </ImageContainer>
-          <SmallHeadline>{project.name}</SmallHeadline>
-        </ProjectCard>
-      )
+  // Check all projects in filtered list and return the top 4 (starred on github)
+    relProjects.map((project) => {
+      if (project.stargazers_count !== 0) {
+        return (
+          <ProjectCard key={project.id} href="#" target="_blank" rel="noopener noreferrer">
+            <ImageContainer>
+              <ImageOverlay />
+              <Image src={`https://raw.githubusercontent.com/brucette/${project.name}/master/code/preview/projPreview.png`} alt="" />
+              <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
+            </ImageContainer>
+            <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
+          </ProjectCard>
+        )
+      }
     })
   )
 }
-
-// return (
-// <img src="https://github.com/brucette/project-guess-who/blob/main/code/images/jack.svg" alt="preview of" />
-// )
-// https://raw.githubusercontent.com/<UserName>/<RepoName>/<pathToFileInRepo>
-// https://raw.githubusercontent.com/brucette/${project.name}/blob/master/projPreview.png
 
 // STYLING FOR THE ABOVE COMPONENT
 export const ImageContainer = styled.div`
@@ -65,8 +68,9 @@ export const OverlayTitle = styled.p`
   left: 25%;
   right: 26%;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
+  text-transform: uppercase;
   
   /* This causes the text to fade, color is the text color */
   &:hover {

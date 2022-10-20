@@ -53,7 +53,6 @@ export const SmallHeadline = styled.h4`
   font-size: 1rem;
   line-height: 1.8rem;
   color:  #BA4C08;
-  
   text-transform: uppercase;
 `
 
