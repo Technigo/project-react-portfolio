@@ -18,7 +18,7 @@ const ForMore = () => {
         </div>
 
         <div>
-          <a href="https://stackoverflow.com/users/19384002/fredrik-holm" target="_blank" rel="noreferrer">
+          <a href="https://stackoverflow.com/users/19384002/fredrik-holm/" target="_blank" rel="noreferrer">
             <StackSvg />
             <p>Stack Overflow</p>
           </a>
