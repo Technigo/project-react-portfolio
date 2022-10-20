@@ -5,6 +5,7 @@ import ArticletList from './ArticleList'
 import ElevatorPitch from './ElevatorPitch'
 import Footer from './Footer'
 import Header from './Header'
+import IconHeader from './IconHeader'
 import Icons from './Icons'
 import ProfileImage from './ProfileImage'
 import ProjectList from './ProjectList'
@@ -27,6 +28,7 @@ const PortfolioWrapper = () => {
     <Wrapper>
       <Header />
       <ProfileImage />
+      <IconHeader />
       <Container>
         <ElevatorPitch />
         <TechInfo />

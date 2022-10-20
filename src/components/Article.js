@@ -10,6 +10,8 @@ padding-top: 2em;
 padding-bottom: 2em; 
 display: grid; 
 grid-template-columns: 1fr 1fr;
+justify-items: center; 
+
 
 @media (min-width: 768px) {
   padding-right: 10em; 
@@ -24,18 +26,18 @@ grid-template-columns: 1fr 1fr;
 
  `
 
-/* const SmallContainer = styled.div`
-display: grid;
-grid-column: span 3;
-` */
 const ArticleContainer = styled.div`
 grid-column: 1 / 2 ;
-padding-left: 4em; 
-display: block;  `
+display: grid; 
+padding-top: 2em; 
+`
 
 const ArticleContainer2 = styled.div`
 display: none; 
 grid-column: 2 / 3 ; 
+padding-top: 2em; 
+
+
 @media (min-width: 768px) {
  display: grid; 
     
@@ -46,33 +48,29 @@ grid-column: 2 / 3 ;
     
   }`
 
+const Img = styled.img`
+height: 150px; 
+width: 200px; `
+
 const Article = () => {
   return (
     <Container>
       <HeaderContainer>
         <SectionHeader>Thoughts about code</SectionHeader>
       </HeaderContainer>
-      {/* <SmallContainer> */}
       <ArticleContainer>
         <a
           href=""
           target="_blank"
           rel="noreferrer">
-          <img
-            src=""
-            alt="hello" />
+          <Img
+            src="assets/article.jpg"
+            alt="article" />
         </a>
-        <div className="overlay">
-          <p className="overlay-text">
-                Heding
-          </p>
-
-        </div>
         <div className="text-container">
-          <h4> HEading</h4>
           <p>October 2022</p>
+          <h4> HEading</h4>
           <p> lorem lorem lorem lorem </p>
-          <p> wrapper</p>
         </div>
       </ArticleContainer>
 
@@ -81,24 +79,16 @@ const Article = () => {
           href=""
           target="_blank"
           rel="noreferrer">
-          <img
-            src=""
-            alt="hello" />
+          <Img
+            src="assets/article.jpg"
+            alt="article" />
         </a>
-        <div className="overlay">
-          <p className="overlay-text">
-                Heding
-          </p>
-
-        </div>
         <div className="text-container">
-          <h4> HEading</h4>
           <p>October 2022</p>
+          <h4> HEading</h4>
           <p> lorem lorem lorem lorem </p>
-          <p> wrapper</p>
         </div>
       </ArticleContainer2>
-      {/* </SmallContainer> */}
     </Container>
   )
 }

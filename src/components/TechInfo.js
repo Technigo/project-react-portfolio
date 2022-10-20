@@ -9,10 +9,8 @@ const TechInfo = () => {
         <SectionHeader>TECH</SectionHeader>
       </HeaderContainer>
       <Pitch>
-        TechINFO
-        lorem lorem lorem lorem loren mloren
-        lorem lorem lorem lorem loren mloren
-        lorem lorem lorem lorem loren mloren
+      HTML, CSS, JavaScript, ES6, Flexbox, JSX, React, React Hooks, Redux, Node.js, Mongo DB,
+      Web Accessibly, API:s, mob-programming, pair-programming, Github.
       </Pitch>
     </ContainerWhite>
   )

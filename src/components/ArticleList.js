@@ -11,11 +11,17 @@ text-decoration:none;`
 
 const List = styled.div`
 display: grid; 
-grid-column: 1 / 2; `
+grid-column: 1 / 2;
+padding-top: 2em;  `
+
+const Container = styled(ContainerWhite)`
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr; 
+`
 
 const ArticletList = () => {
   return (
-    <ContainerWhite>
+    <Container>
       <HeaderContainer>
         <SectionHeader>More thoughts</SectionHeader>
       </HeaderContainer>
@@ -28,7 +34,7 @@ const ArticletList = () => {
         </Link>
       </List>
 
-    </ContainerWhite>
+    </Container>
   )
 }
 export default ArticletList

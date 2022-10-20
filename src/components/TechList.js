@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Pitch } from 'GlobalStyles'
 
 const Container = styled.article`
 display: grid; 
@@ -9,12 +10,15 @@ justify-content: space-evenly;
 font-family:"Roboto", sans-serif;
 gap: 10px; 
 background-color: rgba(240, 234, 237, 0.8); 
+padding-bottom: 2em; 
 
 `
 const HeaderContainer = styled.div`
   display: flex; 
   justify-content: center;
   grid-column: span 5; 
+  padding-top: 2em; 
+  padding-bottom: 2em; 
 `
 const SectionHeader = styled.h2`
   text-align: center;
@@ -48,7 +52,13 @@ margin-left:0;
 const Upcomming = styled.div`
 grid-column: 2 / 3;
 text-align: center;
+padding-top: 2em; 
 `
+const Header = styled.h4`
+font-family: "Roboto", sans-serif;`
+
+const Text = styled(Pitch)`
+margin: 0; `
 
 const TechList = () => {
   return (
@@ -57,34 +67,34 @@ const TechList = () => {
         <SectionHeader>Skills</SectionHeader>
       </HeaderContainer>
       <Code>
-        <h4 className="tech-heading">Code </h4>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-        <p>React</p>
+        <Header>Code </Header>
+        <Text>HTML</Text>
+        <Text>CSS</Text>
+        <Text>JavaScript</Text>
+        <Text>CSS</Text>
+        <Text>JavaScript</Text>
+        <Text>React</Text>
       </Code>
 
       <Toolbox>
-        <h4 className="tech-heading">Toolbox </h4>
-        <p>Figma</p>
-        <p>GitHub</p>
+        <Header>Toolbox </Header>
+        <Text>Figma</Text>
+        <Text>GitHub</Text>
       </Toolbox>
 
       <More>
-        <h4 className="tech-heading">More </h4>
-        <p>Project management</p>
-        <p>Coustomer experince</p>
-        <p>Event managment</p>
-        <p>leadership</p>
-        <p>Onboarding</p>
+        <Header>More </Header>
+        <Text>Project management</Text>
+        <Text>Coustomer experince</Text>
+        <Text>Event managment</Text>
+        <Text>leadership</Text>
+        <Text>Onboarding</Text>
       </More>
 
       <Upcomming>
-        <h4 className="tech-heading">Upcomming </h4>
-        <p>Redux</p>
-        <p>Back-end</p>
+        <Header>Upcomming </Header>
+        <Text>Redux</Text>
+        <Text>Back-end</Text>
       </Upcomming>
 
     </Container>

@@ -51,9 +51,11 @@ const ProjectList = () => {
           </Link>
           <Icons>&gt;&gt;</Icons>
           <TagWrapper>
-            <TagWrapperText>HTML5{/* </p> */}
-              {/* <p> */}CSS3{/* </p> */}
-              {/* <p> */}JavaScript ES6
+            <TagWrapperText>HTML5</TagWrapperText>
+            <TagWrapperText>CSS3</TagWrapperText>
+            <TagWrapperText>JavaScript ES6
+            </TagWrapperText>
+            <TagWrapperText>React
             </TagWrapperText>
           </TagWrapper>
         </List>

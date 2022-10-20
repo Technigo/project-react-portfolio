@@ -31,6 +31,7 @@ background-color:white; `
 
 export const Pitch = styled.p`
 font-family:"Roboto", sans-serif;
+text-align: center; 
 `
 export const SectionHeader = styled.h2`
   text-align: center;

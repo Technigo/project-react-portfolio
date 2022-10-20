@@ -1,9 +1,9 @@
 import React from 'react'
-/* import styled from 'styled-components' */
+import styled from 'styled-components'
 import { ContainerWhite } from 'GlobalStyles'
-import Github from './Icon/Github.svg'
-import Linkedin from './Icon/Linkedin.svg'
-import StackOverFlow from './Icon/StackOverFlow.svg'
+/* import { Github } from './icon' */
+/* import Linkedin from './Icon/Linkedin.svg'
+import StackOverFlow from './Icon/StackOverFlow.svg' */
 
 /* const IconContainer = styled.div`
   display: flex;
@@ -12,27 +12,65 @@ import StackOverFlow from './Icon/StackOverFlow.svg'
     top: 2.8rem;
     right: 1.2rem;
  `  */
+const Logos = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 50px; 
+`
+const SmallContainer = styled.div`
+padding: 2.5rem;
+`
+const Link = styled.a`
+text-decoration: nonen; `
 
-/* const Img = styled.span`
-color: black;
-size: 150%;
-` */
+const I = styled.i`
+color:  rgb(185, 0, 91);
+display: inline-block;
+border-radius: 80px;
+box-shadow: 0 0 4px rgb(185, 0, 91);
+padding: 0.3em 0.4em;
+margin: 15px; 
+&:hover {
+  border: solid 5px; 
+}
+ `
 
 const Icons = () => {
   return (
     <ContainerWhite>
-      <div className="iconcontainer">
-        <img src={Github} alt="logo github" />
-        <h1>Github</h1>
-      </div>
-      <div className="iconcontainer">
-        <img src={Linkedin} alt="logo github" />
-        <p>LinkedIn</p>
-      </div>
-      <div className="iconcontainer">
-        <img src={StackOverFlow} alt="logo github" />
-        <p>StackOverFlow</p>
-      </div>
+      <Logos>
+        <SmallContainer>
+          <Link
+            className="link_to_linkedin"
+            target="_blank"
+            href="https://www.linkedin.com/in/amanda-elvkull-74717a153/"
+            aria-label="link to linkedIN"
+            rel="noreferrer">
+            <I className="fa fa-linkedin linkedin1 fa-5x" />
+          </Link>
+        </SmallContainer>
+        <SmallContainer>
+          <Link
+            className="link_to_github"
+            href="https://github.com/AmandaElvkull"
+            target="_blank"
+            aria-label="link to Github"
+            rel="noreferrer">
+            <I className="fa fa-github github1 fa-5x" />
+          </Link>
+        </SmallContainer>
+        <SmallContainer>
+          <Link
+            className="link_to_stackoverflow"
+            href="https://stackoverflow.com/c/technigo/users/381"
+            target="_blank"
+            aria-label="link to StackOverflow"
+            rel="noreferrer">
+            <I className="fa fa-stack-overflow stackoverflow1 fa-5x" />
+          </Link>
+        </SmallContainer>
+      </Logos>
     </ContainerWhite>
   )
 }
