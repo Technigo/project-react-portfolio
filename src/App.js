@@ -1,12 +1,14 @@
 import React from 'react';
-import { CurrentTitle, Header, Name, Title } from 'styledComponents/Header';
+import { Header } from 'components/Header';
+import About from 'components/About';
+import Tech from 'components/Tech';
 
 export const App = () => {
   return (
-    <Header>
-      <Name>PORTFOLIO: CHARLOTTE JOHANSSON</Name>
-      <Title>frontend developer</Title>
-      <CurrentTitle>+ project manager</CurrentTitle>
-    </Header>
+    <div>
+      <Header />
+      <About />
+      <Tech />
+    </div>
   )
 }
