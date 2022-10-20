@@ -25,7 +25,7 @@ h3 {
   text-align: center;
   color: #fff;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   margin: 25px 0 0 0; 
   text-transform: uppercase;
 }
@@ -66,6 +66,10 @@ h4{
     font-size: 26px;
     }
 
+  h3{
+      font-size: 16px;
+    }
+
     p {
       font-size: 20px;
 
@@ -76,6 +80,10 @@ h4{
 
       h4{
         font-size: 28px;
+        }
+
+        h3{
+          font-size: 16px;
         }
     
         p {

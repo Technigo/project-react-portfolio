@@ -7,7 +7,7 @@ export const Skills = () => {
     return (
         <Wrapper> 
             <h3>Skills</h3>
-
+    <InnerWrapper>        
         <Skill>
             <Code>
                 <h5>Code</h5> 
@@ -40,26 +40,38 @@ export const Skills = () => {
                     <Text>Presentation skills</Text>
             </More>
             </Skill>
+        </InnerWrapper>    
         </Wrapper>
     )
 }
 
-
-const Wrapper = styled.div`
+const Wrapper = styled.div `
 width: 100%;
-height; auto;
+height; 100%;
 display: flex;
 flex-direction: column;
 align-items: center;  
+
 `
+const InnerWrapper = styled.div`
+width: 100%;
+height; auto;
+align-items: center;  
+`
+
 
 const Skill = styled.div`
 display: grid;
-height: 100%;
+width: 90%;
 grid-template-columns: repeat(2, 1fr);
 text-align: center;
 margin: 15px 15px 30px 15px; 
 gap: 10px; 
+
+@media (min-width: 668px) {
+    width: 60%;
+    margin: 15px 20% 30px 20%;
+    
 `
 
 const Code = styled.div`
