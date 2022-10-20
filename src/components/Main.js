@@ -9,7 +9,7 @@ import Tech from './Tech'
 import Projects from './Projects'
 import Skills from './Skills'
 import More from './More'
-import Contact from './Contact'
+import Footer from './Footer'
 
 const Main = () => {
   return (
@@ -26,7 +26,7 @@ const Main = () => {
         lnIcon={lnIcon}
         gitHubIcon={gitHubIcon}
         discordIcon={discordIcon} />
-      <Contact />
+      <Footer />
     </div>
   )
 }
