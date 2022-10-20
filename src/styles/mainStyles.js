@@ -14,9 +14,9 @@ export const InnerWrapper = styled.div`
     padding: var(--section-x-padding);
 `;
 
-// export const Button = styled.button`
+export const Button = styled.button`
 
-// `;
+`;
 
 // export const Tags = styled.div`
 

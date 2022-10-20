@@ -58,3 +58,9 @@ p {
 .background {
   background-color: var(--color-pink);
 }
+
+ul {
+  text-align: center;
+  margin-bottom: 16px;
+  list-style: none;
+}

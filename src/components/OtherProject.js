@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from 'styles/MainStyles';
 // import data from '../data.json'
 
-const FeaturedProject = () => {
+const OtherProject = () => {
   return (
     <ProjectList>
       <StyledFeaturedProject>
-        <img src="" alt="" />
         <StyledTextWrapper>
           <h3>Title</h3>
           <p>Description</p>
@@ -15,13 +13,12 @@ const FeaturedProject = () => {
         <StyledTagWrapper>
           Tags
         </StyledTagWrapper>
-        <Button>View on Github</Button>
       </StyledFeaturedProject>
     </ProjectList>
   );
 };
 
-export default FeaturedProject;
+export default OtherProject;
 
 const ProjectList = styled.div`
   border: 1px red solid;
@@ -36,4 +33,3 @@ const StyledTextWrapper = styled.div`
 
 const StyledTagWrapper = styled.div`
 `;
-
