@@ -22,8 +22,12 @@ const Skills = () => {
   return (
     <ContentWrapper
       as="section"
-      backgroundColor="var(--secondBackground)">
-      <ColorTitle background="var(--primaryBackground)" />
+      backgroundColor="var(--secondBackground)"
+      title="Skills">
+      <ColorTitle
+        background="var(--fourthTitle)"
+        title="Skills"
+        buttonbackground="var(--fourthTitle)" />
       <SkillsStyle>
         <div className="project-text">
           <h2 className="small-title">CODE</h2>

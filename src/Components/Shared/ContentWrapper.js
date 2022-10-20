@@ -23,7 +23,7 @@ const ContentWrapper = (props) => {
       {/* Writes what type of element it is as a props */}
       <InnerWrapper>
         {props.children}{' '}
-        {/* everhthing that is within the component, eg footer. */}
+        {/* everhthing that is within the component, eg footer. */};
       </InnerWrapper>
     </OuterWrapper>
   );

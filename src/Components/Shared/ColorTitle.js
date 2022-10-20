@@ -2,22 +2,25 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 const ColorTitle = (props) => {
-  const { background, textColor } = props;
+  const { background, title } = props;
 
-  const TitleButtonStyle = styled.div`
-  background-color: ${textColor};
+  const TitleWrapperStyle = styled.div`
+  // background-color: ${background};
+  // background-color: black;
   padding: 15 0 30px 0;
   margin: 0;
   display: flex;
   justify-content: center;
+  border: solid 2px black;
 `
-  const Title = styled.h2`
-  background-color: ${background};
+  const TitleStyle = styled.h2`
+  background-color: var(--fourthTitle);
   padding: 2px 6px;
   margin: 18px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
+  border: solid 2px blue;
 
   text-align: center;
   align-self: center;
@@ -29,9 +32,9 @@ const ColorTitle = (props) => {
   `;
   return (
     <div>
-      <TitleButtonStyle>
-        <Title>test</Title>
-      </TitleButtonStyle>
+      <TitleWrapperStyle>
+        <TitleStyle>{title}</TitleStyle>
+      </TitleWrapperStyle>
     </div>
   );
 };

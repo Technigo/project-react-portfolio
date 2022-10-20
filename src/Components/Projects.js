@@ -38,7 +38,8 @@ const Projects = () => {
       as="section"
       backgroundColor="var(--thirdBackground)">
       <ProjectStyle>
-        <ColorTitle />
+        <ColorTitle
+          title="Projects" />
         <div className="project-box">
           {filteredProjects.map((project) => {
             return (

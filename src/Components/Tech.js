@@ -19,7 +19,9 @@ const Tech = () => {
       as="section"
       backgroundColor="var(--secondBackground)">
       <TechStyle>
-        <ColorTitle />
+        <ColorTitle
+          background="var(--fourthTitle)"
+          title="Tech" />
         <p>HTML, CSS, Flexbox, JavaScript ES6, React, Web Accessibility, API:s, mob-programming,
           pair-programming, Github.
         </p>
