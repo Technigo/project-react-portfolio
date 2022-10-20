@@ -13,15 +13,14 @@ export const Tech = () => {
 }
 
 const Wrapper = styled.div`
-width: 100%;
-height; 100%;
-display: flex;
-flex-direction: column;
-align-items: center;  
-`
+    width: 100%;
+    height; 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    `
 
  const Text = styled.p `
-
  margin: 10px 10px 20px 10px;
 
 @media (min-width: 668px) {

@@ -47,7 +47,7 @@ export const Skills = () => {
 
 const Wrapper = styled.div`
 width: 100%;
-height; 100%;
+height; auto;
 display: flex;
 flex-direction: column;
 align-items: center;  
@@ -55,6 +55,7 @@ align-items: center;
 
 const Skill = styled.div`
 display: grid;
+height: 100%;
 grid-template-columns: repeat(2, 1fr);
 text-align: center;
 margin: 15px 15px 30px 15px; 

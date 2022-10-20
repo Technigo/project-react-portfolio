@@ -19,19 +19,16 @@ export const Intro = () => {
 
 const Text = styled.p `
 margin: 45px 10px 20px 10px;
- 
 
 @media (min-width: 668px) {
-width: 75%; 
-margin: 75px 75px 75px 12.5%; 
-
+    width: 75%; 
+    margin: 75px 75px 75px 12.5%; 
 }
 
 @media (min-width: 1024px) {
-        width: 50%; 
-        margin: 50px 50px 50px 25%;
-    
-        }
+    width: 50%; 
+     margin: 50px 50px 50px 25%;
+    }
 `
 const Line = styled.span`
     border: 1px solid #c85c3b;
