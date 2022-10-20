@@ -39,7 +39,7 @@ const HeaderBackground = styled.header`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 45vh;
+  height: 70vh;
   width: 100%;
 
   @media (min-width: 768px) {
