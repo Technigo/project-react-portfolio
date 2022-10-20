@@ -43,7 +43,7 @@ const CenterSkills = styled(TextWrapper)`
 padding-left: 20%;
 padding-right: 20%;
 }
-`
+`;
 
 const SkillWrapper = styled.div`
   display: grid;
@@ -53,7 +53,8 @@ const SkillWrapper = styled.div`
   @media (max-width: 400px) {
     grid-gap: 20px;
   }
-`
+`;
+
 const SkillsBox = styled.div`
   text-align: center;
   margin: 0;

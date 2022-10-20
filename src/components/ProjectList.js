@@ -39,4 +39,4 @@ margin: 2px;
 const OtherSectionTitile = styled(SectionTitle)`
 background: none;
 color: grey;
-`
+`;

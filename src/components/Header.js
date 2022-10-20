@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import React from 'react';
 import Cecilia from '../images/Cecilia.jpeg'
 import GitHub from '../images/img_326384.png'

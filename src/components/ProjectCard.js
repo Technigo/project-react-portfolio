@@ -60,4 +60,4 @@ const Center = styled.div`
 border: 3px solid yellow;
 display: grid;
 margin: 0 auto;
-`
+`;

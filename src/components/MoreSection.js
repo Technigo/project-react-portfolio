@@ -1,6 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper } from 'components/Section';
-import styled from 'styled-components'
 
 import GitHub from '../images/img_326384.png'
 
@@ -35,7 +35,7 @@ export default MoreSection;
 
 const IconWrap = styled(TextWrapper)`
 display:flex;
-`
+`;
 
 const IconContainer = styled.div`
 border: red solid 3px;
@@ -46,4 +46,4 @@ img{
     padding:10px;
     margin: 20px;
 }
-`
+`;

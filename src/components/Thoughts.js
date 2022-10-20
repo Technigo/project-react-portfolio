@@ -1,6 +1,6 @@
 import React from 'react';
-import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'components/Section';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
 
 const Thoughts = () => {
   return (
@@ -62,10 +62,11 @@ p{
     font-size: 1.2rem;
 }
   }
-`
+`;
+
 const ImageWrapper = styled.div`
 display:flex;
-`
+`;
 const Date = styled.h4`
 color: #c62a88;
 text-transform: uppercase;

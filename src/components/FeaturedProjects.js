@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Section, SectionTitle } from 'components/Section';
 import ProjectCard from './ProjectCard';
 import ProjectList from './ProjectList';

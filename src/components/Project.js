@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ProjectGrid = styled.div`
   display: inline-grid;
@@ -68,7 +68,7 @@ margin-top: 0;
 
 export const Link = styled.a`
 text-decoration: none;
-`
+`;
 
 export const ProjectTitle = styled.h2`
 color: black;
@@ -90,7 +90,7 @@ export const TagContainer = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
-`
+`;
 
 export const Tag = styled.span`
 color: #fff;
@@ -100,5 +100,5 @@ font-size: 12px;
 height: 12px;
 border-radius: 10%;
 padding: 5px;
-margin-right: 10px
+margin-right: 10px; 
 `;
