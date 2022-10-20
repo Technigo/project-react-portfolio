@@ -4,12 +4,12 @@ import { GlobalStyle } from './Global'
 import { Main } from './components/Main'
 
 export const App = () => {
-  return (
-    <>
-      <Reset />
-      <GlobalStyle />
-      <Main />
-    </>
-  )
+	return (
+		<>
+			<Reset />
+			<GlobalStyle />
+			<Main />
+		</>
+	)
 }
 

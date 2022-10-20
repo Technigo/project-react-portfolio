@@ -4,20 +4,17 @@ import heroImage from '../images/hero.jpg';
 import profileImage from '../images/portrait.jpg';
 
 const Header = () => {
-  return (
-    <HeaderStyler>
-      <article>
-        <h1>Portfolio: <span>Petra  <br />Söderström</span></h1>
-        <h2>frontend <br />developer</h2>
-      </article>
-      <div>
-        <img
-          src={profileImage}
-          alt="profile-of-Petras" />
-        <h6>Petra Söderström</h6>
-      </div>
-    </HeaderStyler>
-  )
+	return (
+		<HeaderStyler>
+			<article>
+				<h1>Portfolio: <span>Petra  <br />Söderström</span></h1>
+				<h2>frontend <br />developer</h2>
+			</article>
+			<div>
+				<img src={profileImage} alt="profile-of-Petras" />
+			</div>
+		</HeaderStyler>
+	)
 }
 
 export default Header;
@@ -35,7 +32,7 @@ display: flex;
 
 article {
   position: absolute;  
-  top: 15vh;
+  top: 11vh;
   left: 5vw;
 }
 
@@ -50,8 +47,12 @@ img {
 }
 
 
-/* @media (min-width: 668px) {
-} */
+@media (min-width: 668px) {
+	article {
+  top: 10vh;
+  }
+}
+
 
 @media (min-width: 1024px) {
   img {

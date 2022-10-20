@@ -6,21 +6,23 @@ import Tech from './Tech'
 import FeaturedProjects from './FeaturedProjects'
 import OtherProjects from './OtherProjects'
 import Articles from './Articles'
+import OtherThoughts from './OtherThoughts'
 import Skills from './Skills'
 import Footer from './Footer'
 
 export const Main = () => {
-  return (
-    <>
-      <Navbar />
-      <Header />
-      <About />
-      <Tech />
-      <FeaturedProjects />
-      <OtherProjects />
-      <Articles />
-      <Skills />
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Navbar />
+			<Header />
+			<About />
+			<Tech />
+			<FeaturedProjects />
+			<OtherProjects />
+			<Articles />
+			<OtherThoughts />
+			<Skills />
+			<Footer />
+		</>
+	)
 }
