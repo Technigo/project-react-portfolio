@@ -20,8 +20,8 @@ export const MainHeaders = styled.h2`
 `
 
 export const StyledH3 = styled.h3`
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     color: ${(props) => (props.selectedColor)};
     font-weight: 700;
     text-align: center;
@@ -45,4 +45,9 @@ export const IconGroup = styled.div`
     display: flex;
     width: 100%;
     justify-content:${(props) => (props.justifyContent)};
+  `
+
+export const FeaturedProjectsImg = styled.img`
+    width: ${(props) => (props.width)};
+    border-radius: ${(props) => (props.borderRadius)};
   `

@@ -13,9 +13,10 @@ export const ForMore = () => {
           iconMargin="19px"
           boxWidth="60px"
           boxHeight="60px"
-          linkedin="linkedin"
+          linkWidth="130px"
+          linkedin="Linkedin"
           github="Github"
-          stackOverflow="Stack Overflow/" />
+          stackOverflow="Stack Overflow" />
       </IconGroup>
     </InnerWrapper>
 
