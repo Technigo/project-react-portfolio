@@ -4,11 +4,11 @@ import { Presentation } from './components/Presentation';
 import { Tech } from './components/Tech'
 import { Projects } from './components/Projects';
 import { MoreProjects } from './components/MoreProjects';
+import { Thoughts } from './components/Thoughts';
 import { MoreThoughts } from './components/MoreThoughts';
 import { Skills } from './components/Skills';
 import { ForMoreLinks } from './components/ForMoreLinks';
 import { Contact } from './components/Contact';
-import { Thoughts } from './components/Thoughts';
 
 export const App = () => {
   const projectColor1 = 'red';

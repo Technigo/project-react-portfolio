@@ -6,6 +6,34 @@ import heroGithub from '../assets/icons/githubwhite.svg';
 import heroStackOverflow from '../assets/icons/stackwhite.svg';
 import profileImage from '../assets/Linneaprofil.JPG';
 
+export const Header = () => {
+  return (
+    <HeaderContainer>
+      <HeaderIcons>
+        <a href="https://www.linkedin.com/in/linn%C3%A9a-wahlstr%C3%B6m-018715253/" target="_blank" rel="noreferrer">
+          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
+        </a>
+        <a href="https://github.com/LinneaWa" target="_blank" rel="noreferrer">
+          <img src={heroGithub} alt="Github icon for the header" />
+        </a>
+        <a href="https://stackoverflow.com/c/technigo/users/400" target="_blank" rel="noreferrer">
+          <img
+            src={heroStackOverflow}
+            alt="Stack Overflow icon for the header" />
+        </a>
+      </HeaderIcons>
+      <HeaderTitle>
+        <p>Portfolio: <b>Linnéa Wahlström</b> </p>
+        <h3>Front-End</h3>
+        <h3>Developer</h3>
+      </HeaderTitle>
+      <HeaderImage>
+        <img src={profileImage} alt="Mrs Cakes" />
+      </HeaderImage>
+    </HeaderContainer>
+  );
+};
+
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
   width: 100%;
@@ -127,31 +155,3 @@ export const HeaderImage = styled.div`
     }
   }
 `;
-
-export const Header = () => {
-  return (
-    <HeaderContainer>
-      <HeaderIcons>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img src={heroGithub} alt="Github icon for the header" />
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img
-            src={heroStackOverflow}
-            alt="Stack Overflow icon for the header" />
-        </a>
-      </HeaderIcons>
-      <HeaderTitle>
-        <p>Portfolio: <b>Linnéa Wahlström</b> </p>
-        <h3>Front-End</h3>
-        <h3>Developer</h3>
-      </HeaderTitle>
-      <HeaderImage>
-        <img src={profileImage} alt="Mrs Cakes" />
-      </HeaderImage>
-    </HeaderContainer>
-  );
-};

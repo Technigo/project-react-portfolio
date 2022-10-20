@@ -9,25 +9,27 @@ export const ForMoreLinks = () => {
     <ForMoreContainer>
       <ForMoreHeading>FOR MORE</ForMoreHeading>
       <ForMoreIcons>
-        <div className="iconContainer">
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/linn%C3%A9a-wahlstr%C3%B6m-018715253/" target="_blank" rel="noreferrer">
+          <div className="iconContainer">
             <img src={LinkedinIcon} lang="eng" alt="Linkedin icon" />
-          </a>
-          <p>LINKEDIN</p>
-        </div>
-        <div className="linkName" />
-        <div className="iconContainer">
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+            <p>LINKEDIN</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/LinneaWa" target="_blank" rel="noreferrer">
+          <div className="iconContainer">
             <img src={GithubIcon} lang="eng" alt="Github icon" />
-          </a>
-          <p>GITHUB</p>
-        </div>
-        <div className="iconContainer">
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+            <p>GITHUB</p>
+          </div>
+        </a>
+
+        <a href="https://stackoverflow.com/c/technigo/users/400" target="_blank" rel="noreferrer">
+          <div className="iconContainer">
             <img src={StackOverflowIcon} lang="eng" alt="Stackoverflow icon" />
-          </a>
-          <p>STACK OVERFLOW</p>
-        </div>
+            <p>STACK OVERFLOW</p>
+          </div>
+        </a>
+
       </ForMoreIcons>
     </ForMoreContainer>
   );
@@ -73,7 +75,6 @@ padding: 10px;
     padding: 20px;
     border: 2px solid #fa392f;
     border-radius: 50%;
-    margin: 88px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,6 +92,7 @@ padding: 10px;
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
   }
 `;
 

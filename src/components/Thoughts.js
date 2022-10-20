@@ -81,12 +81,6 @@ const ThoughtCard = styled.a`
   gap: 5px;
   text-decoration: none;
   position: relative;
-
-  /* Optional hover effect, delete if not desired */
-  /* &:hover {
-    transform: translateY(-1%);
-    transition: transform 0.3s;
-  } */
 `;
 
 const ThumbnailImage = styled.div`
@@ -99,11 +93,7 @@ const ThumbnailImage = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   font-size: 26px;
-  background-image: linear-gradient(180deg, #1c232580, #1c232580),
-    url(${(props) => props.url});
-  &:hover {
-    background-image: linear-gradient(#1c23255e, #1c23255e),
-      url(${(props) => props.url});
+  background-image: url(${(props) => props.url});
   }
 `;
 

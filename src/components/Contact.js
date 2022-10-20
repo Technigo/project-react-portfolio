@@ -14,14 +14,14 @@ export const Contact = () => {
   )
 }
 
-export const ContactContainer = styled.div`
+const ContactContainer = styled.div`
     display: Flex;
     width: 100%;
     height: auto;
     background: #072BCE;
 `;
 
-export const ContactText = styled.div`
+const ContactText = styled.div`
     display:flex;
     flex-direction: column;
     justify-content: center;
