@@ -20,10 +20,9 @@ export const LinkedInSvg = () => {
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"
-      viewBox="0 0 448 512"
+      viewBox="0 -20 448 512"
       height="1.8rem"
-      width="1.8rem"
-      xmlns="http://www.w3.org/2000/svg">
+      width="1.8rem">
       <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
     </svg>
   )
@@ -37,8 +36,7 @@ export const StackSvg = () => {
       strokeWidth="0"
       viewBox="0 0 384 512"
       height="1.8rem"
-      width="1.8rem"
-      xmlns="http://www.w3.org/2000/svg">
+      width="1.8rem">
       <path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z" />
     </svg>
   )

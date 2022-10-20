@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   --width: 40rem;
 
   @media (max-width: 750px) {
-    --width: 33rem;
+    --width: 33rem; 
   }
 
   @media (max-width: 650px) {

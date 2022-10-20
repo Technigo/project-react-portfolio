@@ -19,7 +19,6 @@ const SkillsMoreGrid = styled.div`
 
   /* For More */
     & div {
-      width: fit-content;
     } 
     
       & a {
@@ -30,16 +29,15 @@ const SkillsMoreGrid = styled.div`
         width: fit-content;
       }
 
-        & svg {
-          background-color: var(--sub-color);
-          border-radius: 50%;
-          color: white;
-          text-align: center;
-          width: 3.5rem;
-          height: 3.5rem;
-          margin-bottom: 0.5rem;
-          padding: 12px 0;
-        }
+          & svg {
+            background-color: var(--sub-color);
+            border-radius: 50%;
+            color: white;
+            width: 3.5rem;
+            height: 3.5rem;
+            margin-bottom: 0.5rem;
+            padding: 12px 0;
+          }
 `;
 
 export default SkillsMoreGrid;
