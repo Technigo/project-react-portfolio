@@ -6,7 +6,7 @@ import Paragraph from './styled/Paragraph.styled';
 const Summary = () => {
   return (
     <SectionContainer bg>
-      <Paragraph>
+      <Paragraph main>
         <Line /><Dot />
           I&apos;m a freshly
           baked frontend developer named Fredrik. With a background in office

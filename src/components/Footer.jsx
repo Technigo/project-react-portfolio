@@ -5,11 +5,18 @@ import Paragraph from './styled/Paragraph.styled';
 const Footer = () => {
   return (
     <StyledFooter>
-      <h4>Contact</h4>
-      <Paragraph center>Fredrik Holm
-        <a href="mailto:karlfredrikholm@gmail.com">karlfredrikholm@gmail.com</a>
-        +46724035836
+      <h3>Contact</h3>
+      <Paragraph main center>
+        Fredrik Holm
       </Paragraph>
+      <a href="mailto:karlfredrikholm@gmail.com">
+        <Paragraph main center>
+          karlfredrikholm@gmail.com
+        </Paragraph>
+        <Paragraph main center>
+          +46724035836
+        </Paragraph>
+      </a>
     </StyledFooter>
   );
 };
@@ -28,7 +35,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   height: 250px;
 
-  & h4 {
+  & h3 {
     background-color: none;
     font-size: 1.5rem;
     font-weight: 700;
@@ -42,5 +49,6 @@ const StyledFooter = styled.footer`
     display: block;
     color: white;
     text-decoration: none;
+    text-transform: lowercase;
   }
 `;

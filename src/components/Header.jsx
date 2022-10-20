@@ -36,9 +36,9 @@ const Header = () => {
       </IconsContainer>
 
       <HeadingsContainer>
-        <NameHeading>Portfolio: Fredrik Holm</NameHeading>
-        <TitleHeading1>Frontend developer</TitleHeading1>
-        <TitleHeading2>with organizational skills</TitleHeading2>
+        <h1>Portfolio: Fredrik Holm</h1>
+        <h2>Frontend developer</h2>
+        <h3>with organizational skills</h3>
       </HeadingsContainer>
 
       <ProfileImage src={profilePic} alt="me" />
@@ -98,41 +98,6 @@ const HeadingsContainer = styled.div`
 
   @media (max-width: 650px) {
     margin: 10rem 0 0 2rem;
-  }
-`;
-
-const NameHeading = styled.h1`
-  font-family: var(--sub-font);
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.4rem;
-  text-transform: uppercase;
-
-  @media (max-width: 650px) {
-    font-size: 1.1rem;
-  }
-`;
-
-const TitleHeading1 = styled.h2`
-  font-family: var(--main-font);
-  font-size: 3rem;
-  font-weight: 700;
-
-  @media (max-width: 1200px) {
-    font-size: 2.5rem;
-  }
-
-  @media (max-width: 650px) {
-    font-size: 2.3rem;
-  }
-`;
-
-const TitleHeading2 = styled.h2`
-  font-size: 1.5rem;
-
-  @media (max-width: 650px) {
-    font-size: 1.4rem;
-    font-weight: 400;
   }
 `;
 

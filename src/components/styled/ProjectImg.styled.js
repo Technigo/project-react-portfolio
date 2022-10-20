@@ -15,7 +15,6 @@ const ProjectImage = styled.div`
   background-size: cover;
   border: 1px solid black;
   aspect-ratio: 1.5 / 1;
-  min-width: 100%;
 
     & div {
       background-color: var(--main-color);
@@ -28,13 +27,6 @@ const ProjectImage = styled.div`
 
     &:hover div {
       opacity: 0;
-    }
-
-    & p {
-      font-size: 1.5rem;
-      font-weight: 900;
-      padding-top: 5.5rem;
-      text-transform: uppercase
     }
 `
 

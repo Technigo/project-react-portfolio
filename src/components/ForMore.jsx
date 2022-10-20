@@ -1,13 +1,12 @@
 import React from 'react'
 import SectionContainer from './styled/SectionContainer.styled'
-import SectionMainHeading from './styled/SectionMainHeading.styled'
 import SkillsMoreGrid from './styled/SkillsMoreGrid.styled'
 import { GitHubSvg, LinkedInSvg, StackSvg } from './Icons';
 
 const ForMore = () => {
   return (
     <SectionContainer>
-      <SectionMainHeading>For More</SectionMainHeading>
+      <h4>For More</h4>
       <SkillsMoreGrid>
 
         <div>
@@ -33,7 +32,7 @@ const ForMore = () => {
 
       </SkillsMoreGrid>
     </SectionContainer>
-  )
-}
+  );
+};
 
 export default ForMore;

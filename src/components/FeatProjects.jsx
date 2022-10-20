@@ -2,8 +2,6 @@ import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
 import ArticleGrid from './styled/ArticleGrid.styled';
 import ArticleCard from './styled/ArticleCard.styled';
-import SectionMainHeading from './styled/SectionMainHeading.styled';
-import SectionSubHeading from './styled/SectionSubHeading.styled';
 import Paragraph from './styled/Paragraph.styled';
 import Topic from './styled/Topic.styled';
 import TopicsContainer from './styled/TopicsContainer.styled';
@@ -12,24 +10,29 @@ import ProjectImg from './styled/ProjectImg.styled';
 const FeatProjects = () => {
   return (
     <SectionContainer bg>
-      <SectionMainHeading>Featured Projects</SectionMainHeading>
+      <h4>Featured Projects</h4>
       <ArticleGrid>
 
         <ArticleCard>
           <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">
             <ProjectImg project1>
               <div>
-                <p>Happy Thoughts</p>
+                <h6>Happy Thoughts</h6>
               </div>
             </ProjectImg>
           </a>
-          <SectionSubHeading>Happy Thoughts</SectionSubHeading>
-          <Paragraph grid>React project made to practice get/post requests to API.</Paragraph>
+          <h5>Happy Thoughts</h5>
+          <Paragraph grid>React project made to practice hooks and get/post
+          requests to API.
+          </Paragraph>
           <TopicsContainer>
             <Topic>react</Topic>
-            <Topic>hooks</Topic>
-            <Topic>api</Topic>
+            <Topic>API</Topic>
             <Topic>css3</Topic>
+          </TopicsContainer>
+          <TopicsContainer>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
+            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
         </ArticleCard>
 
@@ -37,11 +40,11 @@ const FeatProjects = () => {
           <a href="https://webdevsurvey.netlify.com" target="_blank" rel="noreferrer">
             <ProjectImg project3>
               <div>
-                <p>Web Dev Survey</p>
+                <h6>Web Dev Survey</h6>
               </div>
             </ProjectImg>
           </a>
-          <SectionSubHeading>Survey</SectionSubHeading>
+          <h5>Survey</h5>
           <Paragraph grid>Survey made to get familiar with React and the useState hook.</Paragraph>
           <TopicsContainer>
             <Topic>react</Topic>
@@ -49,17 +52,21 @@ const FeatProjects = () => {
             <Topic>css3</Topic>
             <Topic>html5</Topic>
           </TopicsContainer>
+          <TopicsContainer>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
+            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+          </TopicsContainer>
         </ArticleCard>
 
         <ArticleCard>
           <a href="https://fint-vader.netlify.com" target="_blank" rel="noreferrer">
             <ProjectImg project4>
               <div>
-                <p>Weather Web App</p>
+                <h6>Weather Web App</h6>
               </div>
             </ProjectImg>
           </a>
-          <SectionSubHeading>Weather Web App</SectionSubHeading>
+          <h5>Weather Web App</h5>
           <Paragraph grid>JS project done in pairs to practice working with an API.</Paragraph>
           <TopicsContainer>
             <Topic>js</Topic>
@@ -68,6 +75,10 @@ const FeatProjects = () => {
             <Topic>css3</Topic>
             <Topic>html5</Topic>
           </TopicsContainer>
+          <TopicsContainer>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
+            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+          </TopicsContainer>
         </ArticleCard>
 
         <ArticleCard>
@@ -75,17 +86,23 @@ const FeatProjects = () => {
           <a href="https://nitflax.netlify.com" target="_blank" rel="noreferrer">
             <ProjectImg project2>
               <div>
-                <p>Ice Cream Bot</p>
+                <h6>Ice Cream Bot</h6>
               </div>
             </ProjectImg>
           </a>
-          <SectionSubHeading>Chatbot</SectionSubHeading>
-          <Paragraph grid>Early project made to practice functions and DOM manipulation.</Paragraph>
+          <h5>Chatbot</h5>
+          <Paragraph grid>First JS project! Made to practice functions and DOM
+          manipulation.
+          </Paragraph>
 
           <TopicsContainer>
             <Topic>javascript</Topic>
             <Topic>es6</Topic>
             <Topic>css3</Topic>
+          </TopicsContainer>
+          <TopicsContainer>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
+            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
 
         </ArticleCard>

@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionContainer from './styled/SectionContainer.styled';
-import SectionMainHeading from './styled/SectionMainHeading.styled';
-import SectionSubHeading from './styled/SectionSubHeading.styled';
 
 const Skills = () => {
   return (
     <SectionContainer bg>
-      <SectionMainHeading>Skills</SectionMainHeading>
+      <h4>Skills</h4>
       <SkillsGrid>
         <div>
-          <SectionSubHeading>Toolbox</SectionSubHeading>
+          <h5>Toolbox</h5>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -20,7 +18,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <SectionSubHeading>Code</SectionSubHeading>
+          <h5>Code</h5>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -30,7 +28,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <SectionSubHeading>More</SectionSubHeading>
+          <h5>More</h5>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
