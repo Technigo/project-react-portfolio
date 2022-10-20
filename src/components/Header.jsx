@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import liIcon from '../assets/linkedin_icon.png';
-import ghIcon from '../assets/github_icon.png';
-import soIcon from '../assets/stack_overflow_icon.png';
 import profilePic from '../assets/profile_pic.jpeg';
+import { GitHubSvg, StackSvg, LinkedInSvg } from './Icons';
 
 const Header = () => {
   return (
@@ -13,25 +11,25 @@ const Header = () => {
           href="https://www.linkedin.com/in/fredrik-holm-10406b106/"
           target="_blank"
           rel="noreferrer">
-          <img
-            src={liIcon}
-            alt="link to my profile on linkedin" />
+          <div>
+            <LinkedInSvg />
+          </div>
         </a>
         <a
           href="https://github.com/karlfredrikholm/"
           target="_blank"
           rel="noreferrer">
-          <img
-            src={ghIcon}
-            alt="link to myh profile on github" />
+          <div>
+            <GitHubSvg />
+          </div>
         </a>
         <a
           href="https://stackoverflow.com/users/19384002/fredrik-holm"
           target="_blank"
           rel="noreferrer">
-          <img
-            src={soIcon}
-            alt="link to my profile on stack overflow" />
+          <div>
+            <StackSvg />
+          </div>
         </a>
       </IconsContainer>
 
@@ -74,10 +72,17 @@ const IconsContainer = styled.div`
   top: 2.5rem;
   right: 4.5rem;
 
-  & img {
-    height: auto;
-    width: 55px;
-  }
+   & div {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: .65rem .75rem;
+   }
+
+    & svg {
+      height: 2rem;
+      width: 2.1rem;
+    }
 
   @media (max-width: 1200px) {
     right: 3rem;

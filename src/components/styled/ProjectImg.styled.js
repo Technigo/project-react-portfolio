@@ -5,7 +5,7 @@ import projectImg2 from '../../assets/chatbot.png';
 import projectImg3 from '../../assets/survey.png';
 import projectImg4 from '../../assets/weather_app.png';
 
-const ProjectImage = styled.div`
+const ProjectImg = styled.div`
   background-image: ${(props) => (
     props.project1 ? `url(${projectImg1})`
       : props.project2 ? `url(${projectImg2})`
@@ -30,4 +30,4 @@ const ProjectImage = styled.div`
     }
 `
 
-export default ProjectImage;
+export default ProjectImg;

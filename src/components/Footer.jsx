@@ -13,10 +13,10 @@ const Footer = () => {
         <Paragraph main center>
           karlfredrikholm@gmail.com
         </Paragraph>
-        <Paragraph main center>
-          +46724035836
-        </Paragraph>
       </a>
+      <Paragraph main center>
+          +46724035836
+      </Paragraph>
     </StyledFooter>
   );
 };

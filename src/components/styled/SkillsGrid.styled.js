@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SkillsMoreGrid = styled.div`
+const SkillsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
@@ -9,7 +9,6 @@ const SkillsMoreGrid = styled.div`
   margin: var(--margin);
   width: var(--width);
 
-  /* Skills */ 
   & ul {
     font-size: 1rem;
     margin-top: 5px;
@@ -18,7 +17,7 @@ const SkillsMoreGrid = styled.div`
   }
 
   /* For More */
-    & div {
+/*     & div {
     } 
     
       & a {
@@ -37,7 +36,7 @@ const SkillsMoreGrid = styled.div`
             height: 3.5rem;
             margin-bottom: 0.5rem;
             padding: 12px 0;
-          }
+          } */
 `;
 
-export default SkillsMoreGrid;
+export default SkillsGrid;

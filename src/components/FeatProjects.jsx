@@ -27,7 +27,8 @@ const FeatProjects = () => {
           </Paragraph>
           <TopicsContainer>
             <Topic>react</Topic>
-            <Topic>API</Topic>
+            <Topic>javascript-es6</Topic>
+            <Topic>api</Topic>
             <Topic>css3</Topic>
           </TopicsContainer>
           <TopicsContainer>
@@ -48,7 +49,7 @@ const FeatProjects = () => {
           <Paragraph grid>Survey made to get familiar with React and the useState hook.</Paragraph>
           <TopicsContainer>
             <Topic>react</Topic>
-            <Topic>es6</Topic>
+            <Topic>javascript-es6</Topic>
             <Topic>css3</Topic>
             <Topic>html5</Topic>
           </TopicsContainer>
@@ -67,10 +68,9 @@ const FeatProjects = () => {
             </ProjectImg>
           </a>
           <h5>Weather Web App</h5>
-          <Paragraph grid>JS project done in pairs to practice working with an API.</Paragraph>
+          <Paragraph grid>Vanilla JS project made with data from Open Weather API.</Paragraph>
           <TopicsContainer>
-            <Topic>js</Topic>
-            <Topic>es6</Topic>
+            <Topic>javascript-es6</Topic>
             <Topic>api</Topic>
             <Topic>css3</Topic>
             <Topic>html5</Topic>
@@ -96,9 +96,9 @@ const FeatProjects = () => {
           </Paragraph>
 
           <TopicsContainer>
-            <Topic>javascript</Topic>
-            <Topic>es6</Topic>
+            <Topic>javascript-es6</Topic>
             <Topic>css3</Topic>
+            <Topic>html5</Topic>
           </TopicsContainer>
           <TopicsContainer>
             <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>

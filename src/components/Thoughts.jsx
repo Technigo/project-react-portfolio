@@ -3,7 +3,7 @@ import SectionContainer from './styled/SectionContainer.styled';
 import Paragraph from './styled/Paragraph.styled';
 import ArticleGrid from './styled/ArticleGrid.styled';
 import ArticleCard from './styled/ArticleCard.styled';
-import ProjectImg from './styled/ProjectImg.styled';
+import ThoughtsImg from './styled/ThoughtsImg.styled';
 
 const Thoughts = () => {
   return (
@@ -12,13 +12,21 @@ const Thoughts = () => {
       <ArticleGrid>
 
         <ArticleCard>
-          <ProjectImg project1 />
+          <ThoughtsImg>
+            <div>
+              <h6>Coming soon</h6>
+            </div>
+          </ThoughtsImg>
           <h5>Some Personal Gibberish</h5>
           <Paragraph grid>About how I started learning web development.</Paragraph>
         </ArticleCard>
 
         <ArticleCard>
-          <ProjectImg project3 />
+          <ThoughtsImg>
+            <div>
+              <h6>Coming soon</h6>
+            </div>
+          </ThoughtsImg>
           <h5>Some Personal Gibberish</h5>
           <Paragraph grid>About how I started learning web development.</Paragraph>
 

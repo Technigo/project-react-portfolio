@@ -7,19 +7,18 @@ import TopicsContainer from './styled/TopicsContainer.styled';
 import Topic from './styled/Topic.styled';
 
 const OtherProjects = ({ repos }) => {
-  console.log(repos)
   return (
     <SectionContainer bg>
       <h4>Other Projects</h4>
       <ArticleGrid other>
         {repos.sort().map((project) => {
-          if (project.created_at.startsWith('2022-09') && project.description) {
+          if (project.topics.includes('portfolio')) {
             return (
               <ArticleCard other key={project.id}>
                 <h5>{project.name.slice(8)}</h5>
                 <Paragraph>{project.description}</Paragraph>
                 <TopicsContainer>
-                  {project.topics.map((topic) => <Topic>{topic}</Topic>)}
+                  {project.topics.map((topic) => (topic !== 'portfolio' && <Topic>{topic}</Topic>))}
                 </TopicsContainer>
               </ArticleCard>
             );
