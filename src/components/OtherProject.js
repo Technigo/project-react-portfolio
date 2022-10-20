@@ -7,7 +7,7 @@ const OtherProject = () => {
     <ProjectList>
       <StyledFeaturedProject>
         <StyledTextWrapper>
-          <h3>Title</h3>
+          <h4>Title</h4>
           <p>Description</p>
         </StyledTextWrapper>
         <StyledTagWrapper>
