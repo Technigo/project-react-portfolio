@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerWhite, SectionHeadings, SubHeadings } from 'Globalstyles';
+import { SectionContainer, SectionHeadings, SubHeadings } from 'Globalstyles';
 import { SkillsWrapper } from './Skills.styles';
 
 const Skills = () => {
   return (
-    <ContainerWhite>
+    <SectionContainer>
       <SectionHeadings>SKILLS</SectionHeadings>
       <SkillsWrapper>
         <div>
@@ -39,7 +39,7 @@ const Skills = () => {
           <p>C#</p>
         </div>
       </SkillsWrapper>
-    </ContainerWhite>
+    </SectionContainer>
   )
 }
 

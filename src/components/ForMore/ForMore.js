@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerGrey, SectionHeadings } from 'Globalstyles';
+import { SectionContainer, SectionHeadings } from 'Globalstyles';
 import { ForMoreSocialBar } from './ForMore.styles';
 
 const ForMore = () => {
   return (
-    <ContainerGrey>
+    <SectionContainer bgColor="#eeeeee">
       <SectionHeadings>FOR MORE</SectionHeadings>
       <ForMoreSocialBar>
         <a href="https://www.linkedin.com/in/sofierydmark/" role="button" aria-pressed="false" aria-label="linkedin-profile" target="_blank" rel="noreferrer">
@@ -18,7 +18,7 @@ const ForMore = () => {
           <img src="images/stackOverflow.svg" alt="stackOverflow" />
         </a>
       </ForMoreSocialBar>
-    </ContainerGrey>
+    </SectionContainer>
   )
 }
 

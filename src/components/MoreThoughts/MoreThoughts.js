@@ -1,11 +1,11 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerGrey, SectionHeadings } from 'Globalstyles';
+import { SectionContainer, SectionHeadings } from 'Globalstyles';
 import { StyledMoreThoughts } from './MoreThoughts.styles';
 
 const MoreThoughts = () => {
   return (
-    <ContainerGrey>
+    <SectionContainer bgColor="#eeeeee">
       <SectionHeadings>MORE THOUGHTS</SectionHeadings>
       <StyledMoreThoughts>
         <a href="https://medium.com/codesphere-cloud/10-algorithms-every-developer-should-learn-628faf0f9234" role="button" aria-pressed="false" aria-label="my thoughts" target="_blank" rel="noreferrer">
@@ -14,7 +14,7 @@ const MoreThoughts = () => {
           </p>
         </a>
       </StyledMoreThoughts>
-    </ContainerGrey>
+    </SectionContainer>
   )
 }
 

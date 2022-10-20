@@ -1,0 +1,115 @@
+[
+  {
+		"overlay_title": "MOVIE SITE",
+		"id": 1,
+		"img_src": "/images/project-movies.png",
+		"title": "MINIFLIX",
+		"project_description": "Browse popular movies and series. Built using hooks and routes in React with the use of APIs. ",
+    	"repo_name": "project-movies",
+		"netlify_name": "miniflix-project-movies",
+    	"url": "https://github.com/SofieRydmark/project-movies",
+		"tags": [
+			{
+				"id": 1,
+				"name": "React Router"
+			  },
+			  {
+				"id": 2,
+				"name": "React Hooks"
+			  },
+			  {
+				"id": 3,
+				"name": "APis"
+			  },
+			  {
+				"id": 4,
+				"name": "HTML5"
+			  },
+			  {
+				"id": 5,
+				"name": "CSS3"
+			  }
+		]
+	},	
+  {
+		"overlay_title": "HAPPY THOUGHTS",
+		"id": 2,
+		"img_src": "/images/happy-thoughts.png",
+		"title": "HAPPY THOUGHTS CHAT",
+		"project_description": "A live chatboard where you can post happy thoughts, built in React using APIs",
+    	"repo": "project-happy-thoughts",
+		"netlify_name": "w7-happy-thoughts.netlify.app",
+    	"url": "https://github.com/SofieRydmark/project-happy-thoughts",
+		"tags": [
+			{
+				"id": 2,
+				"name": "React Hooks"
+			  },
+			  {
+				"id": 3,
+				"name": "APIs"
+			  },
+			  {
+				"id": 4,
+				"name": "HTML5"
+			  },
+			  {
+				"id": 5,
+				"name": "CSS3"
+			  }	 
+		]
+	},
+  {
+		"overlay_title": "GUESS WHO?",
+		"id": 3,
+		"img_src": "/images/guess-who.PNG",
+		"title": "GUESS WHO? - GAME",
+		"project_description": "  A digital version of the classic board game using Javascript ES6, HTML and CSS. With a fun Family Guy theme.",
+    	"repo_name": "project-guess-who",
+		"netlify_name": "project-guesswho-sofierydmark",
+    	"url": "https://github.com/SofieRydmark/project-guess-who",
+		"tags": [
+			{
+				"id": 4,
+				"name": "HTML5"
+			  },
+			  {
+				"id": 5,
+				"name": "CSS3"
+			  },
+			  {
+				"id": 6,
+				"name": "Javascript ES6"
+			  }
+		]
+	},
+  {
+		"overlay_title": "WEATHER APP",
+		"id": 4,
+		"img_src": "/images/weatherapp.PNG",
+		"title": "WEATHER APP",
+		"project_description": "A responsive weather app using APIs that tells you today's weather, temperature and a 5-day forecast.",
+    	"repo_name": "project-weather-app",
+		"netlify_name": "weather-app-week3",
+    	"url": "https://github.com/SofieRydmark/project-weather-app",
+		"tags": [
+			{
+				"id": 4,
+				"name": "HTML5"
+			  },
+			  {
+				"id": 5,
+				"name": "CSS3"
+			  },
+			  {
+				"id": 6,
+				"name": "Javascript ES6"
+			  }
+			  ,
+			  {
+				"id": 3,
+				"name": "APIs"
+			  }
+		]
+	}
+]

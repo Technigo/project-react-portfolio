@@ -7,19 +7,18 @@ export const ForMoreSocialBar = styled.div`
     justify-content: center;
 
     img {
-      width: 80px;
-      margin-left: 10px;
-
+      width: 5rem;
+      margin: 1rem;
+      
       &:hover {
       opacity: 0.6;
     }
     }
 
     @media (min-width: 768px) {
-        gap: 40px;
 
         img {
-            width: 100px;
+            width: 7rem;
         }
     }
 

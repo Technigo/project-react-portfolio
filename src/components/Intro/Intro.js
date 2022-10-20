@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { ContainerWhite, SectionText, StartFigure } from 'Globalstyles';
+import { SectionContainer, SectionText, StartFigure } from 'Globalstyles';
 
 const Intro = () => {
   return (
-    <ContainerWhite>
+    <SectionContainer>
       <SectionText>
         <StartFigure src="images/start-figure.svg" alt="start-figure" />
           Hello! I`m a student at Technigo and will be a graduated frontend
@@ -13,7 +13,7 @@ const Intro = () => {
           creative with code and change the smallest of details. I`m eager to
           learn more!
       </SectionText>
-    </ContainerWhite>
+    </SectionContainer>
   )
 }
 
