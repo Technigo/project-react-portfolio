@@ -3,7 +3,7 @@ import React from 'react';
 
 const Articles = () => {
 	return (
-		<div>
+		<div className="innerwrapper">
 			<h3>Articles</h3>
 			<p>
 			I think it is really cool with my journey from being a business

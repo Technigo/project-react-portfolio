@@ -34,6 +34,13 @@ export default Footer;
 const FooterStyler = styled.footer`
 
 background-color: rgb(49, 225, 247);
+h3{
+display: flex;
+justify-content: center;
+flex-direction: row;
+display:table;
+margin: 0px auto 0px auto;
+}
 
 a{
 display: flex;

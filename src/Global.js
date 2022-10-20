@@ -33,6 +33,7 @@ text-transform: uppercase;
 color: #fff;
 background-color: rgb(255, 119, 119);
 display: table;
+margin: 0px auto 0px auto;
 }
 h4{
 	text-transform: uppercase

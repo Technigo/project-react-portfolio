@@ -3,7 +3,7 @@ import React from 'react';
 
 const Tech = () => {
 	return (
-		<div>
+		<div className="innerwrapper">
 			<h3>Tech</h3>
 			<p>HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Redux,
 		Styled Components, Web Accessibly, API:s, mob-programming,
