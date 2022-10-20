@@ -64,9 +64,9 @@ a:hover {
 }
 
 header {
-height: 520px;
-position: relative;
-background-size: cover;
+    height: 520px;
+    position: relative;
+    background-size: cover;
 }
 
 footer {
@@ -80,14 +80,14 @@ width: 327vw;
 margin: 0 auto;
 
 @media (min-width: 768px){
-        width: 440vw;
-        margin: 0 auto;
+    width: 440vw;
+    margin: 0 auto;
 }
 
 @media (min-width: 1024px){
-        width: 60vw;
-        margin: 0 auto;
-        position:relative;
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
     }
 `
 export const Hidden = styled.span`
