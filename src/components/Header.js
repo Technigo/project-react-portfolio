@@ -4,26 +4,23 @@ import styled from 'styled-components';
 import { Icons } from './Icons'
 import myPicture from '../Pictures/myPicture.jpg';
 import backgroundPic from '../Pictures/backgroundPic.PNG';
-import { Pitch } from './Pitch';
 
 export const Header = () => {
   return (
-    <>
-      <StyledHeader>
-        <div className="headerTitle">
-          <h1>Portfolio:</h1>
-          <h1>Kaja Wilbik</h1>
-          <h2>Front-end developer</h2>
-        </div><img src={myPicture} alt="Kajas profile" />
-        <Icons />
-      </StyledHeader>
-      <Pitch />
-    </>
+    <StyledHeader>
+      <div className="headerTitle">
+        <h1>Portfolio:</h1>
+        <h1>Kaja Wilbik</h1>
+        <h2>Front-end developer</h2>
+      </div><img src={myPicture} alt="Kajas profile" />
+      <Icons size="40px" />
+    </StyledHeader>
   )
 }
 
 const StyledHeader = styled.header`
  background-image: url(${backgroundPic});
+ background-size: cover; // make a background picture cover the whole page
  display: flex;
     height: 520px;
     width: 100vw;

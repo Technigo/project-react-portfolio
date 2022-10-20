@@ -22,6 +22,6 @@ export const Pitch = () => {
 }
 
 const StyledPitch = styled.h3`
-    margin-top: 90px;
+    margin-top: 45px;
     padding: 20px;  
-    `
+`

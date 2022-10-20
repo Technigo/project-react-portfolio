@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { RiLinkedinFill } from '@react-icons/all-files/ri/RiLinkedinFill';
 import { BsGithub, BsStackOverflow } from 'react-icons/bs';
 
-export const Icons = () => {
+export const Icons = (size) => {
   return (
-    <IconsHeader className="icons_header">
+    <IconsHeader size={size} className="icons_header">
       <a
         href="https://www.linkedin.com/in/kaja-wilbik/"
         target="_blank"
@@ -49,7 +49,7 @@ const IconsHeader = styled.i`
 }
 
 .icons {
-    font-size:40px;
+ font-size:${(props) => props.size}; // using props aloud me to change a size of icon, remember to add the proper size when I mount a comp example size=""
     display: flex;
     justify-content: space-evenly;
 }
