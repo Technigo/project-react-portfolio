@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import GlobalStyles from 'Globalstyles'
+import ScrollButton from 'components/Scrollbutton'
 import Header from 'components/Header/Header'
 import Intro from 'components/Intro/Intro'
 import Tech from 'components/Tech/Tech'
@@ -16,6 +17,7 @@ export const App = () => {
   return (
     <>
       <GlobalStyles />
+      <ScrollButton />
       <Header />
       <Intro />
       <Tech />

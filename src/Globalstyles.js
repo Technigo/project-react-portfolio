@@ -126,4 +126,29 @@ export const StartFigure = styled.img`
     padding-right: 5px;
  `
 
+/* SCROLL TO TOP */
+
+export const ScrollBtn = styled.button`
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 99;
+    border: none;
+    background-color: #e8dcdc;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 7px 8px 23px -7px rgba(0,0,0,0.87);
+
+    &:hover {
+        opacity: 0.6
+    }
+
+`
+
 export default GlobalStyles;
