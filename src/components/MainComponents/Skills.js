@@ -68,10 +68,15 @@ text-align: center;
 margin: 15px 15px 30px 15px; 
 gap: 10px; 
 
-@media (min-width: 668px) {
-    width: 60%;
-    margin: 15px 20% 30px 20%;
-    
+@media (min-width: 668px) and (max-width: 1024px) {
+    width: 50%;
+    margin: 15px 25% 30px 25%;
+}
+
+@media (min-width: 1024px) {
+    width: 40%;
+    margin: 15px 30% 30px 30%;
+}
 `
 
 const Code = styled.div`
