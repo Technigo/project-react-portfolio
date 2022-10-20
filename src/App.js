@@ -21,14 +21,10 @@ export const App = () => {
   )
 }
 
-const options = {
-  method: 'GET',
-  headers: {
-    Authorization: 'token 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'
-  }
-}
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     Authorization: 'token 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'
+//   }
+// }
 
-fetch('https://api.github.com/users/marwebdesign/repos', options)
-  .then((data) => data.json())
-  // .then((response) => console.log(response))
-  .then((response) => console.log(response[0].name))
