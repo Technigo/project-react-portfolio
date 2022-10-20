@@ -7,11 +7,14 @@ export const ForMoreSocialBar = styled.div`
     justify-content: center;
 
     img {
-      width: 5rem;
-      margin: 1rem;
-      
-      &:hover {
-      opacity: 0.6;
+        width: 5rem;
+        margin: 1rem;
+        border-radius: 50%;
+        background: #eeeeee;
+        box-shadow: 11px 11px 21px #a19797, -11px -11px 21px #d9cdcd;
+        
+        &:hover {
+        box-shadow: inset 11px 11px 21px #a09c9c, inset -11px -11px 21px #d8d4d4;
     }
     }
 

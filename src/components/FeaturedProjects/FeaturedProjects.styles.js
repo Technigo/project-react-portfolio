@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components'
 
-export const StyledFeaturedProjects = styled.div`
+export const StyledProjectGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -25,7 +25,7 @@ export const StyledFeaturedProjects = styled.div`
 
 `
 
-export const FeaturedProject = styled.article`
+export const ProjectWrapper = styled.article`
     position: relative;
 
     img {

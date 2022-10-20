@@ -1,17 +1,17 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import projects from 'featured-projects.json'
+import projects from 'data/featured-projects.json'
 import { ArticleText, SectionContainer, SectionHeadings, SubHeadings, Tags } from 'Globalstyles';
-import { FeaturedProject, OverlayImage, StyledFeaturedProjects } from './FeaturedProjects.styles';
+import { ProjectWrapper, OverlayImage, StyledProjectGrid } from './FeaturedProjects.styles';
 
 const FeaturedProjects = () => {
   return (
     <SectionContainer>
       <SectionHeadings>FEATURED PROJECTS</SectionHeadings>
-      <StyledFeaturedProjects>
+      <StyledProjectGrid>
 
         {projects.map((project) => (
-          <FeaturedProject key={project.id}>
+          <ProjectWrapper key={project.id}>
             <a href={project.url} role="button" aria-pressed="false" aria-label={project.repo_name} target="_blank" rel="noreferrer">
               <OverlayImage>
                 <h2>{project.overlay_title}</h2>
@@ -24,10 +24,10 @@ const FeaturedProjects = () => {
                   <li key={tag.id}>{tag.name}</li>))}
               </Tags>
             </a>
-          </FeaturedProject>
+          </ProjectWrapper>
         ))}
 
-      </StyledFeaturedProjects>
+      </StyledProjectGrid>
     </SectionContainer>
   )
 }

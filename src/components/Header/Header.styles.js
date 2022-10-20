@@ -94,9 +94,11 @@ export const HeaderSocialBar = styled.div`
       width: 55px;
       margin-left: 10px;
       filter: invert();
+      border-radius: 50%;
+      box-shadow: 7px 7px 15px #f1efef6b, -7px -7px 15px #ffffff57;
 
       &:hover {
-      opacity: 0.6;
+        box-shadow:  7px 7px 15px #f1efef6b, -7px -7px 15px #efa4a429;
     }
     }
 

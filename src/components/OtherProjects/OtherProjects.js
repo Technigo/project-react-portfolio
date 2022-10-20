@@ -1,17 +1,17 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import projects from 'other-projects.json'
+import projects from 'data/other-projects.json'
 import { SectionContainer, SectionHeadings, Tags, SubHeadings, ArticleText } from 'Globalstyles';
-import { StyledFeaturedProjects, FeaturedProject } from 'components/FeaturedProjects/FeaturedProjects.styles';
+import { ProjectWrapper, StyledProjectGrid } from 'components/FeaturedProjects/FeaturedProjects.styles';
 
 const OtherProjects = () => {
   return (
     <SectionContainer bgColor="#eeeeee">
       <SectionHeadings>OTHER PROJECTS</SectionHeadings>
-      <StyledFeaturedProjects>
+      <StyledProjectGrid>
 
         {projects.map((project) => (
-          <FeaturedProject key={project.id}>
+          <ProjectWrapper key={project.id}>
             <a href={project.url} role="button" aria-pressed="false" aria-label={project.repo_name} target="_blank" rel="noreferrer">
               <SubHeadings>{project.title}</SubHeadings>
               <ArticleText>{project.project_description}</ArticleText>
@@ -20,10 +20,10 @@ const OtherProjects = () => {
                   <li key={tag.id}>{tag.name}</li>))}
               </Tags>
             </a>
-          </FeaturedProject>
+          </ProjectWrapper>
         ))}
 
-      </StyledFeaturedProjects>
+      </StyledProjectGrid>
     </SectionContainer>
   )
 }
