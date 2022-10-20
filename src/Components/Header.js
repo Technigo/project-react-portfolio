@@ -4,9 +4,10 @@ import { HeaderHeadlineOne, HeaderHeadlineTwo, HeaderHeadlineThree } from '../St
 import { A, SrOnly } from '../Styled components/GlobalStyles'
 import Jessika from '../Images/Jessika.jpeg'
 import Background from '../Images/Background.jpg'
-import github from '../Images/github.svg'
-import linkedin from '../Images/linkedin.svg'
-import stackoverflow from '../Images/stackoverflow.svg'
+import github from '../Images/github.png'
+import linkedin from '../Images/linkedin.png'
+import stackoverflow from '../Images/stackoverflow.png'
+import { SocMediaContainer } from '../Styled components/SocialMediaContainers'
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
           <HeaderHeadlineTwo>frontend developer</HeaderHeadlineTwo>
           <HeaderHeadlineThree> + communicator & administrator</HeaderHeadlineThree>
         </HeadlineContainer>
-        <SocMediaContainer>
+        <SMediaContainer>
           <A href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
             <img src={linkedin} alt="" />
             <SrOnly>Linkedin</SrOnly>
@@ -30,7 +31,7 @@ const Header = () => {
             <img src={stackoverflow} alt="" />
             <SrOnly>Stackoverflow</SrOnly>
           </A>
-        </SocMediaContainer>
+        </SMediaContainer>
         <ProfilePic src={Jessika} alt="Picture of Jessika Lind" />
       </HeaderInnerWrapper>
     </HeaderSection>
@@ -81,28 +82,9 @@ const HeadlineContainer = styled.div`
 const Bold = styled.span`
   font-weight: 700; 
 `
-const SocMediaContainer = styled.div`
+const SMediaContainer = styled(SocMediaContainer)`
   grid-column: 2/3;
   padding-top: 7vh;
-  justify-content: center;
-  display: flex;
-
-  img {
-    padding: 2px;
-    width: 35px;
-
-    @media (min-width: 668px) and (max-width: 1024px) {
-      width: 40px;
-    }
-
-    @media (min-width: 1025px) {
-    width: 55px;
-  }
-
-  &:hover {
-    transform: scale(1.1)
-  }
-  }
 `
 const ProfilePic = styled.img`
   width: 140px;
