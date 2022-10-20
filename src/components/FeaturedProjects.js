@@ -22,16 +22,16 @@ export const FeaturedProjects = () => {
   const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey'));
   return (
     <OuterWrapper beige>
+      <Heading dark>FEATURED PROJECTS</Heading>
       <InnerWrapper>
-        <Heading dark>FEATURED PROJECTS</Heading>
         <FeaturedProjectsContent>
           {BigProjects.map((prop) => (
             <div key={prop.id}>
+              <BigProjectsImage alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
               <ProjectsHeading>{prop.name}</ProjectsHeading>
               <p>{prop.description}</p>
               <Topics>{prop.topics}</Topics>
               {/* <p>{prop.html_url}</p> */}
-              {/* <img alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${project.name}/master/code/Thumbnail/thumbnail.png`} /> */}
             </div>
           ))}
         </FeaturedProjectsContent>
@@ -52,5 +52,10 @@ line-height: 30px;
 
 export const ProjectsHeading = styled.h4`
 color: #D36B00;
+`
+export const BigProjectsImage = styled.img`
+width: 100%;
+border: 2px solid #D36B00;
+border-radius: 10px;
 `
 

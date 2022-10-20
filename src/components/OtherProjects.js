@@ -25,7 +25,7 @@ export const OtherProjects = () => {
               <p>{prop.description}</p>
               <Topics>{prop.topics}</Topics>
               {/* <p>{prop.html_url}</p> */}
-              {/* <img alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${project.name}/master/code/Thumbnail/thumbnail.png`} /> */}
+              <img alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
             </div>
           ))}
         </OtherProjectsContent>

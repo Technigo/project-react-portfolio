@@ -3,11 +3,12 @@ import React from 'react'
 import { Header } from './components/Header'
 import { Intro } from './components/Intro'
 import { ForMore } from './components/ForMore'
+import { Skills } from './components/Skills'
 import { Footer } from './components/Footer'
 import { Knowledge } from './components/Knowledge'
 import { FeaturedProjects } from './components/FeaturedProjects'
 import { OtherProjects } from './components/OtherProjects'
-// import { OuterWrapper } from './components/styling'
+import { Thoughts } from './components/Thoughts'
 
 export const App = () => {
   return (
@@ -17,6 +18,8 @@ export const App = () => {
       <Knowledge />
       <FeaturedProjects />
       <OtherProjects />
+      <Thoughts />
+      <Skills />
       <ForMore />
       <Footer />
     </div>

@@ -8,8 +8,8 @@ import { OuterWrapper, InnerWrapper, Heading } from './Styling'
 export const ForMore = () => {
   return (
     <OuterWrapper>
+      <Heading dark> FOR MORE </Heading>
       <InnerWrapper>
-        <Heading dark> FOR MORE </Heading>
         <SoMeGrid>
           <GridContent><SoMeLink> <a href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></a></SoMeLink>
             <p>LINKEDIN</p>
@@ -28,7 +28,7 @@ export const ForMore = () => {
 
 export const SoMeGrid = styled.div`
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
 `
 
 export const GridContent = styled.div`

@@ -21,7 +21,7 @@ export const Intro = () => {
 
 export const IntroContent = styled.div`
 display: block;
-line-height: 30px;
+
 `
 export const IntroText = styled.p`
 font-family: 'Montserrat', sans-serif;

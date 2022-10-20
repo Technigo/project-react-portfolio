@@ -23,7 +23,7 @@ export const Heading = styled.h2`
   font-size: 22px;
   font-weight: 700;
   display: inline;
-  margin-bottom: 30px;
+  margin: 20px 0px;
   padding: 4px;
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
