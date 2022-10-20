@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
+// import backgroundImg from './src/pic/forest.jpeg';
 
 export const Header = () => {
   return (
@@ -13,5 +14,5 @@ export const Header = () => {
 };
 
 const HeaderBackground = styled.div`
-  background-image: url(https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg);
+  // background-image: url ();
 `;
