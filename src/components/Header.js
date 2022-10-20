@@ -14,7 +14,7 @@ const Header = () => {
         <img
           src={profileImage}
           alt="profile-of-Petras" />
-        <h6><span>Petra  <br />Söderström</span></h6>
+        <h6>Petra Söderström</h6>
       </div>
     </HeaderStyler>
   )
@@ -33,6 +33,12 @@ height: 50vh;
 position: relative;
 display: flex;
 
+article {
+  position: absolute;  
+  top: 15vh;
+  left: 5vw;
+}
+
 img {
   position: absolute;
   border-radius: 50%;
@@ -40,14 +46,9 @@ img {
   height: auto;
   width: 40vw;
   right: 10vw;
-  top: 35vh;
+  bottom: -8vh;
 }
 
-article {
-  position: absolute;  
-  top: 15vh;
-  left: 5vw;
-}
 
 /* @media (min-width: 668px) {
 } */
@@ -56,10 +57,6 @@ article {
   img {
     width: 15vw;
     right: 20vw;
-  }
-  img:hover {
-      filter: brightness(75%);
-      opacity: 1;
-  }
+  }  
 }
 `

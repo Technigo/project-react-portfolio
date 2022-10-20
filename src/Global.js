@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+:root {
+    
+}
 body{
 
 background-color: white;
@@ -13,6 +16,12 @@ color: white;
 h2{
 font-size: 2rem;
 } 
+
+h3{
+text-transform: uppercase;
+color: #fff;
+background-color: rgb(255, 119, 119);
+}
 
 @media (min-width: 668px) {
 
@@ -37,4 +46,4 @@ font-size: 2rem;
 } 
 
 }
-`;
+}`

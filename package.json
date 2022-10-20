@@ -14,7 +14,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
     "styled-components": "^5.3.6",
-    "styled-reset": "^4.4.2",
+    "styled-reset": "^4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,19 +36,8 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "react-scripts": "5.0.1"
-  },
-  "vscode-color-picker.languages": [
-    "php",
-    "html",
-    "css",
-    "python",
-    "jsonc",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue"
-    ]
+  }
 }

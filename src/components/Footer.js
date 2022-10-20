@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <FooterStyler>
       <div>
+        <h3>contact</h3>
         <p>Petra Söderström</p>
         <a href="mailto:petrasoderstrom1612@gmail.com">
         petrasoderstrom1612@gmail.com
