@@ -37,11 +37,13 @@ export const ImageContainerWithOverlay = styled.div`
   width: 100%;
 
 img {
-  height: 60%;
+ 
   max-width: 500px;
   max-height: 300px;
   object-fit: cover;
   width: 100%; 
+  aspect-ratio: 1.6/1;
+
 }
 
 div {

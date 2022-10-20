@@ -9,7 +9,7 @@ export const StyledTagWrapper = styled.div`
   flex-wrap: wrap;
   margin-left: -3px;
 
-  p {
+  span {
   background-color: var(--ligtherGreen);
   border-radius: 5px;
   color: #FFFFFF;
@@ -41,16 +41,26 @@ font-family: "Roboto", sans-serif;
 font-size: 12px; 
 font-weight: bold;
 line-height: 12px;
-margin: 3px;
+margin: 0.2rem 0.4rem 0.2rem 0;
 text-decoration: none;
+width: 12rem;
+text-align: center
 }
 `
 
 export const GridWrapper = styled.div`
-  display: grid ;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: 600px) {
+    display: grid ;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
 `
 
 export const StyledListSection = styled.div`

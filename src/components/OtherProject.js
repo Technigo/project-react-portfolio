@@ -7,7 +7,7 @@ import MoreArrows from './MoreArrows';
 const OtherProject = (
   {
     deployedLink,
-    projectImage,
+    defaultBranch,
     projectTitle,
     projectDescription,
     techTags,
@@ -15,17 +15,17 @@ const OtherProject = (
   }
 ) => {
   const projectTags = techTags.map((tech) => {
-    return <p key={tech}>{tech}</p>
+    return <span key={tech}>{tech}</span>
   })
 
   const titleWithSpaces = ((projectTitle.split('-')).join(' '));
 
   return (
     <StyledOther className="project other other-project">
-      <a href={deployedLink} className="test">
+      <StyledOtherProjectLink href={deployedLink} className="test">
         <OtherImageContainer className="other-image-container">
           <div className="project-image-overlay" />
-          <img src={projectImage} className="other-project-img" alt={titleWithSpaces} />
+          <img src={`https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/code/src/assets/images/thumbnail.webp`} alt={titleWithSpaces} />
         </OtherImageContainer>
         <div className="other-text">
           <h4 className="underline">{titleWithSpaces}</h4>
@@ -34,7 +34,7 @@ const OtherProject = (
             {projectTags}
           </StyledTagWrapper>
         </div>
-      </a>
+      </StyledOtherProjectLink>
       <OtherRepoTag href={repoLink} className="tag-wrapper">
         <p className="repo-tag other-repo-tag">Repo on GitHub</p>
       </OtherRepoTag>
@@ -44,18 +44,32 @@ const OtherProject = (
 
 export default OtherProject;
 
+const StyledOtherProjectLink = styled.a`
+  text-decoration: none;
+  p {
+    text-decoration: underline;
+  }
+  @media (min-width: 600px) {
+  display: grid;
+    gap: 2rem;
+    grid-template-columns: 12rem 1fr;
+  }
+`
+
 const StyledOther = styled(StyledProject)`
-  align-self: flex-start;
   position: relative;
-  
-  a {
+/*   a {
     display: grid;
     gap: 2rem;
     grid-template-columns: 192px 1fr;
-  }
-
+  } */
+  
   .other-text {
     min-width: 300px;
+
+  }
+  @media (min-width: 600px) {
+  align-self: center;
   }
 `
 
@@ -63,25 +77,23 @@ const OtherImageContainer = styled(ImageContainerWithOverlay)`
   display: none;
 
   @media (min-width: 600px) {
-    position: relative;
+    
     display: flex;
 
   img {
-    aspect-ratio: 5 / 3;
     display: inherit; 
     float: left;
-    margin-right: 2rem;
     object-fit: cover;
-    width: 12rem;
+    width: 100%;
+    align-self: flex-start;
   }
 }`
 
 const OtherRepoTag = styled(StyledRepoTag)`
-  width: 192px;
-  text-align: center;
-
+  width: 100%;
+  
   @media (min-width: 600px) {
     position: absolute;
-    bottom: -2rem;
-    left: 220px;
+    bottom: -1.4rem;
+    left: 0;
   }`

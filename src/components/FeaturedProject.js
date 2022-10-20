@@ -15,7 +15,7 @@ const FeaturedProject = (
   }
 ) => {
   const projectTags = techTags.map((tech) => {
-    return <p key={tech}>{tech}</p>
+    return <span key={tech}>{tech}</span>
   })
 
   const titleWithSpaces = ((projectTitle.split('-')).join(' '))
@@ -25,7 +25,7 @@ const FeaturedProject = (
       <a href={deployedLink}>
         <ImageContainerWithOverlay className="project-image">
           <div className="project-image-overlay" />
-          <img src={`https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/code/assets/images/${projectTitle}.webp`} alt={titleWithSpaces} />
+          <img src={`https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/code/src/assets/images/thumbnail.webp`} alt={titleWithSpaces} />
           <OverlayText className="overlay-text" aria-hidden="true">{titleWithSpaces}</OverlayText>
         </ImageContainerWithOverlay>
         <h3>{titleWithSpaces}.</h3>

@@ -7,9 +7,7 @@ const Footer = () => {
     <StyledFooter>
       <NoBackgroundH2 className="footer-heading">Contact</NoBackgroundH2>
       <p>Elin Segelöv</p>
-      <a href="mailto:elin.segelov@gmail.com">
-        <p><span className="sr-only">E-mail</span>elin.segelov@gmail.com</p>
-      </a>
+      <p><span className="sr-only">E-mail</span>elin.segelov@gmail.com</p>
     </StyledFooter>
   )
 }

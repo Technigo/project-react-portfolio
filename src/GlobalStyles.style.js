@@ -16,7 +16,10 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   background-color:var(--primary);
-  font-family: 'Montserrat', serif;  
+  font-family: 'Montserrat', serif; 
+  display: flex;
+  justify-content: center; 
+  width: 100vw;
 }
 
 section, footer {

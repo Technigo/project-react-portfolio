@@ -1,3 +1,98 @@
+/* CSS reset */
+*, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, img, strong, var, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+footer, header, hgroup, menu, nav, section, summary,
+time, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Global styles */
+:root {
+  --heading: #212729 /*#1A3C40 */;
+  --ligtherGreen: #417D7A;
+  --primary: #F7F7F2;
+  --secondary: #EDE6DB;
+}
+
+body {
+  background-color:var(--primary);
+  font-family: 'Montserrat', serif; 
+  display: flex;
+  justify-content: center; 
+  width: 100vw;
+}
+
+section, footer {
+  padding: 2rem 1.5rem;
+} 
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .2rem;
+}
+
+h2, h3 {
+  background: var(--heading);
+  color: #FCF8EC;
+  justify-self: center;
+  margin: 8px auto 40px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+p {
+  display: inline-block;
+  font-family: 'Roboto Condensed', sans-serif;    
+  font-size: 17px;
+  line-height: 29px;
+  max-width: 600px; 
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+
 /* :root {
   --heading: #212729;
   --ligtherGreen: #417D7A;

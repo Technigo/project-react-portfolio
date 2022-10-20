@@ -33,7 +33,7 @@ const StyledHeader = styled.header`
   background-size: cover;
   height: 60vh;
   position: relative;
-  width: 100%;
+  width: 100vw;
 
 @media (min-width: 600px) {
   display: flex;

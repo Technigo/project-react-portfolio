@@ -21,12 +21,12 @@ const Skills = () => {
         <div>
           <ListSection
             heading="Toolbox"
-            ListItems={['VS Code', 'GitHub', 'Kanban', 'Trello', 'Slack']} />
+            ListItems={['VS Code', 'GitHub', 'Kanban', 'Jira', 'Trello', 'Slack']} />
         </div>
         <div>
           <ListSection
             heading="More"
-            ListItems={['Pair-programming', 'Mob-programming', 'Interpersonal skills', 'Communicative', 'Problem solver']} />
+            ListItems={['Agile', 'Pair-programming', 'Mob-programming']} />
         </div>
       </StyledSkillsContainer>
     </StyledSkillsWrapper>
