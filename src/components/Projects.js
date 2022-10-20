@@ -53,24 +53,24 @@ const ProjectSectionStying = styled.section`
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
-   gap: 20px;
-   margin-top: 60px;
+   margin-left: 9vw;
+   margin-bottom: 10vw;
    }
 
 .projectDiv{
-  min-height: 150px;
-  min-width: 250px;
   font-size: 16px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 20px;
 }
 
 .projectDiv img{
-  width: 410px;
+  width: 300px;
   margin-top: 10px;
-  margin-left: 20px;
+}
+
+h3{
+  color: grey;
 }
 `

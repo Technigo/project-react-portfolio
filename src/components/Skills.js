@@ -26,7 +26,7 @@ const Skills = () => {
             <li>SSMS</li>
             <li>Slack</li>
             <li>Sharepoint</li>
-            <li>Office 360</li>
+            <li>Office 365</li>
             <li>Jenkins</li>
           </div>
 
@@ -68,17 +68,21 @@ li{
     margin: 0px;
     padding: 0px;
   }
+
+
     
     .skills-lists{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-left: 0,6vw;
     }
     
     .skills-lists div{
     justify-content: left;
-    width: 170px;
+    width: 38vw;
+    margin-left: 10vw;
     }
     
     .tools{

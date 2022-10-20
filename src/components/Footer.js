@@ -4,37 +4,46 @@ import SectionHeaderStyling from 'styles/SectionHeaderStyling';
 
 const Footer = () => {
   return (
+    <FooterStyling>
+      <footer>
 
-    <footer>
-      <FooterStyling>
         <section className="section footer">
           <SectionHeaderStyling><div><h2>Contact</h2></div></SectionHeaderStyling>
           <a href="mailto: mia_dahlgren@outlook.com">Mia Dahlgren</a>
           <a href="tel:+46736685894"> +46 736 68 58 94</a>
           <a href="mailto: mia_dahlgren@outlook.com"> mia_dahlgren@outlook.com</a>
           <a href="mailto: mia_dahlgren@outlook.com">Stockholm, Sweden.</a>
-          <p>© Mia Dahlgren 2022</p>
+          <span>© Mia Dahlgren 2022</span>
 
         </section>
-      </FooterStyling>
-    </footer>
+
+      </footer>
+    </FooterStyling>
   )
 }
 
 export default Footer
 
 const FooterStyling = styled.footer`
-    background-color: pink;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
+
     
   .section.footer{
     background-color:tan;
     font-size: 16px;
+    text-align: center;
+
   }
   
-   .section.footer p{
-   font-size: 12px;
+  span{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1.5vw;
+    margin-bottom: 5vw;
   }
+
+  div{
+    background-color:tan;
+    margin-top: 1.5vw;
+  }
+
     `

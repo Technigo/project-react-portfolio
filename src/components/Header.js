@@ -34,10 +34,10 @@ const Header = () => {
 
         <section className="profile-pic" />
         <div className="header-text">
-          <h3 className="name">Mia Dahlgren</h3>
           <h1 lang="en">Portfolio</h1>
-          <h2>Front-end developer</h2>
-          <h3>with a background as a curious bug hunter</h3>
+          <h3 className="name">Mia Dahlgren</h3>
+          <h2 className="role">Front-end developer</h2>
+          <h3 className="description">with a background as a curious bug hunter</h3>
         </div>
 
       </header>
@@ -83,11 +83,17 @@ const HeaderStyling = styled.header`
       width: 5.5vw;
   }
 
+  .description{
+    mix-blend-mode: difference;
+    font-size: 4vw;
+  }
+
     h1{
         font-family: "Aloevera";
         color: #F6AD7B;
         font-size: 13vw;
         text-align: left;
+        margin: 22vw 0vw 3vw 3vw;
     }
     
     h2{
@@ -95,19 +101,22 @@ const HeaderStyling = styled.header`
         width: fit-content;
         text-align: center;
         font-family: 'Raleway Dots', cursive; 
-        padding: 6px;
         color: white;
-        font-size: 4vw;
+        font-size: 5.3vw;
+        margin: 2vw 0vw 2vw 3vw;
     }
 
     h3 {
     width: fit-content;
     text-align: center;
     font-family: 'Raleway Dots', cursive;
-    margin-top: 30px;
-    padding: 6px;
     color: grey;
-    font-size: 4vw;
+    font-size: 5vw;
+    margin: 0vw 0vw 2vw 3vw;
+    }
+
+    .name{
+      margin-bottom: 1vw;
     }
 
     .header-text{
@@ -120,10 +129,10 @@ const HeaderStyling = styled.header`
 
     .profile-pic {
       position: absolute;
-      width: 32vw;
-      height: 32vw;
+      width: 31vw;
+      height: 31vw;
       left:60%;
-      top: 22%;
+      top: 31.8%;
       border-radius: 50%;
       background: url("./images/profile_pic2.jpg");
       background-position: -30px 560px;

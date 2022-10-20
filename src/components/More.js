@@ -9,7 +9,7 @@ const More = () => {
   return (
     <MoreSectionStyling>
       <section className="section more">
-        <SectionHeaderStyling><div><h2>Skills</h2></div></SectionHeaderStyling>
+        <SectionHeaderStyling><div><h2>For More</h2></div></SectionHeaderStyling>
         <div className="big-social-media-links">
 
           <div className="logo">
