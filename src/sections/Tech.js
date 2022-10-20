@@ -8,7 +8,9 @@ const Tech = () => {
     <OuterWrapper className="background">
       <InnerWrapper>
         <h2>Tech</h2>
-        <p>Tech info goes in here</p>
+        <p>HTML, CSS, Flexbox, JavaScript, Web Accessibly,
+          API:s, mob-programming, pair-programming, Github
+        </p>
       </InnerWrapper>
     </OuterWrapper>
   );

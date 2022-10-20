@@ -1,23 +1,14 @@
 
 {
-  "tech": [
-    "HTML",
-    "CSS",
-    "Flexbox",
-    "Javascript",
-    "React",
-    "Web Accessibility",
-    "API:s",
-    "Github"
-  ],
-  "projects": [
+  "featured": [
     {
       "project":
         {
+          "id": "1",
           "href": "https://silver-profiterole-7224fd.netlify.app/",
           "image": {
-            "alt": "",
-            "src": ""
+            "alt": "Weather app",
+            "src": "images/weather-app.jpg"
           }, 
           "title": "Weather app",
           "description": "Responsive website connected with weather API",
@@ -33,10 +24,11 @@
     {
       "project":
         {
+          "id": "2",
           "href": "https://the-music-release-project.netlify.app/",
           "image": {
-            "alt": "",
-            "src": ""
+            "alt": "Music page",
+            "src": "images/music-releases.jpg"
           }, 
           "title": "Music page",
           "description": "Responsive music release page made using React",
@@ -48,17 +40,21 @@
           ],
           "github-href": "https://github.com/Technigo/project-music-releases/pull/221?"
         }
-    },
+    }
+  ],
+  
+  "other": [
     {
       "project":
         {
+          "id": "3",
           "href": "https://creative-lolly-f0d26c.netlify.app/",
           "image": {
-            "alt": "",
-            "src": ""
+            "alt": "Guess who",
+            "src": "images/guess-who.jpg"
           }, 
           "title": "Guess who",
-          "description": "Simple game, practicing working with arrays",
+          "description": "Simple game of guess who, practicing working with arrays",
           "tags": [
             "HTML",
             "CSS",
@@ -70,10 +66,11 @@
     {
       "project":
         {
+          "id": "4",
           "href": "https://subtle-paletas-e779d4.netlify.app/",
           "image": {
-            "alt": "",
-            "src": ""
+            "alt": "Chatbot",
+            "src": "images/chatbot.jpg"
           }, 
           "title": "Chatbot",
           "description": "Practice using if-statements to create a chatbot that tells jokes.",
@@ -85,43 +82,5 @@
           "github-href": "https://github.com/erilinus/project-chatbot"
         }
     }
-  ],
-  "Skills": [
-    {
-      "code": [
-        "Github",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "React"
-      ],
-      "toolbox": [
-        "Figma",
-        "Invision",
-        "Photoshop",
-        "Illustrator"
-      ],
-      "more": [
-        "WCAG 2.1",
-        "Graphic design",
-        "Design system"
-      ],
-      "upcoming": [
-        "Redux",
-        "Node.js"
-      ]
-    }
-  ],
-  "some-links": [
-    {
-      "linkedin": "https://linkedin.com/in/linusje",
-      "github": "https://github.com/erilinus",
-      "stackoverflow": "https://stackoverflow.com/c/technigo/users/364"
-    }
-  ],
-  "contact": {
-    "name": "Linus Eriksson",
-    "number": "+46 72 51 66 086",
-    "email": "erilinus@gmail.com"
-  }
+  ]
 }

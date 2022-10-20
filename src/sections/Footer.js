@@ -13,7 +13,9 @@ const Footer = () => {
     <StyledFooter>
       <InnerWrapper>
         <h2>Contact</h2>
-        <p>Contact info goes here</p>
+        <p>Linus Eriksson</p>
+        <p>+46 72 51 66 086</p>
+        <p>erilinus@gmail.com</p>
       </InnerWrapper>
     </StyledFooter>
   );
