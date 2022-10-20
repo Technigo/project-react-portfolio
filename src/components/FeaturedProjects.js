@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
+import { Tags } from './StyledComponents/Tags';
 import data from '../projects.json';
 
 console.log(data);
@@ -14,12 +15,9 @@ export const FeaturedProjects = () => {
         {/* {projects.map((item) => {
           return console.log(item.id);
         })} */}
-        <Test>Featured Projects</Test>
+        <h3>Featured Projects</h3>
+        <Tags />
       </InnerWrapper>
     </BlockSection>
   );
 };
-
-const Test = styled.div`
-  color: red;
-`;

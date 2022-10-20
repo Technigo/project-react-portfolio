@@ -5,7 +5,9 @@ import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
 export const Articles = () => {
   return (
     <BlockSection>
-      <InnerWrapper>My thoughts about code</InnerWrapper>
+      <InnerWrapper>
+        <h3>My thoughts about code</h3>
+      </InnerWrapper>
     </BlockSection>
   );
 };
