@@ -9,6 +9,7 @@ import TopicsContainer from './styled/TopicsContainer.styled';
 import Topic from './styled/Topic.styled';
 
 const OtherProjects = ({ repos }) => {
+  console.log(repos)
   return (
     <SectionContainer bg>
       <SectionMainHeading>Other Projects</SectionMainHeading>
