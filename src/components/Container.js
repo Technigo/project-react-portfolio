@@ -7,6 +7,7 @@ import Tech from './Tech';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
 import Contact from './Contact';
+import { Background } from './Body';
 
 const Footer = styled.p`
 text-align: center;
@@ -17,14 +18,16 @@ color: lightgrey;
 const Container = () => {
   return (
     <div>
-      <Header />
-      <ProfileImg />
-      <About />
-      <Tech />
-      <Portfolio />
-      <Skills />
-      <Contact />
-      <Footer>Hanna Nörgård 2022</Footer>
+      <Background>
+        <Header />
+        <ProfileImg />
+        <About />
+        <Tech />
+        <Portfolio />
+        <Skills />
+        <Contact />
+        <Footer>Hanna Nörgård 2022</Footer>
+      </Background>
     </div>
   )
 }

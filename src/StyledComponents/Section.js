@@ -4,8 +4,11 @@ export const Section = styled.section`
     background-color: ${(props) => (props.first ? '#FAEDE8' : 'white')};
     padding: 55px;
     line-height: 30px;
-    max-width: 1200px;
+    width: 1200px;
     margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 @media (max-width: 768px) {
     justify-content: center;

@@ -5,7 +5,8 @@ import ProfileImg from './assets/pp.png'
 
 const HeaderContainer = styled.div`
 position: relative;
-background: blue;
+background: none;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 color: white;
 width: 92%;
 height: 400px;
@@ -32,17 +33,29 @@ background-color: #faede8;
 `
 
 const BigHeading = styled.h3`
-font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto';
 `
 
 const SmallHeading = styled.h1`
 font-family: 'Montserrat', sans-serif;
 `
 
+const HeaderText = styled.div`
+color: black;
+margin: 7.5rem 0 0 4.5rem;
+
+@media (max-width: 1200px) {
+  margin-left: 3rem;
+}
+@media (max-width: 650px) {
+  margin: 10rem 0 0 2rem;
+}
+`
+
 const ProfilePic = styled.img`
 position: absolute;
 bottom: -25%;
-right: 40px;
+right: 90px;
 border-radius: 50%;
 border: 5px solid;
 border-color: #faede8;
@@ -80,9 +93,11 @@ const Header = () => {
           <FaStackOverflow size="25px" />
         </a>
       </IconContainer>
-      <BigHeading>portfolio: hanna nörgård</BigHeading>
-      <SmallHeading>front-end developer</SmallHeading>
-      <SmallHeading>+ strategic communicator</SmallHeading>
+      <HeaderText>
+        <BigHeading>portfolio: hanna nörgård</BigHeading>
+        <SmallHeading>front-end developer</SmallHeading>
+        <SmallHeading>+ strategic communicator</SmallHeading>
+      </HeaderText>
       <ProfilePic src={ProfileImg} alt="a picture of me" />
     </HeaderContainer>
   )
