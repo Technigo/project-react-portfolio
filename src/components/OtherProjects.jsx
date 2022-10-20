@@ -20,6 +20,10 @@ const OtherProjects = ({ repos }) => {
                 <TopicsContainer>
                   {project.topics.map((topic) => (topic !== 'portfolio' && <Topic>{topic}</Topic>))}
                 </TopicsContainer>
+                <TopicsContainer>
+                  <a href={project.homepage} target="_blank" rel="noreferrer">View it live</a>
+                | <a href={project.html_url} target="_blank" rel="noreferrer">GitHub Repo</a>
+                </TopicsContainer>
               </ArticleCard>
             );
           } else return false;

@@ -12,6 +12,10 @@ const ForMoreIcons = styled(SkillsGrid)`
      width: fit-content;
   }
 
+  & a:visited {
+    color: var(--sub-color)
+  }
+
   & svg { 
       background-color: var(--sub-color); 
       border-radius: 50%; 

@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import SectionContainer from './styled/SectionContainer.styled';
+import SkillsGrid from './styled/SkillsGrid.styled';
 
 const Skills = () => {
   return (
@@ -43,18 +43,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-const SkillsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  margin: var(--margin);
-  width: var(--width);
-
-  & ul {
-    font-size: 1rem;
-    margin-top: 5px;
-    line-height: var(--line-height);
-    list-style-type: none;
-  }
-`;

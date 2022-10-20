@@ -80,8 +80,8 @@ const IconsContainer = styled.div`
    }
 
     & svg {
-      height: 2rem;
-      width: 2.1rem;
+      height: 1.5rem;
+      width: 1.6rem;
     }
 
   @media (max-width: 1200px) {

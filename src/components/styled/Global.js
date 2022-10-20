@@ -47,10 +47,16 @@ code {
 
 /* LINKS */
 a {
+    color: black;
     font-family: var(--sub-font);
     font-size: 1rem;
+    font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+a:visited {
+  color: var(--third-color);
 }
 
 /* HEADINGS */
@@ -108,7 +114,7 @@ h5 {
   font-family: var(--sub-font);
   font-size: 1rem;
   font-weight: 700;
-  margin-top: .5rem;
+  margin-top: .8rem;
   text-transform: uppercase;
 
   @media (max-width: 650px) {
