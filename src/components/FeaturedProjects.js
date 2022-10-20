@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { Section, SectionTitle } from 'styledcomponents/Section';
 import ProjectCard from './ProjectCard';
 import ProjectList from './ProjectList';

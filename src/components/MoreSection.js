@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, SectionTitle, TextWrapper } from 'styledcomponents/Section';
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 
 import GitHub from '../images/img_326384.png'
 
