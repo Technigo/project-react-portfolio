@@ -37,7 +37,7 @@
 		"img_src": "/images/happy-thoughts.png",
 		"title": "HAPPY THOUGHTS CHAT",
 		"project_description": "A live chatboard where you can post happy thoughts, built in React using APIs",
-    	"repo": "project-happy-thoughts",
+    	"repo_name": "project-happy-thoughts",
 		"netlify_name": "w7-happy-thoughts.netlify.app",
     	"url": "https://github.com/SofieRydmark/project-happy-thoughts",
 		"tags": [

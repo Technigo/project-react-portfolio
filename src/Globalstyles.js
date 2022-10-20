@@ -50,7 +50,7 @@ export const SubHeadings = styled.h3`
     font-style: normal;
     font-size: 1.1em;
     font-weight: 700;
-    color: ${(props) => (props.color || '#f96666')}; ;
+    color: ${(props) => (props.color || '#112261')}; ;
     padding: 10px 0;
     letter-spacing: 0.01em;
   
