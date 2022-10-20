@@ -42,26 +42,30 @@ const Header = () => {
 `;
   const HeaderTextWrapper = styled.div`
   padding: 40px 0px;
+  border: solid 3px blue;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
 
   .header-name {
-    // font-weight: 100;
-    font-size: 16px;
-    font-family: Roboto, sans-serif;
+    font-size: 15px;
     line-height: 22px;
+    font-family: Roboto, sans-serif;
+  }
+  .lighter {
+    font-weight: 300;
   }
 
   .header-title {
-    margin: 15px 0 8px 0;
-    font-weight: 600;
+    margin: 17px 0 20px 0;
+    font-family: Montserrat, sans-serif;
     font-size: 40px;
     line-height: 35px;
   }
 
   .header-subtitle {
-    font-weight: 600;
-    line-height: 23px;
     margin-bottom: 25px;
   }
+ 
 
   @media (min-width: 667px) and (max-width: 1024px) {
     position: relative;

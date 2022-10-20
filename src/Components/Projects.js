@@ -4,7 +4,7 @@ import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
 // import TypeBox from './Shared/TypeBox';
 import ProjectCard from './Shared/ProjectCard';
-import rData from './data.json';
+import rData from '../data.json';
 
 // const { highlights, projects } = rData; /* samma som const highlights = rData.highlights; */
 const { highlights, projects } = rData;

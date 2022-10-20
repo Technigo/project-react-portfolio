@@ -3,15 +3,19 @@ import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 
 const FooterStyle = styled.div`
-border: solid 2px red;
 background-color: var(--primaryBackground);
 color: var(--secondaryBackground);
-padding-bottom: 90px;
+padding-bottom: 30px;
 flex-direction: column;
+text-align: center;
 font-family: Montserrat, sans-serif;
-text-align: center;
 line-height: 27px;
-text-align: center;
+
+.contact {
+  font-size: 20px;
+  padding: 40px 0 30px 0;
+  font-weight: 700;
+}
 `
 
 const Footer = () => {

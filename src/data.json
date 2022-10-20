@@ -6,7 +6,7 @@
       "urlGitHub": "https://github.com/petrasson/project-news-site",
       "urlNetlify": "https://fancy-meringue-155c75.netlify.app/",
       "coverName": "News site",
-      "projectName": "project News-site",
+      "projectName": "Project News-site",
       "descriptionText": "description1",
       "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS"]
@@ -16,7 +16,7 @@
       "urlGitHub": "https://github.com/petrasson/project-chatbot",
       "urlNetlify": "https://tablebooker.netlify.app/",
       "coverName": "Chatbot",
-      "projectName": "project Catbot",
+      "projectName": "Project Catbot",
       "descriptionText": "description2",
       "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript"]
@@ -26,7 +26,7 @@
       "urlGitHub": "https://github.com/petrasson/project-guess-who",
       "urlNetlify": "https://petrasguesswhogame.netlify.app/",
       "coverName": "Guess Who",
-      "projectName": "project Guess Who",
+      "projectName": "Project Guess Who",
       "descriptionText": "A digital version of the classical bord game Guess who, built in javascript.",
       "photo": "movie_picture.png",
       "tags": ["HTML", "CSS", "Javascript"]

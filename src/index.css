@@ -25,26 +25,11 @@ body {
 }
 
 .text{
-  padding: 0px 0px 8px;
   font-size: 16px;
   letter-spacing: 1.8px;
   line-height: 30px;
   font-family: Montserrat, sans-serif;
 }
-/* .title{
-  /* margin: auto; 
-  padding: 10px;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  align-self: center;
-  letter-spacing: 1px;
-  color: var(--seventhText); 
-  display: inline;
-  justify-content: center;
-} */
-
 /*TITLES*/
 
 .box-title{
@@ -56,14 +41,14 @@ body {
 
 .sub-title{
   margin: auto;
-  padding: 10px;
+  padding: 10px 0 10px 0;
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   align-self: center;
   letter-spacing: 1px;
-  color: var(--seventh);
+  color: var(--sixthTitleSubtitle);
   display: inline;
   justify-content: center;
 }
@@ -77,18 +62,12 @@ body {
   margin: 20px 0 10px 0;
 }
 
-.lighter {
-  font-weight: 300;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-}
-
-
 .project-button {
   display: flex;
   flex-direction: row;
   padding: 0px 0px 20px 0px;
   }
+
 /*
 
 .brighten img {
