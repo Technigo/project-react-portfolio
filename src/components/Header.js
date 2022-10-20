@@ -57,13 +57,17 @@ const HeaderStyling = styled.header`
 
     background-color: pink;
     background: url("./images/nailpolish.jpg") no-repeat;
-    height: 110vw;
-    background-size: 600px;
-    background-position-y: -50px;
+    background-size: 200%;
+    height: 100vw;
+    background-position-y: -35px;
     background-position-x: -120px;
 
     .logo img {
         width: 5vw;
+    }
+
+    .header-text, .social-media-links{
+      background: transparent;
     }
 
     .social-media-links{
@@ -74,6 +78,10 @@ const HeaderStyling = styled.header`
         margin-right: 2vw;
         padding-top: 2vw;
     }
+
+    .logo img:hover {
+      width: 5.5vw;
+  }
 
     h1{
         font-family: "Aloevera";
@@ -107,7 +115,7 @@ const HeaderStyling = styled.header`
       width: 29vw;
       height: 29vw;
       left:60%;
-      top: 20%;
+      top: 18%;
       border-radius: 50%;
       background: url("./images/profile_pic2.jpg");
       background-position: -30px 560px;

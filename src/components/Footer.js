@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import SectionHeaderStyling from 'styles/SectionHeaderStyling';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
     <footer>
       <FooterStyling>
         <section className="section footer">
-          <h2>Contact</h2>
+          <SectionHeaderStyling><div><h2>Contact</h2></div></SectionHeaderStyling>
           <a href="mailto: mia_dahlgren@outlook.com">Mia Dahlgren</a>
           <a href="tel:+46736685894"> +46 736 68 58 94</a>
           <a href="mailto: mia_dahlgren@outlook.com"> mia_dahlgren@outlook.com</a>
@@ -27,5 +28,13 @@ const FooterStyling = styled.footer`
     text-align: center;
     display:flex;
     flex-direction: column;
-    with: 
+    
+  .section.footer{
+    background-color:tan;
+    font-size: 16px;
+  }
+  
+   .section.footer p{
+   font-size: 12px;
+  }
     `

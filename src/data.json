@@ -6,8 +6,53 @@
         "id": "1"
       },
       {
-        "Technique": "CSS",
+        "Technique": "JavaScript",
         "id": "2"
+      },
+      {
+        "Technique": "API:s",
+        "id": "3"
+      },
+      {
+        "Technique": "React",
+        "id": "4"
+      },
+      {
+        "Technique": "Mob- and Pair-programming",
+        "id": "5"
+      },
+      {
+        "Technique": "Node.js",
+        "id": "6"
+      },
+      {
+        "Technique": "Web Accessibility",
+        "id": "7"
+      },
+      {
+        "Technique": "Flexbox",
+        "id": "8"
+        
+      },
+      {
+        "Technique": "ES6",
+        "id": "9"
+      },
+      {
+        "Technique": "Database structures",
+        "id": "10"
+      },
+      {
+        "Technique": "SQL",
+        "id": "11"
+      },
+      {
+        "Technique": "Responsiveness",
+        "id": "12"
+      },
+      {
+        "Technique": "Redux",
+        "id": "13"
       }
     ]
       },
@@ -15,16 +60,24 @@
     "Skills": {
       "Code": [
         {
-          "Skill": "React",
+          "Skill": "HTML5",
           "id": "1"
         },
         {
-          "Skill": "React2",
+          "Skill": "CSS",
           "id": "2"
         },
         {
-          "Skill": "React3",
+          "Skill": "JavaScript ES6",
           "id": "3"
+        },
+        {
+          "Skill": "SQL",
+          "id": "5"
+        },
+        {
+          "Skill": "Git",
+          "id": "6"
         }
       ],
      "Tools": [
@@ -35,8 +88,47 @@
        {
         "Skill":"VsCode",
         "id": "2"
+       },
+       {
+        "Skill":"GitHub",
+        "id": "3"
+       },
+       {
+        "Skill":"Figma",
+        "id": "4"
+       },
+       {
+        "Skill":"Notion",
+        "id": "5"
+       },
+       {
+        "Skill":"SSMS",
+        "id": "6"
+       },
+       {
+        "Skill":"Slack",
+        "id": "7"
+       },
+       {
+        "Skill":"Netlify",
+        "id": "8"
+       },
+       {
+        "Skill":"Sharepoint",
+        "id": "9"
+       },
+       {
+        "Skill":"Office 365",
+        "id": "10"
+       },
+       {
+        "Skill":"Jenkins",
+        "id": "11"
+       },
+       {
+        "Skill":"Lumera",
+        "id": "12"
        }
-
       ],
       "Other": [
         {

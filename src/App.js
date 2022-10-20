@@ -7,7 +7,7 @@ import Skills from 'components/Skills'
 import Projects from 'components/Projects';
 import Tech from 'components/Tech';
 import data from './data.json';
-import GlobalStyling from './styles/GlobalStying'
+import GlobalStyling from './styles/GlobalStying';
 
 console.log(data);
 export const App = () => {
