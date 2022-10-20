@@ -7,8 +7,8 @@
     "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTM5L" },
+      { "name": "CSS3" },
       { "name": "API" },
       { "name": "React" },
       {
@@ -25,8 +25,8 @@
     "netlifyLink": "https://technigo-happy-thoughts.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
       { "name": "API" },
       { "name": "React useEffect" },
       {
@@ -43,8 +43,8 @@
     "netlifyLink": "https://mad-lib-dragon-sneeze.netlify.app//",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
       { "name": "React State" },
       {
         "name": "GitHub",
@@ -60,8 +60,8 @@
     "netlifyLink": "https://music-releases-saralie-antonella.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTM5L" },
+      { "name": "CSS3" },
       { "name": "API" },
       {
         "name": "GitHub",
@@ -77,8 +77,8 @@
     "netlifyLink": "https://stockholm-weather.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTM5L" },
+      { "name": "CSS3" },
       { "name": "API" },
       { "name": "Pair programming" },
       {
@@ -95,8 +95,8 @@
     "netlifyLink": "https://guess-who-by-saralie.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTM5L" },
+      { "name": "CSS3" },
       {
         "name": "GitHub",
         "githubLink": "https://github.com/Scarylie/project-guess-who"
@@ -111,8 +111,8 @@
     "netlifyLink": "https://astounding-fairy-f2a605.netlify.app",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
       { "name": "Mob programming" },
       {
         "name": "GitHub",
@@ -127,8 +127,8 @@
     "image": "/img/image1.jpg",
     "netlifyLink": "https://re-discover-saralie-news-site.netlify.app/",
     "tags": [
-      { "name": "HTML" },
-      { "name": "CSS" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
       { "name": "responsive" },
       {
         "name": "GitHub",
