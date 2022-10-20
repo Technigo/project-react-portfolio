@@ -1,0 +1,49 @@
+[
+    {
+          "id": 1,
+          "title": "HOTEL CHATBOT",
+          "project_description": "Responsive web site using HTML, CSS and JavaScript ES6 where you are able to order amenities etc.",
+          "repo_name": "project-chatbot",
+          "url": "https://github.com/SofieRydmark/project-chatbot",
+          "tags": [
+              {
+                  "id": 1,
+                  "name": "HTML5"
+                },
+                {
+                  "id": 2,
+                  "name": "CSS3"
+                },
+                {
+                  "id": 3,
+                  "name": "Pair Programming"
+                },
+                {
+                  "id": 4,
+                  "name": "Javascript ES6"
+                }
+
+          ]
+      },	
+    {
+          "id": 2,
+          "title": "BROOKLYN 99 QUIZ",
+          "project_description": "A fun quiz built in React with the use of state hook.",
+          "repo": "project-survey",
+          "url": "https://github.com/SofieRydmark/project-survey",
+          "tags": [
+              {
+                  "id": 5,
+                  "name": "React"
+                },
+                {
+                  "id": 1,
+                  "name": "HTML5"
+                },
+                {
+                  "id": 2,
+                  "name": "CSS3"
+                } 
+          ]
+      }
+]

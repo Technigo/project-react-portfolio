@@ -5,7 +5,7 @@ export const StyledFeaturedProjects = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    align-items: center;
+    align-items: start;
 
     a {
         text-decoration: none;
@@ -55,10 +55,9 @@ export const FeaturedProject = styled.article`
 export const OverlayImage = styled.div`
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 60vw;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
-
     
     h2 {
         color: #ffffff;
