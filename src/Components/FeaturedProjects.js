@@ -26,6 +26,7 @@ const FeaturedProjects = () => {
         {featuredProjects.map((project) =>
           <ProjectWrapper>
             <WillBeImage />
+            <img alt="project-img" src={`https://raw.githubusercontent.com/jessikalind/${project.name}/master/code/Thumbnail/thumbnail.png`} />
             <PinkH3>{project.name}</PinkH3>
             <P>{project.description}</P>
             <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
