@@ -56,8 +56,8 @@ const HeaderStyling = styled.header`
  }
 
     background-color: pink;
-    height: 200vw;
     background: url("./images/nailpolish.jpg") no-repeat;
+    height: 110vw;
     background-size: 600px;
     background-position-y: -50px;
     background-position-x: -120px;
@@ -96,11 +96,24 @@ const HeaderStyling = styled.header`
     width: fit-content;
     text-align: center;
     font-family: 'Raleway Dots', cursive;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 6px;
-    color: black;
+    color: grey;
     font-size: 4vw;
     }
+
+    .profile-pic {
+      position: absolute;
+      width: 29vw;
+      height: 29vw;
+      left:60%;
+      top: 20%;
+      border-radius: 50%;
+      background: url("./images/profile_pic2.jpg");
+      background-position: -30px 560px;
+      background-size: 232px;
+  }
+
 
     
     `
