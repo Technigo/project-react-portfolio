@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
-import TitleButtonStyle from './Shared/TitleButton';
+import ColorTitle from './Shared/ColorTitle';
 
 const TechStyle = styled.div`
 background-color: var(--secondBackground); 
@@ -17,7 +17,7 @@ const Tech = () => {
   return (
     <ContentWrapper as="section">
       <TechStyle>
-        <TitleButtonStyle />
+        <ColorTitle />
         <p>HTML, CSS, Flexbox, JavaScript ES6, React, Web Accessibility, API:s, mob-programming,
           pair-programming, Github.
         </p>

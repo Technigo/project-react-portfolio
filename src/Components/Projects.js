@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
-import TitleButtonStyle from './Shared/TitleButton';
+import ColorTitle from './Shared/ColorTitle';
 // import TypeBox from './Shared/TypeBox';
 import ProjectCard from './Shared/ProjectCard';
 import rData from './data.json';
@@ -36,7 +36,7 @@ const Projects = () => {
   return (
     <ContentWrapper as="section">
       <ProjectStyle>
-        <TitleButtonStyle />
+        <ColorTitle />
         <div className="project-box">
           {filteredProjects.map((project) => {
             return (

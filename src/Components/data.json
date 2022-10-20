@@ -8,7 +8,7 @@
       "coverName": "News site",
       "projectName": "project News-site",
       "descriptionText": "description1",
-      "photo": "photo",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS"]
     },
     {
@@ -18,7 +18,7 @@
       "coverName": "Chatbot",
       "projectName": "project Catbot",
       "descriptionText": "description2",
-      "photo": "photo",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -27,8 +27,8 @@
       "urlNetlify": "https://petrasguesswhogame.netlify.app/",
       "coverName": "Guess Who",
       "projectName": "project Guess Who",
-      "descriptionText": "description2",
-      "photo": "photo",
+      "descriptionText": "A digital version of the classical bord game Guess who, built in javascript.",
+      "photo": "movie_picture.png",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -37,8 +37,8 @@
       "urlNetlify": "https://petraandcharlotteweatherapp.netlify.app/",
       "coverName": "Weather App",
       "projectName": "Project Weather App",
-      "descriptionText": "description3",
-      "photo": "photo",
+      "descriptionText": "A webb app showing the weather in different cities, fetching data from an API.",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -48,7 +48,7 @@
       "coverName": "Music Releases",
       "projectName": "Project Music Releases",
       "descriptionText": "description1",
-      "photo": "photo",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -58,7 +58,7 @@
       "coverName": "Survey",
       "projectName": "Project Survey",
       "descriptionText": "description1",
-      "photo": "photo",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -67,8 +67,8 @@
       "urlNetlify": "https://project-happy-thought-petra.netlify.app/",
       "coverName": "Happy thoughts",
       "projectName": "Project Happy Thoughts",
-      "descriptionText": "description1",
-      "photo": "photo",
+      "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` with `useEffect`.",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -77,8 +77,8 @@
       "urlNetlify": "https://newly-release-movies.netlify.app/",
       "coverName": "Movies",
       "projectName": "Project Movies",
-      "descriptionText": "description1",
-      "photo": "photo",
+      "descriptionText": "A multi-page application showing information about the latest movies. Using React Router and combining `useState` with `useEffect`, passing information in the URL and pick this up in React router to load dynamic content.",
+      "photo": "https://picsum.photos/200/300",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     }
   ]

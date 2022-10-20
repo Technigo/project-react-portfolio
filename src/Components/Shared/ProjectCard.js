@@ -29,6 +29,7 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
   .project-photo{
     height: 300px;
     width: 100%;
+    // background-image:url(../../Assets/Petra.jpg);
     background-image:url(${coverImage});
     background-color: transparent;
     background-position: center;

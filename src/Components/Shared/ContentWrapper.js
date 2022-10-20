@@ -20,7 +20,6 @@ const ContentWrapper = (props) => {
 
   return (
     <OuterWrapper>
-      as={props.as} {' '}
       {/* Writes what type of element it is as a props */}
       <InnerWrapper>
         {props.children}{' '}

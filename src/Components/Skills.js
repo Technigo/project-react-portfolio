@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
-import TitleButtonStyle from './Shared/TitleButton';
+import ColorTitle from './Shared/ColorTitle';
 
 const SkillsStyle = styled.div`
 background-color: var(--thirdBackground);
@@ -22,7 +22,7 @@ const Skills = () => {
 
   return (
     <ContentWrapper as="section">
-      <TitleButtonStyle />
+      <ColorTitle />
       <SkillsStyle>
         <div className="project-text">
           <h2 className="small-title">CODE</h2>
