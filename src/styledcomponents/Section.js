@@ -38,7 +38,13 @@ export const SubTitle = styled.h2`
   color: black;
 `;
 
-/* ------- */
+/* ----DECORATIONS--- */
+
+export const Span = styled.span`
+font-weight: 600;
+color: green;
+`;
+
 export const Highlight = styled.span`
   font-weight: 600;
   color: red;

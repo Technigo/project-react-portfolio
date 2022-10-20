@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Happy Thoughts",
+        "id": "5",
+        "image": "",
+        "netlify": "https://onlyhappythoughts.netlify.app//",
+        "github": "https://github.com/Sneezan/project-happy-thoughts",
+        "description": "Retro-style react website where you can send & like happy thoughts with API",
+        "tools": ["CSS", "JavaScript", "React", "API"]
+      },
+      {
+        "title": "Cloud - a weather app",
+        "id": "6",
+        "image": "",
+        "netlify": "https://weatherclouds.netlify.app",
+        "github": "https://github.com/Sneezan/project-weather-app",
+        "description": "Simple and stylish weather app built with JavaScript & open weather API",
+        "tools": ["JavaScript ES6", "API", "CSS"]
+      },
+      {
+        "title": "React portfolio",
+        "id": "7",
+        "image": "",
+        "netlify": "",
+        "github": "https://github.com/Sneezan/project-react-portfolio",
+        "description": "You are viewing this project right now! But click to see the code on GitHub",
+        "tools": ["React", "Styled components", "JavaScript"]
+      },
+      {
+        "title": "Guess Who Game",
+        "id": "8",
+        "image": "",
+        "netlify": "https://guess-who-ceciliaf.netlify.app",
+        "github": "https://github.com/Sneezan/project-guess-who-game",
+        "description": "A mildly entertaining turn of Guess Who",
+        "tools": ["JavaScript ES6", "Arrays", "Loops"]
+      },
+      {
+        "title": "The PepBot",
+        "id": "9",
+        "image": "",
+        "netlify": "https://thepepbot.netlify.app",
+        "github": "https://github.com/Sneezan/project-chatbot",
+        "description": "A simple collapsible bot-style chat, one of the first JS projects",
+        "tools": ["JavaScript ES6", "CSS", "Collapsible"]
+      },
+      {
+        "title": "PossiNews, a positive news site",
+        "id": "10",
+        "image": "",
+        "netlify": "https://storied-choux-872962.netlify.app/",
+        "github": "https://github.com/Sneezan/project-news-site",
+        "description": "Here it is - the first project - it can only go up from here",
+        "tools": ["CSS", "HTML", "Flex & Grid"]
+      },
+      {
+        "title": "NEW YORK DOG WALKER",
+        "id": "11",
+        "image": "",
+        "netlify": "https://coruscating-sopapillas-e37efd.netlify.app",
+        "github": "https://github.com/Sneezan/project-business-site",
+        "description": "Businessfront built in our first mob-programming session",
+        "tools": ["HTML", "CSS"]
+      }
+  ]

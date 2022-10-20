@@ -1,21 +1,44 @@
 import React from 'react';
-import { Overlay, OverlayText, ProjectBox, ProjectDescription, ProjectTitle, ProjectWrap } from 'styledcomponents/Project';
+import { Overlay, OverlayText, ProjectBox, ProjectDescription, ProjectGrid, ProjectTitle, ProjectWrap, TagContainer, TitleContainer, Tag, Link } from 'styledcomponents/Project';
 import styled from 'styled-components/macro'
-import Cecilia from '../images/Cecilia.jpeg'
+import data from '../assets/top-projects.json'
 
 const ProjectCard = () => {
   return (
-    <ProjectWrap>
-      <ProjectBox>
-        <Overlay> <OverlayText>THE MOVIE PROJECT</OverlayText></Overlay>
-        <ProjectBackground src={Cecilia} alt="cecilia" />
-      </ProjectBox>
-      <ProjectTitle>
-              TITLE
-      </ProjectTitle>
-      <ProjectDescription> This is a description of a project</ProjectDescription>
-    </ProjectWrap>
-  );
+    <ProjectGrid>
+      {data.map((item) => (
+        <Center>
+          <ProjectWrap>
+            <ProjectBox key={item.title}>
+              <a
+                href={item.netlify}
+                alt="project landingpage"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Overlay> <OverlayText>{item.overlay}</OverlayText></Overlay>
+                <ProjectBackground src={item.image} alt="project poster" />
+              </a>
+            </ProjectBox>
+            <TitleContainer>
+              <Link
+                href={item.github}
+                alt="project landingpage"
+                target="_blank"
+                rel="noopener noreferrer">
+                <ProjectTitle>{item.title}</ProjectTitle>
+              </Link>
+              <ProjectDescription>{item.description}</ProjectDescription>
+            </TitleContainer>
+            <TagContainer>
+              {item.tools.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
+              ))}
+            </TagContainer>
+          </ProjectWrap>
+        </Center>
+      ))}
+    </ProjectGrid>
+  )
 };
 export default ProjectCard;
 
@@ -26,10 +49,15 @@ const ProjectBackground = styled.img`
   display: flex;
   position: relative;
   margin: 0 auto;
-  top: -100%;
+  top: -50%;
   @media (min-width: 900px) {
     width: 367px;
     height: 240px;
   }
 `;
 
+const Center = styled.div`
+border: 3px solid yellow;
+display: grid;
+margin: 0 auto;
+`

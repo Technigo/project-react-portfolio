@@ -1,0 +1,42 @@
+[
+	{
+	  "title": "Newest movie releases",
+	  "overlay": "new movies",
+	  "id": "1",
+	  "image": "",
+	  "netlify": "https://newly-release-movies.netlify.app/",
+	  "github": "https://github.com/Sneezan/project-movies",
+	  "description": "Bring drinks and snacks, movies & chill coming up!",
+	  "tools": ["React", "JavaScript ES6", "Node", "CSS", "APIs"]
+	},
+	{
+	  "title": "Music releases",
+	  "overlay": "new music releases",
+	  "id": "2",
+	  "image": "",
+	  "netlify": "https://the-music-release-project.netlify.app",
+	  "github": "https://github.com/Sneezan/project-music-releases",
+	  "description": "With react components, you can time travel to fall 2019.",
+	  "tools": ["React", "Node", "CSS", "JavaScript ES6", "API"]
+	},
+	{
+	  "title": "Interstellar Academy",
+	  "overlay": "Interstellar academy",
+	  "id": "3",
+	  "image": "",
+	  "netlify": "https://interstellaracademy.netlify.app",
+	  "github": "https://github.com/Sneezan/Landing-Page",
+	  "description": "A landing page for a fictional business with forms and FAQ",
+	  "tools": ["CSS", "HTML", "GitHub", "Hamburger menu", "No JS"]
+	},
+	{
+	  "title": "Dental self assessment",
+	  "overlay": "The Self Assessment",
+	  "id": "4",
+	  "image": "",
+	  "netlify": "https://selfassesment.netlify.app",
+	  "github": "https://github.com/Sneezan/project-survey",
+	  "description": "An homage to my previous career, now patients can self-assess.",
+	  "tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
+	}
+  ]
