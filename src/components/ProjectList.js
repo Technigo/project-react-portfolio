@@ -1,7 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'components/Section';
 import { ProjectDescription, ProjectTitle, Tag, TagContainer, Link } from 'components/Project';
-import styled from 'styled-components'
 import data from '../assets/projects.json'
 
 const ProjectList = () => {

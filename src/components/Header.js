@@ -99,8 +99,7 @@ const Name = styled.h3`
     font-size: 1.5rem;
     line-height: 0;
     left: 20%;
-  } 
-    
+  }    
   @media (min-width: 2000px) {
     left: 27%;
   }
@@ -114,7 +113,6 @@ const ProfileImage = styled.img`
     top: 230px;
     border-radius: 50%;
     border: 4px solid #444444;
-
     @media (min-width: 770px) {
       right: 20px;
   }

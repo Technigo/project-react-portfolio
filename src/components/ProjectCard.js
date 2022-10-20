@@ -1,6 +1,6 @@
 import React from 'react';
-import { Overlay, OverlayText, ProjectBox, ProjectDescription, ProjectGrid, ProjectTitle, ProjectWrap, TagContainer, TitleContainer, Tag, Link } from 'components/Project';
 import styled from 'styled-components'
+import { Overlay, OverlayText, ProjectBox, ProjectDescription, ProjectGrid, ProjectTitle, ProjectWrap, TagContainer, TitleContainer, Tag, Link } from 'components/Project';
 import data from '../assets/top-projects.json'
 
 const ProjectCard = () => {
