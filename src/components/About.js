@@ -1,9 +1,10 @@
 import React from 'react'
+import { OuterWrapper, InnerWrapper } from './styled/Wrappers'
 
 export const About = () => {
   return (
-    <section className="outer-wrapper" id="summary-section">
-      <div className="inner-wrapper">
+    <OuterWrapper id="summary-section">
+      <InnerWrapper>
         <p>Welcome! My name&apos;s Nick, and I&apos;m an aspiring frontend developer with a
            background in writing and localisation and a passion for problem-solving and languages.
         </p>
@@ -14,7 +15,7 @@ export const About = () => {
         <p>I&apos;m currently enrolled in Technigo&apos;s comprehensive Frontend Developer
          Bootcamp and expect to graduate in January 2023.
         </p>
-      </div>
-    </section>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }

@@ -1,12 +1,14 @@
 import React from 'react'
 import { SectionHeader } from './styled/SectionHeader'
+import { OuterWrapper, InnerWrapper } from './styled/Wrappers'
+import { TechStack } from './styled/TechStack'
 
 export const Tech = () => {
   return (
-    <section className="outer-wrapper" id="tech-section">
-      <div className="inner-wrapper">
+    <OuterWrapper id="tech-section">
+      <InnerWrapper>
         <SectionHeader>TECH</SectionHeader>
-        <div id="tech-stack">
+        <TechStack>
           <img title="HTML" alt="HTML logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
           <img title="CSS" alt="CSS logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
           <img title="Bootstrap" alt="Bootstrap logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
@@ -25,11 +27,11 @@ export const Tech = () => {
           <img title="Linux" alt="Linux logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
           <img title="Figma" alt="Figma logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
           <img title="Slack" alt="Slack logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original-wordmark.svg" />
-        </div>
+        </TechStack>
         <p>I&apos;ve also worked with responsive (mobile-first) design, web accessibility,
              APIs, agile development, mob programming, pair programming and code reviews.
         </p>
-      </div>
-    </section>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }

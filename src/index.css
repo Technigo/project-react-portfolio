@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -28,23 +27,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.outer-wrapper {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 1em 0em;
-}
-
-.outer-wrapper:nth-of-type(2n) {
-  background-color: #DBE2EF;
-}
-
-.inner-wrapper {
-  width: 90%;
-  margin: 0em auto;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -57,7 +39,7 @@ p {
 
 /* HEADER */
 header {
-  background-image: url(img/background-image.jpg);
+  background-image: url(/public/images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -117,16 +99,6 @@ footer div p {
 }
 
 /* SECTION HEADINGS */
-.section-headings {
-    border-radius: 1em;
-    margin: 0em 35% 2em 35%;
-    padding: 0.5em;
-    text-align: center;
-    color: #F9F7F7;
-    background-color: #112D4E;
-    text-shadow: #000000 0px 0px 1px ;
-}
-
 .subsection-headings {
     margin: 2em auto;
     padding: 0.3em;
@@ -136,22 +108,9 @@ footer div p {
 }
 
 /* SUMMARY SECTION */
-#summary-section div p {
-  margin-bottom: 1em;
-}
+
 
 /* TECH STACK */
-#tech-stack {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1em;
-    margin: 1em 0em;
-}
-
-#tech-stack img {
-    height: 50px;
-    width: auto;
-}
 
 /* OTHER PROJECTS */
 .other-project p {
@@ -190,29 +149,6 @@ li:first-child {
     padding: 0.5em;
     border-radius: 1em;
     margin-bottom: 0.7em;  
-}
-
- /* ICONS */
-.findme-icons {
-  display: flex;
-  justify-content: center;
-}
-
-.header-findme-icon {
-  height: 30px;
-  max-width: auto;
-  margin: 0.3em; 
-}
-
-.footer-findme-icon {
-  height: 50px;
-  max-width: auto;
-  margin: 1.2em; 
-}
-
-#header-icons {
-  justify-content: flex-end;
-  margin-bottom: 1em;
 }
 
 /* CARDS */
@@ -272,42 +208,15 @@ margin-left: 0.3em;
 /* MEDIA QUERIES */
 @media only screen and (min-width: 480px) {
 
-  .outer-wrapper {
-    padding: 2em 0em;
-  }
-
-  .inner-wrapper {
-    width: 75%;
-  }
-
   #profile-image {
     right: 5%;
     left: 70%; 
     bottom: -25px;
   } 
-
-  #tech-stack {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .footer-findme-icon {
-    height: 100px;
-    max-width: auto;
-    margin: 1.5em; 
-  }
-
-  .findme-icons img:hover {
-    transform: translateY(-0.20em);
-    cursor: pointer;
-  } 
   
   .card:hover {
     transform: translateY(-0.20em);
     cursor: pointer;
-  }
-  
-  #header-icons {
-    margin-bottom: 0em;
   }
   
   .cardholder {
@@ -317,11 +226,6 @@ margin-left: 0.3em;
 }
 
 @media only screen and (min-width: 770px) {
-
-  .header-findme-icon {
-    height: 50px;
-    margin: 10px; 
-  }
 
   h1 {
     font-size: 1.5em;
@@ -340,10 +244,6 @@ margin-left: 0.3em;
     left: 70%; 
     bottom: -25px;
   } 
-
-  #tech-stack {
-    grid-template-columns: repeat(9, 1fr);
-  }
 
   .card-text p {
    display: block;

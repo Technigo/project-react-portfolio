@@ -1,29 +1,45 @@
 import React from 'react'
+import { IconGroup } from './styled/IconGroup'
+import { Icon } from './styled/Icon'
+import { HeaderOuterWrapper, InnerWrapper } from './styled/Wrappers'
 
 export const Header = () => {
   return (
-    <header className="outer-wrapper">
-      <div className="inner-wrapper">
-        <div className="findme-icons" id="header-icons">
+    <HeaderOuterWrapper>
+      <InnerWrapper>
+        <IconGroup header>
           <a href="https://linkedin.com/in/jnbjensen">
-            <img className="header-findme-icon" title="My LinkedIn profile" alt="link to Niclas' LinkedIn profile" src="./.img/icon-github.png" />
+            <Icon
+              header
+              title="My LinkedIn profile"
+              alt="link to Niclas' LinkedIn profile"
+              src="images/icon-linkedin.png" />
           </a>
           <a href="https://github.com/jnbjensen">
-            <img className="header-findme-icon" title="My GitHub profile" alt="link to Niclas' GitHub profile" src="img/icon-github.png" />
+            <Icon
+              header
+              title="My GitHub profile"
+              alt="link to Niclas' GitHub profile"
+              src="images/icon-github.png" />
           </a>
           <a href="https://stackoverflow.com/users/19388159/niclas-jensen">
-            <img className="header-findme-icon" title="My StackOverflow profile" alt="link to Niclas' StackOverflow profile" src="img/icon-stackoverflow.png" />
+            <Icon
+              header
+              title="My StackOverflow profile"
+              alt="link to Niclas' StackOverflow profile"
+              src="images/icon-stackoverflow.png" />
           </a>
-        </div>
+        </IconGroup>
+
         <div id="header-text">
           <h1>PORTFOLIO: NICLAS JENSEN</h1>
           <h2 id="big-h2">frontend developer</h2>
           <h2 id="small-h2">+ language specialist</h2>
         </div>
         <div id="profile-image">
-          <img src="./img/profile-image.jpg" alt="Profile" />
+          <img src="images/profile-image.jpg" alt="Profile" />
         </div>
-      </div>
-    </header>
+      </InnerWrapper>
+    </HeaderOuterWrapper>
   )
 }

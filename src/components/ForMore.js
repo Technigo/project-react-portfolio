@@ -1,22 +1,33 @@
 import React from 'react'
 import { SectionHeader } from './styled/SectionHeader'
+import { IconGroup } from './styled/IconGroup'
+import { Icon } from './styled/Icon'
 
 export const ForMore = () => {
   return (
     <section className="outer-wrapper" id="for-more">
       <div className="inner-wrapper">
         <SectionHeader>FOR MORE</SectionHeader>
-        <div className="findme-icons">
+        <IconGroup>
           <a href="https://linkedin.com/in/jnbjensen">
-            <img className="footer-findme-icon" title="My LinkedIn profile" alt="link to Niclas' LinkedIn profile" src="img/icon-linkedin.png" />
+            <Icon
+              title="My LinkedIn profile"
+              alt="link to Niclas' LinkedIn profile"
+              src="images/icon-linkedin.png" />
           </a>
           <a href="https://github.com/jnbjensen">
-            <img className="footer-findme-icon" title="My GitHub profile" alt="link to Niclas' GitHub profile" src="img/icon-github.png" />
+            <Icon
+              title="My GitHub profile"
+              alt="link to Niclas' GitHub profile"
+              src="images/icon-github.png" />
           </a>
           <a href="https://stackoverflow.com/users/19388159/niclas-jensen">
-            <img className="footer-findme-icon" title="My StackOverflow profile" alt="link to Niclas' StackOverflow profile" src="img/icon-stackoverflow.png" />
+            <Icon
+              title="My StackOverflow profile"
+              alt="link to Niclas' StackOverflow profile"
+              src="images/icon-stackoverflow.png" />
           </a>
-        </div>
+        </IconGroup>
       </div>
     </section>
   )
