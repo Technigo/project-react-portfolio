@@ -9,12 +9,7 @@ export const StyledFeaturedProjects = styled.div`
 
     a {
         text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
-
 
     @media (min-width: 768px) and (max-width: 991px) {
         grid-template-columns: 1fr 1fr;
@@ -30,31 +25,18 @@ export const StyledFeaturedProjects = styled.div`
 
 `
 
-export const FeaturedProjectOverlay = styled.div`
+export const FeaturedProject = styled.article`
     position: relative;
 
     img {
         width: 100%;
         height: 60vw;
         object-fit: cover;
-
-        &:hover {
-        background-color: transparent;
-    }
     }
 
-
-    p {
-        color: #ffffff;
-        font-family: Montserrat;
-        font-weight: 700;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    &:hover h3, &:hover p {
+        text-decoration: underline;
     }
-
     
     @media (min-width: 768px) and (max-width: 991px) {
         img {
@@ -70,12 +52,30 @@ export const FeaturedProjectOverlay = styled.div`
 
 `
 
-export const OverlayImage = styled.img`
+export const OverlayImage = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
+
+    
+    h2 {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s ease;
+    }
+
+    &:hover, &:hover h2 {
+        background-color: transparent;
+        color: transparent;
+    }
 
     @media (min-width: 768px) and (max-width: 991px) {
         height: 20vw;

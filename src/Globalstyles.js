@@ -101,6 +101,10 @@ export const Tags = styled.ol`
     justify-content: flex-start;
     padding: 0;  
 
+    &:hover {
+        text-decoration: none;
+    }
+
     li {
         font-family: 'Roboto';
         font-style: normal;
