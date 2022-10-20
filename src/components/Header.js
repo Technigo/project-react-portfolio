@@ -3,11 +3,10 @@ import styled from 'styled-components';
 
 import HeroImage from 'assets/hero-image.jpg'
 import LinkedinIcon from 'assets/linkedin-icon.svg';
-import StackOverflowIcon from 'assets/stackoverflow-icon.svg';
 import GithubIcon from 'assets/github-icon.svg';
 import ProfileImage from 'assets/Kartika.png'
 
-import { LINKEDIN_URL, STACKOVERFLOW_URL, GITHUB_URL } from 'utils/Urls';
+import { LINKEDIN_URL, GITHUB_URL } from 'utils/Urls';
 import { Title, IconContainer, IconButton } from './GlobalStyles';
 
 export const Header = () => {
@@ -32,19 +31,10 @@ export const Header = () => {
             src={GithubIcon}
             alt="Github icon for the header" />
         </IconButton>
-        <IconButton
-          primary
-          type="button"
-          href={STACKOVERFLOW_URL}
-          target="_blank">
-          <img
-            src={StackOverflowIcon}
-            alt="Stack Overflow icon for the header" />
-        </IconButton>
       </IconContainer>
 
       <TitleContainer>
-        <Title>Portfolio: Kartika Purwahyuningrum</Title>
+        <Title><span>Portfolio:</span> Kartika Purwahyuningrum</Title>
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </TitleContainer>
@@ -68,7 +58,7 @@ const HeaderContainer = styled.header`
   }
 
   @media (min-width: 1024px){
-    height: 550px;
+    height: 500px;
   }
 `
 
@@ -76,13 +66,17 @@ const TitleContainer = styled.div`
   position: absolute;
   top: 35%;
   left: 10%;
-  line-height: 40px;
+  line-height: 30px;
 
   h1{
     font-size: 25px;
     display: inline;
     margin-right: 5px;
     color: white;
+  }
+
+  span{
+    font-weight: 100;
   }
 
 @media (min-width: 520px) and (max-width: 1023px){

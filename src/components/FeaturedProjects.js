@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { BLOOMSY_URL, LOVELITS_URL } from 'utils/Urls';
 
-import Bloomsy from 'assets/newssite.png'
-import Lovelits from 'assets/chatbot.png'
+import Bloomsy from '../assets/newssite.png'
+import Lovelits from '../assets/chatbot.png'
 
 import { SectionTitle, Wrapper, Heading, ProjectParagraph, TagIcons, GridWrapper } from './GlobalStyles';
 

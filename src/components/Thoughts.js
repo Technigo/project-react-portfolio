@@ -9,7 +9,7 @@ import { Wrapper, SectionTitle, GridWrapper, Paragraph } from './GlobalStyles';
 export const Thoughts = () => {
   return (
     <Wrapper>
-      <SectionTitle>MORE THOUGHTS</SectionTitle>
+      <SectionTitle>MY THOUGHTS</SectionTitle>
       <GridWrapper>
         <ArticleStyle>
           <a
@@ -34,7 +34,7 @@ export const Thoughts = () => {
             target="_blank"
             rel="noreferrer">
             <img src={SeconndMediumArticle} alt="article" />
-            <ArticleText primary>September 2022</ArticleText>
+            <ArticleText primary>October 2022</ArticleText>
             <ArticleTitle>
             Good Is Not Good Enough
             </ArticleTitle>
@@ -85,4 +85,11 @@ const ArticleText = styled(Paragraph)`
     line-height: 20px;
     margin: 0;
     
+    @media (min-width: 520px) and (max-width: 1023px){
+        font-size: 16px;
+      }
+      
+      @media (min-width: 1024px){
+        font-size: 18px;
+      } 
 `

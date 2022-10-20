@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1280px;
+  max-width: 1024px;
   font-family: 'Montserrat', sans-serif;
 }
 `
@@ -19,7 +19,15 @@ flex-direction: column;
 justify-content: center;
 height: 100%;
 background: ${(props) => (props.primary ? '#FFFBE9' : 'white')};
-padding: 5% 10%;
+padding: 10%;
+
+@media (min-width: 668px) and (max-width: 1023px){
+  padding: 8% 10%;
+}
+
+@media (min-width: 1024px){
+  padding: 8% 10%;
+}
 `
 
 export const Paragraph = styled.p`
@@ -27,8 +35,13 @@ font-size: 15px;
 color: ${(props) => (props.primary ? '#614124' : 'white')};
 line-height: 30px;
 
-@media (min-width: 1024px){
+
+@media (min-width: 520px) and (max-width: 1023px){
   font-size: 16px;
+}
+
+@media (min-width: 1024px){
+  font-size: 18px;
 }
 `
 export const ProjectParagraph = styled(Paragraph)`
@@ -39,12 +52,13 @@ display: inline;
 
 export const Heading = styled.h3`
 margin: 2%;
-    color: #614124;
+    color: ${(props) => (props.primary ? 'white' : '#614124')};
     font-size: 15px;
 `
 export const OverlinedHeading = styled(Heading)`
-margin: 0;
-text-decoration: overline #614124;
+margin: 0 auto;
+text-decoration: ${(props) => (props.primary ? ' 2px overline white' : '2px overline #614124')};
+font-weight: 600;
 `
 
 export const Title = styled.h2`
@@ -65,6 +79,14 @@ background-color: #006f45;
   padding: 10px;
   display: inline-block;
   font-size: 20px;
+
+  @media (min-width: 668px) and (max-width: 1023px){
+    font-size: 25px;
+  }
+  
+  @media (min-width: 1024px){
+    font-size: 30px;
+  }
 `
 
 export const IconContainer = styled.div`
@@ -96,12 +118,28 @@ export const IconContainer = styled.div`
 export const IconButton = styled.button`
   background: none;
   border: none;
-  height: 50px;
-  margin: 0;
+  margin-right: 0;
   filter: ${(props) => (props.primary ? 'none' : 'invert(1)')};
+  transition: transform .2s; 
 
 &:hover{
-    filter: opacity(0.5);
+  transform: scale(0.9);
+  }
+
+  img{
+    height: 50px;
+  }
+
+  @media (min-width: 668px) and (max-width: 1023px) {
+    img{
+      height: 60px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    img{
+      height: 80px;
+    }
   }
 `
 export const TagIcons = styled.div`

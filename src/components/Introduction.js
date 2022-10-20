@@ -19,14 +19,14 @@ export const Introduction = () => {
 }
 
 const IntroductionWrapper = styled(Wrapper)`
-padding: 10%;
+padding: 15% 10%;
 
 @media (min-width: 668px) and (max-width: 1023px){
-    padding: 10% 15%;   
+    padding: 10%;   
 }
 
 @media (min-width: 1024px){
-    padding: 10% 15%; 
+    padding: 10%; 
 }
 `
 
@@ -34,10 +34,10 @@ const ClonedParagraph = styled(Paragraph)`
 text-align: justify;
 
 @media (min-width: 668px) and (max-width: 1023px){
-    margin-bottom: 30px;
-}
+    font-size: 16px;
+  }
 
 @media (min-width: 1024px){
-    
+    font-size: 18px;
 }
 `
