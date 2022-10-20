@@ -45,6 +45,6 @@ export const About = styled.p`
   }
 @media (min-width: 1500px) {
   line-height: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 `;
