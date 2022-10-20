@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
+import GlobalStyles from 'GlobalStyles.style';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
@@ -10,6 +11,7 @@ import stackOverflowLogo from './images/stackoverflow.svg'
 export const App = () => {
   return (
     <>
+      <GlobalStyles />
       <Header
         linkedinLogo={linkedinLogo}
         githubLogo={githubLogo}

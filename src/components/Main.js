@@ -1,27 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import styled from 'styled-components'
 import ForMore from './ForMore';
+import Intro from './Intro';
 import Projects from './Projects';
 import Skills from './Skills';
+import TechSection from './TechSection';
 import Thoughts from './Thoughts';
+
+const StyledMain = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+` // Oklart om den här stylingen gör någon skillnad.
 
 const Main = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
-    <main>
-      <section className="intro bg-darker">
-        <p className="intro-text">
-          <span className="line" /><span className="dot" />
-          Hi there! I'm a frontend developer with fullstack ambition and a background in social
-          work. I am passionate about code and have a big interest in CSS.
-        </p>
-      </section>
-      <section className="tech">
-        <h2 className="">Tech</h2>
-        <p>
-          HTML, CSS, Flexbox, Grid, JavaScript, ES6, JSX, React, React Hooks, Redux,
-          Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, Github.
-        </p>
-      </section>
+    <StyledMain>
+      <Intro />
+      <TechSection />
       <Projects />
       <Thoughts />
       <Skills />
@@ -29,7 +26,7 @@ const Main = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
         linkedinLogo={linkedinLogo}
         githubLogo={githubLogo}
         stackOverflowLogo={stackOverflowLogo} />
-    </main>
+    </StyledMain>
   )
 }
 

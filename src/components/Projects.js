@@ -1,18 +1,16 @@
 /* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 // import { gitHubEndpoint } from '../utils/urls'
 // import * as dotenv from 'dotenv'
 import FeaturedProject from './FeaturedProject';
 import OtherProject from './OtherProject';
-import weatherAppImg from '../images/thumbnail-weatherapp.webp';
-import happyThoughtsImg from '../images/thumbnail-happy-thoughts.webp'
-import musicReleasesImg from '../images/thumbnail-music-releases.webp'
-import guessWhoImg from '../images/thumbnail-guesswho.webp'
-import chatBotImg from '../images/thumbnail-chatbot.webp'
-import newsSiteImg from '../images/thumbnail-newssite.webp'
+
 // import { projectsForDisplay } from '../utils/projectsForDisplay' Can't import the named export 'projectsForDisplay'.'includes'
 // (imported as 'projectsForDisplay') from default-exporting module (only default export is available)
+import StyledProject from './Project.style';
+import { GridWrapper, SubHeading } from './ReusableStyles.style'
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
@@ -39,18 +37,10 @@ const Projects = () => {
       <FeaturedProject
         key={repo.id}
         deployedLink={repo.homepage}
-        projectImage="https://picsum.photos/200/300"
+        defaultBranch={repo.default_branch}
         projectTitle={repo.name}
-        overlayText={repo.name}
         projectDescription={repo.description}
-        techPTags={
-          <>
-            <p>React</p>
-            <p>CSS3</p>
-            <p>JSX</p>
-            <p>API</p>
-          </>
-        }
+        techTags={repo.topics}
         repoLink={repo.html_url} />
     )
   })
@@ -63,137 +53,53 @@ const Projects = () => {
         deployedLink={repo.homepage}
         projectImage="https://picsum.photos/200/300"
         projectTitle={repo.name}
-        overlayText={repo.name}
         projectDescription={repo.description}
-        techPTags={
-          <>
-            <p>React</p>
-            <p>CSS3</p>
-            <p>JSX</p>
-            <p>API</p>
-          </>
-        }
+        techTags={repo.topics}
         repoLink={repo.html_url} />
     )
   })
 
   return (
-    <section className="featured-projects bg-darker show-off">
+    <StyledProjectSection className="featured-projects bg-darker show-off">
       <h2 className="grid-heading">Featured Projects</h2>
-      <div className="grid-wrapper projects-wrapper">
+      <StyledGridWrapperProject className="grid-wrapper projects-wrapper">
         {allFeatured}
-      </div>
-      <div className="other-wrapper">
-        <h3 className="sub-heading">Other Projects</h3>
+      </StyledGridWrapperProject>
+      <StyledOtherWrapper className="other-wrapper">
+        <SubHeading className="sub-heading">Other Projects</SubHeading>
         {allOther}
-      </div>
-    </section>
+      </StyledOtherWrapper>
+    </StyledProjectSection>
   )
 }
 
 export default Projects;
 
-/* return (
-    <section className="featured-projects bg-darker show-off">
-      <h2 className="grid-heading">Featured Projects</h2>
-
-      <div className="grid-wrapper projects-wrapper">
-        <FeaturedProject
-          deployedLink="https://wondrous-longma-306268.netlify.app/"
-          projectImage={happyThoughtsImg}
-          projectTitle={featuredOne.title}
-          overlayText="Happy Thoughts"
-          projectDescription="A Twitter-like message feed fetching and posting to API."
-          techPTags={
-            <>
-              <p>React</p>
-              <p>CSS3</p>
-              <p>JSX</p>
-              <p>API</p>
-            </>
-          }
-          repoLink="https://github.com/ElinSegelov/project-happy-thoughts" />
-
-        <FeaturedProject
-          deployedLink="https://inquisitive-fudge-c150a0.netlify.app/"
-          projectImage={musicReleasesImg}
-          projectTitle="Project: Music Releases"
-          overlayText="Music Releases"
-          projectDescription="Summary of reacently released singles and albums using data
-          from a mocked up API fetch."
-          techPTags={
-            <>
-              <p>React</p>
-              <p>CSS3</p>
-              <p>JSX</p>
-            </>
-          }
-          repoLink="https://github.com/ElinSegelov/project-music-releases" />
-
-        <FeaturedProject
-          deployedLink="#"
-          projectImage={weatherAppImg}
-          projectTitle="Project: Weather App"
-          overlayText="Weather App"
-          projectDescription="Weather app built in JavaScript using Open Weather API."
-          techPTags={
-            <>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>API</p>
-            </>
-          }
-          repoLink="#" />
-
-        <FeaturedProject
-          deployedLink="https://aesthetic-cat-671dc8.netlify.app"
-          projectImage={guessWhoImg}
-          projectTitle="Project: Guess Who?!"
-          overlayText="Guess Who?!"
-          projectDescription="Classic board game Guess Who?! built with JavaScript"
-          techPTags={
-            <>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-            </>
-          }
-          repoLink="#" />
-      </div>
-
-      <div className="other-wrapper">
-        <h3 className="sub-heading">Other Projects</h3>
-
-        <OtherProject
-          deployedLink="https://www.svt.se"
-          projectImage={chatBotImg}
-          projectTitle="Project: Chatbot"
-          projectDescription="Weather app built in JavaScript using Open Weather API."
-          techPTags={
-            <>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>API</p>
-            </>
-          }
-          repoLink="https://www.google.com" />
-
-        <OtherProject
-          deployedLink="https://www.svt.se"
-          projectImage={newsSiteImg}
-          projectTitle="Project: News Site"
-          projectDescription="Weather app built in JavaScript using Open Weather API."
-          techPTags={
-            <>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
-              <p>API</p>
-            </>
-          }
-          repoLink="https://www.google.com" />
-      </div>
-    </section>
-  ) */
+const StyledProjectSection = styled.section`
+  background-color: var(--secondary);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`
+const StyledOtherWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  
+  @media (min-width: 600px) {
+    justify-content: left;
+      width: 60vw;
+      gap: 1.5rem;
+  }
+  
+`
+const StyledGridWrapperProject = styled.div`
+  @media (min-width: 600px) {
+    display: grid ;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+  }
+  @media (min-width: 1200px) {
+    width: 60vw;
+  }
+`

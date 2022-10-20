@@ -1,54 +1,75 @@
 import React from 'react';
+import styled from 'styled-components';
+import { DarkerContainer } from './DarkerContainer.syled';
+import ListSection from './ListSection';
 
 const Skills = () => {
   return (
-    <section className="skills bg-darker">
+    <StyledSkillsWrapper className="skills bg-darker">
       <h2 className="grid-headig">SKILLS</h2>
-      <div className="skill-wrapper">
-        <div className="list-section list-section1">
-          <h3>Code</h3>
-          <ul className="skill-group code">
-            <li className="skill-list">HTML 5</li>
-            <li className="skill-list">CSS3</li>
-            <li className="skill-list">JavaScript ES6</li>
-            <li className="skill-list">Git</li>
-          </ul>
+      <StyledSkillsContainer className="skill-wrapper">
+        <div>
+          <ListSection
+            heading="Code"
+            ListItems={['HTML 5', 'CSS3', 'JavaScript ES6', 'React', 'Styled Components', 'Git']} />
         </div>
-
-        <div className="list-section list-section2">
-          <h3>Upcoming</h3>
-          <ul className="skill-group upcoming">
-            <li className="skill-list">React</li>
-            <li className="skill-list">Styled Components</li>
-            <li className="skill-list">jQuery</li>
-            <li className="skill-list">Redux</li>
-            <li className="skill-list">Node.js</li>
-            <li className="skill-list">MongoDB</li>
-          </ul>
+        <div>
+          <ListSection
+            heading="Upcoming"
+            ListItems={['Redux', 'Node.js', 'MongoDB', 'jQuery']} />
         </div>
-
-        <div className="list-section list-section3">
-          <h3>Toolbox</h3>
-          <ul className="skill-group more-skills toolbox">
-            <li className="skill-list">VSCode</li>
-            <li className="skill-list">Slack</li>
-            <li className="skill-list">GitHub</li>
-            <li className="skill-list">Trello</li>
-            <li className="skill-list">Kanban</li>
-          </ul>
+        <div>
+          <ListSection
+            heading="Toolbox"
+            ListItems={['VS Code', 'GitHub', 'Kanban', 'Trello', 'Slack']} />
         </div>
-
-        <div className="list-section list-section4">
-          <h3>More</h3>
-          <ul className="skill-group more-skills more">
-            <li className="skill-list">Hopefully more</li>
-            <li className="skill-list">Hopefully more</li>
-            <li className="skill-list">Hopefully more</li>
-          </ul>
+        <div>
+          <ListSection
+            heading="More"
+            ListItems={['Pair-programming', 'Mob-programming', 'Interpersonal skills', 'Communicative', 'Problem solver']} />
         </div>
-      </div>
-    </section>
+      </StyledSkillsContainer>
+    </StyledSkillsWrapper>
   )
 }
 
 export default Skills;
+
+const StyledSkillsWrapper = styled(DarkerContainer)`
+
+h3 {
+  background-color: transparent;
+  color: var(--heading);
+  font-size: 17px;
+  margin: 0 auto;
+}
+`
+const StyledSkillsContainer = styled.div`
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-template-columns: 1fr 1fr;  
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  div:nth-child(1) {
+  grid-column: 1
+  }
+  div:nth-child(2) {
+    grid-column: 1;
+  }
+  div:nth-child(3) {
+    grid-column: 2;
+
+  }
+  div:nth-child(4) {
+    grid-column: 2;
+    @media (min-width: 600px) {
+      grid-column: 3;
+    }
+  }
+  
+`
