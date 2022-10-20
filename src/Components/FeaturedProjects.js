@@ -25,8 +25,7 @@ const FeaturedProjects = () => {
         <WhitePinkH2Absolute>FEATURED PROJECTS</WhitePinkH2Absolute>
         {featuredProjects.map((project) =>
           <ProjectWrapper>
-            <WillBeImage />
-            <img alt="project-img" src={`https://raw.githubusercontent.com/jessikalind/${project.name}/master/code/Thumbnail/thumbnail.png`} />
+            <FeatureImg alt="project-img" src={`https://raw.githubusercontent.com/jessikalind/${project.name}/master/code/Thumbnail/thumbnail.png`} />
             <PinkH3>{project.name}</PinkH3>
             <P>{project.description}</P>
             <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
@@ -55,12 +54,13 @@ const InnerWrapperFeaturedProjects = styled(InnerWrapper)`
     column-gap: 3vw;
   }
 `
-const WillBeImage = styled.div`
-  height: 200px;
-  width: 200px;
-  background-color: black;
-`
+
 const WhitePinkH2Absolute = styled(WhitePinkH2)`
   position: absolute; 
   top: 4vh;
+`
+
+const FeatureImg = styled.img`
+  display: block;
+  width: 100%;
 `
