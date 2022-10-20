@@ -3,29 +3,23 @@ import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Heading, Topics } from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
-// const options = {
-//   method: 'GET',
-//   headers: {
-//     Authorization: 'token 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'
-//   }
-// }
 
-export const FeaturedProjects = () => {
-  const [featuredProjects, setFeaturedProjects] = useState([''])
+export const OtherProjects = () => {
+  const [otherProjects, setOtherProjects] = useState([''])
   fetch(GithubAPI)
     .then((res) => res.json())
     // .then((response) => console.log(response))
     // .then((data) => console.log(data))
     .then((data) => {
-      setFeaturedProjects(data)
+      setOtherProjects(data)
     })
-  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey'));
+  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-weather-app'));
   return (
     <OuterWrapper beige>
       <InnerWrapper>
-        <Heading dark>FEATURED PROJECTS</Heading>
-        <FeaturedProjectsContent>
-          {BigProjects.map((prop) => (
+        <OtherProjectsContent>
+          <Heading>OTHER PROJECTS</Heading>
+          {SmallProjects.map((prop) => (
             <div key={prop.id}>
               <ProjectsHeading>{prop.name}</ProjectsHeading>
               <p>{prop.description}</p>
@@ -34,13 +28,13 @@ export const FeaturedProjects = () => {
               {/* <img alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${project.name}/master/code/Thumbnail/thumbnail.png`} /> */}
             </div>
           ))}
-        </FeaturedProjectsContent>
+        </OtherProjectsContent>
       </InnerWrapper>
     </OuterWrapper>
   )
 }
 
-export const FeaturedProjectsContent = styled.div`
+export const OtherProjectsContent = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -53,4 +47,3 @@ line-height: 30px;
 export const ProjectsHeading = styled.h4`
 color: #D36B00;
 `
-

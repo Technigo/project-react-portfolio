@@ -29,3 +29,16 @@ export const Heading = styled.h2`
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
   background-color: ${(props) => (props.dark ? '#42032C' : 'none')};
 `
+
+export const Topics = styled.p`
+font-family: "Roboto", sans-serif;
+    color: #2b2e34;
+    font-weight: bold;
+    background-color: #db9aab;
+    display: inline;
+    text-decoration: none;
+    line-height: 12px;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 5px;
+`

@@ -6,6 +6,7 @@ import { ForMore } from './components/ForMore'
 import { Footer } from './components/Footer'
 import { Knowledge } from './components/Knowledge'
 import { FeaturedProjects } from './components/FeaturedProjects'
+import { OtherProjects } from './components/OtherProjects'
 // import { OuterWrapper } from './components/styling'
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
       <Intro />
       <Knowledge />
       <FeaturedProjects />
+      <OtherProjects />
       <ForMore />
       <Footer />
     </div>
