@@ -1,83 +1,60 @@
 
 [
   {
-		"title": "Guess who?",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "/guesswho.jpg",
-		"Image":"https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
-   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"title": "Movie Releases",
+		"titleDescription": "A multi-page application",
+		"projectDescription": "A multi-page application passing information in the URL and pick this up in React router to load dynamic content",
+		"Image":"https://thumbs.dreamstime.com/b/popcorn-icon-set-cinema-movie-night-two-big-size-strip-box-package-pop-corn-food-red-white-text-flat-design-style-yellow-172069651.jpg",
+   		"Repo": "https://github.com/JosefineEngdahl/project-movies",
+		"Netifly": "https://newly-release-movies.netlify.app",
 		"tags": [
-			"HTML5",
-			"CSS3"
+			"React",
+			"CSS"
 		]
 
 	},
 
 	{
-		"title": "Chat Bot",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-		"Image": "file:///Users/josefineengdahl/Desktop/bubble.jpg",
-   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"title": "Survey",
+		"titleDescription": "Are you our next stand-up comedian?",
+		"projectDescription": "A survey form created with React that investigates if you are our next stand-up comedian!",
+		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/chatbot.jpg",
+   		"Repo": "https://github.com/JosefineEngdahl/project-survey",
+		"Netifly": "https://neon-griffin-82bf07.netlify.app/",
 		"tags": [
-			"HTML5",
-			"CSS3"
+			"React",
+			"CSS"
 		]
 
 	},
 
 	{
-		"title": "nr 3",
-		"titleDescription": "Boardgame built in JavaScript",
+		"title": "Weather App",
+		"titleDescription": "A weather app built utilising APIs",
 		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
    		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/Weatherapp.jpg",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"API"
+		]
+
+	},
+
+	{
+		"title": "Guess Who",
+		"titleDescription": "Boardgame built in JavaScript",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
 		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
-		"tags": [
-			"HTML5",
-			"CSS3"
-		]
-
-	},
-
-	{
-		"title": "nr 4",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
    		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
 		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
 		"tags": [
 			"HTML5",
-			"CSS3"
-		]
-
-	},
-
-	{
-		"title": "nr 5",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
-		"tags": [
-			"HTML5",
-			"CSS3"
-		]
-
-	},
-
-	{
-		"title": "nr 6",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
-		"tags": [
-			"HTML5",
-			"CSS3"
+			"CSS3",
+			"JavaScript"
 		]
 
 	}

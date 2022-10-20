@@ -17,15 +17,15 @@ export const Skills = () => {
                     <Text>GitHub </Text>
             </Code>
 
-            <Uppcomming>
-                <h5>Upcomming</h5> 
+            <Upcoming>
+                <h5>Upcoming</h5> 
                     <Text>Node.js </Text>
                     <Text>Redux</Text>
                    
-            </Uppcomming>
+            </Upcoming>
 
             <Toolbox>
-                <h5>Upcoming</h5> 
+                <h5>Toolbox</h5> 
                     <Text>Figma</Text>
                     <Text>Slack · Discord · Teams </Text>
                     <Text>excel ·  ppt · word</Text>
@@ -65,7 +65,7 @@ const Code = styled.div`
 margin: 0px;
 height: 50%;
 `
-const Uppcomming = styled.div`
+const Upcoming = styled.div`
 margin: 0px;
 height: 50%;
 

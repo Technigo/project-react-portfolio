@@ -54,7 +54,7 @@ export const Header = () => {
             </a>
              
         <Text>
-            <SmallHead>PORTFOLIO: <b>JOSEFINE ENGDAHL</b></SmallHead>
+            <SmallHead>PORTFOLIO: <Name>JOSEFINE ENGDAHL</Name></SmallHead>
             <BigHead>frontend developer </BigHead>
             <MediumHead> & business controller</MediumHead>
        </Text>
@@ -153,25 +153,27 @@ right: 160px;
 `
 
 const Text = styled.div `
-font-family: "Roboto";
-position: absolute;
-color: white;
-top: 25%;
-left: 10%;
-width: 80%; 
+    font-family: "Roboto";
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 10%;
+    width: 80%; 
 
 @media (min-width: 668px) and (max-width: 1024px) {
-top: 30%;
- width: 50%;
-left: 15%;
+    top: 30%;
+    width: 50%;
+    left: 15%;
 }
 
 @media (min-width: 1024px) {
-
     top: 30%; 
     width: 40%;  
     left: 20%;
-
 }
-
 `
+
+const Name = styled.b `
+    font-weight: bolder;
+    color: white;
+    `

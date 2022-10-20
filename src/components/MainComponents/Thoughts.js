@@ -5,7 +5,8 @@ import React from 'react'
 export const Thoughts = () => {
     return (
         <div> 
-            <h4>Thoughts</h4>
+            <h3>Thoughts</h3>
+            <p>Coming up!</p>
         </div>
     )
 }

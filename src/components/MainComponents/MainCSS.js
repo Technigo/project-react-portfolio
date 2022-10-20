@@ -52,10 +52,12 @@ background-color: ${(props) =>
     props.Intro ? "#f6f5f0" :
     props.Tech ? "#ffffff" :
     props.Projects ? "#f6f5f0" :
-    props.Skills ? "#ffffff" :
     props.Thoughts ? "#ffffff" :
+    props.Skills ? "#f6f5f0" :
     props.ForMore ?  "rgb(132, 172, 180)" 
     : "none"};
+    
+   
 
 //     ${(props) => props.Intro && css` 
 // `}  

@@ -17,7 +17,6 @@ code {
 }
 
 
-
 h3 {
   width: auto;
   display: flex;
@@ -36,7 +35,7 @@ h4 {
   text-align: center;
   padding: 7px;
   border-radius: 5px;
-  font-size: 22px;
+  font-size: 20px;
   color: #ba4622;
   font-weight: bold;
 }
@@ -86,12 +85,17 @@ h4{
         
       }
       
-  
-
 
 b {
 
   font-weight: bolder;
+  color: #ba4622;
+}
+
+.name {
+
+  font-weight: bolder;
+  color: white;
 }
 
 a {
