@@ -66,7 +66,7 @@ const HeaderStyling = styled.header`
         width: 5vw;
     }
 
-    .header-text, .social-media-links{
+    .header-text, .social-media-links, .logo{
       background: transparent;
     }
 
@@ -110,17 +110,28 @@ const HeaderStyling = styled.header`
     font-size: 4vw;
     }
 
+    .header-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2px;
+  
+  }
+
     .profile-pic {
       position: absolute;
-      width: 29vw;
-      height: 29vw;
+      width: 32vw;
+      height: 32vw;
       left:60%;
-      top: 18%;
+      top: 22%;
       border-radius: 50%;
       background: url("./images/profile_pic2.jpg");
       background-position: -30px 560px;
       background-size: 232px;
   }
+
+
+
 
 
     
