@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Avocado News 1",
+      "title-description": "1 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/musicmaster.PNG"
+    },
+    {
+      "title": "Avocado News 2",
+      "title-description": "2 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/forkify.PNG"
+    },
+    {
+      "title": "Avocado News 3",
+      "title-description": "3 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/mapty.PNG"
+    },
+    {
+      "title": "Avocado News 4",
+      "title-description": "4 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/guessmynumber.PNG"
+    }
+  ]
+  
