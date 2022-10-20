@@ -34,9 +34,11 @@ export default ProjectList;
 
 const OtherProjectsWrap = styled(TextWrapper)`
 margin: 2px;
+
 `;
 
 const OtherSectionTitile = styled(SectionTitle)`
 background: none;
 color: grey;
+padding-top: 50px;
 `;

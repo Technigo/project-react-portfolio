@@ -113,6 +113,10 @@ const ProfileImage = styled.img`
     top: 230px;
     border-radius: 50%;
     border: 4px solid #444444;
+    &:hover {
+      filter: blur(2px);
+    }
+
     @media (min-width: 770px) {
       right: 20px;
   }

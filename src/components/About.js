@@ -4,7 +4,7 @@ export const AboutWrapper = styled.div`
   padding: 6%;
   padding-right: 5%;
   padding-left: 5%;
-  background-color: blue;
+  background-color: antiquewhite;
 @media (min-width: 900px) {
 padding-left: 10%;
 padding-right: 10%;
