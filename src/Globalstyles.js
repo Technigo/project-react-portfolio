@@ -112,7 +112,7 @@ export const Tags = styled.ol`
         font-size: 1rem;
         letter-spacing: 0.01rem;
         color: #ffffff;
-        background-color: ${(props) => (props.bgColor || '#f96666')};
+        background-color: ${(props) => (props.bgColor || '#3a4b38')};
         border-radius: 3px;
         padding: 5px;
         margin: 5px 10px 0 0;
