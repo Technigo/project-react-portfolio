@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container } from './styled-components/GlobalStyles';
+import { FooterContainer } from './styled-components/FooterStyles';
 
 const Contact = () => {
   return (
     <footer>
-      <Container>
+      <FooterContainer>
         <div className="contact-container">
           <h2>CONTACT</h2>
           <div>
@@ -13,7 +13,7 @@ const Contact = () => {
             <p>sylcardozo.sc@gmail.com</p>
           </div>
         </div>
-      </Container>
+      </FooterContainer>
     </footer>
   )
 }

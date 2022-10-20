@@ -39,7 +39,7 @@ position: absolute;
 color:  #FFFFFF;
 font-family: 'Cabin', sans-serif;
 letter-spacing: 0.04em;
-ine-height: 50px;
+line-height: 50px;
 
 h5 {
     display: inline;
