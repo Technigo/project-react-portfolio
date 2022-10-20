@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-const OuterWrapper = styled.div`
-  background-color: ${(props) => props.backgroundColor};
-  // console.log('props', ${(props) => props.backgroundColor})
+const ContentWrapper = (props) => {
+  /* Reactcomponent returnerar en stylecomponent */
+  const { backgroundColor, position } = props;
+
+  const OuterWrapper = styled.div`
+  background-color: ${backgroundColor};
   padding: 20px 0 0 0;
 `;
-const InnerWrapper = styled.div`
-  position: ${(props) => props.position};
+  const InnerWrapper = styled.div`
+  position: ${position};
   max-width: 900px;
   width: 70%;
   margin: 0 auto;
@@ -15,9 +18,6 @@ const InnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const ContentWrapper = (props) => {
-  /* Reactcomponent returnerar en stylecomponent */
-
   return (
     <OuterWrapper>
       {/* Writes what type of element it is as a props */}

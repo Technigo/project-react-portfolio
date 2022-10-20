@@ -15,7 +15,9 @@ border: solid 2px red;
 `
 const OtherProjects = () => {
   return (
-    <ContentWrapper as="section">
+    <ContentWrapper
+      as="section"
+      backgroundColor="var(--thirdBackground)">
       <OtherProjectStyle>
         <div className="box-title"><h2 className="sub-title">OTHER PROJECTS</h2></div>
         <div className="project-row">

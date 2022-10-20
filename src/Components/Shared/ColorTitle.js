@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-const TitleButtonStyle = styled.div`
-background-color: ${(props) => props.backgroundColor};
+const ColorTitle = (props) => {
+  const { background, textColor } = props;
+
+  const TitleButtonStyle = styled.div`
+  background-color: ${textColor};
   padding: 15 0 30px 0;
   margin: 0;
   display: flex;
   justify-content: center;
 `
-const Title = styled.h2`
-  background-color: var(--fourthTitle);
+  const Title = styled.h2`
+  background-color: ${background};
   padding: 2px 6px;
   margin: 18px;
   font-size: 18px;
@@ -24,12 +27,10 @@ const Title = styled.h2`
   // display: inline;
   // justify-content: center;
   `;
-
-export const ColorTitle = (props) => {
   return (
     <div>
       <TitleButtonStyle>
-        <Title>TECH</Title>
+        <Title>test</Title>
       </TitleButtonStyle>
     </div>
   );

@@ -4,7 +4,6 @@ import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
 
 const SkillsStyle = styled.div`
-background-color: var(--thirdBackground);
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 padding: 60px 0;
@@ -21,8 +20,10 @@ const Skills = () => {
   // align-items: start;
 
   return (
-    <ContentWrapper as="section">
-      <ColorTitle />
+    <ContentWrapper
+      as="section"
+      backgroundColor="var(--secondBackground)">
+      <ColorTitle background="var(--primaryBackground)" />
       <SkillsStyle>
         <div className="project-text">
           <h2 className="small-title">CODE</h2>

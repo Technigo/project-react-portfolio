@@ -34,7 +34,9 @@ const ProjectStyle = styled.div`
 `
 const Projects = () => {
   return (
-    <ContentWrapper as="section">
+    <ContentWrapper
+      as="section"
+      backgroundColor="var(--thirdBackground)">
       <ProjectStyle>
         <ColorTitle />
         <div className="project-box">

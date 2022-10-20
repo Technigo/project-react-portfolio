@@ -15,7 +15,9 @@ text-align: center;
 `
 const Tech = () => {
   return (
-    <ContentWrapper as="section">
+    <ContentWrapper
+      as="section"
+      backgroundColor="var(--secondBackground)">
       <TechStyle>
         <ColorTitle />
         <p>HTML, CSS, Flexbox, JavaScript ES6, React, Web Accessibility, API:s, mob-programming,

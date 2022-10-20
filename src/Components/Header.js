@@ -104,7 +104,7 @@ const Header = () => {
   return (
     <ContentWrapper
       as="header"
-      backgroundColor="black"
+      backgroundColor="var(--primaryBackground)"
       position="relative">
       <HeaderWrapper>
         <img className="profile-image" src={Image} alt="headshot of Petra" />
