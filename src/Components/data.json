@@ -1,44 +1,80 @@
 [
- {
-    "id": 0,
-    "url": "https://www.spotify.com",
-    "coverName": "name1",
-    "descriptionText": "description1",
-    "photo": "photo"
-  },
   {
-    "id": 1,
-    "url": "https://www.spotify.com",
-    "coverName": "name2",
-    "descriptionText": "description2",
-    "photo": "photo"
-  }, 
-  {
-    "id": 2,
-    "url": "https://www.spotify.com",
-    "coverName": "name3",
-    "descriptionText": "description3",
-    "photo": "photo"
-  }, 
-  {
-    "id": 3,
-    "url": "https://www.spotify.com",
-    "coverName": "name4",
-    "descriptionText": "description4",
-    "photo": "photo"
-  }, 
-  {
-    "id": 4,
-    "url": "https://www.spotify.com",
-    "coverName": "name5",
-    "descriptionText": "description5",
-    "photo": "photo"
-  }, 
-  {
-    "id": 5,
-    "url": "https://www.spotify.com",
-    "coverName": "name6",
-    "descriptionText": "description6",
-    "photo": "photo"
-  }
-]
+    "highlights": ["guess","music","Happy","movies"],
+    "projects": [
+        {
+          "id": "news",
+          "urlGitHub": "https://github.com/petrasson/project-news-site",
+          "urlNetlify": "https://fancy-meringue-155c75.netlify.app/",
+          "coverName": "News site",
+          "projectName": "project News-site",
+          "descriptionText": "description1",
+          "photo": "photo"
+        },
+        {
+          "id": "chat",
+          "urlGitHub": "https://github.com/petrasson/project-chatbot",
+          "urlNetlify": "https://tablebooker.netlify.app/",
+          "coverName": "Chatbot",
+          "projectName": "project Catbot",
+          "descriptionText": "description2",
+          "photo": "photo"
+        }, 
+        {
+          "id": "guess",
+          "urlGitHub": "https://github.com/petrasson/project-guess-who",
+          "urlNetlify": "https://petrasguesswhogame.netlify.app/",
+          "coverName": "Guess Who",
+          "projectName": "project Guess Who",
+          "descriptionText": "description2",
+          "photo": "photo"
+        }, 
+        {
+          "id": "weather",
+          "urlGitHub": "https://github.com/petrasson/project-weather-app",
+          "urlNetlify": "https://petraandcharlotteweatherapp.netlify.app/",
+          "coverName": "Weather App",
+          "projectName": "Project Weather App",
+          "descriptionText": "description3",
+          "photo": "photo"
+        }, 
+        {
+          "id": "music",
+          "urlGitHub": "https://github.com/petrasson/project-music-releases",
+          "urlNetlify": "https://kristinandpetrasmusicapp.netlify.app/",
+          "coverName": "Music Releases",
+          "projectName": "Project Music Releases",
+          "descriptionText": "description1",
+          "photo": "photo"
+        }, 
+        {
+          "id": "survey",
+          "urlGitHub": "https://github.com/petrasson/project-survey",
+          "urlNetlify": "https://petrassurvey.netlify.app/",
+          "coverName": "Survey",
+          "projectName": "Project Survey",
+          "descriptionText": "description1",
+          "photo": "photo"
+        },
+        {
+          "id": "Happy",
+          "urlGitHub": "https://github.com/petrasson/project-happy-thoughts",
+          "urlNetlify": "https://project-happy-thought-petra.netlify.app/",
+          "coverName": "Happy thoughts",
+          "projectName": "Project Happy Thoughts",
+          "descriptionText": "description1",
+          "photo": "photo"
+        },
+        {
+          "id": "movies",
+          "urlGitHub": "https://github.com/petrasson/project-movies",
+          "urlNetlify": "https://newly-release-movies.netlify.app/",
+          "coverName": "Movies",
+          "projectName": "Project Movies",
+          "descriptionText": "description1",
+          "photo": "photo"
+        }
+      ]
+    }
+  ]
+ 

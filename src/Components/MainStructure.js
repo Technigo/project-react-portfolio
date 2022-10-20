@@ -1,7 +1,5 @@
 
 import React from 'react';
-import rData from './data.json';
-import Fetch from './Fetch';
 import Header from './Header';
 import Intro from './Intro';
 import Tech from './Tech';
@@ -20,19 +18,6 @@ const MainStructure = () => {
       <OtherProjects />
       <Skills />
       <Footer />
-      <div className="project-wrapper">
-        {rData.map((project) => {
-          console.log('project', project)
-          return (
-            <Fetch
-              key={project.id}
-              url={project.url}
-              coverName={project.coverName}
-              text={project.descriptionText}
-              photo={project.photo} />
-          )
-        })}
-      </div>
     </div>
   );
 };

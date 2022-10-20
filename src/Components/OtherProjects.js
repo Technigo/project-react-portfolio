@@ -3,17 +3,17 @@ import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
 import TypeBox from './Shared/TypeBox';
 
-const OtherProjects = () => {
-  const OtherProjectStyle = styled.div`
-  background-color: var(--thirdBackground); 
-  border: solid 2px red;
-  // display: row;
-  // justify-content: center;
-  // padding: 10px 0 40px 0;
-  // font-family: Montserrat, sans-serif;
-  // font-weight: 400;
-  // text-align: center;
+const OtherProjectStyle = styled.div`
+background-color: var(--thirdBackground); 
+border: solid 2px red;
+// display: row;
+// justify-content: center;
+// padding: 10px 0 40px 0;
+// font-family: Montserrat, sans-serif;
+// font-weight: 400;
+// text-align: center;
 `
+const OtherProjects = () => {
   return (
     <ContentWrapper as="section">
       <OtherProjectStyle>

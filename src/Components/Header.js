@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import Image from '../Assets/Petra.jpg';
-import Icons from './Shared/Icons';
 
-const Header = () => {
-  const HeaderWrapper = styled.div`
+const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +39,7 @@ const Header = () => {
       }
     }
   `;
-  const HeaderTextWrapper = styled.div`
+const HeaderTextWrapper = styled.div`
     padding: 40px 0px;
 
     .header-name {
@@ -102,11 +100,11 @@ const Header = () => {
       }
     }
   `;
-
+const Header = () => {
   return (
     <ContentWrapper
       as="header"
-      backgroundColor="var(--primaryBackground)"
+      backgroundColor="black"
       position="relative">
       <HeaderWrapper>
         <img className="profile-image" src={Image} alt="headshot of Petra" />
@@ -122,7 +120,6 @@ const Header = () => {
           </h1>
           <h2 className="header-subtitle">+ user research and design</h2>
         </HeaderTextWrapper>
-        <Icons />
       </HeaderWrapper>
     </ContentWrapper>
   );

@@ -11,8 +11,11 @@ const Icons = () => {
 
   return (
     <div>
-      <IconsStyle src={Github} alt="Github Logo" />
-      <IconsStyle src={Inkedin} alt="LinkedIn Logo" />
+      <IconsStyle>
+        <img src={Github} alt="React Logo" />
+        <img src={Inkedin} alt="React Logo" />
+
+      </IconsStyle>
     </div>
   );
 };

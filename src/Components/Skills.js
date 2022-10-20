@@ -3,17 +3,16 @@ import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
 import TitleButtonStyle from './Shared/TitleButton';
 
-const Skills = () => {
-  const SkillsStyle = styled.div`
-  background-color: var(--thirdBackground);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 60px 0;
-  gap: 5px; 
-  text-align: center;
-  align-items: start;
+const SkillsStyle = styled.div`
+background-color: var(--thirdBackground);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 60px 0;
+gap: 5px; 
+text-align: center;
+align-items: start;
 `
-
+const Skills = () => {
   // padding: 60px 0;
   // display: grid;
   // grid-template-columns: repeat(1, 1fr);

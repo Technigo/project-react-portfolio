@@ -5,8 +5,7 @@ import TitleButtonStyle from './Shared/TitleButton';
 // import TypeBox from './Shared/TypeBox';
 import ProjectCard from './Shared/ProjectCard';
 
-const Projects = () => {
-  const ProjectStyle = styled.div`
+const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
   border: solid 2px red;
   // display: row;
@@ -21,9 +20,9 @@ const Projects = () => {
     display: grid;
     gap: 50px;
   }
-  
 `
 
+const Projects = () => {
   return (
     <ContentWrapper as="section">
       <ProjectStyle>

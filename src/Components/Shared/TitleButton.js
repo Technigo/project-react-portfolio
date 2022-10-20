@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-export const ColorTitle = (props) => {
-  const TitleButtonStyle = styled.div`
-  background-color: ${props.backgroundColor};
+const TitleButtonStyle = styled.div`
+background-color: ${(props) => props.backgroundColor};
   padding: 15 0 30px 0;
   margin: 0;
   display: flex;
   justify-content: center;
 `
-  const Title = styled.h2`
+const Title = styled.h2`
   background-color: var(--fourthTitle);
   padding: 2px 6px;
   margin: 18px;
@@ -25,6 +24,8 @@ export const ColorTitle = (props) => {
   // display: inline;
   // justify-content: center;
   `;
+
+export const ColorTitle = (props) => {
   return (
     <div>
       <TitleButtonStyle>

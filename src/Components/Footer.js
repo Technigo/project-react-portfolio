@@ -2,18 +2,19 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 
-const Footer = () => {
-  const FooterStyle = styled.div`
-  border: solid 2px red;
-  background-color: var(--primaryBackground);
-  color: var(--secondaryBackground);
-  padding-bottom: 90px;
-  flex-direction: column;
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  line-height: 27px;
-  text-align: center;
+const FooterStyle = styled.div`
+border: solid 2px red;
+background-color: var(--primaryBackground);
+color: var(--secondaryBackground);
+padding-bottom: 90px;
+flex-direction: column;
+font-family: Montserrat, sans-serif;
+text-align: center;
+line-height: 27px;
+text-align: center;
 `
+
+const Footer = () => {
   return (
     <ContentWrapper
       as="footer"

@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 // import ProjectPhoto from './happy_thought_picture.png';
 
-const ProjectCard = () => {
-  const ProjectCardStyle = styled.div`
+const ProjectCardStyle = styled.div`
     border: solid 2px black;
     vertical-align: baseline;
 
@@ -54,7 +53,7 @@ const ProjectCard = () => {
     }
   
   `;
-
+const ProjectCard = () => {
   return (
     <ProjectCardStyle>
       <a

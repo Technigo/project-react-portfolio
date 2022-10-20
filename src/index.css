@@ -83,16 +83,12 @@ body {
   font-weight: 400;
 }
 
-/* .text{
-  
-} */
 
 .project-button {
   display: flex;
   flex-direction: row;
   padding: 0px 0px 20px 0px;
   }
-
 /*
 
 .brighten img {
