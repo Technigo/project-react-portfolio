@@ -1,6 +1,8 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
+import { VscGithub } from 'react-icons/vsc'
+import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { OuterWrapper, SoMeIcons } from '../StyledComponents/GlobalComponents'
 import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
 import background from '../images/background.jpg'
@@ -12,6 +14,37 @@ width: 100%;
     display: flex;
     flex-direction: column-reverse;
     background-image: url(${background});
+    background-size: cover;
+
+    h3 {
+      font-size: 24pt;
+      font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    width: 220px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    font-family: 'Montserrat', sans-serif;
+    width: 220px;
+    }
+    h2 {
+      font-size: 24pt;
+      font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    width: 220px;
+  
+    }
 `;
 
 const ProfileImage = styled.img`
@@ -42,14 +75,14 @@ const Header = () => {
     <OuterWrapper>
       <Headerbackground>
         <ClonedSoMeIcons>
-          <i className="fa-brands fa-linkedin fa-2xl" aria-label="My Linkedin" />
-          <i className="fa-brands fa-github-square fa-2xl" aria-label="My Github" />
+          <VscGithub size="30px" />
+          <TiSocialLinkedinCircular size="37px" />
         </ClonedSoMeIcons>
         <ProfileImage src={ceciliaportfolio} alt="Picture of Cecilia" />
         <TextContainer>
-          <h3 className="first-heading">Portfolio: Cecilia Rådén</h3>
-          <h1 className="second-heading">frontend developer</h1>
-          <h2 className="third-heading">with an administrative background</h2>
+          <h3>Portfolio: Cecilia Rådén</h3>
+          <h1>frontend developer</h1>
+          <h2>with an administrative background</h2>
         </TextContainer>
       </Headerbackground>
     </OuterWrapper>

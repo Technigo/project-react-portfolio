@@ -1,7 +1,9 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable max-len */
+/* eslint-disable linebreak-style */
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { InnerWrapper, OuterWrapper, Title } from 'StyledComponents/GlobalComponents'
+import { InnerWrapper, OuterWrapper, Title, Tags, TagsContainer } from 'StyledComponents/GlobalComponents'
 
 const MyProjects = styled.div`
 background: #F4F4F4;
@@ -16,23 +18,19 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
+    @media (min-width: 1025px) {
+  display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+    }
 `
 
-const TagsContainer = styled.div`
-display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+const Thumbnail = styled.img`
+width: 40%;
 `
 
-const Tags = styled.div`
-font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  background-color: #FDDFE7;
-  font-size: 12px; 
-  line-height: 12px;
-  padding: 4px;
-  margin: 3px;
-  border-radius: 5px;
+const ImgOverlay = styled.div`
+
 `
 
 const Projects = () => {
@@ -49,21 +47,23 @@ const Projects = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
+        <Title>Featured projects</Title>
         <MyProjects>
-          <Title>Featured projects</Title>
+
           <TextContainerProjects>
             {filteredProjects.map((project) => (
               <div key={project.id}>
+                <ImgOverlay>
+                  <div>
+                    <Thumbnail alt="project-img" src={`https://raw.githubusercontent.com/ceciliamichele/${project.name}/master/code/src/thumbnail/thumbnail.jpg`} />
+                  </div>
+                </ImgOverlay>
                 <p>{project.name}</p>
+                <p>{project.description}</p>
+                <TagsContainer> {project.topics.map(((topic) => <Tags>{topic}</Tags>))}</TagsContainer>
               </div>
             ))}
           </TextContainerProjects>
-          <TagsContainer>
-            <Tags>HTML5</Tags>
-            <Tags>CSS3</Tags>
-            <Tags>JavaScript</Tags>
-            <Tags>React</Tags>
-          </TagsContainer>
 
         </MyProjects>
       </InnerWrapper>

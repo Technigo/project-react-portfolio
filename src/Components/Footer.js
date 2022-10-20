@@ -2,14 +2,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SoMeIcons } from 'StyledComponents/GlobalComponents'
+import { VscGithub } from 'react-icons/vsc'
+import { TiSocialLinkedinCircular } from 'react-icons/ti'
 
 const ForMore = styled.div`
 height: 5vh;
 `
 
 const ContactContainer = styled.div`
+font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
 width: 100%;
-    height: 30vh;
+    height: 20vh;
     position: relative;
     background-color: blue;
     color: white;
@@ -17,16 +24,17 @@ width: 100%;
     flex-direction: column;
     align-items: center;
     @media (min-width: 668px) and (max-width: 1024px) {
-    height: 40%;
+    height: 30vh;
   }
   @media (min-width: 1025px){ 
-    height: 60%;
+    height: 30vh;
   }
 `
 const ClonedSoMeIcons = styled(SoMeIcons)`
 display: flex;
 justify-content: center;
 align-items: center;
+color: black;
 `
 
 const Footer = () => {
@@ -34,11 +42,11 @@ const Footer = () => {
     <>
       <ForMore>
         <ClonedSoMeIcons>
-          <i className="fa-brands fa-linkedin fa-2xl" aria-label="My Linkedin" />
-          <i className="fa-brands fa-github-square fa-2xl" aria-label="My Github" />
+          <VscGithub /> <TiSocialLinkedinCircular />
         </ClonedSoMeIcons>
       </ForMore>
       <ContactContainer>
+
         <p>CONTACT</p>
 
         <p>Cecilia Rådén</p>

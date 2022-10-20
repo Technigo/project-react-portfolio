@@ -42,14 +42,37 @@ export const Title = styled.h1`
     align-self: center;
   justify-self: center;
   text-align: center;
+  margin-bottom: 15px;
 `
 
 export const RedTitle = styled.h1`
  font-family:'Montserrat', sans-serif;
   color: red;
   font-size: 24px;
+  margin-top: 15px;
 `
 
 export const SoMeIcons = styled.i`
-color: red;
+color: white;
+display: flex;
+justify-content: space-evenly;
+`
+
+export const TagsContainer = styled.div`
+display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+`
+
+export const Tags = styled.div`
+font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: #FDDFE7;
+  font-size: 12px; 
+  line-height: 12px;
+  padding: 4px;
+  margin: 3px;
+  border-radius: 5px;
+  text-transform: capitalize;
 `
