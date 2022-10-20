@@ -59,7 +59,7 @@
         "image": "",
         "netlify": "https://coruscating-sopapillas-e37efd.netlify.app",
         "github": "https://github.com/Sneezan/project-business-site",
-        "description": "Businessfront built in our first mob-programming session",
+        "description": "Business front built in our first mob-programming session",
         "tools": ["HTML", "CSS"]
       }
   ]

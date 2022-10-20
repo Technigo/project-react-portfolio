@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css';
-import Header from 'styledcomponents/Header.js'
+import Header from 'components/Header.js'
 import AboutSection from 'components/AboutSection';
 
 import TechStack from 'components/TechStack';

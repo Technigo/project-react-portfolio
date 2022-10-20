@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Section, Wrapper } from 'styledcomponents/Section';
-import { About, AboutWrapper, Line, Dot } from 'styledcomponents/About.js'
+import { Section, Wrapper } from 'components/Section';
+import { About, AboutWrapper, Line, Dot } from 'components/About.js'
 
 const AboutSection = () => {
   return (

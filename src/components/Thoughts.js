@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'styledcomponents/Section';
+import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'components/Section';
 import styled from 'styled-components'
 
 const Thoughts = () => {

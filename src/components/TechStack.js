@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { Highlight, Section, SectionTitle, TextWrapper, Wrapper } from 'styledcomponents/Section';
+import { Highlight, Section, SectionTitle, TextWrapper, Wrapper } from 'components/Section';
 
 const TechStackWrap = styled(TextWrapper)`
 padding-left: 10%;

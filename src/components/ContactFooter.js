@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, SectionTitle, TextWrapper } from 'styledcomponents/Section';
+import { Section, SectionTitle, TextWrapper } from 'components/Section';
 import styled from 'styled-components'
 
 const ContactFooter = () => {

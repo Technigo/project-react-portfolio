@@ -1,6 +1,6 @@
 import React from 'react';
-import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'styledcomponents/Section';
-import { ProjectDescription, ProjectTitle, Tag, TagContainer, Link } from 'styledcomponents/Project';
+import { Section, SectionTitle, TextWrapper, Wrapper, Span } from 'components/Section';
+import { ProjectDescription, ProjectTitle, Tag, TagContainer, Link } from 'components/Project';
 import styled from 'styled-components'
 import data from '../assets/projects.json'
 
