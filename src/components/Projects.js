@@ -17,6 +17,7 @@ margin-bottom: 30px;
 @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
     padding: 15px;
+  }
 `
 
 const CardContainer = styled.div`
@@ -36,6 +37,11 @@ const OtherProjects = styled.div`
 display: flex;
 flex-flow: row-wrap;
 position: relative;
+@media (max-width: 768px) {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 15px;
+}
 `
 
 const OtherProjectsList = styled.div`
@@ -57,33 +63,6 @@ justify-content: center;
 }
 `
 
-// const OverlayContainer = styled.div`
-// position: absolute;
-// top: 0; right: 0;
-// bottom: 0; left: 0;
-// width: 300px;
-// height: 200px;
-// text-align: center;
-// background-color: rgba(0,0,0,0.8);
-// opacity: 0;
-// -webkit-transition: opacity 0.6s;
-// -moz-transition: opacity 0.6s;
-// transition: opacity 0.6s;
-// vertical-align:middle;
-// line-height:200px;
-
-// &:hover {
-//     opacity: 1;
-// }
-// `
-
-// const OverlayText = styled.p`
-// color: white;
-// display: inline-table;
-// vertical-align:middle;
-// line-height:100%;
-// `
-
 const ProjectInfo = styled.p`
 font-family: 'Montserrat', sans-serif;
 text-align: center;
@@ -102,6 +81,16 @@ const LanguageIcon = styled.p`
 border: 1px solid;
 font-family: 'Montserrat', sans-serif;
 padding: 4px;
+`
+
+const OtherProjectName = styled.a`
+color: black;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+`
+
+const OtherProjectDesc = styled.p`
+font-family: 'Montserrat', sans-serif;
 `
 
 const Projects = () => {
@@ -225,7 +214,7 @@ const Projects = () => {
               <FaGithub size="25px" />
             </a>
             <a
-              href="https://guezzwho.netlify.app/"
+              href="https://hannajacobnick-weather-app.netlify.app/"
               target="_blank"
               rel="noreferrer">
               <MdWeb size="25px" />
@@ -236,16 +225,21 @@ const Projects = () => {
       <SectionHeadline><SectionHeadlineBg>OTHER PROJECTS</SectionHeadlineBg></SectionHeadline>
       <OtherProjects>
         {/* eslint-disable-next-line max-len  */}
-        {projects.filter((project) => project.fork === true && project.private === false).slice(1, 5).map((project) => (
+        {projects.filter((project) => project.description).map((project) => (
           <OtherProjectsList key={project.id}>
-            <a
+            <OtherProjectName
               href={project.html_url}
               aria-label="link"
               target="_blank"
               rel="noreferrer">
-              <h4> {project.name}</h4>
-            </a>
-            <p> information about the project </p>
+              <h4>{project.name}</h4>
+            </OtherProjectName>
+            <OtherProjectDesc>
+              {project.description}
+            </OtherProjectDesc>
+            <LanguageIconContainer>
+              {project.topics.map((topic) => <LanguageIcon>{topic}</LanguageIcon>)}
+            </LanguageIconContainer>
           </OtherProjectsList>
         ))}
       </OtherProjects>

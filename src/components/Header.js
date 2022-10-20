@@ -5,12 +5,11 @@ import ProfileImg from './assets/pp.png'
 
 const HeaderContainer = styled.div`
 position: relative;
-background: none;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 color: white;
 width: 92%;
-height: 400px;
+height: 330px;
 padding-top: 1px;
+margin-top: 20px;
 margin: 0px auto;
 @media (max-width: 650px) {
   height: 490px;
@@ -54,12 +53,12 @@ margin: 7.5rem 0 0 4.5rem;
 
 const ProfilePic = styled.img`
 position: absolute;
-bottom: -25%;
-right: 90px;
+bottom: -35%;
+right: 40px;
 border-radius: 50%;
 border: 5px solid;
 border-color: #faede8;
-width: 19vw;
+width: 21vw;
 @media (max-width: 1200px) {
   right: 3rem;
 }

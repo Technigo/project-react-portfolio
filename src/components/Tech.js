@@ -7,7 +7,8 @@ const Tech = () => {
     <FlexWrapper>
       <Section>
         <SectionHeadline><SectionHeadlineBg>TECH</SectionHeadlineBg></SectionHeadline>
-        <SectionText>HTML, CSS, JavaScript, pair-programming, mob-programming, GitHub</SectionText>
+        {/* eslint-disable-next-line max-len  */}
+        <SectionText center>HTML5, CSS3, JavaScript, React Hooks, Styled components, JSX</SectionText>
       </Section>
     </FlexWrapper>
   )

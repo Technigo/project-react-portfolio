@@ -1,6 +1,8 @@
 import React from 'react';
 import { Section, SectionHeadline, SectionHeadlineBg } from 'StyledComponents/Section';
-// import { FaLinkedinIn, FaGithub, FaStackOverflow } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
+import { BiMap } from 'react-icons/bi'
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -38,10 +40,17 @@ const Contact = () => {
       <SectionHeadline><SectionHeadlineBg>Contact</SectionHeadlineBg></SectionHeadline>
       <Container>
         <Info bold>Hanna Nörgård</Info>
-        <Info>+46 734 22 29 23</Info>
-        <Info>
-          <Link href="mailto:hannanorgardgmail.com">hannanorgard@gmail.com</Link>
+        <Info><HiOutlinePhone size="15px" />
+        +46 734 22 29 23
         </Info>
+        <Info>
+          <HiOutlineMail size="15px" /> <Link href="mailto:hannanorgardgmail.com">hannanorgard@gmail.com</Link>
+        </Info>
+        <Info>
+          <BiMap size="20px" />
+          Malmö, Sweden
+        </Info>
+        <FaGithub size="20px" /> <FaLinkedinIn size="20px" />
       </Container>
     </Section>
   )

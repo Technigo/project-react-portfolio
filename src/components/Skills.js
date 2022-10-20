@@ -12,8 +12,10 @@ margin: 0px auto;
 margin-bottom: 40px;
 
 @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  padding: 15px;
+  text-align: center;
+}
 `
 
 const Code = styled.div`
@@ -21,6 +23,10 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 grid-column-start: 2;
+@media (max-width: 768px) {
+  grid-column-start: 3;
+  text-align: center;
+}
 `
 
 const Toolbox = styled.div`
@@ -29,6 +35,10 @@ justify-content: center;
 text-align: center;
 margin-right: 1.5rem;
 grid-column-start: 3;
+@media (max-width: 768px) {
+  grid-column-start: 3;
+  text-align: center;
+}
 `
 
 const More = styled.div`
@@ -36,12 +46,20 @@ text-align: center;
 justify-content: center;
 margin-left: 0;
 grid-column-start: 4;
+@media (max-width: 768px) {
+  grid-column-start: 3;
+  text-align: center;
+}
 `
 
 const Li = styled.p`
 font-family: 'Montserrat', sans-serif;
 text-transform: uppercase;
 font-size: 18px;
+@media (max-width: 768px) {
+  justify-content: center;
+  text-align: center;
+}
 `
 
 const Headline = styled.h2`
@@ -54,6 +72,11 @@ const UpcomingContainer = styled.div`
 display: flex;
 justify-content: center;
 justify-content: space-evenly;
+
+@media (max-width: 768px) {
+  display: grid;
+  grid-column-start: 3;
+  text-align: center;
 `
 
 const Skills = () => {

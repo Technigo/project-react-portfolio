@@ -10,11 +10,12 @@ const About = () => {
         <SectionText>
           <LineCircle>
             <Line /><Circle />
-          </LineCircle> Hello! My name is Hanna, and I am an aspiring front-end developer.
-        I also have a bachelors degree in Strategic Communication from Lund University.
+          </LineCircle> Hello! My name is Hanna, and I am a junior front-end developer.
+        Before moving my career toward tech, I studied at Lund University and got a
+        bachelor degree in Strategic communication and digital media.
         I love digital design, being creative as well as the logical sides that come with
         programming. I am passionate about everything that has to do with dogs,
-        jokes and making things for other people to enjoy.
+        Tottenham Hotspur and making things for other people to enjoy.
         </SectionText>
       </Section>
     </FlexWrapper>

@@ -37,8 +37,7 @@ export const SectionText = styled.p`
     font-size: 19px;
     line-height: 29px;
     padding: 20px 70px;
-    text-align: center;
-
+    text-align: ${(props) => (props.center ? 'center' : 'none')};
 @media (max-width: 768px) {
     padding: 15px;
 `;
