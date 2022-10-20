@@ -6,6 +6,13 @@ export const HeaderHeadlineOne = styled.h1`
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
+
+  @media (min-width: 668px) and (max-width: 1024px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1025px){ 
+    font-size: 20px;
+  }
 `
 
 export const HeaderHeadlineTwo = styled.h2`
@@ -14,6 +21,15 @@ export const HeaderHeadlineTwo = styled.h2`
   font-weight: 700;
   font-size: 40px;
   line-height: 49px;
+  
+  @media (min-width: 668px) and (max-width: 1024px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @media (min-width: 1025px){ 
+    font-size: 60px;
+    line-height: 60px;
+  }
 `
 
 export const HeaderHeadlineThree = styled.h3`
@@ -21,6 +37,13 @@ export const HeaderHeadlineThree = styled.h3`
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
+  
+  @media (min-width: 668px) and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1025px){ 
+    font-size: 30px;
+  }
 `
 
 export const WhitePinkH2 = styled.h2`

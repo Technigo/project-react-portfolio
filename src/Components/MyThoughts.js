@@ -14,7 +14,7 @@ const MyThoughts = () => {
             <div>
               <Date>{article.date}</Date>
               <BlogName>{article.name}</BlogName>
-              <A href={article.date}>
+              <A href={article.url}>
                 <P>
                   {article.intro}
                   <ReadMoreArrow> &gt;&gt; </ReadMoreArrow>
