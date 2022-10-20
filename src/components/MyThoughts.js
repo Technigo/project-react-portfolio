@@ -1,28 +1,26 @@
 import React from 'react';
-import styled from 'styled-components/macro';
-import { ProjectCard, Image } from 'styles/GlobalStyles';
+import { ThoughtCard, Image, OuterWrapper, InnerWrapper, MainHeadline, MediumHeadline } from 'styles/GlobalStyles';
 import compTalk from '../assets/compTalk.jpg';
 import eyeForDesign from '../assets/eyeForDesign.jpg';
 
 export const MyThoughts = () => {
   return (
-    <>
-      <ThoughtCard href="#" target="_blank" rel="noopener noreferrer">
-        <Image src={compTalk} alt="" />
-      </ThoughtCard>
-      <ThoughtCard href="#" target="_blank" rel="noopener noreferrer">
-        <Image src={eyeForDesign} alt="" />
-      </ThoughtCard>
-    </>
+    <OuterWrapper>
+      <MainHeadline>MY THOUGHTS ABOUT CODE</MainHeadline>
+      <InnerWrapper>
+        <ThoughtCard href="#" target="_blank" rel="noopener noreferrer">
+          <Image src={compTalk} alt="" />
+        </ThoughtCard>
+        <ThoughtCard href="#" target="_blank" rel="noopener noreferrer">
+          <Image src={eyeForDesign} alt="" />
+          <p>Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Esse doloremque molestias asperiores
+          ipsa et aliquid non corrupti offici
+          </p>
+        </ThoughtCard>
+      </InnerWrapper>
+      <MediumHeadline color="#BA4C08">MORE THOUGHTS</MediumHeadline>
+    </OuterWrapper>
   )
 }
 
-export const ThoughtCard = styled(ProjectCard)`
-  @media (min-width: 668px) and (max-width:1024px) {
-    height: 48vh;
-  }
-
-  @media (min-width: 1025px) {
-    height: 65vh;
-  }
-`

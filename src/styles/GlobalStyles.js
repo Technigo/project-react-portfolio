@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 export const OuterWrapper = styled.section`
   background-color: ${(props) => props.backGroundcolor};
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
 `
 
 export const InnerWrapper = styled.section`
@@ -14,7 +14,7 @@ export const InnerWrapper = styled.section`
   padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
 
   @media (min-width: 668px) {
     flex-direction: row;
@@ -35,7 +35,7 @@ export const MainHeadline = styled.h2`
   width: fit-content;
   text-align: center;
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 `
 
 export const MediumHeadline = styled.h3`
@@ -50,19 +50,20 @@ export const MediumHeadline = styled.h3`
 export const SmallHeadline = styled.h4`
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 17px;
-  line-height: 29px;
+  font-size: 1rem;
+  line-height: 1.8rem;
   color:  #BA4C08;
-  text-align: left;
+  
+  text-transform: uppercase;
 `
 
 export const NavBar = styled.nav`
   align-self: ${(props) => props.alignment};
   
   img {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem;
   }
   
   @media (min-width: 668px) {
@@ -81,7 +82,8 @@ export const ProjectCard = styled.a`
   margin-bottom: 2rem;
   width: 85vw;
   height: 35vh;
-  cursor: pointer;
+  text-decoration: none;
+  text-align: left;
 
   @media (min-width: 668px) and (max-width:1024px) {
     width: 35vw;
@@ -89,8 +91,19 @@ export const ProjectCard = styled.a`
   }
 
   @media (min-width: 1025px) {
+    cursor: pointer;
     width: 35vw;
     height: 52vh;
+  }
+`
+
+export const ThoughtCard = styled(ProjectCard)`
+  @media (min-width: 668px) and (max-width:1024px) {
+    height: 48vh;
+  }
+
+  @media (min-width: 1025px) {
+    height: 65vh;
   }
 `
 

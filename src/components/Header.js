@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import redRock from '../assets/redRock.jpg';
+/* Other components */
 import { SoMeLinks } from './SoMeLinks';
+import { ProfileImage } from './ProfileImage';
+import { HeaderIntro } from './HeaderIntro';
+/* Images */
+import redRock from '../assets/redRock.jpg';
 import linkedinWhite from '../assets/linkedinWhite.svg';
 import githubWhite from '../assets/githubWhite.svg';
-import { ProfileImage } from './ProfileImage';
 
 export const Header = () => {
   return (
     <HeaderBackground>
       <HeaderWrapper>
         <SoMeLinks image1={linkedinWhite} image2={githubWhite} alignment="flex-end" />
-        PORTFOLIO:
-          TINA BRUCE
-        <h1>frontend developer</h1>
-        <h2>with pharmaceutical industry background</h2>
+        <HeaderIntro />
         <ProfileImage />
       </HeaderWrapper>
     </HeaderBackground>
@@ -22,6 +22,7 @@ export const Header = () => {
 }
 
 export const HeaderBackground = styled.header`
+  width: 100vw;
   background-image: url('${redRock}');
   color: white;
   background-repeat: no-repeat;
