@@ -22,11 +22,12 @@ export const IntroOuterWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  background: rgb(233, 226, 220);
+  background: #e9e2dc;
 `;
 
 export const IntroInnerWrapper = styled.div`
   width: 80vw;
+  max-width: 900px;
   height: 200px;
   display: flex;
   align-items: center;
@@ -39,7 +40,6 @@ export const IntroInnerWrapper = styled.div`
   @media (min-width: 1024px) {
     font-size: 20px;
     line-height: 30px;
-    width: 65vw;
   }
 `;
 

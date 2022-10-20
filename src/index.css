@@ -12,6 +12,25 @@ code {
     monospace;
 }
 
+
+:root {
+  --white: #ffffff;
+  --blue: #293a4f;
+  --beige: #e9e2dc;
+  --nude: #dab9a8;
+}
+
 p {
   font-family: Montserrat;
+  color: var(--blue);
+}
+
+h5 {
+  font-family: Montserrat;
+  color: #ffff;
+  font-size: 22px;
+  background-color: var(--blue);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 5px;
 }

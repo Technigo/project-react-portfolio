@@ -1,0 +1,39 @@
+[
+    {
+      "title": "movie site",
+      "title-description": "Movie site that lists recent movie releases",
+      "project-description": "A multi-page React application using React Router.",
+      "repo-name": "project-movies",
+      "netlify-name": "avocodo-news",
+      "tags": ["React", "JSX", "API", "Pair-programming"],
+      "image": "../Thumbnails/movie_site_thumbnail.jpg"
+    },
+    {
+      "title": "Happy Thoughts",
+      "title-description": "2 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-new",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/forkify.PNG"
+    },
+    {
+      "title": "Survey",
+      "title-description": "3 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/mapty.PNG"
+    },
+    {
+      "title": "Music Releases",
+      "title-description": "4 news site about avocados",
+      "project-description": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "/Assets/project-thumbnails/guessmynumber.PNG"
+    }
+]
+  
