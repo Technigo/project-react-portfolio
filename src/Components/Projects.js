@@ -4,6 +4,17 @@ import ContentWrapper from './Shared/ContentWrapper';
 import TitleButtonStyle from './Shared/TitleButton';
 // import TypeBox from './Shared/TypeBox';
 import ProjectCard from './Shared/ProjectCard';
+import rData from './data.json';
+
+// const { highlights, projects } = rData; /* samma som const highlights = rData.highlights; */
+const { highlights, projects } = rData;
+
+console.log('rData', rData)
+console.log('highlights', highlights);
+console.log('projects', projects);
+
+const filteredProjects = projects.filter((project) => highlights.includes(project.id));
+console.log('result', filteredProjects);
 
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
@@ -21,14 +32,23 @@ const ProjectStyle = styled.div`
     gap: 50px;
   }
 `
-
 const Projects = () => {
   return (
     <ContentWrapper as="section">
       <ProjectStyle>
         <TitleButtonStyle />
         <div className="project-box">
-          <ProjectCard />
+          {filteredProjects.map((project) => {
+            return (
+              <ProjectCard
+                key={project.id}
+                coverImage={project.photo}
+                coverName={project.coverName}
+                projectName={project.projectName}
+                urlNetlify={project.urlNetlify}
+                text={project.descriptionText} />
+            )
+          })}
         </div>
       </ProjectStyle>
     </ContentWrapper>
