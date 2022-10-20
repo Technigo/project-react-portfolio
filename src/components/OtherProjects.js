@@ -1,15 +1,28 @@
-import React from 'react';
+/* eslint-disable react/jsx-closing-tag-location */
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import { InnerWrapper, OuterWrapper } from 'StyledComponents/GlobalStyles';
 import { SubHeading } from 'StyledComponents/HeadlineStyles';
 
 const OtherProjects = () => {
+  const [projects, SetProjects] = useState([])
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/jesshansson/repos')
+      .then((res) => res.json())
+      .then((data) => SetProjects(data))
+  })
+
+  const filteredProjects = projects.filter((project) => project.name === 'project-business-site');
+
   return (
-    <OuterWrapper>
+    <OuterWrapper grey>
       <InnerWrapper>
         <SubHeading>OTHER PROJECTS</SubHeading>
-        <ProjectHeading>Project 1</ProjectHeading>
-        <OtherProjetsText>Project...<Arrow> arrow </Arrow></OtherProjetsText>
+        {filteredProjects.map((project) => <>
+          <ProjectHeading>{project.name}</ProjectHeading>
+          <OtherProjetsText>{project.description} <Arrow> {'>>'} </Arrow></OtherProjetsText>
+        </>)}
       </InnerWrapper>
     </OuterWrapper>
   )
@@ -32,7 +45,7 @@ const OtherProjetsText = styled.p`
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    
+
 `
 
 const Arrow = styled.span`

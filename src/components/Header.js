@@ -11,8 +11,8 @@ export const Header = () => {
         <HeaderFirstHeading>PORTFOLIO: <Bold> JESSICA HANSSON</Bold></HeaderFirstHeading>
         <HeaderSecondHeading>frontend developer</HeaderSecondHeading>
         <HeaderThirdHeading> & passionate about sustainable development </HeaderThirdHeading>
-        <ProfilePic src={ProfileImage} alt="Jessica Hansson" />
       </HeaderText>
+      <ProfilePic src={ProfileImage} alt="Jessica Hansson" />
     </HeaderWrapper>
   )
 }
@@ -27,7 +27,8 @@ export const HeaderWrapper = styled.header`
     background-repeat: no-repeat;
     background-size: cover; 
     background-image: url(${BackgroundImage});
-    
+    position:relative;
+
     @media (min-width: 668px) {
       height: 500px;
   }
@@ -50,13 +51,26 @@ const HeaderText = styled.div`
   }
 `
 const ProfilePic = styled.img`
+  display: flex;
+  justify-items: flex-end;
   position: absolute;
-
+  right: 5vh;
+  bottom: -4vh; 
   width: 180px; 
   height: 180px; 
   border-radius: 50%;
-  object-fit: cover;
+
   border:solid 2px rgb(255, 255, 255); 
+
+  @media (min-width: 668px) {
+    right: 7vh; 
+    width: 220px;
+    height: 220px;
+  }
+
+  @media (min-width: 1025px) {
+    right: 10vh; 
+  }
 `
 
 const Bold = styled.span`
