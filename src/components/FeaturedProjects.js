@@ -1,12 +1,20 @@
 import React from 'react';
 // import styled from 'styled-components';
 import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
+import data from '../projects.json';
 
-export const FeaturesProjects = () => {
+console.log(data);
+
+export const FeaturedProjects = () => {
+  // const projects = data.projects.items;
+
   return (
     <BlockSection>
       <InnerWrapper>
-        <h2>Featured Projects</h2>
+        {/* {projects.map((item) => {
+          return console.log(item.id);
+        })} */}
+        Featured Projects
       </InnerWrapper>
     </BlockSection>
   );
