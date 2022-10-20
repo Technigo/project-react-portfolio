@@ -14,7 +14,7 @@ const Header = () => {
         <img
           src={profileImage}
           alt="profile-of-Petras" />
-        {/*         <h7><span>Petra  <br />Söderström</span></h7> */}
+        <h6><span>Petra  <br />Söderström</span></h6>
       </div>
     </HeaderStyler>
   )
@@ -45,7 +45,7 @@ img {
 
 article {
   position: absolute;  
-  top 15vh;
+  top: 15vh;
   left: 5vw;
 }
 
