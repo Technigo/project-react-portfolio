@@ -1,16 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
-/* import InnerWrapper from './InnerWrapper' */
 
-const OuterWrapper = () => {
-	return (
-		<OuterWrapperStyler>
-			{/* 			<InnerWrapper /> */}
-		</OuterWrapperStyler>
-	)
-}
-
-export default OuterWrapper;
-
-const OuterWrapperStyler = styled.div`
-width: 60%;`
+export const OuterWrapper = styled.div`
+background-color: ${(props) => (props.primary ? '#ff777729;' : 'rgba(255, 119, 119, 0.06)')};
+width: 100vw;
+`;

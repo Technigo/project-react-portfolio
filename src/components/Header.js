@@ -6,20 +6,18 @@ import profileImage from '../images/portrait.jpg';
 const Header = () => {
 	return (
 		<HeaderStyler>
-			<article>
+			<div>
 				<h1>Portfolio: <span>Petra  <br />Söderström</span></h1>
 				<h2>frontend <br />developer</h2>
-			</article>
-			<div>
-				<img src={profileImage} alt="profile-of-Petras" />
 			</div>
+			<img src={profileImage} alt="profile-of-Petras" />
 		</HeaderStyler>
 	)
 }
 
 export default Header;
 
-const HeaderStyler = styled.head`
+const HeaderStyler = styled.div`
 /* BACKGROUND PICTURE */
 background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.062)),
 url(${heroImage});
@@ -30,7 +28,7 @@ height: 50vh;
 position: relative;
 display: flex;
 
-article {
+div {
   position: absolute;  
   top: 11vh;
   left: 5vw;

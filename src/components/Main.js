@@ -1,9 +1,10 @@
 import React from 'react'
+import FeaturedProjects from './FeaturedProjects'
 import Navbar from './Navbar'
 import Header from './Header'
 import About from './About'
 import Tech from './Tech'
-import FeaturedProjects from './FeaturedProjects'
+
 import OtherProjects from './OtherProjects'
 import Articles from './Articles'
 import OtherThoughts from './OtherThoughts'

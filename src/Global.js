@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 .innerwrapper{
 margin-left: 10vw;
 margin-right: 10vw;
-background-color: red;
+border: 2px solid black;
 } 
 @media (min-width: 668px) {
 }
