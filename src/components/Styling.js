@@ -15,6 +15,7 @@ width: 90%;
 padding: 30px 0px;
 @media (min-width: 1025px) {
   width: 70%;
+  padding: 50px 0px;
 }
 `
 
@@ -28,6 +29,10 @@ export const Heading = styled.h2`
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
   background-color: ${(props) => (props.dark ? '#42032C' : 'none')};
+
+  @media (min-width: 1025px) {
+font-size: 27px;
+}
 `
 
 export const Topics = styled.p`

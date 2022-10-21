@@ -27,5 +27,9 @@ export const IntroText = styled.p`
 font-family: 'Montserrat', sans-serif;
 display: inline;
 line-height: 30px;
-margin: 10px
+margin: 10px;
+
+@media (min-width: 1025px) {
+font-size: 20px;
+}
 `

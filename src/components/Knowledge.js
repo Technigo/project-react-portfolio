@@ -28,6 +28,9 @@ text-align: center;
 export const KnowledgeText = styled.p`
 line-height: 30px;
 font-family: 'Montserrat', sans-serif;
+@media (min-width: 1025px) {
+font-size: 20px;
+}
 `
 export const OrangeText = styled.span`
 color: black;

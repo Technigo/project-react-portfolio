@@ -11,13 +11,16 @@ export const ForMore = () => {
       <Heading dark> FOR MORE </Heading>
       <InnerWrapper>
         <SoMeGrid>
-          <GridContent><SoMeLink> <a href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></a></SoMeLink>
+          <GridContent>
+            <SoMeLink href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></SoMeLink>
             <p>LINKEDIN</p>
           </GridContent>
-          <GridContent> <SoMeLink><a href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></a></SoMeLink>
+          <GridContent>
+            <SoMeLink href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></SoMeLink>
             <p>GITHUB</p>
           </GridContent>
-          <GridContent><SoMeLink><a href="https://stackoverflow.com/c/technigo/users/392"><img src={stack} alt="Stack Overflow" /></a></SoMeLink>
+          <GridContent>
+            <SoMeLink href="https://stackoverflow.com/c/technigo/users/392"><img src={stack} alt="Stack Overflow" /></SoMeLink>
             <p>STACK OVERFLOW</p>
           </GridContent>
         </SoMeGrid>
@@ -32,7 +35,9 @@ grid-template-columns: repeat(3, 1fr);
 `
 
 export const GridContent = styled.div`
-display: grid;
+display: flex;
+flex-direction: column;
+align-items: center;
 justify-items: center;
 font-family: 'Roboto', sans-serif;
 color: #42032C;

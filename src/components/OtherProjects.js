@@ -3,10 +3,16 @@ import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Heading, Topics } from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
+const options = {
+  method: 'GET',
+  headers: {
+    Authorization: 'token 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'
+  }
+}
 
 export const OtherProjects = () => {
   const [otherProjects, setOtherProjects] = useState([''])
-  fetch(GithubAPI)
+  fetch(GithubAPI, options)
     .then((res) => res.json())
     // .then((response) => console.log(response))
     // .then((data) => console.log(data))

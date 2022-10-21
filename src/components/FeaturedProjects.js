@@ -15,7 +15,7 @@ export const FeaturedProjects = () => {
   fetch(GithubAPI)
     .then((res) => res.json())
     // .then((response) => console.log(response))
-    // .then((data) => console.log(data))
+    .then((data) => console.log(data))
     .then((data) => {
       setFeaturedProjects(data)
     })
@@ -53,16 +53,9 @@ export const FeaturedProjects = () => {
 export const FeaturedProjectsContent = styled.div`
 display: grid;
 grid-template-columns: 1fr;
-/* display: flex;
-flex-direction: column;
-justify-content: flex-start; */
-/* align-items: center; */
-/* text-align: center; */
-/* @media (min-width: 1025px) {
-  grid-template-columns: repeat(2, 1fr);
-} */
 font-family:'Roboto', sans-serif;
 line-height: 30px;
+margin-bottom: 20px;
 
 @media (min-width: 1025px) {
 grid-template-columns: repeat(2, 1fr);
