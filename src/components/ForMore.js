@@ -38,7 +38,7 @@ export const ForMore = () => {
                 href="https://github.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="3x" color="#212427" />
+                <FontAwesomeIcon icon={faGithub} size="3x" color="#0A638E" />
               </a>
               <p>Github</p>
             </IconContainer>
@@ -47,7 +47,7 @@ export const ForMore = () => {
                 href="https://www.linkedin.com/in/lovisa-carling/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#212427" />
+                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#0A638E" />
               </a>
               <p>LinkedIn</p>
             </IconContainer>
@@ -59,7 +59,7 @@ export const ForMore = () => {
                 <FontAwesomeIcon
                   icon={faStackOverflow}
                   size="3x"
-                  color="#212427" />
+                  color="#0A638E" />
               </a>
               <p>Stackoverflow</p>
             </IconContainer>

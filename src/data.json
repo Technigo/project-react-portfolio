@@ -11,7 +11,7 @@
     {
       "title": "Project chatbot",
       "id": "2",
-      "image": "#",
+      "image": "https://images2.imgbox.com/12/dd/clKnkh9U_o.jpeg?download=true",
       "netlify": "https://tablebooker.netlify.app/",
       "github": "https://github.com/agadman/project-chatbot",
       "description": "Our task was to create a chatbot...",
@@ -20,7 +20,7 @@
     {
         "title": "Project Guess who",
         "id": "3",
-        "image": "#",
+        "image": "../assets/Guesswho.jpeg",
         "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
         "github": "https://github.com/agadman/project-chatbot",
         "description": "Our task was to create a chatbot...",

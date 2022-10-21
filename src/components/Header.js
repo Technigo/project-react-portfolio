@@ -1,5 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGithub,
+  faLinkedin,
+  faStackOverflow
+} from '@fortawesome/free-brands-svg-icons'
 import { InnerWrapper, OuterWrapper } from './global/GlobalStyling';
 import Annika from '../assets/Annika.jpg'
 
@@ -13,6 +19,7 @@ export const Header = () => {
     justify-content: center;
     align-items: center;  
 `
+
   const HeaderText = styled.div`
     h2 {
         font-size: 1.1rem;
@@ -57,10 +64,47 @@ export const Header = () => {
     width: 100%;
   `
 
+  const IconWrapper = styled.div`
+    display: flex;
+    justify-content: end;
+    margin: 20px;
+    place-items: flex-end;
+    img {
+    width: 50px;
+  }
+  a {
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+`
+
   return (
     <OuterWrapper>
       <HeaderBackground>
         <InnerWrapper>
+          <IconWrapper>
+            <a
+              href="https://github.com/Asivol93"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="3x" color="#fff" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/lovisa-carling/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" color="#fff" />
+            </a>
+            <a
+              href="https://stackoverflow.com/users/16687109/asivol"
+              target="_blank"
+              rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faStackOverflow} size="3x" color="#fff" />
+            </a>
+          </IconWrapper>
           <HeaderText>
             <h2>portfolio annika gadman</h2>
             <h1>frontend developer</h1>

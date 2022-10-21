@@ -18,6 +18,7 @@ export const Projects = () => {
     background-color: pink;
     border: 2px solid black;
     grid-column: span 6;  
+    text-align: left;
   `
 
   const OtherProjects = styled.div`
@@ -26,8 +27,25 @@ export const Projects = () => {
 
   const OtherProjectsList = styled.p`
     text-transform: uppercase;
-    text-align: left;
+    text-align: left
   `
+  const ProjectPost = styled.p`
+    border: 2px solid black;
+  `
+
+  const ProjectBackground = styled.img`
+  width: 100%;
+  height: 200px; 
+  background: #002F33;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  top: -50%;
+  @media (min-width: 900px) {
+    width: 367px;
+    height: 220px;
+  }
+`;
 
   return (
     <OuterWrapper background>
@@ -40,13 +58,16 @@ export const Projects = () => {
             {data.map((item) => (
               item.id < 3 ? (
                 <ProjectCard key={item.title}>
-                  <a
-                    href={item.netlify}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <p>Published site: {item.title}</p>
-                  </a>
+                    <a
+                      href={item.netlify}
+                      alt="project landingpage"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                        
+                      <p>Published site: {item.title}</p>
+                      <ProjectBackground src={item.image} alt="project poster" />
+                    </a>
+                  </ProjectPost>
                   <a
                     href={item.github}
                     alt="project landingpage"
@@ -64,6 +85,7 @@ export const Projects = () => {
               ) : null
             ))}
           </ProjectCardContainer>
+          <h3>OTHER PROJECTS</h3>
           <OtherProjects>
             {data.map((item) => (
               item.id > 2 ? (
