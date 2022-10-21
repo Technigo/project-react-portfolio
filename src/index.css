@@ -1,3 +1,24 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Roboto');
+
+:root {
+--color-mango: #fd8e49ff;
+--color-pink: #f567a7ff;
+--color-lightpink: #ff99c7ff;
+--color-yellow: #ffe770ff;
+--color-green: #7ff083ff;
+
+--font-main: 'Montserrat';
+--font-secondary: 'Roboto';
+}
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +31,45 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: bold;
+  color: black;
+  white-space: wrap;
+  width: 150px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 4%;
+  color: black;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  line-height: auto;
+  font-weight: bold;
+  text-align: center;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 29px;
+  color: black;
 }
