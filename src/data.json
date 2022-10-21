@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Project news site",
+      "id": "1",
+      "image": "#",
+      "netlify": "https://tablebooker.netlify.app/",
+      "github": "https://github.com/agadman/project-news-site",
+      "description": "A news site containing grid and flexbox...",
+      "tools": ["HTML", "CSS"]
+    },
+    {
+      "title": "Project chatbot",
+      "id": "2",
+      "image": "#",
+      "netlify": "https://tablebooker.netlify.app/",
+      "github": "https://github.com/agadman/project-chatbot",
+      "description": "Our task was to create a chatbot...",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "title": "Project Guess who",
+        "id": "3",
+        "image": "#",
+        "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+        "github": "https://github.com/agadman/project-chatbot",
+        "description": "Our task was to create a chatbot...",
+        "tools": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Project Music releases",
+        "id": "4",
+        "image": "#",
+        "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+        "github": "https://github.com/agadman/project-chatbot",
+        "description": "Our task was to create a chatbot...",
+        "tools": ["HTML", "CSS", "JavaScript"]
+      }  
+  ]

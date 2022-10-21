@@ -24,3 +24,21 @@ export const SectionTitle = styled.div`
     text-align: center;
     font-weight: 600;
 `
+
+export const Tag = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+    background: #18252a;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 12px;
+    padding: 5px;
+    margin: 3px;
+  }
+`
