@@ -21,13 +21,6 @@ export const StyledTagWrapper = styled.div`
   margin: 3px;
   text-transform: uppercase;
 }
-a {
-  background-color: var(--secondary);
-  box-shadow: 2px 2px 2px var(--heading);
-  color: var(--heading);
-  border: 1px solid var(--heading);
-  padding: 8px;
-}
 `
 export const StyledRepoTag = styled.a`
 p {
@@ -78,7 +71,7 @@ export const StyledListSection = styled.div`
 `
 export const StyledLogo = styled.img`
 height: 3rem;
-margin: 0 .1rem;
+margin: 0 .2rem;
 width: 3rem;
 
 @media (min-width: 1200px) {

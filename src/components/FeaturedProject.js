@@ -34,7 +34,7 @@ const FeaturedProject = (
           {projectTags}
         </StyledTagWrapper>
       </a>
-      <StyledRepoTag href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></StyledRepoTag>
+      <StyledRepoTag aria-label={`Link to ${titleWithSpaces} repository on Github`} href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></StyledRepoTag>
     </StyledFeaturedProject>
   )
 }

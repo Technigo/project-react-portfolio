@@ -35,7 +35,7 @@ const OtherProject = (
           </StyledTagWrapper>
         </div>
       </StyledOtherProjectLink>
-      <OtherRepoTag href={repoLink} className="tag-wrapper">
+      <OtherRepoTag aria-label={`Link to ${titleWithSpaces} repository on Github`} href={repoLink} className="tag-wrapper">
         <p className="repo-tag other-repo-tag">Repo on GitHub</p>
       </OtherRepoTag>
     </StyledOther>
