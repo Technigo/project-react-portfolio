@@ -42,7 +42,7 @@ const Projects = () => {
       .then((data) => SetProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => project.name.includes('project-'));
+  const filteredProjects = projects.filter((project) => (project.name.includes('happy-thoughts')) || (project.name.includes('weather')) || (project.name.includes('survey')) || (project.name.includes('music')))
 
   return (
     <OuterWrapper>
