@@ -13,7 +13,7 @@ const MyThoughts = () => {
         {MediumArticles.map((article) => {
           return (
             <div key={article.name}>
-              <img src={VisualLearningImg} alt="" />
+              <ArticleImg src={VisualLearningImg} alt="" />
               <Date>{article.date}</Date>
               <BlogName>{article.name}</BlogName>
               <A href={article.url}>
@@ -46,4 +46,7 @@ const BlogName = styled.h4`
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
+`
+const ArticleImg = styled.img`
+  width: 100%;
 `
