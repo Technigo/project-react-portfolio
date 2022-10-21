@@ -9,7 +9,7 @@ export const Projects = () => {
     const options = {
       method: 'GET',
       headers: {
-        Authorization: `token ${process.env.REACT_APP_API_KEY}`
+        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
       }
     }
 
@@ -54,7 +54,7 @@ export const Projects = () => {
           <StyledLink href={project.html_url}>👉 Github</StyledLink>
 
           <Tags>
-            {project.topics.map((tag) => <SingleTag>{tag}</SingleTag>)}
+            {project.topics.map((tag) => <SingleTag key={tag.index}>{tag}</SingleTag>)}
           </Tags>
         </ProjectCard>
       ))}
@@ -72,7 +72,7 @@ export const Projects = () => {
             <StyledLink href={project.html_url}>👉 Github</StyledLink>
 
             <Tags>
-              {project.topics.map((tag) => <SingleTag>{tag}</SingleTag>)}
+              {project.topics.map((tag) => <SingleTag key={tag.index}>{tag}</SingleTag>)}
             </Tags>
           </ProjectCard>
         ))}
