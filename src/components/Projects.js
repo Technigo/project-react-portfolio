@@ -177,7 +177,13 @@ const OtherWrap = styled.div`
     display: grid;
     grid-template-columns: 90px auto;
     width: 100%;
-}
+
+    @media ${Devices.tablet} {
+      display: grid;
+      grid-template-columns: 90px auto;
+      width: 100%;
+    }
+  }
 
   .box-text {
     grid-column-start: 1;
@@ -201,30 +207,3 @@ const OtherWrap = styled.div`
                 </div>
 
 */
-
-/*
-{FeaturedProjects.map((project) => {
-    return (
-      <FeatureWrap>
-        <ProjectLinks key={project.id} href={project.homepage}>
-          <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} alt="first-page" />
-          <Title>{project.name.replace(/-/g, ' ')}</Title>
-          <ProjectText>{project.description}</ProjectText>
-          <Tags className="box-text">{project.topics}</Tags>
-        </ProjectLinks>
-      </FeatureWrap>
-    );
-  })}
-        {OtherProjects.map((project) => {
-          return (
-            <OtherWrap>
-              <ProjectLinks key={project.id} href={project.homepage}>
-                <Title>{project.name.replace(/-/g, ' ')}</Title>
-                <ProjectText>{project.description}</ProjectText>
-                <Tags className="box-text">{project.topics}</Tags>
-              </ProjectLinks>
-            </OtherWrap>
-          );
-        })}
-
-  */
