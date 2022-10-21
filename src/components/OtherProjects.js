@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components/macro';
-import { InnerWrapper, SmallHeadline } from 'styles/GlobalStyles';
+import { SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
 export const OtherProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -17,7 +16,14 @@ export const OtherProjects = () => {
   const relProjects = projects.filter((item) => item.name.includes('project-') && (!item.name.includes('portfolio')));
 
   // Filter for other projects (not starred on github):
-  const remaining = relProjects.filter((item) => item.stargazers_count === 0);
+  const remaining = relProjects.filter((item) => item.stargazers_count === 0 && item.name !== 'project-business-site');
+
+  // PUT INTO SEPARATE FILE?
+  const renderTags = (tags) => {
+    return tags.map((tag) => {
+      return (<Tag>{tag}</Tag>)
+    })
+  }
 
   return (
     remaining.map((project) => {
@@ -25,6 +31,7 @@ export const OtherProjects = () => {
         <a key={project.id} href="#" target="_blank" rel="noopener noreferrer">
           <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
           <p>{project.description}</p>
+          <Tags>{renderTags(project.topics)}</Tags>
         </a>
       );
     })
@@ -35,7 +42,3 @@ export const OtherProjects = () => {
         <span>{topic}</span>
       )
     }} */
-export const OtherProjsWrapper = styled(InnerWrapper)`
-  flex-direction: column;
-  text-align: left;
-`

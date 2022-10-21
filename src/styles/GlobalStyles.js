@@ -109,3 +109,21 @@ export const ThoughtCard = styled(ProjectCard)`
 export const Image = styled.img`
   width: 100%;
 `
+
+export const Tags = styled.div`
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  flex-wrap: wrap;
+  width: 80%;
+
+`
+
+export const Tag = styled.span`
+  background-color: #8ECEDC;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  padding: 3px;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  color: #362836; 
+`

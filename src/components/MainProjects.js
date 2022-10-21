@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/macro';
-import { ProjectCard, Image, SmallHeadline } from 'styles/GlobalStyles';
+import { ProjectCard, Image, SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
 export const MainProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -19,6 +19,13 @@ export const MainProjects = () => {
   // Filter for 4 main projects (starred on github):
   const mainFour = relProjects.filter((item) => item.stargazers_count !== 0);
 
+  // Function to map over the tags and display them:
+  const renderTags = (tags) => {
+    return tags.map((tag) => {
+      return (<Tag>{tag}</Tag>)
+    })
+  }
+
   return (
     mainFour.map((project) => {
       return (
@@ -30,6 +37,7 @@ export const MainProjects = () => {
           </ImageContainer>
           <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
           <p>{project.description}</p>
+          <Tags>{renderTags(project.topics)}</Tags>
         </ProjectCard>
       );
     })
@@ -73,3 +81,4 @@ export const OverlayTitle = styled.p`
     color: transparent;
   }
 `
+

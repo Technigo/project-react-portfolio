@@ -1,7 +1,8 @@
 import React from 'react';
+import styled from 'styled-components/macro';
 import { OuterWrapper, InnerWrapper, MainHeadline, MediumHeadline } from 'styles/GlobalStyles';
 import { MainProjects } from './MainProjects';
-import { OtherProjects, OtherProjsWrapper } from './OtherProjects';
+import { OtherProjects } from './OtherProjects';
 
 export const FeatProjects = () => {
   return (
@@ -18,3 +19,8 @@ export const FeatProjects = () => {
     </OuterWrapper>
   )
 }
+
+export const OtherProjsWrapper = styled(InnerWrapper)`
+  flex-direction: column;
+  text-align: left;
+`
