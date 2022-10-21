@@ -6,14 +6,14 @@ export const Projects = () => {
   const [projectsList, setProjectsList] = useState([])
 
   const FetchProjects = () => {
-    // const options = {
-    //   method: 'GET',
-    //   headers: {
-    //     Authorization: `token ${process.env.REACT_APP_API_KEY}`
-    //   }
-    // }
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: `token ${process.env.REACT_APP_API_KEY}`
+      }
+    }
 
-    fetch('https://api.github.com/users/linneaajger/repos')
+    fetch('https://api.github.com/users/linneaajger/repos', options)
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
