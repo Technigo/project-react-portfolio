@@ -7,6 +7,34 @@ import heroStackOverflow from './assets/stackoverflow.png';
 import profileImage from './assets/profile-pic.jpg';
 import heroImage from './assets/header-img.jpg';
 
+export const Header = () => {
+  return (
+    <HeaderContainer>
+      <HeaderIcons>
+        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
+        </a>
+        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+          <img src={heroGithub} alt="Github icon for the header" />
+        </a>
+        <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
+          <img
+            src={heroStackOverflow}
+            alt="Stack Overflow icon for the header" />
+        </a>
+      </HeaderIcons>
+      <HeaderTitle>
+        <h3>Portfolio: Neah Rockstroh</h3>
+        <h1>Front-End</h1>
+        <h1>Developer</h1>
+      </HeaderTitle>
+      <HeaderImage>
+        <img src={profileImage} alt="Neah Rockstroh" />
+      </HeaderImage>
+    </HeaderContainer>
+  );
+};
+
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
   width: 100%;
@@ -116,31 +144,3 @@ export const HeaderImage = styled.div`
     }
   }
 `;
-
-export const Header = () => {
-  return (
-    <HeaderContainer>
-      <HeaderIcons>
-        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
-          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
-        </a>
-        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
-          <img src={heroGithub} alt="Github icon for the header" />
-        </a>
-        <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
-          <img
-            src={heroStackOverflow}
-            alt="Stack Overflow icon for the header" />
-        </a>
-      </HeaderIcons>
-      <HeaderTitle>
-        <h3>Portfolio: Neah Rockstroh</h3>
-        <h1>Front-End</h1>
-        <h1>Developer</h1>
-      </HeaderTitle>
-      <HeaderImage>
-        <img src={profileImage} alt="Neah Rockstroh" />
-      </HeaderImage>
-    </HeaderContainer>
-  );
-};

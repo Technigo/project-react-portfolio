@@ -16,7 +16,7 @@ export const MyThoughts = () => {
                 target="_blank"
                 rel="noreferrer"
                 alt="bild">
-                <img src={blogPic} lang="eng" alt="Girhub project" />
+                <img src={blogPic} lang="eng" alt="Github project" />
                 <DateTitle>DEC 2022</DateTitle>
                 <BlogTitle>Blog title</BlogTitle>
                 <BlogText>Blog Text</BlogText>
@@ -29,7 +29,7 @@ export const MyThoughts = () => {
                 target="_blank"
                 rel="noreferrer"
                 alt="bild">
-                <img src={blogPic} lang="eng" alt="Girhub project" />
+                <img src={blogPic} lang="eng" alt="Github project" />
                 <DateTitle>DEC 2022</DateTitle>
                 <BlogTitle>Blog title</BlogTitle>
                 <BlogText>Blog Text</BlogText>
@@ -45,11 +45,15 @@ export const MyThoughts = () => {
 
 export const MyThoughtsContainer = styled.section`
   width: 100%;
-  height: 300px;
+  height: 30%;
   position: relative;
   margin: 10%;
   display: flex;
   flex-direction: column;
+
+  img {
+    width: 100%;
+  }
 
   @media (min-width: 668px) {
     display: flex;
@@ -72,6 +76,7 @@ export const AllMyThoughtsCards = styled.div`
   justify-content: space-around;
 
   .MyThoughtsCard {
+    width: 45%;
   }
 `;
 

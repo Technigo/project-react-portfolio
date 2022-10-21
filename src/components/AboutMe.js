@@ -2,15 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './GlobalStyles';
 
-export const Intro = styled.p`
-padding: 10%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 1.2em;
-line-height: 138%;
-`;
-
 export const AboutMe = () => {
   return (
     <OuterWrapper>
@@ -24,3 +15,11 @@ export const AboutMe = () => {
   );
 };
 
+export const Intro = styled.p`
+padding: 10%;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2em;
+line-height: 138%;
+`;
