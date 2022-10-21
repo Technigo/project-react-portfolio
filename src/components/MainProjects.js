@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components/macro';
 import { ProjectCard, Image, SmallHeadline } from 'styles/GlobalStyles';
 
-export const MainProject = () => {
+export const MainProjects = () => {
   const [projects, setProjects] = useState([]);
 
   // Get all my projects on GitHub via API call:
@@ -13,34 +13,30 @@ export const MainProject = () => {
       .catch((error) => console.error(error))
   }, []);
 
-  // Filtered array with relevant projects:
+  // Filtered array with all relevant projects:
   const relProjects = projects.filter((item) => item.name.includes('project-') && (!item.name.includes('portfolio')));
 
-  // array for 4 favourite projects:
-  // const mainFour = relProjects.filter((item) => item.name.includes('happy-thoughts') ||
-  // (item.name.includes('movies')) || (item.name.includes('survey')) ||
-  // (item.name.includes('weather')));
+  // Filter for 4 main projects (starred on github):
+  const mainFour = relProjects.filter((item) => item.stargazers_count !== 0);
 
   return (
-  // Check all projects in filtered list and return the top 4 (starred on github)
-    relProjects.map((project) => {
-      if (project.stargazers_count !== 0) {
-        return (
-          <ProjectCard key={project.id} href="#" target="_blank" rel="noopener noreferrer">
-            <ImageContainer>
-              <ImageOverlay />
-              <Image src={`https://raw.githubusercontent.com/brucette/${project.name}/master/code/preview/projPreview.png`} alt="" />
-              <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
-            </ImageContainer>
-            <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
-          </ProjectCard>
-        )
-      }
+    mainFour.map((project) => {
+      return (
+        <ProjectCard key={project.id} href="#" target="_blank" rel="noopener noreferrer">
+          <ImageContainer>
+            <ImageOverlay />
+            <Image src={`https://raw.githubusercontent.com/brucette/${project.name}/master/code/preview/projPreview.png`} alt="" />
+            <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
+          </ImageContainer>
+          <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
+          <p>{project.description}</p>
+        </ProjectCard>
+      );
     })
   )
 }
 
-// STYLING FOR THE ABOVE COMPONENT
+// STYLING FOR THE ABOVE REACT COMPONENT
 export const ImageContainer = styled.div`
   position: relative;
   /* This transition will cause the text to fade */

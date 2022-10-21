@@ -32,3 +32,7 @@ p {
   font-size: 1.06rem;
   line-height: 1.8rem;
 }
+
+a {
+  text-decoration: none;
+}
