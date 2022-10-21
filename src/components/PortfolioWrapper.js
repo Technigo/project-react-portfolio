@@ -5,6 +5,7 @@ import { Tech } from 'components/Tech'
 import { Thoughts } from 'components/Thoughts'
 import { Skills } from 'components/Skills'
 import { Contact } from 'components/Contact'
+import { FeaturedProjects } from './FeaturedProjects'
 
 export const PortfolioWrapper = () => {
   return (
@@ -12,6 +13,7 @@ export const PortfolioWrapper = () => {
       <Header />
       <Summary />
       <Tech />
+      <FeaturedProjects />
       <Thoughts />
       <Skills />
       <Contact />

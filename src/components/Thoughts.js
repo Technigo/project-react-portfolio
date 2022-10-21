@@ -9,28 +9,28 @@ export const Thoughts = () => {
       <Subheading>My thoughts about code</Subheading>
       <StyledGrid>
 
-        <StyledItem>
+        <ItemWrapper>
           <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
           <div className="thought__text" />
           <div className="thought__date">October 2022</div>
           <div className="thought__title">My crush on coding</div>
           <div className="thought__description">My journey into coding and how I feel about it 8 weeks into the boot camp. (Spoiler alert: I love it!)</div>
-        </StyledItem>
+        </ItemWrapper>
 
-        <StyledItem>
+        <ItemWrapper>
           <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
           <div className="thought__text" />
           <div className="thought__date">October 2022</div>
           <div className="thought__title">Project 1 headline</div>
           <div className="thought__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        </StyledItem>
+        </ItemWrapper>
 
       </StyledGrid>
     </ContainerWhite>
   )
 };
 
-export const StyledItem = styled.div`
+export const ItemWrapper = styled.div`
     width: 350px;
     margin: auto;
 

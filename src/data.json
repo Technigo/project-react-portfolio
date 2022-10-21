@@ -1,49 +1,97 @@
 [
     {
         "title": "Happy thoughts",
+        "id": 1,
+        "img_src": "/images/Happy-thoughts.png",
         "title-description": "A site where you can send happy thoughts",
-        "project-description": "Site built with React where you can send happy thoughts, list all thoughts and like them.",
+        "description": "Site built with React where you can send happy thoughts, list all thoughts and like them.",
         "repo-name": "project-happy-thoughts",
+        "url": "https://github.com/uohman/project-happy-thoughts",
         "tags": [
-            "React",
-            "HTML",
-            "CSS"
-          ]
-      }
+            {
+            "id": 1,
+            "tech": "React"
+            },
+            {
+            "id": 2,
+            "tech": "HTML"
+            },
+            {
+            "id": 3,
+            "tech": "CSS"
+            }
+      ]
+    },
       
     {
         "title": "Personal greeting",
+        "id": 2,
+        "img_src": "/images/Personal-greeting.png",
         "title-description": "A site where you can make a personal greeting",
-        "project-description": "A Typeform-like survey, built with React state and controlled forms.",
+        "description": "A Typeform-like survey, built with React state and controlled forms.",
         "repo-name": "project-survey",
+        "url": "https://github.com/uohman/project-survey",
         "tags": [
-            "React",
-            "HTML",
-            "CSS"
-          ]
-      }
+          {
+          "id": 1,
+          "tech": "React"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
+    },
 
     {
         "title": "Weather app",
+        "id": 3,
+        "img_src": "/images/Weather-app.png",
         "title-description": "An app that tells today's weather",
-        "project-description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+        "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
         "repo-name": "project-weather-app",
+        "url": "https://github.com/uohman/project-weather-app",
         "tags": [
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ]
-      }
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
+    },
 
-      {
+    {
         "title": "Guess who",
+        "id": 4,
+        "img_src": "/images/Guess-who.png",
         "title-description": "A digital version of the classic board game Guess Who",
-        "project-description": "A digital version of the classic board game Guess Who built in JavaScript.",
+        "description": "A digital version of the classic board game Guess Who built in JavaScript.",
         "repo-name": "project-guess-who",
+        "url": "https://github.com/uohman/project-guess-who",
         "tags": [
-            "JavaScript",
-            "HTML",
-            "CSS"
-          ]
-      }
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
+    }
   ]
