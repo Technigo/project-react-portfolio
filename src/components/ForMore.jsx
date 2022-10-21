@@ -1,6 +1,7 @@
-import React from 'react'
-import SectionContainer from './styled/SectionContainer.styled'
-import ForMoreIcons from './styled/ForMoreIcons.styled'
+import React from 'react';
+import styled from 'styled-components';
+import { SkillsGrid } from './styled/Grids.styled';
+import SectionContainer from './styled/SectionContainer.styled';
 import { GitHubSvg, LinkedInSvg, StackSvg } from './Icons';
 
 const ForMore = () => {
@@ -32,3 +33,29 @@ const ForMore = () => {
 };
 
 export default ForMore;
+
+const ForMoreIcons = styled(SkillsGrid)`
+  & a {
+     color: var(--sub-color);
+     font-family: var(--main-font);
+     font-size: 0.8rem;
+     font-weight: 700;
+     text-decoration: none;
+     text-transform: none;
+     width: fit-content;
+  }
+
+  & a:visited {
+    color: var(--sub-color)
+  }
+
+  & svg { 
+      background-color: var(--sub-color); 
+      border-radius: 50%; 
+      color: white; 
+      width: 3.5rem; 
+      height: 3.5rem; 
+      margin-bottom: 0.5rem; 
+      padding: 12px 0;
+    }
+`

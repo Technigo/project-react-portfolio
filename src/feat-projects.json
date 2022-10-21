@@ -1,34 +1,38 @@
 [ 
   { 
     "name": "Oj Vad Film!",
-    "description": "Project made to practice React Router, the useParams hook etc.",
+    "project_name": "Project Movies",
+    "description": "Project done to practice React Router, the useParams hook etc.",
     "github_url": "https://github.com/karlfredrikholm/project-movies",
     "netlify_url": "https://nitflax.netlify.app/",
-    "topics": [ "React Router", "API", "JavaScript-ES6", "CSS3"],
-    "image": "`url(${projectImage1}`"
+    "topics": [ "React Router", "API", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_movies.png"
   },
   { 
     "name": "Happy Thoughts",
+    "project_name": "Project Happy Thoughts",
     "description": "React project made to practice hooks and get/post requests to API.",
     "github_url": "https://github.com/karlfredrikholm/project-happy-thoughts/",
     "netlify_url": "https://gladatankar.netlify.app/",
-    "topics": [ "React", "JavaScript-ES6", "CSS3", "HTML5"],
-    "image": "`url(${projectImage2}`"
+    "topics": [ "React", "JS-ES6", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/happy_thoughts.png"
   },
   { 
-    "name": "Music Releases",
-    "description": "First React project. Made to get familiar with props and React in general.",
+    "name": "Albums & Singles",
+    "project_name": "Project Music Releases",
+    "description": "First React project! Done to get familiar with props and React in general.",
     "github_url": "https://github.com/karlfredrikholm/project-music-releases/",
     "netlify_url": "https://schpoutefi.netlify.app/",
-    "topics": [ "React", "JavaScript-ES6", "CSS3", "HTML5"],
-    "image": "`url(${projectImage3}`"
+    "topics": [ "React", "JS-ES6", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/music_releases.png"
   },
   { 
     "name": "Weather Web App",
+    "project_name": "Project Weather App",
     "description": "Vanilla JS project made with data from Open Weather API.",
     "github_url": "https://github.com/karlfredrikholm/project-weather-app/",
     "netlify_url": "http://fint-vader.netlify.app/",
-    "topics": [ "JavaScript-ES6", "CSS3", "HTML5"],
-    "image": "`url(${projectImage4}`"
+    "topics": [ "JS-ES6", "CSS3", "HTML5"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/weather_app.png"
   }
 ]

@@ -1,12 +1,6 @@
-/* eslint-disable no-nested-ternary */
 import styled from 'styled-components';
-import projectImage1 from '../../assets/project_movies.png'
-import projectImage2 from '../../assets/happy_thoughts.png';
-import projectImage3 from '../../assets/music_releases.png';
-import projectImage4 from '../../assets/weather_app.png';
 
-const ProjectImg = styled.div`
-  background-image: ${(props) => props};
+const ProjectImage = styled.div`
   background-size: cover;
   aspect-ratio: 1.5 / 1;
   border: 1px solid var(--third-color);
@@ -26,4 +20,14 @@ const ProjectImg = styled.div`
     }
 `
 
-export default ProjectImg;
+export const ThoughtsImage = styled(ProjectImage)`
+  border: 1px solid var(--main-color);
+  box-shadow: 3px 3px var(--main-color);
+
+   & div {
+    background-color: var(--third-color);
+   }
+`
+
+export default ProjectImage;
+

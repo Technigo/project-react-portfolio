@@ -4,7 +4,7 @@ import { OuterWrapper, InnerWrapper } from 'components/styled/Wrappers.styled';
 import Header from './components/Header';
 import Summary from './components/Summary';
 import Tech from './components/Tech';
-import FeatProjects from './components/FeatProjects';
+import FeaturedProjects from './components/FeaturedProjects';
 import OtherProjects from './components/OtherProjects';
 import Thoughts from './components/Thoughts';
 import Skills from './components/Skills';
@@ -29,7 +29,7 @@ const App = () => {
           <Header />
           <Summary />
           <Tech />
-          <FeatProjects />
+          <FeaturedProjects />
           <OtherProjects repos={repos} />
           <Thoughts />
           <Skills />

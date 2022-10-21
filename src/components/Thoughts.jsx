@@ -1,10 +1,11 @@
 import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
+import { ArticleGrid } from './styled/Grids.styled';
+import ArticleCard from './styled/Card.styled';
+import { ThoughtsImage } from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
-import ArticleGrid from './styled/ArticleGrid.styled';
-import ArticleCard from './styled/ArticleCard.styled';
-import ThoughtsImg from './styled/ThoughtsImg.styled';
-import TopicsContainer from './styled/TopicsContainer.styled';
+import { TopicsContainer } from './styled/Topics.styled';
+import thoughtImg from '../assets/thought_article.png';
 
 const Thoughts = () => {
   return (
@@ -13,11 +14,11 @@ const Thoughts = () => {
       <ArticleGrid>
 
         <ArticleCard thoughts>
-          <ThoughtsImg>
+          <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
             <div>
               <h6>How It All Started</h6>
             </div>
-          </ThoughtsImg>
+          </ThoughtsImage>
           <h5>November 2022</h5>
           <Paragraph grid>Some personal gibberish about how
           I started learning web development.
@@ -30,11 +31,11 @@ const Thoughts = () => {
         </ArticleCard>
 
         <ArticleCard thoughts>
-          <ThoughtsImg>
+          <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
             <div>
               <h6>Coming soon</h6>
             </div>
-          </ThoughtsImg>
+          </ThoughtsImage>
           <h5>Coming Soon</h5>
           <Paragraph grid>Some personal gibberish about something
           else.

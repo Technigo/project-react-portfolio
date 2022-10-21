@@ -1,14 +1,13 @@
 import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
-import ArticleGrid from './styled/ArticleGrid.styled';
-import ArticleCard from './styled/ArticleCard.styled';
+import { ArticleGrid } from './styled/Grids.styled';
+import ArticleCard from './styled/Card.styled';
+import ProjectImg from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
-import TopicsContainer from './styled/TopicsContainer.styled';
-import Topic from './styled/Topic.styled';
-import ProjectImg from './styled/ProjectImg.styled';
+import { Topic, TopicsContainer } from './styled/Topics.styled';
 import data from '../feat-projects';
 
-const FeatProjects = () => {
+const FeaturedProjects = () => {
   return (
     <SectionContainer bg>
       <h4>Featured Projects</h4>
@@ -16,15 +15,17 @@ const FeatProjects = () => {
         {data.map((project) => (
           <ArticleCard key={project.name}>
             <a href={project.netlify_url} target="_blank" rel="noreferrer">
-              <ProjectImg props={project.image}>
+              <ProjectImg style={{ backgroundImage: `url(${project.image})` }}>
                 <div>
                   <h6>{project.name}</h6>
                 </div>
               </ProjectImg>
             </a>
-            <h5>{project.name}</h5>
+            <h5>{project.project_name}</h5>
             <Paragraph grid>{project.description}</Paragraph>
-            <TopicsContainer><Topic>{project.topics}</Topic></TopicsContainer>
+            <TopicsContainer>
+              {project.topics.map((topic) => <Topic>{topic}</Topic>)}
+            </TopicsContainer>
             <TopicsContainer>
               <a href={project.netlify_url} target="_blank" rel="noreferrer">View it Live</a>
               <span>|</span> <a href={project.github_url} target="_blank" rel="noreferrer">GitHub Repo</a>
@@ -36,4 +37,4 @@ const FeatProjects = () => {
   )
 };
 
-export default FeatProjects;
+export default FeaturedProjects;
