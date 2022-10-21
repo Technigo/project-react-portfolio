@@ -60,4 +60,8 @@ const ProfileImage = styled.img`
     top: 356px;
     border-radius: 50%;
     border: 3px solid #355C7D; 
-`
+ `
+// const IconsContainer = styled.img`
+//      position: absolute;
+//      height: 40px;
+// `

@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 import React from 'react'
+import { Section, SectionHeader } from 'components/Section';
 
 export const Tech = () => {
   return (
-    <section>
+    <Section>
+      <SectionHeader>TECH</SectionHeader>
       <TechText>
         <p>
         HTML5, CSS, JavaScript, Github, Mob programming, React,
         pair-programming, API:s, Web accessability, Flexbox.
         </p>
       </TechText>
-    </section>
+    </Section>
   )
 }
 
