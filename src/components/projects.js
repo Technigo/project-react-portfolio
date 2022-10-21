@@ -10,7 +10,7 @@ export const Projects = () => {
     const options = {
       method: 'GET',
       headers: {
-        Authorization: { API_TOKEN }
+        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
       }
     }
 
