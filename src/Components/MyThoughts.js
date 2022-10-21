@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, P, A } from '../Styled components/GlobalStyles'
+import { OuterWrapper, InnerWrapper, P, A, ReadMoreArrow } from '../Styled components/GlobalStyles'
 import { WhitePinkH2 } from '../Styled components/HeadlineStyles'
 import { MediumArticles } from '../Data/MediumAricles'
+import VisualLearningImg from '../Images/Medium-Visual-Learning.jpeg'
 
 const MyThoughts = () => {
   return (
@@ -12,6 +13,7 @@ const MyThoughts = () => {
         {MediumArticles.map((article) => {
           return (
             <div key={article.name}>
+              <img src={VisualLearningImg} alt="" />
               <Date>{article.date}</Date>
               <BlogName>{article.name}</BlogName>
               <A href={article.url}>
@@ -44,8 +46,4 @@ const BlogName = styled.h4`
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
-`
-const ReadMoreArrow = styled.span`
-  color: #FF7777;
-  font-weight: 600;
 `

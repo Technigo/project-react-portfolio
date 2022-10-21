@@ -1,7 +1,7 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React, { useEffect, useState } from 'react'
 import { TagContainer, Tag } from 'Styled components/TagStyles'
-import { OuterWrapper, InnerWrapper, P, A } from '../Styled components/GlobalStyles'
+import { OuterWrapper, InnerWrapper, P, A, ReadMoreArrow } from '../Styled components/GlobalStyles'
 import { WhitePinkH2, PinkH3 } from '../Styled components/HeadlineStyles'
 
 const GitHubAPI = 'https://api.github.com/users/jessikalind/repos'
@@ -25,7 +25,7 @@ const OtherProjects = () => {
           <div key={project.id}>
             <PinkH3>{project.name.replaceAll('-', ' ').toUpperCase()}</PinkH3>
             <A href={project.html_url}>
-              <P>{project.description}</P>
+              <P>{project.description} <ReadMoreArrow> &gt;&gt; </ReadMoreArrow></P>
             </A>
             <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
             </TagContainer>

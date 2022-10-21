@@ -52,3 +52,7 @@ export const SrOnly = styled.div`
   white-space: nowrap;
   border-width: 0;
 `
+export const ReadMoreArrow = styled.span`
+  color: #FF7777;
+  font-weight: 600;
+`
