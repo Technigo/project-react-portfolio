@@ -26,7 +26,7 @@ export const ProjectBox = styled.div`
   height: 200px;  
   @media (min-width: 900px) {
     width: 367px;
-    height: 240px;
+    height: 220px;
   }
 `;
 
@@ -38,14 +38,14 @@ export const Overlay = styled.div`
   position: relative;
   margin: 0 auto;
   z-index: 1;
-  opacity: 70%;
+  opacity: 80%;
   
   &:hover{
     opacity: 0;
   }
   @media (min-width: 900px) {
     width: 367px;
-    height: 240px;
+    height: 220px;
   }
 `;
 
@@ -56,7 +56,8 @@ export const OverlayText = styled.div`
   top: 50%;
   font-size: 1.5rem;
   font-weight: 500;
-
+  text-transform: uppercase;
+  font-weight: 600;
   &:hover{
     opacity: 0;
   }
@@ -81,7 +82,7 @@ export const ProjectDescription = styled.h3`
 color: black;
 font-weight: 400;
 &:hover{
-    color:pink;
+    color: #7E4B48;
 }
 `;
 
@@ -94,11 +95,13 @@ export const TagContainer = styled.div`
 
 export const Tag = styled.span`
 color: #fff;
-background-color: #c70251;
+background-color: #2B5A71;
 border: none;
 font-size: 12px;
-height: 12px;
-border-radius: 10%;
+height: 14px;
+font-weight: 600;
 padding: 5px;
-margin-right: 10px; 
+&:hover{
+    color: #C6F700;
+}
 `;

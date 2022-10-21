@@ -4,7 +4,7 @@ import { About, AboutWrapper, Line, Dot } from 'components/About.js'
 
 const AboutSection = () => {
   return (
-    <Section>
+    <Section primary>
       <Wrapper>
         <AboutWrapper>
           <About> <Line /><Dot /> Hi there, I´m Cecilia - a junior developer with love

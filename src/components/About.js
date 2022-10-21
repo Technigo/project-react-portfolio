@@ -4,7 +4,6 @@ export const AboutWrapper = styled.div`
   padding: 6%;
   padding-right: 5%;
   padding-left: 5%;
-  background-color: antiquewhite;
 @media (min-width: 900px) {
 padding-left: 10%;
 padding-right: 10%;
@@ -21,7 +20,7 @@ padding-right: 25%;
 
 export const Line = styled.span`
     width: 30px;
-    border: 1px solid red;
+    border: 1px solid #C6F700;
     display: inline-block;
     margin-bottom: 4px;
 `;
@@ -29,7 +28,7 @@ export const Line = styled.span`
 export const Dot = styled.span`
     height: 10px;
     width: 10px;
-    background-color: red;
+    background-color: #C6F700;
     border-radius: 50%;
     display: inline-block;
 `;
@@ -38,7 +37,7 @@ export const About = styled.p`
   line-height: 1.6rem;
   font-size: 1.2rem;
   margin: 0 auto;
-  background-color: grey;
+  color: white;
 @media (min-width: 1200px) {
   line-height: 1.8rem;
   font-size: 1.3rem;

@@ -50,6 +50,7 @@ const SkillWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   grid-gap: 50px;
+  padding-bottom: 30px;
   @media (max-width: 400px) {
     grid-gap: 20px;
   }
@@ -66,10 +67,18 @@ const SkillsBox = styled.div`
   }
   li {
     font-size: 18px;
+        grid-gap: 20px;
+    @media (min-width: 700px) {
+    &:hover{
+      font-weight: 500;
+      color: #C6F700;
+    }
   }
+}
   h5 {
     text-transform: uppercase;
     font-size: 20px;
     margin: 4px;
+    color: #2B5A71;
   }
 `;

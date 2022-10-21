@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
+import ArticleMockup from '../images/ArticleIMGBlue.png'
 
 const Thoughts = () => {
   return (
-    <Section primary>
+    <ThoughtsSection>
       <SectionTitle>My THOUGHTS</SectionTitle>
       <Wrapper>
         <TextWrapper>
           <ImageWrapper>
-            <ArticleImg src="" />
+            <ArticleImg src={ArticleMockup} />
           </ImageWrapper>
           <ArticleWrapper>
             <Date>18 October</Date>
@@ -28,14 +29,17 @@ const Thoughts = () => {
           </ArticleWrapper>
         </TextWrapper>
       </Wrapper>
-    </Section>
+    </ThoughtsSection>
   );
 };
 
 export default Thoughts;
 
+const ThoughtsSection = styled(Section)`
+background-color: #2B5A71;
+`
+
 const ArticleWrapper = styled.div`
-border: 2px yellow solid;
 padding: 5%;
   text-align: start;
   h4 {
@@ -43,12 +47,12 @@ padding: 5%;
     text-transform: uppercase;
   }
   span {
-    color: #c62a88;
+    color: #C6F700;
     font-weight: 800;
   }
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
 @media (min-width: 900px) {
@@ -68,7 +72,7 @@ const ImageWrapper = styled.div`
 display:flex;
 `;
 const Date = styled.h4`
-color: #c62a88;
+color: #C6F700;
 text-transform: uppercase;
 `;
 

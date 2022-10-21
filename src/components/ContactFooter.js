@@ -4,7 +4,7 @@ import { Section, SectionTitle, TextWrapper } from 'components/Section';
 
 const ContactFooter = () => {
   return (
-    <Section>
+    <Footer>
       <SectionTitle>CONTACT</SectionTitle>
       <FooterWrap>
         <FooterContainer>
@@ -15,7 +15,7 @@ const ContactFooter = () => {
           <h2>Stockholm, Sweden</h2>
         </FooterContainer>
       </FooterWrap>
-    </Section>
+    </Footer>
   );
 };
 export default ContactFooter;
@@ -25,15 +25,18 @@ display:flex;
 `
 
 const FooterContainer = styled.div`
-border: red solid 3px;
 margin: 0 auto;
 text-align: center;
+padding-bottom: 50px;
 
 h2{
-    color:black;
+    color: white;
     line-height: 1rem;
     font-weight: 400;
     font-size: 1.2rem;
 }
+`;
 
-`
+const Footer = styled(Section)`
+background-color: #42404A;
+`;

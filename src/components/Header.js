@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
 import Cecilia from '../images/Cecilia.jpeg'
-import GitHub from '../images/img_326384.png'
+import GitHub from '../images/NeonCat.png'
+import LInkedIn from '../images/NeonLink.png'
+import BackgroundImage from '../images/HeaderSpace.png'
 
 const Header = () => {
   return (
@@ -17,14 +19,15 @@ const Header = () => {
               alt="link to Sneezan GitHub" />
           </a>
           <a
-            href="https://github.com/Sneezan"
+            href="https://www.linkedin.com/in/ceciliafranlund/"
             target="_blank"
             rel="noreferrer">
             <img
-              src={GitHub}
-              alt="link to Sneezan GitHub" />
+              src={LInkedIn}
+              alt="link to Cecilias Linked In" />
           </a>
         </IconsContainer>
+        <BackgroundImg src={BackgroundImage} />
         <Name>Cecilia Frånlund</Name>
         <Title>frontend developer</Title>
       </Background>
@@ -35,13 +38,21 @@ const Header = () => {
 export default Header;
 
 const Background = styled.header`
-  background-color: #a19595;
+  background-color: #2B5A71;
   width: 100%;
   height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+`;
+
+const BackgroundImg = styled.img`
+  background-size: cover;
+  @media (max-width: 455px) {
+    height: 100%;
+  }
+
 `;
 
 const IconsContainer = styled.div`
@@ -94,7 +105,7 @@ const Name = styled.h3`
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: red;
+    color: #C6F700;
     @media (min-width: 900px) {
     font-size: 1.5rem;
     line-height: 0;

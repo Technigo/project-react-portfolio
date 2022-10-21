@@ -17,7 +17,7 @@ const ProjectList = () => {
               alt="project landingpage"
               target="_blank"
               rel="noopener noreferrer">
-              <ProjectDescription>{project.description} <Span>&gt;&gt;</Span></ProjectDescription>
+              <ListDescription>{project.description} <Span>&gt;&gt;</Span></ListDescription>
             </Link>
             <TagContainer>
               {project.tools.map((tag) => (
@@ -39,6 +39,13 @@ margin: 2px;
 
 const OtherSectionTitile = styled(SectionTitle)`
 background: none;
-color: grey;
+color: #2B5A71;
 padding-top: 50px;
+font-size: 1.8rem;
+`;
+
+const ListDescription = styled(ProjectDescription)`
+color: #2B5A71;
+font-size: 1.3rem;
+font-weight: 500;
 `;

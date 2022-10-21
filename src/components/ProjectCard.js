@@ -10,14 +10,14 @@ const ProjectCard = () => {
         <Center>
           <ProjectWrap>
             <ProjectBox key={item.title}>
-              <a
+              <Link
                 href={item.netlify}
                 alt="project landingpage"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Overlay> <OverlayText>{item.overlay}</OverlayText></Overlay>
                 <ProjectBackground src={item.image} alt="project poster" />
-              </a>
+              </Link>
             </ProjectBox>
             <TitleContainer>
               <Link
@@ -52,12 +52,11 @@ const ProjectBackground = styled.img`
   top: -50%;
   @media (min-width: 900px) {
     width: 367px;
-    height: 240px;
+    height: 220px;
   }
 `;
 
 const Center = styled.div`
-border: 3px solid yellow;
 display: grid;
 margin: 0 auto;
 `;
