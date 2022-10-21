@@ -9,6 +9,7 @@ const Projects = () => {
   const options = {
     method: 'GET',
     headers: {
+      Authorization: process.env.API_TOKEN
     }
   }
 
