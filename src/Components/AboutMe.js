@@ -13,7 +13,7 @@ font-family: 'Montserrat', sans-serif;
 `
 
 const Line = styled.span`
-border: 1px solid #FA382F;
+border: 1px solid #233126;
     width: 40px;
     display: inline-block;
     margin-bottom: 4px;
@@ -22,7 +22,7 @@ border: 1px solid #FA382F;
 const Dot = styled.span`
 height: 10px;
     width: 10px;
-    background-color: #FA382F;
+    background-color: #233126;
     border-radius: 50%;
     display: inline-block;
 `
@@ -33,7 +33,7 @@ const AboutMe = () => {
       <InnerWrapper>
         <BackgroundInfo>
 
-          <p> <Line /> <Dot /> Hello! Im an aspiring frontend developer with 8 years of
+          <p> <Line /><Dot /> Hello! Im an aspiring frontend developer with 8 years of
         experience within office administration
         and with a degree in journalism, and a bachelors
         degree in culture. Autumn of 2021 I decided that

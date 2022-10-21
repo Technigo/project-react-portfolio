@@ -14,19 +14,13 @@ font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 50px;
 width: 100%;
-    height: 20vh;
+    height: 30vh;
     position: relative;
-    background-color: blue;
+    background-color: #233126;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (min-width: 668px) and (max-width: 1024px) {
-    height: 30vh;
-  }
-  @media (min-width: 1025px){ 
-    height: 30vh;
-  }
 `
 const ClonedSoMeIcons = styled(SoMeIcons)`
 display: flex;

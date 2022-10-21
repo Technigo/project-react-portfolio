@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, SoMeIcons } from '../StyledComponents/GlobalComponents'
 import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
-import background from '../images/background.jpg'
+import leaves from '../images/leaves.jpg'
 
 const Headerbackground = styled.header`
 width: 100%;
@@ -11,7 +11,7 @@ width: 100%;
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    background-image: url(${background});
+    background-image: url(${leaves});
     background-size: cover;
 
     h3 {

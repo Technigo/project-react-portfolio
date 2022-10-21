@@ -36,7 +36,7 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.h1`
  font-family:'Montserrat', sans-serif;
-    background-color: #FA382F;
+    background-color: #233126;
     color: white;
     font-size: 30px;
     align-self: center;
@@ -47,9 +47,10 @@ export const Title = styled.h1`
 
 export const RedTitle = styled.h1`
  font-family:'Montserrat', sans-serif;
-  color: red;
+  color: #233126;
   font-size: 24px;
   margin-top: 15px;
+  font-weight:bold;
 `
 export const Link = styled.a`
   text-decoration: none;
@@ -77,7 +78,7 @@ margin: 15px;
 export const Tags = styled.div`
 font-family: "Roboto", sans-serif;
   font-weight: bold;
-  background-color: #FDDFE7;
+  background-color: #D7E3DA;;
   font-size: 12px; 
   line-height: 12px;
   padding: 4px;

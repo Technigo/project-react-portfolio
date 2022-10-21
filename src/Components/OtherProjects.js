@@ -20,7 +20,7 @@ export const ClonedRedTitle = styled(RedTitle)`
 `
 
 export const Arrow = styled.span`
-color: red;
+color: #D7E3DA;
 font-weight: 600;   
 `
 
