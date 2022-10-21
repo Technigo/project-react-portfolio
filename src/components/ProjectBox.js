@@ -2,19 +2,30 @@
 import React, { useState, useEffect } from 'react';
 // import styled from 'styled-components';
 
-export const ProjectBox = () => {
+export const ProjectBox = ({ list }) => {
   const [project, setProject] = useState([]);
+
   useEffect(() => {
     fetch('https://api.github.com/users/KajaWilbik/repos')
-      .then((respons) => respons.json())
-      .then((data) => setProject(data))
-      .finally(console.log('everything is fine in fetch', setProject));
-  }, [])
-  return (
-    <div key={project.id}>
-      <p>jajaksh{project.id}</p>
-    </div>
+      .then((respons) => {
+        return respons.json();
+      })
+      .then((data) => {
+        setProject(data);
+      })
+  }, []);
+  console.log('everything is fine in fetch', project)
 
+  return (
+    project.map((projects) => {
+      return (
+        <div key={projects.full_name}>
+          <h2>{projects.name}</h2>
+          <p>{projects.description}</p>
+        </div>
+
+      )
+    })
   )
 }
 

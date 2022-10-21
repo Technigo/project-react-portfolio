@@ -12,7 +12,7 @@ export const TechInfo = () => {
   )
 }
 
-const StyledTechInfo = styled.h3`
+const StyledTechInfo = styled.div`
 margin:20px;
 `
 

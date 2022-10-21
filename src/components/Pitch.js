@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Pitch = () => {
   return (
     <StyledPitch>
-      <h3>I am a people-oriented person with a strong background in tourism and recreation.
+      <p>I am a people-oriented person with a strong background in tourism and recreation.
         I have a solid knowledge of customer service and building long-term relations with clients.
         My previous experience taught me how to handle many tasks
         at the same time, as well as plan and handle stressful situations.
@@ -15,7 +15,7 @@ export const Pitch = () => {
         Polish (native speaker),English (Professional working proficiency),
          and Swedish (Professional working proficiency).
         In my free time,  I am learning as well Spanish.
-      </h3>
+      </p>
     </StyledPitch>
 
   )
