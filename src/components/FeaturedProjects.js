@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Title, MainText } from '../styles/Main'
-import { SectionFeaturedProjects, WrapProject, Wrapper, ProjectImage, ProjectTitle, Programs, ProgramsWrapper, Overlay } from '../styles/Projects'
+import { Title, MainText, Section } from '../styles/Main'
+import { WrapProject, Wrapper, ProjectImage, ProjectTitle, Programs, ProgramsWrapper, Overlay } from '../styles/Projects'
 import weather from '../images/survey.png'
 import guesswho from '../images/guesswho.png'
 
-const Projects = () => {
+const FeaturedProjects = () => {
   const selectedprojects = ['project-happy-thoughts', 'project-survey', 'project-guess-who', 'project-movies']
   const projectimg = [
     weather,
@@ -23,7 +23,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <SectionFeaturedProjects>
+    <Section>
       <Title>Featured Projects</Title>
       <Wrapper>
         {repos.map((repo, index) => {
@@ -46,8 +46,8 @@ const Projects = () => {
           )
         })}
       </Wrapper>
-    </SectionFeaturedProjects>
+    </Section>
   );
 }
 
-export default Projects;
+export default FeaturedProjects;

@@ -1,10 +1,10 @@
 import React from 'react-dom'
 import { HightLight } from '../styles/Tech';
-import { Section, Wrapper, Title, CenterMainText } from '../styles/Main'
+import { SectionColor, Wrapper, Title, CenterMainText } from '../styles/Main'
 
 const Tech = () => {
   return (
-    <Section>
+    <SectionColor>
       <Title>Tech</Title>
       <Wrapper>
         <CenterMainText>HTML, CSS, <HightLight>JavaScript, </HightLight>Flexbox, Grids,
@@ -13,7 +13,7 @@ const Tech = () => {
           <HightLight>Adobe Creative Suite.</HightLight>
         </CenterMainText>
       </Wrapper>
-    </Section>
+    </SectionColor>
   );
 }
 

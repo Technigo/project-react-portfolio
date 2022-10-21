@@ -1,14 +1,5 @@
 import styled from 'styled-components'
 
-export const IntroSection = styled.section`
-border: 2px solid hotpink;
-display: flex;
-flex-direction: column;
-height: 300px;
-align-items: center;
-justify-content: center;
-`
-
 export const Line = styled.span`
     border: 1px solid #99A799;
     width: 30px;

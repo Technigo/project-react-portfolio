@@ -1,20 +1,42 @@
-import styled from 'styled-components'
 import React from 'react-dom'
-import { Title } from '../styles/Main'
+import { Title, Section, WrapperRow, SecondTitle, MainText } from '../styles/Main'
+import { List } from '../styles/Skills'
 
 const Skills = () => {
   return (
-    <StyledMythoughts>
+    <Section>
       <Title>Skills</Title>
-    </StyledMythoughts>
+      <WrapperRow>
+        <List>
+          <SecondTitle>Code</SecondTitle>
+          <MainText>
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Github</li>
+          </MainText>
+        </List>
+        <List>
+          <SecondTitle>Toolbox</SecondTitle>
+          <MainText>
+            <li>Figma</li>
+            <li>Keynote</li>
+            <li>Photoshop</li>
+            <li>illustrator</li>
+            <li>Slack</li>
+          </MainText>
+        </List>
+        <List>
+          <SecondTitle>Upcomming</SecondTitle>
+          <MainText>
+            <li>Redux</li>
+            <li>Backend</li>
+          </MainText>
+        </List>
+      </WrapperRow>
+    </Section>
   );
 }
-
-const StyledMythoughts = styled.div`
-border: 2px solid hotpink;
-backgroundcolor: "#F7E9D7";
-width: 100%;
-height: 450px;
-`
 
 export default Skills;

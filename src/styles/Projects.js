@@ -1,26 +1,40 @@
 import styled from 'styled-components'
 
 export const SectionFeaturedProjects = styled.section`
-border: 2px solid hotpink;
-width: 100%;
-height: auto;
-text-align: center;
+background-color: white;
+display: flex;
+flex-direction: column;
 align-items: center;
+justify-content: center;
+margin-top: 20px;
+`
+
+export const SectionOtherProjects = styled.section`
+width: 80%;
+margin-left: 10%;
+height: auto;
+text-align: left;
+@media (min-width: 798px) {
+    width: 50%;
+    margin-left: 25%;
+    }
 `
 
 export const Wrapper = styled.section`
+width: 80%;
 display: inline-grid;
 grid-gap: 10px;
-width: 100%;
-@media (min-width: 798px) {
+@media (min-width: 800px) {
 grid-template-columns: repeat(2, 1fr);
+width: 50%;
 }
 `
 
 export const WrapProject = styled.section`
-border: 2px solid green;
-width: 80%;
-margin-left: 10%;
+width: 100%;
+@media (min-width: 800px) {
+    max-width: 320px;
+    }
 `
 
 export const ProjectImage = styled.img`

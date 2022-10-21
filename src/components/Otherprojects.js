@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { ProjectTitle, Programs, ProgramsWrapper, Wrapper } from '../styles/Projects'
-import { Section, MainText, SecondTitle } from '../styles/Main'
+import { ProjectTitle, Programs, ProgramsWrapper, SectionOtherProjects } from '../styles/Projects'
+import { MainText, SecondTitle } from '../styles/Main'
 
 const Otherprojects = () => {
   const selectedprojects = ['project-chatbot', 'project-music-releases', 'project-business-site']
@@ -17,25 +17,22 @@ const Otherprojects = () => {
   }, [])
 
   return (
-    <Section>
+    <SectionOtherProjects>
       <SecondTitle>Other Projects</SecondTitle>
-      <Wrapper>
-        {repos.map((repo, index) => {
-          console.log(index)
-          return (
-            <div key={repo.id}>
-              <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
-              <MainText>{repo.description}</MainText>
-              <ProgramsWrapper>
-                <Programs>{repo.topics[0]}</Programs>
-                <Programs>{repo.topics[1]}</Programs>
-                <Programs>{repo.topics[2]}</Programs>
-              </ProgramsWrapper>
-            </div>
-          )
-        })}
-      </Wrapper>
-    </Section>
+      {repos.map((repo) => {
+        return (
+          <div key={repo.id}>
+            <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
+            <MainText>{repo.description}</MainText>
+            <ProgramsWrapper>
+              <Programs>{repo.topics[0]}</Programs>
+              <Programs>{repo.topics[1]}</Programs>
+              <Programs>{repo.topics[2]}</Programs>
+            </ProgramsWrapper>
+          </div>
+        )
+      })}
+    </SectionOtherProjects>
   );
 }
 

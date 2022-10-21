@@ -1,20 +1,19 @@
-import styled from 'styled-components'
 import React from 'react-dom'
-import { Title } from '../styles/Main'
+import { Title, Section } from '../styles/Main'
+import { IconsWrapper, Icon } from '../styles/ForMore'
+import Github from '../icons/github.svg'
+import Linkedin from '../icons/linkedin.svg'
 
 const Formore = () => {
   return (
-    <StyledMythoughts>
+    <Section>
       <Title>For more</Title>
-    </StyledMythoughts>
+      <IconsWrapper>
+        <a href="https://github.com/Kristin-Larsson"><Icon src={Github} alt="Github" /> GitHub</a>
+        <a href="https://www.linkedin.com/in/kristin-larsson/"><Icon src={Linkedin} alt="Linkedin" />LinkedIn</a>
+      </IconsWrapper>
+    </Section>
   );
 }
-
-const StyledMythoughts = styled.div`
-border: 2px solid hotpink;
-backgroundcolor: "#F7E9D7";
-width: 100%;
-height: 450px;
-`
 
 export default Formore;

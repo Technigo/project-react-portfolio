@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderImg from '../images/headerimg.jpg'
 import ProfileImg from '../images/kristin.png'
-import { Background, ProfileImage, HeaderText, IconsWrapper, Icon } from '../styles/Header'
+import { Background, ProfileImage, HeaderText, Name, Frontend, Designer, IconsWrapper, Icon } from '../styles/Header'
 import Github from '../icons/github.svg'
 import Linkedin from '../icons/linkedin.svg'
 
@@ -15,9 +15,10 @@ const Header = () => {
         <a href="https://www.linkedin.com/in/kristin-larsson/"><Icon src={Linkedin} alt="Linkedin" /></a>
       </IconsWrapper>
       <HeaderText>
-        <h2 className="name">PROTFOLIO: KRISTIN LARSSON</h2>
-        <h2 className="frontend">frontend developer</h2>
-        <h2 className="designer">+ designer</h2>
+        <Name>PROTFOLIO:</Name>
+        <Name>KRISTIN LARSSON</Name>
+        <Frontend>frontend developer</Frontend>
+        <Designer>+ designer</Designer>
       </HeaderText>
     </Background>
   );

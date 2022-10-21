@@ -1,20 +1,24 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import React from 'react-dom'
-import { Title } from '../styles/Main'
+import { Title, Section, Wrapper } from '../styles/Main'
 
 const Mythoughts = () => {
   return (
-    <StyledMythoughts>
+    <Section>
       <Title>My Thoughts</Title>
-    </StyledMythoughts>
+      <Wrapper>
+        <Article>Article</Article>
+      </Wrapper>
+    </Section>
   );
 }
 
-const StyledMythoughts = styled.div`
-border: 2px solid hotpink;
-backgroundcolor: "#F7E9D7";
-width: 100%;
-height: 450px;
-`
-
 export default Mythoughts;
+
+const Article = styled.article`
+    background-color: #677867;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+`
