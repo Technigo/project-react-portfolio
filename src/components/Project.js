@@ -38,6 +38,7 @@ export const Overlay = styled.div`
   margin: 0 auto;
   z-index: 1;
   opacity: 80%;
+  transition: ease-in .3s;
   
   &:hover{
     opacity: 0;

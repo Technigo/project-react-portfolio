@@ -38,6 +38,7 @@ export const About = styled.p`
   font-size: 1.2rem;
   margin: 0 auto;
   color: white;
+
 @media (min-width: 1200px) {
   line-height: 1.8rem;
   font-size: 1.3rem;

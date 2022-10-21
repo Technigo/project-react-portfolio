@@ -57,6 +57,6 @@ export const Highlight = styled.span`
   color: #C6F700;
 
   &:hover{
-    color:blue
+    color: #6583A4; 
   }
 `;

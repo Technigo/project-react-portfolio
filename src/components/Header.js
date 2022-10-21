@@ -83,6 +83,7 @@ const Title = styled.h1`
     font-size: 2.8rem;
     line-height: 2.4rem;
     font-family: roboto;
+    text-shadow: 0px 0px 2px black;
   
   @media (min-width: 900px) {
     font-size: 3.7rem;
@@ -106,6 +107,7 @@ const Name = styled.h3`
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: #C6F700;
+    text-shadow: 0px 0px 2px black;
     @media (min-width: 900px) {
     font-size: 1.5rem;
     line-height: 0;
@@ -124,12 +126,13 @@ const ProfileImage = styled.img`
     top: 230px;
     border-radius: 50%;
     border: 4px solid #444444;
-    &:hover {
-      filter: blur(2px);
-    }
 
     @media (min-width: 770px) {
       right: 20px;
+      &:hover {
+      filter: blur(2px);
+      border: 4px solid #C6F700;
+    }
   }
   @media (min-width: 900px) {
       right: 10%;
