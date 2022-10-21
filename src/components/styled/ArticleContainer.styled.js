@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ArticleCard = styled.article`
+const ArticleContainer = styled.article`
   display: grid;
   grid: 1fr;
   ${({ other }) => (other && { margin: 'var(--margin)', width: 'var(--width)' })};
@@ -10,4 +10,4 @@ const ArticleCard = styled.article`
     }
 `;
 
-export default ArticleCard;
+export default ArticleContainer;

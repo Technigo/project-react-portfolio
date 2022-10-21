@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
 import { ArticleGrid } from './styled/Grids.styled';
-import ArticleCard from './styled/Card.styled';
+import ArticleCard from './styled/ArticleContainer.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { Topic, TopicsContainer } from './styled/Topics.styled';
 

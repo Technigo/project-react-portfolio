@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
 import { ArticleGrid } from './styled/Grids.styled';
-import ArticleCard from './styled/Card.styled';
+import ArticleCard from './styled/ArticleContainer.styled';
 import { ThoughtsImage } from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { TopicsContainer } from './styled/Topics.styled';
@@ -24,7 +24,10 @@ const Thoughts = () => {
           I started learning web development.
           </Paragraph>
           <TopicsContainer>
-            <a href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665" target="_blank" rel="noreferrer">
+            <a
+              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665"
+              target="_blank"
+              rel="noreferrer">
               Read article
             </a>
           </TopicsContainer>
@@ -41,7 +44,10 @@ const Thoughts = () => {
           else.
           </Paragraph>
           <TopicsContainer>
-            <a href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665" target="_blank" rel="noreferrer">
+            <a
+              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665"
+              target="_blank"
+              rel="noreferrer">
               Read article
             </a>
           </TopicsContainer>
