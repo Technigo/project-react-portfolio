@@ -48,6 +48,9 @@ const IconsHeader = styled.i`
     margin: 5px;
 }
 
+a:hover {
+  color:violet;
+}
 .icons {
  font-size:${(props) => props.size}; // using props aloud me to change a size of icon, remember to add the proper size when I mount a comp example size=""
     display: flex;
