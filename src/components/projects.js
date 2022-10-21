@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
-import { API_TOKEN } from 'secret'
 import { MainHeaders, InnerWrapper, TitleTertiary, TitleQuaternary, SingleTag } from './globalStyling'
 
 export const Projects = () => {
@@ -10,7 +9,7 @@ export const Projects = () => {
     const options = {
       method: 'GET',
       headers: {
-        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
+        Authorization: `token ${process.env.REACT_APP_API_KEY}`
       }
     }
 
