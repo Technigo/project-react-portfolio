@@ -56,8 +56,11 @@ export const Link = styled.a`
   color: black;
 `
 export const SoMeIcons = styled.i`
-color: white;
 display: flex;
+
+a {
+  color: white;
+}
 i {
   margin: 5px;
   font-size: 24px;
@@ -66,9 +69,9 @@ i {
 
 export const TagsContainer = styled.div`
 display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
+flex-direction: row;
+flex-wrap: wrap;
+margin: 15px;
 `
 
 export const Tags = styled.div`

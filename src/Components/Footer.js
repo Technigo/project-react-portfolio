@@ -33,6 +33,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: black;
+a {
+  color: black;
+}
 `
 
 const Footer = () => {
@@ -40,8 +43,12 @@ const Footer = () => {
     <>
       <ForMore>
         <ClonedSoMeIcons>
-          <i className="fa-brands fa-github" />
-          <i className="fa-brands fa-linkedin-in" />
+          <a href="https://github.com/CeciliaMichele">
+            <i className="fa-brands fa-github" />
+          </a>
+          <a href="https://www.linkedin.com/in/ceciliaraden/">
+            <i className="fa-brands fa-linkedin-in" />
+          </a>
         </ClonedSoMeIcons>
       </ForMore>
       <ContactContainer>

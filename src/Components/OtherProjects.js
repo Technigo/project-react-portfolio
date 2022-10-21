@@ -56,5 +56,5 @@ const OtherProjects = () => {
     </OuterWrapper>
   )
 }
-/* <p> Om projektet</p> <Arrow>&gt;&gt; </Arrow> */
+
 export default OtherProjects

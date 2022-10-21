@@ -24,7 +24,7 @@ font-family: 'Montserrat', sans-serif;
     line-height: 50px;
     display:grid;
     grid-template-columns: 1fr;
-   
+   padding: 15px;
     
     @media (min-width: 1025px) {
     grid-template-columns: 1fr 1fr;
@@ -32,16 +32,27 @@ font-family: 'Montserrat', sans-serif;
     }
 `
 
-const Thumbnail = styled.img`
-width: 50%;
+const ImageContainer = styled.div`
+  transition: 0.5s ease;
 
+`
+const Thumbnail = styled.img`
+   display: block;
+    width: 100%;
+    filter: brightness(0.50);
 `
 
 const ImgOverlay = styled.div`
-div {
   display:flex; 
   justify-content:center;
-}
+  position: relative;
+
+  p {
+    color: white;
+    position: absolute;
+    top: 40%;
+    font-weight: bold;
+   }
 `
 
 const Projects = () => {
@@ -64,14 +75,15 @@ const Projects = () => {
             {filteredProjects.map((project) => (
               <div key={project.id}>
                 <Link href={project.homepage}>
-                  <ImgOverlay>
-                    <div>
+                  <ImageContainer>
+                    <ImgOverlay>
                       <Thumbnail alt="project-img" src={`https://raw.githubusercontent.com/ceciliamichele/${project.name}/master/code/src/thumbnail/thumbnail.jpg`} />
-                    </div>
-                  </ImgOverlay>
-                  <ClonedRedTitle>
-                    <p>{project.name.replaceAll('-', ' ').toUpperCase()}.</p>
-                  </ClonedRedTitle>
+                      <p>{project.name.replaceAll('-', ' ').toUpperCase()}</p>
+                    </ImgOverlay>
+                    <ClonedRedTitle>
+                      <p>{project.name.replaceAll('-', ' ').toUpperCase()}.</p>
+                    </ClonedRedTitle>
+                  </ImageContainer>
                   <p>{project.description}</p>
                 </Link>
                 <TagsContainer> {project.topics.map(((topic) => <Tags>{topic}</Tags>))}</TagsContainer>
