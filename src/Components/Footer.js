@@ -2,8 +2,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SoMeIcons } from 'StyledComponents/GlobalComponents'
-import { VscGithub } from 'react-icons/vsc'
-import { TiSocialLinkedinCircular } from 'react-icons/ti'
 
 const ForMore = styled.div`
 height: 5vh;
@@ -42,7 +40,8 @@ const Footer = () => {
     <>
       <ForMore>
         <ClonedSoMeIcons>
-          <VscGithub /> <TiSocialLinkedinCircular />
+          <i className="fa-brands fa-github" />
+          <i className="fa-brands fa-linkedin-in" />
         </ClonedSoMeIcons>
       </ForMore>
       <ContactContainer>

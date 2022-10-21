@@ -51,11 +51,17 @@ export const RedTitle = styled.h1`
   font-size: 24px;
   margin-top: 15px;
 `
-
+export const Link = styled.a`
+  text-decoration: none;
+  color: black;
+`
 export const SoMeIcons = styled.i`
 color: white;
 display: flex;
-justify-content: space-evenly;
+i {
+  margin: 5px;
+  font-size: 24px;
+}
 `
 
 export const TagsContainer = styled.div`

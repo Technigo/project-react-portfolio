@@ -1,8 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
-import { VscGithub } from 'react-icons/vsc'
-import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { OuterWrapper, SoMeIcons } from '../StyledComponents/GlobalComponents'
 import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
 import background from '../images/background.jpg'
@@ -75,8 +73,8 @@ const Header = () => {
     <OuterWrapper>
       <Headerbackground>
         <ClonedSoMeIcons>
-          <VscGithub size="30px" />
-          <TiSocialLinkedinCircular size="37px" />
+          <i className="fa-brands fa-github" />
+          <i className="fa-brands fa-linkedin-in" />
         </ClonedSoMeIcons>
         <ProfileImage src={ceciliaportfolio} alt="Picture of Cecilia" />
         <TextContainer>

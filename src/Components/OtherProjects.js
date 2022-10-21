@@ -3,7 +3,7 @@
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Title, Tags, TagsContainer } from 'StyledComponents/GlobalComponents'
+import { OuterWrapper, InnerWrapper, Title, Tags, TagsContainer, RedTitle, Link } from 'StyledComponents/GlobalComponents'
 
 const OtherProjectsContainer = styled.div`
 font-family: 'Montserrat', sans-serif;
@@ -13,7 +13,10 @@ font-family: 'Montserrat', sans-serif;
     line-height: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+`
+
+export const ClonedRedTitle = styled(RedTitle)`
+  font-weight: bold;
 `
 
 export const Arrow = styled.span`
@@ -30,7 +33,7 @@ const OtherProjects = () => {
       .then((data) => SetOtherProjects(data))
   })
 
-  const filteredProjects = otherProjects.filter((project) => project.name.includes('project-'));
+  const filteredProjects = otherProjects.filter((project) => (project.name.includes('chatbot')) || (project.name.includes('movies')))
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -38,9 +41,12 @@ const OtherProjects = () => {
           <Title>Other projects</Title>
           {filteredProjects.map((project) => (
             <div key={project.id}>
-
-              <p>{project.name}</p>
-              <p>{project.description}  <Arrow>&gt;&gt; </Arrow></p>
+              <Link href={project.homepage}>
+                <ClonedRedTitle>
+                  <p>{project.name.replaceAll('-', ' ').toUpperCase()}.</p>
+                </ClonedRedTitle>
+                <p>{project.description}  <Arrow>&gt;&gt; </Arrow></p>
+              </Link>
               <TagsContainer> {project.topics.map(((topic) => <Tags>{topic}</Tags>))}</TagsContainer>
             </div>
           ))}
