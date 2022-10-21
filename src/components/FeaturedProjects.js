@@ -1,37 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { OuterWrapper } from './OuterWrapper'
 
-/* import styled from 'styled-components'; */
-/* import { API_KEY } from 'urls/urls' */
-/* import { Link, useParams } from 'react-router-dom'; */
-
 const FeaturedProjects = () => {
-	const [featuredProjects, setFeaturedProjects] = useState('')
-	const [error, setError] = useState('')
+	const [featuredProjects, setFeaturedProjects] = useState([])
 	const API_URL = 'https://api.github.com/users/Petrasoderstrom1612/repos'
 
-	useEffect(() => {
+	const fetchAPI = () => {
 		fetch(API_URL)
 			.then((res) => res.json())
-			.then((data) => {
-				if (data.id) {
-					setFeaturedProjects(data)
-				} else {
-					setError(true)
-				}
-			})
-	}, [API_URL])
-
-	if (error) {
-		return (
-			<div>error</div>
-		)
+			.then((data) => setFeaturedProjects(data))
+			.catch((err) => console.error(err))
+			.finally(() => console.log('no errors'))
 	}
 
+	useEffect(() => {
+		fetchAPI()
+	}, []);
+
 	return (
-		<OuterWrapper primary>
-			<div className="innerwrapper">{featuredProjects.id}</div>
-		</OuterWrapper>
+		<div>
+			{featuredProjects.map((project) => {
+				return (
+					<OuterWrapper primary>
+						<div className="innerwrapper" key={project.id}>
+							<h5>{project.name}</h5>
+							<div> {project.description}</div>
+						</div>
+					</OuterWrapper>
+				)
+			})}
+		</div>
 	)
 }
 

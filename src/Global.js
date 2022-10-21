@@ -34,9 +34,20 @@ color: #fff;
 background-color: rgb(255, 119, 119);
 display: table;
 margin: 0px auto 0px auto;
+text-align: center;
 }
 h4{
 	text-transform: uppercase
+}
+
+h5 {
+	text-transform: uppercase;
+	text-align: center
+}
+
+
+p {
+	text-align: center;
 }
 
 @media (min-width: 668px) {
