@@ -1,26 +1,20 @@
 import styled from 'styled-components';
 import React from 'react'
 import { Section, SectionHeader } from 'components/Section'
+import blogimg from '../images/blogimg.jpg'
 
 export const Thoughts = () => {
   return (
     <Section>
       <SectionHeader>MY THOUGHTS ABOUT CODE</SectionHeader>
-      <ThoughtsText>
-        <p>
-        Thoughts
-        </p>
-      </ThoughtsText>
+      <ThougtImg src={blogimg} alt="blog" />
     </Section>
   )
 }
 
 export default Thoughts;
 
-const ThoughtsText = styled.p`
-    font-size: 17px;
-    line-height: 29px;
-    text-align: center;
-    margin: 0px auto 30px;
-    width: 320px;
+const ThougtImg = styled.img`
+    width: 100%;
+    display: inherit;
 `

@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section'
+import { Section } from 'components/Section'
 
 export const About = () => {
   return (
     <Section primary>
-      <SectionHeader>ABOUT</SectionHeader>
       <AboutText>
         <p>
         I´m a curious frontend developer with passion for project management.

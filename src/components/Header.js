@@ -6,7 +6,9 @@ import HeaderImg from '../images/HeaderImg.jpg'
 export const Header = () => {
   return (
     <>
-      <Background src={HeaderImg} alt="background-header" />
+      <Background
+        src={HeaderImg}
+        alt="background-header" />
       <Name>PORTFOLIO: CHARLOTTE JOHANSSON</Name>
       <Title>frontend developer</Title>
       <CurrentTitle>+ project manager</CurrentTitle>
@@ -18,8 +20,11 @@ export const Header = () => {
 export default Header;
 
 const Background = styled.img`
-    position: relative;
-    height: 500px;
+    position: absolute;
+    width: 100%;
+    height: 520px;
+    left: 0px;
+    top: 0px;
 `
 const Title = styled.h1`
     position: absolute;
@@ -61,7 +66,3 @@ const ProfileImage = styled.img`
     border-radius: 50%;
     border: 3px solid #355C7D; 
  `
-// const IconsContainer = styled.img`
-//      position: absolute;
-//      height: 40px;
-// `
