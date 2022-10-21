@@ -10,8 +10,8 @@ import { GITHUB_URL, LINKEDIN_URL, STACKOVERFLOW_URL } from 'utils/Urls';
 
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
-  width: 1005;
-  height: 500px;
+  width: 100%;
+  height: 450px;
   background-position: top center;
   background-size: cover;
   position: relative;
@@ -59,8 +59,13 @@ export const HeaderTitle = styled.div`
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 40px;
     display: block;
+  }
+
+  .name {
+    font-weight: 400;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {
@@ -71,6 +76,7 @@ export const HeaderTitle = styled.div`
     h1 {
       font-size: 40px;
       display: block;
+      margin: 2%;
     }
   }
 
@@ -92,7 +98,7 @@ export const HeaderImage = styled.div`
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
-    border: 4px solid white;
+    border:2px solid white;
     width: 170px;
     height: 170px;
     position: absolute;
@@ -134,9 +140,8 @@ export const Header = () => {
         </a>
       </HeaderIcons>
       <HeaderTitle>
-        <h3>Portfolio: Sofia Andersson</h3>
-        <h1>frontend</h1>
-        <h1>developer</h1>
+        <h3><span className="name">PORTFOLIO:</span> SOFIA ANDERSSON</h3>
+        <h1>frontend developer</h1>
       </HeaderTitle>
       <HeaderImage>
         <img src={profileImage} alt="Mrs Cakes" />
