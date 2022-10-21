@@ -1,0 +1,34 @@
+[ 
+  { 
+    "name": "Oj Vad Film!",
+    "description": "Project made to practice React Router, the useParams hook etc.",
+    "github_url": "https://github.com/karlfredrikholm/project-movies",
+    "netlify_url": "https://nitflax.netlify.app/",
+    "topics": [ "React Router", "API", "JavaScript-ES6", "CSS3"],
+    "image": "`url(${projectImage1}`"
+  },
+  { 
+    "name": "Happy Thoughts",
+    "description": "React project made to practice hooks and get/post requests to API.",
+    "github_url": "https://github.com/karlfredrikholm/project-happy-thoughts/",
+    "netlify_url": "https://gladatankar.netlify.app/",
+    "topics": [ "React", "JavaScript-ES6", "CSS3", "HTML5"],
+    "image": "`url(${projectImage2}`"
+  },
+  { 
+    "name": "Music Releases",
+    "description": "First React project. Made to get familiar with props and React in general.",
+    "github_url": "https://github.com/karlfredrikholm/project-music-releases/",
+    "netlify_url": "https://schpoutefi.netlify.app/",
+    "topics": [ "React", "JavaScript-ES6", "CSS3", "HTML5"],
+    "image": "`url(${projectImage3}`"
+  },
+  { 
+    "name": "Weather Web App",
+    "description": "Vanilla JS project made with data from Open Weather API.",
+    "github_url": "https://github.com/karlfredrikholm/project-weather-app/",
+    "netlify_url": "http://fint-vader.netlify.app/",
+    "topics": [ "JavaScript-ES6", "CSS3", "HTML5"],
+    "image": "`url(${projectImage4}`"
+  }
+]

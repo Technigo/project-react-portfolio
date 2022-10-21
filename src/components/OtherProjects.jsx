@@ -11,7 +11,7 @@ const OtherProjects = ({ repos }) => {
     <SectionContainer bg>
       <h4>Other Projects</h4>
       <ArticleGrid other>
-        {repos.sort().map((project) => {
+        {repos.map((project) => {
           if (project.topics.includes('portfolio')) {
             return (
               <ArticleCard other key={project.id}>
