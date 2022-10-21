@@ -22,7 +22,7 @@ const OtherProjects = () => {
       <InnerWrapper>
         <WhitePinkH2>OTHER PROJECTS</WhitePinkH2>
         {filteredProjects.map((project) =>
-          <div>
+          <div key={project.id}>
             <PinkH3>{project.name.replaceAll('-', ' ').toUpperCase()}</PinkH3>
             <A href={project.html_url}>
               <P>{project.description}</P>

@@ -11,7 +11,7 @@ const MyThoughts = () => {
         <WhitePinkH2>MY THOUGHTS</WhitePinkH2>
         {MediumArticles.map((article) => {
           return (
-            <div>
+            <div key={article.name}>
               <Date>{article.date}</Date>
               <BlogName>{article.name}</BlogName>
               <A href={article.url}>
