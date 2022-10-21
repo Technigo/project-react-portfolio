@@ -21,7 +21,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetch('https://api.github.com/users/karlfredrikholm/repos', options)
+    fetch('https://api.github.com/users/karlfredrikholm/repos')
       .then((res) => res.json())
       .then((data) => setRepos(data))
       .catch((error) => console.error(error))
