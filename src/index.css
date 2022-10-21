@@ -1,16 +1,3 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 /* GLOBAL */
 * {
   margin: 0;
@@ -19,234 +6,21 @@ code {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 body {
   background-color: #F9F7F7;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-p {
-  margin: 0em auto;
-  max-width: 640px;
-}
-
-/* HEADER */
-header {
-  background-image: url(/public/images/background-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  position: relative;
-}
-
-#header-text {
-  color:#F9F7F7;
-  text-shadow: 2px 2px 8px #000000;
-}
-
-h1, h2 {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-size: 1em;
-  margin-bottom: 0.5em;
-}
-
-#big-h2 {
-  font-size: 2em;
-}
-
-#small-h2 {
-  font-size: 1.5em;
-}
-
-#profile-image {
-  position: absolute;
-  right: 5%;
-  left: 60%;
-  bottom: -5px;
-}
-
-#profile-image img {
-  box-shadow: #000000 0px 5px 15px;
-  max-width: 100%;
-  object-fit: cover;
-  display: block;
-  border: 2px solid #F9F7F7;
-  border-radius: 50%;
-}
-
-/* FOOTER */
-footer {
-    color: #F9F7F7;
-    text-align: center;
-    text-shadow: #000000 0px 0px 1px ;
-    background-color: #112D4E;
-    padding: 2em;
-}
-
-footer div p {
-  margin-top: 1em;
-}
-
-/* SECTION HEADINGS */
-.subsection-headings {
-    margin: 2em auto;
-    padding: 0.3em;
-    text-align: center;
-    color: #112D4E;
-    text-decoration: underline;
-}
-
-/* SUMMARY SECTION */
-
-
-/* TECH STACK */
-
-/* OTHER PROJECTS */
-.other-project p {
-    margin-left: 0em;
-    margin-bottom: 1em;
-} 
-  
-.other-project .tag {
-    margin: 0em 1em 2em 0em;
-}
-
-.other-project-title {
-    font-size: 1.2em;
-    text-decoration: underline;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* SKILLS */
-.skills-container {
-    margin: 0em auto;
-    max-width: 640px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.skills-container ul {
-    list-style: none;
-}
-
-li:first-child { 
-    color: #112D4E;
-    padding: 0.5em;
-    border-radius: 1em;
-    margin-bottom: 0.7em;  
-}
-
-/* CARDS */
-.cardholder {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em;
-}
-
-.card {
-  background-color: whitesmoke;
-  border-radius: 1em;
-  display: grid;
-  grid-template-columns: 1fr;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.25s;
-}
-
-.card-text {
-  padding: 0.5em;
-  font-size: 0.9em;
-}
-
-.card-text p, h4 {
-margin-left: 0.3em;
-}
-
-.card-text p {
-  display: none;
-}
-
-.card-img img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-tags {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.tag {
-  color:#000000;
-  background-color:#DBE2EF;
-  font-size: 0.8em;
-  margin: 0.3em 0.3em 0.6em 0.6em;
-  padding: 0.4em;
-  border-radius: 0.7em;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* MEDIA QUERIES */
-@media only screen and (min-width: 480px) {
-
-  #profile-image {
-    right: 5%;
-    left: 70%; 
-    bottom: -25px;
-  } 
-  
-  .card:hover {
-    transform: translateY(-0.20em);
-    cursor: pointer;
-  }
-  
-  .cardholder {
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-
-@media only screen and (min-width: 770px) {
-
-  h1 {
-    font-size: 1.5em;
-  }
-  
-  #big-h2 {
-    font-size: 3em;
-  }
-  
-  #small-h2 {
-    font-size: 2em;
-  }
-
-  #profile-image {
-    right: 10%;
-    left: 70%; 
-    bottom: -25px;
-  } 
-
-  .card-text p {
-   display: block;
-  }
-
 }

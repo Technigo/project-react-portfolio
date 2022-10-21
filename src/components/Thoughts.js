@@ -1,43 +1,45 @@
 import React from 'react'
-import { SectionHeader } from './styled/SectionHeader'
+import { CardDiv, CardholderDiv, CardImage, CardTextDiv } from './styled/Cards'
+import { InlineHeading, SectionHeading, SubsectionHeading } from './styled/Headings'
+import { InnerWrapper, OuterWrapper } from './styled/Wrappers'
 
 export const Thoughts = () => {
   return (
-    <section className="outer-wrapper" id="my-thoughts">
-      <div className="inner-wrapper">
-        <SectionHeader>THOUGHTS ON CODE</SectionHeader>
-        <div className="cardholder">
-          <div className="card">
-            <div className="card-img">
-              <img src="img/background-image.jpg" alt="apple logo" />
+    <OuterWrapper id="my-thoughts">
+      <InnerWrapper>
+        <SectionHeading>THOUGHTS ON CODE</SectionHeading>
+        <CardholderDiv>
+          <CardDiv>
+            <div>
+              <CardImage src="images/background-image.jpg" alt="apple logo" />
             </div>
-            <div className="card-text">
+            <CardTextDiv>
               <h4>Article title</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea quidem!
               </p>
+            </CardTextDiv>
+          </CardDiv>
+          <CardDiv>
+            <div>
+              <CardImage src="images/background-image.jpg" alt="apple logo" />
             </div>
-          </div>
-          <div className="card">
-            <div className="card-img">
-              <img src="img/background-image.jpg" alt="apple logo" />
-            </div>
-            <div className="card-text">
+            <CardTextDiv>
               <h4>Article title</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea quidem!
               </p>
-            </div>
-          </div>
-        </div>
-        <h3 className="subsection-headings">MORE THOUGHTS</h3>
+            </CardTextDiv>
+          </CardDiv>
+        </CardholderDiv>
+        <SubsectionHeading>MORE THOUGHTS</SubsectionHeading>
         <div className="other-project">
-          <p><span className="other-project-title">DATE</span> Article title.</p>
+          <p><InlineHeading>DATE</InlineHeading> Article title.</p>
         </div>
         <div className="other-project">
-          <p><span className="other-project-title">DATE</span> Article title.</p>
+          <p><InlineHeading>DATE</InlineHeading> Article title.</p>
         </div>
-      </div>
-    </section>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }

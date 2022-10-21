@@ -3,8 +3,8 @@ import { OuterWrapper, InnerWrapper } from './styled/Wrappers'
 
 export const About = () => {
   return (
-    <OuterWrapper id="summary-section">
-      <InnerWrapper>
+    <OuterWrapper>
+      <InnerWrapper centertext>
         <p>Welcome! My name&apos;s Nick, and I&apos;m an aspiring frontend developer with a
            background in writing and localisation and a passion for problem-solving and languages.
         </p>
