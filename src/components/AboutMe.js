@@ -1,5 +1,5 @@
 import React from 'react'
-import { InnerWrapper } from 'components/globalStyling'
+import { InnerWrapper } from 'Components/globalStyling'
 
 export const AboutMe = () => {
   return (

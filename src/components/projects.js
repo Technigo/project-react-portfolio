@@ -13,7 +13,7 @@ export const Projects = () => {
     //   }
     // }
 
-    fetch('https://api.github.com/users/linneaajger/repos') // options object is passed as 2nd argument to fetch() function.
+    fetch('https://api.github.com/users/linneaajger/repos')
       .then((res) => res.json())
       .then((data) => {
         console.log(data)

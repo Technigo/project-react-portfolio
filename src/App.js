@@ -1,12 +1,12 @@
 import React from 'react'
-import { Projects } from 'components/Projects'
-import { Header } from 'components/Header'
-import { AboutMe } from 'components/AboutMe'
-import { Tech } from 'components/Tech'
-import { Thoughts } from 'components/Thoughts'
-import { Skills } from 'components/Skills'
-import { ForMore } from 'components/ForMore'
-import { Footer } from 'components/Footer'
+import { Projects } from 'Components/Projects'
+import { Header } from 'Components/Header'
+import { AboutMe } from 'Components/AboutMe'
+import { Tech } from 'Components/Tech'
+import { Thoughts } from 'Components/Thoughts'
+import { Skills } from 'Components/Skills'
+import { ForMore } from 'Components/ForMore'
+import { Footer } from 'Components/Footer'
 
 export const App = () => {
   return (
