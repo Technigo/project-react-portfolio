@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { OuterWrapper } from './OuterWrapper'
+import styled from 'styled-components'
+import { OuterWrapper } from './OuterWrapper';
 
 const FeaturedProjects = () => {
 	const [featuredProjects, setFeaturedProjects] = useState([])
@@ -19,12 +20,17 @@ const FeaturedProjects = () => {
 
 	return (
 		<div>
-			{featuredProjects.map((project) => {
+			{featuredProjects.filter(
+				(project) => (project.name !== 'project-react-portfolio' && 'project-portfolio')
+    && (project.name.includes('project'))
+			).map((project) => {
 				return (
 					<OuterWrapper primary>
 						<div className="innerwrapper" key={project.id}>
-							<h5>{project.name}</h5>
-							<div> {project.description}</div>
+							<h5>{project.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' site')
+								.toUpperCase()}
+							</h5>
+							<FeaturedProjectsStyler> {project.description}</FeaturedProjectsStyler>
 						</div>
 					</OuterWrapper>
 				)
@@ -34,3 +40,8 @@ const FeaturedProjects = () => {
 }
 
 export default FeaturedProjects;
+
+const FeaturedProjectsStyler = styled.div`
+display: flex;
+justify-content: center;
+`
