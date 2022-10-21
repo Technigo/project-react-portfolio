@@ -26,5 +26,6 @@ display: block;
 export const IntroText = styled.p`
 font-family: 'Montserrat', sans-serif;
 display: inline;
+line-height: 30px;
 margin: 10px
 `

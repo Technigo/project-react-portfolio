@@ -23,9 +23,10 @@ export const OtherProjects = () => {
             <div key={prop.id}>
               <ProjectsHeading>{prop.name}</ProjectsHeading>
               <p>{prop.description}</p>
-              <Topics>{prop.topics}</Topics>
+              {prop.topics.map((tag) => (
+                <Topics>{tag}</Topics>
+              ))}
               {/* <p>{prop.html_url}</p> */}
-              <img alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
             </div>
           ))}
         </OtherProjectsContent>

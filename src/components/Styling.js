@@ -12,7 +12,7 @@ export const OuterWrapper = styled.section`
 
 export const InnerWrapper = styled.section`
 width: 90%;
-padding: 50px 0px;
+padding: 30px 0px;
 @media (min-width: 1025px) {
   width: 70%;
 }
@@ -23,7 +23,7 @@ export const Heading = styled.h2`
   font-size: 22px;
   font-weight: 700;
   display: inline;
-  margin: 20px 0px;
+  margin: 30px 0px;
   padding: 4px;
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
@@ -39,6 +39,6 @@ font-family: "Roboto", sans-serif;
     text-decoration: none;
     line-height: 12px;
     padding: 4px;
-    margin: 3px;
+    margin-right: 5px;
     border-radius: 5px;
 `

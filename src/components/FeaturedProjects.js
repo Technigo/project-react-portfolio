@@ -27,11 +27,18 @@ export const FeaturedProjects = () => {
         <FeaturedProjectsContent>
           {BigProjects.map((prop) => (
             <div key={prop.id}>
-              <BigProjectsImage alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
+              <ProjectLink href={prop.html_url} alt="Link to project" target="_blank">
+                <ImageAndName>
+                  <BigProjectsImage alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
+                  <ProjectNameOverImage>{prop.name}</ProjectNameOverImage>
+                </ImageAndName>
+              </ProjectLink>
               <ProjectsHeading>{prop.name}</ProjectsHeading>
               <p>{prop.description}</p>
-              <Topics>{prop.topics}</Topics>
               {/* <p>{prop.html_url}</p> */}
+              {prop.topics.map((tag) => (
+                <Topics>{tag}</Topics>
+              ))}
             </div>
           ))}
         </FeaturedProjectsContent>
@@ -49,13 +56,42 @@ justify-content: flex-start;
 font-family:'Roboto', sans-serif;
 line-height: 30px;
 `
-
-export const ProjectsHeading = styled.h4`
-color: #D36B00;
+export const ImageAndName = styled.div`
+position: relative;
 `
+
 export const BigProjectsImage = styled.img`
 width: 100%;
 border: 2px solid #D36B00;
 border-radius: 10px;
+opacity: 0.7;
+&: hover {
+  opacity: 1;
+}
+`
+export const ProjectNameOverImage = styled.h2`
+position: absolute;
+background-color: #D36B00;
+padding: 0px 4px;
+font-size: 22px;
+border-radius: 5px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+&: hover {
+  opacity: 1;
+}
 `
 
+export const ProjectLink = styled.a`
+color: white;
+
+
+&: :visited {
+color:white;
+}
+`
+
+export const ProjectsHeading = styled.h4`
+color: #D36B00;
+`
