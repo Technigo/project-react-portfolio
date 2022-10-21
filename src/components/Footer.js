@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { InnerWrapperFooter, OuterWrapperFooter } from 'styles/ProjectStyles';
 
 const Footer = () => {

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React, { useState, useEffect } from 'react';
 
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { BlueTitle, InnerWrapperSection, OuterWrapperSection } from 'styles/ProjectStyles';
 
 const MyThoughts = () => {
@@ -38,20 +38,25 @@ const MyThoughts = () => {
           {articleFromMedium.map((article) => {
             return (
               <MyThoughtsCard>
-                <MyThoughtsImage>
-                  <img
-                    src={article.thumbnail}
-                    alt="desktop with computers" />
-                </MyThoughtsImage>
-                <MyThoughtsInfo>
-                  <ArticleDate>{`${sliceStringFromArticle(article.pubDate, 0, 10)}`}</ArticleDate>
-                  <ArticleTitle tabIndex="0">
-                    {article.title.toUpperCase()}
-                  </ArticleTitle>
-                  <p>
-                    {`${sliceStringFromArticle(article.description, 0, 200).replace(/[/]/g, '').replace(/<p>/g, '').replace(/<strong>/g, '')}... `}<BlueSpan>&gt;&gt;</BlueSpan>
-                  </p>
-                </MyThoughtsInfo>
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noreferrer">
+                  <MyThoughtsImage>
+                    <img
+                      src={article.thumbnail}
+                      alt={article.title} />
+                  </MyThoughtsImage>
+                  <MyThoughtsInfo>
+                    <ArticleDate>{`${sliceStringFromArticle(article.pubDate, 0, 10)}`}</ArticleDate>
+                    <ArticleTitle tabIndex="0">
+                      {article.title.toUpperCase()}
+                    </ArticleTitle>
+                    <p>
+                      {`${sliceStringFromArticle(article.description, 0, 200).replace(/[/]/g, '').replace(/<p>/g, '').replace(/<strong>/g, '')}... `}<BlueSpan>&gt;&gt;</BlueSpan>
+                    </p>
+                  </MyThoughtsInfo>
+                </a>
               </MyThoughtsCard>
             )
           })}
@@ -65,15 +70,19 @@ export default MyThoughts;
 const MyThoughtsWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+  @media (min-width: 1024px) {
+    :hover img {
+      filter: brightness(50%);
+    }
+  }
 `
 const MyThoughtsCard = styled.div`
   width: 100%;
-  margin-top: 5vh;
-
+  margin: 5vh 0 5vh 0;
   @media (min-width: 668px) {
     width: 45%;  
-  }
+  }  
 `
 const MyThoughtsImage = styled.div`
   width: 100%;

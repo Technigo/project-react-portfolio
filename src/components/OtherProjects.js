@@ -32,7 +32,7 @@ const OtherProjects = (
         href={gitLink}
         target="_blank"
         rel="noreferrer">
-        <TagWrapper grey>
+        <TagWrapper grey hover>
           <h5>GitHub Repo</h5>
         </TagWrapper>
       </a>

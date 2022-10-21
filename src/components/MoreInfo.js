@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 import linkedin from 'assets/linkedin-color-icon.svg'
 import github from 'assets/github-icon.svg'

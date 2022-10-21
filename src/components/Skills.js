@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { BlueTitle, InnerWrapperSection, OuterWrapperSection } from 'styles/ProjectStyles';
 
 const SkillsSection = () => {
@@ -62,12 +62,16 @@ const SkillsWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: space-between;
   margin: 5vh 0 5vh 0;
   text-align: center;
 `
 const SkillsCard = styled.div`
   width: 50%;
   margin-bottom: 3vh;
+  @media (min-width: 1024px) {
+    width: 33%;
+  }
 `
 
 const SkillsInfo = styled.div`

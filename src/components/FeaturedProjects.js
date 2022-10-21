@@ -17,12 +17,12 @@ const FeaturedProjects = (
         href={deploymentLink}
         target="_blank"
         rel="noreferrer">
-        <FeaturedProjectsImage>
-          <img
+        <FeaturedProjectsImageWrapper>
+          <FeaturedProjectsImage
             src={image}
             alt="" />
-          <h4 aria-hidden="true">{title}</h4>
-        </FeaturedProjectsImage>
+          <FeaturedProjectsImageTitleCentered aria-hidden="true">{title}</FeaturedProjectsImageTitleCentered>
+        </FeaturedProjectsImageWrapper>
         <FeaturedProjectsInfo>
           <h4>{title} BUILT IN {tags.includes('javascript') ? 'JAVASCRIPT' : 'REACT'}.</h4>
           <p>{description}</p>
@@ -39,7 +39,7 @@ const FeaturedProjects = (
         href={gitLink}
         target="_blank"
         rel="noreferrer">
-        <TagWrapper grey>
+        <TagWrapper grey hover>
           <h5>GitHub Repo</h5>
         </TagWrapper>
       </a>
@@ -68,33 +68,43 @@ const FeaturedProjectsCard = styled.div`
   }
 `
 
-const FeaturedProjectsImage = styled.div`
+const FeaturedProjectsImageWrapper = styled.div`
   width: 100%;
   position: relative;
   height: 200px;
-  & img {
-    width: 100%;
-    height: 200px;
-    filter: brightness(75%);
-    object-fit: cover;
+  @media (min-width: 1024px) {
+    :hover img {
+      filter: brightness(50%);
+    }
+    :hover h4 {
+      transform: scale(1.1);
+    }
   }
-  & h4 {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 22px;
-    text-align: center;
-    color: #ffffff;
-  }
+`
+
+const FeaturedProjectsImage = styled.img`
+  width: 100%;
+  height: 200px;
+  filter: brightness(75%);
+  object-fit: cover;    
+`
+
+const FeaturedProjectsImageTitleCentered = styled.h4`
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
 `
 
 const FeaturedProjectsInfo = styled.div`
   width: 100%;
   font-family: 'Roboto';
   font-style: normal;
-  margin: 1vh 0 1vh 0;
+  margin: 1vh 0 0 0;
   & h4 {
     font-weight: 700;
     font-size: 17px;
@@ -112,10 +122,11 @@ const FeaturedProjectsInfo = styled.div`
   }
 `
 
-export const TagWrapper = styled.h5`
+export const TagWrapper = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  column-gap: 10px;
   & h5 {
     color: #2b2e34;
     font-weight: bold;
@@ -123,7 +134,17 @@ export const TagWrapper = styled.h5`
     font-size: 12px;
     line-height: 12px;
     padding: 4px;
-    margin: 10px 6px 3px 0;
-    border-radius: 5px;
+    margin: 10px 0;
+    border-radius: 5px;    
   }
+  @media (min-width: 668px) {
+    & h5 {      
+      font-size: 14px;
+      line-height: 14px;
+      padding: 6px;      
+    }
+    & :hover {
+        filter: ${(props) => (props.hover ? 'brightness(75%)' : 'brightness(100%)')};
+      }
+    }
 `
