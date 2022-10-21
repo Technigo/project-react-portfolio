@@ -9,7 +9,7 @@ import rData from '../data.json';
 // const { highlights, projects } = rData; /* samma som const highlights = rData.highlights; */
 const { highlights, projects } = rData;
 
-console.log('rData', rData)
+console.log('rData', rData);
 console.log('highlights', highlights);
 console.log('projects', projects);
 
@@ -19,27 +19,43 @@ console.log('result', filteredProjects);
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
   border: solid 2px red;
-  // display: row;
-  // justify-content: center;
-  // padding: 10px 0 40px 0;
-  // font-family: Montserrat, sans-serif;
-  // font-weight: 400;
-  // text-align: center;
+  padding: 45px 0 65px 0;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+
 
   .project-box{
-    // padding: 30px 0 20px 0;
+    padding: 30px 0 20px 0;
     display: grid;
+    grid-template-columns: 100%;
+    aling-items; center;
     gap: 50px;
   }
-`
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    
+  .project-box{
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 30px;
+  }
+}
+
+  @media (min-width: 1025px) {
+    .project-box{
+    padding: 30px 0 50px 0;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }}
+`;
 const Projects = () => {
   return (
-    <ContentWrapper
-      as="section"
-      backgroundColor="var(--thirdBackground)">
+    <ContentWrapper as="section" backgroundColor="var(--thirdBackground)">
+      <ColorTitle background="var(--fourthTitle)" title="Featured projects" />
       <ProjectStyle>
-        <ColorTitle
-          title="Projects" />
         <div className="project-box">
           {filteredProjects.map((project) => {
             return (
@@ -50,7 +66,7 @@ const Projects = () => {
                 projectName={project.projectName}
                 urlNetlify={project.urlNetlify}
                 text={project.descriptionText} />
-            )
+            );
           })}
         </div>
       </ProjectStyle>

@@ -57,9 +57,10 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   color: var(--sixthTitleSubtitle);
-  font-weight: 800;
+  font-weight: 800; /*Check why roboto fontweight not working*/
   line-height: 30px;
   margin: 20px 0 10px 0;
+  border: solid 3px green;
 }
 
 .project-button {

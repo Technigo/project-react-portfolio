@@ -16,13 +16,12 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
     font-family: Roboto, sans-serif;
     font-size: 25px;
     font-weight: 600;
-    color: var(--primary);
+    color: var(--secondaryBackground);
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--primary);
     transition: all 0.2s linear;
   }
 
@@ -58,6 +57,15 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
     display: flex;
     flex-direction: column;
   }
+
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    margin-top: 20px;
+}
 `;
   return (
     <ProjectCardStyle>

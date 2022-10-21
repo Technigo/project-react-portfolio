@@ -19,6 +19,7 @@ const ColorTitle = (props) => {
   margin: 18px;
   font-size: 18px;
   font-weight: 500;
+  font-family: Montserrat, sans-serif;
   letter-spacing: 1px;
   border: solid 2px blue;
 

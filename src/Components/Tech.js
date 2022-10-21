@@ -21,10 +21,11 @@ const Tech = () => {
     <ContentWrapper
       as="section"
       backgroundColor="var(--secondBackground)">
+
+      <ColorTitle
+        background="var(--fourthTitle)"
+        title="Tech" />
       <TechStyle>
-        <ColorTitle
-          background="var(--fourthTitle)"
-          title="Tech" />
         <p>HTML, CSS, Flexbox, JavaScript ES6, React, Web Accessibility, API:s, mob-programming,
           pair-programming, Github.
         </p>
