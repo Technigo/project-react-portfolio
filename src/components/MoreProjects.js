@@ -13,19 +13,18 @@ export const MoreProjects = ({ color, tagColor, backColor }) => {
           {moreprojects.map((project) => {
             return (
               <MoreProject
+                color={color}
                 key={project.title}
                 href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
                 target="_blank">
                 <InfoContainer>
-                  <SubTitle color={color}>{project.title.toUpperCase()}</SubTitle>
+                  <SubTitle color={color}>{project.title}</SubTitle>
                   <SubParagraph>{project.paragraph}<EndingArrows color={color}>{' >>'}</EndingArrows></SubParagraph>
                 </InfoContainer>
                 <SkillTagContainer>
                   <ul style={{ padding: 0 }}>
                     {project.tags.map((tag) => (
-                      <ProjectTags tagColor={tagColor}>
-                        {tag}
-                      </ProjectTags>
+                      <ProjectTags tagColor={tagColor}> {tag}</ProjectTags>
                     ))}
                   </ul>
                 </SkillTagContainer>
@@ -45,18 +44,11 @@ background-color: ${(props) => props.backColor}
 const InnerWrapper = styled.div`
   width: 80%;
   margin: 0 auto;
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  line-height: 1.4;
-
-  @media (max-width: 800px) {
-    font-size: 16px;
-    line-height: 1.4;
-  }
+  margin-bottom: 20px;
 `;
 
 const MoreProjectsContainer = styled.div`
@@ -79,13 +71,17 @@ const SectionHeader = styled.h3`
 
 const MoreProject = styled.a`
 text-decoration: none;
+border-top: 3px solid ${(props) => props.color};
+margin: 5px;
 ul {
-  margin: 0;
+  margin: 10px;
+  margin-left: 0;
 }
 `
 
 const InfoContainer = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const SkillTagContainer = styled.div`
@@ -97,18 +93,18 @@ const SkillTagContainer = styled.div`
 `;
 
 const ProjectTags = styled.li`
-padding: 0;
 font-family: 'Montserrat', sans-serif;
-color: black;
+color: white;
 border-radius: 5px;
-padding: 10px 10px;
+padding: 5px 10px;
 background-color: ${(props) => props.tagColor};
 display: inline;
 font-size: 14px;
-margin-right: 10px;
+margin-right: 5px;
+margin-bottom: 10px;
 
 @media (max-width: 800px) {
-  padding: 3px;
+  padding: 4px 8px;
   font-size: 14px;
   margin-right: 7px;
   }
@@ -116,27 +112,19 @@ margin-right: 10px;
 
 const SubTitle = styled.p`
   color: ${(props) => props.color};
-  text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
-  margin-right: 1%;
   font-size: 18px;
-  margin-block-end: 1em;
-  margin-block-start: 1em;
-  margin-bottom: 0;
+  margin: 0;
 `;
 
 const SubParagraph = styled.p`
   color: black;
-  text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  margin-block-end: 1em;
-  margin-block-start: 1em;
-  margin-bottom: 0;
 `;
 
 export const EndingArrows = styled.span`
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   color: ${(props) => props.color};
   display: inline;

@@ -65,7 +65,7 @@ const FeaturedThoughtWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   @media (max-width: 800px) {
     display: grid;
@@ -95,18 +95,7 @@ const ThumbnailImage = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  font-size: 26px;
   background-image: url(${(props) => props.url});
-  }
-`;
-
-const BlogTitle = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 16px;
-
-  ${ThoughtCard}:hover & {
-    text-decoration: underline;
   }
 `;
 
@@ -120,10 +109,20 @@ const BlogDate = styled.p`
   }
 `;
 
+const BlogTitle = styled.h2`
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 16px;
+
+  ${ThoughtCard}:hover & {
+    text-decoration: underline;
+  }
+`;
+
 const BlogInfo = styled.p`
   font-family: 'Montserrat', sans-serif;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 
   @media (max-width: 800px) {

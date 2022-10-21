@@ -67,13 +67,11 @@ padding: 10px;
   img {
     height: 70px;
     border-radius: 50%;
-    box-shadow: 
-    ${(props) => props.color} 2px 2px 20px 5px, 
-    ${(props) => props.color} -2px -2px 20px 5px;
+    border: 30px solid rgb(246, 245, 240);
   }
 
   img:hover {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 `;
 

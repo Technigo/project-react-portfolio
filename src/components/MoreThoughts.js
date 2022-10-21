@@ -14,7 +14,7 @@ export const MoreThoughts = ({ color, backColor }) => {
                 key={thought.title}
                 href={thought.url}
                 target="_blank">
-                <InfoContainer>
+                <InfoContainer color={color}>
                   <Date color={color}>{thought.date.toUpperCase()}</Date>
                   <Title>{thought.title}<EndingArrows color={color}>{' >>'}</EndingArrows></Title>
                 </InfoContainer>
@@ -67,35 +67,38 @@ export const MoreThoughtsContainer = styled.div`
 `;
 
 const MoreThought = styled.a`
-
+text-decoration: none;
 `
 
 export const InfoContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 3px solid ${(props) => props.color};
+
+ @media (max-width: 800px) {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
 `;
 
 export const SkillTagContainer = styled.div`
   display: flex;
 `;
 
-export const Date = styled.h4`
+export const Date = styled.p`
   color: ${(props) => props.color};
   font-family: 'Montserrat', sans-serif;
-  text-decoration: underline;
-  margin-right: 1%;
   font-size: 18px;
-  font-weight: bold;
-  margin-block-end: 1em;
-  margin-block-start: 1em;
+  margin: 0;
+  margin-right: 10px;
 `;
 
 export const Title = styled.p`
   color: black;
-  text-decoration: underline;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  margin-block-end: 1em;
-  margin-block-start: 1em;
 `;
 
 export const EndingArrows = styled.span`

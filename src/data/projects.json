@@ -2,37 +2,37 @@
     {
       "title": "Movies",
       "title-description": "Website listing recently released popular movies.",
-      "project-description": "A multipage application using React Router.",
+      "project-description": "A multipage React application using routes.",
       "repo-name": "project-movies",
       "netlify-name": "https://project-movies-linnea-nina.netlify.app",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API"],
-      "image": "/project-img/weatherApp2.jpg"
+      "image": "/project-img/movies.png"
     },
     {
-      "title": "Avocado News 2",
-      "title-description": "2 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/project-img/weatherApp2.jpg"
+      "title": "Music",
+      "title-description": "Website showing new album and single releases.",
+      "project-description": "gihaeöoihgaelrugnlaerug",
+      "repo-name": "project-music-releases",
+      "netlify-name": "https://neah-and-linnea-music-releases.netlify.app",
+      "tags": ["HTML5", "CSS3", "JavaScript", "React", "API"],
+      "image": "/project-img/music.png"
     },
     {
-      "title": "Avocado News 3",
-      "title-description": "3 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/project-img/weatherApp2.jpg"
+      "title": "Survey",
+      "title-description": "Neontastic survey",
+      "project-description": "A typeform-like survey built with React",
+      "repo-name": "project-survey",
+      "netlify-name": "https://linneas-neontastic-survey.netlify.app",
+      "tags": ["HTML5", "CSS3", "JavaScript", "React"],
+      "image": "/project-img/survey.png"
     },
     {
-      "title": "Avocado News 4",
-      "title-description": "4 news site about avocados",
+      "title": "Weather app",
+      "title-description": "Weather app based on open Weather API",
       "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/project-img/weatherApp2.jpg"
+      "repo-name": "project-weather-app",
+      "netlify-name": "wheather-app-linnea-and-tika.netlify.app",
+      "tags": ["HTML5", "CSS3", "JavaScript", "API"],
+      "image": "/project-img/weatherApp.png"
     }
   ]

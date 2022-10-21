@@ -20,7 +20,7 @@ export const Projects = ({ color, tagColor, backColor }) => {
                   <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
                 </ThumbnailWrapper>
                 <ProjectInfoHeader color={color}>
-                  {project['title-description'].toUpperCase()}
+                  {project['title-description']}
                 </ProjectInfoHeader>
                 <ProjectInfo>{project['project-description']}</ProjectInfo>
                 <ul style={{ padding: 0 }}>
@@ -44,7 +44,6 @@ background-color: ${(props) => props.backColor};
 `
 
 const InnerWrapper = styled.div`
-background: #f4f4f457;
   width: 80%;
   margin: 0 auto;
   max-width: 1100px;
@@ -78,7 +77,7 @@ const FeaturedProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   @media (max-width: 800px) {
     display: grid;
@@ -97,24 +96,24 @@ const ProjectCard = styled.a`
   text-decoration: none;
   position: relative;
 
-  /* Optional hover effect, delete if not desired */
-  /* &:hover {
+  &:hover {
     transform: translateY(-1%);
     transition: transform 0.3s;
-  } */
+  } 
 `;
 
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
   border-radius: 20px;
+  text-align: center;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 24px;
   background-image: linear-gradient(180deg, #1c232580, #1c232580),
     url(${(props) => props.url});
   &:hover {
@@ -129,24 +128,24 @@ const ThumbnailTitle = styled.h2`
   position: absolute;
 `;
 
-const ProjectInfoHeader = styled.h3`
+const ProjectInfoHeader = styled.h2`
   font-family: 'Montserrat', sans-serif;
   color: ${(props) => props.color};
-  font-size: 24px;
+  font-size: 18px;
 
   ${ProjectCard}:hover & {
     text-decoration: underline;
   }
 
   @media (max-width: 800px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
 const ProjectInfo = styled.p`
   font-family: 'Montserrat', sans-serif;
   color: black;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.4;
 
   ${ProjectCard}:hover & {
@@ -154,24 +153,24 @@ const ProjectInfo = styled.p`
   }
 
   @media (max-width: 800px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
 const ProjectTags = styled.li`
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  border-radius: 5px;
-  padding: 10px 10px;
-  background-color: ${(props) => props.tagColor};
-  display: inline;
-  font-size: 14px;
-  margin-right: 10px;
+font-family: 'Montserrat', sans-serif;
+color: white;
+border-radius: 5px;
+padding: 5px 10px;
+background-color: ${(props) => props.tagColor};
+display: inline;
+font-size: 14px;
+margin-right: 5px;
+margin-bottom: 10px;
 
-  @media (max-width: 800px) {
-    padding: 3px;
-    font-size: 14px;
-    margin-right: 7px;
+@media (max-width: 800px) {
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-right: 7px;
   }
 `;

@@ -1,6 +1,6 @@
 [
     {
-      "title": "More project 1",
+      "title": "Happy Thoughts",
       "paragraph": "A responsive web site using HTML & CSS",
       "repo-name": "project-news-site",
       "netlify-name": "avocodo-news",
@@ -8,24 +8,8 @@
       "image": "../assets/project-img/weatherApp2.jpg"
     },
     {
-      "title": "More project 2",
+      "title": "Guess Who",
       "paragraph": "description about more project 2",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "../assets/project-img/weatherApp2.jpg"
-    },
-    {
-      "title": "More project 3",
-      "paragraph": "3 news site about avocados",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "../assets/project-img/weatherApp2.jpg"
-    },
-    {
-      "title": "More project 4",
-      "paragraph": "some other project and description",
       "repo-name": "project-news-site",
       "netlify-name": "avocodo-news",
       "tags": ["HTML5", "CSS3"],
