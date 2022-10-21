@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FIRSTARTICLE_URL, SECONDARTICLE_URL } from 'utils/Urls';
-import FirstMediumArticle from 'assets/medium1.jpg'
-import SeconndMediumArticle from 'assets/medium2.jpg'
-
 import { Wrapper, SectionTitle, GridWrapper, Paragraph } from './GlobalStyles';
 
 export const Thoughts = () => {
@@ -16,7 +13,7 @@ export const Thoughts = () => {
             href={FIRSTARTICLE_URL}
             target="_blank"
             rel="noreferrer">
-            <img src={FirstMediumArticle} alt="article" />
+            <img src="images/medium1.jpg" alt="article" />
             <ArticleText primary>September 2022</ArticleText>
             <ArticleTitle>
             My Little Early Coding Journey
@@ -33,7 +30,7 @@ export const Thoughts = () => {
             href={SECONDARTICLE_URL}
             target="_blank"
             rel="noreferrer">
-            <img src={SeconndMediumArticle} alt="article" />
+            <img src="images/medium2.jpg" alt="article" />
             <ArticleText primary>October 2022</ArticleText>
             <ArticleTitle>
             Good Is Not Good Enough
@@ -53,43 +50,45 @@ export const Thoughts = () => {
 }
 
 const ArticleStyle = styled.div`
-width: 90%;
-margin-top: 5%;
-a{
+  width: 90%;
+  margin-top: 5%;
+  
+  a{
     text-decoration: none;
     color:#614124;
     margin-bottom: 10%; 
     display: flex;
     flex-direction: column;
+    transition: transform .8s; 
 
     &:hover {
-        opacity: 40%;
-        transition: opacity .5s; 
+    transform: scale(0.95);
     }
 }
-img{
+  
+  img{
     width: 100%;
     height: 200px;
     object-fit:cover;
     margin-bottom: 10px;
-}
+  }
 `
 
 const ArticleTitle = styled(SectionTitle)`   
-    padding: 5px;
-    font-size: 15px;
-    margin: 10px 0;  
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px 0;  
 `
 
 const ArticleText = styled(Paragraph)`
-    line-height: 20px;
-    margin: 0;
+  line-height: 20px;
+  margin: 0;
     
-    @media (min-width: 520px) and (max-width: 1023px){
-        font-size: 16px;
-      }
+  @media (min-width: 520px) and (max-width: 1023px){
+    font-size: 16px;
+  }
       
-      @media (min-width: 1024px){
-        font-size: 18px;
-      } 
+  @media (min-width: 1024px){
+    font-size: 18px;
+  } 
 `

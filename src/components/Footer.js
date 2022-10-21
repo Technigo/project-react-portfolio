@@ -16,10 +16,10 @@ export const Footer = () => {
 }
 
 export const FooterWrapper = styled(Wrapper)`
-background-color: #006f45;
-padding-top: 20%;
+  background-color: #006f45;
+  padding-top: 20%;
 
-@media (min-width: 668px) and (max-width: 1023px) {
+  @media (min-width: 668px) and (max-width: 1023px) {
     padding-top: 10%;
   }
 
@@ -28,8 +28,8 @@ padding-top: 20%;
   }
 `
 const ContactInfo = styled.div`
-margin: 5% auto;
-text-align: center;
+  margin: 5% auto;
+  text-align: center;
 
   @media (min-width: 1024px){
     margin: 0 auto;

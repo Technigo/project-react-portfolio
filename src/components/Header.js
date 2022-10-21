@@ -1,11 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
-import HeroImage from 'assets/hero-image.jpg'
-import LinkedinIcon from 'assets/linkedin-icon.svg';
-import GithubIcon from 'assets/github-icon.svg';
-import ProfileImage from 'assets/Kartika.png'
-
 import { LINKEDIN_URL, GITHUB_URL } from 'utils/Urls';
 import { Title, IconContainer, IconButton } from './GlobalStyles';
 
@@ -19,7 +13,7 @@ export const Header = () => {
           href={LINKEDIN_URL}
           target="_blank">
           <img
-            src={LinkedinIcon}
+            src="/images/linkedin-icon.svg"
             alt="LinkedIn icon for the header" />
         </IconButton>
         <IconButton
@@ -28,26 +22,24 @@ export const Header = () => {
           href={GITHUB_URL}
           target="_blank">
           <img
-            src={GithubIcon}
+            src="/images/github-icon.svg"
             alt="Github icon for the header" />
         </IconButton>
       </IconContainer>
-
       <TitleContainer>
         <Title><span>Portfolio:</span> Kartika Purwahyuningrum</Title>
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </TitleContainer>
-
       <ImageContainer>
-        <img src={ProfileImage} alt="Kartika" />
+        <img src="/images/Kartika.png" alt="Kartika" />
       </ImageContainer>
     </HeaderContainer>
   )
 }
 
 const HeaderContainer = styled.header`
-  background-image: url(${HeroImage});
+  background-image: url('/images/hero-image.jpg');
   height: 400px;
   background-position: center center;
   background-size: cover;
@@ -79,7 +71,7 @@ const TitleContainer = styled.div`
     font-weight: 100;
   }
 
-@media (min-width: 520px) and (max-width: 1023px){
+  @media (min-width: 520px) and (max-width: 1023px){
     line-height: 50px;
 
   h1{
@@ -88,7 +80,7 @@ const TitleContainer = styled.div`
   }
 }
 
-@media (min-width: 1024px){
+  @media (min-width: 1024px){
     line-height: 65px;
     left: 15%;
 

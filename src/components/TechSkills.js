@@ -16,8 +16,8 @@ export const TechSkills = () => {
 }
 
 const TechSkillsText = styled(Paragraph)`
-text-align: center;
-margin-top: 5%;
+  text-align: center;
+  margin-top: 5%;
 
   @media (min-width: 1024px){
     margin-top: 0;

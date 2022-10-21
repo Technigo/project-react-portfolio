@@ -38,31 +38,31 @@ export const Skills = () => {
 }
 
 const SkillsContainer = styled.div`
-display: flex;
-    flex-direction: column;
-    margin: 5% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0 0 0;
 
-    @media (min-width: 668px) and (max-width: 1023px){
-        flex-direction: row;
-    }
+  @media (min-width: 668px) and (max-width: 1023px){
+    flex-direction: row;
+  }
 
-      @media (min-width: 1024px){
-        flex-direction: row;
-      }
+  @media (min-width: 1024px){
+    flex-direction: row;
+  }
 `
 const SkillsCategory = styled.div`
-margin-top: 2%;
-margin-bottom: 10%;
-text-align: center;
-color: #614124;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  text-align: center;
+  color: #614124;
 `
 
 const SkillsList = styled(ProjectParagraph)`
-margin: 10% 0;
-display: block;
-line-height: 12px;
+  margin: 10% 0;
+  display: block;
+  line-height: 12px;
 
-@media (min-width: 520px) and (max-width: 1023px){
+  @media (min-width: 520px) and (max-width: 1023px){
     font-size: 16px;
   }
   

@@ -1,4 +1,5 @@
-import React from 'react'; import { Header } from 'components/Header';
+import React from 'react';
+import { Header } from 'components/Header';
 import { GlobalStyles } from 'components/GlobalStyles';
 import { Introduction } from 'components/Introduction';
 import { TechSkills } from 'components/TechSkills';

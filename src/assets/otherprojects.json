@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Guess Who Game",
+        "id": "5",
+        "image": "",
+        "netlify_url": "https://lucky-concha-e3a418.netlify.app/",
+        "github": "https://github.com/katirum/project-guess-who",
+        "description": "Packed with JavaScript that highlights the conditional statements to make the game work.",
+        "tags": ["JavaScript ES6", "CSS", "HTML", "Github"]
+      },
+      {
+        "title": "Weather App",
+        "id": "6",
+        "image": "",
+        "netlify_url": "https://tika-linnea-weatherapp.netlify.app/",
+        "github": "https://github.com/katirum/project-weather-app",
+        "description": "A weather app done in pairs that used API to fetch the data and display weather depending on where the user is.",
+        "tags": ["JavaScript ES6", "API", "CSS", "HTML", "Pair Program", "Github"]
+      },
+      {
+        "title": "Music Releases",
+        "id": "7",
+        "image": "",
+        "netlify_url": "https://v-k-music.netlify.app/",
+        "github": "https://github.com/katirum/project-music-releases",
+        "description": "New music app done in pair. Fetched data from Spotify API",
+        "tags": ["React", "JavaScript ES6", "APIs", "CSS", "HTML", "Pair Program", "Github"]
+      },
+      {
+        "title": "Stockholm Tour",
+        "id": "8",
+        "image": "",
+        "netlify_url": "https://enchanting-dodol-8f5cc6.netlify.app/",
+        "github": "https://github.com/katirum/project-business-site",
+        "description": "A website created in mob programming session that contains forms and JavaScript for people who wants to sign up for an event ",
+        "tags": ["JavaScript ES6", "CSS", "HTML", "Mob Program", "Github"]
+      },
+      {
+        "title": "New Movies",
+        "id": "9",
+        "image": "",
+        "netlify_url": "https://joel-tika-movies.netlify.app/",
+        "github": "https://github.com/katirum/project-movies",
+        "description": "A multipage site that shows the current most popular movies and a details page about the selected movie when clicked",
+        "tags": ["React", "JavaScript ES6", "APIs", "CSS", "HTML", "Pair Program", "Github"]
+      }
+  ]

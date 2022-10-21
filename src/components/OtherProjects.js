@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BUSINESSSITE_URL } from 'utils/Urls'
+import data from '../assets/otherprojects.json'
 import { SectionTitle, Wrapper, TagIcons, ProjectParagraph, OverlinedHeading } from './GlobalStyles';
 
 export const OtherProjects = () => {
@@ -8,24 +8,24 @@ export const OtherProjects = () => {
     <Wrapper primary>
       <SectionTitle>OTHER PROJECTS</SectionTitle>
       <OtherProjectsList>
-        <OtherProjectsDisplay>
-          <a
-            href={BUSINESSSITE_URL}
-            target="_blank"
-            rel="noreferrer">
-            <OverlinedHeading>Business Site: Stockholm Tour.</OverlinedHeading>
-          </a>
-          <ProjectParagraph primary>A website created in mob programming session that
-             contains forms and JavaScript for people who wants to sign up for an event
-          </ProjectParagraph>
-        </OtherProjectsDisplay>
-        <OtherProjectsTags>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>Mob Programming</p>
-          <p className="tag-github-icon">Github</p>
-        </OtherProjectsTags>
+        {data.map((item) => (
+          <OtherProjectsDisplay key={item.id}>
+            <a
+              href={item.netlify_url}
+              target="_blank"
+              rel="noreferrer"
+              role="button">
+              <OverlinedHeading>{item.title}</OverlinedHeading>
+              <ProjectParagraph primary>{item.description}
+              </ProjectParagraph>
+            </a>
+            <OtherProjectsTags>
+              {item.tags.map((tag) => (
+                <p key={tag}>{tag}</p>
+              ))}
+            </OtherProjectsTags>
+          </OtherProjectsDisplay>
+        ))}
 
       </OtherProjectsList>
     </Wrapper>
@@ -33,23 +33,45 @@ export const OtherProjects = () => {
 }
 
 const OtherProjectsList = styled.div`
-padding-top: 5%;
+  padding-top: 10%;
+
+  @media (min-width: 1024px){
+    padding-top: 5%;
+    }
 `
 const OtherProjectsDisplay = styled.div`
- margin-bottom: 2%;
-a{
+  margin-bottom: 20%;
+  
+  a{
     text-decoration: none;
     font-size: 15px;
     display: inline-block;
-    font-weight: 800;
+    font-weight: 400;
+    transition: transform .8s; 
 
     &:hover{
-        text-decoration: underline; 
+    transform: scale(0.95);
     }
-}
-}    
+  } 
+
+  @media (min-width: 600px) and (max-width: 1023px){
+    margin-bottom: 10%;
+  }
+
+  @media (min-width: 1024px){
+    margin-bottom: 5%;
+  }
+         
+`
+const OtherProjectsTags = styled(TagIcons)`
+  margin: 5% 0;
+
+  @media (min-width: 600px) and (max-width: 1023px){
+    margin-bottom: 10%;
+  }
+
+  @media (min-width: 1024px){
+    margin: 2% 0 8% 0;
+  }
 `
 
-const OtherProjectsTags = styled(TagIcons)`
-margin: 0;
-`
