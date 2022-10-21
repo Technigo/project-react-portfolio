@@ -69,7 +69,7 @@ const Projects = () => {
               <h3 className="image-text">{project.name.replace(/-/g, ' ')}</h3>
               <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
             </div>}
-            <Title>{project.name.replace(/-/g, ' ')}</Title>
+            <ClonedTitle>{project.name.replace(/-/g, ' ')}</ClonedTitle>
             <ProjectText>{project.description}</ProjectText>
             <Tags className="box-text">{renderTags(project.topics)}</Tags>
           </ProjectLinks>
@@ -111,11 +111,16 @@ const ProjectLinks = styled.a`
   text-decoration: none;
 `
 
+const ClonedTitle = styled(Title)`
+  padding-top: 0%;
+`
+
 const ProjectText = styled(MainText)`
   color: black;
   font-family: 'Roboto', sans-serif; 
   text-align: left;
   margin: 0%;
+  margin-bottom: 3%;
 
   @media ${Devices.laptop} {
     &:hover {
@@ -175,12 +180,12 @@ const OtherWrap = styled.div`
 
   a {
     display: grid;
-    grid-template-columns: 90px auto;
+    grid-template-columns: 175px auto;
     width: 100%;
 
     @media ${Devices.tablet} {
       display: grid;
-      grid-template-columns: 90px auto;
+      grid-template-columns: 175px auto;
       width: 100%;
     }
   }
