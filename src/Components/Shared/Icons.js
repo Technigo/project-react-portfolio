@@ -1,31 +1,25 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Github from '../../Assets/linkedin_logotype.svg';
-import Inkedin from '../../Assets/github_logotype.svg';
+import Github from '../../Assets/Logotype_linkedin_black.svg';
+import Inkedin from '../../Assets/Logotype_github_white.svg';
 
 const Icons = () => {
-  const IconsStyle = styled.img`
-  font-size: 2em;
-  padding: 10px;
-  `;
+  const IconsStyle = styled.img` 
+  width: 55px;
+  
 
-  return (
-    <div>
-      <IconsStyle>
-        <img src={Github} alt="React Logo" />
-        <img src={Inkedin} alt="React Logo" />
 
-      </IconsStyle>
-    </div>
+  @media (min-width: 667px) and (max-width: 1024px) {
+    width: 6 0px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 70px;
+  }
+  `
+
+  return (<><IconsStyle src={Github} alt="Github Logo" /><IconsStyle src={Inkedin} alt="LinkedIn Logo" />
+  </>
   );
 };
 export default Icons;
-
-/*
-<a href="https://www.linkedin.com/in/petra-eriksson-623b6a163/">
-<a href="https://github.com/petrasson/">
- <IconsStyle>
- <img className="icon-picture" src={Inkedin} alt="Go to Petras LinkedIn" target="_blank" />
- <img className="icon-picture" src={Github} alt="Go to Petras Github" target="_blank" />
- </IconsStyle>
-*/
