@@ -1,39 +1,17 @@
-import styled from 'styled-components'
 import React from 'react-dom'
+import { Line, Dot } from '../styles/Intro'
+import { Section, MainText } from '../styles/Main'
 
 const Intro = () => {
   return (
-    <StyledIntro>
-      <p><span className="line" /><span className="dot" />
-      I am a driven and ambitious frontend developer.
-      </p>
-    </StyledIntro>
+    <Section>
+      <MainText> <Line /><Dot />I am a driven and ambitious frontend developer.
+      Previously my career has been spent in fashion design as a product developer.
+      Since the summer of 2022 I am on a path leading to a new career,
+      currently studying frontend development.
+      </MainText>
+    </Section>
   );
 }
-
-const StyledIntro = styled.div`
-border: 2px solid hotpink;
-display: flex;
-flex-direction: column;
-height: 350px;
-align-items: center;
-justify-content: center;  
-}
-
-.line {
-  border: 1px solid #99A799;
-  width: 30px;
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #99A799;
-  border-radius: 50%;
-  display: inline-block;
-}
-`
 
 export default Intro;

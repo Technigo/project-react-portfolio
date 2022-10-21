@@ -1,11 +1,11 @@
-import styled from 'styled-components'
 import React, { useEffect, useState } from 'react';
-import Global from './Global';
-import weather from '../images/weatherapp.png'
+import { Title, MainText } from '../styles/Main'
+import { SectionFeaturedProjects, WrapProject, Wrapper, ProjectImage, ProjectTitle, Programs, ProgramsWrapper, Overlay } from '../styles/Projects'
+import weather from '../images/survey.png'
 import guesswho from '../images/guesswho.png'
 
 const Projects = () => {
-  const selectedprojects = ['project-chatbot', 'project-guess-who', 'project-survey', 'project-movies']
+  const selectedprojects = ['project-happy-thoughts', 'project-survey', 'project-guess-who', 'project-movies']
   const projectimg = [
     weather,
     guesswho
@@ -23,51 +23,31 @@ const Projects = () => {
   }, [])
 
   return (
-    <FeaturedProjects>
-      <Global>Featured Projects</Global>
-      {repos.map((repo, index) => {
-        console.log(index)
-        return (
-          <>
-            <p key={repo.id}>{repo.name}</p>
-            <img src={projectimg[0]} alt="project" />
-          </>
-        )
-      })}
-    </FeaturedProjects>
+    <SectionFeaturedProjects>
+      <Title>Featured Projects</Title>
+      <Wrapper>
+        {repos.map((repo, index) => {
+          console.log(index)
+          return (
+            <div key={repo.id}>
+              <WrapProject>
+                <Overlay>
+                  <ProjectImage src={projectimg[0]} alt="project" />
+                </Overlay>
+                <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
+                <MainText>{repo.description}</MainText>
+                <ProgramsWrapper>
+                  <Programs>{repo.topics[0]}</Programs>
+                  <Programs>{repo.topics[1]}</Programs>
+                  <Programs>{repo.topics[2]}</Programs>
+                </ProgramsWrapper>
+              </WrapProject>
+            </div>
+          )
+        })}
+      </Wrapper>
+    </SectionFeaturedProjects>
   );
 }
-
-const FeaturedProjects = styled.div`
-border: 2px solid hotpink;
-width: 100%;
-margin: 0%;
-display: flex;
-flex-direction: column;
-height: 1180px;
-text-align: center;
-align-items: center;
-`
-
-// const ProjectContainer = styled.div`
-// border: 2px solid hotpink;
-// display: flex;
-// flex-direction: column;
-// width: 80%;
-// height: 100px;
-// align-items: center;
-// text-align: center;
-// `
-// const ProjectTitle = styled.h3`
-// display: column;
-// color: #677867;
-// font-family: 'Montserrat';
-// font-style: normal;
-// font-weight: 700;
-// font-size: 19px;
-// text-align: center;
-// align-items: center;
-// justify-content: center;
-// `
 
 export default Projects;

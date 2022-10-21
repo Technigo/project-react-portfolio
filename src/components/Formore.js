@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import React from 'react-dom'
-import Global from './Global';
+import { Title } from '../styles/Main'
 
 const Formore = () => {
   return (
     <StyledMythoughts>
-      <Global>For more</Global>
+      <Title>For more</Title>
     </StyledMythoughts>
   );
 }

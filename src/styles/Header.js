@@ -36,22 +36,36 @@ color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 0.04em;
+  line-height: 4px;
+  letter-spacing: 0.03em;
   width: 400px;
 }
 
 .frontend {
   font-size: 35px;
-  line-height: 49px;
+  line-height: 38px;
   font-weight: 700;
   margin: 0;
 }
 
 .designer {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 40px;
   font-weight: 500;
   margin: 0;
 }
+`
+
+export const IconsWrapper = styled.div`
+display: flex;
+width: 110px;
+right: 5%;
+top: 50px;
+justify-content: space-between;
+flex-direction: row;
+position: absolute;
+`
+
+export const Icon = styled.img`
+width: 50px;
 `

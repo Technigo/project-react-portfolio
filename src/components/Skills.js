@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import React from 'react-dom'
-import Global from './Global';
+import { Title } from '../styles/Main'
 
 const Skills = () => {
   return (
     <StyledMythoughts>
-      <Global>Skills</Global>
+      <Title>Skills</Title>
     </StyledMythoughts>
   );
 }
