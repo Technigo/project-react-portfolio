@@ -4,7 +4,7 @@ import { Icons } from './Icons'
 
 export const ForMore = () => {
   return (
-    <InnerWrapper selectedColor="#3f6f58c2">
+    <InnerWrapper selectedColor="#a0bcb8">
       <MainHeaders>for more</MainHeaders>
       <IconGroup
         justifyContent="space-around">

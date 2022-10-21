@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import { API_TOKEN } from 'secret'
-import { MainHeaders, InnerWrapper, StyledH3, StyledH4, FeaturedProjectsImg } from './globalStyling'
+import { MainHeaders, InnerWrapper, TitleTertiary, TitleQuaternary, SingleTag } from './globalStyling'
 
 export const Projects = () => {
   const [projectsList, setProjectsList] = useState([])
@@ -26,8 +26,8 @@ export const Projects = () => {
   const FilteredProjects = projectsList.filter((item) => item.name.includes('project-'));
   FilteredProjects.splice(6, 2);
 
+  // Filtering my starred projects to make them the featured projects
   const FeaturedProjects = FilteredProjects.filter((project) => project.stargazers_count !== 0)
-
   const OtherProjects = FilteredProjects.filter((project) => project.stargazers_count === 0)
 
   useEffect(() => {
@@ -40,9 +40,15 @@ export const Projects = () => {
       {FeaturedProjects.map((project) => (
         <ProjectCard key={project.id}>
           <StyledDescriptionLink href={project.homepage}>
-            <FeaturedProjectsImg width="100%" borderRadius="5px" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail/thumbnail.png`} alt="thumbnail of project" />
+            <Overlay>
+              <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail/thumbnail.png`} alt="thumbnail of project" />
+              <OverlayText>
+                <h4>{project.name.replaceAll('-', ' ').replaceAll('project', '')}</h4>
+              </OverlayText>
+            </Overlay>
+
             <ProjectDescription>
-              <StyledH4>{project.name.replaceAll('-', ' ')}</StyledH4>
+              <TitleQuaternary>{project.name.replaceAll('-', ' ')}</TitleQuaternary>
               <p>{project.description}</p>
             </ProjectDescription>
           </StyledDescriptionLink>
@@ -55,12 +61,12 @@ export const Projects = () => {
       ))}
 
       <div>
-        <StyledH3 selectedColor="#2f694d" marginTop="10%">other projects</StyledH3>
+        <TitleTertiary selectedColor="#2f694d" marginTop="10%">other projects</TitleTertiary>
         {OtherProjects.reverse().map((project) => (
           <ProjectCard key={project.id}>
             <StyledDescriptionLink href={project.homepage}>
               <ProjectDescription>
-                <StyledH4>{project.name}</StyledH4>
+                <TitleQuaternary>{project.name}</TitleQuaternary>
                 <p>{project.description} <span> &gt;&gt;</span></p>
               </ProjectDescription>
             </StyledDescriptionLink>
@@ -83,6 +89,7 @@ export const ProjectCard = styled.div`
 export const StyledDescriptionLink = styled.a`
   text-decoration: none;
   color: black;
+
 `
 
 export const StyledLink = styled.a`
@@ -105,19 +112,47 @@ span {
   font-weight: 700;
 }
 `
-
-export const SingleTag = styled.p`
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.7rem;
-    line-height: 0.9rem;
-    background-color: #ffc15c7a;
-    margin: 3px;
-    padding: 3px 8px;
-    border-radius: 2px;
-`
-
 export const Tags = styled.div`
-  display: flex;
-  margin: 0.5rem 0rem 0rem 0rem;
-
+    display: flex;
+    margin: 0.5rem 0rem 0rem 0rem;
 `
+export const FeaturedProjectsImg = styled.img`
+    width: ${(props) => (props.width)};
+  `
+
+export const Overlay = styled.div`
+  position: relative;
+
+  & :hover {
+      opacity: 0;
+    }
+`
+export const OverlayText = styled.div`
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: #484848a1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+
+  /* .Project__Overlay:hover .Project__OverlayText h4 {
+    color: red;
+  }
+
+  .Project__Overlay:hover .ProjectOverlayText h4:hover {
+    color: blue;
+  } */
+
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+`
+// not hover 484848a1(63%). #484848

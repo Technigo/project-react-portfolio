@@ -50,6 +50,7 @@ const StyledLink = styled.a`
   align-items: center;
   width: ${(props) => (props.linkWidth)};
   text-decoration: none;
+  text-align: center;
 
 p{
   font-size: 0.8rem;

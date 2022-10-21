@@ -14,12 +14,12 @@ export const MainHeaders = styled.h2`
     text-align: center;
     background-color: #2f694d;
     color: white;
-    padding: 1%;
-    margin-bottom: 4%;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
 `
 
-export const StyledH3 = styled.h3`
+export const TitleTertiary = styled.h3`
     font-size: 1.6rem;
     line-height: 1.9rem;
     color: ${(props) => (props.selectedColor)};
@@ -30,12 +30,14 @@ export const StyledH3 = styled.h3`
     margin-top: ${(props) => (props.marginTop)};
     `
 
-export const StyledH4 = styled.h4`
+export const TitleQuaternary = styled.h4`
     font-weight: 700;
     font-size: 1.3rem;
     line-height: 1.8rem;
     color: #2f694d;
     text-transform: uppercase;
+    margin: 0.5rem 0rem;
+
 `
 
 export const IconGroup = styled.div`
@@ -47,7 +49,13 @@ export const IconGroup = styled.div`
     justify-content:${(props) => (props.justifyContent)};
   `
 
-export const FeaturedProjectsImg = styled.img`
-    width: ${(props) => (props.width)};
-    border-radius: ${(props) => (props.borderRadius)};
-  `
+export const SingleTag = styled.p`
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    background-color: #ffe7c0;
+    margin: 10px 8px 0px 0px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    width: fit-content;
+`
