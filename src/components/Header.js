@@ -8,22 +8,23 @@ import { IconGroup } from './globalStyling'
 export const Header = () => {
   return (
     <HeaderStyling>
-      <IconGroup
-        position="absolute"
-        top="5%"
-        right="7%"
-        justifyContent="flex-end">
-        <Icons
-          iconWidth="20px"
-          iconMargin="10px"
-          boxMargin="3px"
-          boxWidth="40px" />
-      </IconGroup>
-      <Headlines>
-        <h1>PORTFOLIO: <span>LINNÉA AJGER</span></h1>
-        <h2>frontend developer</h2>
-      </Headlines>
-      <ProfilePicture src={profile3} alt="profile" />
+      <HeaderContent>
+        <IconGroup
+          position="absolute"
+          top="10%"
+          justifyContent="flex-end">
+          <Icons
+            iconWidth="20px"
+            iconMargin="10px"
+            boxMargin="3px"
+            boxWidth="40px" />
+        </IconGroup>
+        <Headlines>
+          <h1>PORTFOLIO: <span>LINNÉA AJGER</span></h1>
+          <h2>frontend developer</h2>
+        </Headlines>
+        <ProfilePicture src={profile3} alt="profile" />
+      </HeaderContent>
     </HeaderStyling>
 
   )
@@ -38,13 +39,16 @@ const HeaderStyling = styled.div`
     background-size: cover;
     width: 100%;
     color: white;
-    `;
+
+    @media (min-width: 1025px) {
+      height: 680px;
+    }
+    `
 
 const Headlines = styled.div`
     position: absolute;
-    width: 60%;
+    width: 220px;
     height: 50%;
-    left: 7%;
     top: 30%;
     letter-spacing: 0.04em;
 
@@ -63,14 +67,39 @@ const Headlines = styled.div`
     font-size: 3rem;
     line-height: 3.7rem;
     }
+    
+    @media (min-width: 668px) {
+      width: 250px;
+    }
+    @media (min-width: 1025px) {
+      width: 330px;
+    }
     `
 
 const ProfilePicture = styled.img`
     position: absolute;
-    right: 10%;
+    right: 0%;
     bottom: -30px;
-    width: 50%;
-    max-width: 250px;
+    max-width: 180px;
     border: 2px solid #feffff;
     border-radius: 50%;
+
+    @media (min-width: 668px) {
+      max-width: 260px;
+    }
+    @media (min-width: 1025px) {
+      max-width: 333px;
+    }
     `
+
+const HeaderContent = styled.div`
+    margin: 0 auto;
+    height: 520px;
+    width: 80%;
+    max-width: 1100px;
+    position: relative;
+
+    @media (min-width: 1025px) {
+      height: 680px;
+    }
+`

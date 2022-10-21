@@ -1,11 +1,20 @@
 import styled from 'styled-components/macro'
 
-export const InnerWrapper = styled.div`
+export const OuterWrapper = styled.div`
     background-color: ${(props) => (props.selectedColor)};
-    padding: 10%;
+
+`
+export const InnerWrapper = styled.div`
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width:1025px) {
+            max-width: 1100px;
+    }
 `
 export const MainHeaders = styled.h2`
     font-weight: 700;
@@ -38,6 +47,10 @@ export const TitleQuaternary = styled.h4`
     text-transform: uppercase;
     margin: 0.5rem 0rem;
 
+  &:hover {
+        text-decoration: underline;
+    }
+
 `
 
 export const IconGroup = styled.div`
@@ -59,3 +72,12 @@ export const SingleTag = styled.p`
     border-radius: 2px;
     width: fit-content;
 `
+
+export const GridDiv = styled.div`
+    @media (min-width: 668px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    align-items: start;
+    }
+ `

@@ -1,48 +1,61 @@
-
-import React from 'react'
+import React, { useMemo } from 'react'
+import { FiGithub } from 'react-icons/fi';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { ImStackoverflow } from 'react-icons/im';
+import { IconContext } from 'react-icons';
 import styled from 'styled-components/macro'
-import Github from './icons/Github.svg'
-import LinkedIn from './icons/LinkedIn.svg'
-import StackOverflow from './icons/StackOverflow.svg'
 
 // eslint-disable-next-line max-len
-export const Icons = ({ iconMargin, iconWidth, boxWidth, linkWidth, linkedin, github, stackOverflow }) => {
+export const Icons = ({ boxWidth, linkWidth, linkedin, github, stackOverflow }) => {
+  const IconColor = useMemo(() => ({ color: 'white', size: '2rem', className: 'react-icons' }), []);
+
   return (
-    <>
+    <IconContext.Provider value={IconColor}>
+
       <StyledLink linkWidth={linkWidth} href="https://www.linkedin.com/in/linneaajger" aria-label="link to Linneas linkedin-profile">
         <OuterBox boxWidth={boxWidth}>
-          <StyledIcons iconMargin={iconMargin} iconWidth={iconWidth} src={LinkedIn} alt="Linked in icon" />
+          <FaLinkedinIn />
         </OuterBox>
         <p>{linkedin}</p>
       </StyledLink>
       <StyledLink linkWidth={linkWidth} href="https://github.com/LinneaAjger" aria-label="link to Linneas github account">
         <OuterBox boxWidth={boxWidth}>
-          <StyledIcons iconMargin={iconMargin} iconWidth={iconWidth} src={Github} alt="Github icon" />
+          <FiGithub />
         </OuterBox>
         <p>{github}</p>
       </StyledLink>
       <StyledLink linkWidth={linkWidth} href="https://stackoverflow.com/users/19495108/linnea-a" aria-label="link to Linneas stack Overflow account">
         <OuterBox boxWidth={boxWidth}>
-          <StyledIcons iconMargin={iconMargin} iconWidth={iconWidth} src={StackOverflow} alt="Stack Overflow icon" />
+          <ImStackoverflow />
         </OuterBox>
         <p>{stackOverflow}</p>
       </StyledLink>
-    </>
+    </IconContext.Provider>
   )
 }
 
-const StyledIcons = styled.img`
+export const StyledIcons = styled.img`
 margin: ${(props) => (props.iconMargin)};
 width: ${(props) => (props.iconWidth)};
+
 `
 
 const OuterBox = styled.div`
 border: 2px solid white;
 border-radius: 50%;
-width: ${(props) => (props.boxWidth)};
+width: 3rem;
+height: 3rem;
 display: flex;
 justify-content: center;
+align-items: center;
 margin: 3px;
+padding: 10px;
+transition: 0.3s ease-in-out;
+
+&:hover {
+transform: scale(1.1);
+transform: translate(0%,-10%);}
+
 `
 const StyledLink = styled.a`
   display: flex;
@@ -59,5 +72,14 @@ p{
   color: white;
   text-transform: uppercase;
   margin-top: 20px;
+}
+
+svg {
+  transition: 0.3s ease-in-out;
+
+}
+
+& :hover > svg, .OuterBox:hover {
+transform: scale(1.1)
 }
   `

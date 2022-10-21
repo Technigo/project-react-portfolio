@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
-import { MainHeaders, InnerWrapper, TitleTertiary, TitleQuaternary, SingleTag } from './globalStyling'
+import { MainHeaders, OuterWrapper, TitleTertiary, TitleQuaternary, SingleTag, GridDiv, InnerWrapper } from './globalStyling'
 
 export const Projects = () => {
   const [projectsList, setProjectsList] = useState([])
@@ -34,64 +34,69 @@ export const Projects = () => {
   }, [])
 
   return (
-    <InnerWrapper selectedColor="#578e8724">
-      <MainHeaders>featured projects</MainHeaders>
-      {FeaturedProjects.map((project) => (
-        <ProjectCard key={project.id}>
-          <StyledDescriptionLink href={project.homepage}>
-            <Overlay>
-              <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail/thumbnail.png`} alt="thumbnail of project" />
-              <OverlayText>
-                <h4>{project.name.replaceAll('-', ' ').replaceAll('project', '')}</h4>
-              </OverlayText>
-            </Overlay>
+    <OuterWrapper selectedColor="#578e8724">
+      <InnerWrapper>
+        <MainHeaders>featured projects</MainHeaders>
+        <GridDiv>
+          {FeaturedProjects.map((project) => (
+            <ProjectCard key={project.id}>
+              <StyledDescriptionLink href={project.homepage}>
+                <Overlay>
+                  <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail/thumbnail.png`} alt="thumbnail of project" />
+                  <OverlayText>
+                    <h4>{project.name.replaceAll('-', ' ').replaceAll('project', '')}</h4>
+                  </OverlayText>
+                </Overlay>
 
-            <ProjectDescription>
-              <TitleQuaternary>{project.name.replaceAll('-', ' ')}</TitleQuaternary>
-              <p>{project.description}</p>
-            </ProjectDescription>
-          </StyledDescriptionLink>
-          <StyledLink href={project.html_url}>👉 Github</StyledLink>
+                <ProjectDescription>
+                  <TitleQuaternary>{project.name.replaceAll('-', ' ')}</TitleQuaternary>
+                  <p>{project.description}</p>
+                </ProjectDescription>
+              </StyledDescriptionLink>
+              <StyledLink href={project.html_url}>👉 Github</StyledLink>
 
-          <Tags>
-            {project.topics.map((tag) => <SingleTag key={tag.index}>{tag}</SingleTag>)}
-          </Tags>
-        </ProjectCard>
-      ))}
+              <Tags>
+                {// eslint-disable-next-line react/no-array-index-key
+                } {project.topics.map((tag, index) => <SingleTag key={index}>{tag}</SingleTag>)}
+              </Tags>
+            </ProjectCard>
+          ))}
+        </GridDiv>
 
-      <div>
-        <TitleTertiary selectedColor="#2f694d" marginTop="10%">other projects</TitleTertiary>
-        {OtherProjects.reverse().map((project) => (
-          <ProjectCard key={project.id}>
-            <StyledDescriptionLink href={project.homepage}>
-              <ProjectDescription>
-                <TitleQuaternary>{project.name}</TitleQuaternary>
-                <p>{project.description} <span> &gt;&gt;</span></p>
-              </ProjectDescription>
-            </StyledDescriptionLink>
-            <StyledLink href={project.html_url}>👉 Github</StyledLink>
+        <div>
+          <TitleTertiary selectedColor="#2f694d" marginTop="10%">other projects</TitleTertiary>
+          {OtherProjects.reverse().map((project) => (
+            <ProjectCard key={project.id}>
+              <StyledDescriptionLink href={project.homepage}>
+                <ProjectDescription>
+                  <TitleQuaternary>{project.name}</TitleQuaternary>
+                  <p>{project.description} <span> &gt;&gt;</span></p>
+                </ProjectDescription>
+              </StyledDescriptionLink>
+              <StyledLink href={project.html_url}>👉 Github</StyledLink>
 
-            <Tags>
-              {project.topics.map((tag) => <SingleTag key={tag.index}>{tag}</SingleTag>)}
-            </Tags>
-          </ProjectCard>
-        ))}
-      </div>
-    </InnerWrapper>
+              <Tags>
+                {// eslint-disable-next-line react/no-array-index-key
+                } {project.topics.map((tag, index) => <SingleTag key={index}>{tag}</SingleTag>)}
+              </Tags>
+            </ProjectCard>
+          ))}
+        </div>
+      </InnerWrapper>
+    </OuterWrapper>
   )
 }
 
-export const ProjectCard = styled.div`
-  padding: 20px 0px;
+const ProjectCard = styled.div`
+margin-bottom: 2rem;
 `
 
 export const StyledDescriptionLink = styled.a`
   text-decoration: none;
-  color: black;
-
+  color: #666666;
 `
 
-export const StyledLink = styled.a`
+const StyledLink = styled.a`
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
@@ -99,7 +104,7 @@ export const StyledLink = styled.a`
   color:#2f694d;
 `
 
-export const ProjectDescription = styled.div`
+const ProjectDescription = styled.div`
 margin: 1rem 0rem 0.5rem 0rem;
 
 a{
@@ -110,8 +115,16 @@ span {
   color:#2f694d;
   font-weight: 700;
 }
+
+&:hover {
+  color: black;
+}
+&:hover h4{
+        text-decoration: underline;
+    }
+
 `
-export const Tags = styled.div`
+const Tags = styled.div`
     display: flex;
     margin: 0.5rem 0rem 0rem 0rem;
 `
@@ -119,14 +132,14 @@ export const FeaturedProjectsImg = styled.img`
     width: ${(props) => (props.width)};
   `
 
-export const Overlay = styled.div`
+const Overlay = styled.div`
   position: relative;
 
   & :hover {
       opacity: 0;
     }
 `
-export const OverlayText = styled.div`
+const OverlayText = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
@@ -138,14 +151,6 @@ export const OverlayText = styled.div`
     border-radius: 5px;
     transition: 0.3s ease-in-out;
 
-  /* .Project__Overlay:hover .Project__OverlayText h4 {
-    color: red;
-  }
-
-  .Project__Overlay:hover .ProjectOverlayText h4:hover {
-    color: blue;
-  } */
-
   h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -154,4 +159,4 @@ export const OverlayText = styled.div`
     text-transform: uppercase;
   }
 `
-// not hover 484848a1(63%). #484848
+

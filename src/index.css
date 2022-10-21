@@ -39,3 +39,17 @@ p {
   margin-right: 5px;
   margin-bottom: 2px;
 }
+
+@media (min-width: 668px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html {
+    font-size: 24px;
+  }
+
+
+}
