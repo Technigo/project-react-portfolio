@@ -2,16 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 // import profile from './..assets/profile.png';
 import image1 from '../assets/image1.png';
+import linkedin from '../assets/linkedin.svg';
+import github from '../assets/github.svg';
 
 const Header = () => {
   return (
     <StyledHeader>
       <HeaderSocialLogo>
         <a href="https://www.aftonbladet.se/">
-          <img className="social-icon" src="./assets/linkedin.svg" alt="LinkedIn logo" />
+          <img className="social-icon" src={github} alt="LinkedIn logo" />
         </a>
         <a href="https://github.com/YoTesfam">
-          <img className="social-icon" src="./assets/github.svg" alt="Github logo" />
+          <img className="social-icon" src={linkedin} alt="Github logo" />
         </a>
       </HeaderSocialLogo>
 
