@@ -12,14 +12,18 @@ export const FeaturedProjects = () => {
       <StyledGrid>
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
-            <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-            <div className="project__title">{project.title}</div>
-            <div className="project__description">{project.description}</div>
+            <a href={project.url} target="_blank" rel="noreferrer">
+              <div className="image-container">
+                <div className="project__image"><img src={project.img_src} alt="Project" /></div>
+                <div className="after">{project.title}</div>
+              </div>
+              <div className="project__title">{project.title}</div>
+              <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
+            </a>
             <StyledTags>
               {project.tags.map((tag) => (
                 <li key={tag.id}>{tag.tech}</li>))}
             </StyledTags>
-
           </ProjectWrapper>
         ))}
       </StyledGrid>
@@ -30,6 +34,42 @@ export const FeaturedProjects = () => {
 export const ProjectWrapper = styled.article`
     width: 350px;
     margin: auto;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .image-container{
+                position: relative;
+            }
+
+            .image-container .after {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #60183575;
+            }
+
+            .image-container:hover .after {
+                display: block;
+                display: none;
+                color: #FFF;
+            }
+
+            .after{
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+            }
 
     .project__image img{
             width: 350px;
@@ -53,7 +93,6 @@ export const ProjectWrapper = styled.article`
                     font-size: 15px;
                     line-height: 25px;
                     padding: 10px 0;
-                    
                 }
 `
 

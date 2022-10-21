@@ -2,11 +2,12 @@
     {
         "title": "Happy thoughts",
         "id": 1,
-        "img_src": "/images/Happy-thoughts.png",
+        "img_src": "/project-images/Happy-thoughts.png",
         "title-description": "A site where you can send happy thoughts",
         "description": "Site built with React where you can send happy thoughts, list all thoughts and like them.",
         "repo-name": "project-happy-thoughts",
         "url": "https://github.com/uohman/project-happy-thoughts",
+        "url_netlify": "https://loquacious-kitten-5cad9c.netlify.app/",
         "tags": [
             {
             "id": 1,
@@ -26,11 +27,12 @@
     {
         "title": "Personal greeting",
         "id": 2,
-        "img_src": "/images/Personal-greeting.png",
+        "img_src": "/project-images/Personal-greeting.png",
         "title-description": "A site where you can make a personal greeting",
         "description": "A Typeform-like survey, built with React state and controlled forms.",
         "repo-name": "project-survey",
         "url": "https://github.com/uohman/project-survey",
+        "url_netlify": "https://chipper-biscochitos-fcf46f.netlify.app/",
         "tags": [
           {
           "id": 1,
@@ -50,11 +52,12 @@
     {
         "title": "Weather app",
         "id": 3,
-        "img_src": "/images/Weather-app.png",
+        "img_src": "/project-images/Weather-app.png",
         "title-description": "An app that tells today's weather",
         "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
         "repo-name": "project-weather-app",
         "url": "https://github.com/uohman/project-weather-app",
+        "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
         "tags": [
           {
           "id": 1,
@@ -74,11 +77,12 @@
     {
         "title": "Guess who",
         "id": 4,
-        "img_src": "/images/Guess-who.png",
+        "img_src": "/project-images/Guess-who.png",
         "title-description": "A digital version of the classic board game Guess Who",
         "description": "A digital version of the classic board game Guess Who built in JavaScript.",
         "repo-name": "project-guess-who",
         "url": "https://github.com/uohman/project-guess-who",
+        "url_netlify": "https://singular-parfait-a295c7.netlify.app/",
         "tags": [
           {
           "id": 1,

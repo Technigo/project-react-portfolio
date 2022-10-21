@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { ContainerWhite, StyledGrid, Subheading } from 'GlobalStyles';
 import thoughtOneImage from 'images/My-thoughts-1.png'
+import placeHolderImage from 'images/Placeholder-img.png'
 
 export const Thoughts = () => {
   return (
@@ -10,19 +11,23 @@ export const Thoughts = () => {
       <StyledGrid>
 
         <ItemWrapper>
-          <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
-          <div className="thought__text" />
-          <div className="thought__date">October 2022</div>
-          <div className="thought__title">My crush on coding</div>
-          <div className="thought__description">My journey into coding and how I feel about it 8 weeks into the boot camp. (Spoiler alert: I love it!)</div>
+          <a href="https://medium.com/@ulrikalovisa/my-crush-on-coding-534682bd3d" target="_blank" rel="noreferrer">
+            <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
+            <div className="thought__text" />
+            <div className="thought__date">October 2022</div>
+            <div className="thought__title">My crush on coding</div>
+            <div className="thought__description">My journey into coding and how I feel about it 8 weeks into the boot camp. (Spoiler alert: I love it!)</div>
+          </a>
         </ItemWrapper>
 
         <ItemWrapper>
-          <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
-          <div className="thought__text" />
-          <div className="thought__date">October 2022</div>
-          <div className="thought__title">Project 1 headline</div>
-          <div className="thought__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          <a href="#" target="_blank" rel="noreferrer">
+            <div className="thought__image"><img src={placeHolderImage} alt="My crush on coding" /></div>
+            <div className="thought__text" />
+            <div className="thought__date">October 2022</div>
+            <div className="thought__title">Thought 2 headline</div>
+            <div className="thought__description">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+          </a>
         </ItemWrapper>
 
       </StyledGrid>
@@ -66,5 +71,10 @@ export const ItemWrapper = styled.div`
             line-height: 25px;
             padding-top: 5px;
         }
+
+        a {
+        text-decoration: none;
+        color: black;
+    }
 
 `
