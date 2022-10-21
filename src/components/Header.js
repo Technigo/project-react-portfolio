@@ -1,27 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Heading } from 'GlobalStyles';
 import img from 'images/Portfolio-image.jpg'
 import backgroundImg from 'images/Header-image.jpg'
 
-export const Header = ({ name, title, titleTwo }) => {
-  name = 'Portfolio: Ulrika Öhman';
-  title = 'Frontend developer';
-  titleTwo = '& graphic designer';
-
+export const Header = () => {
   return (
     <StyledHeader>
       <div>
-        <StyledTitle>
-          <div>
-            <StyledName>
-              <div>{name}</div>
-            </StyledName>
-            <h1>{title}</h1>
-            <div>{titleTwo}</div>
-          </div>
-        </StyledTitle>
-        <img src={img} alt="Ulrikas profile" />
+        <StyledHeadings>
+          <div className="heading-name">Portfolio: Ulrika Öhman</div>
+          <Heading>Frontend<br />developer</Heading>
+          <div className="heading-title2">& graphic designer</div>
+        </StyledHeadings>
+        <div className="profile-image-container">
+          <img src={img} alt="Ulrikas profile" />
+        </div>
       </div>
+      <SoMeContainer>
+        <div className="soMe-icons">
+          <a href="https://www.linkedin.com/in/ulrika-%C3%B6hman-2ab3056a/" target="_blank" rel="noreferrer">
+            <SocialImage src="/project-images/linkedin.svg" alt="Go to my LinkedIn page" />
+          </a>
+          <a href="https://github.com/uohman" target="_blank" rel="noreferrer">
+            <SocialImage src="/project-images/github.svg" alt="Go to my GitGub page" />
+          </a>
+        </div>
+
+      </SoMeContainer>
     </StyledHeader>
   )
 };
@@ -35,40 +41,55 @@ background-image: url(${backgroundImg});
     left: 0px;
     top: 0px;
 
-
-img {
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    right: 25%;
-    bottom: -7%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    float: right;
-    margin-top: 80px;
-}
+    .profile-image-container img {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        right: 25%;
+        bottom: -7%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+        float: right;
+        margin-top: 80px;
+    }
 `;
 
-const StyledName = styled.div`
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 30px;
-`;
-
-const StyledTitle = styled.div`
+const StyledHeadings = styled.div`
     position: absolute;
     width: auto;
     
-    left: 10vw;
-    top: 239px;
+    left: 20vw;
+    bottom: 70px;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 40px;
     color: white;
+
+    .heading-name {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 30px;
+    }
 `;
 
+export const SoMeContainer = styled.div`
+    display: flex;
+    position: absolute;
+    right: 20vw;
+    top: 100px;
+`
+
+export const SocialImage = styled.img`
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+            
+        &:hover {
+        filter: invert(45%) sepia(85%) saturate(4000%) hue-rotate(328deg) brightness(90%) contrast(96%);
+        }
+`

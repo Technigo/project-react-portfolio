@@ -28,6 +28,10 @@ export const StyledGrid = styled.section`
     margin: 50px 250px;
 `
 
+export const Heading = styled.h1`
+    margin: 0px;
+`
+
 export const Subheading = styled.h2`
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
