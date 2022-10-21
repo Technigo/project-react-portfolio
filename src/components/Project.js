@@ -12,7 +12,6 @@ export const ProjectGrid = styled.div`
 export const ProjectWrap = styled.div`
  width: 337px;
  display: grid;
- background-color:white;
  padding-bottom: 20px;
  @media (min-width: 900px) {
    width: 367px;
