@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import ProjectImage from './ProjectImg.styled';
+import ProjectImg from './ProjectImg.styled';
+import thought1 from '../../assets/thought_article.png';
 
-const ThoughtsImg = styled(ProjectImage)`
-  background-color: red;
+const ThoughtsImg = styled(ProjectImg)`
+  background-image: url(${thought1});
+  border: 1px solid var(--main-color);
+  box-shadow: 3px 3px var(--main-color);
 
    & div {
-    background-color: green;
+    background-color: var(--third-color);
    }
 `
 

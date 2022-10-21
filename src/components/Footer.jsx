@@ -5,7 +5,7 @@ import Paragraph from './styled/Paragraph.styled';
 const Footer = () => {
   return (
     <StyledFooter>
-      <h3>Contact</h3>
+      <h4>Contact</h4>
       <Paragraph main center>
         Fredrik Holm
       </Paragraph>
@@ -35,20 +35,13 @@ const StyledFooter = styled.footer`
   width: 100%;
   height: 250px;
 
-  & h3 {
-    background-color: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+  & h4 {
+    background-color: transparent;
     margin: 1.1rem auto 0.5rem;
-    width: fit-content;
-    text-transform: uppercase;
   } 
 
   & a {
-    display: block;
     color: white;
     text-decoration: none;
-    text-transform: lowercase;
   }
 `;

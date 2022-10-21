@@ -32,8 +32,8 @@ const FeatProjects = () => {
             <Topic>css3</Topic>
           </TopicsContainer>
           <TopicsContainer>
-            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
-            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it Live</a>
+            <span>|</span> <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
         </ArticleCard>
 
@@ -54,8 +54,8 @@ const FeatProjects = () => {
             <Topic>html5</Topic>
           </TopicsContainer>
           <TopicsContainer>
-            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
-            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it Live</a>
+            <span>|</span> <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
         </ArticleCard>
 
@@ -76,8 +76,8 @@ const FeatProjects = () => {
             <Topic>html5</Topic>
           </TopicsContainer>
           <TopicsContainer>
-            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
-            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it Live</a>
+            <span>|</span> <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
         </ArticleCard>
 
@@ -101,8 +101,8 @@ const FeatProjects = () => {
             <Topic>html5</Topic>
           </TopicsContainer>
           <TopicsContainer>
-            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it live</a>
-            | <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
+            <a href="https://gladatankar.netlify.com" target="_blank" rel="noreferrer">View it Live</a>
+            <span>|</span> <a href="https://github.com/karlfredrikholm/project-happy-thoughts" target="_blank" rel="noreferrer">GitHub Repo</a>
           </TopicsContainer>
 
         </ArticleCard>

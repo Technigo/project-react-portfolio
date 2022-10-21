@@ -52,7 +52,6 @@ a {
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 a:visited {
@@ -114,7 +113,8 @@ h5 {
   font-family: var(--sub-font);
   font-size: 1rem;
   font-weight: 700;
-  margin-top: .8rem;
+  height: fit-content;
+  margin: 0.7rem 0 0.1rem 0.1rem;
   text-transform: uppercase;
 
   @media (max-width: 650px) {
@@ -126,11 +126,19 @@ h6 {
   color: white;
   font-size: 1.5rem;
   font-weight: 900;
-  text-shadow: 3px 3px black;
   padding-top: 5.5rem;
-  text-transform: uppercase
-}
+  text-transform: capitalize;
+  
+  @media (max-width: 750px) {
+    font-size: 1.3rem;
+    padding-top: 4.7rem;
+  }
 
+  @media (max-width: 650px) {
+    font-size: 1.5rem;
+    padding-top: 6.5rem;
+  }
+}
 `;
 
 export default GlobalStyles;

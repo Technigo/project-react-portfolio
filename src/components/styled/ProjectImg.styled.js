@@ -13,15 +13,16 @@ const ProjectImg = styled.div`
           : props.project4 ? `url(${projectImg4})`
             : null)};
   background-size: cover;
-  border: 1px solid black;
   aspect-ratio: 1.5 / 1;
+  border: 1px solid var(--third-color);
+  box-shadow: 3px 3px var(--third-color);
 
     & div {
       background-color: var(--main-color);
-      opacity: .9;
+      opacity: 0.9;
       height: 100%;
       margin: 0;
-      transition: all 0.3s;
+      transition: all 0.5s;
       text-align: center;
     }
 

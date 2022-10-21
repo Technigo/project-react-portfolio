@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 const Paragraph = styled.p`
-  font-family: ${(props) => (props.main ? 'var(--main-font)' : 'var(--sub-font)')};
+  font-family: ${({ main }) => (main ? 'var(--main-font)' : 'var(--sub-font)')};
   line-height: var(--line-height);
-  margin: var(--margin);
-  text-align: ${(props) => (props.center ? 'center' : 'left')};
-  width: ${(props) => (props.grid ? '100%' : 'var(--width)')};
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
+  
+  ${({ grid }) => (grid
+    ? { margin: '0', width: '90%' }
+    : { margin: 'var(--margin)', width: 'var(--width)' })};
+
 `;
 
 export default Paragraph;

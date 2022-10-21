@@ -7,6 +7,7 @@ const Topic = styled.p`
   font-size: 0.8rem;
   padding: 0.15rem 0.25rem;
   text-transform: uppercase;
+  word-break: keep-all;
 `;
 
 export default Topic;
