@@ -31,3 +31,12 @@ export const P = styled.p`
     font-size: 17px;
     line-height: 29px;
 `
+
+export const A = styled.a`
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  &&:Hover {
+    text-decoration: underline;
+  }
+`

@@ -1,0 +1,58 @@
+[
+    {
+        "featured": true,
+        "display": true ,
+        "shortname": "Happy Thoughts",
+        "name": "Happy Thoughts",
+        "description": "App to collect happy thoughts, in a twitter-like feed, using React and API.",
+        "tags": ["HTML", "CSS", "JavaScript", "API"],
+        "image": "./assets/happythoughts.png",
+        "netlify": "https://our-happy-thoughts.netlify.app/",
+        "github": "https://github.com/jesshansson/project-happy-thoughts"
+    },
+    {
+        "featured": true,
+        "display": true,
+        "name": "Find-a-friend survey",
+        "shortname": "React Survey",
+        "description": "A Typeform-like survey built with React state",
+        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "./assets/survey.png",
+        "netlify": "https://find-a-friend-survey.netlify.app/",
+        "github": "https://github.com/jesshansson/project-survey"
+    },    
+    {
+        "featured": true,
+        "display": true,
+        "name": "Popular Movies in the US",
+        "shortname": "Project Movies",
+        "description": "A website that shows the most popular movies in the US, built with React components, fetching the data from an API.",
+        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "./assets/movies.png",
+        "netlify": "https://popularmovies-us.netlify.app/",
+        "github": "https://github.com/jesshansson/project-movies"
+    },    
+    {
+        "featured": true,
+        "display": true,
+        "name": "News site",
+        "shortname": "Fem&Tech - a news site about women in tech",
+        "description": "A news site built with flexbox and grid about women in the tech business",
+        "tags": ["HTML", "CSS"],
+        "image": "./assets/femntech.png",
+        "netlify": "https://femntech-news.netlify.app/",
+        "github": "https://github.com/jesshansson/project-news-site"
+    },
+    {   
+        "featured": false,
+        "display": true,
+        "name": "Chatbot",
+        "shortname": "The Pep Bot chatbot",
+        "description": "An interactive chatbot giving pepful messages to the user",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "./assets/chatbot.png",
+        "netlify": "https://spectacular-pegasus-2e4240.netlify.app/",
+        "github": "https://github.com/jesshansson/project-chatbot"
+    }
+
+]

@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
-import { InnerWrapper, OuterWrapper } from 'StyledComponents/GlobalStyles';
+import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles';
 import { SubHeading } from 'StyledComponents/HeadlineStyles';
 
 const OtherProjects = () => {
@@ -19,10 +19,10 @@ const OtherProjects = () => {
     <OuterWrapper grey>
       <InnerWrapper>
         <SubHeading>OTHER PROJECTS</SubHeading>
-        {filteredProjects.map((project) => <>
-          <ProjectHeading>{project.name}</ProjectHeading>
+        {filteredProjects.map((project) => <A href={project.html_url}>
+          <ProjectHeading>{project.name.replaceAll('-', ' ').replaceAll('project', ' ').toUpperCase()}</ProjectHeading>
           <OtherProjetsText>{project.description} <Arrow> {'>>'} </Arrow></OtherProjetsText>
-        </>)}
+        </A>)}
       </InnerWrapper>
     </OuterWrapper>
   )
@@ -36,16 +36,13 @@ const ProjectHeading = styled.h3`
     line-height: 25px;
     letter-spacing: 0.01em;
     color: #aa658f;
+    text-align: center;
+    margin: 10px;
    
 `
 
-const OtherProjetsText = styled.p`
-    font-family: "Roboto";
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-
+const OtherProjetsText = styled(P)`
+text-align: center;
 `
 
 const Arrow = styled.span`

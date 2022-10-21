@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { HeaderFirstHeading, HeaderSecondHeading, HeaderThirdHeading } from 'StyledComponents/HeadlineStyles'
 import BackgroundImage from '../Images/background1.jpg'
 import ProfileImage from '../Images/jhansson.png'
+import GitHubIcon from '../Images/github-header-icon.png'
 
 export const Header = () => {
   return (
@@ -12,6 +13,7 @@ export const Header = () => {
         <HeaderSecondHeading>frontend developer</HeaderSecondHeading>
         <HeaderThirdHeading> & passionate about sustainable development </HeaderThirdHeading>
       </HeaderText>
+      <GitHubIco src={GitHubIcon} />
       <ProfilePic src={ProfileImage} alt="Jessica Hansson" />
     </HeaderWrapper>
   )
@@ -76,6 +78,13 @@ const ProfilePic = styled.img`
 const Bold = styled.span`
 font-weight: bold;
 `
+
+const GitHubIco = styled.img`
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50px;
+  `
 /*
 const SocialMediaContainer = styled.div`
   position: absolute;
