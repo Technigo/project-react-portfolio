@@ -27,11 +27,11 @@ const FeaturedProjects = () => {
           <ProjectWrapper>
             <ImageContainer>
               <ImageOverlay>
-                <p>{project.name}</p>
+                <p>{project.name.replaceAll('-', ' ').toUpperCase()}</p>
               </ImageOverlay>
               <img alt="project-img" src={`https://raw.githubusercontent.com/jessikalind/${project.name}/master/code/Thumbnail/thumbnail.png`} />
             </ImageContainer>
-            <PinkH3>{project.name}</PinkH3>
+            <PinkH3>{project.name.replaceAll('-', ' ').toUpperCase()}</PinkH3>
             <P>{project.description}</P>
             <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
             </TagContainer>
