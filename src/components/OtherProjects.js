@@ -1,6 +1,6 @@
 import React from 'react'
+import styled from 'styled-components/macro'
 import { TagWrapper, TagP, LinkP, ProjectLink, ProjectHead } from './FeaturedProjects';
-import { InnerWrapper } from './MainStyle';
 
 const OtherProjects = (
   {
@@ -12,23 +12,49 @@ const OtherProjects = (
   }
 ) => {
   return (
-    <InnerWrapper>
-      <div className="project other other-project">
-        <ProjectLink href={deployedLink} className="test">
-          <div className="other-text">
-            <ProjectHead>{projectTitle}</ProjectHead>
-            <LinkP className="underline">{projectDescription}</LinkP>
-            <TagWrapper>
-              <TagP>{techTags}</TagP>
-            </TagWrapper>
-          </div>
-        </ProjectLink>
-        <ProjectLink target="blank" href={repoLink}>
-          <LinkP>GitHub Repo &gt;&gt;</LinkP>
-        </ProjectLink>
-      </div>
-    </InnerWrapper>
+
+    <OtherCard>
+      <ProjectLink href={deployedLink} className="test">
+        <ProjectHead>{projectTitle}</ProjectHead>
+        <ClonedLinkP className="underline">{projectDescription}</ClonedLinkP>
+        <ClonedTagWrapper>
+          {techTags.map((tag) => {
+            return (<TagP key={tag}>{tag.toUpperCase()}</TagP>
+            );
+          })}
+        </ClonedTagWrapper>
+      </ProjectLink>
+      <ProjectLink target="blank" href={repoLink}>
+        <ClonedLinkP>GitHub Repo &gt;&gt;</ClonedLinkP>
+      </ProjectLink>
+    </OtherCard>
+
   )
 }
 
 export default OtherProjects;
+
+export const OtherCard = styled.article`
+  @media (min-width: 1024px) {
+   &{width: 45%;
+   }
+ }
+`
+export const OtherWrapper = styled.div`
+
+    @media (min-width: 768px) {
+    &{ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+}
+`
+const ClonedLinkP = styled(LinkP)`
+    padding: 0;
+`
+
+const ClonedTagWrapper = styled(TagWrapper)`
+    padding: 0;
+    margin: 0;
+`

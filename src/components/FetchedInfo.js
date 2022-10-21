@@ -1,12 +1,12 @@
+/* eslint-disable newline-per-chained-call */
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
 
-import FeaturedProjects from './FeaturedProjects'
-import OtherProjects from './OtherProjects'
+import FeaturedProjects, { FeaturedMedia } from './FeaturedProjects'
+import OtherProjects, { OtherWrapper } from './OtherProjects'
 
 import { BASE_URL } from '../utils/urls'
-import { H5Head, HeadH4, InnerWrapper } from './MainStyle'
-import { H4Wrapper } from './Tech'
+import { ClonedSectionWrapper, InnerWrapper, HeadH4, H5Head, SectionWrapper } from './MainStyle'
+import { HeadWrapper } from './Tech'
 
 const FetchedInfo = () => {
   const [repos, setRepos] = useState([]);
@@ -29,8 +29,8 @@ const FetchedInfo = () => {
       <FeaturedProjects
         key={repo.id}
         deployedLink={repo.homepage}
-        projectImage="https://picsum.photos/200/300"
-        projectTitle={repo.name}
+        projectImage=""
+        projectTitle={repo.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         projectDescription={repo.description}
         techTags={repo.topics}
         repoLink={repo.html_url} />
@@ -43,7 +43,7 @@ const FetchedInfo = () => {
       <OtherProjects
         key={repo.id}
         deployedLink={repo.homepage}
-        projectTitle={repo.name}
+        projectTitle={repo.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').toUpperCase()}
         projectDescription={repo.description}
         techTags={repo.topics}
         repoLink={repo.html_url} />
@@ -51,37 +51,31 @@ const FetchedInfo = () => {
   })
 
   return (
-    <ProjectSection>
-      <InnerWrapper>
-        <H4Wrapper>
-          <HeadH4>Featured Projects</HeadH4>
-        </H4Wrapper>
-        <FeaturedWrapper>
-          {allFeatured}
-        </FeaturedWrapper>
-        <div className="other-wrapper">
-          <H5Head>Other Projects</H5Head>
-          {allOther}
-        </div>
-      </InnerWrapper>
-    </ProjectSection>
+    <>
+
+      <ClonedSectionWrapper>
+        <InnerWrapper>
+          <HeadWrapper>
+            <HeadH4>Featured Projects</HeadH4>
+          </HeadWrapper>
+          <FeaturedMedia>
+            {allFeatured}
+          </FeaturedMedia>
+        </InnerWrapper>
+      </ClonedSectionWrapper>
+      <SectionWrapper>
+        <InnerWrapper>
+          <HeadWrapper>
+            <H5Head>Other Projects</H5Head>
+          </HeadWrapper>
+          <OtherWrapper>
+            {allOther}
+          </OtherWrapper>
+        </InnerWrapper>
+      </SectionWrapper>
+    </>
+
   )
 }
 
 export default FetchedInfo
-
-export const ProjectSection = styled.section` 
-  background-color: #f4f4f4;
-  width: 100%;
-  margin: 0;
-  text-align: left;
-  padding: 2rem 0;
-  align-items: center;
-`
-export const FeaturedWrapper = styled.div`
-    margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-    flex-wrap: wrap;
-`

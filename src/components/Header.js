@@ -31,24 +31,23 @@ const Header = () => {
 
 export default Header;
 
+// --- BackgroundImage ---
 const HeaderBackground = styled.header`
-    background-image: url(${HeadImg});;
+    background-image: url(${HeadImg});
     position: relative;
-    height: 45vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-
-    @media (min-width: 768px) {
-      height: 50vh;
-    }
+    width: 100%;
 
     @media (min-width: 1024px) {
-      height: 60vh;
-    }
+       height: 65vh;
+    } 
     `
+// --- Links ---
 const LinkContainer = styled.nav`
     display: flex;
     justify-content: flex-end;
@@ -57,37 +56,38 @@ const LinkContainer = styled.nav`
     gap: 15px;
 
     @media (min-width: 768px) {
-      margin-right: 10vw;
-      margin-top: 10vh;
+      &{ margin-right: 10vw;
+      margin-top: 8vh;
+      }
     };
-
     @media (min-width: 1024px) {
-      margin-right: 17vw;
-      margin-top: 13vh;
+      &{ margin-right: 17vw;
+      }
     }
     `
+// ---Header text and container---
 const HeaderInfo = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 70vw;
+    width: 55vw;
     height: 25vh;
     left: 10%;
     top: 25%;
     color: white; 
 
     @media (min-width: 768px) {
-        width: 35vw;
-        left: 12vw;
-        top: 15vh;
+        width: 45vw;
+        left: 13vw;
+        top: 18vh;
     }
-
     @media (min-width: 1024px) {
-      top: 20vh;
-      left: 20vw;
+      width: 30vw;
+        top: 18vh;
+      left: 22vw;
     }
 
-    h1 {
+    & h1 {
     font-weight: bold;
     font-size: 35px;
     letter-spacing: 0.04em;
@@ -97,29 +97,26 @@ const HeaderInfo = styled.div`
     @media (min-width: 768px) {
         font-size: 40px;
     }
-
-    @media (min-width: 1024px) {
-      font-size: 40px;
-    }
   }
-  h2 {
-    font-weight: 400;
+  & h2 {
+    font-weight: 500;
     font-size: 25px;
 
     @media (min-width: 768px) {
-        font-size: 30px;
+       font-size: 30px;
     }
     @media (min-width: 1024px) {
-      font-size: 35px;
+     font-size: 30px;
     }
   }
-  h3 {
-    font-weight: 200;
-    font-size: 17px;
+  & h3 {
+    font-weight: 500;
+    font-size: 15px;
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-        font-size: 19px
+       font-size: 19px
+       
     }
     @media (min-width: 1024px) {
       font-size: 24px;
@@ -138,12 +135,12 @@ const SpanName = styled.span`
     font-size: 19px;
     display: inline
   }
-
   @media (min-width: 1024px) {
     font-size: 24px;
     display: inline
   }
 `
+// ---Profile img ---
 const ProfileImg = styled.img`
     position: absolute;
     right: 10%;
@@ -156,16 +153,15 @@ const ProfileImg = styled.img`
     object-fit: cover;
     
     @media (min-width: 768px) {
-        height: 10rem;
+       height: 10rem;
       width: 10rem;
       border: 3px solid white;
       right: 15vw;
       bottom: -6vh;
-        //Ändra dessa 
     }
 
     @media (min-width: 1024px) {
-        height: 13rem;
+      height: 13rem;
       width: 13rem;
       right: 18vw;
       bottom: -7vh;

@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react'
 import styled from 'styled-components/macro';
-import { InnerWrapper, Text } from './MainStyle'
+import { InnerWrapper, ClonedSectionWrapper } from './MainStyle'
 
 const Intro = () => {
   return (
-    <IntroWrapper>
+    <ClonedSectionWrapper>
       <InnerWrapper>
-        <Text tabIndex="0">
+        <p tabIndex="0">
           <Line /><Dot />
      Hello and welcome! Since the middle of August I&apos;m a student at
      Technigo bootcamp, an intense and fun way to learn code. Before this
@@ -15,21 +15,14 @@ const Intro = () => {
      with has giving me skills that can be valuable in the world of web
      development. A few skills are creativity, to think outside the box and
      be flexible.
-        </Text>
+        </p>
       </InnerWrapper>
-    </IntroWrapper>
+    </ClonedSectionWrapper>
   )
 }
 
 export default Intro
 
-const IntroWrapper = styled.section`
-    background-color: #f4f4f4;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-    padding: 2rem 0;
-`
 const Line = styled.span` 
     border: 1px solid #4f6970;
     width: 40px;
@@ -43,6 +36,3 @@ const Dot = styled.span`
     border-radius: 50%;
     display: inline-block;
     `
-/* const IntroText = styled.p`
-    margin-top: 5%;
-  ` */
