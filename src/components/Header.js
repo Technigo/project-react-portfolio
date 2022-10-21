@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import Cecilia from '../images/Cecilia.jpeg'
+import Cecilia from '../images/Cecilia.png'
 import GitHub from '../images/NeonCat.png'
 import LInkedIn from '../images/NeonLink.png'
 import BackgroundImage from '../images/HeaderSpace.png'

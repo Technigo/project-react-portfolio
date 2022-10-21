@@ -8,8 +8,8 @@ const ContactFooter = () => {
       <SectionTitle>CONTACT</SectionTitle>
       <FooterWrap>
         <FooterContainer>
-          <h2>Cecilia Frålund</h2>
-          <h2>Frontend Developer</h2>
+          <h2>Cecilia Frånlund</h2>
+          <h2>jr frontend developer</h2>
           <h2>ceciliafraanlund@gmail.com</h2>
           <h2>+46 728 5454 14</h2>
           <h2>Stockholm, Sweden</h2>
