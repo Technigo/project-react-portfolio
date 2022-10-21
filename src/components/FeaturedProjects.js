@@ -19,7 +19,9 @@ export const FeaturedProjects = () => {
     .then((data) => {
       setFeaturedProjects(data)
     })
-  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey'));
+
+  const BigProjects = featuredProjects.filter((firstProjects) => (
+    firstProjects.stargazers_count === 1));
   return (
     <OuterWrapper beige>
       <Heading dark>FEATURED PROJECTS</Heading>
