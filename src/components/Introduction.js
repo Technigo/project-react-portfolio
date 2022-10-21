@@ -11,7 +11,6 @@ width: 100%;
 height: 200px;
 color: black;
 postition: relative;
-border: 2px solid red;
 display: flex;
 align-items: center;
 
@@ -21,9 +20,16 @@ export const IntroductionContent = styled.p`
 position: absolute;
 left: 50%;
 transform: translate(-50%);
-border: 2px solid blue;
 font-size: 14px;
 width:90%;
+
+.line {
+    border: 1px solid black;
+    width: 40px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: -8px;
+}
 
 @media (min-width: 668px) and (max-width: 1023px){
     width:70%;
@@ -34,7 +40,7 @@ width:90%;
 }
 
 @media (min-width: 1024px){
-    width:60%;
+    width:50%;
 
   img{
   height: 75px;  

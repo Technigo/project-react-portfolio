@@ -5,13 +5,15 @@ import { ForMore } from './components/ForMore'
 import FeaturedProjectCard from './components/FeaturedProjectCard'
 import { MyThoughts } from './components/MyThoughts'
 import { Introduction } from './components/Introduction'
+import { Tech } from './components/Tech'
 
 export const App = () => {
   return (
     <div>
       <Header />
       <Introduction />
-      <FeaturedProjectCard color="red" tagColor="pink"> </FeaturedProjectCard>
+      <Tech color="#262626" />
+      <FeaturedProjectCard color="#262626" tagColor="grey"> </FeaturedProjectCard>
       <OtherProjects />
       <OtherProjects />
       <MyThoughts />

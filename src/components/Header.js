@@ -74,7 +74,7 @@ export const HeaderTitle = styled.div`
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       display: block;
       margin: 2%;
     }
@@ -84,11 +84,11 @@ export const HeaderTitle = styled.div`
     left: 15%;
 
     h3 {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     h1 {
-      font-size: 50px;
+      font-size: 60px;
       display: block;
     }
   }
@@ -98,7 +98,7 @@ export const HeaderImage = styled.div`
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
-    border:2px solid white;
+    border:3px solid white;
     width: 170px;
     height: 170px;
     position: absolute;
