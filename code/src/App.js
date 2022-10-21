@@ -13,11 +13,6 @@ import Footer from './components/Footer';
 
 const App = () => {
   const [repos, setRepos] = useState([]);
-  const options = {
-    method: 'GET',
-    headers: {
-      Authorization: 'token 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'
-    }
   };
 
   useEffect(() => {
