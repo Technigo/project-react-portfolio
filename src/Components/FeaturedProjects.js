@@ -26,7 +26,9 @@ const FeaturedProjects = () => {
         {featuredProjects.map((project) =>
           <ProjectWrapper>
             <ImageContainer>
-              <div />
+              <ImageOverlay>
+                <p>{project.name}</p>
+              </ImageOverlay>
               <img alt="project-img" src={`https://raw.githubusercontent.com/jessikalind/${project.name}/master/code/Thumbnail/thumbnail.png`} />
             </ImageContainer>
             <PinkH3>{project.name}</PinkH3>
@@ -71,15 +73,28 @@ const ImageContainer = styled.div`
     display: block;
     width: 100%;
   }
-
-  div {
+`
+const ImageOverlay = styled.div`
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
     height: 100%;
     transition: .5s ease;
-    opacity:0;
+    opacity:1;
     text-align: center;
+
+    p {
+      padding: 25%;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+      font-family: 'Montserrat';
+    }
+
+  &:hover {
+    opacity: 0;
   }
+
 `
