@@ -32,9 +32,9 @@
 		"title": "Weather App",
 		"titleDescription": "A weather app built utilising APIs",
 		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+   		"Repo": "https://github.com/JosefineEngdahl/project-weather-app",
 		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/Weatherapp.jpg",
-		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"Netifly": "https://silver-profiterole-7224fd.netlify.app",
 		"tags": [
 			"HTML",
 			"CSS",
@@ -52,8 +52,8 @@
    		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
 		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
 		"tags": [
-			"HTML5",
-			"CSS3",
+			"HTML",
+			"CSS",
 			"JavaScript"
 		]
 
