@@ -6,19 +6,9 @@ export const Projects = () => {
   const [projectsList, setProjectsList] = useState([])
 
   const FetchProjects = () => {
-    const options = {
-      method: 'GET',
-      headers: {
-        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
-      }
-    }
-
-    fetch('https://api.github.com/users/linneaajger/repos', options)
+    fetch('https://api.github.com/users/linneaajger/repos')
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        setProjectsList(data)
-      })
+      .then((data) => setProjectsList(data))
   }
   // To filter the array of projects and remove the 2 projects with portfolio (index 6-7).
   // Will need to update this if the index changes with new projects.
