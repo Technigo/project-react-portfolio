@@ -3,13 +3,12 @@ import React from 'react'
 import { ScrollBtn } from 'Globalstyles';
 
 const ScrollButton = () => {
-  const theScrollBtn = document.getElementById('scrollBtn')
   // if the user scrolls down 60px from top the button will be visible
   const scrollFunction = () => {
     if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-      theScrollBtn.style.display = 'block';
+      document.getElementById('theScrollBtn').style.display = 'block';
     } else {
-      theScrollBtn.style.display = 'none';
+      document.getElementById('theScrollBtn').style.display = 'none';
     }
   };
 
