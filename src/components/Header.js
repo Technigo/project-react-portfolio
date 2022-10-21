@@ -10,7 +10,7 @@ import { GITHUB_URL, LINKEDIN_URL, STACKOVERFLOW_URL } from 'utils/Urls';
 
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
-  width: 100%;
+  width: 1005;
   height: 500px;
   background-position: top center;
   background-size: cover;
