@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { InnerWrapper, OuterWrapper, SectionTitle } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SectionTitle, Icons } from './global/GlobalStyling';
 
 export const ForMore = () => {
   const ForMoreSection = styled.div`
@@ -19,7 +19,9 @@ export const ForMore = () => {
           <SectionTitle>
             <p>for more</p>
           </SectionTitle>
-          <SocialMediaLinks />
+          <SocialMediaLinks>
+            <Icons />
+          </SocialMediaLinks>
         </ForMoreSection>
       </InnerWrapper>
     </OuterWrapper>
