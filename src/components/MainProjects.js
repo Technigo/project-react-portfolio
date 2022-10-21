@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BASE_URL, PROJECT_THUMBNAIL } from 'utils/urls';
 import styled from 'styled-components/macro';
 import { ProjectCard, Image, SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
@@ -7,7 +8,7 @@ export const MainProjects = () => {
 
   // Get all my projects on GitHub via API call:
   useEffect(() => {
-    fetch('https://api.github.com/users/brucette/repos')
+    fetch(BASE_URL)
       .then((response) => response.json())
       .then((json) => setProjects(json))
       .catch((error) => console.error(error))
@@ -22,22 +23,28 @@ export const MainProjects = () => {
   // Function to map over the tags and display them:
   const renderTags = (tags) => {
     return tags.map((tag) => {
-      return (<Tag>{tag}</Tag>)
+      return <Tag>{tag}</Tag>
     })
   }
 
+  // Image as link to deployed site and Text description as link to GitHub:
   return (
     mainFour.map((project) => {
       return (
-        <ProjectCard key={project.id} href="#" target="_blank" rel="noopener noreferrer">
-          <ImageContainer>
-            <ImageOverlay />
-            <Image src={`https://raw.githubusercontent.com/brucette/${project.name}/master/code/preview/projPreview.png`} alt="" />
-            <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
-          </ImageContainer>
-          <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
-          <p>{project.description}</p>
-          <Tags>{renderTags(project.topics)}</Tags>
+        <ProjectCard key={project.id}>
+          <a href={project.homepage} target="_blank" rel="noopener noreferrer">
+            <ImageContainer>
+              <ImageOverlay />
+              <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />
+              <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
+            </ImageContainer>
+          </a>
+
+          <a href={project.svn_url} target="_blank" rel="noopener noreferrer">
+            <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
+            <p>{project.description}</p>
+            <Tags>{renderTags(project.topics)}</Tags>
+          </a>
         </ProjectCard>
       );
     })

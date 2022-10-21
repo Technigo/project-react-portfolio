@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
-// STRUCTURAL STYLE-COMPONENTS (used in several sections of the page)
 
+// STRUCTURAL STYLE-COMPONENTS (used in several sections of the page)
 export const OuterWrapper = styled.section`
   background-color: ${(props) => props.backGroundcolor};
   text-align: center;
@@ -21,6 +21,11 @@ export const InnerWrapper = styled.section`
     flex-wrap: wrap;
     justify-content: space-between;
   }
+`
+
+export const AlignLeftWrapper = styled(InnerWrapper)`
+  flex-direction: column;
+  text-align: left;
 `
 
 export const MainHeadline = styled.h2`
@@ -77,7 +82,7 @@ export const NavBar = styled.nav`
   }
 `
 
-export const ProjectCard = styled.a`
+export const ProjectCard = styled.section`
   margin-bottom: 2rem;
   width: 85vw;
   height: 35vh;

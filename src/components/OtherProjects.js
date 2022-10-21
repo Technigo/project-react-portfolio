@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BASE_URL } from 'utils/urls';
 import { SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
 export const OtherProjects = () => {
@@ -6,7 +7,7 @@ export const OtherProjects = () => {
 
   // Get all my projects on GitHub via API call:
   useEffect(() => {
-    fetch('https://api.github.com/users/brucette/repos')
+    fetch(BASE_URL)
       .then((response) => response.json())
       .then((json) => setProjects(json))
       .catch((error) => console.error(error))
@@ -18,10 +19,10 @@ export const OtherProjects = () => {
   // Filter for other projects (not starred on github):
   const remaining = relProjects.filter((item) => item.stargazers_count === 0 && item.name !== 'project-business-site');
 
-  // PUT INTO SEPARATE FILE?
+  // Function to map over the tags and display them:
   const renderTags = (tags) => {
     return tags.map((tag) => {
-      return (<Tag>{tag}</Tag>)
+      return <Tag>{tag}</Tag>
     })
   }
 
@@ -37,8 +38,4 @@ export const OtherProjects = () => {
     })
   )
 }
-/* {item.topics.map((topic) => {
-    return (
-        <span>{topic}</span>
-      )
-    }} */
+

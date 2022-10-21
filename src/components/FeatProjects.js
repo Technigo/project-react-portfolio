@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/macro';
-import { OuterWrapper, InnerWrapper, MainHeadline, MediumHeadline } from 'styles/GlobalStyles';
+import { OuterWrapper, InnerWrapper, AlignLeftWrapper, MainHeadline, MediumHeadline } from 'styles/GlobalStyles';
 import { MainProjects } from './MainProjects';
 import { OtherProjects } from './OtherProjects';
 
@@ -13,14 +12,9 @@ export const FeatProjects = () => {
       </InnerWrapper>
 
       <MediumHeadline color="#BA4C08">OTHER PROJECTS</MediumHeadline>
-      <OtherProjsWrapper backGroundcolor="#f4f4f4">
+      <AlignLeftWrapper backGroundcolor="#f4f4f4">
         <OtherProjects />
-      </OtherProjsWrapper>
+      </AlignLeftWrapper>
     </OuterWrapper>
   )
 }
-
-export const OtherProjsWrapper = styled(InnerWrapper)`
-  flex-direction: column;
-  text-align: left;
-`
