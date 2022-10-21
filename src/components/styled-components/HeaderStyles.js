@@ -14,7 +14,6 @@ top: 48px;
 
 & img {
     color: black;
-    transition: all 200ms ease-in;
 }
 
 & @media (min-width: 1024px){
@@ -23,7 +22,7 @@ top: 48px;
 `
 export const Profile = styled.img`
 position: absolute;
-right: 230px;
+right: 0px;
 bottom: -16px;
 width: 180px;
 height: 180px;

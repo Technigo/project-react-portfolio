@@ -9,7 +9,6 @@ const Projects = () => {
   const options = {
     method: 'GET',
     headers: {
-      Authorization: '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'
     }
   }
 

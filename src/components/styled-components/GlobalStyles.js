@@ -25,12 +25,16 @@ section:nth-child(2n) {
     background-color: var(--main-pastel-beige);
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex; 
+    flex-direction: column; 
 }
 
 section:nth-child(2n+1) {
     background-color: var(--main-beige);
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex; 
+    flex-direction: column; 
 }
 
 h2 {
@@ -88,7 +92,7 @@ margin: 0 auto;
     width: 60vw;
     margin: 0 auto;
     position: relative;
-    }
+}
 `
 export const Hidden = styled.span`
     position:absolute;
