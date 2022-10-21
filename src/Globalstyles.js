@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components/macro';
 
 const GlobalStyles = createGlobalStyle`
    *{
