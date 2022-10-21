@@ -2,38 +2,48 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
+import linkedin from 'assets/linkedin-color-icon-white.svg'
+import github from 'assets/github-icon-white.svg'
+import stack from 'assets/stackoverflow-icon-white.svg'
+import profilePic from 'assets/profile-pic.jpg'
+
 import { OuterWrapper, InnerWrapper } from 'styles/ProjectStyles';
 
-const Header = ({ linkedin, github, stack, profilePic }) => {
+const Header = () => {
+  const socialLinksHeader = [
+    {
+      name: 'Linkedin',
+      link: 'https://www.linkedin.com/in/david-ballester-font-3626bb8a/',
+      image: linkedin
+    },
+    {
+      name: 'Github',
+      link: 'https://github.com/Fonnt',
+      image: github
+    },
+    {
+      name: 'Stackoverflow',
+      link: 'https://stackoverflow.com/users/19384589/font',
+      image: stack
+    }
+  ]
   return (
     <OuterWrapper>
       <BackgroundImg />
       <InnerWrapper>
         <Links>
-          <a
-            href="https://www.linkedin.com/in/david-ballester-font-3626bb8a/"
-            target="_blank"
-            rel="noreferrer">
-            <img
-              src={linkedin}
-              alt="Linkedin" />
-          </a>
-          <a
-            href="https://github.com/Fonnt"
-            target="_blank"
-            rel="noreferrer">
-            <img
-              src={github}
-              alt="Github" />
-          </a>
-          <a
-            href="https://stackoverflow.com/users/19384589/font"
-            target="_blank"
-            rel="noreferrer">
-            <img
-              src={stack}
-              alt="Stack overflow" />
-          </a>
+          {socialLinksHeader.map((socialLink) => {
+            return (
+              <a
+                href={socialLink.link}
+                target="_blank"
+                rel="noreferrer">
+                <img
+                  src={socialLink.image}
+                  alt={socialLink.name} />
+              </a>
+            )
+          })}
         </Links>
         <ProfileImg>
           <img
@@ -68,6 +78,10 @@ const Links = styled.div`
   & img {
     height: 30px;
     margin: 2vw;
+    @media (min-width: 668px) {
+      height: 40px;
+      margin: 2vw;
+    }
   }
 `
 const ProfileImg = styled.div`
@@ -79,8 +93,12 @@ position: absolute;
   border-radius: 50%;
   border: 2px solid whitesmoke;
   overflow: hidden;
+  @media (min-width: 668px) {
+    width: 170px;
+    height: 170px;
+  }
   & > img {
-    width: 100%;
+    width: 100%;   
   }
 `
 
@@ -112,5 +130,21 @@ const InfoHeader = styled.div`
     font-size: 24px;
     line-height: 40px;
   }
+
+  @media (min-width: 668px) {
+    width: 270px;
+    & p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    & h1 {
+      font-size: 50px;
+      line-height: 55px;
+    }
+    & h2 {
+      font-size: 28px;
+      line-height: 45px;
+    }
+    }
 `
 

@@ -13,6 +13,9 @@ export const InnerWrapper = styled.div`
   height: 500px;
   flex-direction: column;
   position: absolute;
+  @media (min-width: 1024px) {
+    width: 60%
+  }
 `
 
 export const OuterWrapperSection = styled.section`
@@ -23,6 +26,24 @@ export const OuterWrapperSection = styled.section`
   background: ${(props) => (props.grey ? '#f4f4f4' : '#ffffff')};
 `
 export const InnerWrapperSection = styled.div`
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  @media (min-width: 1024px) {
+    width: 60%
+  }
+`
+
+export const OuterWrapperFooter = styled.footer`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a374d;
+`
+
+export const InnerWrapperFooter = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -45,4 +66,15 @@ export const BlueTitle = styled.h3`
   line-height: 27px;
   background-color: #406882;
   color: #ffffff;
+`
+
+export const WhiteTitle = styled.h3`
+  margin: 5vh 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #406882;
 `

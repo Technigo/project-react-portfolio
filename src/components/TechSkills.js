@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react';
+import styled from 'styled-components';
 
 import { OuterWrapperSection, InnerWrapperSection, BlueTitle } from 'styles/ProjectStyles';
 
@@ -10,12 +11,16 @@ const TechSkills = () => {
         <BlueTitle tabIndex="0">
           TECH
         </BlueTitle>
-        <p tabIndex="0">
+        <CenteredP tabIndex="0">
           HTML, CSS, JavaScript ES6, React, API:s, mob-programming,
           pair-programming, GitHub.
-        </p>
+        </CenteredP>
       </InnerWrapperSection>
     </OuterWrapperSection>
   )
 }
 export default TechSkills;
+
+const CenteredP = styled.p`
+  text-align:center;
+`

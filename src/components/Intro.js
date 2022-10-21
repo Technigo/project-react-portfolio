@@ -8,7 +8,7 @@ const Intro = () => {
   return (
     <OuterWrapperSection grey>
       <InnerWrapperSection>
-        <p tabIndex="0">
+        <IntroStyle tabIndex="0">
           <SpanLine /><SpanDot />
           Hello! I&apos;m a frontend developer with a background in interior and
           graphic design. I consider myself as flexible and social and a good
@@ -17,7 +17,7 @@ const Intro = () => {
           &quot;team feeling&quot; within the group. I have the ability to see the big
           picture of situations without forgetting the details. I keep calm in
           stressful situations and I&apos;m used to working with deadlines.
-        </p>
+        </IntroStyle>
       </InnerWrapperSection>
     </OuterWrapperSection>
 
@@ -40,5 +40,8 @@ const SpanDot = styled.span`
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;
+`
+const IntroStyle = styled.p`
+  margin-right: 10%;
 `
 

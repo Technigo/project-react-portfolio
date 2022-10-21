@@ -1,10 +1,13 @@
+/* eslint-disable newline-per-chained-call */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 
 import {
   OuterWrapperSection,
   InnerWrapperSection,
-  BlueTitle
+  BlueTitle,
+  WhiteTitle
 } from 'styles/ProjectStyles';
 
 import FeaturedProjects, { FeaturedProjectsWrapper } from './FeaturedProjects';
@@ -42,7 +45,6 @@ const Projects = () => {
         key={project.id}
         deploymentLink={project.homepage}
         gitLink={project.html_url}
-        // eslint-disable-next-line newline-per-chained-call
         title={project.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         description={project.description}
         tags={project.topics}
@@ -56,7 +58,7 @@ const Projects = () => {
         key={project.id}
         deploymentLink={project.homepage}
         gitLink={project.html_url}
-        title={project.name}
+        title={project.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         description={project.description}
         tags={project.topics} />
     )
@@ -73,7 +75,7 @@ const Projects = () => {
       </OuterWrapperSection>
       <OuterWrapperSection grey>
         <InnerWrapperSection>
-          <BlueTitle>OTHER PROJECTS</BlueTitle>
+          <WhiteTitle>OTHER PROJECTS</WhiteTitle>
           {otherProjectsReadyToDisplay}
         </InnerWrapperSection>
       </OuterWrapperSection>

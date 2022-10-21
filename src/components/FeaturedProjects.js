@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-/* import weather from 'assets/weather-app.jpg' */
-
 const FeaturedProjects = (
   {
     deploymentLink,
@@ -11,7 +9,6 @@ const FeaturedProjects = (
     description,
     tags,
     image
-    /* projectTitleFromReadMe */
   }
 ) => {
   return (
@@ -57,7 +54,7 @@ export const FeaturedProjectsWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   
-  @media (min-width: 668px) and (max-width: 1023px) {
+  @media (min-width: 668px) {
     justify-content: space-between;
   }
 `
@@ -66,9 +63,8 @@ const FeaturedProjectsCard = styled.div`
   width: 100%;
   margin-top: 5vh;
 
-  @media (min-width: 668px) and (max-width: 1023px) {
-    width: 45%;
-  
+  @media (min-width: 668px) {
+    width: 45%;  
   }
 `
 
@@ -116,7 +112,7 @@ const FeaturedProjectsInfo = styled.div`
   }
 `
 
-const TagWrapper = styled.h5`
+export const TagWrapper = styled.h5`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
