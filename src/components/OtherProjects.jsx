@@ -16,7 +16,7 @@ const OtherProjects = ({ repos }) => {
               <ArticleCard other key={project.id}>
                 <h5>{project.name.split('-').join(' ').slice(8)}</h5>
                 <Paragraph>{project.description}</Paragraph>
-                <TopicsContainer>
+                <TopicsContainer aria-hidden="true">
                   {project.topics.map((topic) => (topic !== 'portfolio' && <Topic>{topic}</Topic>))}
                 </TopicsContainer>
                 <TopicsContainer>

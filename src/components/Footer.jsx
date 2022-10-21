@@ -9,13 +9,13 @@ const Footer = () => {
       <Paragraph main center>
         Fredrik Holm
       </Paragraph>
-      <a href="mailto:karlfredrikholm@gmail.com">
-        <Paragraph main center>
-          karlfredrikholm@gmail.com
-        </Paragraph>
-      </a>
       <Paragraph main center>
-          +46724035836
+        <a href="mailto:karlfredrikholm@gmail.com">
+          karlfredrikholm@gmail.com
+        </a>
+      </Paragraph>
+      <Paragraph main center>
+        <a href="tel:0724035836" aria-label="0 7 2 4. 0 3. 5 8. 3 6">+46724035836</a>
       </Paragraph>
     </StyledFooter>
   );
@@ -42,6 +42,8 @@ const StyledFooter = styled.footer`
 
   & a {
     color: white;
+    font-family: var(--main-font);
+    font-weight: 300;
     text-decoration: none;
   }
 `;

@@ -14,16 +14,16 @@ const FeaturedProjects = () => {
       <ArticleGrid>
         {data.map((project) => (
           <ArticleCard key={project.name}>
-            <a href={project.netlify_url} target="_blank" rel="noreferrer">
+            <a href={project.netlify_url} target="_blank" rel="noreferrer" aria-hidden="true">
               <ProjectImg style={{ backgroundImage: `url(${project.image})` }}>
                 <div>
-                  <h6>{project.name}</h6>
+                  <h6 aria-hidden="true">{project.name}</h6>
                 </div>
               </ProjectImg>
             </a>
             <h5>{project.project_name}</h5>
             <Paragraph grid>{project.description}</Paragraph>
-            <TopicsContainer>
+            <TopicsContainer aria-hidden="true">
               {project.topics.map((topic) => <Topic>{topic}</Topic>)}
             </TopicsContainer>
             <TopicsContainer>
