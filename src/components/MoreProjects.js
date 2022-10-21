@@ -2,42 +2,47 @@ import React from 'react'
 import styled from 'styled-components';
 import moreprojects from '../data/moreprojects.json';
 
-export const MoreProjects = ({ color, tagColor }) => {
+export const MoreProjects = ({ color, tagColor, backColor }) => {
   const GITHUB_NAME = 'linneawa';
 
   return (
-    <Wrapper>
-      <SectionHeader color={color}>MORE PROJECTS</SectionHeader>
-      <MoreProjectsContainer>
-        {moreprojects.map((project) => {
-          return (
-            <MoreProject
-              key={project.title}
-              href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
-              target="_blank">
-              <InfoContainer>
-                <SubTitle>{project.title.toUpperCase()}</SubTitle>
-                <SubParagraph>{project.paragraph}<EndingArrows>{'>>'}</EndingArrows></SubParagraph>
-              </InfoContainer>
-              <SkillTagContainer>
-                <ul style={{ padding: 0 }}>
-                  {project.tags.map((tag) => (
-                    <ProjectTags tagColor={tagColor}>
-                      {tag}
-                    </ProjectTags>
-                  ))}
-                </ul>
-              </SkillTagContainer>
-            </MoreProject>
-          );
-        })}
-      </MoreProjectsContainer>
-    </Wrapper>
+    <OuterWrapper backColor={backColor}>
+      <InnerWrapper>
+        <SectionHeader color={color}>MORE PROJECTS</SectionHeader>
+        <MoreProjectsContainer>
+          {moreprojects.map((project) => {
+            return (
+              <MoreProject
+                key={project.title}
+                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                target="_blank">
+                <InfoContainer>
+                  <SubTitle color={color}>{project.title.toUpperCase()}</SubTitle>
+                  <SubParagraph>{project.paragraph}<EndingArrows color={color}>{' >>'}</EndingArrows></SubParagraph>
+                </InfoContainer>
+                <SkillTagContainer>
+                  <ul style={{ padding: 0 }}>
+                    {project.tags.map((tag) => (
+                      <ProjectTags tagColor={tagColor}>
+                        {tag}
+                      </ProjectTags>
+                    ))}
+                  </ul>
+                </SkillTagContainer>
+              </MoreProject>
+            );
+          })}
+        </MoreProjectsContainer>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 };
 
-const Wrapper = styled.div`
-background: #f4f4f457;
+const OuterWrapper = styled.section`
+background-color: ${(props) => props.backColor}
+`
+
+const InnerWrapper = styled.div`
   width: 80%;
   margin: 0 auto;
   max-width: 1100px;
@@ -63,16 +68,13 @@ const MoreProjectsContainer = styled.div`
 
 const SectionHeader = styled.h3`
   color: ${(props) => props.color};
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  padding: 4px;
+  font-size: 22px;
+  line-height: 1;
+  padding: 5px 10px;
   margin: 20px 0 20px 0;
-  font-weight: bold;
-
-  @media (max-width: 800px) {
-    font-size: 22px;
-    line-height: 1;
-    padding: 10px 15px;
-    margin-bottom: 40px;
+  line-height: 1;
 `
 
 const MoreProject = styled.a`
@@ -80,7 +82,6 @@ text-decoration: none;
 ul {
   margin: 0;
 }
-
 `
 
 const InfoContainer = styled.div`
@@ -96,25 +97,27 @@ const SkillTagContainer = styled.div`
 `;
 
 const ProjectTags = styled.li`
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  padding: 5px 10px;
-  background-color: ${(props) => props.tagColor};
-  display: inline;
-  font-size: 14px;
-  margin-right: 5px;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+color: black;
+border-radius: 5px;
+padding: 10px 10px;
+background-color: ${(props) => props.tagColor};
+display: inline;
+font-size: 14px;
+margin-right: 10px;
 
-  @media (max-width: 800px) {
-    padding: 2px;
-    font-size: 14px;
-    margin-right: 3px;
+@media (max-width: 800px) {
+  padding: 3px;
+  font-size: 14px;
+  margin-right: 7px;
   }
 `;
 
 const SubTitle = styled.p`
-  color: red;
+  color: ${(props) => props.color};
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 1%;
   font-size: 18px;
   margin-block-end: 1em;
@@ -125,6 +128,7 @@ const SubTitle = styled.p`
 const SubParagraph = styled.p`
   color: black;
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;
@@ -134,6 +138,6 @@ const SubParagraph = styled.p`
 export const EndingArrows = styled.span`
   font-size: 14px;
   font-weight: bold;
-  color: #f44336;
+  color: ${(props) => props.color};
   display: inline;
 `;

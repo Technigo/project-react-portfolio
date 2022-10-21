@@ -2,30 +2,36 @@ import React from 'react'
 import styled from 'styled-components';
 import thoughts from '../data/thoughts.json';
 
-export const Thoughts = ({ color }) => {
+export const Thoughts = ({ color, backColor }) => {
   return (
-    <Wrapper>
-      <SectionHeader color={color}>MY THOUGHTS</SectionHeader>
-      <FeaturedThoughtWrapper>
-        {thoughts.map((thought) => {
-          return (
-            <ThoughtCard
-              key={thought.title}
-              href={thought.url}
-              target="_blank">
-              <ThumbnailImage url={thought.image} />
-              <BlogDate color={color}> {thought['date-description'].toUpperCase()}</BlogDate>
-              <BlogTitle>{thought.title.toUpperCase()}</BlogTitle>
-              <BlogInfo>{thought['thought-description']}<EndingArrows>{'>>'}</EndingArrows></BlogInfo>
-            </ThoughtCard>
-          );
-        })}
-      </FeaturedThoughtWrapper>
-    </Wrapper>
+    <OuterWrapper backColor={backColor}>
+      <InnerWrapper>
+        <SectionHeader color={color}>MY THOUGHTS</SectionHeader>
+        <FeaturedThoughtWrapper>
+          {thoughts.map((thought) => {
+            return (
+              <ThoughtCard
+                key={thought.title}
+                href={thought.url}
+                target="_blank">
+                <ThumbnailImage url={thought.image} />
+                <BlogDate color={color}> {thought['date-description'].toUpperCase()}</BlogDate>
+                <BlogTitle>{thought.title.toUpperCase()}</BlogTitle>
+                <BlogInfo>{thought['thought-description']}<EndingArrows color={color}>{' >>'}</EndingArrows></BlogInfo>
+              </ThoughtCard>
+            );
+          })}
+        </FeaturedThoughtWrapper>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 };
 
-const Wrapper = styled.div`
+const OuterWrapper = styled.section`
+background-color: ${(props) => props.backColor};
+`
+
+const InnerWrapper = styled.section`
   width: 80%;
   margin: 0 auto;
   max-width: 1100px;
@@ -44,18 +50,14 @@ const Wrapper = styled.div`
 
 const SectionHeader = styled.h2`
   background-color: ${(props) => props.color};
-  color: whitesmoke;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  padding: 4px;
+  font-size: 22px;
+  line-height: 1;
+  padding: 5px 10px;
   margin: 20px 0 20px 0;
-  font-weight: bold;
-
-  @media (max-width: 800px) {
-    font-size: 22px;
-    line-height: 1;
-    padding: 10px 15px;
-    margin-bottom: 40px;
-  }
+  line-height: 1;
 `;
 
 const FeaturedThoughtWrapper = styled.div`
@@ -87,6 +89,7 @@ const ThumbnailImage = styled.div`
   background-size: cover;
   background-position: center;
   height: 300px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +101,7 @@ const ThumbnailImage = styled.div`
 `;
 
 const BlogTitle = styled.h2`
-  font-family: "Montserrat Bold";
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 16px;
 
@@ -108,7 +111,7 @@ const BlogTitle = styled.h2`
 `;
 
 const BlogDate = styled.p`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: ${(props) => props.color};
   font-size: 16px;
 
@@ -118,7 +121,7 @@ const BlogDate = styled.p`
 `;
 
 const BlogInfo = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 14px;
   line-height: 1.4;
@@ -129,7 +132,7 @@ const BlogInfo = styled.p`
 `;
 
 export const EndingArrows = styled.span`
-  font-size: 9px;
-  color: #f44336;
+  font-size: 16px;
+  color: ${(props) => props.color};
   display: inline;
 `;

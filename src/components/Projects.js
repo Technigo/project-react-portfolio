@@ -2,42 +2,48 @@ import React from 'react'
 import styled from 'styled-components';
 import projects from '../data/projects.json';
 
-export const Projects = ({ color, tagColor }) => {
+export const Projects = ({ color, tagColor, backColor }) => {
   const GITHUB_NAME = 'linneawa';
 
   return (
-    <Wrapper>
-      <SectionHeader color={color}>FEATURED PROJECTS</SectionHeader>
-      <FeaturedProjectWrapper>
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              key={project.title}
-              href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
-              target="_blank">
-              <ThumbnailWrapper url={project.image}>
-                <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
-              </ThumbnailWrapper>
-              <ProjectInfoHeader color={color}>
-                {project['title-description'].toUpperCase()}
-              </ProjectInfoHeader>
-              <ProjectInfo>{project['project-description']}</ProjectInfo>
-              <ul style={{ padding: 0 }}>
-                {project.tags.map((tag) => (
-                  <ProjectTags tagColor={tagColor}>
-                    {tag}
-                  </ProjectTags>
-                ))}
-              </ul>
-            </ProjectCard>
-          );
-        })}
-      </FeaturedProjectWrapper>
-    </Wrapper>
+    <OuterWrapper backColor={backColor}>
+      <InnerWrapper>
+        <SectionHeader color={color}>FEATURED PROJECTS</SectionHeader>
+        <FeaturedProjectWrapper>
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                key={project.title}
+                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                target="_blank">
+                <ThumbnailWrapper url={project.image}>
+                  <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
+                </ThumbnailWrapper>
+                <ProjectInfoHeader color={color}>
+                  {project['title-description'].toUpperCase()}
+                </ProjectInfoHeader>
+                <ProjectInfo>{project['project-description']}</ProjectInfo>
+                <ul style={{ padding: 0 }}>
+                  {project.tags.map((tag) => (
+                    <ProjectTags tagColor={tagColor}>
+                      {tag}
+                    </ProjectTags>
+                  ))}
+                </ul>
+              </ProjectCard>
+            );
+          })}
+        </FeaturedProjectWrapper>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 };
 
-const Wrapper = styled.div`
+const OuterWrapper = styled.section`
+background-color: ${(props) => props.backColor};
+`
+
+const InnerWrapper = styled.div`
 background: #f4f4f457;
   width: 80%;
   margin: 0 auto;
@@ -56,20 +62,15 @@ background: #f4f4f457;
 `;
 
 const SectionHeader = styled.h2`
-  font-size: 50px;
-  line-height: 1;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  font-family: "Montserrat Bold";
-  background-color: ${(props) => props.color};
-  color: white;
-
-  @media (max-width: 800px) {
-    font-size: 22px;
-    line-height: 1;
-    padding: 10px 15px;
-    margin-bottom: 40px;
-  }
+background-color: ${(props) => props.color};
+color: white;
+font-family: 'Montserrat', sans-serif;
+display: inline-block;
+font-size: 22px;
+line-height: 1;
+padding: 5px 10px;
+margin: 20px 0 20px 0;
+line-height: 1;
 `;
 
 const FeaturedProjectWrapper = styled.div`
@@ -106,6 +107,7 @@ const ProjectCard = styled.a`
 const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
+  border-radius: 20px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -122,13 +124,13 @@ const ThumbnailWrapper = styled.div`
 `;
 
 const ThumbnailTitle = styled.h2`
-  font-family: "Montserrat Bold";
+  font-family: 'Montserrat', sans-serif;
   color: white;
   position: absolute;
 `;
 
 const ProjectInfoHeader = styled.h3`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: ${(props) => props.color};
   font-size: 24px;
 
@@ -142,7 +144,7 @@ const ProjectInfoHeader = styled.h3`
 `;
 
 const ProjectInfo = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 24px;
   line-height: 1.4;
@@ -158,17 +160,18 @@ const ProjectInfo = styled.p`
 
 const ProjectTags = styled.li`
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 10px 10px;
   background-color: ${(props) => props.tagColor};
   display: inline;
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 14px;
+  margin-right: 10px;
 
   @media (max-width: 800px) {
-    padding: 2px;
+    padding: 3px;
     font-size: 14px;
-    margin-right: 3px;
+    margin-right: 7px;
   }
 `;

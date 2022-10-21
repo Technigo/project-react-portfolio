@@ -1,33 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import LinkedinIcon from '../assets/icons/linkedinIcon.png';
-import GithubIcon from '../assets/icons/githubIcon.png';
-import StackOverflowIcon from '../assets/icons/stackIcon.png';
+import LinkedinIcon from '../assets/icons/linkedin.svg';
+import GithubIcon from '../assets/icons/github.svg';
+import StackOverflowIcon from '../assets/icons/stackOverflow.svg';
 
-export const ForMoreLinks = () => {
+export const ForMoreLinks = ({ color, backColor }) => {
   return (
-    <ForMoreContainer>
-      <ForMoreHeading>FOR MORE</ForMoreHeading>
-      <ForMoreIcons>
+    <ForMoreContainer backColor={backColor}>
+      <ForMoreHeading color={color}>FOR MORE</ForMoreHeading>
+      <ForMoreIcons color={color}>
         <a href="https://www.linkedin.com/in/linn%C3%A9a-wahlstr%C3%B6m-018715253/" target="_blank" rel="noreferrer">
-          <div className="iconContainer">
-            <img src={LinkedinIcon} lang="eng" alt="Linkedin icon" />
-            <p>LINKEDIN</p>
-          </div>
+          <img src={LinkedinIcon} lang="eng" alt="Linkedin icon" />
         </a>
 
         <a href="https://github.com/LinneaWa" target="_blank" rel="noreferrer">
-          <div className="iconContainer">
-            <img src={GithubIcon} lang="eng" alt="Github icon" />
-            <p>GITHUB</p>
-          </div>
+          <img src={GithubIcon} lang="eng" alt="Github icon" />
         </a>
 
         <a href="https://stackoverflow.com/c/technigo/users/400" target="_blank" rel="noreferrer">
-          <div className="iconContainer">
-            <img src={StackOverflowIcon} lang="eng" alt="Stackoverflow icon" />
-            <p>STACK OVERFLOW</p>
-          </div>
+          <img src={StackOverflowIcon} lang="eng" alt="Stackoverflow icon" />
         </a>
 
       </ForMoreIcons>
@@ -41,15 +32,20 @@ flex-direction: column;
 align-items: center;
 width: auto;
 height: auto;
+background-color: ${(props) => props.backColor};
 `;
 
-export const ForMoreHeading = styled.section`
-background-color: #ff0000;
+export const ForMoreHeading = styled.h2`
+background-color: ${(props) => props.color};
 color: white;
+font-family: 'Montserrat', sans-serif;
 display: inline-block;
-padding: 4px;
+font-size: 22px;
+line-height: 1;
+padding: 5px 10px;
 margin: 20px 0 20px 0;
-font-weight: bold;
+line-height: 1;
+}
 `;
 
 export const ForMoreIcons = styled.div`
@@ -59,40 +55,25 @@ justify-content: space-evenly;
 width: 80%;
 padding: 10px;
 
-  img {
-    height: 30px;
-    filter: invert(37%) sepia(86%) saturate(5077%) hue-rotate(344deg)
-      brightness(107%) contrast(114%);
-  }
-
-  img:hover {
-    opacity: 0.5;
-  }
-
-  .iconContainer {
-    height: 30px;
-    width: 30px;
-    padding: 20px;
-    border: 2px solid #fa392f;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    white-space: nowrap;
-  }
-
-  p {
-    color: #fa392f;
-    font-size: 20px;
-    padding-top: 10px;
-    font-weight: bold;
-  }
-
   a {
     text-decoration: none;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+
+  img {
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 
+    ${(props) => props.color} 2px 2px 20px 5px, 
+    ${(props) => props.color} -2px -2px 20px 5px;
+  }
+
+  img:hover {
+    opacity: 0.8;
   }
 `;
 

@@ -11,19 +11,21 @@ import { ForMoreLinks } from './components/ForMoreLinks';
 import { Contact } from './components/Contact';
 
 export const App = () => {
-  const projectColor1 = 'red';
-  const projectColor2 = 'pink';
+  const projectColor1 = 'rgb(51, 106, 51)';
+  const projectColor2 = 'rgb(143, 190, 143)';
+  const projectColor3 = 'rgb(246, 245, 240)';
+  const projectColor4 = 'white';
   return (
     <div>
       <Header />
-      <Presentation />
-      <Tech />
-      <Projects color={projectColor1} tagColor={projectColor2} />
-      <MoreProjects color={projectColor1} tagColor={projectColor2} />
-      <Thoughts color={projectColor1} />
-      <MoreThoughts color={projectColor1} />
-      <Skills />
-      <ForMoreLinks />
+      <Presentation backColor={projectColor3} />
+      <Tech color={projectColor1} backColor={projectColor4} />
+      <Projects color={projectColor1} tagColor={projectColor2} backColor={projectColor3} />
+      <MoreProjects color={projectColor1} tagColor={projectColor2} backColor={projectColor4} />
+      <Thoughts color={projectColor1} backColor={projectColor3} />
+      <MoreThoughts color={projectColor1} backColor={projectColor4} />
+      <Skills color={projectColor1} backColor={projectColor3} />
+      <ForMoreLinks color={projectColor1} backColor={projectColor4} />
       <Contact />
     </div>
   )

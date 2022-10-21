@@ -69,6 +69,7 @@ export const HeaderIcons = styled.div`
 
 export const HeaderTitle = styled.div`
   position: absolute;
+  font-family: 'Montserrat', sans-serif;
   top: 30%;
   left: 10%;
   color: black;
@@ -78,7 +79,6 @@ export const HeaderTitle = styled.div`
   border-radius: 20px;
 
   p {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -91,7 +91,6 @@ export const HeaderTitle = styled.div`
   }
 
   h3 {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;

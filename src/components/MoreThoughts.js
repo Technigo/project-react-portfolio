@@ -2,30 +2,36 @@ import React from 'react'
 import styled from 'styled-components';
 import morethoughts from '../data/morethoughts.json';
 
-export const MoreThoughts = ({ color }) => {
+export const MoreThoughts = ({ color, backColor }) => {
   return (
-    <Wrapper>
-      <SectionHeader color={color}>MORE THOUGHTS</SectionHeader>
-      <MoreThoughtsContainer>
-        {morethoughts.map((thought) => {
-          return (
-            <MoreThought
-              key={thought.title}
-              href={thought.url}
-              target="_blank">
-              <InfoContainer>
-                <Date>{thought.date.toUpperCase()}</Date>
-                <Title>{thought.title}<EndingArrows>{'>>'}</EndingArrows></Title>
-              </InfoContainer>
-            </MoreThought>
-          );
-        })}
-      </MoreThoughtsContainer>
-    </Wrapper>
+    <OuterWrapper backColor={backColor}>
+      <InnerWrapper>
+        <SectionHeader color={color}>MORE THOUGHTS</SectionHeader>
+        <MoreThoughtsContainer>
+          {morethoughts.map((thought) => {
+            return (
+              <MoreThought
+                key={thought.title}
+                href={thought.url}
+                target="_blank">
+                <InfoContainer>
+                  <Date color={color}>{thought.date.toUpperCase()}</Date>
+                  <Title>{thought.title}<EndingArrows color={color}>{' >>'}</EndingArrows></Title>
+                </InfoContainer>
+              </MoreThought>
+            );
+          })}
+        </MoreThoughtsContainer>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 };
 
-const Wrapper = styled.div`
+const OuterWrapper = styled.section`
+  background-color: ${(props) => props.backColor};
+`
+
+const InnerWrapper = styled.section`
   width: 80%;
   margin: 0 auto;
   max-width: 1100px;
@@ -44,16 +50,13 @@ const Wrapper = styled.div`
 
 const SectionHeader = styled.h3`
   color: ${(props) => props.color};
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  padding: 4px;
+  font-size: 22px;
+  line-height: 1;
+  padding: 5px 10px;
   margin: 20px 0 20px 0;
-  font-weight: bold;
-
-  @media (max-width: 800px) {
-    font-size: 22px;
-    line-height: 1;
-    padding: 10px 15px;
-    margin-bottom: 40px;
+  line-height: 1;
 `
 
 export const MoreThoughtsContainer = styled.div`
@@ -76,7 +79,8 @@ export const SkillTagContainer = styled.div`
 `;
 
 export const Date = styled.h4`
-  color: red;
+  color: ${(props) => props.color};
+  font-family: 'Montserrat', sans-serif;
   text-decoration: underline;
   margin-right: 1%;
   font-size: 18px;
@@ -88,6 +92,7 @@ export const Date = styled.h4`
 export const Title = styled.p`
   color: black;
   text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;
@@ -96,6 +101,6 @@ export const Title = styled.p`
 export const EndingArrows = styled.span`
   font-size: 14px;
   font-weight: bold;
-  color: #f44336;
+  color: ${(props) => props.color};
   display: inline;
 `;
