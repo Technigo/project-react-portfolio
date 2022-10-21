@@ -116,6 +116,13 @@ const ProjectText = styled(MainText)`
   font-family: 'Roboto', sans-serif; 
   text-align: left;
   margin: 0%;
+
+  @media ${Devices.laptop} {
+    &:hover {
+      text-decoration: underline;
+      color: #6fb9bd;
+    }
+  }
 `
 
 const Tag = styled.h4`
@@ -165,7 +172,6 @@ const FeatureWrap = styled.div`
 `
 
 const OtherWrap = styled.div`
-  color: yellow;
 
   a {
     display: grid;
@@ -182,24 +188,6 @@ const OtherWrap = styled.div`
 `
 
 /*
-<section class="featured-projects">
-<div class="input-wrapper">
-    <h2 class="main-header"><mark>FEATURED PROJECTS</mark></h2>
-
-    <div class="projects-grid">
-
-<div class="the-next-thing">
-<a href="https://github.com/malmen237/project-guess-who">
-    <img src="./Images/Guess-who.png" alt="guess-who-game">
-    <h3 class="title">GAME BUILT IN JAVASCRIPT</h3>
-    <p>Responsive web site using HTML, CSS and JavaScript ES6 for the game "Guess who".</p>
-    <div class="box-text">
-        <h4><mark>HTML5</mark></h4>
-        <h4><mark>CSS3</mark></h4>
-        <h4><mark>JavaScript ES6</mark></h4>
-    </div>
-</a>
-</div>
 
 <div class="other-projects">
                     <a href="https://github.com/malmen237/project-news-site">
