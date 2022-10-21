@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Title, TitleContainer, RedTitle } from 'StyledComponents/GlobalComponents'
-import mind from '../images/mind.jpg'
+import blog from '../images/blog.jpg'
 import { Arrow } from './OtherProjects'
 
 const MyThoughts = styled.div`
@@ -44,8 +44,8 @@ const Blog = () => {
                 target="_blank"
                 rel="noreferrer">
                 <img
-                  src={mind}
-                  alt="Head with thoughts"
+                  src={blog}
+                  alt="computer details"
                   width={500} />
 
                 <div>

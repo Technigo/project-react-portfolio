@@ -78,7 +78,7 @@ margin: 15px;
 export const Tags = styled.div`
 font-family: "Roboto", sans-serif;
   font-weight: bold;
-  background-color: #D7E3DA;;
+  background-color: #D7E3DA;
   font-size: 12px; 
   line-height: 12px;
   padding: 4px;
