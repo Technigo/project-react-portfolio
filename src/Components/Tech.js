@@ -9,10 +9,13 @@ const Tech = () => {
   display: row;
   border: solid 2px red;
   justify-content: center;
-  padding: 10px 0 40px 0;
+  text-align: center;
+  padding: 45px 0 65px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  text-align: center;
+  font-size: 20px;
+  line-height: 34px;
+
 `
   return (
     <ContentWrapper

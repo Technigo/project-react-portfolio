@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContentWrapper from './Shared/ContentWrapper';
+import DotLine from '../Assets/dot_picture.png';
 
 const Intro = () => {
   const TextStyle = styled.div`
-  padding: 10px;
+  padding: 45px 0 65px 0;
+  font-size: 20px;
+  line-height: 34px;font-family: Montserrat, sans-serif;
+  font-weight: 400;
+
+  .dot-image{
+    width: 40px;
+  }
   `;
 
   return (
@@ -13,6 +21,7 @@ const Intro = () => {
       backgroundColor="var(--thirdBackground)"
       textColor="var(--thirdBackground)">
       <TextStyle>
+        <img className="dot-image" src={DotLine} alt="Intro" />
         Hello! I am Petra 👋🏼 a curious problem solver that loves learning new things.
         After 6 years of working
         as a user researcher at Zettle/iZettle
