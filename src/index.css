@@ -1,3 +1,12 @@
+:root {
+  /* ---primary:  #F2A2E4; another option for primary */
+  ---primary:  #eb72d5d1;
+  ---secondary: #d4c4af;
+  ---main: #dfd3c38a;
+  ---highlight: #F090D9;
+  ---accent: #C400FF;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +19,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  text-transform: uppercase;
 }
