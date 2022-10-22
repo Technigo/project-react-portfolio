@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
-import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles';
+import { InnerWrapper, OuterWrapper, A, P } from 'StyledComponents/GlobalStyles';
 import { SectionHeading } from 'StyledComponents/HeadlineStyles';
+import { Tag, TagContainer } from 'StyledComponents/TagStyles.js'
 
 const OtherProjects = () => {
   const [projects, SetProjects] = useState([])
@@ -19,10 +20,15 @@ const OtherProjects = () => {
     <OuterWrapper grey>
       <InnerWrapper>
         <SectionHeading>OTHER PROJECTS</SectionHeading>
-        {filteredProjects.map((project) => <A href={project.html_url}>
-          <ProjectHeading>{project.name.replaceAll('-', ' ').replaceAll('project', ' ').toUpperCase()}</ProjectHeading>
-          <OtherProjetsText>{project.description} <Arrow> {'>>'} </Arrow></OtherProjetsText>
-        </A>)}
+
+        {filteredProjects.map((project) => <div key={project.id}>
+          <A href={project.homepage} target="_blank">
+            <ProjectHeading>{project.name.replaceAll('-', ' ').replaceAll('project', ' ').toUpperCase()}</ProjectHeading>
+            <POther>{project.description} <Arrow> {'>>'} </Arrow></POther>
+          </A>
+          <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
+          </TagContainer>
+        </div>)}
       </InnerWrapper>
     </OuterWrapper>
   )
@@ -36,15 +42,12 @@ const ProjectHeading = styled.h3`
     line-height: 25px;
     letter-spacing: 0.01em;
     color: #aa658f;
-    text-align: center;
-    margin: 10px;
+    padding-top: 30px;
    
 `
-
-const OtherProjetsText = styled(P)`
-text-align: center;
+const POther = styled(P)`
+  margin-bottom: 15px;
 `
-
 const Arrow = styled.span`
     color: #7c5f74;
     font-weight: 600;

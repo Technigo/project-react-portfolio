@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles'
 import { SectionHeading, SubHeading } from 'StyledComponents/HeadlineStyles'
+import { Tag, TagContainer } from 'StyledComponents/TagStyles'
 import data from '../assets/ProjectData.json'
 
 export const FeaturedProjects = () => {
@@ -53,26 +54,6 @@ const ProjectInfo = styled.div`
 
 const InnerWrapperFeat = styled(InnerWrapper)`
   padding-bottom: 0px;
-`
-
-const Tag = styled.span`
-    font-family: "Roboto", sans-serif;
-    color: #2b2e34;
-    font-weight: bold;
-    background-color: #db9aab;
-    text-decoration: none;
-    font-size: 12px; 
-    line-height: 12px;
-    padding: 6px;
-    margin: 3px;
-    border-radius: 5px;
-`
-
-const TagContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 5px;
 `
 
 const ProjectsWrapper = styled.div`
