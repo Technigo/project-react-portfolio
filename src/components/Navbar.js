@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent-props */
 import React from 'react';
 import styled from 'styled-components';
 import linkedinLogo from '../images/linkedin-logo.svg';
@@ -5,28 +6,28 @@ import githubLogo from '../images/github-logo.svg';
 import stackoverflowLogo from '../images/stackoverflow-logo.svg';
 
 const Navbar = () => {
-  return (
-    <NavbarStyler>
-      <a href="https://www.linkedin.com/in/petra-soderstrom">
-        <img
-          aria-label="visit my linked in"
-          src={linkedinLogo}
-          alt="linked-in-icon" />
-      </a>
-      <a href="https://github.com/Petrasoderstrom1612">
-        <img
-          aria-label="visit my github"
-          src={githubLogo}
-          alt="github-icon" />
-      </a>
-      <a href="https://stackoverflow.com/users/19418321/petra-s">
-        <img
-          aria-label="visit my stackoverflow page"
-          src={stackoverflowLogo}
-          alt="stackowerflow-icon" />
-      </a>
-    </NavbarStyler>
-  )
+	return (
+		<NavbarStyler>
+			<a href="https://www.linkedin.com/in/petra-soderstrom">
+				<img
+					aria-label="visit my linked in"
+					src={linkedinLogo}
+					alt="linked-in-icon" />
+			</a>
+			<a href="https://github.com/Petrasoderstrom1612">
+				<img
+					aria-label="visit my github"
+					src={githubLogo}
+					alt="github-icon" />
+			</a>
+			<a href="https://stackoverflow.com/users/19418321/petra-s">
+				<img
+					aria-label="visit my stackoverflow page"
+					src={stackoverflowLogo}
+					alt="stackowerflow-icon" />
+			</a>
+		</NavbarStyler>
+	)
 }
 
 export default Navbar;
