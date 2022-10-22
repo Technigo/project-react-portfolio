@@ -13,15 +13,15 @@ const ForMore = () => {
       <ForMoreInnerWrapper>
         <WhitePinkH2>FOR MORE</WhitePinkH2>
         <ForMoreContainer>
-          <A href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
+          <A target="_blank" href="https://www.linkedin.com/in/jessika-lind-1227221a4/">
             <img src={linkedin} alt="" />
             <SrOnly>Linkedin</SrOnly>
           </A>
-          <A href="https://github.com/jessikalind">
+          <A target="_blank" href="https://github.com/jessikalind">
             <img src={github} alt="" />
             <SrOnly>Git Hub</SrOnly>
           </A>
-          <A href="https://stackoverflow.com/c/technigo/users/369">
+          <A target="_blank" href="https://stackoverflow.com/c/technigo/users/369">
             <img src={stackoverflow} alt="" />
             <SrOnly>Stackoverflow</SrOnly>
           </A>
