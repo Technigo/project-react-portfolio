@@ -1,28 +1,18 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading } from './Styling'
+import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading, TopicsContainer } from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
-// const options = {
-//   method: 'GET',
-//   headers: {
-//     Authorization: 'token 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'
-//   }
-// }
 
 export const FeaturedProjects = () => {
   const [featuredProjects, setFeaturedProjects] = useState([''])
   fetch(GithubAPI)
     .then((res) => res.json())
-    // .then((response) => console.log(response))
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error))
     .then((data) => {
       setFeaturedProjects(data)
     })
 
-  const BigProjects = featuredProjects.filter((firstProjects) => (
-    firstProjects.stargazers_count === 1));
+  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey') || (firstProjects.name === 'project-chatbot') || (firstProjects.name === 'project-guess-who'));
   return (
     <OuterWrapper beige>
       <Heading dark>FEATURED PROJECTS</Heading>
@@ -40,9 +30,11 @@ export const FeaturedProjects = () => {
                 <ProjectsHeading>{prop.name}</ProjectsHeading>
                 <p>{prop.description}</p>
               </FeaturedProjectsContainer>
-              {prop.topics.map((tag) => (
-                <Topics>{tag}</Topics>
-              ))}
+              <TopicsContainer>
+                {prop.topics.map((tag) => (
+                  <Topics>{tag}</Topics>
+                ))}
+              </TopicsContainer>
             </div>
           ))}
         </FeaturedProjectsContent>
@@ -112,5 +104,3 @@ color: white;
 color:white;
 }
 `
-
-

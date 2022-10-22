@@ -38,9 +38,15 @@ export const FooterHeading = styled.h3`
 font-weight: 700;
 padding-bottom: 25px;
 font-size: 21px;
+@media (min-width: 1025px) {
+font-size: 25px;
+}
 `
 
 export const FooterText = styled.div`
-font-size: 15px;
+font-size: 17px;
 line-height: 25px;
+@media (min-width: 1025px) {
+font-size: 20px;
+}
 `
