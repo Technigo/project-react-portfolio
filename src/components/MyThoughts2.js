@@ -4,12 +4,12 @@ import { SectionHeader, OuterWrapper } from './GlobalStyleComponents';
 import Lightbulb from './images/Lightbulb.jpg'
 import Drumroll from './images/Drumroll.jpg'
 
-export const MyThoughts = ({ color }) => {
+export const MyThoughts2 = ({ color }) => {
   return (
     <OuterWrapper>
       <Wrapper>
         <SectionHeader color={color}>MY THOUGHTS</SectionHeader>
-        <FeaturedProjectWrapper>
+        <AllMyThoughtsWrapper>
           <AllMyThoughtsCards>
             <div className="MyThoughtsCard">
               <a
@@ -17,7 +17,7 @@ export const MyThoughts = ({ color }) => {
                 target="_blank"
                 rel="noreferrer"
                 alt="bild">
-                <img src={Lightbulb} lang="eng" alt="Girhub project" />
+                <ThoughtsImage src={Lightbulb} lang="eng" alt="Girhub project" />
                 <DateTitle>DEC 2022</DateTitle>
                 <BlogTitle>Blog title</BlogTitle>
                 <BlogText>Blog Text</BlogText>
@@ -30,7 +30,7 @@ export const MyThoughts = ({ color }) => {
                 target="_blank"
                 rel="noreferrer"
                 alt="bild">
-                <img src={Drumroll} lang="eng" alt="Girhub project" />
+                <ThoughtsImage src={Drumroll} lang="eng" alt="Girhub project" />
                 <DateTitle>DEC 2022</DateTitle>
                 <BlogTitle>Blog title</BlogTitle>
                 <BlogText>Blog Text</BlogText>
@@ -38,7 +38,7 @@ export const MyThoughts = ({ color }) => {
               </a>
             </div>
           </AllMyThoughtsCards>
-        </FeaturedProjectWrapper>
+        </AllMyThoughtsWrapper>
       </Wrapper>
     </OuterWrapper>
   );
@@ -57,35 +57,34 @@ export const MyThoughts = ({ color }) => {
     }
   `; */
 
-const FeaturedProjectWrapper = styled.div`
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 100px;
+const ThoughtsImage = styled.img`
+background-size: cover;
+background-position: center;
+height: 300px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
 
-  @media (max-width: 800px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
-  }
+const AllMyThoughtsWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%
 `;
 
 const AllMyThoughtsCards = styled.div`
-transform: translateY(0%);
-transition: transform 0.5s;
+text-align: left;
 display: flex;
-flex-direction: column;
-gap: 5px;
-text-decoration: none;
-position: relative;
+flex-direction: row;
 
-/* Optional hover effect, delete if not desired */
-/* &:hover {
-  transform: translateY(-1%);
-  transition: transform 0.3s;
-} */
+
+@media (max-width: 800px) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
 `;
 
 const Wrapper = styled.div`

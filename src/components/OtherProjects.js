@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import OtherProject from './OtherProject.json'
-import { ProjectTags, SectionHeader } from './GlobalStyleComponents'
+import { ProjectTags, SectionHeader, SubParagraphArrows } from './GlobalStyleComponents'
 
 const OtherProjects = ({ tagColor }) => {
   return (
@@ -72,7 +72,8 @@ const SubParagraph = styled.p`
   margin-block-start: 1em;
 `;
 
-const SubParagraphArrows = styled.span`
+/* const SubParagraphArrows = styled.span`
   color: #54BAB9;
   font-weight: bold;
 `;
+ */

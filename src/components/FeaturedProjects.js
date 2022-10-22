@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import FeaturedProject from './FeaturedProject.json';
-import { OuterWrapper, SectionHeader, ProjectTags } from './GlobalStyleComponents';
+import { OuterWrapper, SectionHeader, Wrapper, FeaturedProjectWrapper, ProjectCard, ThumbnailWrapper, ThumbnailTitle, ProjectInfoHeader, ProjectInfo } from './GlobalStyleComponents';
 
 const FeaturedProjectCard = ({ color, tagColor }) => {
   const GITHUB_NAME = 'ViktorSvenssonN';
@@ -42,7 +42,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
 
 export default FeaturedProjectCard;
 
-const Wrapper = styled.div`
+/* const Wrapper = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -56,7 +56,7 @@ const Wrapper = styled.div`
     font-size: 16px;
     line-height: 1.4;
   }
-`;
+`; */
 
 /* const SectionHeader = styled.h2`
   font-size: 50px;
@@ -75,7 +75,7 @@ const Wrapper = styled.div`
   }
 `; */
 
-const FeaturedProjectWrapper = styled.div`
+/* const FeaturedProjectWrapper = styled.div`
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -88,9 +88,9 @@ const FeaturedProjectWrapper = styled.div`
     gap: 40px;
     margin-bottom: 50px;
   }
-`;
+`; */
 
-const ProjectCard = styled.a`
+/* const ProjectCard = styled.a`
   transform: translateY(0%);
   transition: transform 0.5s;
   display: flex;
@@ -100,13 +100,13 @@ const ProjectCard = styled.a`
   position: relative;
 
   /* Optional hover effect, delete if not desired */
-  /* &:hover {
+/* &:hover {
     transform: translateY(-1%);
     transition: transform 0.3s;
   } */
-`;
+/* `; */
 
-const ThumbnailWrapper = styled.div`
+/* const ThumbnailWrapper = styled.div`
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -161,9 +161,9 @@ const ProjectInfo = styled.p`
   @media (max-width: 800px) {
     font-size: 20px;
   }
-`;
+`; */
 
-/* const ProjectTags = styled.li`
+const ProjectTags = styled.li`
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: black;
@@ -179,4 +179,3 @@ const ProjectInfo = styled.p`
     margin-right: 3px;
   }
 `;
- */
