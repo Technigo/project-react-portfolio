@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import yellow from 'images/yellow-flowers.jpg'
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
@@ -71,7 +72,7 @@ header {
     height: 520px;
     position: relative;
     background-size: cover;
-    background-color: #FF99D7;
+    background-image: url(${yellow});
 }
 
 footer {
