@@ -4,7 +4,7 @@ export const TagContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1vw;
+  gap: 0.8vw;
   padding-top: 20px;
 `
 export const Tag = styled.div`

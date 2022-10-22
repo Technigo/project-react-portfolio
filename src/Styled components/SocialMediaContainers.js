@@ -6,8 +6,15 @@ export const SocMediaContainer = styled.div`
   display: flex;
 
   img {
-    width: 100%;
+    width: 10vw;
 
+    @media (min-width: 668px) and (max-width: 1024px){
+      width: 7vw;
+    }
+
+    @media (min-width: 1025px) {
+      width: 5vw;
+  }
   &:hover {
     transform: scale(1.1)
   }

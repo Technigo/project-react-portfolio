@@ -15,7 +15,10 @@ const OtherProjects = () => {
       .then((data) => setProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => project.name !== 'project-business-site')
+  // A filter to make sure to include only projects with 'project-' in the title,
+  // and exclude projects with 'portfolio' and 'business-site' in the title
+  // + projects included in Featured projects.
+  const filteredProjects = projects.filter((project) => project.name.includes('project-') && !project.name.includes('portfolio') && !project.name.includes('business-site') && !project.name.includes('project-movies') && !project.name.includes('music-releases') && !project.name.includes('project-survey') && !project.name.includes('happy-thoughts'))
 
   return (
     <OuterWrapper gray>

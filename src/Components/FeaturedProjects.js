@@ -16,8 +16,8 @@ const FeaturedProjects = () => {
       .then((data) => setProjects(data))
   })
 
-  // Filtering out all the projects which I do not want to display in featuredProjects
-  const featuredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'project-chatbot') && (project.name !== 'project-guess-who') && (project.name !== 'project-portfolio') && (project.name !== 'project-news-site') && (project.name !== 'project-react-portfolio') && (project.name !== 'project-weather-app'))
+  // Filtering out the projects I do not want to include in the Featured projects-section
+  const featuredProjects = projects.filter((project) => project.name.includes('happy-thoughts') || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
 
   return (
     <OuterWrapper gray>

@@ -7,7 +7,7 @@ const IntroText = () => {
     <OuterWrapper gray>
       <InnerWrapper>
         <P><Line /><Dot />
-          With an educational background in History, Political Science and Journalism
+            With an educational background in History, Political Science and Journalism
           and a professional background in web communication and administration – I
           have quite a lot to bring to the table as a Frontend developer. Not least of all:
           a love for code and a huge interest in learning new things.
