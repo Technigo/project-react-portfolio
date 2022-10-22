@@ -29,11 +29,11 @@ export const Heading = styled.h2`
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
   background-color: ${(props) => (props.dark ? '#42032C' : 'none')};
-
 @media (min-width: 1025px) {
   font-size: 27px;
 }
 `
+
 export const Topics = styled.p`
   font-family: "Roboto", sans-serif;
   border: 1px solid #42032C;
@@ -44,18 +44,17 @@ export const Topics = styled.p`
   text-decoration: none;
   line-height: 12px;
   padding: 5px;
-  /* margin-right: 8px; */
   border-radius: 5px;
-
 @media (min-width: 1025px) {
   font-size: 17px;
 }
 `
+
 export const TopicsContainer = styled.div`
-display: flex;
-flex-direction: row;
-margin: 7px 0px 20px 0px;
-gap: 2%
+  display: flex;
+  flex-direction: row;
+  margin: 7px 0px 20px 0px;
+  gap: 2%;
 `
 
 export const ProjectsHeading = styled.h4`
@@ -63,7 +62,6 @@ export const ProjectsHeading = styled.h4`
   color: #D36B00;
   font-size: 20px;
   padding-top: 5px;
-
 @media (min-width: 1025px) {
   font-size: 25px;
 }
@@ -71,7 +69,6 @@ export const ProjectsHeading = styled.h4`
 
 export const ProjectsParagraph = styled.p`
   font-size: 17px;
-
 @media (min-width: 1025px) {
   font-size: 20px;
 }

@@ -27,22 +27,18 @@ export const ForMore = () => {
 }
 
 export const SoMeGrid = styled.div`
-display: grid;
-grid-template-columns: repeat(2, 100px);
-justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  justify-content: center;
 `
 
 export const GridContent = styled.div`
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 10px;
-/* display: flex;
-flex-direction: column;
-align-items: center;
-justify-items: center; */
-font-family: 'Roboto', sans-serif;
-color: #42032C;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #42032C;
 `
 
 export const SoMeLink = styled.a`

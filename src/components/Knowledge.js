@@ -19,23 +19,22 @@ export const Knowledge = () => {
 }
 
 export const KnowledgeContent = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 `
 
 export const KnowledgeText = styled.p`
-line-height: 30px;
-font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
 @media (min-width: 1025px) {
-font-size: 20px;
+  font-size: 20px;
 }
 `
 export const OrangeText = styled.span`
-color: black;
-
+  color: black;
 @media (min-width: 1025px) {
-color: #D36B00;
+  color: #D36B00;
 }
 `

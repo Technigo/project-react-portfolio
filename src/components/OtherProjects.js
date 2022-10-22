@@ -18,21 +18,19 @@ export const OtherProjects = () => {
       <InnerWrapper>
         <OtherProjectsContent>
           <Heading>OTHER PROJECTS</Heading>
-          <OtherProjectsContainer>
-            {SmallProjects.map((prop) => (
-              <div key={prop.id}>
-                <OtherProjectLink href={prop.html_url} alt="Link to project" target="_blank">
-                  <ProjectsHeading>{prop.name}</ProjectsHeading>
-                  <ProjectsParagraph>{prop.description}</ProjectsParagraph>
-                </OtherProjectLink>
-                <TopicsContainer>
-                  {prop.topics.map((tag) => (
-                    <Topics>{tag}</Topics>
-                  ))}
-                </TopicsContainer>
-              </div>
-            ))}
-          </OtherProjectsContainer>
+          {SmallProjects.map((prop) => (
+            <OtherProjectsContainer key={prop.id}>
+              <OtherProjectLink href={prop.html_url} alt="Link to project" target="_blank">
+                <ProjectsHeading>{prop.name}</ProjectsHeading>
+                <ProjectsParagraph>{prop.description}</ProjectsParagraph>
+              </OtherProjectLink>
+              <TopicsContainer>
+                {prop.topics.map((tag) => (
+                  <Topics>{tag}</Topics>
+                ))}
+              </TopicsContainer>
+            </OtherProjectsContainer>
+          ))}
         </OtherProjectsContent>
       </InnerWrapper>
     </OuterWrapper>
@@ -40,21 +38,18 @@ export const OtherProjects = () => {
 }
 
 export const OtherProjectsContent = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-/* align-items: center; */
-/* text-align: center; */
-font-family:'Roboto', sans-serif;
-line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family:'Roboto', sans-serif;
+  line-height: 30px;
 `
 export const OtherProjectsContainer = styled.div`
-display: flex;
-flex-direction: column;
-gap: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
 `
 export const OtherProjectLink = styled.a`
- 
  &:link {
   color:black;
   text-decoration: none;

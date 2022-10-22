@@ -40,12 +40,12 @@ export const Skills = () => {
 }
 
 export const SkillsContent = styled.div`
-display: flex;
-justify-items: center;
-font-family: 'Roboto', sans-serif;
-justify-content: center;
-column-gap: 50px;
-line-height: 25px;
+  display: flex;
+  justify-items: center;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  column-gap: 50px;
+  line-height: 25px;
 `
 export const SkillsColumn = styled.ul`
   text-align: center;
@@ -53,15 +53,15 @@ export const SkillsColumn = styled.ul`
 `
 
 export const SkillsHeader = styled.h6`
-color: #D36B00;
-padding-top: 10px;
-font-size: 20px;
+  color: #D36B00;
+  padding-top: 10px;
+  font-size: 20px;
 @media (min-width: 1025px) {
   font-size:25px ;
 }
 `
 export const SkillsText = styled.p`
-font-size: 17px;
+  font-size: 17px;
 @media (min-width: 1025px) {
   font-size:20px ;
   line-height: 30px;

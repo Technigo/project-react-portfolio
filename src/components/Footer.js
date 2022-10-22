@@ -20,33 +20,34 @@ export const Footer = () => {
 }
 
 export const FooterWrapper = styled.footer`
-background-color: #D36B00;
-width: 100%;
-display: flex;
-justify-content: center;
+  background-color: #D36B00;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 export const FooterContent = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 `
+
 export const FooterHeading = styled.h3`
-font-weight: 700;
-padding-bottom: 25px;
-font-size: 21px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  font-size: 21px;
 @media (min-width: 1025px) {
-font-size: 25px;
+  font-size: 25px;
 }
 `
 
 export const FooterText = styled.div`
-font-size: 17px;
-line-height: 25px;
+  font-size: 17px;
+  line-height: 25px;
 @media (min-width: 1025px) {
-font-size: 20px;
+  font-size: 20px;
 }
 `

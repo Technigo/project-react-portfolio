@@ -14,7 +14,7 @@ export const MoreThoughts = () => {
 }
 
 export const MoreThoughtsHeader = styled.h4`
-font-family:'Roboto', sans-serif;
-font-size: 20px;
-font-weight: 700;
+  font-family:'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 `

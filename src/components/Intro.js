@@ -20,16 +20,15 @@ export const Intro = () => {
 }
 
 export const IntroContent = styled.div`
-display: block;
-
+  display: block;
 `
-export const IntroText = styled.p`
-font-family: 'Montserrat', sans-serif;
-display: inline;
-line-height: 30px;
-margin: 10px;
 
+export const IntroText = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+  line-height: 30px;
+  margin: 10px;
 @media (min-width: 1025px) {
-font-size: 20px;
+  font-size: 20px;
 }
 `

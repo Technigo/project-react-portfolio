@@ -101,4 +101,4 @@ export const SoMeLink = styled.a`
 &: hover {
   opacity: 0.5;
   }
-`
+  `

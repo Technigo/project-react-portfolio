@@ -45,41 +45,41 @@ export const Thoughts = () => {
 }
 
 export const ThoughtsContent = styled.div`
-display: grid;
-grid-template-columns: 1fr;
-font-family:'Roboto', sans-serif;
-line-height: 30px;
-margin-bottom: 20px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family:'Roboto', sans-serif;
+  line-height: 30px;
+  margin-bottom: 20px;
 @media (min-width: 1025px) {
-grid-template-columns: repeat(2, 1fr);
-column-gap: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
   }
 `
 
 export const ThoughtsContainer = styled.div`
-display: flex;
-flex-direction: column;
-margin-top: 20px;
-margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
 `
-export const ThoughtsLink = styled.a`
 
+export const ThoughtsLink = styled.a`
 a:visited {
   text-decoration: none;
 }
-
 `
+
 export const ThoughtsImage = styled.img`
-width: 100%;
-border: 2px solid #D36B00;
-border-radius: 10px;
-opacity: 0.7;
+  width: 100%;
+  border: 2px solid #D36B00;
+  border-radius: 10px;
+  opacity: 0.7;
 &: hover {
   opacity: 1;
 }
 `
+
 export const ThoughtsHeader = styled.h4`
-font-size: 20px;
-font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 `
