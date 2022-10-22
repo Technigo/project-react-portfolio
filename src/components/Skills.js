@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section'
+import { Wrapper, SectionHeader } from 'components/GlobalStyles'
 
 export const Skills = () => {
   return (
-    <Section primary>
+    <SkillsWrapper primary>
       <SectionHeader>SKILLS</SectionHeader>
-      <SkillsWrapper>
+      <SkillsInnerWrapper>
         <SkillsBox>
           <h5>CODE</h5>
           <ul>
@@ -27,14 +27,17 @@ export const Skills = () => {
             <li>Github</li>
           </ul>
         </SkillsBox>
-      </SkillsWrapper>
-    </Section>
+      </SkillsInnerWrapper>
+    </SkillsWrapper>
   )
 }
 
 export default Skills;
 
-const SkillsWrapper = styled.div`
+const SkillsWrapper = styled(Wrapper)`
+`
+
+const SkillsInnerWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: start;

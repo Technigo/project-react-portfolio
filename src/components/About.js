@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section } from 'components/Section'
+import { Wrapper } from 'components/GlobalStyles'
 
 export const About = () => {
   return (
-    <Section primary>
+    <AboutWrapper primary>
       <AboutText>
         <p>
         I´m a curious frontend developer with passion for project management.
@@ -12,7 +12,7 @@ export const About = () => {
         and is now finally taking the step into coding aswell!
         </p>
       </AboutText>
-    </Section>
+    </AboutWrapper>
   )
 }
 
@@ -26,4 +26,8 @@ const AboutText = styled.p`
     text-align: center;
     margin-top: 120px;
     margin-bottom: 30px;
+`
+
+const AboutWrapper = styled(Wrapper)`
+
 `

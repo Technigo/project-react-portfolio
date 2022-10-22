@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section'
+import { Wrapper, SectionHeader } from 'components/GlobalStyles'
 import github from '../images/github.png'
 import linkedin from '../images/linkedin.png'
 
 export const More = () => {
   return (
-    <Section>
+    <MoreOuterWrapper>
       <SectionHeader>MORE</SectionHeader>
       <MoreWrapper>
         <a
@@ -26,11 +26,14 @@ export const More = () => {
             alt="link to github" />
         </a>
       </MoreWrapper>
-    </Section>
+    </MoreOuterWrapper>
   )
 }
 
 export default More;
+
+const MoreOuterWrapper = styled(Wrapper)`
+`
 
 const MoreWrapper = styled.div`
     display: flex;

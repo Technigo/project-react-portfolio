@@ -1,15 +1,18 @@
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section'
+import styled from 'styled-components';
+import { Wrapper, SectionHeader } from 'components/GlobalStyles'
 import ProjectList from 'components/ProjectList';
 
 export const FeatureProjects = () => {
   return (
-    <Section primary>
+    <FeatureWrapper primary>
       <SectionHeader>FEATURE PROJECTS</SectionHeader>
       <ProjectList />
-    </Section>
+    </FeatureWrapper>
   )
 }
 
 export default FeatureProjects;
 
+const FeatureWrapper = styled(Wrapper)`
+`

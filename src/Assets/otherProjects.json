@@ -1,0 +1,47 @@
+[
+  {
+    "title": "BUSINESS SITE",
+    "description": "First ever project - one pager built with mob programming.",
+    "netlify": "https://coruscating-sopapillas-e37efd.netlify.app/",
+    "github": "https://github.com/charlottejohansson/project-business-site",
+    "code": [
+        "HTML5",
+        "CSS3"
+    ]
+  },
+  {
+    "title": "GUESS WHO",
+    "description": "Card game build in JavaScript, HTML and CSS.",
+    "netlify": "https://charlotte-johansson-guess-who.netlify.app/",
+    "github": "https://github.com/charlottejohansson/project-guess-who",
+    "code": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6"
+    ]
+  },
+  {
+    "title": "CHAT BOT",
+    "description": "Chat bot built in JavaScript that will give you different jokes depending on you answers.",
+    "netlify": "https://subtle-paletas-e779d4.netlify.app/",
+    "github": "https://github.com/charlottejohansson/project-chatbot",
+    "code": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6"
+      ]
+  },
+  {
+    "title": "BOOK SURVEY",
+    "description": "Survery build with three different inputs and a summary.",
+    "netlify": "https://booksurvey.netlify.app/",
+    "github": "https://github.com/charlottejohansson/project-survey",
+    "code": [
+        "HTML5",
+        "CSS3",
+        "JavaScript ES6",
+        "React"
+    ]
+  }
+
+]

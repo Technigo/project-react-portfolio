@@ -1,20 +1,23 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section } from 'components/Section'
+import { Wrapper } from 'components/GlobalStyles'
 
 export const OtherProjects = () => {
   return (
-    <Section primary>
+    <OtherWrapper primary>
       <OtherProjectText>
         <p>
         OtherProjects
         </p>
       </OtherProjectText>
-    </Section>
+    </OtherWrapper>
   )
 }
 
 export default OtherProjects;
+
+const OtherWrapper = styled(Wrapper)`
+`
 
 const OtherProjectText = styled.p`
     font-size: 17px;

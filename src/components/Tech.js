@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section';
+import { Wrapper, SectionHeader } from 'components/GlobalStyles'
 
 export const Tech = () => {
   return (
-    <Section>
+    <SkillsWrapper>
       <SectionHeader>TECH</SectionHeader>
       <TechText>
         <p>
@@ -12,11 +12,14 @@ export const Tech = () => {
         pair-programming, API:s, Web accessability, Flexbox.
         </p>
       </TechText>
-    </Section>
+    </SkillsWrapper>
   )
 }
 
 export default Tech;
+
+const SkillsWrapper = styled(Wrapper)`
+`
 
 const TechText = styled.p`
     position: relative;
