@@ -41,8 +41,8 @@ export const Header = () => {
 const HeaderContainer = styled.header`
   background-image: url('/images/heroimage.jpeg');
   height: 400px;
-  background-position: bottom center;
-  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
   position: relative;
 
   @media (min-width: 520px) and (max-width: 1023px){
@@ -74,21 +74,21 @@ const TitleContainer = styled.div`
   @media (min-width: 520px) and (max-width: 1023px){
     line-height: 50px;
 
-  h1{
-    font-size: 40px;
-    display: block;
+    h1{
+      font-size: 40px;
+      display: block;
+    }
   }
-}
 
   @media (min-width: 1024px){
     line-height: 65px;
     left: 15%;
 
-  h1{
-    font-size: 50px;
-    display: block;
+    h1{
+      font-size: 50px;
+      display: block;
+    }
   }
-}
 `
 
 const ImageContainer = styled.div`
