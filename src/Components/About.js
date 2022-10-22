@@ -2,10 +2,12 @@ import React from 'react';
 import GlobalStyle, {
 	SectionContainer,
 	SectionParagraph,
+	Title,
 } from 'StyledComponents/GlobalStyle';
 const About = () => {
 	return (
 		<SectionContainer backgroundColor="rgb(238, 238, 238)">
+			<Title>About</Title>
 			<SectionParagraph>
 				<strong>Hi there, </strong>I'm Jessica. A Upcoming Frontend Developer
 				currently studying at Technigo Coding Bootcamp, expecting to graduate in
