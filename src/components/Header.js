@@ -1,30 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import { LINKEDIN_URL, GITHUB_URL } from 'utils/Urls';
-import { Title, IconContainer, IconButton } from './GlobalStyles';
+import { Title, IconContainer, IconLink } from './GlobalStyles';
 
 export const Header = () => {
   return (
     <HeaderContainer>
       <IconContainer>
-        <IconButton
+        <IconLink
           primary
-          type="button"
           href={LINKEDIN_URL}
-          target="_blank">
+          target="_blank"
+          rel="noreferrer">
           <img
             src="/images/linkedin-icon.svg"
             alt="LinkedIn icon for the header" />
-        </IconButton>
-        <IconButton
+        </IconLink>
+        <IconLink
           primary
-          type="button"
           href={GITHUB_URL}
           target="_blank">
           <img
             src="/images/github-icon.svg"
             alt="Github icon for the header" />
-        </IconButton>
+        </IconLink>
       </IconContainer>
       <TitleContainer>
         <Title><span>Portfolio:</span> Kartika Purwahyuningrum</Title>

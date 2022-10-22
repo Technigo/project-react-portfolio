@@ -148,19 +148,20 @@ export const IconContainer = styled.div`
 }
 `
 
-export const IconButton = styled.button`
+export const IconLink = styled.a`
   background: none;
   border: none;
-  margin-right: 0;
+  margin-right: 15px;
   filter: ${(props) => (props.primary ? 'none' : 'invert(1)')};
-  transition: transform .4s; 
-
-  &:hover{
-    transform: scale(0.95);
-  }
+  
 
   img{
     height: 50px;
+    transition: transform .4s; 
+
+    &:hover{
+      transform: scale(0.95);
+    }
   }
 
   @media (min-width: 600px) and (max-width: 1023px) {

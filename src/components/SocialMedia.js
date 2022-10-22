@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { LINKEDIN_URL, STACKOVERFLOW_URL, GITHUB_URL } from 'utils/Urls';
-import { Wrapper, SectionTitle, IconButton } from './GlobalStyles';
+import { Wrapper, SectionTitle, IconLink } from './GlobalStyles';
 
 export const SocialMedia = () => {
   return (
     <Wrapper>
       <SectionTitle>FIND ME</SectionTitle>
       <SocialMediaContainer>
-        <IconButton
+        <IconLink
           primary
           type="button"
           href={LINKEDIN_URL}
@@ -16,8 +16,8 @@ export const SocialMedia = () => {
           <img
             src="images/linkedin.png"
             alt="LinkedIn icon for the header" />
-        </IconButton>
-        <IconButton
+        </IconLink>
+        <IconLink
           primary
           type="button"
           href={GITHUB_URL}
@@ -25,8 +25,8 @@ export const SocialMedia = () => {
           <img
             src="images/github.png"
             alt="Github icon for the header" />
-        </IconButton>
-        <IconButton
+        </IconLink>
+        <IconLink
           primary
           type="button"
           href={STACKOVERFLOW_URL}
@@ -34,7 +34,7 @@ export const SocialMedia = () => {
           <img
             src="images/stack-overflow.png"
             alt="Stack Overflow icon for the header" />
-        </IconButton>
+        </IconLink>
       </SocialMediaContainer>
     </Wrapper>
   )
