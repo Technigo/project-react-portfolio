@@ -7,10 +7,12 @@ const Header = () => {
 	return (
 		<HeaderStyler>
 			<div>
-				<h1>Portfolio: <span>Petra  <br />Söderström</span></h1>
-				<h2>frontend <br />developer</h2>
+				<h1>Portfolio: Petra</h1>
+				<h1>Söderström</h1>
+				<h2>frontend</h2>
+				<h2>developer</h2>
 			</div>
-			<img src={profileImage} alt="profile-of-Petras" />
+			<img className="profile" src={profileImage} alt="profile-of-Petras" />
 		</HeaderStyler>
 	)
 }
@@ -34,7 +36,7 @@ div {
   left: 5vw;
 }
 
-img {
+.profile {
   position: absolute;
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
@@ -42,6 +44,7 @@ img {
   width: 40vw;
   right: 10vw;
   bottom: -8vh;
+	margin-bottom: 6%;
 }
 
 
@@ -53,9 +56,10 @@ img {
 
 
 @media (min-width: 1024px) {
-  img {
-    width: 15vw;
-    right: 20vw;
+  .profile {
+    width: 17vw;
+    right: 19.2vw;
+		margin-bottom: 0;
   }  
 }
 `

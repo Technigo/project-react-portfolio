@@ -19,7 +19,13 @@ const About = () => {
 
 export default About;
 
-const AboutStyler = styled.div``
+const AboutStyler = styled.div`
+padding-top: 20%;
+
+@media (min-width: 1024px) {
+	padding-top: 8%;
+}
+`
 
 const Line = styled.span`
   border: 1px solid rgb(255, 119, 119);

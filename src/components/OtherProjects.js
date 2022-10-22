@@ -20,7 +20,7 @@ const OtherProjects = () => {
 
 	const renderTags = (tags) => {
 		return tags.map((tag) => {
-			return (<div>{tag.toUpperCase()}</div>)
+			return (<div className="tagger">{tag.toUpperCase()}</div>)
 		})
 	}
 
@@ -32,13 +32,14 @@ const OtherProjects = () => {
 				return (
 					<OuterWrapper primary>
 						<div className="innerwrapper" key={project.id}>
+							<h3>Other projects</h3>
 							<h5>{project.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' site')
 								.toUpperCase()}
 							</h5>
 							<DescriptionStyler>
 								<p>{project.description}</p>
 							</DescriptionStyler>
-							<LinkStyler>{project.html_url}</LinkStyler>
+							<LinkStyler><a href={project.html_url}>Github link</a></LinkStyler>
 							<StyledLinks>{renderTags(project.topics)}</StyledLinks>
 						</div>
 					</OuterWrapper>
@@ -56,13 +57,30 @@ justify-content: center;
 `
 const LinkStyler = styled.div`
 display: flex;
+flex-direction: row;
 justify-content: center;
+font-size: 1.2rem;
+margin-bottom: .3rem;
+margin-top: .3rem;
 `
 
 const StyledLinks = styled.div`
   display: flex;
   flex-direction: row;
-  width: 80%;
+	justify-content: center;
   padding: 0%;
+
+	.tagger{
+		margin-left: .5rem;
+		font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(216, 0, 166);
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 10px;
+  padding: .5rem;
+  border-radius: 5px;
+	}
 	`
 
