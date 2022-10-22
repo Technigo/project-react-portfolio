@@ -54,7 +54,7 @@ export const Topics = styled.p`
 export const TopicsContainer = styled.div`
 display: flex;
 flex-direction: row;
-margin-bottom: 10px;
+margin: 7px 0px 20px 0px;
 gap: 2%
 `
 

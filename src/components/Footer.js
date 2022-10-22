@@ -11,7 +11,7 @@ export const Footer = () => {
           <FooterText>
             <p>Maria Westling</p>
             <p>+46 70 398 45 54</p>
-            <p>maria_westling@hotmail.com</p>
+            <p>maria.westling@gmail.com</p>
           </FooterText>
         </FooterContent>
       </InnerWrapper>
