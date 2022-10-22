@@ -18,6 +18,7 @@ const Skills = () => {
 
         <ul>
           <h5>Code</h5>
+          <li>React</li>
           <li>JavaScript ES6</li>
           <li>CSS3</li>
           <li>HTML5</li>
@@ -25,7 +26,6 @@ const Skills = () => {
 
         <ul>
           <h5>Soon</h5>
-          <li>Redux</li>
           <li>Node.js</li>
           <li>SQL</li>
           <li>Mongo DB</li>
