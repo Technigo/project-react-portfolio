@@ -46,6 +46,7 @@ export const HeaderContainer = styled.div`
   display: flex; 
   justify-content: center;
   grid-column: span 4; 
+  padding-bottom: 2em; 
 `
 export const TagWrapperText = styled.p`
  font-family: "Roboto", sans-serif;

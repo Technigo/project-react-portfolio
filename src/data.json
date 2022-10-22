@@ -1,0 +1,198 @@
+[
+    {
+        "title": "Happy thoughts",
+        "id": 1,
+        "img_src": "/assets/heart.jpg",
+        "title-description": "A site where you can send happy thoughts",
+        "description": "This is a site built with React and calling API. Where you can send happy thoughts, list all thoughts and like them.",
+        "repo-name": "project-happy-thoughts",
+        "url": "https://github.com/AmandaElvkull/project-happy-thoughts",
+        "url_netlify": " https://teal-biscotti-944ab1.netlify.app/",
+        "tags": [
+            {
+            "id": 1,
+            "tech": "React"
+            },
+            {
+            "id": 2,
+            "tech": "HTML"
+            },
+            {
+            "id": 3,
+            "tech": "CSS"
+            },
+            {
+            "id": 4,
+            "tech": "API"
+            }
+      ]
+    },
+      
+    {
+        "title": "Miniflix",
+        "id": 2,
+        "img_src": "/assets/movie.jpg",
+        "title-description": "A site where you can see different movie lists",
+        "description": "A movie site built in React where you can see an overview of different movies from differents API´s.",
+        "repo-name": "project-survey",
+        "url": "https://github.com/AmandaElvkull/project-movies",
+        "url_netlify": "https://miniflix-project-movies.netlify.app/",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "React"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          },
+          {
+          "id": 4,
+          "tech": "API"
+          }
+      ]
+    },
+
+    {
+        "title": "Weather app",
+        "id": 3,
+        "img_src": "/assets/weather.jpg",
+        "title-description": "An app that tells today's weather",
+        "description": "A weather app build in Javascript and using a weather API. You can search for a location or use geolocation to see todays weather and a 5 days-forecast.",
+        "repo-name": "project-weather-app",
+        "url": "https://github.com/AmandaElvkull/project-weather-app",
+        "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          },
+          {
+          "id": 4,
+          "tech": "API"
+          }
+
+      ]
+    },
+
+    {
+        "title": "Guess who",
+        "id": 4,
+        "img_src": "/assets/guesswho.jpg",
+        "title-description": "A digital version of the classic board game Guess Who",
+        "description": "A responsive app build in Javascript where you can play a digital version of the classic boardgame Guess Who.",
+        "repo-name": "project-guess-who",
+        "url": "https://github.com/AmandaElvkull/project-guess-who",
+        "url_netlify": "https://guesswho-amanda-elvkull.netlify.app/",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
+    },
+    {
+        "title": "Chatbot",
+        "id": 5,
+        "img_src": "/assets/guesswho.jpg",
+        "title_description": "A responsive chatbot",
+        "description": "A responsive app build in Javascript where you can interact with a chatbot",
+        "repo-name": "project-Chat-bot",
+        "url": "https://github.com/AmandaElvkull/project-chat-bot",
+        "url_netlify": "https://sparkling-haupia-6ecb6b.netlify.app/",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
+    }
+    ,
+    {
+        "title": "IceCreamland",
+        "id": 6,
+        "img_src": "/assets/guesswho.jpg",
+        "title_description": "A page where you can order Ice Cream",
+        "description": "A project where you can order Ice cream as a survery form ",
+        "repo-name": "project-survey",
+        "url": "https://github.com/AmandaElvkull/project-survey",
+        "url_netlify": "https://serene-bublanina-b7cdf6.netlify.app/ ",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+          ,
+          {
+          "id": 4,
+          "tech": "React"
+          }
+      ]
+    }
+    ,
+    {
+        "title": "MusicRelase",
+        "id": 7,
+        "img_src": "/assets/guesswho.jpg",
+        "title_description": "A responsive page where you can see playlist from spotify",
+        "description": "A page where you can see the most popular songlist from spotify build in react with spotify API",
+        "repo-name": "project-music-release",
+        "url": "https://github.com/AmandaElvkull/project-music-releases",
+        "url_netlify": "https://dapper-pasca-d3f638.netlify.app/",
+        "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+          ,
+          {
+          "id": 4,
+          "tech": "React"
+          }
+      ]
+    }
+  ]

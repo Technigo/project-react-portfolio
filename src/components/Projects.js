@@ -1,141 +1,90 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { ContainerColored, SectionHeader, HeaderContainer } from 'GlobalStyles';
+import { ContainerColored, /*  SectionHeader, */ TagWrapper, TagWrapperText } from 'GlobalStyles';
+import data from 'data.json'
 
 const Container = styled(ContainerColored)`
 display: grid; 
-grid-template-columns: 1fr;
-
-
-@media (min-width: 768px) {
- padding-left: 8em; 
- padding-top: 3em;
- grid-template-columns: 1fr 1fr ; 
-    
-  }
-  @media (min-width: 1024px) {
-  padding-left: 8em; 
-  padding-top: 3em;
-    
-  }`
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-content: center;
+gap: 30px; 
+`
 
 const ProjectContainer = styled.div`
+    margin: auto;
 
- 
-
-
-
-`
-const Row = styled.div`
-display: flex; 
-flex-direction: row; 
-gap: 10px;
-align-items: center;
-padding-top: 2em;  
-/* padding-right: 6em;  */
-@media (min-width: 768px) {
- padding-left: 8em; 
- padding-top: 3em;
-
-    
-  }
-  @media (min-width: 1024px) {
-  padding-left: 8em; 
-  padding-top: 3em;
- 
-  }
 `
 
 const Img = styled.img`
-width: 350px; 
-height:250px; 
-display: relative; 
-/* padding-right: 3em; */ 
-
-
+ width: 350px;
+ height: auto;
 `
-const Overlay = styled.div`
+const ImageContainer = styled.div`
+position: relative;
+`
+
+const TitleOverlay = styled.div`
 position: absolute;
-left: 30px; 
-width: 350px;
-height: 250px;
-background: rgba(156, 166, 197, 0.5);
-display: flex;
+display: none;
 justify-content: center;
 align-items: center;
-color: #fff;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #60183575;
 font-size: 28px;
 font-family: "Montserrat", sans-serif;
 text-transform: uppercase;
-/* ${Img}:hover &{
-  display: flex;
+color: black; 
 
-} */
+${ImageContainer}:hover & {
+  display:flex; 
+}
 `
-const Link = styled.a``
+const Link = styled.a`
+ text-decoration: none;
+ color: black; `
+
+const ProjectTitle = styled.h5`
+font-family:"Montserrat", sans-serif;
+font-size: 20px; 
+ `
+const Description = styled.p`
+font-family:"Roboto", sans-serif;
+text-decoration:none;`
+
+/* const HeaderContainer = styled.div`
+
+justify-content: center;
+grid-column: span 3 ; ` */
 
 const Projects = () => {
-  const [projects, setProjects] = useState([])
-
-  const options = {
-    method: 'GET',
-    headers: {
-      Authorization: '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'
-    }
-  }
-
-  fetch('https://api.github.com/users/AmandaElvkull/repos', options)
-    .then((Response) => Response.json())
-    .then((json) => setProjects(json))
-    .catch((error) => alert(error, 'error'))
-
-  /*   const ImageArray = [
-    { image: <img src="/assets/chatbot.jpg" alt="chatbot" /> },
-    { image: <img src="/assets/chatbot.jpg" alt="chatbot" /> },
-    { image: <img src="/assets/chatbot.jpg" alt="chatbot" /> },
-    { image: <img src="/assets/chatbot.jpg" alt="chatbot" /> }
-  ] */
-
   return (
     <Container>
-      <HeaderContainer>
-        <SectionHeader>Projects</SectionHeader>
-      </HeaderContainer>
-      <Row className="row">
-        {projects.filter((project) => project.fork === true).slice(0, 4).map((project) => (
-          <ProjectContainer key={project.id} className="col-sm-5">
-            <Link
-              href={project.html_url}
-              target="_blank"
-              rel="noreferrer"
-              className="col-sm-4"
-              aria-label="link to project">
-              <Img src="/assets/chatbot.jpg" alt="chatbot" />
-            </Link>
-            <Overlay>
-              <p className="overlay-text">
-                {project.name}
-              </p>
-            </Overlay>
-            <h4> {project.name}</h4>
-            {/*    {ImageArray.map((image) => (
-              <Img
-                src={image.image}
-                alt={image.name} />
+      {data.slice(0, 4).map((project) => (
+        <ProjectContainer key={project.id}>
+          <Link href={project.url} target="_blank" rel="noreferrer">
+            <ImageContainer>
+              <Img src={project.img_src} alt="project" />
+              <TitleOverlay>{project.title}</TitleOverlay>
+            </ImageContainer>
+            <ProjectTitle>{project.title}</ProjectTitle>
+          </Link>
+          <Description>{project.description} <Link href={project.url_netlify}> x </Link>
+          </Description>
 
-            ))} */}
-            <div className="text-container">
-              <p> lorem lorem lorem lorem </p>
-              <p> wrapper</p>
-            </div>
-          </ProjectContainer>
-
-        ))}
-
-      </Row>
-
+          <TagWrapper>
+            {project.tags.map((tag) => (
+              <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
+            ))}
+          </TagWrapper>
+        </ProjectContainer>
+      ))}
     </Container>
+
   )
 }
 export default Projects

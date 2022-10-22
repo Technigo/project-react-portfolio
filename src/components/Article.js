@@ -10,10 +10,13 @@ padding-top: 2em;
 padding-bottom: 2em; 
 display: grid; 
 grid-template-columns: 1fr 1fr;
-justify-items: center; 
+justify-content: center;
+align-content: center;  
+/* justify-items: center;  */
 
 
-@media (min-width: 768px) {
+
+/* @media (min-width: 768px) {
   padding-right: 10em; 
   padding-left: 10em;
     
@@ -23,34 +26,47 @@ justify-items: center;
   padding-left: 15em;
     
   }
-
+ */
  `
 
 const ArticleContainer = styled.div`
 grid-column: 1 / 2 ;
-display: grid; 
+display: flex; 
 padding-top: 2em; 
+flex-direction: column; 
+padding-left: 2em; 
+margin:auto; 
 `
 
 const ArticleContainer2 = styled.div`
-display: none; 
+display: flex; 
 grid-column: 2 / 3 ; 
-padding-top: 2em; 
-
-
-@media (min-width: 768px) {
- display: grid; 
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em;
-    
-  }`
+padding-top: 2em;
+flex-direction: column; 
+padding-left: 2em;  
+margin:auto; `
 
 const Img = styled.img`
-height: 150px; 
-width: 200px; `
+ width: 350px;
+ height: auto;`
+
+const Link = styled.a`
+text-decoration: none;
+color: black; `
+
+const Text = styled.p`
+font-family:"Roboto", sans-serif;
+`
+const TextContainer = styled.div`
+display: flex; 
+flex-direction: column;`
+
+const Date = styled.p`
+font-size: 10px;
+color:rgb(185, 0, 91);`
+
+const Heading = styled.p`
+font-size: 15px; `
 
 const Article = () => {
   return (
@@ -59,35 +75,35 @@ const Article = () => {
         <SectionHeader>Thoughts about code</SectionHeader>
       </HeaderContainer>
       <ArticleContainer>
-        <a
-          href=""
+        <Link
+          href="https://medium.com/@amanda.elvkull/my-reflexions-after-8-weeks-of-web-developer-bootcamp-c966f132ceba"
           target="_blank"
           rel="noreferrer">
           <Img
             src="assets/article.jpg"
             alt="article" />
-        </a>
-        <div className="text-container">
-          <p>October 2022</p>
-          <h4> HEading</h4>
-          <p> lorem lorem lorem lorem </p>
-        </div>
+        </Link>
+        <TextContainer>
+          <Heading> My thougts after 8 weeks</Heading>
+          <Date>October 2022</Date>
+          <Text> Here is a small reflexion about how it has been attending a boot camp.  </Text>
+        </TextContainer>
       </ArticleContainer>
 
       <ArticleContainer2>
-        <a
+        <Link
           href=""
           target="_blank"
           rel="noreferrer">
           <Img
             src="assets/article.jpg"
             alt="article" />
-        </a>
-        <div className="text-container">
-          <p>October 2022</p>
-          <h4> HEading</h4>
-          <p> lorem lorem lorem lorem </p>
-        </div>
+        </Link>
+        <TextContainer>
+          <Heading> Stay tuned</Heading>
+          <Date>October 2022</Date>
+          <Text> for uppcoming articles from me ❤️ </Text>
+        </TextContainer>
       </ArticleContainer2>
     </Container>
   )

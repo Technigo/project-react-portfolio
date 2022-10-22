@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Article from './Article'
-import ArticletList from './ArticleList'
+/* import ArticletList from './ArticleList' */
 import ElevatorPitch from './ElevatorPitch'
 import Footer from './Footer'
 import Header from './Header'
@@ -35,7 +35,7 @@ const PortfolioWrapper = () => {
         <Projects />
         <ProjectList />
         <Article />
-        <ArticletList />
+        {/* <ArticletList /> */}
         <TechList />
         <Icons />
       </Container>

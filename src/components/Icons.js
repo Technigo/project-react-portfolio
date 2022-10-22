@@ -1,17 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { ContainerWhite } from 'GlobalStyles'
-/* import { Github } from './icon' */
-/* import Linkedin from './Icon/Linkedin.svg'
-import StackOverFlow from './Icon/StackOverFlow.svg' */
 
-/* const IconContainer = styled.div`
-  display: flex;
-    align-items: flex-end;
-    position:absolute;
-    top: 2.8rem;
-    right: 1.2rem;
- `  */
 const Logos = styled.div`
 display: flex;
 flex-direction: row;
