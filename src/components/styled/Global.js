@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
   --sub-color: rgba(255, 132, 24, 1);
   --third-color: rgb(163, 163, 163);
 
-  --line-height: 25px;
+  --line-height: 1.5rem;
   --margin: 0 auto;
   --width: 40rem;
 
@@ -116,7 +116,6 @@ h5 {
   font-size: 1rem;
   font-weight: 700;
   height: fit-content;
-  margin: 0.7rem 0 0.1rem 0.1rem;
   text-transform: uppercase;
 
   @media (max-width: 650px) {

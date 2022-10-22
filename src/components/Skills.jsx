@@ -7,31 +7,30 @@ const Skills = () => {
     <SectionContainer bg>
       <h4>Skills</h4>
       <SkillsGrid>
-        <div>
+
+        <ul>
+          <h5>Tools</h5>
+          <li>VS Code</li>
+          <li>GitHub</li>
+          <li>Adobe CC</li>
+          <li>Figma</li>
+        </ul>
+
+        <ul>
           <h5>Code</h5>
-          <ul>
-            <li>React</li>
-            <li>JavaScript ES6</li>
-            <li>CSS3</li>
-            <li>HTML5</li>
-          </ul>
-        </div>
-        <div>
+          <li>JavaScript ES6</li>
+          <li>CSS3</li>
+          <li>HTML5</li>
+        </ul>
+
+        <ul>
           <h5>Soon</h5>
-          <ul>
-            <li>Redux</li>
-            <li>Node.js</li>
-            <li>Mongo DB</li>
-          </ul>
-        </div>
-        <div>
-          <h5>Want to learn</h5>
-          <ul>
-            <li>TypeScript</li>
-            <li>PHP</li>
-            <li>Python</li>
-          </ul>
-        </div>
+          <li>Redux</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>Mongo DB</li>
+        </ul>
+
       </SkillsGrid>
     </SectionContainer>
   );

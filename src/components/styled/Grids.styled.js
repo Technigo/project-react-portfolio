@@ -7,6 +7,10 @@ export const ArticleGrid = styled.div`
   margin: var(--margin);
   width: var(--width);
 
+    & h5 {
+      // margin-top: ${(props) => (props.other ? '0' : '0.7rem')};
+    }
+
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
   }
@@ -20,15 +24,24 @@ export const SkillsGrid = styled.div`
   width: var(--width);
 
   & h5 {
-    font-family: var(--main-font);
-    text-transform: none;
+    text-transform: uppercase;
   }
 
   & ul {
-    font-family: var(--main-font);
-    font-size: 1rem;
-    margin-top: 5px;
+    font-family: var(--sub-font);
     line-height: var(--line-height);
     list-style-type: none;
+  }
+
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
+    
+    & ul {
+      margin-bottom: 1.5rem;
+    }
+
+    & ul:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
 `;
