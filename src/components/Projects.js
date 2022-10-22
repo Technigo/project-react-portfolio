@@ -27,12 +27,12 @@ gap: 30px;
 `
 
 const ProjectContainer = styled.div`
-    margin: auto;
-
+    /* margin: auto; */
+  
 `
 
 const Img = styled.img`
-display: block; 
+/* display: block; */ 
 width: 100%;
 height: 100%;  
 `
