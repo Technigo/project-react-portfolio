@@ -41,7 +41,7 @@ const HeaderContainer = styled.header`
   background-image: url('/images/heroimage.jpeg');
   height: 400px;
   background-position: center bottom;
-  background-attachment: fixed;
+  background-size: cover;
   position: relative;
 
   @media (min-width: 668px) and (max-width: 1023px){
