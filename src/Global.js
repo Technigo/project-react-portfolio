@@ -32,7 +32,6 @@ h1{
 font-size: 2rem;
 color: white;
 margin-left: 10%;
-line-height: 3rem;
 display: flex;
 flex-direction: flex-start;
 } 
