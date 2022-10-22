@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ArticleGrid = styled.div` 
+export const ProjectsGrid = styled.div` 
   display: grid;
   grid-template-columns: ${(props) => (props.other ? '1fr' : '1fr 1fr')};
   gap: 2rem;
@@ -34,7 +34,7 @@ export const SkillsGrid = styled.div`
   }
 
   @media (max-width: 650px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: ${({ skills }) => (skills && '1fr')};
     
     & ul {
       margin-bottom: 1.5rem;

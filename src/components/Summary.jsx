@@ -8,7 +8,7 @@ const Summary = () => {
     <SectionContainer bg>
       <Paragraph main>
         <Line /><Dot />
-          I&apos;m a freshly
+          Welcome! I&apos;m a freshly
           baked frontend developer named Fredrik. With a background in office
           management I now strive to keep my code as neat as possible. Always
           eager to deepen my knowledge and sharpen my coding skills!
@@ -32,5 +32,5 @@ const Dot = styled.span`
   background-color: var(--sub-color);
   border-radius: 50%;
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
 `;

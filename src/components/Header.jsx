@@ -11,7 +11,7 @@ const Header = () => {
           href="https://www.linkedin.com/in/fredrik-holm-10406b106/"
           target="_blank"
           rel="noreferrer"
-          aria-hidden="true">
+          aria-hidden>
           <div>
             <LinkedInSvg />
           </div>
@@ -20,7 +20,7 @@ const Header = () => {
           href="https://github.com/karlfredrikholm/"
           target="_blank"
           rel="noreferrer"
-          aria-hidden="true">
+          aria-hidden>
           <div>
             <GitHubSvg />
           </div>
@@ -29,7 +29,7 @@ const Header = () => {
           href="https://stackoverflow.com/users/19384002/fredrik-holm"
           target="_blank"
           rel="noreferrer"
-          aria-hidden="true">
+          aria-hidden>
           <div>
             <StackSvg />
           </div>

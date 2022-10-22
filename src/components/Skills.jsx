@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <SectionContainer bg>
       <h4>Skills</h4>
-      <SkillsGrid>
+      <SkillsGrid skills>
 
         <ul>
           <h5>Tools</h5>

@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
-import { ArticleGrid } from './styled/Grids.styled';
-import ArticleCard from './styled/ArticleContainer.styled';
+import { ProjectsGrid } from './styled/Grids.styled';
+import ArticleContainer from './styled/ArticleContainer.styled';
 import { ThoughtsImage } from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { TopicsContainer } from './styled/Topics.styled';
@@ -11,48 +11,55 @@ const Thoughts = () => {
   return (
     <SectionContainer>
       <h4>Thoughts On Code</h4>
-      <ArticleGrid>
+      <ProjectsGrid>
 
-        <ArticleCard thoughts>
-          <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
-            <div>
-              <h6>How It All Started</h6>
-            </div>
-          </ThoughtsImage>
+        <ArticleContainer thoughts>
+          <a
+            href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665/"
+            target="_blank"
+            rel="noreferrer">
+            <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
+              <div>
+                <h6>How It All Started</h6>
+              </div>
+            </ThoughtsImage>
+          </a>
           <h5>November 2022</h5>
           <Paragraph grid>Some personal gibberish about how
           I started learning web development.
           </Paragraph>
           <TopicsContainer>
             <a
-              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665"
+              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665/"
               target="_blank"
               rel="noreferrer">
-              Read article
+              Read Article
             </a>
           </TopicsContainer>
-        </ArticleCard>
+        </ArticleContainer>
 
-        <ArticleCard thoughts>
-          <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
-            <div>
-              <h6>Coming soon</h6>
-            </div>
-          </ThoughtsImage>
+        <ArticleContainer thoughts>
+          <a href="#" target="_blank" rel="noreferrer" aria-hidden>
+            <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
+              <div>
+                <h6>Coming soon</h6>
+              </div>
+            </ThoughtsImage>
+          </a>
           <h5>Coming Soon</h5>
           <Paragraph grid>Some personal gibberish about something
           else.
           </Paragraph>
           <TopicsContainer>
             <a
-              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665"
+              href="#"
               target="_blank"
               rel="noreferrer">
-              Read article
+              Read Article
             </a>
           </TopicsContainer>
-        </ArticleCard>
-      </ArticleGrid>
+        </ArticleContainer>
+      </ProjectsGrid>
     </SectionContainer>
   );
 };

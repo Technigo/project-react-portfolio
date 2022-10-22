@@ -50,7 +50,7 @@ code {
 /* LINKS */
 a {
     color: black;
-    font-family: var(--sub-font);
+    font-family: var(--main-font);
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
@@ -117,7 +117,7 @@ h5 {
   font-weight: 700;
   height: fit-content;
   text-transform: uppercase;
-
+  
   @media (max-width: 650px) {
     font-size: 1.1rem;
   }
