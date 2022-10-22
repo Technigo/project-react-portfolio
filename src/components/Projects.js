@@ -32,7 +32,7 @@ export const Projects = () => {
           </a>
           <a href="https://github.com/jnbjensen/project-happy-thoughts">
             <CardDiv>
-              <div className="card-img">
+              <div>
                 <CardImage
                   src="images/fp-happythoughts.png"
                   alt="happy thoughts project"
@@ -54,7 +54,7 @@ export const Projects = () => {
           </a>
           <a href="https://github.com/jnbjensen/project-survey">
             <CardDiv>
-              <div className="card-img">
+              <div>
                 <CardImage
                   src="images/fp-survey.png"
                   alt="survey project"
@@ -75,7 +75,7 @@ export const Projects = () => {
           </a>
           <a href="https://github.com/jnbjensen/project-music-releases">
             <CardDiv>
-              <div className="card-img">
+              <div>
                 <CardImage
                   src="images/fp-music-releases.png"
                   alt="music releases project"
@@ -108,7 +108,7 @@ export const Projects = () => {
             <div>JavaScript</div>
           </TagDiv>
         </div>
-        <div className="other-project">
+        <div>
           <p><a href="https://github.com/jnbjensen/project-guess-who" rel="noreferrer" target="_blank"><InlineHeading>GUESS WHO?</InlineHeading></a> A
            browser version of the classic boardgame &apos;Guess Who?&apos;
           <a href="https://github.com/jnbjensen/project-guess-who" rel="noreferrer" target="_blank"> &gt;&gt;</a>
@@ -119,7 +119,7 @@ export const Projects = () => {
             <div>JavaScript</div>
           </TagDiv>
         </div>
-        <div className="other-project">
+        <div>
           <p><a href="https://github.com/jnbjensen/project-chatbot" rel="noreferrer" target="_blank"><InlineHeading>CHATBOT</InlineHeading></a> A joke-generating chatbot
             <a href="https://github.com/jnbjensen/project-chatbot" rel="noreferrer" target="_blank"> &gt;&gt;</a>
           </p>
@@ -129,7 +129,7 @@ export const Projects = () => {
             <div>JavaScript</div>
           </TagDiv>
         </div>
-        <div className="other-project">
+        <div>
           <p><a href="https://github.com/jnbjensen/project-news-site" rel="noreferrer" target="_blank"><InlineHeading>NEWS SITE</InlineHeading></a> A
            simple website with (fake) news articles
           <a href="https://github.com/jnbjensen/project-news-site" rel="noreferrer" target="_blank"> &gt;&gt;</a>

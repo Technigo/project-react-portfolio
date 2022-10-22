@@ -33,10 +33,10 @@ export const Thoughts = () => {
           </CardDiv>
         </CardholderDiv>
         <SubsectionHeading>MORE THOUGHTS</SubsectionHeading>
-        <div className="other-project">
+        <div>
           <p><InlineHeading>DATE</InlineHeading> Article title.</p>
         </div>
-        <div className="other-project">
+        <div>
           <p><InlineHeading>DATE</InlineHeading> Article title.</p>
         </div>
       </InnerWrapper>
