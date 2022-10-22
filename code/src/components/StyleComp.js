@@ -4,23 +4,29 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0;
 `
 
 export const SectionTitle = styled.h2`
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #fff;
   background-color: #5f7161;
   display: table;
   text-align: center;
-  padding: 3px 10px;
-  margin: 20px auto;
+  padding: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   border-radius: 3px;
 `
 export const SectionSubTitle = styled.h3`
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
   color: #5f7161;
   padding: 0 5px;
   margin: 40px 0 20px;
@@ -35,12 +41,5 @@ export const Icons = styled.div`
  
   & img {
    height: 50px;
-  }
-
-  @media screen and (min-width: 1024px) {
-  :hover {
-    opacity: 75%;
-    transition: 0.3s ease;
-  }
 }
 `

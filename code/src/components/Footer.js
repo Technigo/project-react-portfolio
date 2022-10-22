@@ -50,7 +50,11 @@ const FooterIcons = styled(Icons)`
   padding: 2rem;
   justify-content: center;
 
-  & a:hover {
+   & :hover {
+      opacity: 75%;
+      transition: 0.3s ease;
+    }
+    a:hover {
     border: none;
   }
 `

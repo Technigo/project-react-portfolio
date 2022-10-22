@@ -20,18 +20,11 @@ const Intro = () => {
 export default Intro
 
 const StyledIntro = styled(Container)`
-  align-items: center;
-  display: flex;
-  height: 35vh;
-  justify-content: center;
+  height: 25vh;
   background-color: var(--color-grey);
 
-  @media (min-width: 667px) and (max-width: 1024px) {
+  @media screen and (min-width: 667px) {
     height: 20vh;
-  }
-
-  @media screen and (min-width: 1024px) {
-    height: 35vh;
   }
   `
 
