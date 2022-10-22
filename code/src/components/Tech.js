@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { ContainerWrapper, FlexWrapper, SectionWrapper, SectionHeadings, Text } from 'GlobalStyles';
+import { ContainerWrapper, FlexWrapper, SectionWrapper, SectionHeadings, TextSection } from 'GlobalStyles';
 
 // react component
 
@@ -10,8 +10,8 @@ export const Tech = () => {
     <SectionWrapper bgColor="#f8e9f0">
       <ContainerWrapper>
         <FlexWrapper>
-          <SectionHeadings>TECH</SectionHeadings>
-          <TextTech>
+          <SectionHeadings>Tech</SectionHeadings>
+          <TextSection>
             <SpanBold> CSS3 </SpanBold>
               | Flexbox | Grid |
             <SpanBold> HTML5 </SpanBold>
@@ -32,28 +32,17 @@ export const Tech = () => {
               | Github |
             <SpanBold> ADOBE CREATIVE SUITE </SpanBold>
               | Illustrator | Photoshop | Indesign |
-          </TextTech>
+          </TextSection>
         </FlexWrapper>
       </ContainerWrapper>
     </SectionWrapper>
   )
 }
 
-// modifyed styled component
+// modifyedstyled component
 
 const SpanBold = styled.span`
   font-weight: 700;
 
 `
-const TextTech = styled(Text)`
-  text-align: center;
 
-  @media (min-width: 668px) {
-    padding: 0% 8%;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0% 20%;
-    /* max-width: 1000px; */
-  } 
-`;

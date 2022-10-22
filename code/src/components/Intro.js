@@ -7,7 +7,7 @@ import { ContainerWrapper, Text } from 'GlobalStyles';
 export const Intro = () => {
   return (
     <ContainerWrapperIntro>
-      <Text tabindex="0">
+      <TextIntro tabindex="0">
         <Line />
         <Dot />
         Hi there! I am a frontend developer with a broad background in many diffrent fields,
@@ -18,7 +18,7 @@ export const Intro = () => {
         driven, communicative & unpretentious. I am motivated by learning new things, meeting
         people and creating value. I`m looking forward to working in the Tech industrie and
         being a part of the coding community.
-      </Text>
+      </TextIntro>
     </ContainerWrapperIntro>
   )
 }
@@ -26,31 +26,31 @@ export const Intro = () => {
 // styled component
 
 const ContainerWrapperIntro = styled(ContainerWrapper)`
-  padding: 10%;
+  padding: 0%;
 
   @media (min-width: 668px) {
     padding: 8%;
   }
 
   @media (min-width: 1024px) {
-    padding: 6% 20%;
+    padding: 2% 18%;
     /* max-width: 1000px; */
   } 
 `;
 
-// export const TextIntro = styled(Text)`
-//   padding: 10% 5%;
+export const TextIntro = styled(Text)`
+  padding: 10% 5%;
 
-//   @media (min-width: 668px) {
-//     padding: 8% 5%;
-//   }
+  @media (min-width: 668px) {
+    padding: 8% 5%;
+  }
 
-//   @media (min-width: 1024px) {
-//     padding: 6% 10%;
-//     /* max-width: 1000px; */
+  @media (min-width: 1024px) {
+    padding: 6% 10%;
+    /* max-width: 1000px; */
 
-//   }
-//   `;
+  }
+  `;
 
 // -----------------------
 

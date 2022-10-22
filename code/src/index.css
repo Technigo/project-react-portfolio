@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: var(--clr-darkGray);
   font-family: var(--font-main), -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -30,9 +31,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  width: 100%;
+}
+
+
 
 h1, h4 {
   font-weight: 400;
+  color: var(--clr-light);
   /* display: inline-block; */
 }
 /* h2 {       SC global
@@ -59,17 +66,22 @@ h1, h4 {
 
 h2,
 h3,
-h4 {
-    letter-spacing: 1.6px;
+h4,
+h5 {
+  letter-spacing: 1.5px;
 }
 
-/* h4 {
+h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
   color: var(--clr-dark);
-  font-weight: 400;
+  text-transform: uppercase;
   display: inline-block;
-} */
+  /* margin: 1em 0 1em; */
+  padding-bottom: 0.5em;  
+}
 
-ul {
+p, ul {
   font-family: var(--font-second);
   font-weight: 400;
   font-size: 16px;

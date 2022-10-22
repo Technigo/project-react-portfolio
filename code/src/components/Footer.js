@@ -25,16 +25,15 @@ export const Footer = () => {
 export const StyledFooter = styled.div`
 width: 100%;
 /* height: 25vh; */
-height: 250px;
+height: 200px;
 background-image: url(${footerImage});
 object-fit: cover;
-background-position: center;
+background-position: 80%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: center;
 align-items: center;
-border: 2px solid pink;
 
 a {
   text-decoration: none;

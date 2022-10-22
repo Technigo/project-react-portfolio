@@ -14,13 +14,23 @@ ToDo
     
 <MainContent />
       <Intro /> check (1024px max-width margin right?)
-      <Tech />
+      <Tech /> check
       <FeaturedProjects />
       <OtherProjects />
       <MyThoughts />
       <MoreThoughts />
-      <Skills />
-      <ForMore />
+      <Skills /> check
+      <ForMore /> check (fixa gradient lite högre forMore)
 
 - componenter med en react component och en SC-component skapa mapp?
-- gradient BG i ForMore, in i footer med CONTACT som gradient, överlappning
+<!-- - gradient BG i ForMore, in i footer med CONTACT som gradient, överlappning -->
+
+-fixa width ingen scrollbar (heroImg ej vw utan %)
+
+Söndag:
+resterande componenter
+
+
+-readMe
+-Accessability (contrast aria-lable tabindex)
+-BrowserTest
