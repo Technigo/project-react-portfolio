@@ -21,3 +21,14 @@ display: flex;
 flex-direction: column;
 `;
 
+export const Header = styled.h2`
+font-size: 18px;
+color: white;
+margin-bottom: 5%;
+@media (min-width: 520px) and (max-width: 1023px){
+  font-size: 25px;
+}
+@media (min-width: 1024px){
+  font-size: 30px;
+}
+`

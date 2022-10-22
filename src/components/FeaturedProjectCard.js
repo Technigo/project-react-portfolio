@@ -41,7 +41,8 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
 export default FeaturedProjectCard;
 
 const Wrapper = styled.div`
-  width: 80%;
+background-color: #FFF9F3;
+  width: 100%;
   margin: 0 auto;
   max-width: 1100px;
   display: flex;
@@ -167,6 +168,7 @@ const ProjectTags = styled.li`
   display: inline;
   font-size: 16px;
   margin-right: 5px;
+  border: 2px solid black;
 
   @media (max-width: 800px) {
     padding: 2px;

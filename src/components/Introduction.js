@@ -21,7 +21,7 @@ position: absolute;
 left: 50%;
 transform: translate(-50%);
 font-size: 14px;
-width:90%;
+width:80%;
 
 .line {
     border: 1px solid black;

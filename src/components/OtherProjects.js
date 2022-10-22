@@ -37,6 +37,7 @@ export const OtherProjectContainer = styled.div`
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  background-color: #FFF9F3;
 `;
 
 export const SkillTag = styled.p`
@@ -44,6 +45,8 @@ export const SkillTag = styled.p`
   display: inline-block;
   margin: 3%;
   padding: 1%;
+  background-color: #FFF9F3;
+  border:2px solid black;
 `;
 
 export const SubTitle = styled.h4`
