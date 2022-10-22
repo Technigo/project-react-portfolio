@@ -43,14 +43,64 @@ color: white;
 }
 `
 
+const SmallHeading = styled.h3`
+font-size: 13px;
+color:white;
+margin-top:10px;
+margin-bottom: 10px;
+text-transform: uppercase;
+font-family:"Roboto", sans-serif;
+font-weight:bold;
+@media (min-width:768px) {
+ font-size: 25px; 
+  
+} 
+@media (min-width:1024px) {
+font-size: 30px; 
+}
+`
+
+const MediumHeading = styled.h2`
+font-size: 18px;
+color:white;
+margin-top:10px;
+margin-bottom: 10px;
+text-transform: uppercase;
+font-family:'montserrat', sans-serif;
+font-weight:bold;
+@media (min-width:768px) {
+ font-size: 30px; 
+  
+} 
+@media (min-width:1024px) {
+font-size: 35px; 
+}`
+
+const BigHeading = styled.h1`
+  font-size: 25px;
+  color:white;
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family:'montserrat', sans-serif;
+  font-weight:bold;
+  @media (min-width:768px) {
+ font-size: 37px; 
+  
+} 
+@media (min-width:1024px) {
+font-size: 42px; 
+}`
+
 const Header = () => {
   return (
     <ContainerHero>
       <Img src="/assets/header.jpg" alt="of..." className="test" />
       <TextContainer>
-        <h3 className="small-heading">Portfolio</h3>
-        <h1 className="big-heading">Amanda Elvkull</h1>
-        <h2 className="medium-heading">Web developer</h2>
+        <SmallHeading>Portfolio: Amanda Elvkull</SmallHeading>
+        <BigHeading>Frontend</BigHeading>
+        <BigHeading>developer</BigHeading>
+        <MediumHeading>+ CX expert</MediumHeading>
       </TextContainer>
     </ContainerHero>
 

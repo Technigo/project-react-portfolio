@@ -9,37 +9,24 @@ padding-left: 4em;
 padding-top: 2em; 
 padding-bottom: 2em; 
 display: grid; 
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 justify-content: center;
 align-content: center;  
-/* justify-items: center;  */
-
-
-
-/* @media (min-width: 768px) {
-  padding-right: 10em; 
-  padding-left: 10em;
-    
-  }
-  @media (min-width: 1024px) {
-  padding-right: 15em; 
-  padding-left: 15em;
-    
-  }
- */
  `
 
 const ArticleContainer = styled.div`
-grid-column: 1 / 2 ;
+grid-column: 2 / 2;
 display: flex; 
 padding-top: 2em; 
 flex-direction: column; 
-padding-left: 2em; 
+
 margin:auto; 
+justify-content: center;
+align-content: center; 
 `
 
 const ArticleContainer2 = styled.div`
-display: flex; 
+display: none; 
 grid-column: 2 / 3 ; 
 padding-top: 2em;
 flex-direction: column; 
@@ -62,11 +49,11 @@ display: flex;
 flex-direction: column;`
 
 const Date = styled.p`
-font-size: 10px;
+font-size: 15px;
 color:rgb(185, 0, 91);`
 
 const Heading = styled.p`
-font-size: 15px; `
+font-size: 20px; `
 
 const Article = () => {
   return (
@@ -84,7 +71,7 @@ const Article = () => {
             alt="article" />
         </Link>
         <TextContainer>
-          <Heading> My thougts after 8 weeks</Heading>
+          <Heading> My thougts after...</Heading>
           <Date>October 2022</Date>
           <Text> Here is a small reflexion about how it has been attending a boot camp.  </Text>
         </TextContainer>

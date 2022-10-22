@@ -9,7 +9,12 @@ justify-content: center;
 margin-top: 50px; 
 `
 const SmallContainer = styled.div`
-padding: 2.5rem;
+padding: 1em;
+@media (min-width: 768px) {
+  padding: 2.5rem;
+    
+}
+
 `
 const Link = styled.a`
 text-decoration: nonen; `
@@ -21,6 +26,14 @@ border-radius: 80px;
 box-shadow: 0 0 4px rgb(185, 0, 91);
 padding: 0.3em 0.4em;
 margin: 15px; 
+@media (min-width: 768px) {
+font-size: 350%;
+    
+}
+  @media (min-width: 1024px) {
+    font-size: 500%; 
+    
+  }
 &:hover {
   border: solid 5px; 
 }
@@ -37,7 +50,7 @@ const Icons = () => {
             href="https://www.linkedin.com/in/amanda-elvkull-74717a153/"
             aria-label="link to linkedIN"
             rel="noreferrer">
-            <I className="fa fa-linkedin linkedin1 fa-5x" />
+            <I className="fa fa-linkedin linkedin1 fa-3x" />
           </Link>
         </SmallContainer>
         <SmallContainer>
@@ -47,7 +60,7 @@ const Icons = () => {
             target="_blank"
             aria-label="link to Github"
             rel="noreferrer">
-            <I className="fa fa-github github1 fa-5x" />
+            <I className="fa fa-github github1 fa-3x" />
           </Link>
         </SmallContainer>
         <SmallContainer>
@@ -57,7 +70,7 @@ const Icons = () => {
             target="_blank"
             aria-label="link to StackOverflow"
             rel="noreferrer">
-            <I className="fa fa-stack-overflow stackoverflow1 fa-5x" />
+            <I className="fa fa-stack-overflow stackoverflow1 fa-3x" />
           </Link>
         </SmallContainer>
       </Logos>

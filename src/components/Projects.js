@@ -1,15 +1,29 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { ContainerColored, /*  SectionHeader, */ TagWrapper, TagWrapperText } from 'GlobalStyles';
+import { ContainerColored, SectionHeader, TagWrapper, TagWrapperText } from 'GlobalStyles';
 import data from 'data.json'
 
 const Container = styled(ContainerColored)`
-display: grid; 
+display: flex; 
+flex-direction: column; 
+justify-content: center;
+align-content: center;
+gap: 30px; 
+
+@media (min-width: 768px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+    
+  }
+  @media (min-width: 1024px) {
+    display: grid; 
 grid-template-columns: 1fr 1fr;
 justify-content: center;
 align-content: center;
 gap: 30px; 
+    
+  }
 `
 
 const ProjectContainer = styled.div`
@@ -18,8 +32,9 @@ const ProjectContainer = styled.div`
 `
 
 const Img = styled.img`
- width: 350px;
- height: auto;
+display: block; 
+width: 100%;
+height: 100%;  
 `
 const ImageContainer = styled.div`
 position: relative;
@@ -56,14 +71,19 @@ const Description = styled.p`
 font-family:"Roboto", sans-serif;
 text-decoration:none;`
 
-/* const HeaderContainer = styled.div`
+const Containerheader = styled.div`
+  grid-column: span 2; 
+  justify-content: center;
+  display:flex; 
 
-justify-content: center;
-grid-column: span 3 ; ` */
+`
 
 const Projects = () => {
   return (
     <Container>
+      <Containerheader>
+        <SectionHeader>Projects</SectionHeader>
+      </Containerheader>
       {data.slice(0, 4).map((project) => (
         <ProjectContainer key={project.id}>
           <Link href={project.url} target="_blank" rel="noreferrer">

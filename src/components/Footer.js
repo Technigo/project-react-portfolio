@@ -6,20 +6,23 @@ const Container = styled(ContainerColored)`
 justify-content: center;
 text-align: center;
  `
-/*   const Contact = styled.div`
+const Contact = styled.h3`
 font-family:"Roboto", sans-serif;
-grid-column: span 4;
-` */
+font-size: 10px; 
+@media (min-width: 768px) {
+font-size: 30px;
+    
+}
+  
+`
 
 const Footer = () => {
   return (
     <Container>
-
-      <h2>Contact</h2>
-      <h2>Amanda Elvkull</h2>
-      <h2>+47 411 13 072</h2>
-      <h2>amanda.elvkull@gmail.com</h2>
-
+      <Contact>Contact</Contact>
+      <Contact>Amanda Elvkull</Contact>
+      <Contact>+47 411 13 072</Contact>
+      <Contact>amanda.elvkull@gmail.com</Contact>
     </Container>
   )
 }
