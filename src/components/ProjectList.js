@@ -35,6 +35,8 @@ const ProjectList = () => {
 export default ProjectList;
 
 const ProjectOuterWrapper = styled.section`
+        display: grid;
+        grid-template-columns: 100%;
     h3 {
         font-size: 16px;
         margin-top: 0;
@@ -45,11 +47,13 @@ const ProjectOuterWrapper = styled.section`
       margin-top: 0;
       margin-left: 2%;
     }
+
+    @media (min-width: 1024px) {
+    grid-template-columns: 50% 50%;
+    }
 `
 
 const FeatureProjectCard = styled.div`
-    display: grid;
-    grid-template-columns: 100%;
     width: 90%;
     transition: transform .8s;
 `

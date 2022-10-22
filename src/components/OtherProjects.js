@@ -40,6 +40,11 @@ const OtherProjectsHeader = styled.h2`
   color: #003333;
   margin-bottom: 10px;
   text-decoration: underline;
+  
+  @media (min-width: 1024px) {    
+  margin-left: 320px;
+  }
+
 `
 
 const OtherProjectCard = styled.div`
@@ -61,6 +66,9 @@ const OtherProjectCard = styled.div`
       margin-top: 5px;
     }
 
+  }
+  @media (min-width: 1024px) {    
+  margin-left: 320px;
   }
 `
 

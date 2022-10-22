@@ -21,4 +21,9 @@ const ThoughtsWrapper = styled(Wrapper)`
 const ThougtImg = styled.img`
     width: 100%;
     display: inherit;
+
+    @media (min-width: 1024px) {    
+      width: 700px;
+      margin-bottom: 20px;
+}
 `

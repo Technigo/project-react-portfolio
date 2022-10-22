@@ -48,4 +48,10 @@ const MoreWrapper = styled.div`
     img {
       height: 50px;
     }
+
+    @media (min-width: 1024px){
+    img {
+      height: 100px;
+    }
+    }
 `

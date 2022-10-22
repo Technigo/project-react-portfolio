@@ -40,6 +40,14 @@ const Name = styled.h3`
     margin: 0 auto;
     left: -25px;
     top: 160px;
+
+    @media (min-width: 668px) and (max-width: 1023px){
+      left: -200px;
+    }
+
+    @media (min-width: 1024px){
+    left: -200px;
+    }
 `
 
 const Title = styled.h1`
@@ -47,6 +55,8 @@ const Title = styled.h1`
     font-size: 44px;
     top: 140px;
     left: 10px;
+    width: fit-content;
+    display: block;
     font-family: 'Roboto';
     letter-spacing: 0.04em;
     color:#355C7D;
