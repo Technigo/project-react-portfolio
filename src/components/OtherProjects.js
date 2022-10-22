@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 import React from 'react'
-import { Section, SectionHeader } from 'components/Section'
+import { Section } from 'components/Section'
 
 export const OtherProjects = () => {
   return (
     <Section primary>
-      <SectionHeader>OTHER PROJECTS</SectionHeader>
       <OtherProjectText>
         <p>
         OtherProjects

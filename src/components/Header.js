@@ -5,7 +5,7 @@ import HeaderImg from '../images/HeaderImg.jpg'
 
 export const Header = () => {
   return (
-    <>
+    <HeaderWrapper>
       <Background
         src={HeaderImg}
         alt="background-header" />
@@ -13,11 +13,15 @@ export const Header = () => {
       <Title>frontend developer</Title>
       <CurrentTitle>+ project manager</CurrentTitle>
       <ProfileImage src={Charlotte} alt="Charlotte" />
-    </>
+    </HeaderWrapper>
   )
 }
 
 export default Header;
+
+const HeaderWrapper = styled.div`
+    position: relative;
+`
 
 const Background = styled.img`
     position: absolute;
@@ -26,43 +30,44 @@ const Background = styled.img`
     left: 0px;
     top: 0px;
 `
+
+const Name = styled.h3`
+    position: relative;
+    font-size: 14px;
+    color: #355C7D;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    left: -40px;
+    top: 160px;
+`
+
 const Title = styled.h1`
-    position: absolute;
-    width: 220px;
-    left: 24px;
-    top: 121px;
+    position: relative;
+    font-size: 44px;
+    top: 140px;
+    left: 10px;
     font-family: 'Roboto';
     letter-spacing: 0.04em;
     color:#355C7D;
 `
 
-const Name = styled.h3`
-    font-size: 16px;
-    color: #355C7D;
-    width: fit-content;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 100px;
-    left: 30px;
-`
-
 const CurrentTitle = styled.h4`
-    position: absolute;
-    width: 220px;
-    left: 24px;
-    top: 195px;
+    position: relative;
+    font-size: 26px;
+    top: 110px;
+    left: 10px;
     font-family: 'Roboto';
     letter-spacing: 0.04em;
     color:#355C7D;
 `
 
 const ProfileImage = styled.img`
-    position: absolute;
+    position: relative;
     width: 180px;
     height: 180px;
-    left: 171px;
-    top: 356px;
+    left: 140px;
+    top: 110px;
     border-radius: 50%;
     border: 3px solid #355C7D; 
  `

@@ -19,8 +19,11 @@ export const About = () => {
 export default About;
 
 const AboutText = styled.p`
+    position: relative;
+    width: 320px;
     font-size: 17px;
     line-height: 29px;
     text-align: center;
-    margin: 40px auto 30px;
+    margin-top: 120px;
+    margin-bottom: 30px;
 `

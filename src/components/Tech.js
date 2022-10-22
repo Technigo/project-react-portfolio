@@ -19,9 +19,9 @@ export const Tech = () => {
 export default Tech;
 
 const TechText = styled.p`
+    position: relative;
+    width: 320px;
     font-size: 17px;
     line-height: 29px;
     text-align: center;
-    margin: 0px auto 30px;
-    width: 320px;
 `
