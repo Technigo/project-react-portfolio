@@ -42,7 +42,10 @@ h4{
 
 h5 {
 	text-transform: uppercase;
-	text-align: center
+	text-align: center;
+	font-size: 1.3rem;
+	color: rgb(255, 119, 119);
+	font-weight: 700;
 }
 
 
