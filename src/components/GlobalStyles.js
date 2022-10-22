@@ -20,7 +20,6 @@ body {
 export const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     background-color: ${(props) => (props.primary ? '#f4f4f4' : 'white')};
     padding: 10px;
@@ -32,7 +31,6 @@ export const SectionHeader = styled.h2`
     border-radius: 3px;
     padding: 5px;
     width: fit-content;
-    display: inline-block;
 `
 
 export const TagIcons = styled.div`

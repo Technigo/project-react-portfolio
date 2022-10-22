@@ -6,7 +6,7 @@ import blogimg from '../images/blogimg.jpg'
 export const Thoughts = () => {
   return (
     <ThoughtsWrapper>
-      <SectionHeader>MY THOUGHTS ABOUT CODE</SectionHeader>
+      <SectionHeader>MY THOUGHTS</SectionHeader>
       <ThougtImg src={blogimg} alt="blog" />
     </ThoughtsWrapper>
   )
@@ -15,6 +15,7 @@ export const Thoughts = () => {
 export default Thoughts;
 
 const ThoughtsWrapper = styled(Wrapper)`
+    align-items: center;
 `
 
 const ThougtImg = styled.img`

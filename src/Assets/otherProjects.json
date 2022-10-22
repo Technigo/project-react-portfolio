@@ -1,16 +1,5 @@
 [
   {
-    "title": "BUSINESS SITE",
-    "id": "5",
-    "description": "First ever project - one pager built with mob programming.",
-    "netlify": "https://coruscating-sopapillas-e37efd.netlify.app/",
-    "github": "https://github.com/charlottejohansson/project-business-site",
-    "code": [
-        "HTML5",
-        "CSS3"
-    ]
-  },
-  {
     "title": "GUESS WHO",
     "id": "6",
     "description": "Card game build in JavaScript, HTML and CSS.",
@@ -46,6 +35,16 @@
         "JavaScript ES6",
         "React"
     ]
+  },
+  {
+    "title": "BUSINESS SITE",
+    "id": "5",
+    "description": "First ever project - one pager built with mob programming.",
+    "netlify": "https://coruscating-sopapillas-e37efd.netlify.app/",
+    "github": "https://github.com/charlottejohansson/project-business-site",
+    "code": [
+        "HTML5",
+        "CSS3"
+    ]
   }
-
 ]

@@ -35,14 +35,14 @@ export const Skills = () => {
 export default Skills;
 
 const SkillsWrapper = styled(Wrapper)`
+    align-items: center;
+
 `
 
 const SkillsInnerWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-    grid-gap: 50px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0 0 0;
 `
 
 const SkillsBox = styled.div`
@@ -50,19 +50,16 @@ const SkillsBox = styled.div`
     margin: 0;
     ul {
         list-style: none;
-        display: inline;
-        text-align: center;
+        display: block;
         line-height: 25px;
     }
 
     li {
         font-size: 18px;
-        grid-gap: 20px;
     }
     
     h5 {
         font-size: 18px;
-        margin: 4px;
         color: #fff;
         background: #1C658C;
         border-radius: 3px;

@@ -6,10 +6,19 @@ import data from '../Assets/otherProjects.json'
 export const OtherProjects = () => {
   return (
     <OtherWrapper primary>
+      <OtherProjectsHeader>
+        OTHER PROJECTS
+      </OtherProjectsHeader>
       {data.map((item) => (
         <OtherProjectCard key={item.id}>
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
+          <a
+            href={item.netlify}
+            target="_blank"
+            rel="noreferrer"
+            role="button">
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </a>
           <ProjectCodeContainer>
             {item.code.map((code) => (
               <p key={code}>{code}</p>
@@ -24,13 +33,38 @@ export const OtherProjects = () => {
 export default OtherProjects;
 
 const OtherWrapper = styled(Wrapper)`
+  padding-bottom: 20px;
+`
+
+const OtherProjectsHeader = styled.h2`
+  color: #003333;
+  margin-bottom: 10px;
+  text-decoration: underline;
 `
 
 const OtherProjectCard = styled.div`
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    margin-left: 2px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      margin-bottom: 0px;
+    }
+    p {
+      margin-top: 5px;
+    }
+
+  }
 `
 
 const ProjectCodeContainer = styled.div`
-    margin: 5% 2%;
   p {
     display: inline-block;
     background-color: #1C658C;

@@ -38,7 +38,7 @@ const Name = styled.h3`
     width: fit-content;
     display: block;
     margin: 0 auto;
-    left: -40px;
+    left: -25px;
     top: 160px;
 `
 

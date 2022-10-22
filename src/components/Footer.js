@@ -29,9 +29,11 @@ const FooterContact = styled.h2`
     font-weight: bold;
     color: #1C658C;
     text-align: center;
+    padding: 10px;
 `
 
 const FooterText = styled.p`
     text-align: center;
     color: #1C658C;
+    line-height: 10px;
 `

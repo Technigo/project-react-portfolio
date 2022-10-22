@@ -15,4 +15,5 @@ export const FeatureProjects = () => {
 export default FeatureProjects;
 
 const FeatureWrapper = styled(Wrapper)`
+    align-items: center;
 `

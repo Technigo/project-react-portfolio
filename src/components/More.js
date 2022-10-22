@@ -33,6 +33,7 @@ export const More = () => {
 export default More;
 
 const MoreOuterWrapper = styled(Wrapper)`
+    align-items: center;
 `
 
 const MoreWrapper = styled.div`

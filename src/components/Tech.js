@@ -19,6 +19,7 @@ export const Tech = () => {
 export default Tech;
 
 const SkillsWrapper = styled(Wrapper)`
+    align-items: center;
 `
 
 const TechText = styled.p`
