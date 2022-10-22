@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 :root {
   --color-darkGreen: #5F7161;
@@ -8,10 +8,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 1em;
+  font-family: 'Montserrat, serif';
   background-color: whitesmoke;
 }
 
@@ -26,6 +23,11 @@ h2 {
 }
 
 p {
-  color: #000;
   line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
 }

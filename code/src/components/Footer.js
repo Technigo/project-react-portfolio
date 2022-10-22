@@ -1,22 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Icons } from './StyleComp.js'
+
 const Footer = ({ linkedinLogo, githubLogo }) => {
   return (
     <FooterStyle>
       <h2>Contact</h2>
       <p>Julia Östedt</p>
-      <a href="mailto:julia.ostedt@gmail.com" className="email">
+      <a href="mailto:julia.ostedt@gmail.com">
           julia.ostedt@gmail.com
       </a>
-      <div className="logo-container">
+      <FooterIcons>
         <a href="https://www.linkedin.com/julia-ostedt" aria-label="Link to LinkedIn profile">
-          <img src={linkedinLogo} className="logo" alt="LinkedIn logo" />
+          <img src={linkedinLogo} alt="LinkedIn logo" />
         </a>
         <a href="https://github.com/juliaostedt" aria-label="Link to LinkedIn profile">
-          <img src={githubLogo} className="logo" alt="github logo" />
+          <img src={githubLogo} alt="github logo" />
         </a>
-      </div>
+      </FooterIcons>
     </FooterStyle>
   )
 }
@@ -26,8 +28,29 @@ export default Footer
 const FooterStyle = styled.footer`
 background-color: var(--color-darkGreen);
 color: white;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+padding: 2em;
+line-height: 1.2em;
 
-& a {
-    color: white;
+& h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 2.5em;
 }
+
+@media screen and (min-width: 1024px) {
+  a:hover {
+    border-bottom: 2px solid #fff;
+  }
+}
+`
+const FooterIcons = styled(Icons)`
+  padding: 2rem;
+  justify-content: center;
+
+  & a:hover {
+    border: none;
+  }
 `

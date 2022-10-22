@@ -1,13 +1,18 @@
 import React from 'react'
 
-import Skills from './Skills'
+import Intro from './Intro'
+import TechStack from './TechStack'
 import FeaturedProjects from './FeaturedProjects'
+import Thoughts from './Thoughts'
+import Skills from './Skills'
 
 const Main = () => {
   return (
     <>
-      <h1>Hej detta är main</h1>
+      <Intro />
+      <TechStack />
       <FeaturedProjects />
+      <Thoughts />
       <Skills />
     </>
   )
