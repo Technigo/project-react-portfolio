@@ -16,12 +16,15 @@ body {
   }
 `;
 
+/*
 export const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 `;
+*/
 
 export const Header = styled.h2`
+font-family: 'Montserrat', sans-serif;
 font-size: 18px;
 color: white;
 margin-bottom: 5%;
