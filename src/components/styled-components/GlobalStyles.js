@@ -71,7 +71,7 @@ header {
     height: 520px;
     position: relative;
     background-size: cover;
-    background-color: #815B5B;
+    background-color: #FF99D7;
 }
 
 footer {
