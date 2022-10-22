@@ -78,7 +78,7 @@ const ProjectImageOverlay = styled.div`
   margin-top: 5%;
   margin-bottom: 5%;
   border-width: 3px;
-  border-style: solid; 
+  /* border-style: solid red;  */
   width: 90%;
   transition: transform .8s; 
   &:hover {
