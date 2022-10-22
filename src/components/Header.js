@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import profile from './..assets/profile.png';
+import profile from '../assets/profile.png';
 import image1 from '../assets/image1.png';
 import linkedin from '../assets/linkedin.svg';
 import github from '../assets/github.svg';
@@ -17,14 +17,14 @@ const Header = () => {
         </a>
       </HeaderSocialLogo>
 
-      {/* <HeaderTextGroup>
+      <HeaderTextGroup>
         <p className="header-portfolio"> PORTFOLIO:
           <span className="header-name">YOUNAS TESFAMARIAM</span>
         </p>
         <h1>Frontend developer</h1>
       </HeaderTextGroup>
 
-      <ProfileImage src={profile} alt="headshot of Younas Tesfamariam" /> */}
+      <ProfileImage src={profile} alt="headshot of Younas Tesfamariam" />
     </StyledHeader>
   )
 }
@@ -55,4 +55,22 @@ const HeaderSocialLogo = styled.div`
         transform: scale(1.05);
     }
     }
+`
+
+const HeaderTextGroup = styled.div`
+    color: black;
+    position: absolute;
+    width: 320px;
+    top: 80px;
+    left: 590px;
+    position: relative;
+`
+const ProfileImage = styled.img`
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    border: 2px solid white;
+    overflow: hidden;
 `
