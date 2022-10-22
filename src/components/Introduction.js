@@ -23,11 +23,11 @@ const IntroductionWrapper = styled(Wrapper)`
 
   @media (min-width: 668px) and (max-width: 1023px){
     padding: 10%;   
-}
+  }
 
-@media (min-width: 1024px){
+  @media (min-width: 1024px){
     padding: 10%; 
-}
+  }
 `
 
 const IntroductionParagraph = styled(Paragraph)`

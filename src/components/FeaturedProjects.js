@@ -66,7 +66,6 @@ const ProjectCard = styled.div`
       ) 1;
   }
 
-
   @media (min-width: 668px) and (max-width: 1023px){
     width: 90%;
   }
@@ -112,9 +111,9 @@ const ProjectDisplayOverlay = styled.div`
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
-    
-}
+    text-align: center;  
+  }
+  
   &:hover{
     opacity: 0;
   }

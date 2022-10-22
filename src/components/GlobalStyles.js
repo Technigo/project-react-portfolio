@@ -12,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     max-width: 1024px;
     font-family: 'Montserrat', sans-serif;
+
+    @media (min-width: 1024px){
+      border: 3px solid rgb(0, 51, 51, 0.2);
+    }
   }
 `
 
@@ -149,7 +153,7 @@ export const IconButton = styled.button`
   border: none;
   margin-right: 0;
   filter: ${(props) => (props.primary ? 'none' : 'invert(1)')};
-  transition: transform .8s; 
+  transition: transform .4s; 
 
   &:hover{
     transform: scale(0.95);
