@@ -7,7 +7,7 @@ export const TechSkills = () => {
   return (
     <Wrapper>
       <SectionTitle>TECH</SectionTitle>
-      <TechSkillsText primary>HTML, CSS,
+      <TechSkillsText>HTML, CSS,
       JavaScript, APIs, React, Github, Mob-programming, Pair-programming,
         Agile Methodology.
       </TechSkillsText>

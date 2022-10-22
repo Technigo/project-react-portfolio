@@ -16,7 +16,7 @@ export const Footer = () => {
 }
 
 export const FooterWrapper = styled(Wrapper)`
-  background-color: #006f45;
+background: linear-gradient(180deg, #003333, #001F1F, #001515);
   padding-top: 20%;
 
   @media (min-width: 668px) and (max-width: 1023px) {

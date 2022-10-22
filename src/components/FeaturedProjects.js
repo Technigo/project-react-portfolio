@@ -6,7 +6,7 @@ import { SectionTitle, Wrapper, Heading, ProjectParagraph, TagIcons, GridWrapper
 export const FeaturedProjects = () => {
   return (
     <Wrapper primary>
-      <SectionTitle>FEATURED PROJECTS</SectionTitle>
+      <SectionTitle primary>FEATURED PROJECTS</SectionTitle>
       <GridWrapper>
         {data.map((item) => (
           <ProjectCard key={item.id}>
@@ -42,8 +42,29 @@ const ProjectCard = styled.div`
   grid-template-columns: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
-  border: 3px solid white;
+  border-width: 3px;
+  border-style: solid; 
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #003333, 
+      #A0D3D3,
+      white
+    ) 1;
   width: 90%;
+  transition: transform .8s; 
+
+  &:hover{
+    transform: scale(0.95);
+    border-style: solid; 
+    border-image: 
+      linear-gradient(
+        to top, 
+        #003333, 
+        #A0D3D3,
+        white
+      ) 1;
+  }
 
 
   @media (min-width: 668px) and (max-width: 1023px){
@@ -77,12 +98,12 @@ const ProjectDisplayOverlay = styled.div`
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
   transition: .5s;
-  background-color: #fffbe9d6;
+  background-color: rgb(0, 21, 21, 0.7);
 
   h3{
-    color: #614124;
+    color: white;
     text-decoration: overline;
     font-size: 20px;
     position: absolute;
@@ -95,6 +116,6 @@ const ProjectDisplayOverlay = styled.div`
     
 }
   &:hover{
-    opacity: 1;
+    opacity: 0;
   }
 `

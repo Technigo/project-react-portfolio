@@ -5,7 +5,7 @@ import { SectionTitle, Wrapper, OverlinedHeading, ProjectParagraph } from './Glo
 export const Skills = () => {
   return (
     <Wrapper primary>
-      <SectionTitle>SKILLS</SectionTitle>
+      <SectionTitle primary>SKILLS</SectionTitle>
       <SkillsContainer>
         <SkillsCategory>
           <OverlinedHeading>CODE</OverlinedHeading>

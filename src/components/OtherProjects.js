@@ -6,7 +6,7 @@ import { SectionTitle, Wrapper, TagIcons, ProjectParagraph, OverlinedHeading } f
 export const OtherProjects = () => {
   return (
     <Wrapper primary>
-      <SectionTitle>OTHER PROJECTS</SectionTitle>
+      <SectionTitle primary>OTHER PROJECTS</SectionTitle>
       <OtherProjectsList>
         {data.map((item) => (
           <OtherProjectsDisplay key={item.id}>

@@ -42,4 +42,7 @@ export const SocialMedia = () => {
 
 const SocialMediaContainer = styled.section`
   margin-top: 5%;
+  img{
+    filter: invert(1);
+  }
 `

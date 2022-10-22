@@ -1,6 +1,7 @@
 /* eslint-disable no-confusing-arrow */
 import styled, { createGlobalStyle } from 'styled-components';
 
+/* Styling for the body is put here instead of in index.css */
 export const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -13,12 +14,14 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
   }
 `
+
+/* Wrappers for the whole section in each component */
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  background: ${(props) => (props.primary ? '#FFFBE9' : 'white')};
+  background: ${(props) => (props.primary ? 'white' : '#003333')};
   padding: 10%;
 
   @media (min-width: 600px) and (max-width: 1023px){
@@ -26,13 +29,27 @@ export const Wrapper = styled.section`
   }
 
   @media (min-width: 1024px){
-    padding: 8% 10%;
+    padding: 5% 10%;
   }
 `
+/* Wrapper for sections that have displayed images */
+export const GridWrapper = styled.section`
+  display: grid;
+  grid-template-columns: 100%;
 
+  @media (min-width: 668px) and (max-width: 1023px){
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: 1024px){
+    grid-template-columns: 50% 50%;
+  }
+         
+`
+/* Styling of writing style (paragraph and headings) */
 export const Paragraph = styled.p`
   font-size: 15px;
-  color: ${(props) => (props.primary ? '#614124' : 'white')};
+  color: ${(props) => (props.primary ? '#003333' : 'white')};
   line-height: 30px;
 
   @media (min-width: 600px) and (max-width: 1023px){
@@ -57,23 +74,6 @@ export const ProjectParagraph = styled(Paragraph)`
     font-size: 18px;
   }
 `
-
-export const Heading = styled.h3`
-  margin: 2%;
-  color: ${(props) => (props.primary ? 'white' : '#614124')};
-  font-size: 15px;
-`
-export const OverlinedHeading = styled(Heading)`
-  margin: 0 auto;
-  display: inline-block;
-  text-decoration: ${(props) => (props.primary ? ' 2px overline white' : '2px overline #614124')};
-  font-weight: 600;
-
-  &:hover{
-    text-decoration: 2px underline white; 
-  }
-`
-
 export const Title = styled.h2`
   font-size: 18px;
   color: white;
@@ -88,20 +88,37 @@ export const Title = styled.h2`
   }
 `
 export const SectionTitle = styled(Title)`
-  background-color: #006f45;
+  background-color: ${(props) => (props.primary ? '#003333' : 'white')};
+  color: ${(props) => (props.primary ? 'white' : '#003333')};
   padding: 10px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
 
-  @media (min-width: 600px) and (max-width: 1023px){
-    font-size: 25px;
+  @media (min-width: 668px) and (max-width: 1023px){
+    font-size: 20px;
   }
   
   @media (min-width: 1024px){
-    font-size: 30px;
+    font-size: 25px;
   }
 `
 
+export const Heading = styled.h3`
+  margin: 2%;
+  color: ${(props) => (props.primary ? 'white' : '#003333')};
+  font-size: 15px;
+`
+export const OverlinedHeading = styled(Heading)`
+  margin: 0 auto;
+  display: inline-block;
+  text-decoration: ${(props) => (props.primary ? ' 2px overline white' : '2px overline #102a29')};
+  font-weight: 600;
+
+  &:hover{
+    text-decoration: 2px underline white; 
+  }
+`
+/* For icons containers and the icons button styling found in Header and Footer */
 export const IconContainer = styled.div`
   position: absolute;
   right: 10%;
@@ -154,15 +171,17 @@ export const IconButton = styled.button`
     }
   }
 `
+
+/* Tags styling */
 export const TagIcons = styled.div`
   margin: 5% 2%;
 
   p{
     display: inline-block;
-    background-color: #006f45;
+    background-color: #003333;
     margin: 0 5px 5px 0;
     padding: 5px;
-    color: ${(props) => (props.primary ? '#006f45' : 'white')};
+    color: ${(props) => (props.primary ? '#003333' : 'white')};
     font-size: 10px;
     }
 
@@ -177,17 +196,4 @@ export const TagIcons = styled.div`
       font-size: 12px;
     }
   }
-`
-export const GridWrapper = styled.section`
-  display: grid;
-  grid-template-columns: 100%;
-
-  @media (min-width: 668px) and (max-width: 1023px){
-    grid-template-columns: 50% 50%;
-  }
-
-  @media (min-width: 1024px){
-    grid-template-columns: 50% 50%;
-  }
-         
 `
