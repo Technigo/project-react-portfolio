@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Heading, Topics } from './Styling'
+import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading } from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 // const options = {
@@ -16,6 +16,7 @@ export const FeaturedProjects = () => {
     .then((res) => res.json())
     // .then((response) => console.log(response))
     .then((data) => console.log(data))
+    .catch((error) => console.error(error))
     .then((data) => {
       setFeaturedProjects(data)
     })
@@ -112,8 +113,4 @@ color:white;
 }
 `
 
-export const ProjectsHeading = styled.h4`
-text-transform: uppercase;
-color: #D36B00;
-`
 

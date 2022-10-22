@@ -24,7 +24,7 @@ export const Heading = styled.h2`
   font-size: 22px;
   font-weight: 700;
   display: inline;
-  margin: 30px 0px;
+  margin: 30px 0px 20px 0px;
   padding: 4px;
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
@@ -37,13 +37,36 @@ font-size: 27px;
 
 export const Topics = styled.p`
 font-family: "Roboto", sans-serif;
+border: 1px solid #42032C;
     color: #2b2e34;
     font-weight: bold;
     background-color: #db9aab;
     display: inline;
     text-decoration: none;
     line-height: 12px;
-    padding: 4px;
-    margin-right: 5px;
+    padding: 5px;
+    margin-right: 8px;
+    margin-top: 15px;
     border-radius: 5px;
+
+    @media (min-width: 1025px) {
+font-size: 17px;
+}
+`
+export const ProjectsHeading = styled.h4`
+text-transform: uppercase;
+color: #D36B00;
+font-size: 20px;
+padding-top: 15px;
+@media (min-width: 1025px) {
+font-size: 25px;
+}
+`
+
+export const ProjectsParagraph = styled.p`
+font-size: 17px;
+padding-bottom: 7px;
+@media (min-width: 1025px) {
+font-size: 20px;
+}
 `

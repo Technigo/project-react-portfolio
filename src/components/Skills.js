@@ -10,15 +10,27 @@ export const Skills = () => {
         <SkillsContent>
           <SkillsColumn>
             <SkillsHeader>CODE</SkillsHeader>
-            <SkillsText>    HTML5 CSS3 JavaScript ES6 React Styled Components GitHub</SkillsText>
-
-            <SkillsHeader>UPCOMING</SkillsHeader>
-            <SkillsText> Redux Node.js</SkillsText>
+            <SkillsText>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>ES6</li>
+              <li>React</li>
+              <li>Styled Components</li>
+              <li>GitHub</li>
+            </SkillsText>
           </SkillsColumn>
           <SkillsColumn>
+            <SkillsHeader>UPCOMING</SkillsHeader>
+            <SkillsText>
+              <li>Redux</li>
+              <li>Node.js</li>
+            </SkillsText>
             <SkillsHeader>TOOLBOX</SkillsHeader>
-            <SkillsText>   Atom Postman Adobe Photoshop Adobe Illustrator
-              Figma Keynote Slack
+            <SkillsText>
+              <li>Figma</li>
+              <li>Slack</li>
+              <li>Discord</li>
             </SkillsText>
           </SkillsColumn>
         </SkillsContent>
@@ -35,7 +47,7 @@ justify-content: center;
 column-gap: 50px;
 line-height: 25px;
 `
-export const SkillsColumn = styled.div`
+export const SkillsColumn = styled.ul`
   text-align: center;
   width: 30%;
 `
@@ -52,5 +64,6 @@ export const SkillsText = styled.p`
 font-size: 17px;
 @media (min-width: 1025px) {
   font-size:20px ;
+  line-height: 30px;
 }
 `

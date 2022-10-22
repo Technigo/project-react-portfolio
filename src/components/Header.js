@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { InnerWrapper } from './Styling'
 import github from './images/icons/github.svg'
 import linkedin from './images/icons/linkedin.svg'
-import stack from './images/icons/stack.svg'
 import profileimg from './images/profileimg.png'
 import headerpicture from './images/headerpicture.jpg'
 
@@ -15,7 +14,6 @@ export const Header = () => {
       <SoMeHeader>
         <SoMeLink href="https://www.linkedin.com/in/maria-westling-a6327315b/"><img src={linkedin} alt="Linkedin" /></SoMeLink>
         <SoMeLink href="https://github.com/marwebdesign"> <img src={github} alt="Github" /></SoMeLink>
-        <SoMeLink href="https://stackoverflow.com/c/technigo/users/392"><img src={stack} alt="Stack Overflow" /></SoMeLink>
       </SoMeHeader>
       <InnerWrapper>
         <HeaderText>
