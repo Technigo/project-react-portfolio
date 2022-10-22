@@ -1,10 +1,7 @@
 import React from 'react';
-// import styled from 'styled-components';
-import profilePic from '../images/N_B_weather_small.jpg';
-// import linkedInIcon from '../icons/linkedin.png';
-// import gitHubIcon from '../icons/github.png';
 
-// import { HeaderContainer, HeaderText, ProfileImage } from './headerStyle';
+import profilePic from '../images/N_B_weather_small.jpg';
+
 import { HeaderContainer, HeaderIcons, HeaderText, ProfileImage } from './headerStyle';
 
 export const Header = () => {

@@ -1,14 +1,14 @@
 import React from 'react';
-
-import { ContainerWrapper, SectionWrapper } from 'GlobalStyles'
+// import styled from 'styled-components'
+import { Intro } from './Intro';
+import { Tech } from './Tech';
+// import { ContainerWrapper, SectionWrapper } from 'GlobalStyles'
 
 export const MainContent = () => {
   return (
-    <ContainerWrapper>
-      <SectionWrapper>
-        hello hello
-      </SectionWrapper>
-    </ContainerWrapper>
-
+    <>
+      <Intro />
+      <Tech />
+    </>
   )
 }

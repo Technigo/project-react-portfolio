@@ -35,7 +35,7 @@ h1, h4 {
   font-weight: 400;
   /* display: inline-block; */
 }
-h2 {
+/* h2 {       SC global
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -46,7 +46,7 @@ h2 {
   align-self: center;
   margin: 47px 0 20px;
   padding: 8px 16px;
-}
+} */
 
 /* h3 {
   font-family: var(--font-second);
@@ -68,16 +68,12 @@ h4 {
   font-weight: 400;
   display: inline-block;
 } */
-/* 
-p, ul {
+
+ul {
   font-family: var(--font-second);
   font-weight: 400;
-  font-size: 17px;
-  }
-
-p {
-  line-height: 1.7em;
-} */
+  font-size: 16px;
+}
 
 a {
   text-decoration: none;

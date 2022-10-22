@@ -7,10 +7,13 @@ i code npm install och npm install --save styled-components
  
 ToDo
  - <div>
-      <GlobalStyles />
-      <ScrollButton />
-      <Header />
-      <Intro />
+      <Header /> check (hover icon?)
+      <MainContent />
+      <Footer /> check
+    </div>
+    
+<MainContent />
+      <Intro /> check (1024px max-width margin right?)
       <Tech />
       <FeaturedProjects />
       <OtherProjects />
@@ -18,7 +21,6 @@ ToDo
       <MoreThoughts />
       <Skills />
       <ForMore />
-      <Footer />
-    </div>
 
-länkar bilder header?
+- componenter med en react component och en SC-component skapa mapp?
+- gradient BG i ForMore, in i footer med CONTACT som gradient, överlappning
