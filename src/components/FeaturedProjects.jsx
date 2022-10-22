@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
       <ProjectsGrid>
         {data.map((project) => (
           <ArticleContainer key={project.name}>
-            <a href={project.netlify_url} target="_blank" rel="noreferrer" aria-hidden>
+            <a href={project.netlify_url} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden>
               <ProjectImg style={{ backgroundImage: `url(${project.image})` }}>
                 <div>
                   <h6>{project.name}</h6>

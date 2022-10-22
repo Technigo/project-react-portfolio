@@ -39,7 +39,7 @@ const Thoughts = () => {
         </ArticleContainer>
 
         <ArticleContainer thoughts>
-          <a href="#" target="_blank" rel="noreferrer" aria-hidden>
+          <a href="#" target="_blank" rel="noreferrer">
             <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
               <div>
                 <h6>Coming soon</h6>
@@ -59,6 +59,7 @@ const Thoughts = () => {
             </a>
           </TopicsContainer>
         </ArticleContainer>
+
       </ProjectsGrid>
     </SectionContainer>
   );
