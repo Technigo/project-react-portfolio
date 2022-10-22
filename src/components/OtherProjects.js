@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles';
-import { SubHeading } from 'StyledComponents/HeadlineStyles';
+import { SectionHeading } from 'StyledComponents/HeadlineStyles';
 
 const OtherProjects = () => {
   const [projects, SetProjects] = useState([])
@@ -13,12 +13,12 @@ const OtherProjects = () => {
       .then((data) => SetProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => project.name === 'project-business-site');
+  const filteredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'project-news-site') && (project.name !== 'project-react-portfolio') && (project.name !== 'project-happy-thoughts') && (project.name !== 'project-survey') && (project.name !== 'jessicahansson') && (project.name !== 'project-portfolio') && (project.name !== 'project-movies'))
 
   return (
     <OuterWrapper grey>
       <InnerWrapper>
-        <SubHeading>OTHER PROJECTS</SubHeading>
+        <SectionHeading>OTHER PROJECTS</SectionHeading>
         {filteredProjects.map((project) => <A href={project.html_url}>
           <ProjectHeading>{project.name.replaceAll('-', ' ').replaceAll('project', ' ').toUpperCase()}</ProjectHeading>
           <OtherProjetsText>{project.description} <Arrow> {'>>'} </Arrow></OtherProjetsText>

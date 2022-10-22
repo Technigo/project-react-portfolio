@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import styled from 'styled-components'
 import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles'
@@ -8,8 +7,8 @@ import data from '../assets/ProjectData.json'
 export const FeaturedProjects = () => {
   return (
     <OuterWrapper grey>
-      <InnerWrapper>
-        <SectionHeading>Featured Projects</SectionHeading>
+      <InnerWrapperFeat>
+        <SectionHeading>FEATURED PROJECTS</SectionHeading>
 
         <ProjectsWrapper>
           {data.map((item) => (
@@ -19,7 +18,7 @@ export const FeaturedProjects = () => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <ImageOverlay>
-                  <p>{item.name}</p>
+                  <p>{item.overlayname}</p>
                 </ImageOverlay>
                 <img src={item.image} alt="Project site" />
               </a>
@@ -38,7 +37,7 @@ export const FeaturedProjects = () => {
             </ProjectInfo>
           ))}
         </ProjectsWrapper>
-      </InnerWrapper>
+      </InnerWrapperFeat>
     </OuterWrapper>
   )
 }
@@ -52,6 +51,10 @@ const ProjectInfo = styled.div`
   }
 `
 
+const InnerWrapperFeat = styled(InnerWrapper)`
+  padding-bottom: 0px;
+`
+
 const Tag = styled.span`
     font-family: "Roboto", sans-serif;
     color: #2b2e34;
@@ -60,7 +63,7 @@ const Tag = styled.span`
     text-decoration: none;
     font-size: 12px; 
     line-height: 12px;
-    padding: 4px;
+    padding: 6px;
     margin: 3px;
     border-radius: 5px;
 `
@@ -75,12 +78,12 @@ const TagContainer = styled.div`
 const ProjectsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3vw;
+  grid-gap: 5vw;
   a {
     position: relative;
     display: block;
   }
-  @media (min-width: 668px) {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   } `
 
@@ -100,6 +103,10 @@ const ImageOverlay = styled.div`
     padding: 25%;
     text-align:center;
     color: white;
+
+    @media (max-width: 668px) {
+      display:none;
+    }
   }
 
   &:hover {

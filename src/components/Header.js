@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import { HeaderFirstHeading, HeaderSecondHeading, HeaderThirdHeading } from 'StyledComponents/HeadlineStyles'
+import { SocialMediaContainer } from 'StyledComponents/SocialMediaContainer'
 import BackgroundImage from '../Images/background1.jpg'
 import ProfileImage from '../Images/jhansson.png'
 import GitHubIcon from '../Images/github-header-icon.png'
+import LinkedinIcon from '../Images/linkedin-header-icon.png'
+import StackIcon from '../Images/stack-header-icon.png'
 
 export const Header = () => {
   return (
@@ -13,7 +16,17 @@ export const Header = () => {
         <HeaderSecondHeading>frontend developer</HeaderSecondHeading>
         <HeaderThirdHeading> & passionate about sustainable development </HeaderThirdHeading>
       </HeaderText>
-      <GitHubIco src={GitHubIcon} />
+      <SoMeContainer>
+        <a href="https://github.com/jesshansson">
+          <img src={GitHubIcon} alt="GitHub Icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/jesshansson/">
+          <img src={LinkedinIcon} alt="LinkedIn icon" />
+        </a>
+        <a href="https://stackoverflow.com/users/19466381/jessica">
+          <img src={StackIcon} alt="StackOverflow icon" />
+        </a>
+      </SoMeContainer>
       <ProfilePic src={ProfileImage} alt="Jessica Hansson" />
     </HeaderWrapper>
   )
@@ -58,10 +71,9 @@ const ProfilePic = styled.img`
   position: absolute;
   right: 5vh;
   bottom: -4vh; 
-  width: 180px; 
-  height: 180px; 
+  width: 160px; 
+  height: 160px; 
   border-radius: 50%;
-
   border:solid 2px rgb(255, 255, 255); 
 
   @media (min-width: 668px) {
@@ -71,7 +83,7 @@ const ProfilePic = styled.img`
   }
 
   @media (min-width: 1025px) {
-    right: 10vh; 
+    right: 17vh; 
   }
 `
 
@@ -79,15 +91,39 @@ const Bold = styled.span`
 font-weight: bold;
 `
 
-const GitHubIco = styled.img`
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 50px;
+const SoMeContainer = styled(SocialMediaContainer)`
+    @media (max-width: 750px) {
+    position: absolute;
+    width: 200px;
+    right: 2vh;
+    top: 4vh;
+  img {
+    width:80%;
+   
+    &:hover {
+     transform: scale(1.1);
+
+    }
+  }
+}
+
+  @media (min-width: 668px){
+    position: absolute;
+    right: 7vh;
+    top: 5vh;
+
+    img {
+      width: 80%;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  
+  @media (min-width: 1025px) {
+    right: 7vh;
+    top: 7vh;
+  }
   `
-/*
-const SocialMediaContainer = styled.div`
-  position: absolute;
-  right: 10px;
-  top: 20px;
-` */

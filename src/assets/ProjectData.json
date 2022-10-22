@@ -2,8 +2,8 @@
     {
         "featured": true,
         "display": true ,
-        "shortname": "Happy Thoughts",
         "name": "Happy Thoughts",
+        "overlayname": "Happy Thoughts",
         "description": "App to collect happy thoughts, in a twitter-like feed, using React and API.",
         "tags": ["HTML", "CSS", "JavaScript", "API"],
         "image": "./assets/happythoughts.png",
@@ -14,7 +14,7 @@
         "featured": true,
         "display": true,
         "name": "Find-a-friend survey",
-        "shortname": "React Survey",
+        "overlayname": "React Survey",
         "description": "A Typeform-like survey built with React state",
         "tags": ["HTML", "CSS", "JavaScript", "React"],
         "image": "./assets/survey.png",
@@ -24,8 +24,8 @@
     {
         "featured": true,
         "display": true,
-        "name": "Popular Movies in the US",
-        "shortname": "Project Movies",
+        "name": "Popular Movies",
+        "overlayname": "Movies",
         "description": "A website that shows the most popular movies in the US, built with React components, fetching the data from an API.",
         "tags": ["HTML", "CSS", "JavaScript", "React"],
         "image": "./assets/movies.png",
@@ -35,24 +35,13 @@
     {
         "featured": true,
         "display": true,
-        "name": "News site",
-        "shortname": "Fem&Tech - a news site about women in tech",
+        "name": "Fem&Tech - a news site about women in tech",
+        "overlayname": "News site",
         "description": "A news site built with flexbox and grid about women in the tech business",
         "tags": ["HTML", "CSS"],
         "image": "./assets/femntech.png",
         "netlify": "https://femntech-news.netlify.app/",
         "github": "https://github.com/jesshansson/project-news-site"
-    },
-    {   
-        "featured": false,
-        "display": true,
-        "name": "Chatbot",
-        "shortname": "The Pep Bot chatbot",
-        "description": "An interactive chatbot giving pepful messages to the user",
-        "tags": ["HTML", "CSS", "JavaScript"],
-        "image": "./assets/chatbot.png",
-        "netlify": "https://spectacular-pegasus-2e4240.netlify.app/",
-        "github": "https://github.com/jesshansson/project-chatbot"
     }
 
 ]

@@ -55,4 +55,17 @@ const PProject = styled(P)`
 `
 export default FeaturedProjects
 
- */
+ 
+
+{   
+  "featured": false,
+  "display": true,
+  "name": "Chatbot",
+  "shortname": "The Pep Bot chatbot",
+  "description": "An interactive chatbot giving pepful messages to the user",
+  "tags": ["HTML", "CSS", "JavaScript"],
+  "image": "./assets/chatbot.png",
+  "netlify": "https://spectacular-pegasus-2e4240.netlify.app/",
+  "github": "https://github.com/jesshansson/project-chatbot"
+}
+*/
