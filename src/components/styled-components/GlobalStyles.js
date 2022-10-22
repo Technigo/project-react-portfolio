@@ -80,10 +80,12 @@ footer {
 }
 `
 export const Container = styled.div`
-width: 327vw;
-margin: 0 auto;
+display: flex; 
+flex-direction: column; 
 
 @media (min-width: 768px){
+    display: flex; 
+    flex-direction: column; 
     width: 440vw;
     margin: 0 auto;
 }
