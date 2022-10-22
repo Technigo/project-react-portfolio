@@ -63,7 +63,7 @@ const SectionHeader = styled.h2`
   line-height: 1;
   padding: 10px 15px;
   margin-bottom: 100px;
-  font-family: "Montserrat Bold";
+  font-family: 'Montserrat', sans-serif;
   background-color: ${(props) => props.color};
   color: white;
 

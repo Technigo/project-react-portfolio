@@ -3,24 +3,24 @@ import styled from 'styled-components';
 
 import heroImage2 from 'assets/heroImage2.jpg';
 
-export const IntroductionWrapper = styled.section`
+export const IntroductionWrapper = styled.div`
 margin:0;
 background-image: url(${heroImage2});
 background-size: cover;
-width: 100%;  
-height: 200px;
+width: 100%;
 color: black;
-postition: relative;
 display: flex;
-align-items: center;
+justify-content: center;
+padding: 50px 0;
+
+@media (min-width: 1024px) {
+    min-height: 300px;
+}
 
 `;
 
 export const IntroductionContent = styled.p`
-position: absolute;
-left: 50%;
-transform: translate(-50%);
-font-size: 14px;
+font-size: 17px;
 width:80%;
 
 .line {
@@ -41,6 +41,7 @@ width:80%;
 
 @media (min-width: 1024px){
     width:50%;
+    font-size: 30px;
 
   img{
   height: 75px;  

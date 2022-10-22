@@ -5,22 +5,21 @@ import GithubIcon from 'assets/Github_icon.png';
 import StackOverflowIcon from 'assets/StackO_icon.png';
 import { GITHUB_URL, LINKEDIN_URL, STACKOVERFLOW_URL } from 'utils/Urls';
 
-export const ForMoreContainer = styled.section`
+export const ForMoreContainer = styled.div`
   width: 100%;
-  height: 300px;
-  background-size: cover;
-  position: relative;
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
 `;
 
 export const ForMoreHeading = styled.h2`
   font-size: 48px;
   line-height: 1;
   padding: 10px 15px;
-  margin-bottom: 100px;
   font-family: "Montserrat Bold";
   background-color: ${(props) => props.color};
   color: white;
-  display: inline;
   
   @media (max-width: 1023px) {
   font-size: 22px;
@@ -28,11 +27,8 @@ export const ForMoreHeading = styled.h2`
 `;
 
 export const ForMoreIcons = styled.div`
-  position: absolute;
   display: flex;
   flex-direction: center;
-  justify-content: space-between;
-  padding: 20%;
 
   img {
     height: 60px;
@@ -93,10 +89,6 @@ export const ForMoreIcons = styled.div`
       padding: 2%;
       display: flex;
       align-text: center;
-    }
-
-    .ForMoreContainer {
-      height: 100px;
     }
 
     p{

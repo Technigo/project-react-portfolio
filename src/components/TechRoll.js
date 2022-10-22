@@ -3,14 +3,11 @@ import styled from 'styled-components';
 
 export const TechWrapper = styled.div`
 margin:0;
-width: 100%;  
-height: 200px;
+width: 100%;
 color: black;
-position:relative;
 display: flex;
+align-items: center;
 flex-direction: column;
-justify-content: center;
-overflow: hidden;
 
 @media (min-width: 1024px){
     height: 260px;
@@ -20,13 +17,9 @@ overflow: hidden;
 
 const TechHeader = styled.h2`
   font-size: 48px;
-  font-family: "Montserrat Bold";
+  font-family: 'Montserrat', sans-serif;
   background-color: ${(props) => props.color};
   color: white;
-  position: absolute;
-  left:50%;
-  transform: translate(-50%);
-  top: 5%;
   padding: 10px 15px;
 
   @media (max-width: 1023px) {
@@ -38,11 +31,13 @@ const TechHeader = styled.h2`
   }
 `;
 
+export const ScrollLeftWrapper = styled.div`
+width: 100%;
+padding: 10px 0;
+`;
+
 export const TechContent = styled.p`
-    position: absolute;
     width: 100%;
-    height: 100%;
-    margin: 100px;
     line-height: 50px;
     text-align: center;
     white-space: nowrap;
@@ -81,15 +76,15 @@ export const TechContent = styled.p`
 
 @media (min-width: 668px) and (max-width: 1023px){
     width:70%;
+    margin-top: 30px;
 
     img{
         height: 65px
     }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px)
     width:50%;
-    margin-top: 150px;
 
   img{
   height: 75px;  
@@ -101,10 +96,12 @@ export const Tech = ({ color }) => {
   return (
     <TechWrapper>
       <TechHeader color={color}>TECH</TechHeader>
-      <TechContent className="ScrollLeft">
-      HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+      <ScrollLeftWrapper>
+        <TechContent className="ScrollLeft">
+     HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
 Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
-      </TechContent>
+        </TechContent>
+      </ScrollLeftWrapper>
     </TechWrapper>
   );
 };

@@ -4,59 +4,58 @@ import styled from 'styled-components';
 import heroImage from 'assets/heroImage.jpg';
 
 export const FooterWrapper = styled.section`
-margin:0;
 background-image: url(${heroImage});
+margin:0;
 background-size: cover;
 width: 100%;  
-height: 200px;
+
 color: white;
-postition: relative;
 display: flex;
 align-items: center;
+justify-content:center;
 
 `;
 
-export const FooterContent = styled.p`
-position: absolute;
-left: 50%;
-transform: translate(-50%);
+export const FooterContent = styled.div`
 font-size: 14px;
 width:80%;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:50px 0 80px 0;
 
-.line {
-    border: 1px solid black;
-    width: 40px;
-    display: inline-block;
-    margin-bottom: 4px;
-    margin-right: -8px;
+p.contact{
+    font-weight: 700;
+    line-height:1;
+    font-size: 24px;
 }
 
-@media (min-width: 668px) and (max-width: 1023px){
-    width:70%;
-
-    img{
-        height: 65px
-    }
+p{
+    line-height: 0;
+    font-size: 21px;
 }
 
-@media (min-width: 1024px){
-    width:50%;
 
-  img{
-  height: 75px;  
-  } 
+@media (min-width: 668px){
+
+p.contact{
+    font-size:38px;
 }
+
+p{
+    font-size:30px;
+}
+
 `;
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterContent>
-      CONTACT
-      Name
-      Surname
-      +46 70 00 00 00
-      name@email.com
+        <p className="contact">CONTACT</p>
+        <p>Sofia Andersson</p>
+        <p>+46 70 00 00 00</p>
+        <p>sofia.e.i.andersson@gmail.com</p>
       </FooterContent>
     </FooterWrapper>
   );
