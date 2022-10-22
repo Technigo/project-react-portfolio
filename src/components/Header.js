@@ -41,16 +41,16 @@ const HeaderContainer = styled.header`
   background-image: url('/images/heroimage.jpeg');
   height: 400px;
   background-position: bottom;
+  background-attachment: fixed;
   background-size: cover;
-  
   position: relative;
 
-  @media (min-width: 520px) and (max-width: 1023px){
-    height: 500px;
+  @media (min-width: 668px) and (max-width: 1023px){
+    height: 450px;
   }
 
   @media (min-width: 1024px){
-    height: 500px;
+    height: 450px;
   }
 `
 
@@ -71,7 +71,7 @@ const TitleContainer = styled.div`
     font-weight: 100;
   }
 
-  @media (min-width: 520px) and (max-width: 1023px){
+  @media (min-width: 668px) and (max-width: 1023px){
     line-height: 50px;
 
     h1{
@@ -104,7 +104,7 @@ const ImageContainer = styled.div`
     right: 10%;
 }
 
-@media (min-width: 520px) and (max-width: 1023px){
+@media (min-width: 668px) and (max-width: 1023px){
     img{
       width: 230px;
       height: 230px;
