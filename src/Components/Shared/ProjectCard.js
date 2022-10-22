@@ -1,13 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-// import ProjectPhoto from './happy_thought_picture.png';
+import TagBox from './TypeBox';
 
-const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) => {
-  console.log('urlNetlify', urlNetlify)
-  console.log('coverName', coverName)
-  console.log('text', text)
+const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage, tags }) => {
   console.log('coverImage', coverImage)
-
   const ProjectCardStyle = styled.div`
   border: solid 2px black;
   vertical-align: baseline;
@@ -57,7 +53,15 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
     display: flex;
     flex-direction: column;
   }
-
+. tax-box{
+  font-family: Roboto, sans-serif;
+font-weight: 500;
+font-size: 11px;
+line-height: 20px;
+padding: 0px 4px;
+margin: 2px 5px 2px 0px;
+background-color: var(--buttonBackground);
+}
 
   @media (min-width: 667px) and (max-width: 1024px) {
   }
@@ -67,6 +71,8 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
     margin-top: 20px;
 }
 `;
+
+  console.log(`project: ${projectName}`, tags)
   return (
     <ProjectCardStyle>
       <a className="project-link" href={urlNetlify} target="_blank" rel="noreferrer">
@@ -80,13 +86,22 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage }) =
           {text}
         </p>
       </div>
-      <div className="project-button">
-        <p className="button">HTML5</p>
-        <p className="button">CSS3</p>
-        <p className="button">Javascript</p>
-        <p className="button">React</p>
+      <div className="tag-wrapper">
+        {
+          tags.map((tag) => {
+            return (<TagBox tag={tag} />)
+          })
+        }
       </div>
     </ProjectCardStyle>
   );
 };
 export default ProjectCard;
+/*
+<div className="project-button">
+        <p className="button">HTML5</p>
+        <p className="button">CSS3</p>
+        <p className="button">Javascript</p>
+        <p className="button">React</p>
+      </div>
+*/

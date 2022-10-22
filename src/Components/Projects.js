@@ -9,12 +9,7 @@ import rData from '../data.json';
 // const { highlights, projects } = rData; /* samma som const highlights = rData.highlights; */
 const { highlights, projects } = rData;
 
-console.log('rData', rData);
-console.log('highlights', highlights);
-console.log('projects', projects);
-
 const filteredProjects = projects.filter((project) => highlights.includes(project.id));
-console.log('result', filteredProjects);
 
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
@@ -58,6 +53,7 @@ const Projects = () => {
       <ProjectStyle>
         <div className="project-box">
           {filteredProjects.map((project) => {
+            console.log('project', project)
             return (
               <ProjectCard
                 key={project.id}
@@ -65,7 +61,8 @@ const Projects = () => {
                 coverName={project.coverName}
                 projectName={project.projectName}
                 urlNetlify={project.urlNetlify}
-                text={project.descriptionText} />
+                text={project.descriptionText}
+                tags={project.tags} />
             );
           })}
         </div>

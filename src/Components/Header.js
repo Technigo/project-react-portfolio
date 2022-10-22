@@ -81,7 +81,7 @@ const Header = () => {
     font-family: Roboto, sans-serif;
   }
   .lighter {
-    font-weight: 300;
+    font-weight: light;
   }
 
   .header-title {

@@ -8,7 +8,7 @@
       "coverName": "News site",
       "projectName": "Project News-site",
       "descriptionText": "description1",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./Petra.jpg",
       "tags": ["HTML", "CSS"]
     },
     {
@@ -28,7 +28,7 @@
       "coverName": "Guess Who",
       "projectName": "Project Guess Who",
       "descriptionText": "A digital version of the classical bord game Guess who, built in javascript.",
-      "photo": "movie_picture.png",
+      "photo": "./Petra.jpg",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -68,7 +68,7 @@
       "coverName": "Happy thoughts",
       "projectName": "Project Happy Thoughts",
       "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` with `useEffect`.",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "https://imgbox.com/rmufUR0l",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
