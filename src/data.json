@@ -1,12 +1,12 @@
 [
     {
-      "title": "Project news site",
+      "title": "Project Music releases",
       "id": "1",
-      "image": "#",
-      "netlify": "https://tablebooker.netlify.app/",
+      "image": "https://images2.imgbox.com/4f/68/Iv9es37j_o.jpg?download=true",
+      "netlify": "https://projectmusicreleases.netlify.app/",
       "github": "https://github.com/agadman/project-news-site",
       "description": "A news site containing grid and flexbox...",
-      "tools": ["HTML", "CSS"]
+      "tools": ["HTML", "CSS", "Javascript"]
     },
     {
       "title": "Project chatbot",

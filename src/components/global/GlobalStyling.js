@@ -13,14 +13,13 @@ export const InnerWrapper = styled.div`
 `
 
 export const SectionTitle = styled.div`
-    padding: 1px;   
+    padding: 10px;   
     background-color: #0A638E;
     color: white;
-    margin: 0 auto;
-    border-radius: 8px;
+    margin: 0 auto 30px;
+    border-radius: 3px;
     width: 200px;
     text-transform: uppercase;
-    font-family: 'Montserrat';
     text-align: center;
     font-weight: 600;
 `
