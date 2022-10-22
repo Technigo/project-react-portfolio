@@ -21,6 +21,7 @@ const TechHeader = styled.h2`
   background-color: ${(props) => props.color};
   color: white;
   padding: 10px 15px;
+  margin-bottom:0;
 
   @media (max-width: 1023px) {
     font-size: 22px;
@@ -33,7 +34,7 @@ const TechHeader = styled.h2`
 
 export const ScrollLeftWrapper = styled.div`
 width: 100%;
-padding: 10px 0;
+
 `;
 
 export const TechContent = styled.p`
@@ -43,6 +44,7 @@ export const TechContent = styled.p`
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inherit;
+    font-size:17px;
     /* Starting position */
     -moz-transform:translateX(100%);
     -webkit-transform:translateX(100%); 
@@ -75,19 +77,14 @@ export const TechContent = styled.p`
     }}
 
 @media (min-width: 668px) and (max-width: 1023px){
-    width:70%;
-    margin-top: 30px;
-
-    img{
-        height: 65px
+    {
+      font-size:17px;
     }
 }
 
 @media (min-width: 1024px)
-    width:50%;
-
-  img{
-  height: 75px;  
+  {
+    font-size:30px;
   }
 }
 `;
