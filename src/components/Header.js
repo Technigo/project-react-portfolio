@@ -39,9 +39,9 @@ export const Header = () => {
 }
 
 const HeaderContainer = styled.header`
-  background-image: url('/images/hero-image.jpg');
+  background-image: url('/images/heroimage.jpeg');
   height: 400px;
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
   position: relative;
 
