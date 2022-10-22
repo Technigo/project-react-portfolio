@@ -1,10 +1,8 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is my portfolio with my projects made during the Tecnnigo bootcamp for web developer. It's made in React using styled components.
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had more time, I would have added more effects, and found out a good way to link to my Medium-page. I will go back and fix this later.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://marwebdesign.netlify.app/
