@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InnerWrapper, SectionSubHeading } from '../library/GlobalStyles'
+import { InnerWrapper, SectionSubHeading, OuterWrapper } from '../library/GlobalStyles'
 
 export const MoreThoughts = ({ subTitle }) => {
   return (
-    <InnerWrapper>
-      <SectionSubHeading>MORE THOUGHTS</SectionSubHeading>
-      <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
-        <InfoContainer>
-          <SubTitle>{subTitle}</SubTitle>
-          <SubParagraph>
-                Project to display the weather in a chosen city with info from an
-                API
-          </SubParagraph>
-        </InfoContainer>
-      </a>
-    </InnerWrapper>
+    <OuterWrapper>
+      <InnerWrapper>
+        <SectionSubHeading>MORE THOUGHTS</SectionSubHeading>
+        <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
+          <InfoContainer>
+            <SubTitle>{subTitle}</SubTitle>
+            <SubParagraph>
+                  Project to display the weather in a chosen city with info from an
+                  API
+            </SubParagraph>
+          </InfoContainer>
+        </a>
+      </InnerWrapper>
+    </OuterWrapper>
   );
 };
 
@@ -32,13 +34,6 @@ export const OtherProjectContainer = styled.div`
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-`;
-
-export const SkillTag = styled.p`
-  background-color: pink;
-  display: inline-block;
-  margin: 3%;
-  padding: 1%;
 `;
 
 export const SubTitle = styled.h4`

@@ -4,8 +4,10 @@ import { Introduction } from './components/Introduction';
 import { TechSection } from './components/TechSection';
 import { Projects } from './components/Projects';
 import { OtherProjects } from './components/OtherProjects';
-import { MyThoughts } from './components/MyThoughts';
+import { Thoughts } from './components/Thoughts';
 import { MoreThoughts } from './components/MoreThoughts';
+import { Skills } from './components/Skills';
+import { ForMore } from './components/ForMore';
 
 export const App = () => {
   return (
@@ -15,8 +17,10 @@ export const App = () => {
       <TechSection />
       <Projects color="#7d586e" tagColor="#c7d4cc" />
       <OtherProjects subTitle="Weather app" />
-      <MyThoughts />
+      <Thoughts />
       <MoreThoughts subTitle="Remote tips" />
+      <Skills />
+      <ForMore color="green" />
     </div>
   )
 }

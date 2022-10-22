@@ -1,9 +1,9 @@
 import React from 'react';
-import { SectionHeading, InnerWrapper, OuterWrapperGrey } from '../library/GlobalStyles'
+import { SectionHeading, InnerWrapper, OuterWrapper } from '../library/GlobalStyles'
 
 export const TechSection = () => {
   return (
-    <OuterWrapperGrey>
+    <OuterWrapper>
       <InnerWrapper>
         <SectionHeading>TECH</SectionHeading>
         <p>
@@ -11,6 +11,6 @@ export const TechSection = () => {
             , Node.js, mob-programming, pair-programming, Github
         </p>
       </InnerWrapper>
-    </OuterWrapperGrey>
+    </OuterWrapper>
   )
 }

@@ -1,75 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 import projects from '../library/projects.json';
+import { SectionHeading, InnerWrapper, OuterWrapperGrey } from '../library/GlobalStyles'
 
 export const Projects = ({ color, tagColor }) => {
   const GITHUB_NAME = 'lindanorberg';
 
   return (
-    <Wrapper>
-      <SectionHeader color={color}>FEATURED PROJECTS</SectionHeader>
-      <FeaturedProjectWrapper>
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              key={project.title}
-              href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
-              target="_blank">
-              <ThumbnailWrapper url={project.image}>
-                <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
-              </ThumbnailWrapper>
-              <ProjectInfoHeader color={color}>
-                {project['title-description'].toUpperCase()}
-              </ProjectInfoHeader>
-              <ProjectInfo>{project['project-description']}</ProjectInfo>
-              <ul style={{ padding: 0 }}>
-                {project.tags.map((tag) => (
-                  <ProjectTags tagColor={tagColor}>
-                    {tag}
-                  </ProjectTags>
-                ))}
-              </ul>
-            </ProjectCard>
-          );
-        })}
-      </FeaturedProjectWrapper>
-    </Wrapper>
+    <OuterWrapperGrey>
+      <InnerWrapper>
+        <SectionHeading>FEATURED PROJECTS</SectionHeading>
+        <FeaturedProjectWrapper>
+          {projects.map((project) => {
+            return (
+              <ProjectCard
+                key={project.title}
+                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                target="_blank">
+                <ThumbnailWrapper url={project.image}>
+                  <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
+                </ThumbnailWrapper>
+                <ProjectInfoHeader color={color}>
+                  {project['title-description'].toUpperCase()}
+                </ProjectInfoHeader>
+                <ProjectInfo>{project['project-description']}</ProjectInfo>
+                <ul style={{ padding: 0 }}>
+                  {project.tags.map((tag) => (
+                    <ProjectTags tagColor={tagColor}>
+                      {tag}
+                    </ProjectTags>
+                  ))}
+                </ul>
+              </ProjectCard>
+            );
+          })}
+        </FeaturedProjectWrapper>
+      </InnerWrapper>
+    </OuterWrapperGrey>
   );
 };
-
-const Wrapper = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  line-height: 1.4;
-
-  @media (max-width: 800px) {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-`;
-
-const SectionHeader = styled.h2`
-  font-size: 50px;
-  line-height: 1;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  font-family: "Montserrat Bold";
-  background-color: ${(props) => props.color};
-  color: white;
-
-  @media (max-width: 800px) {
-    font-size: 22px;
-    line-height: 1;
-    padding: 10px 15px;
-    margin-bottom: 40px;
-  }
-`;
 
 const FeaturedProjectWrapper = styled.div`
   text-align: left;
