@@ -5,6 +5,8 @@ import { MY_TOKEN } from 'utils/secret';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, SecondHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 
+// https://api.github.com/users/malmen237/repos
+
 const Projects = () => {
   const [loading, setLoading] = useState(false);
   const [list, setList] = useState([]);
@@ -147,6 +149,9 @@ const Tags = styled.div`
   padding: 0%;
 `
 const SingleWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media ${Devices.tablet} {
     display: grid;

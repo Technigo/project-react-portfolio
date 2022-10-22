@@ -73,6 +73,8 @@ export const MainHeader = styled.h2`
   text-align: center;
   padding: 2%;
   background-color: #e9722d;
+  max-width: fit-content;
+  align-self: center;
   margin: 5% 10%;
 
   @media ${Devices.tablet} {
