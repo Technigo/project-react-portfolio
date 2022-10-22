@@ -98,7 +98,7 @@ export const Projects = () => {
 
         <SubsectionHeading>OTHER PROJECTS</SubsectionHeading>
         <div>
-          <p><InlineHeading>WEATHER APP</InlineHeading> A weather app that displays
+          <p><a href="https://github.com/jnbjensen/project-weather-app" rel="noreferrer" target="_blank"><InlineHeading>WEATHER APP</InlineHeading></a> A weather app that displays
            today&apos;s weather and a five-day forecast for (nearly) any city in the world
           <a href="https://github.com/jnbjensen/project-weather-app" rel="noreferrer" target="_blank"> &gt;&gt;</a>
           </p>
@@ -109,7 +109,7 @@ export const Projects = () => {
           </TagDiv>
         </div>
         <div className="other-project">
-          <p><InlineHeading>GUESS WHO?</InlineHeading> A
+          <p><a href="https://github.com/jnbjensen/project-guess-who" rel="noreferrer" target="_blank"><InlineHeading>GUESS WHO?</InlineHeading></a> A
            browser version of the classic boardgame &apos;Guess Who?&apos;
           <a href="https://github.com/jnbjensen/project-guess-who" rel="noreferrer" target="_blank"> &gt;&gt;</a>
           </p>
@@ -120,7 +120,7 @@ export const Projects = () => {
           </TagDiv>
         </div>
         <div className="other-project">
-          <p><InlineHeading>CHATBOT</InlineHeading> A joke-generating chatbot
+          <p><a href="https://github.com/jnbjensen/project-chatbot" rel="noreferrer" target="_blank"><InlineHeading>CHATBOT</InlineHeading></a> A joke-generating chatbot
             <a href="https://github.com/jnbjensen/project-chatbot" rel="noreferrer" target="_blank"> &gt;&gt;</a>
           </p>
           <TagDiv>
@@ -130,7 +130,7 @@ export const Projects = () => {
           </TagDiv>
         </div>
         <div className="other-project">
-          <p><InlineHeading>NEWS SITE</InlineHeading> A
+          <p><a href="https://github.com/jnbjensen/project-news-site" rel="noreferrer" target="_blank"><InlineHeading>NEWS SITE</InlineHeading></a> A
            simple website with (fake) news articles
           <a href="https://github.com/jnbjensen/project-news-site" rel="noreferrer" target="_blank"> &gt;&gt;</a>
           </p>

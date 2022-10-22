@@ -16,7 +16,7 @@ export const HeaderHeading = styled.div`
     font-size: 1.5em;
   }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 800px) {
   h1 {
       font-size: 1.5em;
     }

@@ -20,7 +20,7 @@ export const TechStack = styled.div`
   margin-bottom: 0.5em;
   }
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 600px) {
   max-width: 640px;
   margin: 0em auto;
   }

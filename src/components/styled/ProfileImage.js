@@ -15,13 +15,13 @@ export const ProfileImage = styled.div`
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
   right: 5%;
   left: 70%; 
   bottom: -25px;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 800px) {
   right: 10%;
   left: 70%; 
   bottom: -25px;

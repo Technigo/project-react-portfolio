@@ -10,12 +10,12 @@ export const SoMeIcon = styled.img`
   max-width: auto;
   margin: ${(props) => (props.header ? '0.3em' : '1.2em')}; 
   
-  @media only screen and (min-width: 550) {
+  @media only screen and (min-width: 600px) {
       height: ${(props) => (props.header ? '30px' : '100px')};
       margin: ${(props) => (props.header ? '0.3em' : '1.5em')}; 
   }
   
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 800px) {
       height: ${(props) => (props.header ? '50px' : '100px')};
       margin: ${(props) => (props.header ? '1em' : '1.5em')};
       &:hover {

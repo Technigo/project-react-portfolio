@@ -11,7 +11,7 @@ export const OuterWrapper = styled.section`
   background-color: #DBE2EF;
   }
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 600px) {
   padding: 2em 0em;
   }
 `
@@ -26,7 +26,7 @@ export const InnerWrapper = styled.div`
     max-width: 640px;
   }
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 600px) {
   width: 75%;
   }
 `
@@ -44,7 +44,7 @@ export const HeaderOuterWrapper = styled.header`
   height: 50vh;
   position: relative;
 
-  @media only screen and (min-width: 550px) {
+  @media only screen and (min-width: 600px) {
   padding: 2em 0em
   }
 `
