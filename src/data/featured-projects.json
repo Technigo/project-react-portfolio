@@ -1,0 +1,63 @@
+[
+    {
+          "img_src": "/assets/guess.who.png",  
+          "title": "Guess Who?",
+          "project-description": "Guess the right character by asking questions.",
+      "repo-name": "project-guess-who",
+          "netlify-name": "sprightly-nougat-44de5e",
+        "url": "https://github.com/YoTesfam/project-guess-who",
+          "tags": [
+              "HTML5",
+              "CSS",
+              "JavaScript"
+
+          ]
+    },
+
+    {
+        "img_src": "/assets/weatherimage1.png",  
+        "title": "Weather App",
+        "project-description": "Weather forecast for Stockholm using open weather api.",
+    "repo-name": "project-guess-who",
+        "netlify-name": "yourweatherapptoday",
+      "url": "https://github.com/YoTesfam/project-weather-app",
+        "tags": [
+            "HTML5",
+            "CSS",
+            "JavaScript",
+            "APIs"
+
+        ]
+    },
+
+    {
+        "img_src": "/assets/chatbot.png",  
+        "title": "Chat bot",
+        "project-description": "Responsive chat bot for ordering flowers.",
+    "repo-name": "project-chatbot",
+        "netlify-name": "teal-khapse-dbfdca",
+      "url": "https://github.com/YoTesfam/project-chatbot",
+        "tags": [
+            "HTML5",
+            "CSS",
+            "JavaScript"
+
+        ]
+    },
+
+    {
+        "img_src": "/assets/happy-thoughts.png",  
+        "title": "Happy Thoughts Chat",
+        "project-description": "A simple built API to collect happy thoughts.",
+    "repo-name": "project-happy-thoughts",
+        "netlify-name": "jade-queijadas-27917e",
+      "url": "https://github.com/YoTesfam/project-happy-thoughts",
+        "tags": [
+            "HTML5",
+            "CSS",
+            "APIs",
+            "React Hooks"
+
+        ]
+    }
+  ]
