@@ -96,7 +96,6 @@ const ThumbnailImage = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   background-image: url(${(props) => props.url});
-  }
 `;
 
 const BlogDate = styled.p`

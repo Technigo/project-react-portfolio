@@ -32,16 +32,17 @@ const PresentationContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 232px;
   background: #f4f4f457;
 `;
 
 const PresentationText = styled.h3`
-  width: 80%;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
   color: #000000;
+  margin-top: 50px;
+  margin-bottom: 30px;
 `;

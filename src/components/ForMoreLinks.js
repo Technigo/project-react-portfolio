@@ -45,7 +45,6 @@ line-height: 1;
 padding: 5px 10px;
 margin: 20px 0 20px 0;
 line-height: 1;
-}
 `;
 
 export const ForMoreIcons = styled.div`

@@ -31,6 +31,7 @@ export const TechContainer = styled.div`
     justify-content: center;
     width: 80%;
     height: auto;
+    margin-bottom: 30px;
 `
 export const TechHeadline = styled.h3`
 background-color: ${(props) => props.color};

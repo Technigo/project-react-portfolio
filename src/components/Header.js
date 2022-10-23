@@ -64,7 +64,6 @@ export const HeaderIcons = styled.div`
   top: 10%;
   img { height: 75px; }
 }  
-}
 `;
 
 export const HeaderTitle = styled.div`
@@ -81,7 +80,7 @@ export const HeaderTitle = styled.div`
   p {
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
     line-height: 130%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -93,7 +92,7 @@ export const HeaderTitle = styled.div`
   h3 {
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 130%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -101,27 +100,13 @@ export const HeaderTitle = styled.div`
     display: inline;
   }
 
-  @media (min-width: 668px) and (max-width: 1023px) {
-    h3 {
-      font-size: 25px;
+  @media (min-width: 668px) {
+    p {
+      font-size: 21px;
     }
-
-    h1 {
-      font-size: 40px;
-      display: block;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    left: 15%;
 
     h3 {
       font-size: 30px;
-    }
-
-    h1 {
-      font-size: 50px;
-      display: inline;
     }
   }
 `;
@@ -149,7 +134,7 @@ export const HeaderImage = styled.div`
     img {
       width: 240px;
       height: 240px;
-      bottom: -15%;
+      bottom: -10%;
       right: 15%;
     }
   }
