@@ -8,7 +8,7 @@ export const ForMore = () => {
   return (
     <OuterWrapper>
       <MainHeadline>FOR MORE</MainHeadline>
-      <SoMeLinks image1={linkedinRed} image2={githubRed} />
+      <SoMeLinks image1={linkedinRed} image2={githubRed} red />
     </OuterWrapper>
   )
 }

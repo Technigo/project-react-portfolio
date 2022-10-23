@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <HeaderBackground>
       <HeaderWrapper>
-        <SoMeLinks image1={linkedinWhite} image2={githubWhite} alignment="flex-end" width="3rem" height="3rem" />
+        <SoMeLinks image1={linkedinWhite} image2={githubWhite} alignment="flex-end" />
         <HeaderIntro />
         <ProfileImage />
       </HeaderWrapper>
@@ -22,7 +22,7 @@ export const Header = () => {
   )
 }
 
-export const HeaderBackground = styled.header`
+const HeaderBackground = styled.header`
   width: 100vw;
   background-image: url('${redRock}');
   color: white;

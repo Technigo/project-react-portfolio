@@ -52,13 +52,13 @@ export const MainProjects = () => {
 }
 
 // STYLING FOR THE ABOVE REACT COMPONENT
-export const ImageContainer = styled.div`
+const ImageContainer = styled.div`
   position: relative;
   /* This transition will cause the text to fade */
   transition: 0.5s ease;
 `
 
-export const ImageOverlay = styled.div`
+const ImageOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,7 +72,7 @@ export const ImageOverlay = styled.div`
   }
 `
 
-export const OverlayTitle = styled.p`
+const OverlayTitle = styled.p`
   text-align: center;
   position: absolute;
   top: 33%;

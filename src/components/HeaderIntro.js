@@ -11,7 +11,7 @@ export const HeaderIntro = () => {
   )
 }
 
-export const HeaderParagraph = styled.div`
+const HeaderParagraph = styled.div`
   align-self: flex-start;
   font-family: 'Montserrat';
   font-weight: 700;

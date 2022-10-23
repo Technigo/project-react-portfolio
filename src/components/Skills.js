@@ -39,13 +39,13 @@ export const Skills = () => {
   )
 }
 
-export const ListWrapper = styled(InnerWrapper)`
+const ListWrapper = styled(InnerWrapper)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 `
 
-export const List = styled.ul`
+const List = styled.ul`
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1rem;

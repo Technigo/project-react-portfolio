@@ -94,28 +94,6 @@ export const SmallHeadline = styled.h4`
   }
 `
 
-export const NavBar = styled.nav`
-  align-self: ${(props) => props.alignment};
-  margin-bottom: 1rem;
-  
-  img {
-    width: 3.3rem;
-    height: 3.3rem;
-    padding: 0.3rem;
-  }
-  
-  @media (min-width: 668px) {
-    img {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
-
-  & :hover {
-    transform: scale(1.1);
-  }
-`
-
 export const ProjectCard = styled.section`
   display: flex;
   flex-direction: column;
