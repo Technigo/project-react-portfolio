@@ -30,7 +30,7 @@ const StyledIntro = styled(Container)`
 
 const IntroText = styled.div`
   max-width: 80vw;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 
   @media (min-width: 667px) and (max-width: 1024px) {
     width: 60vw;

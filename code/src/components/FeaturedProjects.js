@@ -1,33 +1,97 @@
 import React from 'react';
 import styled from 'styled-components'
-import OtherProjects from './OtherProjects';
+import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
 
 import { SectionTitle, Container } from './StyleComp'
 import projects from './projects.json'
 
 const FeaturedProjects = () => {
-  console.log(projects)
   return (
     <>
-      <StyledFeaturedProjects>
+      <FeaturedProjectsStyled>
         <SectionTitle>Featured Projects</SectionTitle>
-        {projects.map((item) => (
-          <div key={item.title}>
-            <h3>{item.title}</h3>
-            <p>{item.project_description}</p>
-            <p>{item.tags}</p>
-            <p>{item.repo_link}</p>
-          </div>
-        ))}
-      </StyledFeaturedProjects>
+        <div>
+          {projects.slice(0, 2).map((project) => (
+            <FeaturedProjectWrapper key={project.id}>
+              <a href={project.netlify_link} target="_blank" rel="noreferrer">
+                <ImgWrapper>
+                  <Image src={project.project_img} alt="project" />
+                  <Overlay>{project.title}</Overlay>
+                </ImgWrapper>
+                <Title>{project.title}</Title>
+                <p>{project.project_description}</p>
+              </a>
+              <TagWrapper>
+                {project.tags.map((tag) => (
+                  <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
+                ))}
+                <a
+                  href={project.repo_link}
+                  target="_blank"
+                  rel="noreferrer"><TagRepo>GitHub Repo</TagRepo>
+                </a>
+              </TagWrapper>
+            </FeaturedProjectWrapper>
+          ))}
+        </div>
+      </FeaturedProjectsStyled>
       <OtherProjects />
     </>
   )
 }
-
 export default FeaturedProjects
 
-const StyledFeaturedProjects = styled(Container)`
+const FeaturedProjectsStyled = styled(Container)`
   background-color: var(--color-grey);
-
+  line-height: 1.5em;
 `
+const FeaturedProjectWrapper = styled(ProjectWrapper)`
+  margin-bottom: 3em;
+  max-width: 80vw;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    width: 60vw;
+    
+  }
+  @media screen and (min-width: 1024px) {
+    width: 40vw;
+   /*  display: grid; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;  */
+  }
+`
+const ImgWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+`
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+`
+const Overlay = styled.div`
+  display: none;
+@media screen and (min-width: 1024px) {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  color: white;
+  font-weight: 700;
+  align-self: center;
+  text-transform: uppercase;
+  &:hover{
+    background-color: transparent;
+    color: transparent;
+  }}
+`
+

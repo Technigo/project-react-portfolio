@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2em 0;
+  padding: 2rem 0;
 `
 
 export const SectionTitle = styled.h2`

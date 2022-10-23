@@ -1,84 +1,179 @@
 [
     {
           "title": "Weather App",
+          "id": 1,
           "project_description": "Web app built in JavaScript using data from Open Weather API. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-weather-app",
           "netlify_link": "https://stockholm-weather.netlify.app/",
-          "project_img": "",
+          "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
           "tags": [
-              "HTML5",
-              "CSS3",
-              "JavaScript ES6",
-              "API:s"
-          ]
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          },
+          {
+          "id": 4,
+          "tech": "API"
+          }
+
+      ]
       },
       {
           "title": "Guess Who",
+          "id": 2,
           "project_description": "Digital version of the board game 'Guess Who' built in JavaScript that filters characters based on user guesses.",
           "repo_link": "https://github.com/juliaostedt/project-guess-who",
           "netlify_link": "https://guess-who-julia-ostedt.netlify.app/",
-          "project_img": "",
-          "tags": [
-              "HTML5",
-              "CSS3",
-              "JavaScript ES6"
-          ]
+          "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+         "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
       },
       {
           "title": "PT Chatbot",
+          "id": 3,
           "project_description": "Simple chatbot for workout recommendations built in JavaScript. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-chatbot",
           "netlify_link": "https://pt-chat-bot.netlify.app/",
           "project_img": "",
           "tags": [
-              "HTML5",
-              "CSS3",
-              "JavaScript Vanilla"
-          ]
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+      ]
       },
       {
           "title": "Music Releases",
+          "id": 4,
           "project_description": "A responsive website using data from Spotify to show album and single releases. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-music-releases",
           "netlify_link": "https://music-releases-petra-julia.netlify.app/",
           "project_img": "",
           "tags": [
-              "React",
-              "CSS3",
-              "API:s"
-          ]
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+          ,
+          {
+          "id": 4,
+          "tech": "React"
+          }
+      ]
       },
       {
           "title": "Survey",
+          "id": 5,
           "project_description": "Lorem ipsum osv osv.",
           "repo_link": "https://github.com/juliaostedt/project-survey",
           "netlify_link": "https://box-subscription-survey.netlify.app/",
           "project_img": "",
-          "tags": [
-              "React",
-              "CSS3"
-          ]
+           "tags": [
+          {
+          "id": 1,
+          "tech": "JavaScript"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          }
+          ,
+          {
+          "id": 4,
+          "tech": "React"
+          }
+      ]
       },
          {
           "title": "Happy Thoughts",
+          "id": 6,
           "project_description": "Lorem ipsum osv osv.",
           "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
           "netlify_link": "https://happy-thoughts-julia.netlify.app/",
           "project_img": "",
-          "tags": [
-              "React",
-              "CSS3"
-          ]
+         "tags": [
+            {
+            "id": 1,
+            "tech": "React"
+            },
+            {
+            "id": 2,
+            "tech": "HTML"
+            },
+            {
+            "id": 3,
+            "tech": "CSS"
+            },
+            {
+            "id": 4,
+            "tech": "API"
+            }
+      ]
       },
       {
           "title": "Top Rated Movies",
+          "id": 7,
           "project_description": "Lorem ipsum osv osv. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-movies",
           "netlify_link": "https://top-rated-movies-2afa29.netlify.app/",
           "project_img": "",
           "tags": [
-              "React",
-              "CSS3"
-          ]
+          {
+          "id": 1,
+          "tech": "React"
+          },
+          {
+          "id": 2,
+          "tech": "HTML"
+          },
+          {
+          "id": 3,
+          "tech": "CSS"
+          },
+          {
+          "id": 4,
+          "tech": "API"
+          }
+      ]
       }
     ]
