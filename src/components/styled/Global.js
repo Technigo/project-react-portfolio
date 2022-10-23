@@ -104,7 +104,7 @@ h4 {
   font-weight: 700;
   letter-spacing: 1px;
   padding: 0.2rem 0.4rem;
-  margin: 0 auto 2rem;
+  margin: 0 auto 2.5rem;
   width: fit-content;
   text-transform: uppercase;
 }

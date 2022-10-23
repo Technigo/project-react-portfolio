@@ -10,11 +10,12 @@ export const TopicsContainer = styled.div`
       & span {
         font-weight: 600;
         color: var(--main-color);
+        text-decoration: none;
       }
 
       & a {
         text-decoration: underline;
-        ${({ thoughts }) => (thoughts && { marginTop: '0.6rem' })};
+        ${({ thoughts }) => (thoughts && { marginTop: '0.5rem' })};
       }
 `;
 

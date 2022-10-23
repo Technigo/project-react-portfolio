@@ -5,7 +5,7 @@ const SectionContainer = styled.section`
   padding: 3rem 0;
 
   & h4 {
-    margin-bottom: ${({ less }) => (less && '1.4rem')};
+    margin-bottom: ${({ less }) => (less && '1.5rem')};
   }
 `;
 
