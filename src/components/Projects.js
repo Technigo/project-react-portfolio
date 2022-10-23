@@ -54,7 +54,7 @@ export const Projects = () => {
         </GridDiv>
 
         <div>
-          <TitleTertiary selectedColor="#2f694d" marginTop="10%">other projects</TitleTertiary>
+          <TitleTertiary selectedColor="#285841" marginTop="10%">other projects</TitleTertiary>
           {OtherProjects.reverse().map((project) => (
             <ProjectCard key={project.id}>
               <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
@@ -91,7 +91,7 @@ const StyledLink = styled.a`
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  color:#2f694d;
+  color:#285841;
 
   &:hover {
         text-decoration: underline;
@@ -106,7 +106,7 @@ a{
 }
 
 span {
-  color:#2f694d;
+  color:#285841;
   font-weight: 700;
 }
 

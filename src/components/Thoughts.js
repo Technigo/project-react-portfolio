@@ -14,7 +14,7 @@ export const Thoughts = () => {
               <h5>OCT 2022</h5>
               <h4>Work smart not fast</h4>
               {// eslint-disable-next-line max-len
-              }          <p>Read about my latest hacks to code more efficiently! 👩‍💻⚡️ <span> &gt;&gt;</span></p>
+              }          <p>Read about my latest hacks to code more efficiently! 👩‍💻⚡️</p>
               <SingleTag>blog post</SingleTag>
             </a>
           </StyledArticle>
@@ -24,7 +24,7 @@ export const Thoughts = () => {
               <h5>OCT 2022</h5>
               <h4>Learning new things</h4>
               {// eslint-disable-next-line max-len
-              }          <p>Read about my thoughts from the first 3 months in the Technigo Web Developer Bootcamp <span> &gt;&gt;</span></p>
+              }          <p>Read about my thoughts from the first 3 months in the Technigo Web Developer Bootcamp.</p>
               <SingleTag>blog post</SingleTag>
             </a>
           </StyledArticle>
@@ -54,17 +54,13 @@ export const StyledArticle = styled.article`
   h4 {
     font-weight: 700;
     text-transform: uppercase;
-    color: #2f694d;
+    color: #152D24;
     margin: 0.5rem 0rem;  }
 
   h5  {
    font-size: 1.0rem; 
   }
 
-  span {
-  color:#2f694d;
-  font-weight: 700;
-}
 
 &:hover {
   transform: scale(1.01);

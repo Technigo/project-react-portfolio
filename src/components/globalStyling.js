@@ -21,7 +21,7 @@ export const MainHeaders = styled.h2`
     font-size: 1.7rem;
     line-height: 2rem;
     text-align: center;
-    background-color: #2f694d;
+    background-color: #285841;
     color: white;
     padding: 0.5rem;
     margin-bottom: 2rem;
@@ -41,9 +41,9 @@ export const TitleTertiary = styled.h3`
 
 export const TitleQuaternary = styled.h4`
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.8rem;
-    color: #2f694d;
+    color: #285841;
     text-transform: uppercase;
     margin: 0.5rem 0rem;
 

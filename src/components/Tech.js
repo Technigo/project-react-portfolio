@@ -8,7 +8,7 @@ export const Tech = () => {
       <InnerWrapper>
         <MainHeaders>tech</MainHeaders>
         {// eslint-disable-next-line max-len
-        }<TechContent> HTML • CSS • Flexbox • JavaScript ES6 • JSX • React • React Hooks • Web accessibility • Redux • Node.js • Mongo DB • API:s • mob-programming • pair-programming • GitHub</TechContent>
+        }<TechContent> HTML • CSS • Flexbox • JavaScript ES6 • JSX • React • React Hooks • Web accessibility • Redux • Node.js • Mongo DB • API:s • Mob-programming • Pair-programming • GitHub</TechContent>
       </InnerWrapper>
     </OuterWrapper>
 

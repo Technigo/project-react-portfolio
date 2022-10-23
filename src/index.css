@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+  font-size: 17px;
+  line-height: 29px;
+}
 
 body {
   margin: 0;
@@ -19,12 +23,12 @@ h1, h4 {
 }
 
 p {
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }
 
 .line {
-  border: 1px solid #2f694d;
+  border: 1px solid #285841;
   width: 40px;
   display: inline-block;
   margin-bottom: 7px;
@@ -33,7 +37,7 @@ p {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: #2f694d;
+  background-color: #285841;
   border-radius: 50%;
   display: inline-block;
   margin-right: 5px;
@@ -48,8 +52,7 @@ p {
 
 @media (min-width: 1025px) {
   html {
-    font-size: 24px;
+    font-size: 25px;
   }
-
 
 }
