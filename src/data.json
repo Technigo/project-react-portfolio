@@ -164,29 +164,62 @@
     "Projects": {
       "Project": [
         {
-          "Project Name": "Project week 1",
+          "projectName": "What to Watch?",
+          "week":  "2",
           "id": "1",
-          "url": "http:google.com"
+          "url": "https://dainty-lily-7cc7b2.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62ef8871d6d667000a90dc44/screenshot_2022-08-07-09-40-08-0000.png"
         },
         {
-          "Project Name": "Project week 2",
+          "projectName": "Chat Bot",
+          "week":  "3",
           "id": "2",
-          "url": "http:google.com"
+          "url": "https://pt-chat-bot.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png"
         },
         {
-          "project Name": "Project week 3",
+          "projectName": "Guess Who?",
+          "week":  "4",
           "id": "3",
-          "url": "http:google.com"
+          "url": "https://mdahlgrenguesswho.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6315162c1693a93be6058e72/screenshot_2022-09-04-21-18-50-0000.png"
+
         },
         {
-          "project Name": "Project week 4",
+          "projectName": "Weather App",
+          "week":  "5",
           "id": "4",
-          "url": "http:google.com"
+          "url": "https://weather-app-mia-antonella.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png"
         },
         {
-          "project Name": "Project week 5",
+          "projectName": "Happy Thoughts",
+          "week":  "6",
           "id": "5",
-          "url": "http:google.com"
+          "url": "https://project-happy-thoughts-miadahlgren.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63418679288f000008d7c212/screenshot_2022-10-08-14-17-53-0000.png"
+
+        },
+        {
+          "projectName": "MovieFlix",
+          "week":  "7",
+          "id": "6",
+          "url": "https://movies-project-week-8-david-mia.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png"
+        },
+        {
+          "projectName": "Project - Survey",
+          "week":  "7",
+          "id": "6",
+          "url": "https://knitgren-survey.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/633a88935c7f1d0008878448/screenshot_2022-10-03-07-01-11-0000.png"
+        },
+        {
+          "projectName": "Music Releases",
+          "week":  "8",
+          "id": "7",
+          "url": "https://musicrealeases-younas-and-mia.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png"
         }
       ]
     }  

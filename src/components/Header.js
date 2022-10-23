@@ -3,6 +3,7 @@ import GitHUbIcon from 'icons/github.svg'
 import LinkedInIcon from 'icons/linkedin.svg'
 import StackIcon from 'icons/stack.svg';
 import styled from 'styled-components';
+import ProfileImage from 'styles/ProfileImage';
 
 const Header = () => {
   return (
@@ -32,7 +33,7 @@ const Header = () => {
           </div>
         </div>
 
-        <section className="profile-pic" />
+        <ProfileImage><section className="profile-pic" /></ProfileImage>
         <div className="header-text">
           <h1 lang="en">Portfolio</h1>
           <h3 className="name">Mia Dahlgren</h3>
@@ -83,10 +84,7 @@ const HeaderStyling = styled.header`
       width: 5.5vw;
   }
 
-  .description{
-    mix-blend-mode: difference;
-    font-size: 4vw;
-  }
+
 
     h1{
         font-family: "Aloevera";
@@ -102,7 +100,7 @@ const HeaderStyling = styled.header`
         text-align: center;
         font-family: 'Raleway Dots', cursive; 
         color: white;
-        font-size: 5.3vw;
+        font-size: 5vw;
         margin: 2vw 0vw 2vw 3vw;
     }
 
@@ -111,12 +109,19 @@ const HeaderStyling = styled.header`
     text-align: center;
     font-family: 'Raleway Dots', cursive;
     color: grey;
-    font-size: 5vw;
+    font-size: 4.5vw;
     margin: 0vw 0vw 2vw 3vw;
+/*     background-color: gold;
+    opacity: 0.4; */
     }
 
     .name{
       margin-bottom: 1vw;
+    }
+
+    .description{
+      mix-blend-mode: difference;
+      font-size: 4vw;
     }
 
     .header-text{
@@ -126,22 +131,5 @@ const HeaderStyling = styled.header`
       gap: 2px;
   
   }
-
-    .profile-pic {
-      position: absolute;
-      width: 31vw;
-      height: 31vw;
-      left:60%;
-      top: 31.8%;
-      border-radius: 50%;
-      background: url("./images/profile_pic2.jpg");
-      background-position: -30px 560px;
-      background-size: 232px;
-  }
-
-
-
-
-
     
     `

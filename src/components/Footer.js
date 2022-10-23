@@ -8,7 +8,7 @@ const Footer = () => {
       <footer>
 
         <section className="section footer">
-          <SectionHeaderStyling><div><h2>Contact</h2></div></SectionHeaderStyling>
+          <SectionHeaderStyling><div className="footer-header"><h2>Contact</h2></div></SectionHeaderStyling>
           <a href="mailto: mia_dahlgren@outlook.com">Mia Dahlgren</a>
           <a href="tel:+46736685894"> +46 736 68 58 94</a>
           <a href="mailto: mia_dahlgren@outlook.com"> mia_dahlgren@outlook.com</a>
@@ -28,7 +28,7 @@ const FooterStyling = styled.footer`
 
     
   .section.footer{
-    background-color:tan;
+    background-color: tan;
     font-size: 16px;
     text-align: center;
 
@@ -41,8 +41,8 @@ const FooterStyling = styled.footer`
     margin-bottom: 5vw;
   }
 
-  div{
-    background-color:tan;
+  .footer-header{
+    background-color: tan;
     margin-top: 1.5vw;
   }
 

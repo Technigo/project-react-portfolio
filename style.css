@@ -150,14 +150,14 @@ p{
     color:#f09254;
 }
 
-.section.header {
+/* .section.header {
     background: url("./images/nailpolish.jpg") no-repeat;
     background-color: #F6AD7B;
     height: 540px;
     background-size: 1000px;
     background-position-y: -100px;
     background-position-x: -120px;
-  }
+  } */
 
   .header-text{
     display: flex;

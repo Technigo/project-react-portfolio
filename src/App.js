@@ -6,21 +6,22 @@ import More from 'components/More';
 import Skills from 'components/Skills'
 import Projects from 'components/Projects';
 import Tech from 'components/Tech';
-import data from './data.json';
 import GlobalStyling from './styles/GlobalStying';
 
-console.log(data);
+console.log();
 export const App = () => {
   return (
     <GlobalStyling>
-      <div>
-        <Header />
-        <Intro />
-        <Tech />
-        <Skills />
-        <Projects />
-        <More />
-        <Footer />
+      <div className="outer-wrapper">
+        <div className="inner-wrapper">
+          <Header />
+          <Intro />
+          <Tech />
+          <Skills />
+          <Projects />
+          <More />
+          <Footer />
+        </div>
       </div>
     </GlobalStyling>
 
