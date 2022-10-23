@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "href": "https://creative-lolly-f0d26c.netlify.app/",
+    "github-href": "https://github.com/erilinus/project-guess-who",
+    "title": "Guess who",
+    "description": "Practice using if-statements to create a chatbot that tells jokes.",
+    "image": "images/guess-who.jpg",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  {
+    "id": "2",
+    "href": "https://subtle-paletas-e779d4.netlify.app/",
+    "github-href": "https://github.com/erilinus/project-chatbot",
+    "title": "Chatbot",
+    "description": "Practice using if-statements to create a chatbot that tells jokes.",
+    "image": "images/chatbot.jpg",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }
+]

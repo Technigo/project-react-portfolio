@@ -11,7 +11,7 @@ const OtherProject = () => {
           <p>Description</p>
         </StyledTextWrapper>
         <StyledTagWrapper>
-          Tags
+            Tags
         </StyledTagWrapper>
       </StyledFeaturedProject>
     </ProjectList>
