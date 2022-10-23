@@ -5,46 +5,33 @@ import ColorTitle from './Shared/ColorTitle';
 
 const Skills = () => {
   const SkillsStyle = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  // padding: 30px 0 60px 0 ;
-  gap: 5px; 
-  align-items: start;
-  text-align: center;
-  font-size: 16px;
-  line-height: 34px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  border: solid 3px red;
-
-  .project-text{
-    border: solid 3px green;
-    width:auto;
-    margin:0;
-  }
-
-  .toolbox-wrapper{ //center
-    border: solid 2px black;
-  }
-
-  @media (min-width: 667px) and (max-width: 1024px) {
-  }
-
-
-
-
-  @media (min-width: 1024px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  `
+    grid-template-columns: repeat(2, 1fr);
+    // padding: 30px 0 60px 0 ;
+    gap: 5px;
+    align-items: start;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+
+    .project-text {
+      width: auto;
+      margin: 0;
+    }
+
+    @media (min-width: 667px) and (max-width: 1024px) {
+    }
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  `;
   return (
-    <ContentWrapper
-      as="section"
-      backgroundColor="var(--secondBackground)">
-      <ColorTitle
-        background="var(--fourthTitle)"
-        title="SKILLS" />
+    <ContentWrapper as="section" backgroundColor="var(--secondBackground)">
+      <ColorTitle background="var(--fourthTitle)" title="SKILLS" />
       <SkillsStyle>
         <div className="project-text">
           <h2 className="small-title">CODE</h2>

@@ -8,9 +8,7 @@ import Icons from './Shared/Icons';
 
 const ForMore = () => {
   const ForMoreStyle = styled.div`
-  // background-color: var(--secondBackground); 
-  display: row;
-  border: solid 2px red;
+  display: row;  
   justify-content: center;
   text-align: center;
   padding: 28px 0;

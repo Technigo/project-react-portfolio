@@ -12,7 +12,6 @@ const ProjectCard = ({
 }) => {
   console.log('coverImage', coverImage);
   const ProjectCardStyle = styled.div`
-    border: solid 2px black;
     vertical-align: baseline;
 
     .project-name {
@@ -36,7 +35,6 @@ const ProjectCard = ({
       color: var(--sixthTitleSubtitle);
       display: inline;
       justify-content: center;
-      border: solid 2px green;
     }
 
     .project-photo {
@@ -61,19 +59,17 @@ const ProjectCard = ({
 
     .project-link:hover .project-name {
       opacity: 0;
-      
     }
 
     .project-link:hover .project-photo:after {
       opacity: 0;
     }
 
-    .project-link{
-      text-decoration: none; 
+    .project-link {
+      text-decoration: none;
     }
 
     .project-text-wrapper {
-      border: solid 3px red;
       display: flex;
       flex-direction: column;
     }

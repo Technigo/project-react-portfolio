@@ -2,18 +2,15 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
-// import TypeBox from './Shared/TypeBox';
 import ProjectCard from './Shared/ProjectCard';
 import rData from '../data.json';
 
-// const { highlights, projects } = rData; /* samma som const highlights = rData.highlights; */
 const { highlights, projects } = rData;
 
 const filteredProjects = projects.filter((project) => highlights.includes(project.id));
 
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
-  border: solid 2px red;
   padding: 15px 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
