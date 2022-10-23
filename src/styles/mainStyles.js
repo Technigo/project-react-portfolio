@@ -12,12 +12,17 @@ export const InnerWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: var(--section-x-padding);
+
+    @media (min-width: 668px) {
+        width: 40rem;
+        align-items: flex-start;
+    }
 `;
 
-export const Button = styled.button`
-
+export const Tag = styled.span`
+    border: 2px solid var(--color-black);
+    text-transform: uppercase;
+    font-size: 0.650rem;
+    font-weight: 600;
+    padding: 6px 10px;
 `;
-
-// export const Tags = styled.div`
-
-// `;

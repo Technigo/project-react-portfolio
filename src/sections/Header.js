@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Header = () => {
   return (
     <StyledHeader>
-      <img src="images/linus_profile.jpg" alt="Portrait of Linus" />
+      <StyledImgWrapper>
+        <img src="images/linus_profile.jpg" alt="Portrait of Linus" />
+      </StyledImgWrapper>
       <StyledWrapper>
         <p>Linus Eriksson</p>
         <h1>Fullstack Developer</h1>
@@ -44,10 +46,47 @@ const StyledHeader = styled.header`
       font-size: 2rem;
       line-height: 2.5rem;
     }
+
+    @media (min-width: 668px) {
+      height: 75vh;
+      flex-direction: row-reverse;
+      gap: 32px;
+
+      img {
+        width: 13.875rem; 
+      }
+    }
+
+    @media (min-width: 1024px) { 
+      height: 75vh;
+      gap: 32px;
+      
+      img {
+        width: 13.875rem; 
+      }
+    }
+
   `;
 
 const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (min-width: 668px) {
+      text-align: left;
+      width: 22rem;
+    }
+
+    @media (min-width: 1024px) { 
+      width: 22rem;
+    }
   `;
+
+const StyledImgWrapper = styled.div`
+  @media (min-width: 668px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+`;

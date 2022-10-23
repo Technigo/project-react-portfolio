@@ -4,8 +4,8 @@
     "netlify": "https://creative-lolly-f0d26c.netlify.app/",
     "github": "https://github.com/erilinus/project-guess-who",
     "title": "Guess who",
-    "description": "Practice using if-statements to create a chatbot that tells jokes.",
-    "image": "images/guess-who.jpg",
+    "description": "Simple game, practicing working with arrays",
+    "image": "https://i.imgur.com/RqD3veY.jpg",
     "tags": [
       "HTML",
       "CSS",
@@ -18,7 +18,7 @@
     "github": "https://github.com/erilinus/project-chatbot",
     "title": "Chatbot",
     "description": "Practice using if-statements to create a chatbot that tells jokes.",
-    "image": "images/chatbot.jpg",
+    "image": "https://i.imgur.com/9Q7BCNx.jpg",
     "tags": [
       "HTML",
       "CSS",

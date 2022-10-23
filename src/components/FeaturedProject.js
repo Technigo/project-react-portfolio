@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from 'styles/MainStyles';
+import { Tag } from 'styles/MainStyles';
 import data from '../featured-projects.json';
 
 const FeaturedProject = () => {
@@ -13,24 +13,24 @@ const FeaturedProject = () => {
             alt="project landingpage"
             target="_blank"
             rel="noopener noreferrer">
-            <img src={item.image} alt="project poster" />
+            <img src={item.image} alt="Project poster" />
           </a>
           <StyledTextWrapper>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </StyledTextWrapper>
           <StyledTagWrapper>
-          Tags
+            {item.tags.map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
           </StyledTagWrapper>
-          <Button>
-            <a
-              href={item.github}
-              alt="project github"
-              target="_blank"
-              rel="noopener noreferrer">View on Github
-            </a>
-          </Button>
-
+          <StyledLink
+            href={item.github}
+            alt="Project Github"
+            target="_blank"
+            rel="noopener noreferrer">
+            View on Github
+          </StyledLink>
         </StyledFeaturedProject>
       ))}
     </ProjectList>
@@ -40,16 +40,40 @@ const FeaturedProject = () => {
 export default FeaturedProject;
 
 const ProjectList = styled.div`
-  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: 668px) {
+    flex-direction: row;
+    }
 `;
 
-const StyledFeaturedProject = styled.div`
-  border: 1px blue solid;
+const StyledFeaturedProject = styled.div` 
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
 `;
 
 const StyledTextWrapper = styled.div`
 `;
 
 const StyledTagWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+const StyledLink = styled.a`
+  position: relative;
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: 1rem;
 `;
 

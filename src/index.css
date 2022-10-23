@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
   margin: 0;
@@ -34,19 +34,27 @@ div {
   padding: 0;
 }
 
+h1 {
+  font-size: 3.313rem;
+  line-height: 3.5rem;
+}
+
 h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.625rem;
   line-height: 2rem;
+  margin-bottom:24px;
 }
 
 h3 {
+  text-transform: uppercase;
   font-size: 1.188rem;
   line-height: 2rem;
 }
 
 h4 {
+  text-transform: uppercase;
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
@@ -63,4 +71,14 @@ ul {
   text-align: center;
   margin-bottom: 16px;
   list-style: none;
+}
+
+@media (min-width: 668px) {
+  p {
+      text-align: left;
+  }
+
+  ul {
+    text-align: left;
+  }
 }

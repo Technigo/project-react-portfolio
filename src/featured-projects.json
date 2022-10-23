@@ -5,7 +5,7 @@
     "github": "https://github.com/JosefineEngdahl/project-weather-app",
     "title": "Weather app",
     "description": "Responsive website connected with weather API",
-    "image": "images/weather-app.jpg",
+    "image": "https://i.imgur.com/0ajugjo.jpg",
     "tags": [
       "API",
       "HTML",
@@ -19,7 +19,7 @@
     "github": "https://github.com/Technigo/project-music-releases/pull/221?",
     "title": "Music page",
     "description": "Responsive music release page made using React",
-    "image": "./music-releases.jpg",
+    "image": "https://i.imgur.com/DqrHqPW.jpg",
     "tags": [
       "React",
       "HTML",
