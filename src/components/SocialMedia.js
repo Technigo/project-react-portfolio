@@ -16,7 +16,7 @@ export const SocialMedia = () => {
           <img
             src="images/linkedin.png"
             alt="LinkedIn icon for the header" />
-          <p>linkedin</p>
+          <p>Linkedin</p>
         </SocialMediaLink>
 
         <SocialMediaLink
