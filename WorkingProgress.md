@@ -25,7 +25,7 @@ ToDo
 - componenter med en react component och en SC-component skapa mapp?
 <!-- - gradient BG i ForMore, in i footer med CONTACT som gradient, överlappning -->
 
--fixa width ingen scrollbar (heroImg ej vw utan %)
+-fixat width ingen scrollbar (heroImg ej vw utan %)
 
 Söndag:
 resterande componenter

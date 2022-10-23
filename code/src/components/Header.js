@@ -28,3 +28,4 @@ export const Header = () => {
   );
 };
 
+// styled components in headerStyle.js

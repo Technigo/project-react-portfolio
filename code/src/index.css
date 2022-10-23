@@ -90,3 +90,8 @@ p, ul {
 a {
   text-decoration: none;
 }
+
+b {
+    color: var(--clr-medium);
+    font-weight: bolder;
+}

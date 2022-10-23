@@ -77,7 +77,7 @@ const HeaderIconsForMore = styled.div`
   } */
 `;
 
-// --------------------
+// ---------- transperent heder for gradient
 
 const SectionHeadingsGr = styled(SectionHeadings)`
   color: white;

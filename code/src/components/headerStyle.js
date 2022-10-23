@@ -37,6 +37,7 @@ a {
 
 i {
   color: var(--clr-light);
+  padding: 10px; 
 }
 
 i:hover {
@@ -102,7 +103,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  
+  top: 29%;
   h4 {
     font-size: 2rem;
     margin-bottom: 2rem;

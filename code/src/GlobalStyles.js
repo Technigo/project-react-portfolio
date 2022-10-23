@@ -13,18 +13,12 @@ export const SectionWrapper = styled.section`
 
 `;
 
-export const SectionWrapperGradiant = styled.section`
-  display: block;
-  width: 100%;
-  padding-bottom: 2em;
-  background: linear-gradient(180deg, rgba(248,233,240,0.1) 0%, rgba(246,198,246,0.90) 28%, rgba(17,17,17,1) 98%);
-  
-`;
-
 // Container
 export const ContainerWrapper = styled.div`
   margin: 0;
   padding: 0 1.5em 2.5em;
+  display: flex;
+  justify-content: center;
   /* border: 2px solid green; */
 `;
 
@@ -33,7 +27,13 @@ export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
   /* border: 2px solid orange; */
+
+  @media (min-width: 1100px) {
+      width: 80%;
+    
+  }
 `;
 
 export const SectionHeadings = styled.h2`
@@ -50,6 +50,16 @@ export const SectionHeadings = styled.h2`
     margin: 2em 0 2em;
     padding: 0.5em 1em;
    
+`;
+
+// -------------gradient bg form skills throug ForMore to the footer
+export const SectionWrapperGradiant = styled.section`
+  display: block;
+  width: 100%;
+  padding-bottom: 2em;
+  margin-bottom: -27px;
+  background: linear-gradient(180deg, rgba(248,233,240,0.1) 6%, rgba(245,201,245,0.96) 30%, rgba(61,53,61,1) 76%, rgba(17,17,17,0.98) 90%, rgba(23,23,23,0.7) 100%);
+  
 `;
 
 /* INTRO  */

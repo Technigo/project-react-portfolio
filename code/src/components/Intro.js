@@ -32,24 +32,16 @@ const ContainerWrapperIntro = styled(ContainerWrapper)`
     padding: 8%;
   }
 
-  @media (min-width: 1024px) {
-    padding: 2% 18%;
-    /* max-width: 1000px; */
-  } 
 `;
 
 export const TextIntro = styled(Text)`
   padding: 10% 5%;
+  width: 90%;
 
-  @media (min-width: 668px) {
-    padding: 8% 5%;
+   @media (min-width: 668px) {
+    padding: 0;
   }
-
-  @media (min-width: 1024px) {
-    padding: 6% 10%;
-    /* max-width: 1000px; */
-
-  }
+  
   `;
 
 // -----------------------
