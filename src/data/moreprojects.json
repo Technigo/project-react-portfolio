@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Happy Thoughts",
+      "paragraph": "A responsive web site using HTML & CSS",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "../assets/project-img/weatherApp2.jpg"
+    },
+    {
+      "title": "Guess Who",
+      "paragraph": "description about more project 2",
+      "repo-name": "project-news-site",
+      "netlify-name": "avocodo-news",
+      "tags": ["HTML5", "CSS3"],
+      "image": "../assets/project-img/weatherApp2.jpg"
+    }
+  ]
