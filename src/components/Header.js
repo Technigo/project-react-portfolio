@@ -10,13 +10,13 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <HeaderIcons>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/lisa-johansson-ba51a465/" target="_blank" rel="noreferrer">
           <img src={heroLinkedin} alt="LinkedIn icon for the header" />
         </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/LisaVasic" target="_blank" rel="noreferrer">
           <img src={heroGithub} alt="Github icon for the header" />
         </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
+        <a href="https://stackoverflow.com/users/19567899/lisa" target="_blank" rel="noreferrer">
           <img
             src={heroStackOverflow}
             alt="Stack Overflow icon for the header" />
@@ -91,9 +91,6 @@ export const HeaderIcons = styled.div`
     width: 60px;
     height: 60px;
   }
-
-}  
-}
 `;
 
 export const HeaderTitle = styled.div`
@@ -116,7 +113,6 @@ export const HeaderTitle = styled.div`
   h1 {
     font-size: 45px;
     display: block;
-    
   }
 
   h4 {
@@ -155,6 +151,7 @@ export const HeaderTitle = styled.div`
       }
   }
 `;
+
 export const ProfileImage = styled.div`
   img {
     object-fit: cover;

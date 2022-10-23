@@ -64,7 +64,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 margin-top: 30px;
-gap: 30px;
+gap: 25px;
 
 .More {
     display:none;

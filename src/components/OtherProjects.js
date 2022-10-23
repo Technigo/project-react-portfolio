@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const OtherProjects = ({ subTitle }) => {
+export const OtherProjects = () => {
   return (
     <OtherProjectOuterWrapper>
       <OtherProjectInnerWrapper>
         <h6 className="otherProjects">OTHER PROJECTS</h6>
         <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
           <InfoContainer>
-            <SubTitle>{subTitle}</SubTitle>
+            <SubTitle>Weather App</SubTitle>
             <SubParagraph>
               Project to display the weather in a chosen city with info from an
               API
@@ -49,14 +49,22 @@ export const OtherProjectInnerWrapper = styled.div`
     color: #293a4f;
     font-size: 22px;
   }
+
+  a {
+    text-decoration: none;
+  }
+
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  margin:0; 
 `;
 
 export const SkillTagContainer = styled.div`
   display: flex;
+  justify-content: flex-start;
 `;
 
 export const SkillTag = styled.p`
@@ -73,7 +81,7 @@ padding: 3px 5px;
 `;
 
 export const SubTitle = styled.h4`
-  color: red;
+  color: var(--blue);
   text-decoration: underline;
   margin-right: 1%;
   font-size: 18px;
@@ -88,6 +96,7 @@ export const SubParagraph = styled.p`
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;
+  texta-align: left;
 
 `;
 /* h4 is optional just write the size you want, and then the project you want. */
