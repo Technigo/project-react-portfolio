@@ -90,7 +90,7 @@ const HeaderContent = styled.div`
     margin: 0 auto;
     height: 520px;
     width: 80%;
-    max-width: 1100px;
+    max-width: 880px;
     position: relative;
 
     @media (min-width: 1025px) {

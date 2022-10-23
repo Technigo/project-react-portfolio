@@ -21,8 +21,8 @@ export const Footer = () => {
 }
 
 export const StyledInfo = styled.div`
-  font-size: 1.3rem;
-  line-height: 1.8rem;  
+  font-size: 1rem;
+  line-height: 1.7rem;  
   color: white;
   display: flex;
   flex-direction: column;
