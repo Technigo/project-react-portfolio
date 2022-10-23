@@ -70,7 +70,7 @@ export const Tags = styled.p`
 `;
 
 export const Footer = styled.div`
-	background-color: whitesmoke;
+	background-color: lightblue;
 	width: 100vw;
 	height: 30vh;
 	display: flex;
