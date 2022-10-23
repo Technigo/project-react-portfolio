@@ -1,15 +1,15 @@
 import React from 'react';
 /* import styled from 'styled-components/macro'; */
 import { OuterWrapper, InnerWrapper } from '../styles/GlobalStyles';
-import StartSymbol from '../assets/lollipop.png';
+import startSymbol from '../assets/lollipop.png';
 
 const AboutMe = () => {
   return (
-    <OuterWrapper BackroundColor="whitesmoke">
-      <InnerWrapper BackgroundColor="hotpink">
+    <OuterWrapper>
+      <InnerWrapper>
         <p>
-          <StartSymbol src={StartSymbol} alt="lollipop separator" />
-            Hello! I&aposm a Frontend developer currently taking the 22 week bootcamp at Technigo.
+          <startSymbol src={startSymbol} alt="lollipop separator" />
+            Hello! I am a Frontend developer currently studying at Technigos bootcamp.
             So far we have covered a number of coding languages inclduing CSS, HTML, Javascript and
             we are currently coding in React.
             Before joining this course I was a Revenue Manager schooled in working strategicly

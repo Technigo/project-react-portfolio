@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.18.9",
+    "components": "^0.1.0",
     "eslint": "^8.21.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
@@ -12,7 +13,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.2",
+    "react-icons": "^4.6.0",
+    "save": "^2.9.0",
+    "styled": "^1.0.0",
     "styled-components": "^5.3.6"
   },
   "scripts": {
@@ -36,6 +39,6 @@
   },
   "devDependencies": {
     "eslint-plugin-flowtype": "^8.0.3",
-    "react-scripts": "^0.9.3"
+    "react-scripts": "5.0.1"
   }
 }

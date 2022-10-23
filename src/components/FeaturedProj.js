@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { BASE_URL, PROJECT_THUMBNAIL } from 'util/URLs';
-import { ProjectCard, Image, SmallHeadline, Tags, Tag } from '../styles/GlobalStyles';
+import { ProjectCard, Image, /* SmallHeadline, */ Tags, Tag } from '../styles/GlobalStyles';
 
-export const FeaturedProjects = () => {
+const FeaturedProjects = () => {
   const [projects, setProjects] = useState([])
 
   /* Fetching all my projects from giithub */
@@ -51,4 +51,5 @@ export const ImageOverlay = styled.div`
   /* Overlay on the image */
   background-color: rgba(0, 0, 0, 0.8);
 
-`
+`;
+export default FeaturedProjects

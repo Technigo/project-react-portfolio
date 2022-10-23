@@ -9,8 +9,10 @@ export const ProfileImage = () => {
 }
 
 export const ProfileImageStyling = styled.img`
-
-
-
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
 
 `

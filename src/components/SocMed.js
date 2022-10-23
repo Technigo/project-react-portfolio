@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../styles/GlobalStyles';
+import { NavBar } from '../styles/GlobalStyles';
 
-export const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
+const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
   return (
     <NavBar className="ms-auto">
       <a href="https://www.linkedin.com/in/thérèse-ånmark/" target="_blank" rel="noreferrer">
@@ -17,3 +17,4 @@ export const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
     </NavBar>
   )
 }
+export default SocMedLinks

@@ -1,9 +1,9 @@
 import React from 'react';
-/* import styled from 'styled-components/macro'; */
-
+import styled from 'styled-components/macro';
+import woods from '../assets/woods.jpg';
 /* Components */
-import { HeaderBackground, HeaderWrapper } from '../styles/GlobalStyles';
-import { SocMedLinks } from './SocMed';
+import { HeaderWrapper } from '../styles/GlobalStyles';
+import SocMedLinks from './SocMed';
 import { ProfileImage } from './ProfileImage';
 
 /* Images */
@@ -13,17 +13,24 @@ import stackoverflow from '../assets/stackoverflow.png';
 
 const Header = () => {
   return (
-    <HeaderBackground>
+    <>
+      <HeaderBackground woods={woods} />
       <HeaderWrapper>
         <SocMedLinks
           linkedin={linkedin}
           github={github}
-          stackoverflow={stackoverflow}
-          alignment="flex-end" />
+          stackoverflow={stackoverflow} />
         <ProfileImage />
       </HeaderWrapper>
-    </HeaderBackground>
+    </>
   )
 }
+
+const HeaderBackground = styled.div`
+    width: 100vw;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+`;
 
 export default Header
