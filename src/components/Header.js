@@ -41,7 +41,7 @@ const HeaderStyling = styled.div`
     color: white;
 
     @media (min-width: 1025px) {
-      height: 680px;
+      height: 540px;
     }
     `
 
@@ -71,9 +71,6 @@ const Headlines = styled.div`
     @media (min-width: 668px) {
       width: 250px;
     }
-    @media (min-width: 1025px) {
-      width: 330px;
-    }
     `
 
 const ProfilePicture = styled.img`
@@ -87,9 +84,6 @@ const ProfilePicture = styled.img`
     @media (min-width: 668px) {
       max-width: 260px;
     }
-    @media (min-width: 1025px) {
-      max-width: 333px;
-    }
     `
 
 const HeaderContent = styled.div`
@@ -100,6 +94,6 @@ const HeaderContent = styled.div`
     position: relative;
 
     @media (min-width: 1025px) {
-      height: 680px;
+      height: 540px;
     }
 `

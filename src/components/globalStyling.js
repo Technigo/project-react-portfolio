@@ -13,7 +13,7 @@ export const InnerWrapper = styled.div`
     align-items: center;
 
     @media (min-width:1025px) {
-            max-width: 1100px;
+            max-width: 880px;
     }
 `
 export const MainHeaders = styled.h2`
@@ -41,7 +41,7 @@ export const TitleTertiary = styled.h3`
 
 export const TitleQuaternary = styled.h4`
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.8rem;
     color: #285841;
     text-transform: uppercase;

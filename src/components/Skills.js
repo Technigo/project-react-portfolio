@@ -64,7 +64,7 @@ export const SkillsList = styled.div`
     }
 
     li{
-      font-size: 1rem;
+      font-size: 1.3rem;
       line-height: 1.8rem;
     }
 `
