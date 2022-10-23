@@ -34,7 +34,7 @@ export const InnerWrapper = styled.div`
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  padding: 5% 0%;
+  padding: 0% 0%;
 
   @media ${Devices.tablet} {
     width: 80%;
@@ -73,7 +73,7 @@ export const MainHeader = styled.h2`
   text-align: center;
   padding: 2%;
   background-color: #e9722d;
-  max-width: fit-content;
+  border-radius: 10px;
   align-self: center;
   margin: 5% 10%;
 

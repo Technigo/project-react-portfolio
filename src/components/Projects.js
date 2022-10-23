@@ -6,13 +6,9 @@ import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, SecondHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 
 const Projects = () => {
-  const [loading, setLoading] = useState(false);
-  const [list, setList] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {
-    setLoading(true);
-    console.log(process.env)
     const options = {
       method: 'GET',
       headers: {
@@ -22,9 +18,8 @@ const Projects = () => {
     fetch(BASE_URL, options)
       .then((response) => response.json())
       .then((data) => {
-        setList(data);
         const listItems = [];
-        list.map((item) => {
+        data.map((item) => {
           if (item.fork === true && item.name.includes('project')) {
             listItems.push(item);
           }
@@ -33,7 +28,6 @@ const Projects = () => {
         setFilteredList(listItems);
       })
       .catch((error) => console.error(error))
-      .finally(() => setLoading(false));
   }, []);
 
   const FeaturedProjects = filteredList.filter(
@@ -64,7 +58,6 @@ const Projects = () => {
     return projects.map((project) => {
       return (
         <SingleWrap>
-
           <ProjectLinks key={project.id} href={project.homepage}>
             {addImage && <div className="test">
               <div className="image-overlay" />
@@ -78,12 +71,6 @@ const Projects = () => {
         </SingleWrap>
       );
     });
-  }
-
-  if (loading) {
-    return (
-      <p>Page is loading...</p>
-    );
   }
 
   return (
@@ -157,13 +144,11 @@ const SingleWrap = styled.div`
     display: grid;
     grid-template-columns: repeat(2, (50%));
     width: auto;
-    gap: 20px;
     padding: 2%;
   }
   @media ${Devices.laptop} {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
   }
 `
 const FeatureWrap = styled.div`
