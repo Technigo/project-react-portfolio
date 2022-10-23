@@ -27,6 +27,8 @@ bottom: -16px;
 width: 180px;
 height: 180px;
 border-radius: 50%;
+border: 2px solid #555;
+background-color: white;
 object-fit: cover;
 
 & @media (min-width: 1024px){

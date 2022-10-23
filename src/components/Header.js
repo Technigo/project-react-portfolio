@@ -1,5 +1,5 @@
 import React from 'react'
-import myPicture from 'images/my-picture.jpg'
+import myPicture from 'images/my-picture-white.png'
 import { HeaderContainer, HeaderText, IconsHeader, Profile } from './styled-components/HeaderStyles'
 
 const Header = ({ lnIcon, gitHubIcon }) => {

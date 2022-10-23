@@ -17,9 +17,9 @@ const Intro = () => {
     <section>
       <Container>
         <IntroText>
-        Female developer and programming student at Technigo, passionate about writing clean and maintainable code and improving the user experience. .<br />
-        I get familiar with the IT environment for a long time since I worked for several years as an IT Recruiter in diverse consultancies.
-        My main interest is working with JavaScript, either with React.js or Node.js library.
+        Female developer and programming student at Technigo, <b>passionate about writing clean and maintainable code and improving the user experience</b>.
+        I get familiar with the IT environment for a long time since I worked for several years as an IT Recruiter in diverse consultancies.<br />
+          <br />My main interest is working with <b>JavaScript, either with React.js or Node.js library</b>.
         </IntroText>
       </Container>
     </section>

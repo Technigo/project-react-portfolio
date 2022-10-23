@@ -1,13 +1,14 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import yellow from 'images/yellow-flowers.jpg'
+/* import yellow from 'images/yellow-flowers.jpg' */
+import flowersPurple from 'images/mac-flowers.jpg'
 
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 :root {
-    --main-beige: rgb(247, 236, 222);
-    --main-pastel-beige: rgb(233, 218, 193);
-    --main-peach: rgb(250, 112, 112);
+    --main-beige: rgb(242, 215, 217);
+    --main-pastel-beige: white;
+    --main-peach: rgb(116, 141, 166);
 }
 
 * {
@@ -72,7 +73,7 @@ header {
     height: 520px;
     position: relative;
     background-size: cover;
-    background-image: url(${yellow});
+    background-image: url(${flowersPurple});
 }
 
 footer {
