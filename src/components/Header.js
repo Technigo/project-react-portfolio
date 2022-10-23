@@ -60,6 +60,10 @@ const Title = styled.h1`
     font-family: 'Roboto';
     letter-spacing: 0.04em;
     color:#355C7D;
+
+    @media (min-width: 1024px){
+    left: 30%;
+    }
 `
 
 const CurrentTitle = styled.h4`
@@ -70,6 +74,10 @@ const CurrentTitle = styled.h4`
     font-family: 'Roboto';
     letter-spacing: 0.04em;
     color:#355C7D;
+
+    @media (min-width: 1024px){
+    left: 30%;
+    }
 `
 
 const ProfileImage = styled.img`
@@ -80,4 +88,11 @@ const ProfileImage = styled.img`
     top: 110px;
     border-radius: 50%;
     border: 3px solid #355C7D; 
+
+    @media (min-width: 1024px){
+    left: 60%;
+    top: 120px;
+    width: 220px;
+    height: 220px;
+    }
  `

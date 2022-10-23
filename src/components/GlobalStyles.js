@@ -41,7 +41,7 @@ export const TagIcons = styled.div`
     background-color: #003333;
     margin: 0 5px 5px 0;
     padding: 5px;
-    color: ${(props) => (props.primary ? '#003333' : 'white')};
+    color: white;
     font-size: 10px;
     }
 `

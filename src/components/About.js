@@ -29,5 +29,5 @@ const AboutText = styled.p`
 `
 
 const AboutWrapper = styled(Wrapper)`
-
+    align-items: center;
 `
