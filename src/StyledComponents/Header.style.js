@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledHeader = styled.div`
 	background: lightblue;
 	position: relative;
-	height: 50vh;
+	height: 40vh;
 `;
 
 export const Profile = styled.img`
@@ -26,4 +26,13 @@ export const HeaderText = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+`;
+
+export const IconWrapper = styled.div`
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	gap: 10px;
+	padding-top: 5rem;
+	padding-right: 5rem;
 `;
