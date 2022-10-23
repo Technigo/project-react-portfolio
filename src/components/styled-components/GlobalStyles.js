@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-/* import yellow from 'images/yellow-flowers.jpg' */
 import flowersPurple from 'images/mac-flowers.jpg'
 
 const GlobalStyles = createGlobalStyle`
