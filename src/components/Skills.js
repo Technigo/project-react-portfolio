@@ -11,29 +11,29 @@ export const Skills = () => {
           <ColumnOne>
             <div>
               <SectionSubHeading>CODE</SectionSubHeading>
-              <p>HTML5</p>
-              <p>CSS3</p>
-              <p>JavaScript ES6</p>
+              <SkillText>HTML5</SkillText>
+              <SkillText>CSS3</SkillText>
+              <SkillText>JavaScript ES6</SkillText>
             </div>
             <div>
               <SectionSubHeading>UPCOMING</SectionSubHeading>
-              <p>React</p>
-              <p>Redux</p>
-              <p>Node.js</p>
+              <SkillText>React</SkillText>
+              <SkillText>Redux</SkillText>
+              <SkillText>Node.js</SkillText>
             </div>
           </ColumnOne>
           <ColumnTwo>
             <SectionSubHeading>TOOLBOX</SectionSubHeading>
-            <p>VSC</p>
-            <p>Github</p>
-            <p>Figma</p>
-            <p>Slack</p>
+            <SkillText>VSC</SkillText>
+            <SkillText>Github</SkillText>
+            <SkillText>Figma</SkillText>
+            <SkillText>Slack</SkillText>
           </ColumnTwo>
           <ColumnThree>
             <SectionSubHeading>MORE</SectionSubHeading>
-            <p>Agile methodology</p>
-            <p>Guardianship</p>
-            <p>Open ePlatform</p>
+            <SkillText>Agile methodology</SkillText>
+            <SkillText>Guardianship</SkillText>
+            <SkillText>Open ePlatform</SkillText>
           </ColumnThree>
         </SkillContainer>
       </InnerWrapper>
@@ -45,6 +45,11 @@ const SkillContainer = styled.div`
     display: flex;
     justify-content: space-around;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+`
+
+const SkillText = styled.p`
+  font-family: 'Roboto', sans-serif;
 `
 
 export const ColumnOne = styled.div`

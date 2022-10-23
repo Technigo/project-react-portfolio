@@ -69,7 +69,7 @@ const HeaderIcons = styled.div`
     height: 5rem;  
     }
 
-  @media (min-width: 1024px){
+  @media (min-width: 1400px){
     right: 20%;
     top: 10%;
 
@@ -86,6 +86,7 @@ const HeaderTitle = styled.div`
   left: 10%;
   color: whitesmoke;
   line-height: 30px;
+  font-family: 'Roboto', sans-serif;
 
   h3 {
     font-size: 1rem;
@@ -95,7 +96,7 @@ const HeaderTitle = styled.div`
   h1 {
     font-size: 2rem;
     display: block;
-    margin-bottom: 0.2rem;
+    margin-top: 0.75rem;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {
@@ -106,6 +107,7 @@ const HeaderTitle = styled.div`
     h1 {
       font-size: 40px;
       display: block;
+      margin-top: 1rem;
     }
   }
 
@@ -119,6 +121,7 @@ const HeaderTitle = styled.div`
     h1 {
       font-size: 50px;
       display: block;
+      margin-top: 2rem;
     }
   }
 
@@ -144,7 +147,7 @@ const HeaderImage = styled.div`
     width: 170px;
     height: 170px;
     position: absolute;
-    bottom: -10%;
+    bottom: -5%;
     right: 10%;
     dipslay: block;
   }
@@ -160,7 +163,7 @@ const HeaderImage = styled.div`
     img {
       width: 240px;
       height: 240px;
-      bottom: -15%;
+      bottom: -8%;
       right: 15%;
     }
   }
@@ -169,7 +172,7 @@ const HeaderImage = styled.div`
     img {
       width: 18rem;
       height: 18rem;
-      bottom: -15%;
+      bottom: -10%;
       right: 20%;
     }
   }

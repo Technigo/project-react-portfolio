@@ -8,6 +8,7 @@ import { Thoughts } from './components/Thoughts';
 import { MoreThoughts } from './components/MoreThoughts';
 import { Skills } from './components/Skills';
 import { ForMore } from './components/ForMore';
+import { Footer } from './components/Footer'
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
       <MoreThoughts subTitle="Remote tips" />
       <Skills />
       <ForMore color="green" />
+      <Footer />
     </div>
   )
 }
