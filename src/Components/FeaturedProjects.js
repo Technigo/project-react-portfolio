@@ -79,23 +79,23 @@ const ImageContainer = styled.div`
   }
 `
 const ImageOverlay = styled.div`
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    height: 100%;
-    transition: .5s ease;
-    opacity:1;
-    text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:1;
+  text-align: center;
 
-    p {
-      padding: 25%;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 34px;
-      letter-spacing: 0.01em;
-      font-family: 'Montserrat';
-    }
+  p {
+    padding: 25%;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    font-family: 'Montserrat';
+  }
 
   &:hover {
     opacity: 0;
