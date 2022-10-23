@@ -1,10 +1,10 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I have rebuilt my portfolio with React and used styled components to style it.
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started with thinking about the structure of my portfolio and what components I could re-use and therefore make global. Then I started with building one section of the page at the time, and continiously filling up the global styled components, and move even more styled components to be global.
+
+I will continue with this portfolio and the plan is to make the images look better, add a loader to "other projects" part (only show a couple of them and give the user an opportunity to load more), make the icons elements global and re-use instead of adding them in several places, try different colorings. I also need to add proper text and every section including the data.json.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://annikagadman.netlify.app/
