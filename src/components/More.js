@@ -43,7 +43,6 @@ const SoMeContainer = styled(SocialMediaContainer)`
   }
 
   @media (max-width: 668px) {
-    
     img {
     width: 60%;
     }

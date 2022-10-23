@@ -37,7 +37,7 @@ export const HeaderWrapper = styled.header`
     flex-direction: column;
     justify-content: center;
     color: white;
-    height: 520px;
+    height: 400px;
     background-color: #483643; 
     background-repeat: no-repeat;
     background-size: cover; 
@@ -45,7 +45,7 @@ export const HeaderWrapper = styled.header`
     position:relative;
 
     @media (min-width: 668px) {
-      height: 500px;
+      height: 480px;
   }
 `;
 
@@ -60,7 +60,7 @@ const HeaderText = styled.div`
     text-shadow: 2px 2px rgb(0, 0, 0);
     max-width: 300px;
 
-    @media (min-width: 668px) {
+    @media (min-width: 800px) {
       padding-left: 50px;
       max-width: 550px;
   }
@@ -71,24 +71,24 @@ const ProfilePic = styled.img`
   position: absolute;
   right: 5vh;
   bottom: -4vh; 
-  width: 160px; 
-  height: 160px; 
+  width: 130px; 
+  height: 130px; 
   border-radius: 50%;
   border:solid 2px rgb(255, 255, 255); 
 
   @media (min-width: 668px) {
     right: 7vh; 
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 
   @media (min-width: 1025px) {
-    right: 17vh; 
+    right: 17vh;
   }
 `
 
 const Bold = styled.span`
-font-weight: bold;
+  font-weight: bold;
 `
 
 const SoMeContainer = styled(SocialMediaContainer)`
@@ -96,13 +96,11 @@ const SoMeContainer = styled(SocialMediaContainer)`
     position: absolute;
     width: 200px;
     right: 1vh;
-    top: 4vh;
-  img {
-    width:80%;
-   
-    &:hover {
-     transform: scale(1.1);
-
+    top: 3vh;
+    
+    img {
+      &:hover {
+        transform: scale(1.1);
     }
   }
 }
@@ -110,19 +108,21 @@ const SoMeContainer = styled(SocialMediaContainer)`
   @media (min-width: 668px){
     position: absolute;
     right: 2vh;
-    top: 5vh;
+    top: 4vh;
 
-    img {
-      width: 80%;
-      
+    img {  
       &:hover {
         transform: scale(1.1);
       }
+    }
+    a {
+      width: 40%;
+      margin: 5px;
     }
   }
 
   
   @media (min-width: 1025px) {
-    top: 7vh;
+    top: 6vh;
   }
   `

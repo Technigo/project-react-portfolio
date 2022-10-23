@@ -44,7 +44,7 @@ export const FeaturedProjects = () => {
 }
 
 const ProjectInfo = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   width: 100%;
   img {
     width: 100%;
@@ -53,8 +53,7 @@ const ProjectInfo = styled.div`
 `
 
 const InnerWrapperFeat = styled(InnerWrapper)`
-  padding-bottom: 0px;
-  
+  padding-bottom: 0px
 `
 
 const ProjectsWrapper = styled.div`
@@ -111,5 +110,5 @@ const DetailsWrapper = styled.div`
 const PProject = styled(P)`
   text-align: center;
   line-height: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `

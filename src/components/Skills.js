@@ -12,7 +12,6 @@ const Skills = () => {
 
           <SkillsList>
             <SkillsTitles>CODE</SkillsTitles>
-
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -24,7 +23,6 @@ const Skills = () => {
 
           <SkillsList>
             <SkillsTitles>TOOLBOX</SkillsTitles>
-
             <ul>
               <li>Visual Studio Code</li>
               <li>Figma</li>

@@ -9,7 +9,7 @@ export const HeaderFirstHeading = styled.h1`
 
     @media (min-width: 1025px) {
         font-weight: 400;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 50px;
     }
 `;
@@ -23,20 +23,20 @@ export const HeaderSecondHeading = styled.h2`
     
     @media (min-width: 1025px) {
         line-height: 80px;
-        font-size: 70px;
+        font-size: 60px;
     }
 `;
 
 // Medium
 export const HeaderThirdHeading = styled.h3`
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
 
     @media (min-width: 1025px) {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 27px;
         line-height: 50px;
     }
 `;
@@ -54,7 +54,7 @@ export const SectionHeading = styled.h2`
     justify-self: center;
     text-align: center;
     display: inline-block;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 `;
 
 export const SubHeading = styled.h2`

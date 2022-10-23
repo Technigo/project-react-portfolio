@@ -9,7 +9,7 @@ export const Tag = styled.span`
     font-size: 14px; 
     line-height: 12px;
     padding: 5px;
-    margin: 3px;
+    margin: 2px;
     border-radius: 2px;
 `
 

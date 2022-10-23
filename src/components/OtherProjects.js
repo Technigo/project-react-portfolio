@@ -24,7 +24,7 @@ const OtherProjects = () => {
         {filteredProjects.map((project) => <div key={project.id}>
           <A href={project.homepage} target="_blank">
             <ProjectHeading>{project.name.replaceAll('-', ' ').replaceAll('project', ' ').toUpperCase()}</ProjectHeading>
-            <POther>{project.description} <Arrow> {'>>'} </Arrow></POther>
+            <POther>{project.description} <Arrow> &gt;&gt; </Arrow></POther>
           </A>
           <TagContainer>{project.topics.map((topic) => <Tag>{topic}</Tag>)}
           </TagContainer>
@@ -48,7 +48,7 @@ const ProjectHeading = styled.h3`
 const POther = styled(P)`
   margin-bottom: 15px;
 `
-const Arrow = styled.span`
+export const Arrow = styled.span`
     color: #7c5f74;
     font-weight: 600;
 `

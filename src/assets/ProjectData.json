@@ -13,7 +13,7 @@
     {
         "featured": true,
         "display": true,
-        "name": "Find-a-friend survey",
+        "name": "Find-a-Friend survey",
         "overlayname": "React Survey",
         "description": "A Typeform-like survey built with React state",
         "tags": ["HTML", "CSS", "JavaScript", "React"],
@@ -35,7 +35,7 @@
     {
         "featured": true,
         "display": true,
-        "name": "Fem&Tech - a news site about women in tech",
+        "name": "Fem&Tech - a news site",
         "overlayname": "News site",
         "description": "A news site built with flexbox and grid about women in the tech business",
         "tags": ["HTML", "CSS"],

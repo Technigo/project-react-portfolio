@@ -5,7 +5,7 @@ export const SocialMediaContainer = styled.div`
     justify-content: center;
     align-items:center;
     img {
-        width: 100%
+        width: 80%
         
     }
     `
