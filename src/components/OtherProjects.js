@@ -47,6 +47,8 @@ export const OtherWrapper = styled.div`
 `
 const ClonedLinkP = styled(LinkP)`
     padding: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 `
 const ClonedTagWrapper = styled(TagWrapper)`
     padding: 0;

@@ -60,7 +60,10 @@ const SkillsArticle = styled.article`
   text-align: center;
 `
 const SkillsCard = styled.div`
-  width: 20%;
+    width: 40%;
+  @media (min-width: 768px) {
+    width: 20%;
+  }
 ul {
   list-style: none;
 }

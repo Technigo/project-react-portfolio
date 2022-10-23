@@ -70,7 +70,7 @@ export const ProjectHead = styled.h6`
   `
 export const LinkP = styled.p`
   font-family: "Roboto";
-  padding-top: 0;
+  margin: 0;
   line-height: 4vh;
   font-style: normal;
   font-weight: normal;
