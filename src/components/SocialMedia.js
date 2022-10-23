@@ -63,32 +63,44 @@ margin-top: 10%;
 `
 
 const SocialMediaLink = styled(IconLink)`
-text-decoration: none;
-text-align: center;
-color: white;
-font-size: 12px;
-font-weight: 600;
-margin: 10px 5px 0 5px;
-transition: transform .8s; 
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 10px 5px 0 5px;
+  transition: transform .8s; 
 
-    &:hover{
-      transform: scale(0.95);
-}
+      &:hover{
+        transform: scale(0.95);
+  }
+
+  p{
+    margin-top: 15%;
+  }
 
 @media (min-width: 600px) and (max-width: 1023px) {
   font-size: 15px;
   margin: 10px 5px 0 5px;
   p{
-    margin-top: 5%; 
- }
-}
+    margin-top: 10%; 
+    background-color: #ccd6d6;
+    display: inline-block;
+    padding: 5px;
+    color: #003333;
+    }
+  }
 
 @media (min-width: 1024px){
   font-size: 18px;
   margin: 10px 5px 0 5px;
   p{
-    margin-top: 5%; 
- }
-
-  
+    margin-top: 10%; 
+    background-color: #ccd6d6;
+    display: inline-block;
+    padding: 5px;
+    color: #003333;
+   }
 `
