@@ -1,0 +1,34 @@
+[
+  {
+    "title": "MUSIC MASTER",
+    "title-description": "MUSIC SEARCH REACT APP",
+    "project-description": "React app for quickly browsing artists top songs using Spotify API",
+    "repo-name": "music-master",
+    "tags": ["HTML5", "CSS3", "JavaScript ES6", "React", "APIs"],
+    "image": "/Assets/projects-thumbnails/musicmaster.PNG"
+  },
+  {
+    "title": "FORKIFY",
+    "title-description": "RECIPE SEARCH APP",
+    "project-description": "JavaScript app built using MVC pattern, for finding and adding recipes",
+    "repo-name": "forkify",
+    "tags": ["HTML5", "CSS3", "JavaScript ES6", "MVC", "APIs", "Async"],
+    "image": "/Assets/projects-thumbnails/forkify.PNG"
+  },
+  {
+    "title": "MAPTY",
+    "title-description": "EXERCISE TRACKING APP",
+    "project-description": "Using Geolocation API to display a map of your area using the Leaflet JavaScript library.",
+    "repo-name": "mapty",
+    "tags": ["HTML5", "CSS3", "JavaScript ES6", "APIs"],
+    "image": "/Assets/projects-thumbnails/mapty.PNG"
+  },
+  {
+    "title": "GUESSING GAME",
+    "title-description": "NUMBER GUESSING GAME",
+    "project-description": "Number game built with JavaScript to guess a number between 1-20.",
+    "repo-name": "guess-my-number",
+    "tags": ["HTML5", "CSS3", "JavaScript ES6"],
+    "image": "/Assets/projects-thumbnails/guessmynumber.PNG"
+  }
+]
