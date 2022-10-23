@@ -37,7 +37,7 @@ export const FeaturedProjects = () => {
 
         {FeaturedRepos.map((project) => (
           <FeaturedContent key={project.id}>
-            <img src={project.image} alt="project img" width="50%" />
+            <img src={project.image} alt={project.title} width="50%" />
             <h5>{project.title}</h5>
             <p>{project.description}</p>
             <a href={project.netlifyLink}>View it Live</a> <span>|</span>{' '}
