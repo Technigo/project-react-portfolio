@@ -29,7 +29,7 @@
   { 
     "name": "Weather Web App",
     "project_name": "Project Weather App",
-    "description": "Vanilla JS project made with data from Open Weather API.",
+    "description": "Vanilla JS project made to practice working with data from an API.",
     "github_url": "https://github.com/karlfredrikholm/project-weather-app/",
     "netlify_url": "http://fint-vader.netlify.app/",
     "topics": [ "JS-ES6", "CSS3", "HTML5"],
