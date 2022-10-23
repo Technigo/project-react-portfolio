@@ -22,35 +22,34 @@ export const InnerWrapper = styled.div`
     font-weight: 700;
     width: fit-content;
     margin: 0 auto 30px;
-    font-size: 2.4rem;
+    text-align: center;
   }
 
   h4 {
     color: #fa382f;
     text-transform: uppercase;
     margin: 0;
-    font-size: 2.2rem;
+
     text-align: center;
   }
 
   h5 {
-    font-size: 2rem;
     color: #fa382f;
     text-transform: uppercase;
   }
 
   h6 {
-    font-size: 1.8rem;
   }
 
   p {
-    font-size: 1.5rem;
   }
 
   a {
-    font-size: 1.5rem;
   }
   a:link {
     text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 `;
