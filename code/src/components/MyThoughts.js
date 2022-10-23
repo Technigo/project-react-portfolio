@@ -10,7 +10,7 @@ import MyThoughtsPic from '../images/doSomethingGreat.jpg';
 
 export const MyThoughts = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper bgColor="#f8e9f0">
       <ContainerWrapper>
         <FlexWrapper>
           <SectionHeadings>my thoughts</SectionHeadings>

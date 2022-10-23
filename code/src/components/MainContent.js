@@ -6,6 +6,7 @@ import { Skills } from './Skills';
 import { ForMore } from './ForMore';
 import { OtherProjects } from './OtherProjects';
 import { MyThoughts } from './MyThoughts';
+import { FeaturedProjects } from './FeaturedProjects'
 // import { ContainerWrapper, SectionWrapper } from 'GlobalStyles'
 
 export const MainContent = () => {
@@ -13,6 +14,7 @@ export const MainContent = () => {
     <>
       <Intro />
       <Tech />
+      <FeaturedProjects />
       <OtherProjects />
       <MyThoughts />
       <Skills />

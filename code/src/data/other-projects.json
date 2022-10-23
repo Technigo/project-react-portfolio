@@ -2,7 +2,7 @@
     {
           "id": 1,
           "title": "CHATBOT WildBeast Burgers",
-          "project_description": "Responsive web site using HTML, CSS and JavaScript ES6 where you are able to order amenities etc.",
+          "project_description": "Pair project, with using HTML, CSS and JavaScript ES6 create a responsive chatbot. With question/response interaction",
           "repo_name": "project-chatbot",
           "url": "https://wildebeest-burgers.netlify.app/",
           "tags": [
@@ -27,14 +27,18 @@
       },	
     {
           "id": 2,
-          "title": "Coffee QUIZ",
-          "project_description": "A fun quiz built in React with the use of state hook.",
-          "repo": "project-survey",
-          "url": "https://project-survay-nina-berggren.netlify.app/",
+          "title": "Weather App",
+          "project_description": "Working with API fetch from external website and create a app with predetermined design",
+          "repo": "project-weatherApp",
+          "url": "https://weatherapp-nina-linda.netlify.app/",
           "tags": [
               {
                   "id": 5,
-                  "name": "React"
+                  "name": "API"
+                },
+                {
+                  "id": 4,
+                  "name": "Javascript"
                 },
                 {
                   "id": 1,
@@ -43,7 +47,36 @@
                 {
                   "id": 2,
                   "name": "CSS3"
-                } 
+                },
+                {
+                  "id": 3,
+                  "name": "Pair Programming"
+                }
           ]
-      }
+      },
+    {
+        "id": 3,
+        "title": "Music-releases",
+        "project_description": "With React, JSX and React components bould a website with API. And follow a design screenshots as closely as possible ",
+        "repo": "project-survey",
+        "url": "https://project-music-release-nina-lisa.netlify.app/",
+        "tags": [
+              {
+                "id": 6,
+                "name": "React"
+              },
+              {
+                "id": 5,
+                "name": "API"
+              },
+              {
+                "id": 3,
+                "name": "Pair Programming"
+              },             
+              {
+                "id": 2,
+                "name": "CSS3"
+              } 
+        ]
+    }
 ]

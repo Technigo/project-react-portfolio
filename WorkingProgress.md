@@ -15,10 +15,10 @@ ToDo
 <MainContent />
       <Intro /> check (1024px max-width margin right ok!)
       <Tech /> check
-      <FeaturedProjects />
+      <FeaturedProjects /> working progress (images not displaying)
       <OtherProjects /> check mapping and json
-      <MyThoughts />
-      <MoreThoughts />
+      <MyThoughts /> check
+      <MoreThoughts /> not done
       <Skills /> check
       <ForMore /> check (fixa gradient lite högre forMore ok!)
 
@@ -29,10 +29,14 @@ ToDo
 
 Söndag:
 * props för ändrad bgfärg v.v section (Neah)
-* skriv om otherproject json text
-* urls
+* skriv om otherproject json text ok!
+* featuredprojects json file ok!
 
+-ReadMe
 
--readMe
+Kvar att göra:
+-liten width horisontell scroll??
+-finish images featured project
+-change * urls
 -Accessability (contrast aria-lable tabindex)
 -BrowserTest
