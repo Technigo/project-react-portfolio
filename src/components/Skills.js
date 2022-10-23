@@ -5,7 +5,7 @@ import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 export const Skills = () => {
   const SkillsSection = styled.div`
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 0;
   `
 
   const SkillsWrapper = styled.div`

@@ -2,7 +2,8 @@
   /* ---primary:  #F2A2E4; another option for primary */
   ---primary:  #eb72d5d1;
   ---secondary: #d4c4af;
-  ---main: #dfd3c38a;
+  /* ---main: #dfd3c38a; */
+  ---main: rgb(235, 234, 234);
   ---highlight: #F090D9;
   ---accent: #C400FF;
 }

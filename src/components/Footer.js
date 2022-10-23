@@ -5,10 +5,12 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 export const Footer = () => {
   const FooterBackground = styled.footer`
     text-align: center;
-    background-color: var(---highlight);
-    color: white;
+    background-color: #f4a5e1;
+    color: rgb(135, 133, 133);
     width: 100%;
-    padding: 30px;
+    padding: 70px 0px;
+    background-color: rgba(208, 203, 203, 0.572);
+    border-top: solid #c8aa89c6 1px;
     `
   const FooterHeading = styled.h3`
     text-transform: uppercase;
@@ -16,7 +18,7 @@ export const Footer = () => {
    
     `
   const FooterEmail = styled.a`
-    color: white;
+    color: rgb(135, 133, 133);
     font-size: 16px;
     text-decoration: none;
     padding: 2px;

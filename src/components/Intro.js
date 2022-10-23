@@ -3,12 +3,17 @@ import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 
 export const Intro = () => {
-  const IntroText = styled.section`
-    background-color: #dfd3c38a;
+  const IntroSection = styled.section`
+    background: rgb(235, 234, 234);
+    display: flex;
+    justify-content: center;
+  `
+  const IntroText = styled.div`
     color: #F090D9;
     text-align: center;
     padding: 80px;
     font-size: 18px;
+    width: 900px;
   `;
   const Line = styled.span`
     width: 30px;
@@ -28,13 +33,15 @@ export const Intro = () => {
   return (
     <OuterWrapper background>
       <InnerWrapper>
-        <IntroText>
-          <p><Line /><Dot /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet tenetur distinctio blanditiis laboriosam corporis. Dolor
-                cumque natus ab. Corporis eligendi beatae natus eaque tempore iure,
-                deleniti laboriosam asperiores deserunt nostrum.
-          </p>
-        </IntroText>
+        <IntroSection>
+          <IntroText>
+            <p><Line /><Dot /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet tenetur distinctio blanditiis laboriosam corporis. Dolor
+                  cumque natus ab. Corporis eligendi beatae natus eaque tempore iure,
+                  deleniti laboriosam asperiores deserunt nostrum.
+            </p>
+          </IntroText>
+        </IntroSection>
       </InnerWrapper>
     </OuterWrapper>
   )

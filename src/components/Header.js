@@ -33,11 +33,11 @@ export const Header = () => {
     `;
 
   const HeaderText = styled.div`
-      color: var(---primary);
+      color: #e85ec8;
       position: absolute;
       width: 300px;
-      top: 121px;
-      left: 24px;
+      top: 155px;
+      left: 130px;
       padding: 0;
       margin: 0;
 

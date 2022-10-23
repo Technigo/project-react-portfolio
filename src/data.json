@@ -2,7 +2,8 @@
   {
     "title": "Project Guess Who",
     "id": 1,
-    "image": "https://images2.imgbox.com/55/e3/sEHvrlpH_o.png?download=true",
+    "image": "../imgs/GuessWho.png",
+    "overlay": "gw",
     "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
     "github": "https://github.com/SoderstromC/project-guess-who",
     "description": "Interactive game built with Javascript",
@@ -11,7 +12,7 @@
   {
     "title": "Project Weather App",
     "id": 2,
-    "image": "../images/Weather.png",
+    "image": "../imgs/Weather.png",
     "netlify": "https://silver-profiterole-7224fd.netlify.app/",
     "github": "https://github.com/SoderstromC/project-weather-app",
     "description": "A weather app built with Javascript",
@@ -20,7 +21,7 @@
   {
     "title": "Project Happy Thoughts",
     "id": 3,
-    "image": "../images/Weather.png",
+    "image": "../imgs/GuessWho.png",
     "netlify": "https://remarkable-melba-22a98c.netlify.app/",
     "github": "https://github.com/SoderstromC/project-happy-thoughts",
     "description": "A twitter like feed of Happy thoughts built in React",
@@ -29,7 +30,7 @@
   {
     "title": "Project Survey",
     "id": 4,
-    "image": "../images/Weather.png",
+    "image": "../imgs/GuessWho.png",
     "netlify": "https://marvelous-brioche-781150.netlify.app",
     "github": "https://github.com/SoderstromC/project-survey",
     "description": "A survey which generates a tailored pomodoro recipe based on your answers",

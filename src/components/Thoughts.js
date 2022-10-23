@@ -9,12 +9,14 @@ export const Thoughts = () => {
     width: 100%;
     justify-content: center;  
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
     background-color: rgba(208, 203, 203, 0.572);
+    border-top: solid #c8aa89c6 1px;
+    border-bottom: solid #c8aa89c6 1px;
   `;
   const ArticleWrapper = styled.article`
     width: 515px;
-    color: rgb(135, 133, 133);
+    color: #fcfaf88a;
     text-align: start;
     h4 {
       margin: 3px;
@@ -22,7 +24,7 @@ export const Thoughts = () => {
     }
     a {
       text-decoration: none;
-      color: white;
+      color: #c8aa89c6;
     }
   `;
   const ArticleImg = styled.img`

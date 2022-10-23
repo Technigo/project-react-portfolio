@@ -27,10 +27,9 @@ export const SectionTitle = styled.div`
 export const Tag = styled.div`
     display: flex;
     flex-wrap: wrap;
-    p {
-    background-color: var(---highlight)
+    p.tag {
+    background-color: var(---highlight);
     color: whitesmoke;
-    border-radius: 5px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif ;
     font-weight: bold;

@@ -2,151 +2,125 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
 import data from '../data.json'
-import Github from '../icons/github30.png';
 
 export const Projects = () => {
   const ProjectSection = styled.div`
-    padding: 50px 0;
-  `
-
+    padding: 50px 0px;
+  `;
+  const ProjectWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+  `;
   const CardWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    a {
-      text-decoration: none;
-      color: #000;
-      position: relative;
-      display: block;
-    }
-    @media (max-width: 798px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    height: fit-content;
+    justify-content: space-between;
+    align-content: space-between;
+  `;
+
   const CardInfo = styled.div`
-    margin-top: 50px;
-    padding-bottom: 30px;
-    width: 100%;
-    word-break: break-all;
-    img {
-      width: auto;
-      height:250px;
-      display: block;
+    margin: 10px;  
+    width: 335px;
+      img {
+        width: auto;
+        height:250px;
+        display: block;
+      }
+  `;
+  const ProjectBackground = styled.img`
+    width: 325px;
+    height: 325px; 
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    &:hover{
+      display: none;
     }
-`
+  `;
   const CardOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(156, 166, 197, 0.2);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background-color: transparent;
-  }
-`
-  const CardFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-`
+    width: 325px;
+    height: 325px; 
+    background: #F090D9;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 80%;
+    transition: ease-in .3s;
+  `;
   const DetailsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: space-between;
-`
-
-  const OtherProjects = styled.div`
-    padding: 20px 0;
-  `
-
-  const OtherProjectsList = styled.p`
-    text-transform: uppercase;
-    text-align: left;
-    text-decoration: none;
-  `
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    h4 {
+      color: #c8aa89c6;
+      text-transform: uppercase;
+      }
+    p {
+      color: #c8aa89c6;
+      font-size: 15px;
+      }
+    `;
+  const CardFooter = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    a {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    `;
 
   return (
     <OuterWrapper>
       <InnerWrapper>
         <ProjectSection>
           <SectionTitle>
-            <p>Featured projects</p>
+            <p>featured projects</p>
           </SectionTitle>
-          <CardWrapper>
-            {data.map((item) => (
-              item.id < 3 ? (
-                <CardInfo key={item.title}>
-                  <a
-                    href={item.netlify}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <CardOverlay />
-                    <img src={item.image} alt="project poster" />
-                  </a>
-                  <DetailsWrapper>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+          <ProjectWrapper>
+            <CardWrapper>
+              {data.map((item) => (
+                item.id < 5 ? (
+                  <CardInfo key={item.title}>
                     <a
-                      href={item.github}
+                      href={item.netlify}
                       alt="project landingpage"
                       target="_blank"
                       rel="noopener noreferrer">
-                      link
+                      <CardOverlay>
+                        <ProjectBackground img src={item.image} alt="project poster" />
+                      </CardOverlay>
                     </a>
-                    <CardFooter>
-                      <Tag>
-                        {item.tools.map((tag) => (
-                          <p key={tag}>{tag}</p>
-                        ))}
-                      </Tag>
-                    </CardFooter>
-                  </DetailsWrapper>
-                </CardInfo>
-              ) : null
-            ))}
-          </CardWrapper>
-
-          <h3>OTHER PROJECTS</h3>
-          <OtherProjects>
-            {data.map((item) => (
-              item.id > 2 ? (
-                <OtherProjectsList key={item.title}>
-                  <a
-                    href={item.netlify}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <p>{item.title}</p>
-                  </a>
-                  <p>{item.description}</p>
-                  <a
-                    href={item.github}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <img
-                      src={Github}
-                      alt="Github Caroline Soderstrom" />
-                  </a>
-                  <Tag>
-                    {item.tools.map((tag) => (
-                      <p key={tag}>{tag}</p>
-                    ))}
-                  </Tag>
-                </OtherProjectsList>
-              ) : null
-            ))}
-          </OtherProjects>
+                    <DetailsWrapper>
+                      <a
+                        href={item.github}
+                        alt="project landingpage"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <h4>{item.title}</h4>
+                        <p>{item.description}</p>
+                      </a>
+                      <CardFooter>
+                        <Tag>
+                          {item.tools.map((tag) => (
+                            <p className="tag" key={tag}>{tag}</p>
+                          ))}
+                        </Tag>
+                      </CardFooter>
+                    </DetailsWrapper>
+                  </CardInfo>
+                ) : null
+              ))}
+            </CardWrapper>
+          </ProjectWrapper>
         </ProjectSection>
       </InnerWrapper>
     </OuterWrapper>
