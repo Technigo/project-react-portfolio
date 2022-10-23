@@ -146,7 +146,7 @@ const OverlayText = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
   }
 `

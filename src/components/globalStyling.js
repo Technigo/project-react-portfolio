@@ -18,8 +18,8 @@ export const InnerWrapper = styled.div`
 `
 export const MainHeaders = styled.h2`
     font-weight: 700;
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
     text-align: center;
     background-color: #285841;
     color: white;
@@ -29,8 +29,8 @@ export const MainHeaders = styled.h2`
 `
 
 export const TitleTertiary = styled.h3`
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     color: ${(props) => (props.selectedColor)};
     font-weight: 700;
     text-align: center;
@@ -41,8 +41,8 @@ export const TitleTertiary = styled.h3`
 
 export const TitleQuaternary = styled.h4`
     font-weight: 700;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     color: #285841;
     text-transform: uppercase;
     margin: 0.5rem 0rem;

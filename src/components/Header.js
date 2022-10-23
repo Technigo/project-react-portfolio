@@ -64,12 +64,17 @@ const Headlines = styled.div`
 
     h2 {    
     font-weight: 700;
-    font-size: 3rem;
-    line-height: 3.7rem;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+
     }
     
     @media (min-width: 668px) {
+      text-shadow: none;
       width: 250px;
+      font-size: 3rem;
+      line-height: 3.7rem;
     }
     `
 
