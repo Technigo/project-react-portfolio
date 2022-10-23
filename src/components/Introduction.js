@@ -12,11 +12,6 @@ color: black;
 display: flex;
 justify-content: center;
 padding: 50px 0;
-
-@media (min-width: 1024px) {
-    min-height: 300px;
-}
-
 `;
 
 export const IntroductionContent = styled.p`

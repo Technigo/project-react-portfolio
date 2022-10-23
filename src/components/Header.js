@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import heroImage from 'assets/heroImage.jpg';
 import heroLinkedin from 'assets/linkedin-icon.svg';
 import heroGithub from 'assets/github-icon.svg';
-import heroStackOverflow from 'assets/stackoverflow-icon.svg';
+/* import heroStackOverflow from 'assets/stackoverflow-icon.svg'; */
 import profileImage from 'assets/profileImage-4.jpg';
-import { GITHUB_URL, LINKEDIN_URL, STACKOVERFLOW_URL } from 'utils/Urls';
+import { GITHUB_URL, LINKEDIN_URL /* , STACKOVERFLOW_URL */ } from 'utils/Urls';
 
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
@@ -133,11 +133,11 @@ export const Header = () => {
         <a href={GITHUB_URL} target="_blank" rel="noreferrer">
           <img src={heroGithub} alt="Github icon for the header" />
         </a>
-        <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
+        {/* <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
           <img
             src={heroStackOverflow}
             alt="Stack Overflow icon for the header" />
-        </a>
+  </a> */}
       </HeaderIcons>
       <HeaderTitle>
         <h3><span className="name">PORTFOLIO:</span> SOFIA ANDERSSON</h3>

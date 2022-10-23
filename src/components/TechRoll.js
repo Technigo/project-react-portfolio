@@ -10,7 +10,6 @@ align-items: center;
 flex-direction: column;
 
 @media (min-width: 1024px){
-    height: 260px;
   }
 }
 `;
@@ -34,13 +33,11 @@ const TechHeader = styled.h2`
 
 export const ScrollLeftWrapper = styled.div`
 width: 100%;
-
 `;
 
 export const TechContent = styled.p`
     width: 100%;
     line-height: 50px;
-    text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: inherit;
@@ -85,6 +82,7 @@ export const TechContent = styled.p`
 @media (min-width: 1024px)
   {
     font-size:30px;
+    line-height: 80px;
   }
 }
 `;

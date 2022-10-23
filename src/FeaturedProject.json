@@ -1,21 +1,21 @@
 [
     {
-      "title": "Avocado News 1",
-      "title-description": "1 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
+      "title": "Business Site",
+      "title-description": "A simple business site",
+      "project-description": "A web site including a booking form and FAQ section.",
+      "repo-name": "project-business-site",
+      "netlify-name": "https://enchanting-dodol-8f5cc6.netlify.app/",
       "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/musicmaster.PNG"
+      "image": "/images/project-thumbnails/Project-business-site.png"
     },
     {
-      "title": "Avocado News 2",
-      "title-description": "2 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/forkify.PNG"
+      "title": "HAPPY THOUGHTS",
+      "title-description": "A twitter-like app",
+      "project-description": "A responsive web site created in React. It is fetching and posting data to an API, using useState and useEffect hooks.",
+      "repo-name": "project-happy-thoughts",
+      "netlify-name": "https://dontworry-behappy.netlify.app/",
+      "tags": ["HTML5", "CSS3", "React", "JavaScript ES6","APIs","Github"],
+      "image": "images/project-thumbnails/project-happy-thoughts.png"
     },
     {
       "title": "Avocado News 3",

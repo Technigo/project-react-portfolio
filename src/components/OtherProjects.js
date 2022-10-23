@@ -24,20 +24,20 @@ const OtherProjects = ({ subTitle }) => {
 };
 export default OtherProjects;
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.div`s
   display: flex;
 `;
 
 export const SkillTagContainer = styled.div`
-  display: flex;
+  width:50%;
 `;
 
 export const OtherProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   background-color: #FFF9F3;
+  margin 0;
 `;
 
 export const SkillTag = styled.p`

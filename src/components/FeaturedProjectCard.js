@@ -76,6 +76,7 @@ const SectionHeader = styled.h2`
 `;
 
 const FeaturedProjectWrapper = styled.div`
+  width:80%;
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,6 +129,7 @@ const ThumbnailTitle = styled.h2`
   font-family: "Montserrat Bold";
   color: white;
   position: absolute;
+  text-align:center;
 `;
 
 const ProjectInfoHeader = styled.h3`
@@ -140,7 +142,7 @@ const ProjectInfoHeader = styled.h3`
   }
 
   @media (max-width: 800px) {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
