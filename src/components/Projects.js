@@ -59,14 +59,13 @@ const Projects = () => {
     return projects.map((project) => {
       return (
         <SingleWrap>
-
           <ProjectLinks key={project.id} href={project.homepage}>
             {addImage && <div className="test">
               <div className="image-overlay" />
               <h3 className="image-text">{project.name.replace(/-/g, ' ')}</h3>
               <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
             </div>}
-            <ClonedTitle>{project.name.replace(/-/g, ' ')}</ClonedTitle>
+            <ClonedTitle key={project.id}>{project.name.replace(/-/g, ' ')}</ClonedTitle>
             <ProjectText>{project.description}</ProjectText>
             <Tags className="box-text">{renderTags(project.topics)}</Tags>
           </ProjectLinks>
