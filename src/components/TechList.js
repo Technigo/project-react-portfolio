@@ -27,7 +27,8 @@ const SectionHeader = styled.h2`
   text-transform: uppercase;
   color: white;
   padding:3px;
-  font-family:'montserrat', sans-serif;`
+  font-family:'montserrat', sans-serif;
+  font-weight: bold; `
 
 const Code = styled.div`
 flex-direction: column;
@@ -55,7 +56,10 @@ text-align: center;
 padding-top: 2em; 
 `
 const Header = styled.h4`
-font-family: "Roboto", sans-serif;`
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+font-size: 20px;
+color: rgb(185, 0, 91); `
 
 const Text = styled(Pitch)`
 margin: 0; `

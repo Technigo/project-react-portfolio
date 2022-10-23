@@ -41,6 +41,8 @@ export const SectionHeader = styled.h2`
   color: white;
   padding:3px;
   font-family:'montserrat', sans-serif;
+  font-weight: bold; 
+  
 `
 export const HeaderContainer = styled.div`
   display: flex; 

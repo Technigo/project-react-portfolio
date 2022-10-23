@@ -18,10 +18,10 @@ gap: 30px;
   }
   @media (min-width: 1024px) {
     display: grid; 
-grid-template-columns: 1fr 1fr;
-justify-content: center;
-align-content: center;
-gap: 30px; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px; 
     
   }
 `
@@ -32,7 +32,6 @@ const ProjectContainer = styled.div`
 `
 
 const Img = styled.img`
-/* display: block; */ 
 width: 100%;
 height: 100%;  
 `
@@ -50,10 +49,11 @@ left: 0;
 width: 100%;
 height: 100%;
 background: #60183575;
-font-size: 28px;
+font-size: 35px;
 font-family: "Montserrat", sans-serif;
 text-transform: uppercase;
-color: black; 
+font-weight: bold; 
+color: white; 
 
 ${ImageContainer}:hover & {
   display:flex; 
@@ -66,6 +66,12 @@ const Link = styled.a`
 const ProjectTitle = styled.h5`
 font-family:"Montserrat", sans-serif;
 font-size: 20px; 
+color: black; 
+font-weight: bold; 
+${ImageContainer}:hover & {
+  font-weight: bold;
+  text-decoration: none;
+} 
  `
 const Description = styled.p`
 font-family:"Roboto", sans-serif;
@@ -77,12 +83,25 @@ const Containerheader = styled.div`
   display:flex; 
 
 `
+const Deployed = styled(Link)`
+text-transform: uppercase;
+font-weight: bold;
+text-decoration: none; 
+padding-top: 2px;  
+
+ &:hover {
+  font-size: 110%; 
+  text-decoration: none;  
+  transition-delay: 0.3s;
+  color: black;  
+  
+}`
 
 const Projects = () => {
   return (
     <Container>
       <Containerheader>
-        <SectionHeader>Projects</SectionHeader>
+        <SectionHeader>featured Projects</SectionHeader>
       </Containerheader>
       {data.slice(0, 4).map((project) => (
         <ProjectContainer key={project.id}>
@@ -93,7 +112,11 @@ const Projects = () => {
             </ImageContainer>
             <ProjectTitle>{project.title}</ProjectTitle>
           </Link>
-          <Description>{project.description} <Link href={project.url_netlify}> x </Link>
+          <Description>{project.description}
+            <br />
+            <Deployed href={project.url_netlify}>
+              Deployed site
+            </Deployed>
           </Description>
 
           <TagWrapper>

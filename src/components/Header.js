@@ -100,7 +100,7 @@ const Header = () => {
         <SmallHeading>Portfolio: Amanda Elvkull</SmallHeading>
         <BigHeading>Frontend</BigHeading>
         <BigHeading>developer</BigHeading>
-        <MediumHeading>+ CX expert</MediumHeading>
+        <MediumHeading>+ project manager</MediumHeading>
       </TextContainer>
     </ContainerHero>
 

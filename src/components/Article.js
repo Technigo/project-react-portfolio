@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeaderContainer, SectionHeader } from 'GlobalStyles';
+import { SectionHeader } from 'GlobalStyles';
 
 const Container = styled.article`
 background: white;
@@ -9,18 +9,16 @@ padding-left: 4em;
 padding-top: 2em; 
 padding-bottom: 2em; 
 display: grid; 
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 justify-content: center;
 align-content: center;  
  `
 
 const ArticleContainer = styled.div`
-grid-column: 2 / 2;
+grid-column: 3 / 3;
 display: flex; 
 padding-top: 2em; 
 flex-direction: column; 
-
-margin:auto; 
 justify-content: center;
 align-content: center; 
 `
@@ -30,12 +28,12 @@ display: none;
 grid-column: 2 / 3 ; 
 padding-top: 2em;
 flex-direction: column; 
-padding-left: 2em;  
-margin:auto; `
+padding-left: 2em; 
+ `
 
 const Img = styled.img`
- width: 350px;
- height: auto;`
+ width: 500px;
+height: 100%; `
 
 const Link = styled.a`
 text-decoration: none;
@@ -46,14 +44,23 @@ font-family:"Roboto", sans-serif;
 `
 const TextContainer = styled.div`
 display: flex; 
-flex-direction: column;`
+flex-direction: column;
+ `
 
 const Date = styled.p`
 font-size: 15px;
-color:rgb(185, 0, 91);`
+color:rgb(185, 0, 91);
+margin: 0;
+font-weight: bold;  `
 
 const Heading = styled.p`
 font-size: 20px; `
+
+const HeaderContainer = styled.div`
+ display: flex; 
+justify-content: center; 
+grid-column: span 5 ; 
+padding-bottom: 2em; `
 
 const Article = () => {
   return (
@@ -71,9 +78,9 @@ const Article = () => {
             alt="article" />
         </Link>
         <TextContainer>
-          <Heading> My thougts after...</Heading>
-          <Date>October 2022</Date>
-          <Text> Here is a small reflexion about how it has been attending a boot camp.  </Text>
+          {/* <Heading> My thougts after...</Heading> */}
+          <Date>OCTOBER 2022</Date>
+          <Text> A short article about my thoughts after 8 weeks fo web developer bootcamp.  </Text>
         </TextContainer>
       </ArticleContainer>
 

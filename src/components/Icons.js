@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ContainerWhite } from 'GlobalStyles'
+import { ContainerWhite, HeaderContainer, SectionHeader } from 'GlobalStyles'
 
 const Logos = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
-margin-top: 50px; 
 `
 const SmallContainer = styled.div`
 padding: 1em;
@@ -42,6 +41,9 @@ font-size: 350%;
 const Icons = () => {
   return (
     <ContainerWhite>
+      <HeaderContainer>
+        <SectionHeader>More</SectionHeader>
+      </HeaderContainer>
       <Logos>
         <SmallContainer>
           <Link

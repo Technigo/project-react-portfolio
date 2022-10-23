@@ -4,10 +4,6 @@ import styled from 'styled-components';
 const Profile = styled.div`
   position: relative;
   text-align: center;
-  /* &:hover {
-    opacity: 70%;
-    transition-duration: 0.2s;
-  } */
   
 `;
 const Img = styled.img`
@@ -20,7 +16,7 @@ const Img = styled.img`
   height: 180px; 
   border-radius: 50%;
   object-fit: cover;
-  border:solid rgb(185, 0, 91); 
+  border:solid rgb(185, 0, 91) 3px; 
 
   @media (min-width: 768px) {
     top: -220px; 

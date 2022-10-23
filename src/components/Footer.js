@@ -5,10 +5,12 @@ import { ContainerColored } from 'GlobalStyles'
 const Container = styled(ContainerColored)`
 justify-content: center;
 text-align: center;
+background-color: rgb(185, 0, 91); 
  `
 const Contact = styled.h3`
 font-family:"Roboto", sans-serif;
 font-size: 10px; 
+color: white; 
 @media (min-width: 768px) {
 font-size: 30px;
     

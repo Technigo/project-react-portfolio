@@ -25,6 +25,7 @@ flex-direction: column;
 
 const PortfolioWrapper = () => {
   return (
+
     <Wrapper>
       <Header />
       <ProfileImage />

@@ -8,12 +8,16 @@ import data from 'data.json'
 const Link = styled.a`
 font-family:"Roboto", sans-serif;
 text-decoration:none;
-color: black;  
+color: black; 
+&:hover {
+  text-decoration: none; 
+  color: black; 
+  font-weight: bold; 
+} 
 
  `
+
 const List = styled.div`
-/* display: grid; 
-grid-column: 1 / 2; */ 
 display: flex; 
 flex-direction:column; 
 `
@@ -33,7 +37,7 @@ const ProjectList = () => {
             target="_blank"
             rel="noreferrer">
             {projectList.title_description}
-            <Icons>&gt;&gt;</Icons>
+            <Icons>  &gt;&gt;</Icons>
           </Link>
 
           <TagWrapper>
