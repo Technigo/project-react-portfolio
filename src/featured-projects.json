@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "href": "https://silver-profiterole-7224fd.netlify.app/",
-    "github-href": "https://github.com/JosefineEngdahl/project-weather-app",
+    "netlify": "https://silver-profiterole-7224fd.netlify.app/",
+    "github": "https://github.com/JosefineEngdahl/project-weather-app",
     "title": "Weather app",
     "description": "Responsive website connected with weather API",
     "image": "images/weather-app.jpg",
@@ -15,11 +15,11 @@
   },
   {
     "id": "2",
-    "href": "https://the-music-release-project.netlify.app/",
-    "github-href": "https://github.com/Technigo/project-music-releases/pull/221?",
+    "netlify": "https://the-music-release-project.netlify.app/",
+    "github": "https://github.com/Technigo/project-music-releases/pull/221?",
     "title": "Music page",
     "description": "Responsive music release page made using React",
-    "image": "images/music-releases.jpg",
+    "image": "./music-releases.jpg",
     "tags": [
       "React",
       "HTML",

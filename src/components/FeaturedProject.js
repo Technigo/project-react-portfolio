@@ -1,22 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from 'styles/MainStyles';
-// import data from '../data.json'
+import data from '../featured-projects.json';
 
 const FeaturedProject = () => {
   return (
     <ProjectList>
-      <StyledFeaturedProject>
-        <img src="" alt="" />
-        <StyledTextWrapper>
-          <h4>Title</h4>
-          <p>Description</p>
-        </StyledTextWrapper>
-        <StyledTagWrapper>
+      {data.map((item) => (
+        <StyledFeaturedProject key={item.title}>
+          <a
+            href={item.netlify}
+            alt="project landingpage"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src={item.image} alt="project poster" />
+          </a>
+          <StyledTextWrapper>
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+          </StyledTextWrapper>
+          <StyledTagWrapper>
           Tags
-        </StyledTagWrapper>
-        <Button>View on Github</Button>
-      </StyledFeaturedProject>
+          </StyledTagWrapper>
+          <Button>
+            <a
+              href={item.github}
+              alt="project github"
+              target="_blank"
+              rel="noopener noreferrer">View on Github
+            </a>
+          </Button>
+
+        </StyledFeaturedProject>
+      ))}
     </ProjectList>
   );
 };
