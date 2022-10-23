@@ -91,10 +91,6 @@ export const Header = () => {
       justify-content: end;
     }
     
-    img {
-     width: 50px;
-    }
-    
     a {
       margin: 10px;
       transition: all 0.2s ease-in-out;

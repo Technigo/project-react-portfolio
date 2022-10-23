@@ -25,7 +25,7 @@ export const Projects = () => {
     margin-top: 50px;
     padding-bottom: 30px;
     width: 100%;
-    word-break: break-all;
+
     img {
       width: 100%;
       height:250px;
@@ -40,35 +40,48 @@ export const Projects = () => {
   left: 0;
   background: rgba(156, 166, 197, 0.2);
   transition: all 0.3s ease-in-out;
+  
   &:hover {
     background-color: transparent;
   }
 `
-  const CardFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a {
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-`
   const DetailsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: space-between;
+  text-align: left;
 `
+  const ProjectCardHeading = styled.h3`
+    color: var(--color-mediumblue);
+  `
+
+  const OtherProjectHeading = styled.h3`
+    color: var(--color-darkblue);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+  `
 
   const OtherProjects = styled.div`
     padding: 20px 0;
   `
 
+  const OtherProjectsWrapper = styled.div`
+  margin-bottom: 30px;
+  `
+
   const OtherProjectsList = styled.p`
     text-transform: uppercase;
-    text-align: left
+    font-weight: 600;
+    text-align: left;
+    color:  var(--color-darkblue);
+  `
+
+  const ProjectLink = styled.a`
+    color:  var(--color-mediumblue);
+  `
+
+  const ProjectLinkDescription = styled.a`
+    text-decoration: none;
+    color:  var(--color-darkblue);
   `
 
   return (
@@ -82,63 +95,63 @@ export const Projects = () => {
             {data.map((item) => (
               item.id < 3 ? (
                 <CardInfo key={item.title}>
-                  <a
+                  <ProjectLink
                     href={item.netlify}
                     alt="project landingpage"
                     target="_blank"
                     rel="noopener noreferrer">
                     <CardOverlay />
                     <img src={item.image} alt="project poster" />
-                  </a>
+                  </ProjectLink>
                   <DetailsWrapper>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <ProjectCardHeading>{item.title}</ProjectCardHeading>
                     <a
                       href={item.github}
                       alt="project landingpage"
                       target="_blank"
                       rel="noopener noreferrer">
-                      <FontAwesomeIcon icon={faGithub} size="2x" color="#333" />
+                      <p>{item.description}</p>
+                      <FontAwesomeIcon icon={faGithub} size="2x" color="var(--color-darkblue)" />
                     </a>
-                    <CardFooter>
-                      <Tag>
-                        {item.tools.map((tag) => (
-                          <p key={tag}>{tag}</p>
-                        ))}
-                      </Tag>
-                    </CardFooter>
+                    <Tag>
+                      {item.tools.map((tag) => (
+                        <p key={tag}>{tag}</p>
+                      ))}
+                    </Tag>
                   </DetailsWrapper>
                 </CardInfo>
               ) : null
             ))}
           </CardContainer>
 
-          <h3>OTHER PROJECTS</h3>
+          <OtherProjectHeading>other projects</OtherProjectHeading>
           <OtherProjects>
             {data.map((item) => (
               item.id > 2 ? (
-                <OtherProjectsList key={item.title}>
-                  <a
-                    href={item.netlify}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <p>{item.title}</p>
-                  </a>
-                  <p>{item.description}</p>
-                  <a
-                    href={item.github}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} size="2x" color="#333" />
-                  </a>
-                  <Tag>
-                    {item.tools.map((tag) => (
-                      <p key={tag}>{tag}</p>
-                    ))}
-                  </Tag>
-                </OtherProjectsList>
+                <OtherProjectsWrapper>
+                  <OtherProjectsList key={item.title}>
+                    <ProjectLink
+                      href={item.netlify}
+                      alt="project landingpage"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <p>{item.title}</p>
+                    </ProjectLink>
+                    <ProjectLinkDescription
+                      href={item.github}
+                      alt="project landingpage"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <p>{item.description}<span>{'>>>'}</span></p>
+                      <FontAwesomeIcon icon={faGithub} size="2x" color="var(--color-darkblue)" />
+                    </ProjectLinkDescription>
+                    <Tag>
+                      {item.tools.map((tag) => (
+                        <p key={tag}>{tag}</p>
+                      ))}
+                    </Tag>
+                  </OtherProjectsList>
+                </OtherProjectsWrapper>
               ) : null
             ))}
           </OtherProjects>
