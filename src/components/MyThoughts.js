@@ -1,28 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import blogPic from './assets/blog-pic.png';
+import blogPic1 from './assets/blog-pic1.png';
 import { OuterWrapper, InnerWrapper, MainHeading } from './GlobalStyles';
 
 export const MyThoughts = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper primary>
       <InnerWrapper>
         <MyThoughtsContainer>
           <MainHeading>MY THOUGHTS ABOUT CODE</MainHeading>
           <AllMyThoughtsCards>
             <div className="MyThoughtsCard">
               <a
-                href="https://www.google.com"
+                href="https://medium.com/@neah.rockstroh/fall-seven-times-get-up-eight-328abf5a9956"
                 target="_blank"
                 rel="noreferrer"
                 alt="bild">
-                <img src={blogPic} lang="eng" alt="Github project" />
-                <DateTitle>DEC 2022</DateTitle>
-                <BlogTitle>Blog title</BlogTitle>
-                <BlogText>Blog Text</BlogText>
-                <EndingArrows>{'>>'}</EndingArrows>
+                <img src={blogPic1} lang="eng" alt="A desk with an open notebook and a screen on it." />
+                <DateTitle>OCT 2022</DateTitle>
+                <BlogTitle>Fall seven times, get up eight</BlogTitle>
+                <BlogText>
+                  I am currently eight weeks deep in the Frontend Developer Bootcamp at Techningo.
+                  Eight weeks down and fourteen more to go.
+                  I often end my days feeling drained and mentally exhausted.
+                  This begs the question, how will I make it all the way? <EndingArrows>{'>>'}</EndingArrows>
+                </BlogText>
               </a>
             </div>
+            {/* template for other blog posts
+
             <div className="MyThoughtsCard">
               <a
                 href="https://www.google.com"
@@ -35,7 +41,7 @@ export const MyThoughts = () => {
                 <BlogText>Blog Text</BlogText>
                 <EndingArrows>{'>>'}</EndingArrows>
               </a>
-            </div>
+            </div> */}
           </AllMyThoughtsCards>
         </MyThoughtsContainer>
       </InnerWrapper>
@@ -50,9 +56,19 @@ export const MyThoughtsContainer = styled.section`
   margin: 10%;
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 
   img {
     width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   @media (min-width: 668px) {
@@ -60,14 +76,7 @@ export const MyThoughtsContainer = styled.section`
   }
 `;
 
-export const MyThoughtsHeader = styled.h2`
-  font-size: 48px;
-  line-height: 1;
-  background-color: #ff0000;
-  color: whitesmoke;
-  display: inline-block;
-  padding: 10px 15px;
-`;
+/* sets the width for the blog post cards and for different media querys */
 
 export const AllMyThoughtsCards = styled.div`
   position: relative;
@@ -78,20 +87,29 @@ export const AllMyThoughtsCards = styled.div`
   .MyThoughtsCard {
     width: 45%;
   }
+
+  @media (max-width: 668px) {
+   .MyThoughtsCard {
+      width: 100%;
+    }
+  }
 `;
 
+/* Styles the titles and blog text */
+
 export const DateTitle = styled.p`
-  color: #ff0000;
+font-size: 120%;
 `;
 
 export const BlogTitle = styled.p`
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 140%;
 `;
 
 export const BlogText = styled.p`
-  font-size: 10px;
+  font-size: 120%;
 `;
 
 export const EndingArrows = styled.p`
-  font-size: 9px;
-  color: #f44336; `;
+  color: #ff7b00;
+   `;

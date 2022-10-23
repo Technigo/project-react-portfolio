@@ -1,38 +1,26 @@
 [
     {
-      "title": "Avocado News 1",
-      "title-description": "1 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/musicmaster.PNG"
+      "title": "Guess Who",
+      "title-description": "Guess who game",
+      "project-description": "A game where the player has to guess on a secret person",
+      "repo-name": "project-guess-who",
+      "netlify-name": "jolly-pastelito-4c9c84",
+      "tags": ["JavaScript ES6", "CSS3"]
     },
     {
-      "title": "Avocado News 2",
-      "title-description": "2 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/forkify.PNG"
+      "title": "weather app",
+      "title-description": "Weather app",
+      "project-description": "An app that displays the weather",
+      "repo-name": "project-weather-app",
+      "netlify-name": "curious-sorbet-7344d4",
+      "tags": ["Pair-programming", "API"]
     },
     {
-      "title": "Avocado News 3",
-      "title-description": "3 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
+      "title": "Chat Bot",
+      "title-description": "Chatbot App",
+      "project-description": "An app where you can chat with a bot to book a tour",
       "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/mapty.PNG"
-    },
-    {
-      "title": "Avocado News 4",
-      "title-description": "4 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/guessmynumber.PNG"
+      "netlify-name": "brilliant-cassata-6614e6",
+      "tags": ["JavaScript ES6", "CSS3"]
     }
   ]

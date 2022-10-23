@@ -17,7 +17,7 @@ export const App = () => {
       <Header />
       <AboutMe />
       <Tech />
-      <FeaturedProjects color="red" tagColor="pink" />
+      <FeaturedProjects color="#ff7b00" />
       <OtherProjects />
       <MyThoughts />
       <Skills />

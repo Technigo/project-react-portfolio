@@ -3,27 +3,32 @@ import styled from 'styled-components';
 import OtherProjectsInfo from 'data/OtherProjectsInfo';
 import { OuterWrapper, InnerWrapper, SecondaryHeading, ProjectTags } from './GlobalStyles';
 
-export const OtherProjects = ({ color, tagColor }) => {
-  const GITHUB_NAME = 'Archkrull';
-
+export const OtherProjects = ({ color }) => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <SecondaryHeading>Other Projects</SecondaryHeading>
         <OtherProjectContainer>
+          <SecondaryHeading>Other Projects</SecondaryHeading>
+
+          {/* maps through json file */}
           {OtherProjectsInfo.map((project) => {
             return (
-              <OtherProjectCard
-                key={project.title}
-                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
-                target="_blank">
-                <ProjectInfoHeader color={color}>
-                  {project.title}
-                </ProjectInfoHeader>
-                <ProjectInfo>{project['project-description']}</ProjectInfo>
+              <OtherProjectCard>
+                <a
+                  key={project.title}
+                  href={`https://${project['netlify-name']}.netlify.app/`}
+                  target="_blank"
+                  rel="noreferrer">
+                  <ProjectInfoHeader color={color}>
+                    {project.title}
+                  </ProjectInfoHeader>
+                  <ProjectInfo>{project['project-description']} {'>>'}</ProjectInfo>
+                </a>
+
+                {/* maps through tag array, styled with global styling */}
                 <ul style={{ padding: 0 }}>
                   {project.tags.map((tag) => (
-                    <ProjectTags tagColor={tagColor}>
+                    <ProjectTags>
                       {tag}
                     </ProjectTags>
                   ))}
@@ -38,28 +43,39 @@ export const OtherProjects = ({ color, tagColor }) => {
   );
 };
 
+/* sets the layout for other project parts */
+
 const OtherProjectCard = styled.div`
+  a {
+    text-decoration: none;
+    color: inherit;
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  @media (max-width: 800px) {
+    a {
+      flex-direction: column;
+    }
   }
   `;
-
-/*  const SkillTagContainer = styled.div`
-    display: flex;
-  `; */
 
 const OtherProjectContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
   `;
 
+/* Styles the other project info */
+
 const ProjectInfoHeader = styled.h3`
-  font-family: "Roboto Bold", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   color: ${(props) => props.color};
   font-size: 120%;
-  margin-right: 0;
+  margin-right: 1%;
+  color: #ff7b00;
+  
 
   ${OtherProjectCard}:hover & {
     text-decoration: underline;
@@ -74,7 +90,7 @@ const ProjectInfo = styled.p`
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 120%;
-  flex-basis:70%;
+ /*  flex-basis:70%; */
 
   ${OtherProjectCard}:hover & {
     text-decoration: underline;
@@ -82,6 +98,7 @@ const ProjectInfo = styled.p`
 
   @media (max-width: 800px) {
     font-size: 110%;
+    margin: 0;
   }
 `;
 

@@ -8,9 +8,8 @@ import { OuterWrapper, InnerWrapper, MainHeading } from './GlobalStyles';
 
 export const ForMore = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper primary>
       <InnerWrapper>
-        {/* <ForMoreContainer> */}
         <MainHeading> FOR MORE</MainHeading>
         <ForMoreContainer>
           <ForMoreIcons>
@@ -32,7 +31,6 @@ export const ForMore = () => {
             </a>
           </ForMoreIcons>
         </ForMoreContainer>
-        {/* </ForMoreContainer> */}
       </InnerWrapper>
     </OuterWrapper>
   );
@@ -41,13 +39,21 @@ const ForMoreContainer = styled.div`
 display: flex;
 justify-content: center;
 `;
+
+/* icons and their links */
 const ForMoreIcons = styled.div`
 width: 25%;
 text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 .icon {

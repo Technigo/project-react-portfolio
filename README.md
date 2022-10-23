@@ -1,10 +1,8 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Rebuilding my portfolio with react and styled components.
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I broke the project down to whick part would need to be reusable all over the site. I did a lot in global styling to reuse parts but I would also like to have more reusable components and more props. In the future I would also like to connect it with an API to Github and Medion instead of using a local json file.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://neah-rockstroh-portfolio.netlify.app/

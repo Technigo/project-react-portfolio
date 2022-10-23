@@ -9,6 +9,8 @@ export const Skills = () => {
       <InnerWrapper>
         <MainHeading>SKILLS</MainHeading>
         <SkillContainer>
+
+          {/* maps the SubHeadings and the skills for each heading */}
           {SkillsList.map((skills) => {
             return (
               <SkillWrapper>
@@ -36,10 +38,16 @@ justify-content: space-between;
 `;
 
 const ListedSkills = styled.p`
-color: red;
 text-align: center;
 `;
 
+/* sets three columns for desktop and two columns for smaller screens */
 const SkillWrapper = styled.div`
 flex-basis: 33%;
+
+@media (max-width: 800px) {
+   flex-basis: 50%;
+    
+  }
+
 `;

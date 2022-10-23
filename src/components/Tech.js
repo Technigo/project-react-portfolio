@@ -1,25 +1,15 @@
 import React from 'react'
-import styled from 'styled-components';
-import { OuterWrapper, InnerWrapper, MainHeading } from './GlobalStyles';
+import { OuterWrapper, InnerWrapper, MainHeading, CommonP } from './GlobalStyles';
 
 export const Tech = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper primary>
       <InnerWrapper>
         <MainHeading>TECH</MainHeading>
-        <Intro> HTML, CSS, Flexbox, Grid, JavaScript ES6, Web Accessibly,
+        <CommonP> HTML, CSS, Flexbox, Grid, JavaScript ES6, Web Accessibly,
              API:s, mob-programming, pair-programming, Github.
-        </Intro>
+        </CommonP>
       </InnerWrapper>
     </OuterWrapper>
   );
 };
-
-export const Intro = styled.p`
-padding: 10%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 1.2em;
-line-height: 138%;
-`;

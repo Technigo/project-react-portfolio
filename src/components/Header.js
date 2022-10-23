@@ -10,6 +10,8 @@ import heroImage from './assets/header-img.jpg';
 export const Header = () => {
   return (
     <HeaderContainer>
+
+      {/* Icons and links in the header */}
       <HeaderIcons>
         <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
           <img src={heroLinkedin} alt="LinkedIn icon for the header" />
@@ -23,11 +25,15 @@ export const Header = () => {
             alt="Stack Overflow icon for the header" />
         </a>
       </HeaderIcons>
+
+      {/* Title and name */}
       <HeaderTitle>
         <h3>Portfolio: Neah Rockstroh</h3>
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </HeaderTitle>
+
+      {/* profile pic */}
       <HeaderImage>
         <img src={profileImage} alt="Neah Rockstroh" />
       </HeaderImage>
@@ -35,6 +41,7 @@ export const Header = () => {
   );
 };
 
+/* background image for header */
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
   width: 100%;
@@ -44,6 +51,7 @@ export const HeaderContainer = styled.header`
   position: relative;
 `;
 
+/* icons and links */
 export const HeaderIcons = styled.div`
   position: absolute;
   right: 10%;
@@ -52,6 +60,7 @@ export const HeaderIcons = styled.div`
   img{
     height: 50px;
     margin-right: 10px;
+    filter: invert(1);
     }
 
   img:hover{
@@ -75,6 +84,7 @@ export const HeaderIcons = styled.div`
 }
 `;
 
+/* Title and name */
 export const HeaderTitle = styled.div`
   position: absolute;
   top: 30%;
@@ -84,10 +94,13 @@ export const HeaderTitle = styled.div`
 
   h3 {
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
   }
 
   h1 {
     font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
     display: block;
   }
 
@@ -115,6 +128,8 @@ export const HeaderTitle = styled.div`
     }
   }
 `;
+
+/* profile picture */
 export const HeaderImage = styled.div`
   img {
     object-fit: cover;
