@@ -4,7 +4,7 @@
         "id": "1",
         "overlay": "Weather App",
         "image": "/assetsImg/weatherApp.png",
-        "description": "Responsive weather app built in JavaScript, HTML and CSS using Open Weather API.",
+        "description": "Responsive weather app built with API.",
         "netlify": "https://petraandcharlotteweatherapp.netlify.app/",
         "github": "https://github.com/charlottejohansson/project-weather-app",
         "code": [
@@ -20,7 +20,7 @@
         "id": "2",
         "overlay": "Music Releases",
         "image": "/assetsImg/musicReleases.png",
-        "description": "Build in JavaScript, fetching API from Spotify",
+        "description": "Build in JavaScript, fetching API from Spotify.",
         "netlify": "https://projectmusicreleases.netlify.app/",
         "github": "https://github.com/charlottejohansson/project-music-releases",
         "code": [
@@ -35,7 +35,7 @@
         "id": "3",
         "overlay": "Happy Thoughts",
         "image": "/assetsImg/happyThought.png",
-        "description": "React webpage where you post happy thoughts with API",
+        "description": "React webpage where you post happy thoughts with API.",
         "netlify": "https://happy-thoughts-charlottejohansson.netlify.app/",
         "github": "https://github.com/charlottejohansson/project-happy-thoughts",
         "code": [
