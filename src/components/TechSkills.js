@@ -1,21 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Wrapper, SectionTitle, Paragraph } from './GlobalStyles'
+import { Wrapper, SectionTitle, MainText } from './GlobalStyles'
 
 export const TechSkills = () => {
   return (
     <Wrapper>
       <SectionTitle>TECH</SectionTitle>
-      <TechSkillsText>HTML, CSS,
+      <TechSkillsName>HTML, CSS,
       JavaScript, APIs, React, Github, Mob-programming, Pair-programming,
         Agile Methodology.
-      </TechSkillsText>
+      </TechSkillsName>
     </Wrapper>
   )
 }
 
-const TechSkillsText = styled(Paragraph)`
+const TechSkillsName = styled(MainText)`
   text-align: center;
   margin-top: 5%;
 

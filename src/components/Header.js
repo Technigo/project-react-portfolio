@@ -30,9 +30,9 @@ export const Header = () => {
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </TitleContainer>
-      <ImageContainer>
+      <ProfilePictureContainer>
         <img src="/images/Kartika.png" alt="Kartika" />
-      </ImageContainer>
+      </ProfilePictureContainer>
     </HeaderContainer>
   )
 }
@@ -90,7 +90,7 @@ const TitleContainer = styled.div`
   }
 `
 
-const ImageContainer = styled.div`
+const ProfilePictureContainer = styled.div`
   img{
     object-fit: cover;
     object-position: top center;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import data from '../assets/featuredprojects.json'
-import { SectionTitle, Wrapper, Heading, ProjectParagraph, TagIcons, GridWrapper } from './GlobalStyles';
+import { SectionTitle, Wrapper, Heading, ProjectText, Tags, GridWrapper } from './GlobalStyles';
 
 export const FeaturedProjects = () => {
   return (
@@ -23,13 +23,13 @@ export const FeaturedProjects = () => {
               </ProjectDisplay>
             </a>
             <Heading>{item.title}</Heading>
-            <ProjectParagraph primary>{item.description}
-            </ProjectParagraph>
-            <TagIcons>
+            <ProjectText primary>{item.description}
+            </ProjectText>
+            <Tags>
               {item.tags.map((tag) => (
                 <p key={tag}>{tag}</p>
               ))}
-            </TagIcons>
+            </Tags>
           </ProjectCard>
         ))}
       </GridWrapper>
@@ -42,16 +42,19 @@ const ProjectCard = styled.div`
   grid-template-columns: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 90%;
+  cursor: pointer;
   border-width: 3px;
   border-style: solid; 
   border-image: 
     linear-gradient(
       to bottom, 
-      #003333, 
-      #A0D3D3,
+      #003333,
+      #648787,
+      #648787,
       white
     ) 1;
-  width: 90%;
+  
   transition: transform .8s; 
 
   &:hover{
@@ -60,18 +63,11 @@ const ProjectCard = styled.div`
     border-image: 
       linear-gradient(
         to top, 
-        #003333, 
-        #A0D3D3,
+        #003333,
+        #648787,
+        #648787,
         white
       ) 1;
-  }
-
-  @media (min-width: 668px) and (max-width: 1023px){
-    width: 90%;
-  }
-
-  @media (min-width: 1024px){
-    width: 90%;
   }
 `
 
@@ -82,22 +78,16 @@ const ProjectDisplay = styled.div`
   img{
     display: block;
     width: 100%;
-    height: 100%;
-    }
-    
-    &:hover{
-        opacity: 1;
     }
 `
+
 const ProjectDisplayOverlay = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
-  opacity: 1;
   transition: .5s;
   background-color: rgb(0, 21, 21, 0.7);
 

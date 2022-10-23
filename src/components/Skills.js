@@ -1,37 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle, Wrapper, OverlinedHeading, ProjectParagraph } from './GlobalStyles';
+import { SectionTitle, Wrapper, OverlinedHeading, ProjectText } from './GlobalStyles';
 
 export const Skills = () => {
   return (
     <Wrapper primary>
       <SectionTitle primary>SKILLS</SectionTitle>
       <SkillsContainer>
-        <SkillsCategory>
+        <SkillsList>
           <OverlinedHeading>CODE</OverlinedHeading>
-          <SkillsList primary>JavaScript ES6</SkillsList>
-          <SkillsList primary>CSS3</SkillsList>
-          <SkillsList primary>HTML5</SkillsList>
-          <SkillsList primary>APIs</SkillsList>
-          <SkillsList primary>React</SkillsList>
-          <SkillsList primary>🔜 Redux</SkillsList>
-        </SkillsCategory>
-        <SkillsCategory>
+          <SkillName primary>JavaScript ES6</SkillName>
+          <SkillName primary>CSS3</SkillName>
+          <SkillName primary>HTML5</SkillName>
+          <SkillName primary>APIs</SkillName>
+          <SkillName primary>React</SkillName>
+          <SkillName primary>🔜 Redux</SkillName>
+        </SkillsList>
+        <SkillsList>
           <OverlinedHeading>TOOLBOX</OverlinedHeading>
-          <SkillsList primary>GitHub</SkillsList>
-          <SkillsList primary>VSCode</SkillsList>
-          <SkillsList primary>Figma</SkillsList>
-          <SkillsList primary>Slack</SkillsList>
-          <SkillsList primary>Stack Overflow</SkillsList>
-        </SkillsCategory>
-        <SkillsCategory>
+          <SkillName primary>GitHub</SkillName>
+          <SkillName primary>VSCode</SkillName>
+          <SkillName primary>Figma</SkillName>
+          <SkillName primary>Slack</SkillName>
+          <SkillName primary>Stack Overflow</SkillName>
+        </SkillsList>
+        <SkillsList>
           <OverlinedHeading>MORE</OverlinedHeading>
-          <SkillsList primary>Pair-Programming</SkillsList>
-          <SkillsList primary>Mob-Programming</SkillsList>
-          <SkillsList primary>Responsive Design</SkillsList>
-          <SkillsList primary>Agile Methodology</SkillsList>
-          <SkillsList primary>Indonesian</SkillsList>
-        </SkillsCategory>
+          <SkillName primary>Pair-Programming</SkillName>
+          <SkillName primary>Mob-Programming</SkillName>
+          <SkillName primary>Responsive Design</SkillName>
+          <SkillName primary>Agile Methodology</SkillName>
+          <SkillName primary>Indonesian</SkillName>
+        </SkillsList>
       </SkillsContainer>
     </Wrapper>
   )
@@ -50,14 +50,15 @@ const SkillsContainer = styled.div`
     flex-direction: row;
   }
 `
-const SkillsCategory = styled.div`
+
+const SkillsList = styled.div`
   margin-top: 2%;
   margin-bottom: 10%;
   text-align: center;
   color: #614124;
 `
 
-const SkillsList = styled(ProjectParagraph)`
+const SkillName = styled(ProjectText)`
   margin: 10% 0;
   display: block;
   line-height: 12px;

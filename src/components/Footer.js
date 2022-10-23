@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { OverlinedHeading, Paragraph, Wrapper } from './GlobalStyles';
+import { OverlinedHeading, MainText, Wrapper } from './GlobalStyles';
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <OverlinedHeading primary>Contact Me</OverlinedHeading>
-      <ContactInfo>
-        <Paragraph>Kartika Purwahyuningrum</Paragraph>
-        <Paragraph>tikaprw@gmail.com</Paragraph>
-        <Paragraph>+46-70203 4940</Paragraph>
-      </ContactInfo>
+      <ContactInfoContainer>
+        <MainText>Kartika Purwahyuningrum</MainText>
+        <MainText>tikaprw@gmail.com</MainText>
+        <MainText>+46-70203 4940</MainText>
+      </ContactInfoContainer>
     </FooterWrapper>
   )
 }
@@ -27,7 +27,8 @@ export const FooterWrapper = styled(Wrapper)`
     padding-top: 10%;
   }
 `
-const ContactInfo = styled.div`
+
+const ContactInfoContainer = styled.div`
   margin: 5% auto;
   text-align: center;
 

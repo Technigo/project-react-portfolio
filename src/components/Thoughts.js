@@ -1,55 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FIRSTARTICLE_URL, SECONDARTICLE_URL } from 'utils/Urls';
-import { Wrapper, SectionTitle, GridWrapper, Paragraph } from './GlobalStyles';
+import { Wrapper, SectionTitle, GridWrapper, MainText } from './GlobalStyles';
 
 export const Thoughts = () => {
   return (
     <Wrapper>
       <SectionTitle>MY THOUGHTS</SectionTitle>
       <GridWrapper>
-        <ArticleStyle>
+        <ArticleContainer>
           <a
             href={FIRSTARTICLE_URL}
             target="_blank"
             rel="noreferrer">
             <img src="images/medium1.jpg" alt="article" />
-            <ArticleText>September 2022</ArticleText>
+            <MainText>September 2022</MainText>
             <ArticleTitle>
             My Little Early Coding Journey
             </ArticleTitle>
-            <ArticleText>
+            <MainText>
               A short journal about my early journey in coding world.
               Introduction of how I got into a coding bootcamp and
               why I wanted to give it a try.
-            </ArticleText>
+            </MainText>
           </a>
-        </ArticleStyle>
-        <ArticleStyle>
+        </ArticleContainer>
+        <ArticleContainer>
           <a
             href={SECONDARTICLE_URL}
             target="_blank"
             rel="noreferrer">
             <img src="images/medium2.jpg" alt="article" />
-            <ArticleText>October 2022</ArticleText>
+            <MainText>October 2022</MainText>
             <ArticleTitle>
             Good Is Not Good Enough
             </ArticleTitle>
-            <ArticleText>
+            <MainText>
               Do you have an acute
               imposter syndrome like me?
               Then this article is for you.
               It&apos;s about the feeling of being worse than I actually am
               and how I handle it.
-            </ArticleText>
+            </MainText>
           </a>
-        </ArticleStyle>
+        </ArticleContainer>
       </GridWrapper>
     </Wrapper>
   )
 }
 
-const ArticleStyle = styled.div`
+const ArticleContainer = styled.div`
   width: 90%;
   padding: 2%;
   margin-top: 5%;
@@ -57,8 +57,10 @@ const ArticleStyle = styled.div`
   border-style: solid; 
   border-image: 
     linear-gradient(
-      to top, 
+      to top,
       #003333, 
+      #648787,
+      #648787, 
       white
     ) 1;
   
@@ -66,7 +68,9 @@ const ArticleStyle = styled.div`
         border-image: 
     linear-gradient(
       to bottom, 
-      #003333, 
+      #003333,
+      #648787,
+      #648787,
       white
     ) 1;
   
@@ -96,17 +100,4 @@ const ArticleTitle = styled(SectionTitle)`
   padding: 5px;
   font-size: 15px;
   margin: 10px 0;  
-`
-
-const ArticleText = styled(Paragraph)`
-  line-height: 20px;
-  margin: 0;
-    
-  @media (min-width: 520px) and (max-width: 1023px){
-    font-size: 16px;
-  }
-      
-  @media (min-width: 1024px){
-    font-size: 18px;
-  } 
 `

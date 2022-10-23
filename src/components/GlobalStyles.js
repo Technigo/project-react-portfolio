@@ -51,10 +51,11 @@ export const GridWrapper = styled.section`
          
 `
 /* Styling of writing style (paragraph and headings) */
-export const Paragraph = styled.p`
+export const MainText = styled.p`
   font-size: 15px;
   color: ${(props) => (props.primary ? '#003333' : 'white')};
-  line-height: 30px;
+  line-height: 25px;
+  margin: 0;
 
   @media (min-width: 600px) and (max-width: 1023px){
     font-size: 16px;
@@ -64,20 +65,11 @@ export const Paragraph = styled.p`
     font-size: 18px;
   }
 `
-export const ProjectParagraph = styled(Paragraph)`
-  font-size: 15px;
-  line-height: 20px;
+export const ProjectText = styled(MainText)`
   margin: 2% 2%;
   display: inline;
-
-  @media (min-width: 600px) and (max-width: 1023px){
-    font-size: 16px;
-  }
-
-  @media (min-width: 1024px){
-    font-size: 18px;
-  }
 `
+
 export const Title = styled.h2`
   font-size: 18px;
   color: white;
@@ -119,7 +111,7 @@ export const OverlinedHeading = styled(Heading)`
   font-weight: 600;
 
   &:hover{
-    text-decoration: 2px underline white; 
+    text-decoration: 2px overline #102a29; 
   }
 `
 /* For icons containers and the icons button styling found in Header and Footer */
@@ -152,8 +144,6 @@ export const IconLink = styled.a`
   background: none;
   border: none;
   margin-right: 15px;
-  filter: ${(props) => (props.primary ? 'none' : 'invert(1)')};
-  
 
   img{
     height: 50px;
@@ -178,7 +168,7 @@ export const IconLink = styled.a`
 `
 
 /* Tags styling */
-export const TagIcons = styled.div`
+export const Tags = styled.div`
   margin: 5% 2%;
 
   p{
