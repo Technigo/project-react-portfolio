@@ -63,6 +63,7 @@ export const Title = styled.h3`
 `
 export const TagWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   `
 export const TagWrapperText = styled.p`
     font-family: "Roboto", sans-serif;
@@ -72,7 +73,7 @@ export const TagWrapperText = styled.p`
     font-size: .8rem;
     line-height: .9em;
     padding: .5em;
-    margin: .8em .2em .2em 0;
+    margin: .5em .2em .2em 0;
     border-radius: 5px;
   `
 export const TagRepo = styled(TagWrapperText)`
