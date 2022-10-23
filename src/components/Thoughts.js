@@ -54,7 +54,6 @@ const StyledProjectSection = styled.section`
 `
 
 const StyledOtherThoughts = styled(StyledOther)`
-
   h3 {
   font-size: 17px;
   font-weight: 700;
@@ -70,6 +69,5 @@ const StyledOtherThoughts = styled(StyledOther)`
   }
 @media (min-width: 992px) {
   width: 60vw;
-
 }
 `
