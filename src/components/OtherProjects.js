@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
-import { TagWrapper } from './FeaturedProjects';
+import { TagWrapper } from 'styles/ProjectStyles';
 
 const OtherProjects = (
   {

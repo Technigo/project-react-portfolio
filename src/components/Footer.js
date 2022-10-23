@@ -18,7 +18,7 @@ const Footer = () => {
         <FooterWrapper>
           {contactInfo.map((info) => {
             return (
-              <FooterCard>
+              <FooterCard key={info.title}>
                 <FooterInfo>
                   <FooterParagraphStyle>
                     <p tabIndex="0"><span>{info.title}</span></p>

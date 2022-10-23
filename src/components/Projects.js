@@ -3,12 +3,8 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 
-import {
-  OuterWrapperSection,
-  InnerWrapperSection,
-  BlueTitle,
-  WhiteTitle
-} from 'styles/ProjectStyles';
+import { OuterWrapperSection, InnerWrapperSection, BlueTitle, WhiteTitle } from 'styles/ProjectStyles';
+import { API_KEY, API_URL_GITHUB } from 'utils/Urls';
 
 import FeaturedProjects, { FeaturedProjectsWrapper } from './FeaturedProjects';
 import OtherProjects from './OtherProjects';
@@ -16,14 +12,20 @@ import OtherProjects from './OtherProjects';
 const Projects = () => {
   const [projectsFromGithub, setProjectsFromGithub] = useState([]);
 
-  const featuredProjectsToFilter = ['project-weather-app', 'project-happy-thoughts', 'project-music-releases', 'project-movies']
-  const otherProjectsToFilter = ['project-chat-bot', 'project-guess-who', 'project-news-site']
-
-  const API_KEY = 'FonnT'
-  const API_URL = `https://api.github.com/users/${API_KEY}/repos`
+  const featuredProjectsToFilter = [
+    'project-weather-app',
+    'project-happy-thoughts',
+    'project-music-releases',
+    'project-movies'
+  ]
+  const otherProjectsToFilter = [
+    'project-chat-bot',
+    'project-guess-who',
+    'project-news-site'
+  ]
 
   const fetchAPI = () => {
-    fetch(API_URL)
+    fetch(API_URL_GITHUB)
       .then((res) => res.json())
       .then((data) => setProjectsFromGithub(data))
       .then((data) => console.log(data))

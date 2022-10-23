@@ -32,19 +32,22 @@ const SkillsSection = () => {
         <SkillsWrapper>
           {skills.map((skill) => {
             return (
-              <SkillsCard>
+              <SkillsCard key={skill.name}>
                 <SkillsInfo>
                   <SkillsParagraphStyle>
-                    <div tabIndex="0">
+                    <div
+                      tabIndex="0">
                       <h4>{skill.name}</h4>
                     </div>
-                    <div tabIndex="0">
-                      {skill.tags.map((tag) => {
-                        return (
+                    {skill.tags.map((tag) => {
+                      return (
+                        <div
+                          key={tag}
+                          tabIndex="0">
                           <p>{tag}</p>
-                        )
-                      })}
-                    </div>
+                        </div>
+                      )
+                    })}
                   </SkillsParagraphStyle>
                 </SkillsInfo>
               </SkillsCard>

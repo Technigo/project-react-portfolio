@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { TagWrapper } from 'styles/ProjectStyles';
 
 const FeaturedProjects = (
   {
@@ -58,7 +59,6 @@ export const FeaturedProjectsWrapper = styled.div`
     justify-content: space-between;
   }
 `
-
 const FeaturedProjectsCard = styled.div`
   width: 100%;
   margin-top: 5vh;
@@ -67,7 +67,6 @@ const FeaturedProjectsCard = styled.div`
     width: 45%;  
   }
 `
-
 const FeaturedProjectsImageWrapper = styled.div`
   width: 100%;
   position: relative;
@@ -81,14 +80,12 @@ const FeaturedProjectsImageWrapper = styled.div`
     }
   }
 `
-
 const FeaturedProjectsImage = styled.img`
   width: 100%;
   height: 200px;
   filter: brightness(75%);
   object-fit: cover;    
 `
-
 const FeaturedProjectsImageTitleCentered = styled.h4`
   position: absolute;
   top: 45%;
@@ -99,7 +96,6 @@ const FeaturedProjectsImageTitleCentered = styled.h4`
   text-align: center;
   color: #ffffff;
 `
-
 const FeaturedProjectsInfo = styled.div`
   width: 100%;
   font-family: 'Roboto';
@@ -120,31 +116,4 @@ const FeaturedProjectsInfo = styled.div`
     color: #000000;
     margin: 0
   }
-`
-
-export const TagWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  & h5 {
-    color: #2b2e34;
-    font-weight: bold;
-    background-color: ${(props) => (props.grey ? '#bbbbbb' : '#b1d0e0')};
-    font-size: 12px;
-    line-height: 12px;
-    padding: 4px;
-    margin: 10px 0;
-    border-radius: 5px;    
-  }
-  @media (min-width: 668px) {
-    & h5 {      
-      font-size: 14px;
-      line-height: 14px;
-      padding: 6px;      
-    }
-    & :hover {
-        filter: ${(props) => (props.hover ? 'brightness(75%)' : 'brightness(100%)')};
-      }
-    }
 `

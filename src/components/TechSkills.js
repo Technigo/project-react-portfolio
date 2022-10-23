@@ -2,25 +2,43 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { OuterWrapperSection, InnerWrapperSection, BlueTitle } from 'styles/ProjectStyles';
+import { OuterWrapperSection, InnerWrapperSection, BlueTitle, TagWrapper } from 'styles/ProjectStyles';
 
 const TechSkills = () => {
+  const skillTags = [
+    'HTML',
+    'CSS',
+    'Javascript ES6',
+    'React',
+    'API:s',
+    'GitHub',
+    'mob-programming',
+    'pair-programming'
+  ]
+
   return (
     <OuterWrapperSection>
       <InnerWrapperSection>
         <BlueTitle tabIndex="0">
           TECH
         </BlueTitle>
-        <CenteredP tabIndex="0">
-          HTML, CSS, JavaScript ES6, React, API:s, mob-programming,
-          pair-programming, GitHub.
-        </CenteredP>
+        <Centered tabIndex="0">
+          <TagWrapper center margin>
+            {skillTags.map((skill) => {
+              return (
+                <h5 key={skill}>{skill}</h5>
+              )
+            })}
+          </TagWrapper>
+        </Centered>
       </InnerWrapperSection>
     </OuterWrapperSection>
   )
 }
 export default TechSkills;
 
-const CenteredP = styled.p`
-  text-align:center;
+const Centered = styled.h5`
+  display: flex;
+  align-items: center;
+  text-align: center;
 `

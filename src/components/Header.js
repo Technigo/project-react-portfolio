@@ -2,29 +2,30 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import linkedin from 'assets/linkedin-color-icon-white.svg'
-import github from 'assets/github-icon-white.svg'
-import stack from 'assets/stackoverflow-icon-white.svg'
+import linkedInIcon from 'assets/linkedin-color-icon-white.svg'
+import gitHubIcon from 'assets/github-icon-white.svg'
+import stackOverflowIcon from 'assets/stackoverflow-icon-white.svg'
 import profilePic from 'assets/profile-pic.jpg'
 
+import { gitHubLink, linkedInLink, stackOverflowLink } from 'utils/Urls';
 import { OuterWrapper, InnerWrapper } from 'styles/ProjectStyles';
 
 const Header = () => {
   const socialLinksHeader = [
     {
       name: 'Linkedin',
-      link: 'https://www.linkedin.com/in/david-ballester-font-3626bb8a/',
-      image: linkedin
+      link: linkedInLink,
+      image: linkedInIcon
     },
     {
       name: 'Github',
-      link: 'https://github.com/Fonnt',
-      image: github
+      link: gitHubLink,
+      image: gitHubIcon
     },
     {
       name: 'Stackoverflow',
-      link: 'https://stackoverflow.com/users/19384589/font',
-      image: stack
+      link: stackOverflowLink,
+      image: stackOverflowIcon
     }
   ]
   return (
@@ -37,7 +38,8 @@ const Header = () => {
               <a
                 href={socialLink.link}
                 target="_blank"
-                rel="noreferrer">
+                rel="noreferrer"
+                key={socialLink.name}>
                 <img
                   src={socialLink.image}
                   alt={socialLink.name} />
@@ -82,6 +84,11 @@ const Links = styled.div`
       height: 40px;
       margin: 2vw;
     }
+    @media (min-width: 1024px) {
+    :hover {
+      transform: scale(1.1)
+    }
+  }
   }
 `
 const ProfileImg = styled.div`
