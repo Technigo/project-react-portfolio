@@ -22,14 +22,14 @@ export const OtherProjects = () => {
   // Function to map over the tags and display them:
   const renderTags = (tags) => {
     return tags.map((tag) => {
-      return <Tag>{tag}</Tag>
+      return <Tag key={tag}>{tag.toUpperCase()}</Tag>
     })
   }
 
   return (
     remaining.map((project) => {
       return (
-        <a key={project.id} href="#" target="_blank" rel="noopener noreferrer">
+        <a key={project.id} href={project.svn_url} target="_blank" rel="noopener noreferrer">
           <SmallHeadline>{project.name.replace('project-', '').replace('-', ' ')}</SmallHeadline>
           <p>{project.description}</p>
           <Tags>{renderTags(project.topics)}</Tags>

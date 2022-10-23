@@ -48,8 +48,12 @@ export const ListWrapper = styled(InnerWrapper)`
 export const List = styled.ul`
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 29px;
+    font-size: 1rem;
+    line-height: 1.8rem;
     list-style-type: none;
     padding-bottom: 2.5rem;
+
+    @media (min-width: 668px) {
+      font-size: 1.1rem;
+    }
 `

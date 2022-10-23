@@ -9,11 +9,12 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Roboto", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI","Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-purple);
 }
 
 * {
@@ -28,11 +29,19 @@ code {
 }
 
 p {
-  font-family: 'Montserrat';
-  font-size: 1.06rem;
-  line-height: 1.8rem;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 a {
+  margin-top: 1rem;
   text-decoration: none;
+  color: var(--color-purple);
 }

@@ -23,7 +23,7 @@ export const MainProjects = () => {
   // Function to map over the tags and display them:
   const renderTags = (tags) => {
     return tags.map((tag) => {
-      return <Tag>{tag}</Tag>
+      return <Tag key={tag}>{tag.toUpperCase()}</Tag>
     })
   }
 

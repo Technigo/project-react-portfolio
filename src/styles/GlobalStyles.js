@@ -5,16 +5,23 @@ export const OuterWrapper = styled.section`
   background-color: ${(props) => props.backGroundcolor};
   text-align: center;
   padding: 2rem 0;
-`
 
-export const InnerWrapper = styled.section`
-  background-color: ${(props) => props.backGroundcolor};
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 2.5rem;
+  @media (min-width: 668px) {
+    padding: 3.5rem 0;
+  }
+`
+export const HeaderWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+`
+
+export const InnerWrapper = styled(HeaderWrapper)`
+  padding-top: 0rem;
+  background-color: ${(props) => props.backGroundcolor};
+  padding-bottom: 2.5rem;
 
   @media (min-width: 668px) {
     flex-direction: row;
@@ -28,19 +35,37 @@ export const AlignLeftWrapper = styled(InnerWrapper)`
   text-align: left;
 `
 
+export const Paragraph = styled.p`
+  color: ${(props) => props.color};
+  font-family: 'Montserrat';
+  font-size: 1.06rem;
+  line-height: 1.8rem;
+  padding-top: 0.8rem;
+
+  @media (min-width: 668px) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+`
+
 export const MainHeadline = styled.h2`
-  font-family: 'Montserrat, sans-serif';
+  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 1.35rem;
   line-height: 1.7rem;
   background-color: #BA4C08;
   padding: 2px;
-  border-radius: 0.3rem;
+  border-radius: 5px;
   display: inline-block;
   width: fit-content;
   text-align: center;
   color: white;
   margin-bottom: 2rem;
+
+  @media (min-width: 668px) {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
 `
 
 export const MediumHeadline = styled.h3`
@@ -50,23 +75,32 @@ export const MediumHeadline = styled.h3`
   font-size: 1.3rem;
   line-height: 1.6rem;
   margin: 1.5rem 0;
+
+  @media (min-width: 668px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const SmallHeadline = styled.h4`
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   color:  #BA4C08;
   text-transform: uppercase;
+
+  @media (min-width: 668px) {
+    font-size: 1.3rem;
+  }
 `
 
 export const NavBar = styled.nav`
   align-self: ${(props) => props.alignment};
+  margin-bottom: 1rem;
   
   img {
-    width: 3rem;
-    height: 3rem;
+    width: 3.3rem;
+    height: 3.3rem;
     padding: 0.3rem;
   }
   
@@ -83,31 +117,20 @@ export const NavBar = styled.nav`
 `
 
 export const ProjectCard = styled.section`
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2rem;
-  width: 85vw;
-  height: 35vh;
+  margin-top: 1rem;
   text-decoration: none;
   text-align: left;
 
   @media (min-width: 668px) and (max-width:1024px) {
     width: 35vw;
-    height: 35vh;
   }
 
   @media (min-width: 1025px) {
     cursor: pointer;
     width: 35vw;
-    height: 52vh;
-  }
-`
-
-export const ThoughtCard = styled(ProjectCard)`
-  @media (min-width: 668px) and (max-width:1024px) {
-    height: 48vh;
-  }
-
-  @media (min-width: 1025px) {
-    height: 65vh;
   }
 `
 
@@ -116,19 +139,17 @@ export const Image = styled.img`
 `
 
 export const Tags = styled.div`
+  display: flex;
   margin-top: 0.5rem;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   flex-wrap: wrap;
-  width: 80%;
-
 `
 
 export const Tag = styled.span`
   background-color: #8ECEDC;
   margin-right: 0.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   padding: 3px;
-  font-family: 'Roboto';
   border-radius: 5px;
-  color: #362836; 
 `

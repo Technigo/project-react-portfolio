@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavBar } from '../styles/GlobalStyles'
 
-export const SoMeLinks = ({ image1, image2, alignment }) => {
+export const SoMeLinks = ({ image1, image2, alignment, width, height }) => {
   // Display social media links that open in a new tab:
   return (
-    <NavBar alignment={alignment}>
+    <NavBar alignment={alignment} width={width} height={height}>
       <a href="https://www.linkedin.com/in/tina-bruce-9b1a0813a/" target="_blank" rel="noopener noreferrer">
         <img src={image1} alt="linkedin icon" />
       </a>
