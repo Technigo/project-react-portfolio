@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import GithubLogo from '../../Assets/Logo_github_white.svg';
-import InkedinLogo from '../../Assets/Logo_linkedin_white.svg';
 
-const Icons = () => {
+const Icons = ({ linkinLogotyp, githubLogotype }) => {
   const IconsStyle = styled.img` 
   width: 30px;
 
   
-  p {
+  .test {
     display: flex;
     flexdirection: row;
   }
@@ -22,7 +20,7 @@ const Icons = () => {
   }
   `
 
-  return (<><p><IconsStyle src={GithubLogo} alt="Github Logo" /></p><p><IconsStyle src={InkedinLogo} alt="LinkedIn Logo" /></p></>
+  return (<div className="test"><IconsStyle src={githubLogotype} alt="Github Logo" /><IconsStyle src={linkinLogotyp} alt="Linkedin Logo" /></div>
   );
 };
 export default Icons;

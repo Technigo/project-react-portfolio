@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
-// import GithubLogoBlack from '../Assets/Logo_github_black';
-import InkedinLogoBlack from '../Assets/Logo_linkedin_black.svg';
+import LinkinLogotypBlack from './Logo_linkedin_black.svg';
+import GithubLogotypeBlack from './Logo_github_black.svg';
+import Icons from './Shared/Icons';
 
 const ForMore = () => {
   const ForMoreStyle = styled.div`
@@ -27,7 +28,6 @@ const ForMore = () => {
   font-family: Roboto, sans-serif;
   font-size: 15px;
   font-weight: 600;
-  // line-height: 30px;
   margin: 10px 0 10px 0;
 }
 
@@ -41,15 +41,9 @@ const ForMore = () => {
         background="var(--fourthTitle)"
         title="For more" />
       <ForMoreStyle>
-        <div className="grid-box-icons">
-          <div className="icons-end-left" role="link">
-            <img className="icon" src={InkedinLogoBlack} alt="Go to Petras LinkedIn" />
-            <h2 className="project-title"><a href="https://www.linkedin.com/in/petra-eriksson-623b6a163/">LINKEDIN</a></h2>
-          </div>
-          {/* <div className="icons-end" role="link">
-            <img className="icon-picture" src={GithubLogoBlack} alt="Go to Petras Github" />
-            <h2 className="project-title"><a href="https://github.com/petrasson">GITHUB</a></h2>
-          </div> */}
+        <div className="icon-wrapper"><Icons
+          githubLogotype={GithubLogotypeBlack}
+          linkinLogotyp={LinkinLogotypBlack} />
         </div>
       </ForMoreStyle>
     </ContentWrapper>

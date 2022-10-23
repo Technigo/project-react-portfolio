@@ -13,7 +13,7 @@ font-family: Montserrat, sans-serif;
 line-height: 27px;
 
 .contact {
-  font-size: 17px;
+  font-size: 20px;
   padding: 40px 0 30px 0;
   font-weight: 700;
 }

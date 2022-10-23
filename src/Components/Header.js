@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import LinkinLogotypWhite from './Logo_linkedin_white.svg';
+import GithubLogotypeWhite from './Logo_github_white.svg';
+
 import ContentWrapper from './Shared/ContentWrapper';
 import Image from '../Assets/Petra.jpg';
 import Icons from './Shared/Icons';
@@ -20,11 +23,6 @@ const Header = () => {
     border: solid 2px var(--secondaryBackground);
     margin-top: 40px;
   }
-  
-  // .icon-wrapper{
-  //   border: solid 2px green;
-  //   }
-
 
   @media (min-width: 667px) and (max-width: 1024px) {
     position: relative;
@@ -64,7 +62,7 @@ const Header = () => {
     .icon-wrapper{
       border: solid 2px blue;
       position: absolute;
-      right: 10%;
+      right: 3%;
       top: 0%;
       }
 
@@ -73,7 +71,7 @@ const Header = () => {
   }
 `;
   const HeaderTextWrapper = styled.div`
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   border: solid 3px black;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
@@ -160,7 +158,9 @@ const Header = () => {
           <h2 className="header-subtitle">+ user research & design</h2>
         </HeaderTextWrapper>
         <div className="icon-wrapper">
-          <Icons />
+          <Icons
+            githubLogotype={GithubLogotypeWhite}
+            linkinLogotyp={LinkinLogotypWhite} />
         </div>
       </HeaderWrapper>
     </ContentWrapper>
