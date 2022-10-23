@@ -37,7 +37,6 @@ export const Icons = ({ boxWidth, linkWidth, linkedin, github, stackOverflow }) 
 export const StyledIcons = styled.img`
 margin: ${(props) => (props.iconMargin)};
 width: ${(props) => (props.iconWidth)};
-
 `
 
 const OuterBox = styled.div`
@@ -48,15 +47,13 @@ height: 3rem;
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 3px;
-padding: 10px;
 transition: 0.3s ease-in-out;
 
 &:hover {
 transform: scale(1.1);
 transform: translate(0%,-10%);}
-
 `
+
 const StyledLink = styled.a`
   display: flex;
   flex-direction: column;
@@ -76,6 +73,7 @@ p{
 
 svg {
   transition: 0.3s ease-in-out;
+  padding: 5px;
 
 }
 

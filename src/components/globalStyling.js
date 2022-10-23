@@ -47,10 +47,6 @@ export const TitleQuaternary = styled.h4`
     text-transform: uppercase;
     margin: 0.5rem 0rem;
 
-  &:hover {
-        text-decoration: underline;
-    }
-
 `
 
 export const IconGroup = styled.div`
@@ -60,6 +56,7 @@ export const IconGroup = styled.div`
     display: flex;
     width: 100%;
     justify-content:${(props) => (props.justifyContent)};
+    gap: 10px;
   `
 
 export const SingleTag = styled.p`
@@ -74,10 +71,12 @@ export const SingleTag = styled.p`
 `
 
 export const GridDiv = styled.div`
-    @media (min-width: 668px) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;    
+
+    @media (min-width: 668px) {
+        grid-template-columns: repeat(2, 1fr);
     }
  `

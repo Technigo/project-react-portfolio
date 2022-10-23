@@ -30,7 +30,7 @@ export const Projects = () => {
         <GridDiv>
           {FeaturedProjects.map((project) => (
             <ProjectCard key={project.id}>
-              <StyledDescriptionLink href={project.homepage}>
+              <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
                 <Overlay>
                   <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail/thumbnail.png`} alt="thumbnail of project" />
                   <OverlayText>
@@ -43,7 +43,7 @@ export const Projects = () => {
                   <p>{project.description}</p>
                 </ProjectDescription>
               </StyledDescriptionLink>
-              <StyledLink href={project.html_url}>👉 Github</StyledLink>
+              <StyledLink target="_blank" rel="noopener noreferrer" href={project.html_url}>👉 Github</StyledLink>
 
               <Tags>
                 {// eslint-disable-next-line react/no-array-index-key
@@ -57,13 +57,13 @@ export const Projects = () => {
           <TitleTertiary selectedColor="#2f694d" marginTop="10%">other projects</TitleTertiary>
           {OtherProjects.reverse().map((project) => (
             <ProjectCard key={project.id}>
-              <StyledDescriptionLink href={project.homepage}>
+              <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
                 <ProjectDescription>
                   <TitleQuaternary>{project.name}</TitleQuaternary>
                   <p>{project.description} <span> &gt;&gt;</span></p>
                 </ProjectDescription>
               </StyledDescriptionLink>
-              <StyledLink href={project.html_url}>👉 Github</StyledLink>
+              <StyledLink target="_blank" rel="noopener noreferrer" href={project.html_url}>👉 Github</StyledLink>
 
               <Tags>
                 {// eslint-disable-next-line react/no-array-index-key
@@ -83,7 +83,7 @@ margin-bottom: 2rem;
 
 export const StyledDescriptionLink = styled.a`
   text-decoration: none;
-  color: #666666;
+  color: black;
 `
 
 const StyledLink = styled.a`
@@ -92,6 +92,10 @@ const StyledLink = styled.a`
   font-weight: 700;
   text-transform: uppercase;
   color:#2f694d;
+
+  &:hover {
+        text-decoration: underline;
+    }
 `
 
 const ProjectDescription = styled.div`
@@ -107,9 +111,6 @@ span {
 }
 
 &:hover {
-  color: black;
-}
-&:hover h4{
         text-decoration: underline;
     }
 
