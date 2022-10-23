@@ -5,7 +5,7 @@ import Skills from 'components/Skills'
 import Summary from 'components/Summary'
 import Tech from 'components/Tech'
 import Thoughts from 'components/Thoughts'
-import WhatBeThis from 'components/WhatBeThis'
+import ForMore from 'components/ForMore'
 import React from 'react'
 
 export const App = () => {
@@ -17,7 +17,7 @@ export const App = () => {
       <Projects />
       <Thoughts />
       <Skills />
-      <WhatBeThis />
+      <ForMore />
       <Contact />
     </>
   )

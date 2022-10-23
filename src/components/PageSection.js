@@ -1,9 +1,8 @@
-import React from 'react'
+import styled from 'styled-components'
 
-const PageSection = ({ styles = {}, children }) => (
-  <section style={{ padding: '60px 0', ...styles }}>
-    {children}
-  </section>
-)
+const PageSection = styled.section`
+  padding: 60px 0;
+  background-color: ${(props) => props.backgroundColor || 'transparent'};
+`
 
 export default PageSection

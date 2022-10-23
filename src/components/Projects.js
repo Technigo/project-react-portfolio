@@ -1,20 +1,42 @@
 import React from 'react'
+import { Heading, Subheading } from './ComponentLibrary'
 import PageSection from './PageSection'
 import Project from './Project'
 import Wrapper from './Wrapper'
+import projectData from '../projects.json'
 
 const Projects = () => {
   return (
-    <PageSection>
+    <PageSection backgroundColor="var(--sectionbg)">
       <Wrapper>
-        <h2>Featured Projects</h2>
-        <Project title="Test 1" featured />
-        <Project title="Test 2" featured />
-        <Project title="Test 3" featured />
-        <Project title="Test 4" featured />
-        <h2>Other Projects</h2>
-        <Project title="Test 1" />
-        <Project title="Test 2" />
+        <Heading>Featured Projects</Heading>
+        <div style={{ gridTemplateColumns: '1fr 1fr', display: 'grid', gap: 30 }}>
+
+          {projectData.filter((project) => project.featured).map((project) => (
+            <Project
+              key={project.name}
+              name={project.name}
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              image={project.image}
+              url={project.url}
+              featured />
+          ))}
+        </div>
+
+        <Subheading>Other Projects</Subheading>
+        {projectData.filter((project) => !project.featured).map((project) => (
+          <Project
+            key={project.name}
+            name={project.name}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            image={project.image}
+            url={project.url} />
+        ))}
+
       </Wrapper>
     </PageSection>
   )
