@@ -1,0 +1,31 @@
+{
+  "bigThoughts": [
+    {
+      "id": "1",
+      "monthYear": "October 2022",
+      "title": "From cleaning toilets to cleaning up my own code",
+      "overlayText": "Changing Careers",
+      "description": "This August I joined a frontend developer bootcamp. In 22 weeks I am going to learn enough about frontend development to enable a career change into tech and I am loving every second of it.",
+      "image": "https://miro.medium.com/max/1024/1*ag_0Ck6C2msskyeNuWjp9g.jpeg",
+      "link": "https://medium.com/@elin.segelov/from-cleaning-toilets-to-cleaning-up-my-own-code-via-a-few-years-of-social-work-33e0aaf20722"
+    },
+    {
+      "id": "2",
+      "monthYear": "Coming soon",
+      "title": "Accessibility and code",
+      "overlayText": "Accessibility and code",
+      "description": "",
+      "image": "https://picsum.photos/200/300",
+      "link": "#"
+    }
+  ],
+  
+  "otherThoughts": [
+    {
+      "id": "1",
+      "monthYear": "Coming soon",
+      "title": "Aquiering a hobby",
+      "link": "#"
+    }
+  ]
+}

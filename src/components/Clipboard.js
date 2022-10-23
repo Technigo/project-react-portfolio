@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const ClipBoard = () => {
   const [copied, setCopied] = useState(false);
@@ -22,13 +22,11 @@ const ClipBoard = () => {
   }, []); // empty dependency array
 
   return (
-    <div className="app">
-      <section className="section">
-        {copied ? <CopiedMessage aria-live="assertive">Copied!</CopiedMessage> : null}
-        <CopyToClipboard onCopy={onCopy} text="elin.segelov@gmail.com">
-          <ContactButton type="button"><span className="sr-only">Click to copy e-mail</span>elin.segelov@gmail.com</ContactButton>
-        </CopyToClipboard>
-      </section>
+    <div>
+      {copied ? <CopiedMessage aria-live="assertive">Copied!</CopiedMessage> : null}
+      <CopyToClipboard onCopy={onCopy} text="elin.segelov@gmail.com">
+        <ContactButton type="button"><span className="sr-only">Click to copy e-mail</span>elin.segelov@gmail.com</ContactButton>
+      </CopyToClipboard>
     </div>
   );
 }
@@ -50,9 +48,9 @@ const CopiedMessage = styled.p`
   background-color: var(--secondary);
   width: 4.5rem;
   box-shadow: 2px 2px 2px var(--heading);
-  left: 0;
-  right: 0;
-  bottom: 35%;
+  
+  right: -5rem;
+  bottom: -0.2rem;
   border-radius: 0.3rem;
   color: var(--heading) !important;
   

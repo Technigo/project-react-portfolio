@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { LogoContainer, StyledLogo } from './ReusableStyles.style';
 
 const ForMore = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
-    <section className="for-more">
+    <section>
       <h2>For more</h2>
-      <StyledDarkLogoContainer className="FMlogo-container">
+      <StyledDarkLogoContainer>
         <a href="https://www.linkedin.com/in/elin-s-683a867a/" aria-label="Link to LinkedIn profile">
-          <DarkLogo src={linkedinLogo} className="logo dark-logo" alt="LinkedIn logo" />
+          <DarkLogo src={linkedinLogo} alt="LinkedIn logo" />
         </a>
         <a href="https://github.com/ElinSegelov" aria-label="Link to Github profile">
-          <DarkLogo src={githubLogo} className="logo dark-logo" alt="Github logo" />
+          <DarkLogo src={githubLogo} alt="Github logo" />
         </a>
         {/* <a href="https://stackoverflow.com/c/technigo/users/375" aria-label="Link to Stack Overflow profile">
-          <DarkLogo src={stackOverflowLogo} className="logo dark-logo" alt="Stack Overflow logo" />
+          <DarkLogo src={stackOverflowLogo} alt="Stack Overflow logo" />
         </a> */}
       </StyledDarkLogoContainer>
     </section>

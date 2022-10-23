@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import FeaturedProject from './FeaturedProject';
 import OtherProject from './OtherProject';
-import { GridWrapper, SubHeading } from './ReusableStyles.style';
+import { GridWrapper, SubHeading, StyledOther } from './ReusableStyles.style';
 import { featuredForDisplay, otherForDisplay } from '../utils/projectsForDisplay'
 
 const Projects = () => {
@@ -47,15 +47,15 @@ const Projects = () => {
   })
 
   return (
-    <StyledProjectSection className="featured-projects bg-darker show-off">
-      <h2 className="grid-heading">Featured Projects</h2>
-      <GridWrapper className="grid-wrapper projects-wrapper">
+    <StyledProjectSection>
+      <h2>Featured Projects</h2>
+      <GridWrapper>
         {allFeatured}
       </GridWrapper>
-      <StyledOtherWrapper className="other-wrapper">
-        <SubHeading className="sub-heading">Other Projects</SubHeading>
+      <StyledOther>
+        <SubHeading>Other Projects</SubHeading>
         {allOther}
-      </StyledOtherWrapper>
+      </StyledOther>
     </StyledProjectSection>
   )
 }
@@ -67,6 +67,7 @@ const StyledProjectSection = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-self: center;
 `
 const StyledOtherWrapper = styled.div`
   display: flex;
@@ -76,6 +77,10 @@ const StyledOtherWrapper = styled.div`
   
   @media (min-width: 600px) {
     justify-content: left;
-    width: 60vw;
+    width: 80vw;
     gap: 1.5rem;
-  }`
+  }
+  @media (min-width: 900px) {
+    width: 60vw;
+  }
+  `

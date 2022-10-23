@@ -1,16 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import styled from 'styled-components';
-import { DarkerContainer } from './DarkerContainer.syled';
+import styled from 'styled-components/macro';
+import { ContentWrapper, DarkerContainer } from './ReusableStyles.style';
 
 const Intro = () => {
   return (
-    <StyledIntro className="intro bg-darker">
-      <p className="intro-text">
-        <Line className="line" /><Dot className="dot" />
+    <StyledIntro>
+      <ContentWrapper>
+        <p>
+          <Line /><Dot />
         Hi there! I'm a frontend developer with fullstack ambition and a background in social
         work. I am passionate about code and have a big interest in CSS.
-      </p>
+        </p>
+      </ContentWrapper>
     </StyledIntro>
   )
 }
@@ -18,10 +20,8 @@ const Intro = () => {
 export default Intro;
 
 const StyledIntro = styled(DarkerContainer)`
-  align-items: center;
-  display: flex;
   height: 40vh;
-  justify-content: center;
+
 
 p {
   letter-spacing: 1px;

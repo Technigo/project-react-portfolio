@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import StyledProject, { ImageContainerWithOverlay } from './Project.style';
 import { StyledTagWrapper, StyledRepoTag, OverlayText } from './ReusableStyles.style';
 
@@ -21,20 +21,22 @@ const FeaturedProject = (
   const titleWithSpaces = ((projectTitle.split('-')).join(' '))
 
   return (
-    <StyledFeaturedProject className="project">
+    <StyledFeaturedProject>
       <a href={deployedLink}>
-        <ImageContainerWithOverlay className="project-image">
-          <div className="project-image-overlay" />
+        <ImageContainerWithOverlay c>
+          <div className="overlay" />
           <img src={`https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/code/src/assets/images/thumbnail.webp`} alt={titleWithSpaces} />
-          <OverlayText className="overlay-text" aria-hidden="true">{titleWithSpaces}</OverlayText>
+          <OverlayText aria-hidden="true">{titleWithSpaces}</OverlayText>
         </ImageContainerWithOverlay>
         <h3>{titleWithSpaces}.</h3>
         <p>{projectDescription}</p>
-        <StyledTagWrapper className="tag-wrapper">
+        <StyledTagWrapper>
           {projectTags}
         </StyledTagWrapper>
       </a>
-      <StyledRepoTag aria-label={`Link to ${titleWithSpaces} repository on Github`} href={repoLink} className="tag-wrapper"> <p className="repo-tag">Repo on GitHub</p></StyledRepoTag>
+      <StyledRepoTag aria-label={`Link to ${titleWithSpaces} repository on Github`} href={repoLink}>
+        <p>Repo on GitHub</p>
+      </StyledRepoTag>
     </StyledFeaturedProject>
   )
 }
@@ -42,5 +44,5 @@ const FeaturedProject = (
 export default FeaturedProject;
 
 const StyledFeaturedProject = styled(StyledProject)`
-
+max-width: 500px;
 `

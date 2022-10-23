@@ -1,16 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ClipBoard from './Clipboard';
 import { NoBackgroundH2 } from './ReusableStyles.style';
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <NoBackgroundH2 className="footer-heading">Contact</NoBackgroundH2>
-      <p>Elin Segelöv</p>
-      <ClipBoard>
-        <p><span className="sr-only">E-mail</span>elin.segelov@gmail.com</p>
-      </ClipBoard>
+      <NoBackgroundH2>Contact</NoBackgroundH2>
+      <ContactWrapper>
+        <p>Elin Segelöv</p>
+        <ClipBoard>
+          <p><span className="sr-only">E-mail</span>elin.segelov@gmail.com</p>
+        </ClipBoard>
+      </ContactWrapper>
     </StyledFooter>
   )
 }
@@ -21,8 +23,8 @@ const StyledFooter = styled.footer`
   background-color: var(--ligtherGreen);
   padding-bottom: 40px;
   text-align: center;
-  position: relative;
-  //height: 100%;
+  
+
 
 p {
   color: #FFF;
@@ -30,4 +32,10 @@ p {
   font-family: 'Montserrat', serif;
   margin: 0 auto;
 }
+`
+
+const ContactWrapper = styled.div`
+position: relative;
+width: fit-content;
+margin: 0 auto;
 `

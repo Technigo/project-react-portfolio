@@ -1,8 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import StyledProject, { ImageContainerWithOverlay } from './Project.style';
 import MoreArrows from './MoreArrows';
-import { Date } from './ReusableStyles.style';
+import { Date, OverlayText } from './ReusableStyles.style';
 
 const BigThought = (
   {
@@ -16,13 +16,13 @@ const BigThought = (
 ) => {
   return (
     <a href={thoughtLink}>
-      <StyledBigThoughtWrapper className="project">
-        <ImageContainerWithOverlay className="project-image">
-          <div className="project-image-overlay" />
-          <img src={thoughtImage} className="image-of-project" alt={thoughtTitle} />
-          <p className="overlay-text" aria-hidden="true">{overlayText}</p>
+      <StyledBigThoughtWrapper>
+        <ImageContainerWithOverlay>
+          <div className="overlay" />
+          <img src={thoughtImage} alt={thoughtTitle} />
+          <OverlayText aria-hidden="true">{overlayText}</OverlayText>
         </ImageContainerWithOverlay>
-        <Date className="date">{publishDate}</Date>
+        <Date>{publishDate}.</Date>
         <h3>{thoughtTitle}.</h3>
         <p className="thought-description">
           {thoughtDescription} <MoreArrows />

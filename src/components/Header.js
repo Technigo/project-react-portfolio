@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import profileImage from '../images/portrait.webp';
 import heroImage from '../images/hero-img.webp'
 import Logos from './Logos';
@@ -7,18 +7,18 @@ import { NoBackgroundH2 } from './ReusableStyles.style';
 
 const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
-    <StyledHeader className="hero">
-      <HeroContainer className="hero-container">
-        <HeroText className="hero-text">
-          <h3 className="name-heading">Portfolio: Elin Segelöv</h3>
+    <StyledHeader>
+      <HeroContainer>
+        <HeroText>
+          <h3>Portfolio: Elin Segelöv</h3>
           <h1>frontend <br /> developer</h1>
-          <NoBackgroundH2 className="">with a background in social work</NoBackgroundH2>
+          <NoBackgroundH2>with a background in social work</NoBackgroundH2>
         </HeroText>
         <Logos
           githubLogo={githubLogo}
           linkedinLogo={linkedinLogo}
           stackOverflowLogo={stackOverflowLogo} />
-        <PortraitImg src={profileImage} className="portrait-img" alt="Portrait" />
+        <PortraitImg src={profileImage} alt="Portrait" />
       </HeroContainer>
     </StyledHeader>
   )

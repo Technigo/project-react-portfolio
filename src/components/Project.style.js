@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 const StyledProject = styled.div`
   margin: 1rem 0; 
@@ -23,7 +23,6 @@ const StyledProject = styled.div`
   }
 }
 `
-
 export default StyledProject;
 
 export const ImageContainerWithOverlay = styled.div`
@@ -37,13 +36,11 @@ export const ImageContainerWithOverlay = styled.div`
   width: 100%;
 
 img {
- 
   max-width: 500px;
   max-height: 300px;
   object-fit: cover;
   width: 100%; 
   aspect-ratio: 1.6/1;
-
 }
 
 div {
@@ -52,11 +49,6 @@ div {
   position: absolute;
   transition: 0.5s ease;
   width: 100%;
-}
-.overlay-text {
-  font-size: 2rem;
-  font-weight: 400;
-  position: absolute; 
 }
 
 @media (min-width: 1200px) {
