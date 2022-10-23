@@ -18,6 +18,7 @@ export const Tech = () => {
 export const TechOuterWrapper = styled.div`
 width: 100%;
 height: 40vh;
+min-height: 350px;
 display: flex;
 justify-content: center;
 align-content: center;
@@ -46,5 +47,4 @@ export const TechInnerWrapper = styled.div`
 @media (min-width: 1024px) {
   font-size: 20px;
 }
-
 `;

@@ -32,5 +32,20 @@ h5 {
   background-color: var(--blue);
   padding: 5px 10px;
   border-radius: 3px;
-  margin: 5px;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
 }
+
+@media (min-width: 668px) {
+  
+  h5{
+    font-size:25px;
+  }
+  
+ }
+
+ @media (min-width: 1024px) {
+   h5 {
+    font-size: 27px;
+   }
+  }

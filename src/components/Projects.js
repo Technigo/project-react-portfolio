@@ -83,8 +83,6 @@ const ProjectCard = styled.a`
   gap: 5px;
   text-decoration: none;
   position: relative;
-
-
 `;
 
 const ThumbnailWrapper = styled.div`
@@ -100,7 +98,7 @@ const ThumbnailWrapper = styled.div`
   background-image: linear-gradient(180deg, #1c232580, #1c232580),
     url(${(props) => props.url});
   &:hover {
-    background-image: /*linear-gradient(#1c23255e, #1c23255e),*/
+    background-image: linear-gradient(#1c23255e, #1c23255e),
       url(${(props) => props.url});
   }
 `;
@@ -130,17 +128,22 @@ const ProjectInfoHeader = styled.h3`
 const ProjectInfo = styled.p`
   font-family: Montserrat, sans-serif;
   color: #293a4f;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   margin: 0;
 
   ${ProjectCard}:hover & {
     text-decoration: underline;
+
   }
 
   @media (min-width: 668px) {
-   
+   font-size: 18px
   }
+
+  @media (min-width: 1024px) {
+    font-size: 20px
+   }
 `;
 
 const ProjectTags = styled.li`
