@@ -5,7 +5,7 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 export const Intro = () => {
   const IntroText = styled.section`
     background-color: #dfd3c38a;
-    color: #b38550;
+    color: #F090D9;
     text-align: center;
     padding: 80px;
     font-size: 18px;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/Pins.jpg'
+import BackgroundImage from '../images/Watercolor.jpg'
 import Linkedin from '../icons/linkedin60.png';
 import Github from '../icons/github60.png';
 
@@ -15,6 +15,7 @@ export const Header = () => {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border-bottom: 3px solid #F090D9;
 `;
 
   const BackgroundImg = styled.img`
@@ -40,7 +41,7 @@ export const Header = () => {
       padding: 0;
       margin: 0;
 
-    .h2 {
+    h2 {
       font-weight: 500;
       font-size: 18px;
       line-height: 18px;
@@ -54,7 +55,7 @@ export const Header = () => {
       margin: 0;
     }
 
-    .h3 {
+    h3 {
       font-weight: bold;
       font-size: 28px;
       line-height: 40px;

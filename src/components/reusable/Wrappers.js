@@ -5,11 +5,11 @@ export const OuterWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`
+`;
 export const InnerWrapper = styled.div`
     width: 100%;
     margin: 0 auto;
-`
+`;
 
 export const SectionTitle = styled.div`
     display: table;
@@ -22,4 +22,21 @@ export const SectionTitle = styled.div`
     margin: 20px auto;
     padding: 4px 8px;
     font-weight: bold;
-`
+`;
+
+export const Tag = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    p {
+    background-color: var(---highlight)
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 12px;
+    padding: 3px 5px;
+    margin: 3px;
+  }
+  `;
