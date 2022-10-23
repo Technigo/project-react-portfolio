@@ -49,7 +49,7 @@ const Headlines = styled.div`
     position: absolute;
     width: 220px;
     height: 50%;
-    top: 30%;
+    top: 40%;
     letter-spacing: 0.04em;
 
       h1 {
@@ -72,7 +72,7 @@ const Headlines = styled.div`
     
     @media (min-width: 668px) {
       width: 100%;
-            
+
       h2 { 
         text-shadow: none;
         width: 250px;
