@@ -4,7 +4,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import imgCode from 'images/code.pink-1.png'
+/* import imgCode from 'images/code.pink-1.png' */
 import { Container } from './styled-components/GlobalStyles'
 
 const ArticleWrapper = styled.div`
@@ -44,10 +44,41 @@ const ProyectsTextGroup = styled.div`
   letter-spacing: 0.01em;
   padding-top: 24px;
 `
+const ImgGroup = styled.div`
+position: relative;`
+
 const ImgCode = styled.img`
   width: 100%;
+  height: 250px;
   display: inherit;
   transition: 0.5s ease;
+`
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(116, 141, 166, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+    
+  &:hover {
+    background-color: transparent;
+}`
+
+const OverlayName = styled.h2`
+color: black;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+margin-bottom: 0px;
+
+&:hover {
+  color: transparent;
+  
 `
 
 const Projects = () => {
@@ -81,12 +112,12 @@ const Projects = () => {
           {filteredRepo.map((repo) => (
             <Article className="article-project" key={repo.full_name}>
               <a href={repo.homepage} target="_blank" rel="noreferrer">
-                <div className="project-img-group">
-                  <ImgCode src={imgCode} />
-                  <div className="overlay">
-                    <h2 className="project-img-text-overlay">{repo.name}</h2>
-                  </div>
-                </div>
+                <ImgGroup>
+                  <ImgCode src={`https://raw.githubusercontent.com/Sailornina/${repo.name}/${repo.default_branch}/screenshot.png`} />
+                  <Overlay>
+                    <OverlayName>{repo.name}</OverlayName>
+                  </Overlay>
+                </ImgGroup>
                 <ProyectsTextGroup>
                   <p>{repo.description}</p>
                   <Tags>
