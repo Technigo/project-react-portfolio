@@ -43,6 +43,7 @@ const StyledOtherProjects = styled(Container)`
 export const ProjectWrapper = styled.div`
   margin-bottom: 1.5em;
   max-width: 80vw;
+  line-height: 1.2rem;
 
   @media (min-width: 667px) and (max-width: 1024px) {
     width: 60vw;
@@ -58,20 +59,20 @@ export const Title = styled.h3`
   font-size: 1.3rem;
   text-transform: uppercase;
   text-align: left;
-  margin: 10px 0 0;
+  margin: .5rem 0;
 `
 export const TagWrapper = styled.div`
   display: flex;
   `
 export const TagWrapperText = styled.p`
-   font-family: "Roboto", sans-serif;
-    color: #fff;
+    font-family: "Roboto", sans-serif;
+    color: white;
     font-weight: bold;
     background-color: var(--color-darkGreen);
-    font-size: 12px;
-    line-height: 12px;
-    padding: 5px;
-    margin: 3px 3px 3px 0;
+    font-size: .8rem;
+    line-height: .9em;
+    padding: .5em;
+    margin: .8em .2em .2em 0;
     border-radius: 5px;
   `
 export const TagRepo = styled(TagWrapperText)`

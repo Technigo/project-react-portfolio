@@ -13,24 +13,26 @@ const FeaturedProjects = () => {
         <div>
           {projects.slice(0, 2).map((project) => (
             <FeaturedProjectWrapper key={project.id}>
-              <a href={project.netlify_link} target="_blank" rel="noreferrer">
-                <ImgWrapper>
-                  <Image src={project.project_img} alt="project" />
-                  <Overlay>{project.title}</Overlay>
-                </ImgWrapper>
-                <Title>{project.title}</Title>
-                <p>{project.project_description}</p>
-              </a>
-              <TagWrapper>
-                {project.tags.map((tag) => (
-                  <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
-                ))}
-                <a
-                  href={project.repo_link}
-                  target="_blank"
-                  rel="noreferrer"><TagRepo>GitHub Repo</TagRepo>
+              <div>
+                <a href={project.netlify_link} target="_blank" rel="noreferrer">
+                  <ImgWrapper>
+                    <Image src={project.project_img} alt="project" />
+                    <Overlay>{project.title}</Overlay>
+                  </ImgWrapper>
+                  <Title>{project.title}</Title>
+                  <p>{project.project_description}</p>
                 </a>
-              </TagWrapper>
+                <TagWrapper>
+                  {project.tags.map((tag) => (
+                    <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
+                  ))}
+                  <a
+                    href={project.repo_link}
+                    target="_blank"
+                    rel="noreferrer"><TagRepo>GitHub Repo</TagRepo>
+                  </a>
+                </TagWrapper>
+              </div>
             </FeaturedProjectWrapper>
           ))}
         </div>
@@ -43,23 +45,16 @@ export default FeaturedProjects
 
 const FeaturedProjectsStyled = styled(Container)`
   background-color: var(--color-grey);
-  line-height: 1.5em;
+  line-height: 1.2em;
 `
 const FeaturedProjectWrapper = styled(ProjectWrapper)`
-  margin-bottom: 3em;
-  max-width: 80vw;
-
-  @media (min-width: 667px) and (max-width: 1024px) {
-    width: 60vw;
-    
-  }
-  @media screen and (min-width: 1024px) {
-    width: 40vw;
-   /*  display: grid; 
+    display: grid;
+    grid-template-columns: 1fr;
+    position:relative;
+  
+  @media (min-width: 1025px) {
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;  */
+    column-gap: 3vw;
   }
 `
 const ImgWrapper = styled.div`

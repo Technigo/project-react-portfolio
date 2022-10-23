@@ -2,7 +2,7 @@
     {
           "title": "Weather App",
           "id": 1,
-          "project_description": "Web app built in JavaScript using data from Open Weather API. Pair-programmed.",
+          "project_description": "A weather app that tells today's weather and a 5-day forecast using data from Open Weather API. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-weather-app",
           "netlify_link": "https://stockholm-weather.netlify.app/",
           "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
@@ -100,7 +100,7 @@
       {
           "title": "Survey",
           "id": 5,
-          "project_description": "Lorem ipsum osv osv.",
+          "project_description": "Survey made with React to practice useState and conditional rendering.",
           "repo_link": "https://github.com/juliaostedt/project-survey",
           "netlify_link": "https://box-subscription-survey.netlify.app/",
           "project_img": "",
@@ -127,7 +127,7 @@
          {
           "title": "Happy Thoughts",
           "id": 6,
-          "project_description": "Lorem ipsum osv osv.",
+          "project_description": "A responsive website fetching and sending data to show happy thoughts.",
           "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
           "netlify_link": "https://happy-thoughts-julia.netlify.app/",
           "project_img": "",
@@ -153,7 +153,7 @@
       {
           "title": "Top Rated Movies",
           "id": 7,
-          "project_description": "Lorem ipsum osv osv. Pair-programmed.",
+          "project_description": "A site built in React where you can see an overview of top-rated movies. Pair-programmed.",
           "repo_link": "https://github.com/juliaostedt/project-movies",
           "netlify_link": "https://top-rated-movies-2afa29.netlify.app/",
           "project_img": "",
