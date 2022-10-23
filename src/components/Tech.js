@@ -1,11 +1,13 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
-import { OuterWrapper, InnerWrapper, SectionHeader } from './GlobalStyleComponents';
+import { OuterWrapperSecond, InnerWrapper, SectionHeader } from './GlobalStyleComponents';
+
+/* Tech component, that show all the tech i know, with some words with changed colors made with the span */
 
 const Tech = ({ color }) => {
   return (
-    <OuterWrapper>
+    <OuterWrapperSecond>
       <InnerWrapper>
         <AboutMeContainer>
           <SectionHeader color={color}>TECH</SectionHeader>
@@ -15,9 +17,11 @@ const Tech = ({ color }) => {
           </AboutMeBox>
         </AboutMeContainer>
       </InnerWrapper>
-    </OuterWrapper>
+    </OuterWrapperSecond>
   );
 };
+
+/* Techs styled components */
 
 const AboutMeContainer = styled.div`
 align-items: center;
@@ -32,7 +36,13 @@ const AboutMeBox = styled.div`
 `;
 
 const TechParagraph = styled.p`
-    color: blue;
+    color: black;
+    font-size: 24px;
+    line-height: 1.8;
+  
+    @media (max-width: 800px) {
+      font-size: 16px;
+      line-height: 1.4;
 `;
 
 const SpanColored = styled.span` 

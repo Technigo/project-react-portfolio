@@ -7,24 +7,26 @@ import heroGithub from './images/GitHub-header.png';
 import StackOverflowHeader from './images/StackOverflowHeader.png';
 import profileImage from './images/profileImage.jpg';
 
+/* Header component thats responsive depening where you view it,  */
+
 const Header = () => {
   return (
     <HeaderContainer>
       <HeaderIcons>
-        <a href="https://stately-snickerdoodle-c346a9.netlify.app/www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+        <LineHeaderIcons href="https://stately-snickerdoodle-c346a9.netlify.app/www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
           <img src={heroLinkedin} alt="LinkedIn icon for the header" />
-        </a>
-        <a href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
+        </LineHeaderIcons>
+        <LineHeaderIcons href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
           <img src={heroGithub} alt="Github icon for the header" />
-        </a>
-        <a href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
+        </LineHeaderIcons>
+        <LineHeaderIcons href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
           <img
             src={StackOverflowHeader}
             alt="Stack Overflow icon for the header" />
-        </a>
+        </LineHeaderIcons>
       </HeaderIcons>
       <HeaderTitle>
-        <h3>Portfolio: Mrs Cakety Cakes</h3>
+        <h3>Portfolio: Viktor Svensson</h3>
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </HeaderTitle>
@@ -34,6 +36,8 @@ const Header = () => {
     </HeaderContainer>
   );
 };
+
+/* My styled components for Header */
 
 const HeaderContainer = styled.header`
   background-image: url(${backimgbasicbrush});
@@ -56,10 +60,7 @@ const HeaderIcons = styled.div`
   position: absolute;
   right: 10%;
   top: 8%;
- 
-   a:hover {
-    background-color: transparent;
-  }
+  background: transparent;
 
   img{
     height: 50px;
@@ -85,6 +86,12 @@ const HeaderIcons = styled.div`
   }
 }  
 }
+`;
+
+const LineHeaderIcons = styled.a`
+  background: transparent;
+  text-decoration: none;
+
 `;
 
 const HeaderTitle = styled.div`

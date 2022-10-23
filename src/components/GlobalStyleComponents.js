@@ -1,15 +1,44 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+/* Fonts for the page */
+export const GlobalFonts = createGlobalStyle`
+
+  body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f2eb;
+    }
+  }
+`;
+
+/* All the global styles */
 
 export const OuterWrapper = styled.section` 
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f8f2eb;
+  padding: 5% 0 5% 0;
+`;
+
+export const OuterWrapperSecond = styled.section` 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5ede3;
+  padding: 5% 0 5% 0;
 `;
 
 export const InnerWrapper = styled.section` 
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
+
+    @media (max-width: 800px) {
+      width: 80%;
+    }
 `;
 
 export const SectionHeadline = styled.h2`
@@ -56,7 +85,7 @@ export const ProjectTags = styled.li`
 `;
 
 export const Wrapper = styled.div`
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -68,6 +97,7 @@ export const Wrapper = styled.div`
   @media (max-width: 800px) {
     font-size: 16px;
     line-height: 1.4;
+    width: 80%
   }
 `;
 
@@ -163,4 +193,8 @@ export const ProjectInfo = styled.p`
 export const SubParagraphArrows = styled.span`
   color: #54BAB9;
   font-weight: bold;
+`;
+
+export const LinkNoLine = styled.a`
+    text-decoration: none;
 `;
