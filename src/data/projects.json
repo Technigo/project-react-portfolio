@@ -11,7 +11,7 @@
     {
       "title": "Music",
       "title-description": "Website showing new album and single releases.",
-      "project-description": "gihaeöoihgaelrugnlaerug",
+      "project-description": "A page based on Spotify API",
       "repo-name": "project-music-releases",
       "netlify-name": "https://neah-and-linnea-music-releases.netlify.app",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API"],

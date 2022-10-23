@@ -54,7 +54,7 @@ const InnerWrapper = styled.div`
 const MoreProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 `;
 
