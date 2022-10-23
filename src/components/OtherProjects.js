@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
 import data from '../data.json'
-import Github from '../icons/github30.png';
+import Github from '../icons/gitpink30.png';
 
 export const OtherProjects = () => {
   const OtherProjectSection = styled.div`
     padding: 50px 0;
+    background-color: white;
   `;
 
   const OtherProjectWrapper = styled.div`
@@ -45,14 +46,14 @@ export const OtherProjects = () => {
           <OtherProjectWrapper>
             <OtherProjectsContent>
               {data.map((item) => (
-                item.id > 2 ? (
+                item.id > 4 ? (
                   <OtherProjectsList key={item.title}>
                     <a
                       href={item.netlify}
                       alt="project landingpage"
                       target="_blank"
                       rel="noopener noreferrer">
-                      <p>{item.title}</p>
+                      <h4>{item.title}</h4>
                     </a>
                     <p>{item.description}</p>
                     <a

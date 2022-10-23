@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
-import ThoughtsImg from '../images/Community.jpg';
+import ThoughtsImg from '../images/Yellow.png';
 
 export const Thoughts = () => {
   const ThoughtsSection = styled.div`
@@ -10,14 +10,14 @@ export const Thoughts = () => {
     justify-content: center;  
     text-align: center;
     padding: 50px 0;
-    background-color: rgba(208, 203, 203, 0.572);
-    border-top: solid #c8aa89c6 1px;
-    border-bottom: solid #c8aa89c6 1px;
+    background-color: white;
   `;
   const ArticleWrapper = styled.article`
     width: 515px;
     color: #fcfaf88a;
     text-align: start;
+    padding 10px;
+    margin-top: 30px;
     h4 {
       margin: 3px;
       text-transform: uppercase;
@@ -28,11 +28,12 @@ export const Thoughts = () => {
     }
   `;
   const ArticleImg = styled.img`
-  width: 515px;
-  margin: 0 auto;
+    width: 490px;
+    margin: 0 auto;
   `;
   const Date = styled.h4`
     color: var(---highlight);
+    padding: 20px 0px 5px 0px;
   `;
 
   return (

@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/Watercolor.jpg'
-import Linkedin from '../icons/linkedin60.png';
-import Github from '../icons/github60.png';
+import BackgroundImage from '../images/Watercolor.jpg';
+import Linkedin from '../icons/linkedinpink60.png';
+import Github from '../icons/gitpink60.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
@@ -16,45 +16,43 @@ export const Header = () => {
     flex-direction: column;
     justify-content: flex-end;
     border-bottom: 3px solid #F090D9;
-`;
+  `;
 
   const BackgroundImg = styled.img`
-  background-size: cover;
-  @media (max-width: 455px) {
-    height: 100%;
-  }
-`;
+    background-size: cover;
+    @media (max-width: 760px) {
+      height: 100%;
+    }
+  `;
 
   const IconsContainer = styled.div`
     position: absolute;
     display: flex;
     top: 76px;
     right: 91px;
-    `;
+  `;
 
   const HeaderText = styled.div`
-      color: #e85ec8;
-      position: absolute;
-      width: 300px;
-      top: 155px;
-      left: 130px;
-      padding: 0;
-      margin: 0;
-
+  color: #f99703;
+  -webkit-text-stroke: 0.01em magenta;
+    position: absolute;
+    width: 300px;
+    top: 185px;
+    left: 95px;
+    padding: 0;
+    margin: 0;
     h2 {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 18px;
       line-height: 18px;
       letter-spacing: 0.04em;
     }
-
     h1 {
       font-size: 40px;
       font-weight: 700;
       line-height: 45px;
       margin: 0;
     }
-
     h3 {
       font-weight: bold;
       font-size: 28px;

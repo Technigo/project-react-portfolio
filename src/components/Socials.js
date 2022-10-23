@@ -8,6 +8,7 @@ export const Socials = () => {
   const SocialsSection = styled.div`
     text-align: center;
     padding: 50px 0;
+    background-color: white;
   `
   const IconWrapper = styled.div`
     display: flex;

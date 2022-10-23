@@ -4,13 +4,11 @@ import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 
 export const Tech = () => {
   const TechSection = styled.div`
-    padding: 50px 0px;
+    padding: 50px 0px 100px 0px;
     position: relative;
     width: 100%;
-    background-color: rgba(208, 203, 203, 0.572);
+    background-color: white;
     color: #fcfaf88a;
-    border-top: solid #c8aa89c6 1px;
-    border-bottom: solid #c8aa89c6 1px;
   `
   const TechText = styled.div`
     margin-top: 20px;

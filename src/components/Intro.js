@@ -4,15 +4,16 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 
 export const Intro = () => {
   const IntroSection = styled.section`
-    background: rgb(235, 234, 234);
+    background: white;
     display: flex;
     justify-content: center;
-  `
+  `;
   const IntroText = styled.div`
     color: #F090D9;
     text-align: center;
-    padding: 80px;
+    padding: 120px 80px 50px 80px;
     font-size: 18px;
+    font-weight: 500;
     width: 900px;
   `;
   const Line = styled.span`

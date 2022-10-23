@@ -5,11 +5,14 @@ import data from '../data.json'
 
 export const Projects = () => {
   const ProjectSection = styled.div`
-    padding: 50px 0px;
+    padding: 75px 0px 10px 0px;
+    background-color: white;
+    
   `;
   const ProjectWrapper = styled.div`
     display: flex;
     justify-content: center;
+    margin-top: 60px;
   `;
   const CardWrapper = styled.div`
     margin: 10px;
@@ -25,8 +28,8 @@ export const Projects = () => {
     margin: 10px;  
     width: 335px;
       img {
-        width: auto;
-        height:250px;
+        width: 325px;
+        height: 325px;
         display: block;
       }
   `;
@@ -43,7 +46,7 @@ export const Projects = () => {
   const CardOverlay = styled.div`
     width: 325px;
     height: 325px; 
-    background: #F090D9;
+    background: white;
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -52,7 +55,7 @@ export const Projects = () => {
     transition: ease-in .3s;
   `;
   const DetailsWrapper = styled.div`
-    margin: 10px;
+    margin: 20px 10px;
     display: flex;
     flex-direction: column;
     height: auto;

@@ -6,10 +6,10 @@ export const Skills = () => {
   const SkillsSection = styled.div`
     text-align: center;
     padding: 50px 0;
-  `
+    background-color: white;
+  `;
 
   const SkillsWrapper = styled.div`
-    
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -18,7 +18,7 @@ export const Skills = () => {
     font-size: 17px;
     line-height: 30px;
     color: rgb(135, 133, 133);
-  `
+  `;
 
   const Skill = styled.div`
     margin-top: 30px;
@@ -27,7 +27,7 @@ export const Skills = () => {
       color: #c8aa89c6;
       text-transform: uppercase;
       }
-  `
+  `;
 
   return (
     <OuterWrapper background>
