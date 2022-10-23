@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro'
 
-// import { GlobalStyles } from 'GlobalStyles';
-
 import heroImage from '../images/dunes_jeremy-bishop_L.jpg'
+
+//  Styled components for Header.js
 
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});;
@@ -104,6 +104,7 @@ h3 {
 
 @media (min-width: 1024px) {
   top: 29%;
+
   h4 {
     font-size: 2rem;
     margin-bottom: 2rem;

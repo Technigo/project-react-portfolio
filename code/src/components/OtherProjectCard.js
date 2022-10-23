@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import projects from 'data/other-projects.json'
+
 // react component
 
 export const OtherProjectCard = () => {
@@ -42,18 +43,12 @@ export const OtherProjectContainer = styled.div`
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* width: 100%; */
   /* border: 2px solid green; */
-
-  a {
-
-  }
 
   &:hover {
     text-decoration: underline;
-  }
-
-  @media (min-width: 668px) {
-    flex-direction: row;
   }
  `;
 
@@ -88,7 +83,7 @@ export const SubTitle = styled.h4`
 
   @media (min-width: 668px) {
     margin-right: 20px;
-    flex: 0 0 150px;
+    /* flex: 0 0 150px; */
   }
 `;
 

@@ -3,9 +3,8 @@ import styled from 'styled-components/macro'
 
 import footerImage from '../images/dunes_jeremy-bishop_footer.jpg';
 
-// import { GlobalStyles } from './GlobalStyles'
-
 // react component
+
 export const Footer = () => {
   return (
     <StyledFooter>
@@ -21,7 +20,8 @@ export const Footer = () => {
   )
 }
 
-// styled component
+// styled components
+
 export const StyledFooter = styled.div`
 width: 100%;
 /* height: 25vh; */
@@ -49,10 +49,14 @@ p {
 }
 `;
 
+// --------------------
+
 export const BigText = styled.h3`
 color: white;
 margin: 10px;
 `;
+
+// --------------------
 
 export const Text = styled.p`
 color: white;

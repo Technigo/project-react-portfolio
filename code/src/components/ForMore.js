@@ -64,20 +64,9 @@ const HeaderIconsForMore = styled.div`
     color: var(--clr-light);
     text-decoration: none;
   } 
-
-  /* @media (min-width: 1024px) {
-    right: 18%;
-    top: 10%;
-    font-size: 3rem;
-
-    a {
-      height: 65px;
-      width: 65px;
-    }
-  } */
 `;
 
-// ---------- transperent heder for gradient
+// ---------- transperent header for gradient
 
 const SectionHeadingsGr = styled(SectionHeadings)`
   color: white;

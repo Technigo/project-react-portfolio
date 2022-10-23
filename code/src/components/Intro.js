@@ -4,6 +4,7 @@ import styled from 'styled-components/macro';
 import { ContainerWrapper, Text } from 'GlobalStyles';
 
 // react component
+
 export const Intro = () => {
   return (
     <ContainerWrapperIntro>
@@ -23,7 +24,7 @@ export const Intro = () => {
   )
 }
 
-// styled component
+// styled components
 
 const ContainerWrapperIntro = styled(ContainerWrapper)`
   padding: 0%;
@@ -31,8 +32,9 @@ const ContainerWrapperIntro = styled(ContainerWrapper)`
   @media (min-width: 668px) {
     padding: 8%;
   }
-
 `;
+
+// -----------------------
 
 export const TextIntro = styled(Text)`
   padding: 10% 5%;
@@ -41,8 +43,7 @@ export const TextIntro = styled(Text)`
    @media (min-width: 668px) {
     padding: 0;
   }
-  
-  `;
+`;
 
 // -----------------------
 

@@ -13,14 +13,14 @@ ToDo
     </div>
     
 <MainContent />
-      <Intro /> check (1024px max-width margin right?)
+      <Intro /> check (1024px max-width margin right ok!)
       <Tech /> check
       <FeaturedProjects />
-      <OtherProjects />
+      <OtherProjects /> check mapping and json
       <MyThoughts />
       <MoreThoughts />
       <Skills /> check
-      <ForMore /> check (fixa gradient lite högre forMore)
+      <ForMore /> check (fixa gradient lite högre forMore ok!)
 
 - componenter med en react component och en SC-component skapa mapp?
 <!-- - gradient BG i ForMore, in i footer med CONTACT som gradient, överlappning -->
@@ -28,7 +28,9 @@ ToDo
 -fixat width ingen scrollbar (heroImg ej vw utan %)
 
 Söndag:
-resterande componenter
+* props för ändrad bgfärg v.v section (Neah)
+* skriv om otherproject json text
+* urls
 
 
 -readMe
