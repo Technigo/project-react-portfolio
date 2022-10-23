@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components/macro';
 
 const GlobalStyles = createGlobalStyle`
    *{
@@ -25,7 +25,20 @@ export const StyledGrid = styled.section`
     justify-content: center;
     align-content: center;
     gap: 30px;
-    margin: 50px 250px;
+    margin: 50px auto;
+    max-width: 50vw;
+    
+
+    @media (max-width: 767.98px){
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        
+    }
+
 `
 
 export const Heading = styled.h1`
@@ -40,15 +53,17 @@ export const Subheading = styled.h2`
     font-size: 25px;
     color: white;
 
+    span {
     background-color: #E8415E;
     padding: 2px 10px;
+}
 `
 
 export const SectionText = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 25px;
     margin: 0 auto;
     padding: 25px 50px;

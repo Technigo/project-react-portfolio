@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { ContainerWhite, StyledGrid, Subheading } from 'GlobalStyles';
 import thoughtOneImage from 'images/My-thoughts-1.png'
 import placeHolderImage from 'images/Placeholder-img.png'
@@ -7,7 +7,7 @@ import placeHolderImage from 'images/Placeholder-img.png'
 export const Thoughts = () => {
   return (
     <ContainerWhite>
-      <Subheading>My thoughts about code</Subheading>
+      <Subheading><span>My thoughts about code</span></Subheading>
       <StyledGrid>
 
         <ItemWrapper>

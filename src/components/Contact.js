@@ -1,11 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export const Contact = () => {
   return (
     <ContainerColored>
       <div className="contact__headline">Contact</div>
-      <div className="contact__details">Ulrika Öhman<br />040-706 1252<br />ulrikalovisa@gmail.com</div>
+      <div className="contact__details">Ulrika Öhman<br />040-706 1252<br />Send me an <a href="mailto:ulrikalovisa@gmail.com">e-mail</a></div>
     </ContainerColored>
   )
 };
@@ -40,4 +40,8 @@ export const ContainerColored = styled.section`
     padding:  40px 0 80px;
     margin: 0;
 }
+
+      .contact__details a {
+        color: white;
+      }
 `

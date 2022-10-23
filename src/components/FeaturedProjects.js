@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from 'data.json'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { ContainerBeige, StyledGrid, Subheading } from 'GlobalStyles';
 
 console.log(projects);
@@ -8,7 +8,7 @@ console.log(projects);
 export const FeaturedProjects = () => {
   return (
     <ContainerBeige>
-      <Subheading>Featured projects</Subheading>
+      <Subheading><span>Featured projects</span></Subheading>
       <StyledGrid>
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
@@ -34,7 +34,7 @@ export const FeaturedProjects = () => {
 export const ProjectWrapper = styled.article`
     width: 350px;
     margin: auto;
-
+   
     a {
         text-decoration: none;
         color: black;
@@ -52,7 +52,7 @@ export const ProjectWrapper = styled.article`
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 203.72px;
                 background: #60183575;
             }
 
@@ -94,6 +94,7 @@ export const ProjectWrapper = styled.article`
                     line-height: 25px;
                     padding: 10px 0;
                 }
+
 `
 
 export const StyledTags = styled.div`
@@ -110,4 +111,6 @@ export const StyledTags = styled.div`
     padding: 3px 10px;
     margin: 3px 6px 10px 0;
     }
+
+    
 `

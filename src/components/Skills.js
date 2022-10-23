@@ -1,11 +1,11 @@
 import React from 'react'
 import { ContainerBeige, Subheading } from 'GlobalStyles';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export const Skills = () => {
   return (
     <ContainerBeige>
-      <Subheading>Skills</Subheading>
+      <Subheading><span>Skills</span></Subheading>
       <StyledSkills>
         <div className="column1">
           <div className="column__headline">Code</div>
@@ -64,4 +64,12 @@ export const StyledSkills = styled.div`
                 font-size: 15px;
                 line-height: 25px;
             }
+
+    @media (max-width: 767.98px){
+    flex-wrap: wrap;
+
+        .column1, .column2, .column3{
+        height: 210px;
+        }
+    }
 `
