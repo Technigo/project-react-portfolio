@@ -1,0 +1,2 @@
+export const BASE_URL = 'https://api.github.com/users/Tanmark/repos';
+export const PROJECT_THUMBNAIL = (projectName) => `https://raw.githubusercontent.com/Tanmark/${projectName}/master/code/thumbnail.png`;

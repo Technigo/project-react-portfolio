@@ -1,21 +1,29 @@
 import React from 'react';
-import styled from 'styled-components/macro';
+/* import styled from 'styled-components/macro'; */
 
 /* Components */
-import SocMedLinks from './SocMed';
-
-/* Images */
-import woods from './assets/woods.jpg';
+import { HeaderBackground, HeaderWrapper } from '../styles/GlobalStyles';
+import { SocMedLinks } from './SocMed';
 import { ProfileImage } from './ProfileImage';
 
-export const Header = () => {
+/* Images */
+import linkedin from '../assets/linkedin.png';
+import github from '../assets/github.png';
+import stackoverflow from '../assets/stackoverflow.png';
+
+const Header = () => {
   return (
-    <headerBackground>
+    <HeaderBackground>
       <HeaderWrapper>
-        <SocMedLinks />
+        <SocMedLinks
+          linkedin={linkedin}
+          github={github}
+          stackoverflow={stackoverflow}
+          alignment="flex-end" />
         <ProfileImage />
       </HeaderWrapper>
-    </headerBackground>
+    </HeaderBackground>
   )
 }
 
+export default Header

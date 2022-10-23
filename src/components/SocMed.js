@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar } from './styles/GlobalStyles';
+import NavBar from '../styles/GlobalStyles';
 
 export const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
   return (
