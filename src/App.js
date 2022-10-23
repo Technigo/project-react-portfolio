@@ -5,6 +5,7 @@ import Tech from 'Components/Tech';
 import { FeaturedProjects } from 'Components/FeaturedProjects';
 import OtherProjects from 'Components/OtherProjects';
 import Skills from 'Components/Skills';
+import Contact from 'Components/Contact';
 
 const App = () => {
 	return (
@@ -15,6 +16,7 @@ const App = () => {
 			<FeaturedProjects />
 			<OtherProjects />
 			<Skills />
+			<Contact />
 		</>
 	);
 };

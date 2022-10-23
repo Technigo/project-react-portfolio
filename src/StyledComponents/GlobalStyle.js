@@ -69,4 +69,14 @@ export const Tags = styled.p`
 	border-radius: 5px;
 `;
 
+export const Footer = styled.div`
+	background-color: whitesmoke;
+	width: 100vw;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	padding: 2rem;
+`;
+
 export default GlobalStyle;
