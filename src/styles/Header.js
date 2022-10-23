@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Background = styled.div`
 width: 100%;
-background-color: var(--background);
 position: relative;
 background-size: cover;
 margin-bottom: 20px;

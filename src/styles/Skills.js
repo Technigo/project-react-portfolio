@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const List = styled.div`
-border: 2px solid orange;
+width: 150px;
 color: #000000;
 font-family: "Montserrat", sans-serif;
 font-style: normal;

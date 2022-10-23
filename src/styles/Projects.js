@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-export const SectionFeaturedProjects = styled.section`
-background-color: white;
+export const SectionProjects = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -10,7 +9,7 @@ margin-top: 20px;
 `
 
 export const Wrapper = styled.section`
-border: 4px solid orange;
+justify-content: center;
 width: 80%;
 display: inline-grid;
 grid-gap: 10px;
@@ -20,16 +19,13 @@ width: 60%;
 }
 `
 
-export const WrapProject = styled.section`
-border: 2px solid hotpink;
-width: 100%;
-align-item: start;
-margin-bottom: 10px;
+export const OtherProjectsWrapper = styled(Wrapper)`
+justify-content: center;
 @media (min-width: 800px) {
-    min-width: 300px;
-    max-width: 350px;
-    max-height: 400px;
-    }
+grid-template-columns: 1fr;
+width: 60%;
+justify-content: center;
+}
 `
 
 export const ProjectTitle = styled.h3`
@@ -42,11 +38,31 @@ text-transform: uppercase;
 line-height: 0;
 `
 
+export const WrapProject = styled.section`
+width: 350px;
+height: auto;
+margin-bottom: 10px;
+@media (min-width: 800px) {
+    min-width: 300px;
+    max-width: 350px;
+    height: auto;
+    }
+`
+
+export const WrapOtherProject = styled(WrapProject)`
+width: auto;
+@media (min-width: 800px) {
+    max-width: auto;
+    }
+`
+
 export const ProjectImage = styled.img`
-position: absolut;
-width: 100%;
-padding-top: 0px;
+width: 350px;
+height: 200px;
+margin: 0 auto;
 border-radius: 5px;
+position: absolut;
+overflow: hidden;
 display: block;
 @media (min-width: 800px) {
   width: 100%;
@@ -55,41 +71,34 @@ display: block;
 `
 
 export const Overlay = styled.div`
-position: absolut;
-width: 100%;
-padding-top: 0px;
-border-radius: 5px;
-position: relative;
-opacity: 80%;
-transition: ease-in .3s;
-background: pink;
-display: block;
-
-@media (min-width: 800px) {
-  width: 100%;
-  height: 200px;
-  } 
-&:hover{
-  opacity: 0;
-}
-`;
-
-export const OverlayText = styled.h3` 
-color:white;
+position: absolute;
+display: flex;
+justify-content: center;
+width: 350px;
+height: 200px;
 margin: 0 auto;
-position: relative;
-top: 50%;
-font-size: 1.5rem;
-font-weight: 500;
-text-transform: uppercase;
-font-weight: 600;
-a:link {
-  text-decoration: none;
+border-radius: 5px;
+background: rgb(196, 187, 176);
+opacity: 0.7;
+transition: all 0.3s ease-in-out;
+p {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  line-height: 0;
+  color: white;
+  position: absolute; 
+  top: 40%; 
+  @media (max-width: 690px) {
+    font-size: 25px;
+  }
 }
-&:hover{
+&:hover {
   opacity: 0;
 }
-`;
+`
 
 export const ProgramsWrapper = styled.div`
 display: flex;

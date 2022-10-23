@@ -7,11 +7,9 @@ const Footer = () => {
     <FooterSection>
       <SecondTitleWhite>Contact</SecondTitleWhite>
       <Wrapper>
-        <MainTextWhite>
-        Kristin Larsson
-        +46 70 2639489
-        kristinlarsson88@gmail.com
-        </MainTextWhite>
+        <MainTextWhite>Kristin Larsson</MainTextWhite>
+        <MainTextWhite>0702639489</MainTextWhite>
+        <MainTextWhite>kristinlarsson88@gmail.com</MainTextWhite>
       </Wrapper>
     </FooterSection>
   );

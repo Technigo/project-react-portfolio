@@ -32,6 +32,10 @@ export const MainText = styled.p`
     margin: 0;
     text-align: left;
     overflow-wrap: break-word;
+    text-decoration: none;
+    &a:link {
+        textDecoration: none;
+      }
 `
 
 export const CenterMainText = styled(MainText)`
@@ -39,12 +43,12 @@ export const CenterMainText = styled(MainText)`
 `
 
 export const MainTextWhite = styled(MainText)`
+    text-align: center;
     color: white;
-    width: 200px;
+    width: auto;
 `
 
 export const Section = styled.section`
-    border: 3px solid brown;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -58,13 +62,14 @@ export const SectionColor = styled(Section)`
 `
 
 export const Wrapper = styled.section`
-    border: 3px solid purple;
     width: 80%;
     @media (min-width: 798px) {
     width:60%
     }
 `
 export const WrapperRow = styled(Wrapper)`
+    display: flex;
+    margin: 10px;
     flex-direction: row;
     width: 80%;
     justify-content: space-between;
