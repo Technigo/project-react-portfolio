@@ -1,12 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { InnerWrapper, OuterWrapper, SectionTitle } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const Thoughts = () => {
-  const ThoughtsSection = styled.div`
-    text-align: center;
-    padding: 50px 0;
-  `
   const ArticleContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -16,16 +12,20 @@ export const Thoughts = () => {
     width: 100%;
     text-align: left;
   `
+
+  const Date = styled.p`
+  color: var(--color-mediumblue);
+  `
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <ThoughtsSection>
+        <SiteSection>
           <SectionTitle>
             <p>My thoughts</p>
           </SectionTitle>
           <ArticleContainer>
             <ThoughtArticle>
-              <p>Oct 2022</p>
+              <Date>Oct 2022</Date>
               <h3>Why I started coding</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -35,7 +35,7 @@ export const Thoughts = () => {
               </p>
             </ThoughtArticle>
           </ArticleContainer>
-        </ThoughtsSection>
+        </SiteSection>
       </InnerWrapper>
     </OuterWrapper>
   )

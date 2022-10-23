@@ -1,13 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { InnerWrapper, OuterWrapper, SectionTitle } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const Skills = () => {
-  const SkillsSection = styled.div`
-    text-align: center;
-    padding: 50px 0;
-  `
-
   const SkillsParent = styled.div`
     width: 100%;
     display: flex;
@@ -21,9 +16,9 @@ export const Skills = () => {
   `
 
   return (
-    <OuterWrapper background>
+    <OuterWrapper backgroundLightBlue>
       <InnerWrapper>
-        <SkillsSection>
+        <SiteSection>
           <SectionTitle>
             <p>Skills</p>
           </SectionTitle>
@@ -58,7 +53,7 @@ export const Skills = () => {
               <p>Node.js</p>
             </SkillsChild>
           </SkillsParent>
-        </SkillsSection>
+        </SiteSection>
       </InnerWrapper>
     </OuterWrapper>
   )

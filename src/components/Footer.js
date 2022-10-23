@@ -5,22 +5,21 @@ import { InnerWrapper, OuterWrapper } from './global/GlobalStyling';
 export const Footer = () => {
   const FooterBackground = styled.footer`
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
     width: 100%;
-    padding: 20px;
+    padding: 7%;
     `
   const FooterHeading = styled.h2`
     text-transform: uppercase;
-    font-family: 'Montserrat';
+    color: var(color-white);
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 20px;
     `
   const FooterEmail = styled.a`
-    color: white;
+    color: var(--color-white);
     font-size: 16px;
-    font-family: 'Montserrat';
     text-decoration: none;
   `
   return (

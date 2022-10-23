@@ -1,11 +1,20 @@
 import styled from 'styled-components/macro'
 
+export const SiteSection = styled.div`
+    text-align: center;
+    padding: 20% 0;
+
+    @media (min-width: 667px) {
+      padding: 10% 0;
+    }
+  `
+
 export const OuterWrapper = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${(props) => (props.background ? ' #F4F4F4' : 'white')};
+    background-color: ${(props) => (props.backgroundLightBlue ? 'var(--color-lightblue)' : 'var(--color-text-white)')};
 `
 export const InnerWrapper = styled.div`
     width: 75%;
@@ -14,7 +23,7 @@ export const InnerWrapper = styled.div`
 
 export const SectionTitle = styled.div`
     padding: 10px;   
-    background-color: #0A638E;
+    background-color: var(--color-bronze);
     color: white;
     margin: 0 auto 30px;
     border-radius: 3px;
@@ -29,8 +38,8 @@ export const Tag = styled.div`
     flex-wrap: wrap;
 
     p {
-    background: #18252a;
-    color: white;
+    background: var(--color-darkblue);
+    color: var(--color-white);
     border-radius: 5px;
     font-size: 12px;
     font-family: 'Roboto', sans-serif ;

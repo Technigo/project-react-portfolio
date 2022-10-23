@@ -2,25 +2,22 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { InnerWrapper, OuterWrapper, SectionTitle } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const ForMore = () => {
-  const ForMoreSection = styled.div`
-    text-align: center;
-    padding: 50px 0;
-  `
   const IconWrapper = styled.div`
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `
   const IconContainer = styled.div`
     margin: 20px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    
     &:hover {
         transform: scale(1.1);
     }
@@ -28,7 +25,7 @@ export const ForMore = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <ForMoreSection>
+        <SiteSection>
           <SectionTitle>
             <p>for more</p>
           </SectionTitle>
@@ -38,7 +35,7 @@ export const ForMore = () => {
                 href="https://github.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="3x" color="#0A638E" />
+                <FontAwesomeIcon icon={faGithub} size="3x" color="#416586" />
               </a>
               <p>Github</p>
             </IconContainer>
@@ -47,7 +44,7 @@ export const ForMore = () => {
                 href="https://www.linkedin.com/in/lovisa-carling/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#0A638E" />
+                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#416586" />
               </a>
               <p>LinkedIn</p>
             </IconContainer>
@@ -59,12 +56,12 @@ export const ForMore = () => {
                 <FontAwesomeIcon
                   icon={faStackOverflow}
                   size="3x"
-                  color="#0A638E" />
+                  color="#416586" />
               </a>
               <p>Stackoverflow</p>
             </IconContainer>
           </IconWrapper>
-        </ForMoreSection>
+        </SiteSection>
       </InnerWrapper>
     </OuterWrapper>
   )

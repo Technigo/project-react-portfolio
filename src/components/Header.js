@@ -8,16 +8,17 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { InnerWrapper, OuterWrapper } from './global/GlobalStyling';
 import Annika from '../assets/Annika.jpg'
+import BackgroundImg from '../assets/BackgroundImg.jpg'
 
 export const Header = () => {
   const HeaderBackground = styled.header`
     position: relative;
     height: 70vh;
     width: 100%;
-    background-color: #0A638E;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${BackgroundImg});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 `
 
   const HeaderText = styled.div`
@@ -27,16 +28,20 @@ export const Header = () => {
         font-family: 'Roboto';
         text-transform: uppercase;
         padding-left: 3px;
-        color: white;
+        color: var(--color-white);
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 24px;
         font-weight: 400;
         font-family: 'Roboto';
         text-transform: uppercase;
         padding-left: 3px;
-        color: white;
+        color: var(--color-white);
+
+        @media (min-width: 667px) {
+          font-size: 48px;
+        }
     }
 
     h3 {
@@ -45,7 +50,7 @@ export const Header = () => {
         font-family: 'Roboto';
         text-transform: uppercase;
         padding-left: 3px;
-        color: white;
+        color: var(--color-white);
     }
 `
   const ProfileImageWrapper = styled.div`
@@ -56,8 +61,20 @@ export const Header = () => {
     border: 2px solid #fff;
     border-radius: 50%;
     z-index: 1;
-    right: 20%;
+    right: 30%;
     bottom: -20px;
+
+    @media (min-width: 667px) {
+      height: 250px;
+      width: 250px;
+      right: 20%;
+    }
+
+    @media (min-width: 1024px) {
+      height: 200px;
+      width: 200px;
+      right: 20%;
+    }
 `
 
   const ProfileImage = styled.img`
@@ -66,20 +83,27 @@ export const Header = () => {
 
   const IconWrapper = styled.div`
     display: flex;
-    justify-content: end;
+    justify-content: center;
     margin: 20px;
     place-items: flex-end;
-    img {
-    width: 50px;
-  }
-  a {
-    margin: 10px;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
+
+    @media (min-width: 667px) {
+      justify-content: end;
     }
-  }
-`
+    
+    img {
+     width: 50px;
+    }
+    
+    a {
+      margin: 10px;
+      transition: all 0.2s ease-in-out;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  `
 
   return (
     <OuterWrapper>
@@ -90,19 +114,19 @@ export const Header = () => {
               href="https://github.com/Asivol93"
               target="_blank"
               rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="3x" color="#fff" />
+              <FontAwesomeIcon icon={faGithub} size="3x" color="var(--color-white)" />
             </a>
             <a
               href="https://www.linkedin.com/in/lovisa-carling/"
               target="_blank"
               rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" color="#fff" />
+              <FontAwesomeIcon icon={faLinkedin} size="2x" color="var(--color-white)" />
             </a>
             <a
               href="https://stackoverflow.com/users/16687109/asivol"
               target="_blank"
               rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faStackOverflow} size="3x" color="#fff" />
+              <FontAwesomeIcon icon={faStackOverflow} size="3x" color="var(--color-white)" />
             </a>
           </IconWrapper>
           <HeaderText>
@@ -116,6 +140,5 @@ export const Header = () => {
         </InnerWrapper>
       </HeaderBackground>
     </OuterWrapper>
-
   )
 }

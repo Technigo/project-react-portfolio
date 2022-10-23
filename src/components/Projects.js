@@ -2,18 +2,15 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { InnerWrapper, OuterWrapper, SectionTitle, Tag } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle, Tag } from './global/GlobalStyling';
 import data from '../data.json'
 
 export const Projects = () => {
-  const ProjectSection = styled.div`
-    padding: 50px 0;
-  `
-
   const CardContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
+    margin-bottom: 20px;
     a {
       text-decoration: none;
       color: #000;
@@ -75,9 +72,9 @@ export const Projects = () => {
   `
 
   return (
-    <OuterWrapper background>
+    <OuterWrapper backgroundLightBlue>
       <InnerWrapper>
-        <ProjectSection>
+        <SiteSection>
           <SectionTitle>
             <p>Featured projects</p>
           </SectionTitle>
@@ -145,7 +142,7 @@ export const Projects = () => {
               ) : null
             ))}
           </OtherProjects>
-        </ProjectSection>
+        </SiteSection>
       </InnerWrapper>
     </OuterWrapper>
   )

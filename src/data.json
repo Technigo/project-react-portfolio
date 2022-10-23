@@ -9,8 +9,26 @@
       "tools": ["HTML", "CSS", "Javascript"]
     },
     {
-      "title": "Project chatbot",
+      "title": "Project Guess who",
       "id": "2",
+      "image": "https://images2.imgbox.com/12/dd/clKnkh9U_o.jpeg?download=true",
+      "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+      "github": "https://github.com/agadman/project-chatbot",
+      "description": "Our task was to create a chatbot...",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Project Happy Thoughts",
+      "id": "3",
+      "image": "#",
+      "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+      "github": "https://github.com/agadman/project-chatbot",
+      "description": "Our task was to create a chatbot...",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },  
+    {
+      "title": "Project chatbot",
+      "id": "4",
       "image": "https://images2.imgbox.com/12/dd/clKnkh9U_o.jpeg?download=true",
       "netlify": "https://tablebooker.netlify.app/",
       "github": "https://github.com/agadman/project-chatbot",
@@ -18,8 +36,8 @@
       "tools": ["HTML", "CSS", "JavaScript"]
     },
     {
-        "title": "Project Guess who",
-        "id": "3",
+        "title": "Project Survey",
+        "id": "4",
         "image": "../assets/Guesswho.jpeg",
         "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
         "github": "https://github.com/agadman/project-chatbot",
@@ -27,12 +45,30 @@
         "tools": ["HTML", "CSS", "JavaScript"]
       },
       {
-        "title": "Project Music releases",
-        "id": "4",
+        "title": "Project Weather app",
+        "id": "5",
         "image": "#",
         "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
         "github": "https://github.com/agadman/project-chatbot",
         "description": "Our task was to create a chatbot...",
         "tools": ["HTML", "CSS", "JavaScript"]
-      }  
+      },
+      {
+        "title": "Project Chat bot",
+        "id": "6",
+        "image": "#",
+        "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+        "github": "https://github.com/agadman/project-chatbot",
+        "description": "Our task was to create a chatbot...",
+        "tools": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "title": "Project News site",
+        "id": "7",
+        "image": "#",
+        "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
+        "github": "https://github.com/agadman/project-chatbot",
+        "description": "Our task was to create a chatbot...",
+        "tools": ["HTML", "CSS", "JavaScript"]
+      }    
   ]
