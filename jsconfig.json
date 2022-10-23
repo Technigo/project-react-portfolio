@@ -1,5 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": "code/src"
+    "baseUrl": "./src"
   }
 }
