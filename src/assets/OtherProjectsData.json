@@ -1,0 +1,44 @@
+[
+
+    {
+        "featured": false,
+        "display": true,
+        "name": "Weather App",
+        "description": "A weather app with responsive design and data fetched from the API OpenWeather",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "./assets/survey.png",
+        "netlify": "https://jessica-linda-weather-site.netlify.app/",
+        "github": "https://github.com/jesshansson/project-weather-app"
+    },    
+    {
+        "featured": false,
+        "display": true,
+        "name": "Music Releases",
+        "description": "A website that shows fairly new music releases, fetching data from API",
+        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "./assets/movies.png",
+        "netlify": "https://top50music.netlify.app/",
+        "github": "https://github.com/jesshansson/project-music-releases"
+    },    
+    {
+        "featured": false,
+        "display": true,
+        "name": "Guess who?",
+        "description": "A classic card guess who-game built with JavaScript",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "./assets/femntech.png",
+        "netlify": "https://theguesswhogame.netlify.app/",
+        "github": "https://github.com/jesshansson/project-guess-who"
+    },
+    {
+        "featured": false,
+        "display": true ,
+        "name": "Chatbot",
+        "description": "An interactive chatbot giving pepful messages to the user",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "image": "./assets/happythoughts.png",
+        "netlify": "https://spectacular-pegasus-2e4240.netlify.app/",
+        "github": "https://github.com/jesshansson/project-chatbot"
+    }
+
+]
