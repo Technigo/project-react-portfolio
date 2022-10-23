@@ -1,7 +1,6 @@
 import React from 'react';
-import SectionContainer from './styled/SectionContainer.styled';
+import { SectionContainer, ArticleContainer } from './styled/Containers.styled';
 import { ProjectsGrid } from './styled/Grids.styled';
-import ArticleContainer from './styled/ArticleContainer.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { Topic, TopicsContainer } from './styled/Topics.styled';
 

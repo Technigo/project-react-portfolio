@@ -1,8 +1,6 @@
 import React from 'react';
-import SectionContainer from './styled/SectionContainer.styled';
+import { SectionContainer, ArticleContainer, ThoughtsImage } from './styled/Containers.styled';
 import { ProjectsGrid } from './styled/Grids.styled';
-import ArticleContainer from './styled/ArticleContainer.styled';
-import { ThoughtsImage } from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { TopicsContainer } from './styled/Topics.styled';
 import thoughtImg from '../assets/thought_article.png';
@@ -20,7 +18,7 @@ const Thoughts = () => {
             rel="noreferrer">
             <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
               <div>
-                <h6>How It All Started</h6>
+                <h6>How I Got Started</h6>
               </div>
             </ThoughtsImage>
           </a>

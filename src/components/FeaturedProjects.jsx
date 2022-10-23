@@ -1,8 +1,6 @@
 import React from 'react';
-import SectionContainer from './styled/SectionContainer.styled';
+import { SectionContainer, ArticleContainer, ProjectImage } from './styled/Containers.styled';
 import { ProjectsGrid } from './styled/Grids.styled';
-import ArticleContainer from './styled/ArticleContainer.styled';
-import ProjectImage from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { Topic, TopicsContainer } from './styled/Topics.styled';
 import data from '../feat-projects';

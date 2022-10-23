@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionContainer from './styled/SectionContainer.styled';
+import { SectionContainer } from './styled/Containers.styled';
 import { SkillsGrid } from './styled/Grids.styled';
 
 const Skills = () => {

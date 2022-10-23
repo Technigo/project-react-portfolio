@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SectionContainer } from './styled/Containers.styled';
 import { SkillsGrid } from './styled/Grids.styled';
-import SectionContainer from './styled/SectionContainer.styled';
 import { GitHubSvg, LinkedInSvg, StackSvg } from './Icons';
 
 const ForMore = () => {

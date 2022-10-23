@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SectionContainer from './styled/SectionContainer.styled';
+import { SectionContainer } from './styled/Containers.styled';
 import Paragraph from './styled/Paragraph.styled';
 
 const Summary = () => {
