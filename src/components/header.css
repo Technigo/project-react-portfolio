@@ -65,7 +65,7 @@ header { /*H*/
     }
 
     /* ====== Media queries (medium devices) ====== */
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 600px) { 
     header {
      height: 100vh;
     }

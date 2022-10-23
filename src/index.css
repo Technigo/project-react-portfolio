@@ -24,7 +24,7 @@
 
  --container-width-lg: 75%; /*width of the container class*/
  --container-width-md: 86%; /*for media queries*/
- --container-width-ms: 90%;
+ --container-width-sm: 90%;
 }
 
 html {
@@ -64,7 +64,6 @@ h1 {
 
 section {
   margin-top: 8rem;
-  /**/
 }
 
 section > h2, 

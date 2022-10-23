@@ -41,15 +41,16 @@ const About = () => {
 
             <article className="about__card">
               <FaExpandArrowsAlt className="about__icon" />
-              <h5>Experience</h5>
+              <h5>Work experience</h5>
             </article>
-            <p>
+          </div>
+
+          <p>
               lorem ipsum jdkljsadkjslkjdklsjdkljasdkjlkdjdkjsldjaslkdjlkajdklasjdkljd
               dskdklsjdklsjdkljdlkjadlkjskldjlksdjslkdjklsofpweifokfödsl
               fdsöjfödkfödslkföldkfölkdfölkfölkdlöfdklfkföl
-            </p>
-            <a href="#contact" className="btn btn-primary">Lets Talk</a>
-          </div>
+          </p>
+          <a href="#contact" className="btn btn-primary">Lets Talk</a>
         </div>
       </div>
     </section>
