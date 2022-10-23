@@ -4,7 +4,7 @@ import Header from 'components/Header'
 import Main from 'components/Main'
 import Footer from 'components/Footer'
 import linkedinLogo from 'assets/icon-linkedin.svg'
-import githubLogo from './assets/icon-github.svg'
+import githubLogo from 'assets/icon-github.svg'
 
 export const App = () => {
   return (

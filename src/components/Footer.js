@@ -12,7 +12,7 @@ const Footer = ({ linkedinLogo, githubLogo }) => {
           julia.ostedt@gmail.com
       </a>
       <FooterIcons>
-        <a href="https://www.linkedin.com/julia-ostedt" aria-label="Link to LinkedIn profile">
+        <a href="https://www.linkedin.com/in/juliaostedt/" aria-label="Link to LinkedIn profile">
           <img src={linkedinLogo} alt="LinkedIn logo" />
         </a>
         <a href="https://github.com/juliaostedt" aria-label="Link to LinkedIn profile">
