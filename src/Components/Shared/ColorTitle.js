@@ -21,7 +21,6 @@ const ColorTitle = (props) => {
   font-weight: 500;
   font-family: Montserrat, sans-serif;
   letter-spacing: 1px;
-  border: solid 2px blue;
 
   text-align: center;
   align-self: center;

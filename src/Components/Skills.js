@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
 
@@ -7,7 +7,7 @@ const Skills = () => {
   const SkillsStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 60px 0;
+  padding: 30px 0 60px 0 ;
   gap: 5px; 
   align-items: start;
   text-align: center;

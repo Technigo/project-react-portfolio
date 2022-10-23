@@ -11,6 +11,7 @@ const Header = () => {
   justify-content: center;
   align-items: center;
   color: var(--secondaryBackground);
+  margin: 0 0 30px 0;
   border: solid 3px red;
 
   .profile-image {
@@ -20,9 +21,9 @@ const Header = () => {
     margin-top: 40px;
   }
   
-  .icon-wrapper{
-    border: solid 2px green;
-    }
+  // .icon-wrapper{
+  //   border: solid 2px green;
+  //   }
 
 
   @media (min-width: 667px) and (max-width: 1024px) {
@@ -34,8 +35,8 @@ const Header = () => {
     .profile-image {
       position: absolute;
       right: 0%;
-      bottom: -10%;
-      width: 9rem;
+      bottom: -20%;
+      width: 11rem;
     }
 
     .icon-wrapper{
@@ -51,13 +52,14 @@ const Header = () => {
     display: flex;
     justify-content: start;
     align-items: start;
+    margin: 40px 0;
 
     .profile-image {
       position: absolute;
       right: 0%;
-      bottom: -10%;
+      bottom: -22%;
       top: auto;
-      width: 17rem;
+      width: 15rem;
     }
     .icon-wrapper{
       border: solid 2px blue;
@@ -71,6 +73,7 @@ const Header = () => {
   }
 `;
   const HeaderTextWrapper = styled.div`
+  padding: 30px 0;
   border: solid 3px black;
   font-weight: 600;
   font-family: Montserrat, sans-serif;

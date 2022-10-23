@@ -5,14 +5,15 @@ import ContentWrapper from './Shared/ContentWrapper';
 const FooterStyle = styled.div`
 background-color: var(--primaryBackground);
 color: var(--secondaryBackground);
-padding-bottom: 30px;
+padding-bottom: 70px;
+border: solid 3px black;
 flex-direction: column;
 text-align: center;
 font-family: Montserrat, sans-serif;
 line-height: 27px;
 
 .contact {
-  font-size: 20px;
+  font-size: 17px;
   padding: 40px 0 30px 0;
   font-weight: 700;
 }

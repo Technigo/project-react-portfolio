@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
 // import TypeBox from './Shared/TypeBox';
@@ -14,7 +14,7 @@ const filteredProjects = projects.filter((project) => highlights.includes(projec
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
   border: solid 2px red;
-  padding: 45px 0 65px 0;
+  padding: 15px 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -53,7 +53,6 @@ const Projects = () => {
       <ProjectStyle>
         <div className="project-box">
           {filteredProjects.map((project) => {
-            console.log('project', project)
             return (
               <ProjectCard
                 key={project.id}

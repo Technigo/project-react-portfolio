@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import DotLine from '../Assets/dot_picture.png';
 
 const Intro = () => {
   const TextStyle = styled.div`
   padding: 45px 0 65px 0;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 34px;font-family: Montserrat, sans-serif;
   font-weight: 400;
 

@@ -25,7 +25,7 @@ body {
 }
 
 .text{
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1.8px;
   line-height: 30px;
   font-family: Montserrat, sans-serif;
@@ -69,6 +69,9 @@ body {
   padding: 0px 0px 20px 0px;
   }
 
+  .icon-wrapper{
+    border: solid 2px green;
+    }
   
 /*
 

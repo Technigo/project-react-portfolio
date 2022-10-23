@@ -8,7 +8,7 @@
       "coverName": "News site",
       "projectName": "Project News-site",
       "descriptionText": "description1",
-      "photo": "./Petra.jpg",
+      "photo": "images/chatbot_picture.png",
       "tags": ["HTML", "CSS"]
     },
     {
@@ -18,7 +18,7 @@
       "coverName": "Chatbot",
       "projectName": "Project Catbot",
       "descriptionText": "description2",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "images/chatbot_picture.png",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -28,7 +28,7 @@
       "coverName": "Guess Who",
       "projectName": "Project Guess Who",
       "descriptionText": "A digital version of the classical bord game Guess who, built in javascript.",
-      "photo": "./Petra.jpg",
+      "photo": "images/guesswhogame_picture.png",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -38,7 +38,7 @@
       "coverName": "Weather App",
       "projectName": "Project Weather App",
       "descriptionText": "A webb app showing the weather in different cities, fetching data from an API.",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "images/weatherapp_picture.png",
       "tags": ["HTML", "CSS", "Javascript"]
     },
     {
@@ -48,7 +48,7 @@
       "coverName": "Music Releases",
       "projectName": "Project Music Releases",
       "descriptionText": "description1",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "images/music_release_picture.png",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -58,7 +58,7 @@
       "coverName": "Survey",
       "projectName": "Project Survey",
       "descriptionText": "description1",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "images/guesswhogame_picture.png",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -68,7 +68,7 @@
       "coverName": "Happy thoughts",
       "projectName": "Project Happy Thoughts",
       "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` with `useEffect`.",
-      "photo": "https://imgbox.com/rmufUR0l",
+      "photo": "images/happy_thought_picture.png",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },
     {
@@ -78,7 +78,7 @@
       "coverName": "Movies",
       "projectName": "Project Movies",
       "descriptionText": "A multi-page application showing information about the latest movies. Using React Router and combining `useState` with `useEffect`, passing information in the URL and pick this up in React router to load dynamic content.",
-      "photo": "https://picsum.photos/200/300",
+      "photo": "images/movie_picture.png",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     }
   ]

@@ -20,6 +20,3 @@ const TagBox = ({ tag }) => {
   )
 }
 export default TagBox;
-
-//  tags.forEach((tag) => {
-// console.log('TJO', tag);

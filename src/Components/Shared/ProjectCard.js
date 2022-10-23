@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import TagBox from './TypeBox';
+import TagBox from './TagBox';
 
 const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage, tags }) => {
   console.log('coverImage', coverImage)
@@ -20,6 +20,18 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage, tag
     transform: translate(-50%, -50%);
     transition: all 0.2s linear;
   }
+.project-title{
+  padding: 20px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--sixthTitleSubtitle);
+  display: inline;
+  justify-content: center;
+  border: solid 2px green;
+  
+}
 
   .project-photo{
     height: 300px;
@@ -50,17 +62,18 @@ const ProjectCard = ({ urlNetlify, coverName, projectName, text, coverImage, tag
   }
 
   .project-text-wrapper{
+    border: solid 3px red;
     display: flex;
     flex-direction: column;
   }
-. tax-box{
+. tag-box{
   font-family: Roboto, sans-serif;
-font-weight: 500;
-font-size: 11px;
-line-height: 20px;
-padding: 0px 4px;
-margin: 2px 5px 2px 0px;
-background-color: var(--buttonBackground);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  padding: 0px 4px;
+  margin: 2px 5px 2px 0px;
+  background-color: var(--buttonBackground);
 }
 
   @media (min-width: 667px) and (max-width: 1024px) {
@@ -71,21 +84,19 @@ background-color: var(--buttonBackground);
     margin-top: 20px;
 }
 `;
-
-  console.log(`project: ${projectName}`, tags)
   return (
     <ProjectCardStyle>
       <a className="project-link" href={urlNetlify} target="_blank" rel="noreferrer">
         <div className="project-photo">
           <h3 className="project-name">{coverName}</h3>
         </div>
-        <h2 className="sub-title">{projectName}</h2>
+        <div className="project-text-wrapper">
+          <h2 className="project-title">{projectName}</h2>
+          <p className="text" role="contentinfo">
+            {text}
+          </p>
+        </div>
       </a>
-      <div className="project-text-wrapper">
-        <p className="text" role="contentinfo">
-          {text}
-        </p>
-      </div>
       <div className="tag-wrapper">
         {
           tags.map((tag) => {

@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import Github from '../../Assets/Logotype_linkedin_black.svg';
-import Inkedin from '../../Assets/Logotype_github_white.svg';
+import GithubLogo from '../../Assets/Logo_github_white.svg';
+import InkedinLogo from '../../Assets/Logo_linkedin_white.svg';
 
 const Icons = () => {
   const IconsStyle = styled.img` 
-  width: 55px;
-  
+  width: 30px;
 
+  
+  p {
+    display: flex;
+    flexdirection: row;
+  }
 
   @media (min-width: 667px) and (max-width: 1024px) {
-    width: 6 0px;
+    width: 60px;
   }
 
   @media (min-width: 1024px) {
@@ -18,8 +22,7 @@ const Icons = () => {
   }
   `
 
-  return (<><IconsStyle src={Github} alt="Github Logo" /><IconsStyle src={Inkedin} alt="LinkedIn Logo" />
-  </>
+  return (<><p><IconsStyle src={GithubLogo} alt="Github Logo" /></p><p><IconsStyle src={InkedinLogo} alt="LinkedIn Logo" /></p></>
   );
 };
 export default Icons;
