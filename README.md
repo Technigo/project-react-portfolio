@@ -1,10 +1,10 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Remake portfolio with react styled components
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I did som tweaks to the design and made mobile, tablet and desktop versions in Figma. Deciding every component that I needed and tried to structure up what styles was global and which needed their own component files. 
+
+I would finnish the styling and add the SoMe links if I had more time.
 
 ## View it live
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
