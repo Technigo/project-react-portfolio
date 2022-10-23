@@ -6,9 +6,10 @@ const Intro = () => {
   return (
     <Section>
       <Wrapper>
-        <MainText> <Line /><Dot />I am a creative and problem-solver studying to become
-        a frontend developer. Previously my career has been spent in fashion design as a
-        product developer.
+        <MainText> <Line /><Dot />I am a creative and driven frontend developer. 
+        Previously my career has been spent in fashion design as a product developer. 
+        Since the summer of 2022 I am on a path leading to a new career, currently studying 
+        frontend development.
         </MainText>
       </Wrapper>
     </Section>
