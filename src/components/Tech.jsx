@@ -4,7 +4,7 @@ import Paragraph from './styled/Paragraph.styled';
 
 const Tech = () => {
   return (
-    <SectionContainer>
+    <SectionContainer less>
       <h4>Tech</h4>
       <Paragraph main center>
         React, JavaScript ES6, CSS3, HTML5, Redux, Styled Components,

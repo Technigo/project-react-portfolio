@@ -4,7 +4,7 @@ import { SkillsGrid } from './styled/Grids.styled';
 
 const Skills = () => {
   return (
-    <SectionContainer bg>
+    <SectionContainer bg less>
       <h4>Skills</h4>
       <SkillsGrid skills>
 
@@ -27,7 +27,6 @@ const Skills = () => {
         <ul>
           <h5>Soon</h5>
           <li>Node.js</li>
-          <li>SQL</li>
           <li>Mongo DB</li>
         </ul>
 

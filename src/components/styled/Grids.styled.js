@@ -9,7 +9,7 @@ export const ProjectsGrid = styled.div`
 
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
   }
 `;
 
