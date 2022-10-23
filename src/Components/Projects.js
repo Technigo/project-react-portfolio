@@ -22,7 +22,6 @@ const ProjectStyle = styled.div`
 
 
   .project-box{
-    padding: 30px 0 20px 0;
     display: grid;
     grid-template-columns: 100%;
     aling-items; center;
@@ -49,7 +48,7 @@ const ProjectStyle = styled.div`
 const Projects = () => {
   return (
     <ContentWrapper as="section" backgroundColor="var(--thirdBackground)">
-      <ColorTitle background="var(--fourthTitle)" title="Featured projects" />
+      <ColorTitle background="var(--fourthTitle)" title="FEATURED PROJECTS" />
       <ProjectStyle>
         <div className="project-box">
           {filteredProjects.map((project) => {

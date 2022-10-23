@@ -67,7 +67,7 @@
       "urlNetlify": "https://project-happy-thought-petra.netlify.app/",
       "coverName": "Happy thoughts",
       "projectName": "Project Happy Thoughts",
-      "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` with `useEffect`.",
+      "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` and `useEffect`.",
       "photo": "images/happy_thought_picture.png",
       "tags": ["HTML", "CSS", "Javascript", "React"]
     },

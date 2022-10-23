@@ -2,12 +2,9 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 const ColorTitle = (props) => {
-  const { background, title } = props;
+  const { title } = props;
 
   const TitleWrapperStyle = styled.div`
-  // background-color: ${background};
-  // background-color: black;
-  padding: 15 0 30px 0;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -15,9 +12,9 @@ const ColorTitle = (props) => {
 `
   const TitleStyle = styled.h2`
   background-color: var(--fourthTitle);
-  padding: 2px 6px;
-  margin: 18px;
-  font-size: 18px;
+  padding: 6px 6px;
+  margin: 20px;
+  font-size: 21px;
   font-weight: 500;
   font-family: Montserrat, sans-serif;
   letter-spacing: 1px;

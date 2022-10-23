@@ -13,22 +13,18 @@ const ForMore = () => {
   border: solid 2px red;
   justify-content: center;
   text-align: center;
-  padding: 45px 0 65px 0;
-  // font-family: Montserrat, sans-serif;
-  // font-weight: 400;
-  // font-size: 20px;
-  // line-height: 34px;
-.grid-box-icons{
+  padding: 28px 0;
 
-}
-.icons-end-left{
-
-}
-.project-title{
-  font-family: Roboto, sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  margin: 10px 0 10px 0;
+  .links{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
+  }
+    p{
+      display: inline-block;
+      padding: 0 6px;
+      
 }
 
 `
@@ -39,12 +35,14 @@ const ForMore = () => {
 
       <ColorTitle
         background="var(--fourthTitle)"
-        title="For more" />
+        title="FOR MORE" />
       <ForMoreStyle>
         <div className="icon-wrapper"><Icons
           githubLogotype={GithubLogotypeBlack}
-          linkinLogotyp={LinkinLogotypBlack} />
+          linkinLogotyp={LinkinLogotypBlack}
+          padding="40px" />
         </div>
+        <div className="links"><p>GITHUB</p><p>LINKEDIN</p></div>
       </ForMoreStyle>
     </ContentWrapper>
   );

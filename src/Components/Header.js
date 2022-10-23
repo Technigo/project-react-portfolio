@@ -9,21 +9,33 @@ import Icons from './Shared/Icons';
 
 const Header = () => {
   const HeaderWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  position: relative;
   color: var(--secondaryBackground);
-  margin: 0 0 30px 0;
+  margin: 20px 0 30px 0;
   border: solid 3px red;
+  display: flex;
+  justify-content: start;
+  align-items: start;
 
   .profile-image {
     width: 40%;
     border-radius: 50%;
     border: solid 2px var(--secondaryBackground);
-    margin-top: 40px;
+    position: absolute;
+    right: 0%;
+    bottom: -24%;
+    width: 10rem;
   }
-
+  
+  .icon-wrapper{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    }
   @media (min-width: 667px) and (max-width: 1024px) {
     position: relative;
     display: flex;
@@ -38,10 +50,9 @@ const Header = () => {
     }
 
     .icon-wrapper{
-      border: solid 2px blue;
       position: absolute;
-      right: 0%;
-      top: 14%;
+      right: 3%;
+      top: 19%;
       }
   }
 
@@ -60,24 +71,21 @@ const Header = () => {
       width: 15rem;
     }
     .icon-wrapper{
-      border: solid 2px blue;
       position: absolute;
-      right: 3%;
+      right: 5%;
       top: 0%;
       }
-
-
-
   }
 `;
   const HeaderTextWrapper = styled.div`
+  margin-top: 120px;
   padding: 0 0 30px 0;
   border: solid 3px black;
   font-weight: 600;
   font-family: Montserrat, sans-serif;
 
   .header-name {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 22px;
     font-family: Roboto, sans-serif;
   }
@@ -86,14 +94,15 @@ const Header = () => {
   }
 
   .header-title {
-    margin: 17px 0 20px 0;
+    margin: 17px 0 6px 0;
     font-family: Montserrat, sans-serif;
-    font-size: 40px;
-    line-height: 35px;
+    font-size: 42px;
+    line-height: 40px;
   }
 
   .header-subtitle {
     margin-bottom: 25px;
+    line-height: 25px;
   }
  
 
@@ -155,7 +164,7 @@ const Header = () => {
             developer
             <br />
           </h1>
-          <h2 className="header-subtitle">+ user research & design</h2>
+          <h2 className="header-subtitle">+ user research &<br /> design</h2>
         </HeaderTextWrapper>
         <div className="icon-wrapper">
           <Icons

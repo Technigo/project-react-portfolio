@@ -10,7 +10,7 @@ const Tech = () => {
   border: solid 2px red;
   justify-content: center;
   text-align: center;
-  padding: 45px 0 65px 0;
+  padding-bottom: 20px;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -23,8 +23,7 @@ const Tech = () => {
       backgroundColor="var(--secondBackground)">
 
       <ColorTitle
-        background="var(--fourthTitle)"
-        title="Tech" />
+        title="TECH" />
       <TechStyle>
         <p>HTML, CSS, Flexbox, JavaScript ES6, React, Web Accessibility, API:s, mob-programming,
           pair-programming, Github.

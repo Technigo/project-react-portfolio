@@ -3,12 +3,12 @@ import styled from 'styled-components/macro';
 
 const Icons = ({ linkinLogotyp, githubLogotype }) => {
   const IconsStyle = styled.img` 
-  width: 30px;
+  width: 60px;
+  padding: 0 10px;
 
-  
   .test {
     display: flex;
-    flexdirection: row;
+    flexdirection: row;  
   }
 
   @media (min-width: 667px) and (max-width: 1024px) {

@@ -7,7 +7,7 @@ const Skills = () => {
   const SkillsStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 30px 0 60px 0 ;
+  // padding: 30px 0 60px 0 ;
   gap: 5px; 
   align-items: start;
   text-align: center;
@@ -20,6 +20,7 @@ const Skills = () => {
   .project-text{
     border: solid 3px green;
     width:auto;
+    margin:0;
   }
 
   .toolbox-wrapper{ //center
@@ -43,7 +44,7 @@ const Skills = () => {
       backgroundColor="var(--secondBackground)">
       <ColorTitle
         background="var(--fourthTitle)"
-        title="Skills" />
+        title="SKILLS" />
       <SkillsStyle>
         <div className="project-text">
           <h2 className="small-title">CODE</h2>
