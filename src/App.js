@@ -5,6 +5,7 @@ import Tech from 'components/Tech'
 import FeaturedProjects from 'components/FeaturedProjects'
 import OtherProjects from 'components/OtherProjects';
 import Skills from 'components/Skills'
+import ForMore from 'components/ForMore'
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <FeaturedProjects />
       <OtherProjects />
       <Skills />
+      <ForMore />
     </div>
   )
 }
