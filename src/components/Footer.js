@@ -31,6 +31,12 @@ const FooterStyling = styled.footer`
     background-color: tan;
     font-size: 16px;
     text-align: center;
+    background: url("./images/nailpolish.jpg") no-repeat;
+    background-size: 300%;
+
+    height: 100vw;
+    background-position-y: 6%;
+    background-position-x: 35%;
 
   }
   
@@ -42,8 +48,40 @@ const FooterStyling = styled.footer`
   }
 
   .footer-header{
-    background-color: tan;
+    background-color: #f0efed;
     margin-top: 1.5vw;
   }
+
+  /* Galaxy S8+ */
+@media (min-width: 350px) and (max-width: 370px){
+
+}
+
+/* Galaxy S8+ */
+@media (min-width: 350px) and (max-width: 370px){
+
+}
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .section.footer{
+    max-height: 50vw;
+    background-size: 200%;
+    background-position-y: 25%;
+    background-position-x: 7%;
+  }
+}
+
+}
+
+@media (min-width: 1024px) {
+  .section.footer{
+    background-color:#f0efed;
+    max-height: 20vw;
+    background-size: 800px;
+    background-position-y: 0%;
+    background-position-x: 90%;
+  }
+  
+}
 
     `
