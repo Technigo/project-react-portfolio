@@ -61,7 +61,6 @@ code {
   width: 100%;
 } 
 
-
 /* TABLET */
 @media (min-width: 668px) and (max-width:1024px) {
 
@@ -72,7 +71,6 @@ code {
     padding-top: 1%;
     width: 35%;
   }
-
 }  
 
 /* DESKTOP */
@@ -89,14 +87,3 @@ code {
       opacity: 1.0;
   }   
 }
-
-/*
-
-MY THOUGHTS
-.my-thoughts {
-  height: 150px;
-  width: 100vw;
-  padding: 5%;
-}
-
-*/

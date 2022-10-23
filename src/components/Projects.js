@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React, { useState, useEffect } from 'react';
 import { BASE_URL } from 'utils/urls';
-import { MY_TOKEN } from 'utils/secret';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, SecondHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 
@@ -14,13 +13,7 @@ const Projects = () => {
 
   useEffect(() => {
     setLoading(true);
-    const options = {
-      method: 'GET',
-      headers: {
-        Authorization: `token ${MY_TOKEN}`
-      }
-    }
-    fetch(BASE_URL, options)
+    fetch(BASE_URL)
       .then((response) => response.json())
       .then((data) => {
         setList(data);
@@ -65,6 +58,7 @@ const Projects = () => {
     return projects.map((project) => {
       return (
         <SingleWrap>
+
           <ProjectLinks key={project.id} href={project.homepage}>
             {addImage && <div className="test">
               <div className="image-overlay" />
