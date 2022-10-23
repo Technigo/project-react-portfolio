@@ -12,9 +12,8 @@ const FeaturedProjects = (
   }
 ) => {
   return (
-
     <FeaturedCard>
-      <ProjectLink target="blank" href={deployedLink}>
+      <a target="blank" href={deployedLink}>
         <ImageContainer>
           <Overlay> </Overlay>
           <ProjectImage
@@ -30,18 +29,17 @@ const FeaturedProjects = (
             );
           })}
         </TagWrapper>
-      </ProjectLink>
-      <ProjectLink target="blank" href={repoLink}> <LinkP>GitHub Repo &gt;&gt;</LinkP>
-      </ProjectLink>
+      </a>
+      <a target="blank" href={repoLink}> <LinkP>GitHub Repo &gt;&gt;</LinkP>
+      </a>
     </FeaturedCard>
-
   )
 }
 
 export default FeaturedProjects;
 
 export const Overlay = styled.div`
-position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -58,9 +56,8 @@ export const OverlayText = styled.h5`
   z-index: 1;
   letter-spacing: 00.04em;
   font-size: 25px;
-  font-weight: 400;
- text-align: center;
-
+  font-weight: 500;
+  text-align: center;
 `
 export const ProjectHead = styled.h6`
   font-family: "Roboto";
@@ -69,31 +66,23 @@ export const ProjectHead = styled.h6`
   text-align: left;
   font-size: 17px;
   line-height: 29px;
-  text-transform: uppercase;`
-
-export const ProjectLink = styled.a`
-  text-decoration: none;
-  color: black;
-
-  &:visited {
-    color: black;
-}
-`
+  text-transform: uppercase;
+  `
 export const LinkP = styled.p`
- font-family: "Roboto";
+  font-family: "Roboto";
   padding-top: 0;
   line-height: 4vh;
   font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 4vh;
-    padding: 1rem 0;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 4vh;
+  padding: 1rem 0;
 `
 export const ImageContainer = styled.div`
-position: relative;
+  position: relative;
 `
 export const TagWrapper = styled.div`
-display: flex;
+  display: flex;
   padding-bottom: 5%;
   padding-top: 3%;
   `
@@ -123,8 +112,7 @@ export const FeaturedCard = styled.article`
   justify-content: space-between;
 
   @media (min-width: 768px) {
-      &{width: 45%;
-      }
+      width: 45%;
     }
 `
 export const FeaturedMedia = styled.div`

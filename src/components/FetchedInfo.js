@@ -4,9 +4,8 @@ import React, { useState, useEffect } from 'react'
 import FeaturedProjects, { FeaturedMedia } from './FeaturedProjects'
 import OtherProjects, { OtherWrapper } from './OtherProjects'
 
-import { BASE_URL } from '../utils/urls'
-import { ClonedSectionWrapper, InnerWrapper, HeadH4, H5Head, SectionWrapper } from './MainStyle'
-import { HeadWrapper } from './Tech'
+import { BASE_URL, APIKey } from '../utils/urls'
+import { ClonedSectionWrapper, InnerWrapper, HeadH4, H5Head, SectionWrapper, HeadWrapper } from './styles/MainStyle'
 
 const FetchedInfo = () => {
   const [repos, setRepos] = useState([]);
@@ -24,12 +23,13 @@ const FetchedInfo = () => {
   const other = (repos.filter((repo) => otherForDisplay.includes(repo.name)));
 
   const allFeatured = featured.map((repo) => {
+    const imageLink = `https://raw.githubusercontent.com/${APIKey}/${repo.name}/${repo.default_branch}/code/src/assets/featured-image.webp`
     return (
 
       <FeaturedProjects
         key={repo.id}
         deployedLink={repo.homepage}
-        projectImage=""
+        projectImage={imageLink}
         projectTitle={repo.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         projectDescription={repo.description}
         techTags={repo.topics}
@@ -52,7 +52,6 @@ const FetchedInfo = () => {
 
   return (
     <>
-
       <ClonedSectionWrapper>
         <InnerWrapper>
           <HeadWrapper>
@@ -74,7 +73,6 @@ const FetchedInfo = () => {
         </InnerWrapper>
       </SectionWrapper>
     </>
-
   )
 }
 

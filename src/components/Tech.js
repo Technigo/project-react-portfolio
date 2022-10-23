@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react'
 import styled from 'styled-components/macro'
-import { HeadH4, InnerWrapper, SectionWrapper } from './MainStyle'
+import { HeadH4, InnerWrapper, SectionWrapper, HeadWrapper } from './styles/MainStyle'
 
 const Tech = () => {
   return (
@@ -24,14 +24,9 @@ const Tech = () => {
 
 export default Tech
 
-export const HeadWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-`
 const TextWrapper = styled.div`
-text-align: center;
-display: flex;
-justify-content: center;
-justify-self: center;
- 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
 `

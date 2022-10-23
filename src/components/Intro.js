@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React from 'react'
 import styled from 'styled-components/macro';
-import { InnerWrapper, ClonedSectionWrapper } from './MainStyle'
+import { InnerWrapper, ClonedSectionWrapper } from './styles/MainStyle'
 
 const Intro = () => {
   return (

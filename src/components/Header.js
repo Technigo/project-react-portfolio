@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import styled from 'styled-components/macro';
-import SocialLinks from './SocialLinks';
 
+import SocialLinks from './SocialLinks';
 import HeadImg from '../assets/headerimg.jpg'
 import ProfilePic from '../assets/profilepic.webp'
 
@@ -18,14 +18,11 @@ const Header = () => {
         <h1>frontend developer</h1>
         <h2>+ with a philosophy bachelor in social work</h2>
       </HeaderInfo>
-
       <ProfileImg
         src={ProfilePic}
         alt="Photo of Sarah"
         tabIndex="0" />
-
     </HeaderBackground>
-
   )
 }
 
@@ -48,7 +45,7 @@ const HeaderBackground = styled.header`
     } 
     `
 // --- Links ---
-const LinkContainer = styled.nav`
+export const LinkContainer = styled.nav`
     display: flex;
     justify-content: flex-end;
     margin-right: 5vh;
@@ -56,13 +53,11 @@ const LinkContainer = styled.nav`
     gap: 15px;
 
     @media (min-width: 768px) {
-      &{ margin-right: 10vw;
+      margin-right: 10vw;
       margin-top: 8vh;
-      }
     };
     @media (min-width: 1024px) {
-      &{ margin-right: 17vw;
-      }
+      margin-right: 17vw;
     }
     `
 // ---Header text and container---
@@ -83,7 +78,7 @@ const HeaderInfo = styled.div`
     }
     @media (min-width: 1024px) {
       width: 30vw;
-        top: 18vh;
+      top: 18vh;
       left: 22vw;
     }
 
@@ -95,27 +90,27 @@ const HeaderInfo = styled.div`
     margin-bottom: 3%;
 
     @media (min-width: 768px) {
-        font-size: 40px;
+      font-size: 40px;
     }
   }
-  & h2 {
+   & h2 {
     font-weight: 500;
     font-size: 25px;
 
     @media (min-width: 768px) {
-       font-size: 30px;
+      font-size: 30px;
     }
     @media (min-width: 1024px) {
-     font-size: 30px;
+      font-size: 30px;
     }
   }
-  & h3 {
+   & h3 {
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-       font-size: 19px
+      font-size: 19px
        
     }
     @media (min-width: 1024px) {
@@ -153,7 +148,7 @@ const ProfileImg = styled.img`
     object-fit: cover;
     
     @media (min-width: 768px) {
-       height: 10rem;
+      height: 10rem;
       width: 10rem;
       border: 3px solid white;
       right: 15vw;

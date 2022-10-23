@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { TagWrapper, TagP, LinkP, ProjectLink, ProjectHead } from './FeaturedProjects';
+import { TagWrapper, TagP, LinkP, ProjectHead } from './FeaturedProjects';
 
 const OtherProjects = (
   {
@@ -12,9 +12,8 @@ const OtherProjects = (
   }
 ) => {
   return (
-
     <OtherCard>
-      <ProjectLink href={deployedLink} className="test">
+      <a href={deployedLink} className="test">
         <ProjectHead>{projectTitle}</ProjectHead>
         <ClonedLinkP className="underline">{projectDescription}</ClonedLinkP>
         <ClonedTagWrapper>
@@ -23,12 +22,11 @@ const OtherProjects = (
             );
           })}
         </ClonedTagWrapper>
-      </ProjectLink>
-      <ProjectLink target="blank" href={repoLink}>
+      </a>
+      <a target="blank" href={repoLink}>
         <ClonedLinkP>GitHub Repo &gt;&gt;</ClonedLinkP>
-      </ProjectLink>
+      </a>
     </OtherCard>
-
   )
 }
 
@@ -36,24 +34,20 @@ export default OtherProjects;
 
 export const OtherCard = styled.article`
   @media (min-width: 1024px) {
-   &{width: 45%;
-   }
+    width: 45%;
  }
 `
 export const OtherWrapper = styled.div`
-
-    @media (min-width: 768px) {
-    &{ display: flex;
+  @media (min-width: 768px) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    }
 }
 `
 const ClonedLinkP = styled(LinkP)`
     padding: 0;
 `
-
 const ClonedTagWrapper = styled(TagWrapper)`
     padding: 0;
     margin: 0;
