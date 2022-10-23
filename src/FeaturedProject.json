@@ -14,7 +14,7 @@
       "project-description": "A responsive web site created in React. It is fetching and posting data to an API, using useState and useEffect hooks.",
       "repo-name": "project-happy-thoughts",
       "netlify-name": "https://dontworry-behappy.netlify.app/",
-      "tags": ["HTML5", "CSS3", "React", "JavaScript ES6","APIs","Github"],
+      "tags": ["HTML5", "CSS3", "React", "JavaScript","ES6","APIs","Github"],
       "image": "images/project-thumbnails/project-happy-thoughts.png"
     },
     {

@@ -41,7 +41,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
 export default FeaturedProjectCard;
 
 const Wrapper = styled.div`
-background-color: #FFF9F3;
+background-color: #FFF;
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
@@ -51,6 +51,8 @@ background-color: #FFF9F3;
   justify-content: center;
   font-size: 24px;
   line-height: 1.4;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 
   @media (max-width: 800px) {
     font-size: 16px;
@@ -99,6 +101,8 @@ const ProjectCard = styled.a`
   gap: 5px;
   text-decoration: none;
   position: relative;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 
   /* Optional hover effect, delete if not desired */
   /* &:hover {
@@ -167,10 +171,10 @@ const ProjectTags = styled.li`
   color: black;
   padding: 5px 10px;
   background-color: ${(props) => props.tagColor};
-  display: inline;
+  display: inline-block;
   font-size: 16px;
   margin-right: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
 
   @media (max-width: 800px) {
     padding: 2px;

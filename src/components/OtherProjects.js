@@ -33,10 +33,10 @@ export const SkillTagContainer = styled.div`
 `;
 
 export const OtherProjectContainer = styled.div`
+  width: 100%;  
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #FFF9F3;
+  flex-direction:column;
+  background-color: #FFF;
   margin 0;
 `;
 
@@ -45,7 +45,7 @@ export const SkillTag = styled.p`
   display: inline-block;
   margin: 3%;
   padding: 1%;
-  background-color: #FFF9F3;
+  background-color: #FFF;
   border:2px solid black;
 `;
 
