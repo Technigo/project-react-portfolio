@@ -1,18 +1,15 @@
 import React from 'react';
-import styled from 'styled-components'
-
-const IntroStyle = styled.p`
- padding: 20px;  
- `
+import { SectionContainer, Text } from 'GlobalStyles';
 
 const Intro = () => {
   return (
-    <IntroStyle>
-      <p>I am a creative web developer and designer with a background in education.
-        My objective now is to use my creativity, problem solution mindset and knowledge about
-        learning to help others transmit their messages and communicate.
-      </p>
-    </IntroStyle>
+    <SectionContainer>
+      <Text>
+        I am a creative frontend developer and webdesigner with a background in education.
+        My goal is to use my problem solution mindset and knowledge about learning,
+        to help entrepreneurs and small buisnesses create amazing websites.
+      </Text>
+    </SectionContainer>
 
   )
 }

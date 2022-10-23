@@ -1,71 +1,93 @@
 import React from 'react'
-import styled from 'styled-components/macro'
-import backgroundPic from 'Images/portfolioBackground-desktop.png'
+import styled from 'styled-components'
+import profileImg from 'Images/profileCM.png'
+import backgroundImg from 'Images/portfolioBackground-desktop.png'
+
+export const Header = () => {
+  return (
+    <StyledHeader>
+      <SocialMediaIcons>
+        <a href="https://nl.linkedin.com/in/carimoreno" role="button" target="_blank" rel="noreferrer">
+          <img src="Images/LinkedIn.svg" alt="My LinkedIn" />
+        </a>
+        <a href="https://github.com/carimore" role="button" target="_blank" rel="noreferrer">
+          <img src="Images/Github.png" alt="My Github" />
+        </a>
+        <a href="https://stackoverflow.com/users/19840222/carina-moreno" role="button" target="_blank" rel="noreferrer">
+          <img src="src/Images/StackOverflow.png" alt="My StackOverflow" />
+        </a>
+      </SocialMediaIcons>
+      <HeaderText>
+        <div className="heading-name">PORTFOLIO: CARINA MORENO</div>
+        <span style={{ fontWeight: '700' }}>frontend developer </span>
+        <span style={{ fontWeight: '400', fontSize: '24px', lineHeight: '32px' }}>+ educator</span>
+      </HeaderText>
+      <ProfilePic src={profileImg} alt="Profile Picture Carina Moreno" />
+    </StyledHeader>
+  )
+}
 
 const StyledHeader = styled.header`
-background-image: url(${backgroundPic})
-background-size: cover;
-position: absolute;
-width: 100vw;
-height: 100px;
-
-@media (min-width 539px)
-    background-image: src/Images/profileCM.png;
-    background-size: cover;
-    position: absolute;
-    height: 600px;
+  background-image: url(${backgroundImg});
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 65vh;
 `
 
-export const ProfilePic = styled.img`
+const ProfilePic = styled.img`
 
 position: absolute;
-right: 5%;
-bottom: -30%;
+right: 10%;
+bottom: -5%;
 height: 180px;
 width: 180px;
 border: 2px solid white;
 border-radius: 50%;
 object-fit: cover;
 
-@media (min-width:1024px) {
-    right: 10%;
+@media (min-width: 1024px) {
+    right: 15%;
     width: 200px;
     height: 200px;
 }
 `
-export const SocialMediaBar = styled.div`
-position: absolute;
-right: 5%;
-top: 5%;
-display: flex;
-flex-direction: row;
 
-img {
-    width: 55px;
-    margin-left: 10px;
-    filter: inevrt();
-    boder-radius: 50%;
+const HeaderText = styled.div`
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  width: auto;
+  left: 15%;
+  top: 150px;
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+  white-space: wrap;
 
-    &:hover {
-    background: white;
-    }
+  .heading-name {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-@media (min-width:1024px) {
-    left: 10%;
+  @media (min-width: 450px) {
+    left: 15%;
+    font-size: 52px;
+    line-height: 49px;
 }
 `
+const SocialMediaIcons = styled.div`
+  position: absolute;
+  right: 15%;
+  top: 50px;
+  display: flex;
+  flex-direction: row;
 
-const Header = () => {
-  return (
-    <StyledHeader>
-      <div className="headerText">
-        <h2>PORTFOLIO: CARINA MORENO</h2>
-        <h1>frontend developer</h1>
-        <h3> + educator</h3>
-      </div>
-      <ProfilePic src="/Images/profileCM.png" alt="Profile Picture Carina Moreno" />
-    </StyledHeader>
-  )
-}
-
-export default Header;
+  img {
+    width: 50px;
+    margin-left: 10px;
+  }
+`
