@@ -5,8 +5,6 @@ import { BASE_URL } from 'utils/urls';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, SecondHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 
-// https://api.github.com/users/malmen237/repos
-
 const Projects = () => {
   const [loading, setLoading] = useState(false);
   const [list, setList] = useState([]);
@@ -14,7 +12,14 @@ const Projects = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(BASE_URL)
+    console.log(process.env)
+    const options = {
+      method: 'GET',
+      headers: {
+        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
+      }
+    }
+    fetch(BASE_URL, options)
       .then((response) => response.json())
       .then((data) => {
         setList(data);
@@ -59,6 +64,7 @@ const Projects = () => {
     return projects.map((project) => {
       return (
         <SingleWrap>
+
           <ProjectLinks key={project.id} href={project.homepage}>
             {addImage && <div className="test">
               <div className="image-overlay" />
