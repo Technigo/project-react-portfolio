@@ -14,6 +14,7 @@ export const TopicsContainer = styled.div`
 
       & a {
         text-decoration: underline;
+        ${({ thoughts }) => (thoughts && { marginTop: '0.6rem' })};
       }
 `;
 
@@ -22,7 +23,7 @@ export const Topic = styled.p`
   color: var(--third-color);
   font-family: var(--sub-font);
   font-size: 0.8rem;
-  margin: 0.4rem 0 0.6rem;
+  margin: 0.6rem 0 0.6rem;
   padding: 0.15rem 0.25rem;
   text-transform: uppercase;
   word-break: keep-all;

@@ -28,7 +28,7 @@ const Thoughts = () => {
           <Paragraph grid>Some personal gibberish about how
           I started learning web development.
           </Paragraph>
-          <TopicsContainer>
+          <TopicsContainer thoughts>
             <a
               href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665/"
               target="_blank"
@@ -50,7 +50,7 @@ const Thoughts = () => {
           <Paragraph grid>Some personal gibberish about something
           else.
           </Paragraph>
-          <TopicsContainer>
+          <TopicsContainer thoughts>
             <a
               href="#"
               target="_blank"

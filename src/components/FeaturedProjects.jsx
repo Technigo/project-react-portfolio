@@ -2,7 +2,7 @@ import React from 'react';
 import SectionContainer from './styled/SectionContainer.styled';
 import { ProjectsGrid } from './styled/Grids.styled';
 import ArticleContainer from './styled/ArticleContainer.styled';
-import ProjectImg from './styled/ImageContainers.styled';
+import ProjectImage from './styled/ImageContainers.styled';
 import Paragraph from './styled/Paragraph.styled';
 import { Topic, TopicsContainer } from './styled/Topics.styled';
 import data from '../feat-projects';
@@ -15,11 +15,11 @@ const FeaturedProjects = () => {
         {data.map((project) => (
           <ArticleContainer key={project.name}>
             <a href={project.netlify_url} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden>
-              <ProjectImg style={{ backgroundImage: `url(${project.image})` }}>
+              <ProjectImage style={{ backgroundImage: `url(${project.image})` }}>
                 <div>
                   <h6>{project.name}</h6>
                 </div>
-              </ProjectImg>
+              </ProjectImage>
             </a>
             <h5>{project.project_name}</h5>
             <Paragraph grid>{project.description}</Paragraph>

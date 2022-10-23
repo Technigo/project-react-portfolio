@@ -9,10 +9,6 @@ const ArticleContainer = styled.article`
       margin-bottom: 0.1rem;
       ${({ thoughts }) => (thoughts && { fontWeight: '500', textTransform: 'capitalize' })};
     }
-
-    & a {
-      ${({ thoughts }) => (thoughts && { marginTop: '.4rem' })};
-    }
 `;
 
 export default ArticleContainer;
