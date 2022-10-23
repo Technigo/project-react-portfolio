@@ -26,7 +26,7 @@
         "display": true,
         "name": "Popular Movies",
         "overlayname": "Movies",
-        "description": "A website that shows the most popular movies in the US, built with React components, fetching the data from an API.",
+        "description": "A website that shows the most popular movies today, built with React components, fetching the data from an API.",
         "tags": ["HTML", "CSS", "JavaScript", "React"],
         "image": "./assets/movies.png",
         "netlify": "https://popularmovies-us.netlify.app/",

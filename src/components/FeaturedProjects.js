@@ -54,12 +54,14 @@ const ProjectInfo = styled.div`
 
 const InnerWrapperFeat = styled(InnerWrapper)`
   padding-bottom: 0px;
+  
 `
 
 const ProjectsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 5vw;
+  grid-gap: 3vw;
+  column-gap: 3vw;
   a {
     position: relative;
     display: block;
@@ -78,15 +80,21 @@ const ImageOverlay = styled.div`
   p {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 25px;
+    font-size: 27px;
     letter-spacing: 0.01em;
     line-height: 30px;
-    padding: 25%;
     text-align:center;
     color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; 
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
 
-    @media (max-width: 668px) {
-      display:none;
+    @media (max-width: 690px) {
+      font-size: 25px;
     }
   }
 
@@ -98,8 +106,7 @@ const ImageOverlay = styled.div`
 const DetailsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: auto;
-  justify-content: space-between;
+
 `
 const PProject = styled(P)`
   text-align: center;

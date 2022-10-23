@@ -33,7 +33,7 @@ const SoMeContainer = styled(SocialMediaContainer)`
 
   img {
     padding: 10px;
-    width: 80%;
+    width: 70%;
     filter: invert(47%) sepia(18%) saturate(1011%) hue-rotate(271deg) brightness(95%) contrast(89%);
     
     &:hover {

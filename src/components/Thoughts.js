@@ -40,10 +40,11 @@ const ThoughtsHeadline = styled.h4`
     line-height: 30px;
 `
 const BlogPic = styled.img`
-  width: 50%;
+  width: 30vw;
   display: flex;
   align-self:center;
   margin: 30px;
+  border-radius : 50px;
 `
 
 export default Thoughts
