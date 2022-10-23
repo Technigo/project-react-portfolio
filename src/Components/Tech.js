@@ -12,6 +12,7 @@ font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
 `
 
 const Tech = () => {

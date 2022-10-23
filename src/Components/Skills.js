@@ -13,6 +13,7 @@ font-family: 'Montserrat', sans-serif;
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    padding: 15px;
     @media (min-width: 1025px) {
   display:grid;
     grid-template-columns: 1fr 1fr 1fr;
