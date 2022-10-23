@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
 
     @media (min-width: 1024px){
-      border: 3px solid rgb(0, 51, 51, 0.2);
+      border: 3px solid rgb(0, 51, 51, 0.1);
     }
   }
 `
@@ -111,7 +111,7 @@ export const OverlinedHeading = styled(Heading)`
   font-weight: 600;
 
   &:hover{
-    text-decoration: 2px overline #102a29; 
+    text-decoration: ${(props) => (props.primary ? ' 2px overline white' : '2px overline #102a29')}; 
   }
 `
 /* For icons containers and the icons button styling found in Header and Footer */
@@ -141,10 +141,8 @@ export const IconContainer = styled.div`
 `
 
 export const IconLink = styled.a`
-  background: none;
-  border: none;
-  margin-right: 15px;
-
+  margin: 5px;
+    
   img{
     height: 50px;
     transition: transform .4s; 

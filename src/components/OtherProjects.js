@@ -87,7 +87,7 @@ const GithubRepoButton = styled.a`
   border: none;
   padding: 5px 10px;
   color: #003333;
-  background-color: #B4D7D7;
+  background-color: #ccd6d6;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: transform .5s; 

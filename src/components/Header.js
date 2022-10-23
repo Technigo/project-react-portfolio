@@ -101,6 +101,11 @@ const ProfilePictureContainer = styled.div`
     position: absolute;
     bottom: -10%;
     right: 10%;
+    transition: transform .8s; 
+
+    &:hover {
+    transform: scale(1.1);
+    }
 }
 
 @media (min-width: 668px) and (max-width: 1023px){

@@ -8,7 +8,7 @@ export const SocialMedia = () => {
     <Wrapper>
       <SectionTitle>FIND ME</SectionTitle>
       <SocialMediaContainer>
-        <IconLink
+        <SocialMediaLink
           primary
           type="button"
           href={LINKEDIN_URL}
@@ -16,8 +16,10 @@ export const SocialMedia = () => {
           <img
             src="images/linkedin.png"
             alt="LinkedIn icon for the header" />
-        </IconLink>
-        <IconLink
+          <p>linkedin</p>
+        </SocialMediaLink>
+
+        <SocialMediaLink
           primary
           type="button"
           href={GITHUB_URL}
@@ -25,8 +27,10 @@ export const SocialMedia = () => {
           <img
             src="images/github.png"
             alt="Github icon for the header" />
-        </IconLink>
-        <IconLink
+          <p>Github</p>
+        </SocialMediaLink>
+
+        <SocialMediaLink
           primary
           type="button"
           href={STACKOVERFLOW_URL}
@@ -34,15 +38,57 @@ export const SocialMedia = () => {
           <img
             src="images/stack-overflow.png"
             alt="Stack Overflow icon for the header" />
-        </IconLink>
+          <p>Stack Overflow</p>
+        </SocialMediaLink>
+
       </SocialMediaContainer>
     </Wrapper>
   )
 }
 
 const SocialMediaContainer = styled.section`
-  margin-top: 5%;
+display: grid;
+grid-template-columns: 33% 33% 33%;
+margin-top: 10%;
   img{
     filter: invert(1);
   }
+
+  @media (min-width: 600px) and (max-width: 1023px) {
+    margin: 5% 10% 0 10%;
+  }
+
+  @media (min-width: 1024px){
+    margin: 5% 10% 0 10%;
+`
+
+const SocialMediaLink = styled(IconLink)`
+text-decoration: none;
+text-align: center;
+color: white;
+font-size: 12px;
+font-weight: 600;
+margin: 10px 5px 0 5px;
+transition: transform .8s; 
+
+    &:hover{
+      transform: scale(0.95);
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  font-size: 15px;
+  margin: 10px 5px 0 5px;
+  p{
+    margin-top: 5%; 
+ }
+}
+
+@media (min-width: 1024px){
+  font-size: 18px;
+  margin: 10px 5px 0 5px;
+  p{
+    margin-top: 5%; 
+ }
+
+  
 `
