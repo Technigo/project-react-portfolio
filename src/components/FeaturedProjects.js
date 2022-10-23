@@ -67,7 +67,6 @@ const FeaturedContent = styled.div`
   height: 50%;
 
   h5 {
-    font-size: 1.3rem;
   }
 `;
 
@@ -76,6 +75,5 @@ const OtherContent = styled.div`
   height: 50%;
 
   h5 {
-    font-size: 1.3rem;
   }
 `;
