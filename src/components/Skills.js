@@ -1,6 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import SectionHeaderStyling from 'styles/SectionHeaderStyling';
+import data from 'data.json'
+
+const skillsCode = data.Skills.Code;
+console.log(skillsCode);
+const skillsTools = data.Skills.Tools;
+console.log(skillsTools);
+const skillsOther = data.Skills.Other;
+console.log(skillsOther);
+const skillsUpcoming = data.Skills.Upcoming;
+console.log(skillsUpcoming);
+
+const codeSkillsList = skillsCode.map(({ Skill }) => Skill).join(', ');
+const toolsSkillsList = skillsTools.map(({ Skill }) => Skill).join(', ');
+const otherSkillsList = skillsOther.map(({ Skill }) => Skill).join(', ');
+const upcomingSkillsList = skillsUpcoming.map(({ Skill }) => Skill).join(', ');
 
 const Skills = () => {
   return (
@@ -10,39 +25,21 @@ const Skills = () => {
         <div className="skills-lists">
           <div className="code">
             <ul>Code</ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript ES6</li>
-            <li>VScode</li>
-            <li>SQL</li>
-            <li>GitHub</li>
+            <li>{codeSkillsList}</li>
           </div>
 
           <div className="tools">
             <ul>Tools</ul>
-            <li>Jira</li>
-            <li>Figma</li>
-            <li>Notion</li>
-            <li>SSMS</li>
-            <li>Slack</li>
-            <li>Sharepoint</li>
-            <li>Office 365</li>
-            <li>Jenkins</li>
+            <li>{toolsSkillsList}</li>
           </div>
 
           <div className="other">
             <ul>Other</ul>
-            <li>Software Testing</li>
-            <li>Project Management</li>
-            <li>Test Management</li>
-            <li>Software Testing</li>
-            <li>Leadership</li>
+            <li>{otherSkillsList}</li>
           </div>
           <div className="upcoming">
             <ul>Upcoming</ul>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Adobe Illustrator</li>
+            <li>{upcomingSkillsList}</li>
 
           </div>
         </div>

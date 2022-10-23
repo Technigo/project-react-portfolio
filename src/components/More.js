@@ -44,10 +44,9 @@ export default More
 
 const MoreSectionStyling = styled.section`
   .section.more{
-    min-height: 200px;
-    top: 2830px;
     align-items:center;
     flex-direction: column;
+    margin: 5vw 0vw 5vw 0vw;
     } 
     
     .section.more img{

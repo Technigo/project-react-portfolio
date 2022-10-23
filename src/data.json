@@ -157,71 +157,83 @@
            {
             "Skill":"Adobe Illustrator",
             "id": "2"
-           }
-    
+           }  
           ]
     },
     "Projects": {
       "Project": [
         {
-          "projectName": "What to Watch?",
-          "week":  "2",
-          "id": "1",
-          "url": "https://dainty-lily-7cc7b2.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62ef8871d6d667000a90dc44/screenshot_2022-08-07-09-40-08-0000.png"
-        },
-        {
-          "projectName": "Chat Bot",
-          "week":  "3",
-          "id": "2",
-          "url": "https://pt-chat-bot.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png"
-        },
-        {
           "projectName": "Guess Who?",
           "week":  "4",
           "id": "3",
           "url": "https://mdahlgrenguesswho.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6315162c1693a93be6058e72/screenshot_2022-09-04-21-18-50-0000.png"
-
-        },
-        {
-          "projectName": "Weather App",
-          "week":  "5",
-          "id": "4",
-          "url": "https://weather-app-mia-antonella.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png"
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6315162c1693a93be6058e72/screenshot_2022-09-04-21-18-50-0000.png",
+          "showBig": "yes",
+          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
         },
         {
           "projectName": "Happy Thoughts",
           "week":  "6",
           "id": "5",
           "url": "https://project-happy-thoughts-miadahlgren.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63418679288f000008d7c212/screenshot_2022-10-08-14-17-53-0000.png"
-
-        },
-        {
-          "projectName": "MovieFlix",
-          "week":  "7",
-          "id": "6",
-          "url": "https://movies-project-week-8-david-mia.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png"
-        },
-        {
-          "projectName": "Project - Survey",
-          "week":  "7",
-          "id": "6",
-          "url": "https://knitgren-survey.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/633a88935c7f1d0008878448/screenshot_2022-10-03-07-01-11-0000.png"
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63418679288f000008d7c212/screenshot_2022-10-08-14-17-53-0000.png",
+          "showBig": "yes",
+          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
         },
         {
           "projectName": "Music Releases",
           "week":  "8",
           "id": "7",
           "url": "https://musicrealeases-younas-and-mia.netlify.app/",
-          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png"
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png",
+          "showBig": "yes",
+          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+        },
+        {
+          "projectName": "MovieFlix",
+          "week":  "7",
+          "id": "6",
+          "url": "https://movies-project-week-8-david-mia.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png",
+          "showBig": "yes",
+          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+        }
+      ],
+      "ShowSmall": [
+        {
+          "projectName": "What to Watch?",
+          "week":  "2",
+          "id": "1",
+          "url": "https://dainty-lily-7cc7b2.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62ef8871d6d667000a90dc44/screenshot_2022-08-07-09-40-08-0000.png",
+          "showBig": "no"
+        },
+        {
+          "projectName": "Project - Survey",
+          "week":  "7",
+          "id": "6",
+          "url": "https://knitgren-survey.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/633a88935c7f1d0008878448/screenshot_2022-10-03-07-01-11-0000.png",
+          "showBig": "no"
+        },
+        {
+          "projectName": "Chat Bot",
+          "week":  "3",
+          "id": "2",
+          "url": "https://pt-chat-bot.netlify.app/",
+          "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png",
+          "showBig": "no"
+        },
+        {
+          "projectName": "Weather App",
+          "week":  "5",
+          "id": "4",
+          "url": "https://weather-app-mia-antonella.netlify.app/",
+          "imageUrl": "public/images/weather_app.png",
+          "showBig": "no"
         }
       ]
+
     }  
     
     }

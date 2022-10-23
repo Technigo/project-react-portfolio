@@ -3,19 +3,16 @@ import styled from 'styled-components';
 import SectionHeaderStyling from 'styles/SectionHeaderStyling';
 import data from 'data.json';
 
-const Tech = () => {
-/*   {data.albums.items.map(item => {
-    return <Albumshero key={item.id} data= {item} />
-  })}
-   */
-  const TechInfo = data.Tech.items;
+const techInfo = data.Tech.items;
+const itemList = techInfo.map(({ Technique }) => Technique).join(', ');
 
-  console.log(TechInfo)
+console.log(itemList)
+const Tech = () => {
   return (
     <TechStyling>
       <section className="section tech">
         <SectionHeaderStyling><div><h2>Tech</h2></div></SectionHeaderStyling>
-        <p>hej
+        <p> {itemList}
         </p>
       </section>
     </TechStyling>)

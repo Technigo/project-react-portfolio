@@ -2,95 +2,80 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionHeaderStyling from 'styles/SectionHeaderStyling';
 import data from 'data.json';
+import OtherProject from './OtherProject';
+import ProjectsOverlayStyling from '../styles/ProjectsOverlayStyling';
 
 const projectInfo = data.Projects.Project;
-
-const project1 = projectInfo[0];
-const project2 = projectInfo[1];
-const project3 = projectInfo[2];
-const project4 = projectInfo[3];
+console.log(projectInfo);
 
 const Projects = () => {
   console.log(data);
   return (
-    <ProjectSectionStying>
+    <ProjectSectionStyling>
       <SectionHeaderStyling><div><h2>Projects</h2></div></SectionHeaderStyling>
-      <div className="div-projects-wrapper">
-        <a href="https://weather-app-mia-antonella.netlify.app/">
-          <div className="projectDiv pd2 large">
-            <h3>{project4.projectName}</h3>
-            <img src={project4.imageUrl} alt="project" />
-          </div>
-        </a>
-
-        <a href="https://mdahlgrenguesswho.netlify.app/">
-          <div className="projectDiv pd2 large">
-
-            <h3>{project3.projectName}</h3>
-            <img src={project3.imageUrl} alt="project" />
-          </div>
-        </a>
-
-        <a href="https://pt-chat-bot.netlify.app/">
-          <div className="projectDiv small">
-
-            <h3>{project2.projectName}</h3>
-            <img src={project2.imageUrl} alt="project" />
-          </div>
-        </a>
-
-        <a href="https://dainty-lily-7cc7b2.netlify.app/">
-          <div className="projectDiv small">
-
-            <h3>{project1.projectName}</h3>
-            <img src={project1.imageUrl} alt="project" />
-          </div>
-        </a>
+      <div className="bigger-projects-wrapper">
+        {projectInfo.reverse().map((project) => (
+          <a href={project.url} alt="link to project">
+            <div className="projects-div" key={project.id}>
+              <ProjectsOverlayStyling>
+                <img src={project.imageUrl} alt="pic" />
+              </ProjectsOverlayStyling>
+              <h4>{project.projectName}</h4>
+              <p className="project-description">{project.desc}</p>
+            </div>
+          </a>
+        ))}
       </div>
       <div className="smaller-projects">
-        <h3>Other projects</h3>
+        <OtherProject />
       </div>
-    </ProjectSectionStying>
+    </ProjectSectionStyling>
   )
 }
 export default Projects
 
-const ProjectSectionStying = styled.section`
+const ProjectSectionStyling = styled.section`
 
-.div-projects-wrapper{
+.bigger-projects-wrapper{
   display:flex;
   flex-direction: column;
+  justify-content: center;
 }
-.section.projects {
 
-  /*Makes h2 an exception to the following rules of section projects*/
-   display: flex;
-   flex-direction: column;
-   flex-wrap: nowrap;
-   margin-left: 9vw;
-   margin-bottom: 10vw;
-   }
-
-.projectDiv{
+.projects-div{
   font-size: 16px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
 }
 
-.projectDiv img{
-  width: 300px;
+.projects-div img{
+  width: 100%;
   margin-top: 10px;
+}
+
+.projects-div p{
+  width: 80%;
+  margin-bottom: 5vw;
 }
 
 h3{
   color: grey;
+  text-decoration: none;
+  text-align: center;
+  font-family: Montserrat;
 }
 
-.smaller-projects h3{
-  display:flex;
-  justify-content: center;
 
+h4{
+  color:#516a59;
+  text-decoration: underline;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 3px;
+  padding: 0px;
 }
+
 `
