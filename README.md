@@ -1,13 +1,10 @@
 # React Portfolio
-
-An Portfolio created in react following a specific design. 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+An Portfolio created in React with components and styled components, following a specific design. 
 
 ## The problem
+Fetshing and using styled components. I realized that when styling you have to think about how you map, and if you style it, the style also repeats. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had more time, I would change the way I use the social links, to be reusable. I would also add my article to My thoughts. The OG-tags are not working, so I'd also fix that. And overall optimizing my components and the style. I feel there is a lot that I could fix, and that I want to fix to make the code cleaner and easier to read. 
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sarahkneedler-portfolio.netlify.app/
