@@ -5,4 +5,4 @@ For this project I made a structure and split the site up in 9 components. I dec
 If I had more time I would spend more time planning the styling and structure to make the code neater and the styling more consistent.
 
 ## View it live
-portfolio-lisa-johansson.netlify.app
+https://portfolio-lisa-johansson.netlify.app/
