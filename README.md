@@ -19,10 +19,10 @@ When I choose to spend more time on this project I will:
 - Use props in more places.
 - Validate my code in a validation tool
 
-TECH:
-React
-Styled Components
-Fetch
-CSS
+## TECH used:
+- React
+- Styled Components
+- Fetch
+- CSS
 ## View it live
 https://sofia-andersson.netlify.app/
