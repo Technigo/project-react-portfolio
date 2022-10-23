@@ -2,27 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 import profileImg from 'Images/profileCM.png'
 import backgroundImg from 'Images/portfolioBackground-desktop.png'
+import Mail from 'Images/Mail.png'
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <SocialMediaIcons>
-        <a href="https://nl.linkedin.com/in/carimoreno" role="button" target="_blank" rel="noreferrer">
-          <img src="Images/LinkedIn.svg" alt="My LinkedIn" />
-        </a>
-        <a href="https://github.com/carimore" role="button" target="_blank" rel="noreferrer">
-          <img src="Images/Github.png" alt="My Github" />
-        </a>
-        <a href="https://stackoverflow.com/users/19840222/carina-moreno" role="button" target="_blank" rel="noreferrer">
-          <img src="src/Images/StackOverflow.png" alt="My StackOverflow" />
-        </a>
-      </SocialMediaIcons>
       <HeaderText>
         <div className="heading-name">PORTFOLIO: CARINA MORENO</div>
         <span style={{ fontWeight: '700' }}>frontend developer </span>
         <span style={{ fontWeight: '400', fontSize: '24px', lineHeight: '32px' }}>+ educator</span>
       </HeaderText>
       <ProfilePic src={profileImg} alt="Profile Picture Carina Moreno" />
+      <a href="mailto:carimoreno1@gmail.com" role="button" target="_blank" rel="noreferrer">
+        <Mailme src={Mail} alt="Email me" />
+      </a>
     </StyledHeader>
   )
 }
@@ -79,15 +72,20 @@ const HeaderText = styled.div`
     line-height: 49px;
 }
 `
-const SocialMediaIcons = styled.div`
-  position: absolute;
-  right: 15%;
-  top: 50px;
-  display: flex;
-  flex-direction: row;
 
-  img {
-    width: 50px;
-    margin-left: 10px;
-  }
+const Mailme = styled.img`
+  position: fixed;
+  right: 10%;
+  top: 60%;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+
+@media (min-width: 1024px) {
+  right: 15%;
+  height: 85px;
+  width: 85px;
+
+}
 `

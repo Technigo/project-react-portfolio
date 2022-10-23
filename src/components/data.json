@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Happy thoughts",
+        "id": 1,
+        "image": "General-Images/HappyThoughts.png",
+        "description": "A social media site where you can post happy thoughts to other people. This site was built with React and works with an API to send and receive data.",
+        "repo-name": "project-happy-thoughts",
+        "url": "https://superlative-bombolone-a3b180.netlify.app/"
+    },
+      
+    {
+        "title": "Guess the Animal",
+        "id": 2,
+        "image": "General-Images/GuesstheAnimal.png",
+        "description": "A version of the sight Guess Who but with animals. This Project uses objects, arrays and functions on JavaScript",
+        "repo-name": "project-guess-who",
+        "url": "https://soft-tiramisu-65c499.netlify.app"
+    },
+
+    {
+        "title": "Weather app",
+        "id": 3,
+        "image": "General-Images/WeatherApp.png",
+        "description": "An collaborative app for weather forecast. A simple weather app that changes design according to current weather.",
+        "repo-name": "project-weather-app",
+        "url": "https://tourmaline-sable-678f53.netlify.app/"
+    },
+
+    {
+        "title": "Movies",
+        "id": 4,
+        "image": "General-Images/Movies.png",
+        "description": "A website that shows new movies releases and their raitings. Website build using React router to load dynamic content",
+        "repo-name": "project-weather-app",
+        "url": "https://chic-kitten-f5c4e0.netlify.app/"
+    },
+
+    {
+        "title": "Villa Maresme",
+        "id": 5,
+        "image": "General-Images/VillaMaresme.png",
+        "description": "A hotel website with a booking system incorporated. This site was designed with Wix and uses Wix hotel booking sytem",
+        "repo-name": "project-villa-maresme",
+        "url": "https://www.villamaresme.com/"
+    },
+    
+  {
+      "title": "From Head to Toes",
+      "id": 6,
+      "image": "General-Images/FromHeadtoToes.png",
+      "description": "A website designed for a massage company. Worked on all the design process, from branding to final website",
+      "repo-name": "project-from-head-to-toes",
+      "url": "https://www.fromheadtotoes.nl/"
+  },
+
+  {
+      "title": "Beata Linz Marketing",
+      "id": 7,
+      "image": "General-Images/BeataLinz.png",
+      "description": "Website built for email marketing expert. Website editing in SquareSpace",
+      "repo-name": "project-beata-linz",
+      "url": "https://www.beatalinz.com/"
+  },
+
+  {
+      "title": "Boutique Hotel Vosje",
+      "id": 8,
+      "image": "General-Images/HotelVosje.png",
+      "description": "A website for a Small Boutique Hotel. This website is built on wix but uses an external booking system",
+      "repo-name": "project-hotel-vosje",
+      "url": "https://www.hotelvosje.nl/"
+  }
+]
