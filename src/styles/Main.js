@@ -44,6 +44,7 @@ export const MainTextWhite = styled(MainText)`
 `
 
 export const Section = styled.section`
+    border: 3px solid brown;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -57,10 +58,7 @@ export const SectionColor = styled(Section)`
 `
 
 export const Wrapper = styled.section`
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    border: 3px solid purple;
     width: 80%;
     @media (min-width: 798px) {
     width:60%

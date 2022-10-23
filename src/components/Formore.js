@@ -9,8 +9,8 @@ const Formore = () => {
     <Section>
       <Title>For more</Title>
       <IconsWrapper>
-        <a href="https://github.com/Kristin-Larsson"><Icon src={Github} alt="Github" /> GitHub</a>
-        <a href="https://www.linkedin.com/in/kristin-larsson/"><Icon src={Linkedin} alt="Linkedin" />LinkedIn</a>
+        <a href="https://github.com/Kristin-Larsson"><Icon src={Github} alt="Github" /></a>
+        <a href="https://www.linkedin.com/in/kristin-larsson/"><Icon src={Linkedin} alt="Linkedin" /></a>
       </IconsWrapper>
     </Section>
   );

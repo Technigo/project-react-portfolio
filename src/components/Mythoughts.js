@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 import React from 'react-dom'
-import { Title, Section, Wrapper } from '../styles/Main'
+import { Title, Section, MainTextWhite } from '../styles/Main'
 
 const Mythoughts = () => {
   return (
     <Section>
       <Title>My Thoughts</Title>
-      <Wrapper>
-        <Article>Article</Article>
-      </Wrapper>
+      <Article>
+        <MainTextWhite>
+        Article
+        </MainTextWhite>
+      </Article>
     </Section>
   );
 }
