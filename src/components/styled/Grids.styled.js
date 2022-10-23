@@ -7,12 +7,9 @@ export const ProjectsGrid = styled.div`
   margin: var(--margin);
   width: var(--width);
 
-    & h5 {
-      // margin-top: ${(props) => (props.other ? '0' : '0.7rem')};
-    }
-
   @media (max-width: 650px) {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 `;
 

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ProjectImage = styled.div`
   background-size: cover;
   aspect-ratio: 1.5 / 1;
-  // border: 1px solid var(--third-color);
   box-shadow: 3px 3px var(--third-color);
   margin-bottom: 0.6rem;
 
@@ -21,7 +20,6 @@ const ProjectImage = styled.div`
 `
 
 export const ThoughtsImage = styled(ProjectImage)`
-  // border: 1px solid var(--main-color);
   box-shadow: 3px 3px var(--main-color);
 
    & div {
