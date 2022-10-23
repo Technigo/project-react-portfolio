@@ -21,9 +21,11 @@ const ThoughtsWrapper = styled(Wrapper)`
 const ThougtImg = styled.img`
     width: 100%;
     display: inherit;
+    opacity: 0.5;
 
     @media (min-width: 1024px) {    
       width: 700px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      margin-top: 20px;
 }
 `

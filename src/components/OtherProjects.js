@@ -68,7 +68,7 @@ const OtherProjectCard = styled.div`
 
   }
   @media (min-width: 1024px) {    
-  margin-left: 320px;
+    margin-left: 280px;
   }
 `
 
@@ -78,7 +78,7 @@ const ProjectCodeContainer = styled.div`
     background-color: #1C658C;
     margin: 0 5px 5px 0;
     padding: 5px;
-    color: ${(props) => (props.primary ? '#003333' : 'white')};
+    color: white;
     font-size: 10px;
   }
 `

@@ -32,12 +32,13 @@ const ProjectList = () => {
 export default ProjectList;
 
 const ProjectOuterWrapper = styled.section`
-        display: grid;
-        grid-template-columns: 100%;
+      display: grid;
+      grid-template-columns: 100%;
+    
     h3 {
-        font-size: 16px;
-        margin-top: 0;
-        margin-left: 2%;
+      font-size: 16px;
+      margin-top: 0;
+      margin-left: 2%;
     }
 
     p {
@@ -48,13 +49,25 @@ const ProjectOuterWrapper = styled.section`
     @media (min-width: 1024px) {
       grid-template-columns: 50% 50%;
       width: 90%;
+      
+    h3 {
+      font-size: 30px;
+      }
+
+    p {
+      font-size: 20px;
+    }
     }
 `
 
 const FeatureProjectCard = styled.div`
-    width: 250px;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
+
+    @media (min-width: 1024px) {
+    margin-left: 150px;
+    }
 `
 
 const ProjectImageOverlay = styled.div`
