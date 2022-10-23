@@ -46,9 +46,19 @@ const About = () => {
           </div>
 
           <p>
-              lorem ipsum jdkljsadkjslkjdklsjdkljasdkjlkdjdkjsldjaslkdjlkajdklasjdkljd
-              dskdklsjdklsjdkljdlkjadlkjskldjlksdjslkdjklsofpweifokfödsl
-              fdsöjfödkfödslkföldkfölkdfölkfölkdlöfdklfkföl
+          I just graduated from a coding school and now I feel it is time
+          to take a step towards the challenge of becoming a Frontend web developer!
+          What really made me dive into coding, was the beauty and potential of decetralized
+          tech like blockchain! I already have strong basic skills in python and javascript.
+          Im very motivated to grow in a cutting edge environment while learning
+          to thrive with the brightest minds in the software scene.
+
+          You will have a team player who is eager to learn new things and
+          who knows how to create a good spirit for your work team! I believe
+          I would be a right fit, because I am ready to dedicate as an aspiring
+          developer raw undivided attention for learning and growth for this opportunity,
+           that truly is a once in a life time chance.
+
           </p>
           <a href="#contact" className="btn btn-primary">Lets Talk</a>
         </div>

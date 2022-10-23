@@ -31,7 +31,8 @@
 }
 
 .about__card {
-    background: blue;
+    background: rgba(240, 60, 204, 0.757);
+    opacity: 0.8;
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -53,6 +54,7 @@
 
 .about__card h5 {
     font-size:  0.95rem;
+    color: white;
 }
 
 .about__card small {

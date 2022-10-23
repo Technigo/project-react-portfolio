@@ -14,10 +14,10 @@
 }
 
 :root { /*declaring all of the variables for easy custom. root vars. decalring with -- hyphens */
- --color-bg: #ee6aa7; /*background color*/
+ --color-bg: #000000; /*background color*/
  --color-bg-variant: #fff;
  --color-primary-variant: #dee2e6;
- --color-white:  #000000;
+ --color-white: #ee6aa7;
  --color-light: #c7cbcf; 
 
  --transition: all 400ms ease;
