@@ -71,10 +71,14 @@ const Headlines = styled.div`
     }
     
     @media (min-width: 668px) {
-      text-shadow: none;
-      width: 250px;
-      font-size: 3rem;
-      line-height: 3.7rem;
+      width: 100%;
+            
+      h2 { 
+        text-shadow: none;
+        width: 250px;
+        font-size: 3rem;
+        line-height: 3.7rem;
+      }
     }
     `
 
