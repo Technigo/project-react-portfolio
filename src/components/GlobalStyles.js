@@ -11,6 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     max-width: 1024px;
     font-family: 'Montserrat', sans-serif;
+
     @media (min-width: 1024px) {
       border: 3px solid rgb(0, 51, 51, 0.2);
     }

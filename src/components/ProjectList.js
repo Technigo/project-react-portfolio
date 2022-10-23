@@ -12,9 +12,6 @@ const ProjectList = () => {
             target="_blank"
             rel="noreferrer"
             role="button">
-            <ProjectOverlay>
-              <h3>{item.overlay}</h3>
-            </ProjectOverlay>
             <ProjectImageOverlay>
               <img src={item.image} alt={item.overlay} />
             </ProjectImageOverlay>
@@ -49,31 +46,15 @@ const ProjectOuterWrapper = styled.section`
     }
 
     @media (min-width: 1024px) {
-    grid-template-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      width: 90%;
     }
 `
 
 const FeatureProjectCard = styled.div`
-    width: 90%;
-    transition: transform .8s;
-`
-
-const ProjectOverlay = styled.div`
-  margin: 2%;
-  position: relative;
-
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    }
-
-    &:hover{
-        opacity: 1;
-    }
-
-    h3 {
-    }
+    width: 250px;
+    display: grid;
+    grid-template-columns: 100%;
 `
 
 const ProjectImageOverlay = styled.div`
@@ -82,13 +63,23 @@ const ProjectImageOverlay = styled.div`
   margin-top: 5%;
   margin-bottom: 5%;
   border-width: 3px;
-  /* border-style: solid red;  */
-  width: 90%;
+  width: 100%;
   transition: transform .8s; 
+  opacity: 0.6;
+
+  img {
+    height: 250px;
+    }
   &:hover {
     transform: scale(0.95);
-    border-style: solid; 
-  }
+    opacity: 1;
+    }
+
+    @media (min-width: 1024px) {
+      img {
+        height: 450px;
+      }
+    }
 `
 
 const ProjectCodeContainer = styled.div`
@@ -98,7 +89,7 @@ const ProjectCodeContainer = styled.div`
     background-color: #1C658C;
     margin: 0 5px 5px 0;
     padding: 5px;
-    color: ${(props) => (props.primary ? '#003333' : 'white')};
+    color: white;
     font-size: 10px;
   }
 `
