@@ -8,13 +8,14 @@ const FeaturedProjects = () => {
   const [repos, setRepos] = useState([])
 
   useEffect(() => {
+    console.log(repos)
     fetch('https://api.github.com/users/Kristin-Larsson/repos')
       .then((res) => res.json())
       .then((data) => {
         setRepos(data.filter(({ fork, name }) => fork && selectedprojects.includes(name)))
         console.log(repos)
       })
-  }, [])
+  }, [selectedprojects])
 
   return (
     <Section>
@@ -29,8 +30,8 @@ const FeaturedProjects = () => {
                 <a href={`https://github.com/Kristin-Larsson/${repo.name}`}>
                   <ProjectImage src={`https://raw.githubusercontent.com/Kristin-Larsson/${repo.name}/master/code/portfolio.jpg`} alt="project" />
                   <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
-                  <MainText>{repo.description}</MainText>
                 </a>
+                  <MainText>{repo.description}</MainText>
                 <ProgramsWrapper>
                   <Programs>{repo.topics[0]}</Programs>
                   <Programs>{repo.topics[1]}</Programs>

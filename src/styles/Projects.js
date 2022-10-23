@@ -51,6 +51,7 @@ margin-bottom: 10px;
 
 export const WrapOtherProject = styled(WrapProject)`
 width: auto;
+justify-content: center;
 @media (min-width: 800px) {
     max-width: auto;
     }

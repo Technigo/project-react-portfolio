@@ -33,8 +33,10 @@ export const MainText = styled.p`
     text-align: left;
     overflow-wrap: break-word;
     text-decoration: none;
+    color: black
     &a:link {
         textDecoration: none;
+        color: black;
       }
 `
 
