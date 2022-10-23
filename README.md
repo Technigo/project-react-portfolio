@@ -1,10 +1,7 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This project was written in React together with styled components.
+The challenge was to take a finished HTML/CSS page (https://github.com/joeohm/project-portfolio) and convert it into a React app with split components, and also using styled components instead of a globl style sheet.  
+I decided to break the styled components up in one globally shared styled components (Styled.js) which can be reused, and then each React component has its own styled components as well.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://portfolio-joel-ohman.netlify.app/
