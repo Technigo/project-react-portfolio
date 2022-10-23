@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Tech = () => {
   return (
-    <SectionContainer bgColor="#eeeeee">
+    <SectionContainer bgColor="#f4f4f4">
       <SectionHeadings>TECH</SectionHeadings>
       <SectionText>
                 HTML, CSS, JavaScript, ES6, React, mob-programming, pair-programming
@@ -16,9 +16,14 @@ const Tech = () => {
 export default Tech;
 
 const SectionContainer = styled.section`
+    background-color: #f4f4f4;
     display: block;
-    text-align: center;
-    margin-bottom: 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 40px 24px;
+  
+  text-align: center;
+
 `
 const SectionHeadings = styled.h2`
     text-transform: uppercase;
@@ -30,4 +35,5 @@ const SectionHeadings = styled.h2`
 `
 const SectionText = styled.p`
     line-height: 1.5;
+    
 `

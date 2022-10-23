@@ -1,62 +1,112 @@
 [
     {
-          "img_src": "/assets/guess.who.png",  
+         "id": 1,
+         "overlay_title": "Guess Who?", 
+        "img_src": "/..assets/guess.who2.png",  
           "title": "Guess Who?",
-          "project-description": "Guess the right character by asking questions.",
+          "project_description": "Guess the right character by asking questions.",
       "repo-name": "project-guess-who",
           "netlify-name": "sprightly-nougat-44de5e",
         "url": "https://github.com/YoTesfam/project-guess-who",
           "tags": [
-              "HTML5",
-              "CSS",
-              "JavaScript"
+                    {
+                        "id": 1,
+                        "name": "HTML5"
+                    },
+                    {
+                        "id": 2,
+                        "name": "CSS"
+                    },
+                    {
+                        "id": 3,
+                        "name": "JavaScript"
+                    }
 
           ]
     },
 
     {
+        "id": 2,
+        "overlay_title": "Weather App", 
         "img_src": "/assets/weatherimage1.png",  
         "title": "Weather App",
-        "project-description": "Weather forecast for Stockholm using open weather api.",
-    "repo-name": "project-guess-who",
+        "project_description": "Weather forecast for Stockholm using open weather api.",
+    "repo-name": "project-weather-app",
         "netlify-name": "yourweatherapptoday",
       "url": "https://github.com/YoTesfam/project-weather-app",
         "tags": [
-            "HTML5",
-            "CSS",
-            "JavaScript",
-            "APIs"
+                {
+                    "id": 1,
+                    "name": "HTML5"
+                },
+                {
+                    "id": 2,
+                    "name": "CSS"
+                },
+                {
+                    "id": 3,
+                    "name": "JavaScript"
+                },
+                {
+                    "id": 4,
+                    "name": "APIs"
+                }
 
         ]
     },
 
     {
+        "id": 3,
+        "overlay_title": "Chat Bot", 
         "img_src": "/assets/chatbot.png",  
         "title": "Chat bot",
-        "project-description": "Responsive chat bot for ordering flowers.",
+        "project_description": "Responsive chat bot for ordering flowers.",
     "repo-name": "project-chatbot",
         "netlify-name": "teal-khapse-dbfdca",
       "url": "https://github.com/YoTesfam/project-chatbot",
         "tags": [
-            "HTML5",
-            "CSS",
-            "JavaScript"
+                {
+                    "id": 1,
+                    "name": "HTML5"
+                },
+                {
+                    "id": 2,
+                    "name": "CSS"
+                },
+                {
+                    "id": 3,
+                    "name": "JavaScript"
+                }
 
         ]
     },
 
     {
-        "img_src": "/assets/happy-thoughts.png",  
+        "id": 4,
+        "overlay_title": "Happy Thoughts", 
+        "img_src": "/..assets/happy-thoughts.png",  
         "title": "Happy Thoughts Chat",
-        "project-description": "A simple built API to collect happy thoughts.",
+        "project_description": "A simple built API to collect happy thoughts.",
     "repo-name": "project-happy-thoughts",
         "netlify-name": "jade-queijadas-27917e",
       "url": "https://github.com/YoTesfam/project-happy-thoughts",
         "tags": [
-            "HTML5",
-            "CSS",
-            "APIs",
-            "React Hooks"
+                {
+                    "id": 1,
+                    "name": "HTML5"
+                },
+                {
+                    "id": 2,
+                    "name": "CSS"
+                },
+                {
+                    "id": 5,
+                    "name": "React Hooks"
+                },
+                {
+                    "id": 4,
+                    "name": "APIs"
+                }
 
         ]
     }
