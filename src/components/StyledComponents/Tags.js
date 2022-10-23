@@ -1,19 +1,17 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import styled from 'styled-components';
 
-export const Tags = () => {
+export const Tags = ({ tags }) => {
   return (
     <TagWrapper>
-      <p>tags</p>
+      {tags.map((tag, index) => {
+        return <p key={index}>{tag.name}</p>;
+      })}
     </TagWrapper>
   );
 };
 
-// {tags.map((tag) => {
-//     return (
-//       <p key={tag}>{tag.toUpperCase()}</p>
-//     )
-//   })}
 export const TagWrapper = styled.div`
   display: flex;
 

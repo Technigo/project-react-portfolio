@@ -3,7 +3,7 @@
     "id": "project-8",
     "title": "Popular Movies",
     "description": "React apps with multiple pages using routes",
-    "image": "./assets/projects/popular-movies.jpg",
+    "image": "./assets/project/music-releases.jpg",
     "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
     "tags": [
       { "name": "JavaScript" },
