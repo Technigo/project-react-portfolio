@@ -43,6 +43,7 @@ export const Title = styled.h1`
   justify-self: center;
   text-align: center;
   margin-bottom: 15px;
+  padding: 5px;
 `
 
 export const RedTitle = styled.h1`
@@ -51,6 +52,7 @@ export const RedTitle = styled.h1`
   font-size: 24px;
   margin-top: 15px;
   font-weight:bold;
+
 `
 export const Link = styled.a`
   text-decoration: none;

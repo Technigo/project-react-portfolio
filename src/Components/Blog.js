@@ -18,6 +18,13 @@ const ArticleContainer = styled.div`
  display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
+    
+
+    h4 {
+      font-weight: bold;
+    }
+    
 `
 
 const Link = styled.a`
@@ -46,7 +53,7 @@ const Blog = () => {
                 <img
                   src={blog}
                   alt="computer details"
-                  width={500} />
+                  width={400} />
 
                 <div>
                   <RedTitle>October 2022</RedTitle>

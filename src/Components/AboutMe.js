@@ -10,6 +10,7 @@ font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 50px;
     background: #F4F4F4;
+    padding: 15px;
 `
 
 const Line = styled.span`
