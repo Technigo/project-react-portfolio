@@ -12,7 +12,7 @@
         "title": "Guess the Animal",
         "id": 2,
         "image": "General-Images/GuesstheAnimal.png",
-        "description": "A version of the sight Guess Who but with animals. This Project uses objects, arrays and functions on JavaScript",
+        "description": "My own version of the populer Guess Who game. This Project uses objects, arrays and functions on JavaScript",
         "repo-name": "project-guess-who",
         "url": "https://soft-tiramisu-65c499.netlify.app"
     },
@@ -21,7 +21,7 @@
         "title": "Weather app",
         "id": 3,
         "image": "General-Images/WeatherApp.png",
-        "description": "An collaborative app for weather forecast. A simple weather app that changes design according to current weather.",
+        "description": "A collaborative app for weather forecast. A simple weather app that changes design according to current weather.",
         "repo-name": "project-weather-app",
         "url": "https://tourmaline-sable-678f53.netlify.app/"
     },

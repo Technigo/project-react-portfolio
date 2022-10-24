@@ -9,8 +9,8 @@ export const Header = () => {
     <StyledHeader>
       <HeaderText>
         <div className="heading-name">PORTFOLIO: CARINA MORENO</div>
-        <span style={{ fontWeight: '700' }}>frontend developer </span>
-        <span style={{ fontWeight: '400', fontSize: '24px', lineHeight: '32px' }}>+ educator</span>
+        <span style={{ fontWeight: '700' }}>website designer + developer </span>
+        <span style={{ fontWeight: '400', fontSize: '24px', lineHeight: '32px' }}>background in education</span>
       </HeaderText>
       <ProfilePic src={profileImg} alt="Profile Picture Carina Moreno" />
       <a href="mailto:carimoreno1@gmail.com" role="button" target="_blank" rel="noreferrer">

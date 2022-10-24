@@ -1,10 +1,10 @@
 import React from 'react'
-import { SectionContainer, Headings, Text, ProjectsGrid, ProjectTittle, ProjectWrapper } from 'GlobalStyles';
+import { SectionContainerGray, Headings, Text, ProjectsGrid, ProjectTittle, ProjectWrapper } from 'GlobalStyles';
 import projects from './data.json'
 
 const FeaturedProjects = () => {
   return (
-    <SectionContainer>
+    <SectionContainerGray>
       <Headings><span> MY PROJECTS </span></Headings>
       <ProjectsGrid>
         {projects.map((project) => (
@@ -17,7 +17,7 @@ const FeaturedProjects = () => {
           </ProjectWrapper>
         ))}
       </ProjectsGrid>
-    </SectionContainer>
+    </SectionContainerGray>
   )
 }
 

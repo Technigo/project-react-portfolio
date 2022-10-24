@@ -12,8 +12,8 @@ export const App = () => {
       <GlobalStyles />
       <Header />
       <Intro />
-      <Toolbox />
       <FeaturedProjects />
+      <Toolbox />
       <Footer />
     </>
   )

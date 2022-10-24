@@ -1,9 +1,9 @@
 import React from 'react';
-import { SectionContainerGray, Text, Headings } from 'GlobalStyles';
+import { SectionContainer, Text, Headings } from 'GlobalStyles';
 
 const Toolbox = () => {
   return (
-    <SectionContainerGray>
+    <SectionContainer>
       <Headings> TOOLBOX </Headings>
       <Text>
         HTML, CSS, JavaScript, React, Web Accessibly,
@@ -11,7 +11,7 @@ const Toolbox = () => {
         Wix, Word-Press, SquareSpace, Adobe Photoshoop,
         Adobe Illustrator, Adobe InDesign, Figma
       </Text>
-    </SectionContainerGray>
+    </SectionContainer>
   )
 }
 
