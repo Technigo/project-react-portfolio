@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+:root {
+  --white: #ffffff;
+  --blue: #293a4f;
+  --beige: #e9e2dc;
+  --nude: #dab9a8;
+}
+
+p {
+  font-family: Montserrat;
+  color: var(--blue);
+}
+
+h5 {
+  font-family: Montserrat;
+  color: #ffff;
+  font-size: 22px;
+  background-color: var(--blue);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 668px) {
+  
+  h5{
+    font-size:25px;
+  }
+  
+ }
+
+ @media (min-width: 1024px) {
+   h5 {
+    font-size: 27px;
+   }
+  }
