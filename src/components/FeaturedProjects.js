@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { BlockSection, InnerWrapper } from './styles/Wrappers';
 import { Tags } from './styles/Tags';
+import { TagGithub } from './styles/TagGithub';
 import projects from '../projects.json';
 
 export const FeaturedProjects = () => {
@@ -37,11 +38,17 @@ export const FeaturedProjects = () => {
 
         {FeaturedRepos.map((project) => (
           <FeaturedContent key={project.id}>
-            <img src={project.image} alt={project.title} width="50%" />
+            <a
+              href={project.netlifyLink}
+              target="_blank"
+              rel="noreferrer"
+              tabIndex={-1}
+              aria-hidden>
+              <img src={project.image} alt={project.title} width="100%" />
+            </a>
             <h5>{project.title}</h5>
             <p>{project.description}</p>
-            <a href={project.netlifyLink}>View it Live</a> <span>|</span>{' '}
-            <a href={project.githubLink}>View on Github</a>
+            <TagGithub tagGithub={project.githubLink} />
             <Tags tags={project.tags} />
           </FeaturedContent>
         ))}
@@ -50,10 +57,21 @@ export const FeaturedProjects = () => {
 
         {OtherRepos.map((project) => (
           <OtherContent key={project.id}>
-            <h5>{project.title}</h5>
-            <p>{project.description}</p>
-            <a href={project.netlifyLink}>View it Live</a> <span>|</span>{' '}
-            <a href={project.githubLink}>View on Github</a>
+            <div>
+              <a
+                href={project.netlifyLink}
+                target="_blank"
+                rel="noreferrer"
+                tabIndex={-1}
+                aria-hidden>
+                <h5>{project.title}</h5>
+                <p>
+                  {project.description}
+                  <h5> &gt;&gt;</h5>
+                </p>
+              </a>
+            </div>
+            <TagGithub tagGithub={project.githubLink} />
             <Tags tags={project.tags} />
           </OtherContent>
         ))}
@@ -63,17 +81,9 @@ export const FeaturedProjects = () => {
 };
 
 const FeaturedContent = styled.div`
-  width: 50%;
-  height: 50%;
-
-  h5 {
-  }
+  margin: 50px 0;
 `;
 
 const OtherContent = styled.div`
-  width: 50%;
-  height: 50%;
-
-  h5 {
-  }
+  margin: 50px 0;
 `;
