@@ -1,14 +1,21 @@
 import {
+	FeaturedContainer,
+	FeatureLayout,
+} from 'StyledComponents/FeaturedProject.style';
+import {
 	SectionContainer,
 	SectionParagraph,
 	Title,
 	Tags,
 } from 'StyledComponents/GlobalStyle';
+import projects from 'RepoData/featured-project.json';
 
 export const FeaturedProjects = () => {
 	return (
-		<SectionContainer backgroundColor="rgb(238, 238, 238)">
+		<FeaturedContainer>
 			<Title>Featured Projects</Title>
-		</SectionContainer>
+
+			<FeatureLayout>{}</FeatureLayout>
+		</FeaturedContainer>
 	);
 };
