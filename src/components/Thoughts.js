@@ -21,7 +21,7 @@ export const Thoughts = () => {
           <StyledArticle>
             <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@linnea.ajger/learning-new-things-4be662bc7c70">
               <img src="https://miro.medium.com/max/1400/1*EQNmkL_KRFVvj1Tor0TeqQ.jpeg" alt="blog post" />
-              <h5>OCT 2022</h5>
+              <DateHeader>OCT 2022</DateHeader>
               <h4>Learning new things</h4>
               {// eslint-disable-next-line max-len
               }          <p>Read about my thoughts from the first 3 months in the Technigo Web Developer Bootcamp.</p>
@@ -57,10 +57,6 @@ export const StyledArticle = styled.article`
     color: #152D24;
     margin: 0.5rem 0rem;  }
 
-  h5  {
-   font-size: 1.0rem; 
-  }
-
 
 &:hover {
   transform: scale(1.01);
@@ -71,4 +67,8 @@ export const StyledArticle = styled.article`
   width: 100%;
 
 }
+`
+
+const DateHeader = styled.p`
+   font-size: 1.0rem; 
 `
