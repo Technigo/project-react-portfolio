@@ -8,7 +8,7 @@ const TechSkills = () => {
   const skillTags = [
     'HTML',
     'CSS',
-    'Javascript ES6',
+    'JavaScript ES6',
     'React',
     'API:s',
     'GitHub',

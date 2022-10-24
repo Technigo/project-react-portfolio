@@ -7,7 +7,7 @@ const SkillsSection = () => {
   const skills = [
     {
       name: 'CODE',
-      tags: ['HTML5', 'CSS3', 'JavaSacrip ES6', 'React', 'GitHub']
+      tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React', 'GitHub']
     },
     {
       name: 'TOOLBOX',
