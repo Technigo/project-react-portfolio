@@ -26,7 +26,8 @@
       { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "API" },
-      { "name": "React useEffect" }
+      { "name": "React" },
+      { "name": "useEffect" }
     ]
   },
   {
@@ -40,7 +41,8 @@
       { "name": "JavaScript" },
       { "name": "HTML5" },
       { "name": "CSS3" },
-      { "name": "React State" }
+      { "name": "React" },
+      { "name": "useState" }
     ]
   },
   {
@@ -68,8 +70,7 @@
       { "name": "JavaScript" },
       { "name": "HTM5L" },
       { "name": "CSS3" },
-      { "name": "API" },
-      { "name": "Pair programming" }
+      { "name": "API" }
     ]
   },
   {
@@ -88,12 +89,7 @@
     "image": "./assets/project/forest-to-you.jpg",
     "netlifyLink": "https://astounding-fairy-f2a605.netlify.app",
     "githubLink": "https://github.com/Petrasoderstrom1612/project-business-site",
-    "tags": [
-      { "name": "JavaScript" },
-      { "name": "HTML5" },
-      { "name": "CSS3" },
-      { "name": "Mob programming" }
-    ]
+    "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
   },
   {
     "id": "project-1",
