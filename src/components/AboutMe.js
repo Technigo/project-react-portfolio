@@ -8,9 +8,18 @@ export const AboutMe = () => {
       <InnerWrapper>
         <p>
           <Line />
-          <Dot /> Hello, I am a student at Technigo and prosper to become a web
-          developer. Currently working as a mechanical engineer. Welcome to my
-          portfolio where you can follow my projects and journey.
+          <Dot /> Hello, I am a student at{' '}
+          <a
+            href="https://www.technigo.io/program"
+            target="_blank"
+            rel="noreferrer"
+            tabIndex={-1}
+            aria-hidden>
+            <b>Technigo </b>
+          </a>
+          and prosper to become a web developer. Currently working as a
+          mechanical engineer. Welcome to my portfolio where you can follow my
+          projects and journey.
         </p>
       </InnerWrapper>
     </BlockSection>
