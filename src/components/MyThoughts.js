@@ -48,25 +48,26 @@ export default MyThoughts;
 /* Components local styled components */
 
 const ClonedProjectInfoHeader = styled(ProjectInfoHeader)`
-    margin-block-start: 0;
-    margin-block-end: 0.7%;
+  margin-block-start: 0;
+  margin-block-end: 0.7%;
 `;
 
 const ClonedProjectInfo = styled(ProjectInfo)`
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #183a1d;
 `;
 
 const ProjectSmallHeader = styled.p`
-    font-size: 24px;
-    line-height: 1.4;
-    color: #54BAB9;
-    margin-block-start: 0.5%;
-    margin-block-end: 0.5%;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #f0a04b;
+  margin-block-start: 0.5%;
+  margin-block-end: 0.5%;
 
-    @media (max-width: 800px) {
-    font-size: 16px;
-    line-height: 1.4;
+  @media (max-width: 800px) {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 `;

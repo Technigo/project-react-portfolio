@@ -66,17 +66,23 @@ const ForMoreBox = styled.div`
 `;
 
 const ForMoreImg = styled.img`
-    height: 45%;
-    filter: brightness(0) saturate(100%) invert(98%) sepia(10%) saturate(5922%) hue-rotate(150deg) brightness(76%) contrast(88%);
+  height: 45%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(91%) saturate(5523%) hue-rotate(316deg) brightness(99%) contrast(96%);
 
-    @media (max-width: 800px) {
-        height: 22%; 
-      } 
+  &:hover {
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition: 900ms linear;
+    }
+    
+  @media (max-width: 800px) {
+      height: 22%; 
+    } 
 `;
 
 const ForMoreTitle = styled.h4`
     text-align: center;
-    color: #54BAB9;
+    color: #f0a04b;
     font-size: 24px;
     line-height: 1.4;
   
@@ -86,7 +92,7 @@ const ForMoreTitle = styled.h4`
 `;
 
 const ClonedOuterWrapper = styled(OuterWrapper)`
-    background-color: #ede2d5;
+  background-color: #fefbe9;
 `;
 
 const ClonedInnerWrapper = styled(InnerWrapper)`

@@ -58,7 +58,7 @@ const SkillsBox = styled.div`
 `;
 
 const SkillsBoxHeader = styled.h4`
-    color: #54BAB9;
+    color: #f6c453;
     font-size: 22px;
     line-height: 1.4;
     font-weight: bold;
@@ -72,6 +72,12 @@ const SkillsBoxParagraph = styled.p`
 font-size: 21px;
 line-height: 1.4;
 font-weigt: bold;
+color: #183a1d;
+
+&:hover {
+  text-decoration: underline;
+  text-decoration-color: #f6c453;
+}
 
 @media (max-width: 800px) {
   font-size: 16px;

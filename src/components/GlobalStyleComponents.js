@@ -7,7 +7,7 @@ export const GlobalFonts = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f8f2eb;
+    background-color: #fefbe9;
     }
   }
 `;
@@ -19,7 +19,7 @@ export const OuterWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f2eb;
+  background-color:  #fefbe9;
   padding: 5% 0 5% 0;
 `;
 
@@ -28,7 +28,7 @@ export const OuterWrapperSecond = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5ede3;
+  background-color: #e1eedd;
   padding: 5% 0 5% 0;
 `;
 
@@ -42,7 +42,7 @@ export const InnerWrapper = styled.section`
 `;
 
 export const SectionHeadline = styled.h2`
-  background-color: #54BAB9;
+  background-color: #f0a04b;
   color: whitesmoke;
   display: inline-block;
   padding: 4px;
@@ -126,11 +126,10 @@ export const ProjectCard = styled.a`
   text-decoration: none;
   position: relative;
 
-  /* Optional hover effect, delete if not desired */
-  /* &:hover {
+   &:hover {
     transform: translateY(-1%);
     transition: transform 0.3s;
-  } */
+  } 
 `;
 
 export const ThumbnailWrapper = styled.div`
@@ -157,7 +156,7 @@ export const ThumbnailWrapper = styled.div`
 
 export const ThumbnailTitle = styled.h2`
   font-family: "Montserrat Bold";
-  color: white;
+  color: #fefbe9;
   position: absolute;
 `;
 
@@ -191,7 +190,7 @@ export const ProjectInfo = styled.p`
 `;
 
 export const SubParagraphArrows = styled.span`
-  color: #54BAB9;
+  color: #f0a04b;
   font-weight: bold;
 `;
 

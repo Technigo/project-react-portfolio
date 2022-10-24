@@ -18,12 +18,12 @@ export const App = () => {
       <GlobalFonts />
       <Header />
       <AboutMe />
-      <Tech color="#54BAB9" />
-      <FeaturedProjectCard color="#54BAB9" tagColor="#54BAB9" />
-      <OtherProjects tagColor="#54BAB9" />
-      <MyThoughts color="#54BAB9" colorSecond="black" />
-      <Skills color="#54BAB9" />
-      <ForMore color="#54BAB9" />
+      <Tech color="#f0a04b" />
+      <FeaturedProjectCard color="#f0a04b" tagColor="#f6c453" />
+      <OtherProjects tagColor="#f6c453" />
+      <MyThoughts color="#f0a04b" colorSecond="#f6c453" />
+      <Skills color="#f0a04b" />
+      <ForMore color="#f0a04b" />
       <Contact />
     </div>
   )

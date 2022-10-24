@@ -42,33 +42,41 @@ export default OtherProjects;
 /* Components localy styled components  */
 
 const OtherProjectBackground = styled.section`
-  background-color: #f5ede3; 
+background-color: #e1eedd; 
   padding: 5% 0 5% 0;
   width: 100%;
 `;
 
 const OtherProjectHeader = styled(SectionHeader)`
 background: transparent;
-color: #54BAB9;
+color: #f0a04b;
 text-align: center;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 900ms linear;
+  }
 `;
 
 const SkillTagContainer = styled.div`
   display: flex;
+  padding-bottom: 2%;
 `;
 
 const OtherProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  
 `;
 
 const SubTitle = styled.h4`
-  color: red;
+  color: #f0a04b;
   text-decoration: underline;
   margin-right: 1%;
   font-weight: bold;
@@ -84,7 +92,7 @@ const SubTitle = styled.h4`
 `;
 
 const SubParagraph = styled.p`
-  color: black;
+  color: #183a1d;
   text-decoration: underline;
   margin-block-end: 1em;
   margin-block-start: 1em;

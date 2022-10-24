@@ -38,13 +38,19 @@ const AboutMeContainer = styled.div`
 const AboutMeBox = styled.div`
     display:flex;
     align-items: center;
+    
 `;
 
 const AboutMeParagraph = styled.p`
-    color: black;
+    color: #183a1d;
     font-size: 24px;
     line-height: 1.8;
   
+    &:hover {
+      transform: scale(1.1);
+      transition: 1100ms linear;
+    }
+
     @media (max-width: 800px) {
       font-size: 16px;
       line-height: 1.4;

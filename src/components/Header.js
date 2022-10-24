@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import backimgbasicbrush from './images/backimgbasicbrush.jpg';
-import backimgbasicbrushcolor2 from './images/backimgbasicbrushcolor2.jpg';
 import heroLinkedin from './images/LinkedIn-header.png';
 import heroGithub from './images/GitHub-header.png';
 import StackOverflowHeader from './images/StackOverflowHeader.png';
@@ -14,19 +13,19 @@ const Header = () => {
     <HeaderContainer>
       <HeaderIcons>
         <LineHeaderIcons href="https://stately-snickerdoodle-c346a9.netlify.app/www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
-          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
+          <IconsPaintBrush src={heroLinkedin} alt="LinkedIn icon for the header" />
         </LineHeaderIcons>
         <LineHeaderIcons href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
-          <img src={heroGithub} alt="Github icon for the header" />
+          <IconsPaintBrush src={heroGithub} alt="Github icon for the header" />
         </LineHeaderIcons>
         <LineHeaderIcons href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
-          <img
+          <IconsPaintBrush
             src={StackOverflowHeader}
             alt="Stack Overflow icon for the header" />
         </LineHeaderIcons>
       </HeaderIcons>
       <HeaderTitle>
-        <h3>Portfolio: Viktor Svensson</h3>
+        <h3>Portfolio:<PaintBrush> Viktor Svensson</PaintBrush></h3>
         <h1>Front-End</h1>
         <h1>Developer</h1>
       </HeaderTitle>
@@ -39,6 +38,29 @@ const Header = () => {
 
 /* My styled components for Header */
 
+const PaintBrush = styled.span`
+  background-image: linear-gradient(180deg,#f6c453,#f6c453);
+  background-repeat: no-repeat;
+  background-position: 2px bottom;
+  background-size: 100% 20px;
+  text-decoration: none;
+
+  &:hover {
+    pointer-events: none;
+    background-image: none;
+  }
+
+`;
+
+const IconsPaintBrush = styled.img`
+
+  &:hover {
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #f6c453, #fefbe9);
+  }
+
+`;
+
 const HeaderContainer = styled.header`
   background-image: url(${backimgbasicbrush});
   width: 100%;
@@ -46,10 +68,6 @@ const HeaderContainer = styled.header`
   background-position: top center;
   background-size: cover;
   position: relative;
-
-  & :hover {
-    background-image: url(${backimgbasicbrushcolor2});
-  }
 
   @media (min-width: 1024px){
     height: 650px;  
@@ -60,15 +78,16 @@ const HeaderIcons = styled.div`
   position: absolute;
   right: 10%;
   top: 8%;
-  background: transparent;
+  background: none;
 
   img{
     height: 50px;
     margin-right: 10px;
     }
 
-  img:hover{
-    filter: opacity(0.5);
+  &:hover{
+   background: none;
+
   }
 
 @media (min-width: 668px) and (max-width: 1023px){
@@ -89,8 +108,13 @@ const HeaderIcons = styled.div`
 `;
 
 const LineHeaderIcons = styled.a`
-  background: transparent;
+  background: none;
   text-decoration: none;
+
+  &:hover {
+    background: none;
+    text-decoration: none;
+  }
 
 `;
 

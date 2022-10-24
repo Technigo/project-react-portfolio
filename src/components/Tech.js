@@ -31,22 +31,28 @@ flex-direction: column;
 `;
 
 const AboutMeBox = styled.div`
-    display:flex;
-    align-items: center;
+  display:flex;
+  align-items: center;
 `;
 
 const TechParagraph = styled.p`
-    color: black;
-    font-size: 24px;
-    line-height: 1.8;
-  
-    @media (max-width: 800px) {
-      font-size: 16px;
-      line-height: 1.4;
+  color: #183a1d;
+  font-size: 24px;
+  line-height: 1.8;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 900ms linear;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+    line-height: 1.4;
 `;
 
 const SpanColored = styled.span` 
-    color: #54BAB9;
+  text-decoration: underline;
+  text-decoration-color: #f6c453;
 `;
 
 export default Tech;

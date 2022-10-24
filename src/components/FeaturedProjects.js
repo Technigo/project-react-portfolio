@@ -49,7 +49,7 @@ export default FeaturedProjectCard;
 const ProjectTags = styled.li`
   padding: 0;
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: #183a1d;
   padding: 5px 10px;
   background-color: ${(props) => props.tagColor};
   display: inline;

@@ -26,7 +26,7 @@ const Contact = () => {
 /* localy stored styled components */
 
 const ClonedOuterWrapper = styled(OuterWrapper)`
-    background-color: #54BAB9;
+    background-color: #f0a04b;
 `;
 
 const ForMoreBox = styled.div`
