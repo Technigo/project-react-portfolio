@@ -1,20 +1,33 @@
 [
     {
         "title": "Movie Selector",
-        "project-description": "Filter movies by popularity, release time and rating",
+        "project-description": "Filter movies by popularity, release time and rating. Build with React Hooks, Routes and API",
         "repo-name": "project-movies",
         "netlify-name": "week8-film-selector-jessnmo",
         "url": "https://week8-film-selector-jessnmo.netlify.app/",
         "tags": [
               "HTML5",
-              "CSS3"
+              "CSS3",
+              "React.js"
           ]
       },
       {
         "title": "Book A Workout",
-        "project-description": "Filter movies by popularity, release time and rating",
+        "project-description": "Select your desired workouts in different gym locations at your preferred time. Build with React Hooks",
         "repo-name": "project-survey",
-        "netlify-name": "week8-film-selector-jessnmo",
+        "netlify-name": "week6-jessnmo",
+        "url": "https://week8-film-selector-jessnmo.netlify.app/",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "React.js"
+          ]
+      },
+      {
+        "title": "Share a Happy Thought",
+        "project-description": "Post your happy thoughts and share with the world! Build with React using API",
+        "repo-name": "project-happy-thoughts",
+        "netlify-name": "jessmo-happy-thoughts",
         "url": "https://week8-film-selector-jessnmo.netlify.app/",
         "tags": [
               "HTML5",
@@ -22,25 +35,16 @@
           ]
       },
       {
-        "title": "Book A Workout",
-        "project-description": "Filter movies by popularity, release time and rating",
-        "repo-name": "project-movies",
-        "netlify-name": "week8-film-selector-jessnmo",
+        "title": "Guess Who?",
+        "project-description": "Single player online game, build with JavaScript ES6, CSS and HTML",
+        "repo-name": "project-guess-who",
+        "netlify-name": "week2-guess-who-jessnmo",
         "url": "https://week8-film-selector-jessnmo.netlify.app/",
         "tags": [
               "HTML5",
-              "CSS3"
-          ]
-      },
-      {
-        "title": "Book A Workout",
-        "project-description": "Filter movies by popularity, release time and rating",
-        "repo-name": "project-movies",
-        "netlify-name": "week8-film-selector-jessnmo",
-        "url": "https://week8-film-selector-jessnmo.netlify.app/",
-        "tags": [
-              "HTML5",
-              "CSS3"
+              "CSS3",
+              "JavaScript ES6"
           ]
       }
+    
   ]
