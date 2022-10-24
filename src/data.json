@@ -1,66 +1,66 @@
  [ 
   {
     "title": "Project Guess Who",
-    "id": 1,
+    "sort": 1,
     "image": "../imgs/Waterpink.jpg",
     "overlay": "gw",
     "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
     "github": "https://github.com/SoderstromC/project-guess-who",
     "description": "Interactive game built with Javascript",
-    "tools": ["HTML", "CSS", "JavaScript ES6"]
+    "tech": ["HTML", "CSS", "JavaScript ES6"]
   },
   {
     "title": "Project Weather App",
-    "id": 2,
+    "sort": 2,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://silver-profiterole-7224fd.netlify.app/",
     "github": "https://github.com/SoderstromC/project-weather-app",
     "description": "A weather app built with Javascript",
-    "tools": ["HTML", "CSS", "JavaScript ES6", "API"]
+    "tech": ["HTML", "CSS", "JavaScript ES6", "API"]
   },
   {
     "title": "Project Happy Thoughts",
-    "id": 3,
+    "sort": 3,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://remarkable-melba-22a98c.netlify.app/",
     "github": "https://github.com/SoderstromC/project-happy-thoughts",
     "description": "A twitter like feed of Happy thoughts built in React",
-    "tools": ["React", "HTML", "CSS", "JavaScript ES6", "API"]
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6", "API"]
   },
   {
     "title": "Project Survey",
-    "id": 4,
+    "sort": 4,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://marvelous-brioche-781150.netlify.app",
     "github": "https://github.com/SoderstromC/project-survey",
     "description": "A survey which generates a tailored pomodoro recipe based on your answers",
-    "tools": ["React", "HTML", "CSS", "JavaScript ES6"]
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
-      "title": "Project Chatbot",
-      "id": 5,
-      "image": "../imgs/Waterpink.jpg",
-      "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
-      "github": "https://github.com/SoderstromC/project-chatbot",
-      "description": "First pair programming project, a table booking chatbot for restaurants",
-      "tools": ["HTML", "CSS", "JavaScript ES6"]
+    "title": "Project Chatbot",
+    "sort": 5,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
+    "github": "https://github.com/SoderstromC/project-chatbot",
+    "description": "First pair programming project, a table booking chatbot for restaurants",
+    "tech": ["HTML", "CSS", "JavaScript ES6"]
   },
   {
     "title": "Project Music Releases",
-    "id": 6,
+    "sort": 6,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://celadon-brioche-831b80.netlify.app/",
     "github": "https://github.com/SoderstromC/project-music-releases",
     "description": "A page that shows new album and artist releases",
-    "tools": ["React", "HTML", "CSS", "JavaScript ES6"]
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
     "title": "Project Movies",
-    "id": 7,
+    "sort": 7,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://toprated-movies.netlify.app",
     "github": "https://github.com/SoderstromC/project-movies",
     "description": "Multipage site built with React Router. Shows 20 top-rated movies and their details",
-    "tools": ["React", "HTML", "CSS", "JavaScript ES6"]
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   }
 ]

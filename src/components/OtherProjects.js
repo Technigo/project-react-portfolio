@@ -46,7 +46,7 @@ export const OtherProjects = () => {
           <OtherProjectWrapper>
             <OtherProjectsContent>
               {data.map((item) => (
-                item.id > 4 ? (
+                item.sort > 4 ? (
                   <OtherProjectsList key={item.title}>
                     <a
                       href={item.netlify}
@@ -66,7 +66,7 @@ export const OtherProjects = () => {
                         alt="Github Caroline Soderstrom" />
                     </a>
                     <Tag>
-                      {item.tools.map((tag) => (
+                      {item.tech.map((tag) => (
                         <p className="tag" key={tag}>{tag}</p>
                       ))}
                     </Tag>

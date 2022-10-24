@@ -59,7 +59,7 @@ export const Thoughts = () => {
             <Tag>
               <p className="tag">programming</p>
               <p className="tag">career change</p>
-              <p className="tag">customer Experience</p>
+              <p className="tag">customer experience</p>
               <p className="tag">solving problems</p>
             </Tag>
           </ArticleWrapper>

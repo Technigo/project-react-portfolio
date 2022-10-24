@@ -91,7 +91,7 @@ export const Projects = () => {
           <ProjectWrapper>
             <CardWrapper>
               {data.map((item) => (
-                item.id < 5 ? (
+                item.sort < 5 ? (
                   <CardContent key={item.title}>
                     <a
                       href={item.netlify}
@@ -113,7 +113,7 @@ export const Projects = () => {
                       </a>
                       <CardTags>
                         <Tag>
-                          {item.tools.map((tag) => (
+                          {item.tech.map((tag) => (
                             <p className="tag" key={tag}>{tag}</p>
                           ))}
                         </Tag>
