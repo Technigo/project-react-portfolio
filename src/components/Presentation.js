@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import { InnerWrapper, MainSections, MainText } from 'styles/mainStyles';
 import startFigure from '../Images/start-figure.png';
 
+// Short presentation text, will be updated with real text in the future
 const Presentation = () => {
   return (
     <MainSections coloredBackground>

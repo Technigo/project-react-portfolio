@@ -1,5 +1,8 @@
+
+// Two "un-fixable" eslint-problems
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-closing-tag-location */
+
 import React, { useState, useEffect } from 'react';
 import { BASE_URL } from 'utils/urls';
 import styled from 'styled-components/macro';
@@ -8,6 +11,7 @@ import { InnerWrapper, Devices, MainHeader, SecondHeader, MainSections, Title, M
 const Projects = () => {
   const [filteredList, setFilteredList] = useState([]);
 
+  // Fetch from github API, the token is my hidden API-key
   useEffect(() => {
     const options = {
       method: 'GET',
@@ -18,6 +22,8 @@ const Projects = () => {
     fetch(BASE_URL, options)
       .then((response) => response.json())
       .then((data) => {
+        // Maping that filters out all the repositorys
+        // that's not Technigo-projects and sets them into an array
         const listItems = [];
         data.map((item) => {
           if (item.fork === true && item.name.includes('project')) {
@@ -30,6 +36,7 @@ const Projects = () => {
       .catch((error) => console.error(error))
   }, []);
 
+  // Filtered list of featured projects for mobile view
   const FeaturedProjectsMobile = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
@@ -41,6 +48,7 @@ const Projects = () => {
     && (project.name !== 'project-music-releases')
   );
 
+  // Filtered list of other projects for mobile view
   const OtherProjectsMobile = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
@@ -48,6 +56,7 @@ const Projects = () => {
     && (project.name !== 'project-survey')
   );
 
+  // Filtered list of featured projects for tablet/desktop view
   const FeaturedProjects = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
@@ -57,6 +66,7 @@ const Projects = () => {
     && (project.name !== 'project-chatbot')
   );
 
+  // Filtered list of other projects for tablet/desktop view
   const OtherProjects = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
@@ -66,17 +76,21 @@ const Projects = () => {
     && (project.name !== 'project-survey')
   );
 
+  // Function that sets the code-tags into separate units
   const renderTags = (tags) => {
     return tags.map((tag) => {
       return (<Tag>{tag}</Tag>);
     });
   }
 
+  // Function that renders the differet items for each project
   const renderProjects = (projects, addImage) => {
     return projects.map((project) => {
       return (
         <SingleWrap>
           <ProjectLinks key={project.id} href={project.homepage}>
+            {/* This part will only be rendered when it's set to true,
+            so the image only appears with projects in the featured list */}
             {addImage && <div className="image-component">
               <div className="image-overlay" />
               <h3 className="image-text">{project.name.replace(/-/g, ' ')}</h3>

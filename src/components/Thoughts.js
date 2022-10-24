@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import { InnerWrapper, /* Devices, */MainHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 import Item1Image from '../Images/computer.jpeg';
 
+// Section that links to the article on medium
 const Thoughts = () => {
   return (
     <MainSections>
