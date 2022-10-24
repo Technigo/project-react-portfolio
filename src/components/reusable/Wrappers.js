@@ -10,7 +10,6 @@ export const InnerWrapper = styled.div`
     width: 100%;
     margin: 0 auto;
 `;
-
 export const SectionTitle = styled.div`
     display: table;
     text-align: center;
@@ -23,7 +22,6 @@ export const SectionTitle = styled.div`
     padding: 4px 8px;
     font-weight: bold;
 `;
-
 export const Tag = styled.div`
     display: flex;
     flex-wrap: wrap;

@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
 import BackgroundImage from '../images/Watercolor.jpg';
-import Linkedin from '../icons/linkedinpink60.png';
-import Github from '../icons/gitpink60.png';
+import Linkedin from '../icons/linkedinpurple60.png';
+import Github from '../icons/gitpurple60.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
@@ -34,7 +34,7 @@ export const Header = () => {
 
   const HeaderText = styled.div`
   color: #f99703;
-  -webkit-text-stroke: 0.01em magenta;
+  -webkit-text-stroke: 0.01em brown;
     position: absolute;
     width: 300px;
     top: 185px;

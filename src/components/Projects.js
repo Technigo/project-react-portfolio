@@ -24,7 +24,7 @@ export const Projects = () => {
     align-content: space-between;
   `;
 
-  const CardInfo = styled.div`
+  const CardContent = styled.div`
     margin: 10px;  
     width: 335px;
       img {
@@ -92,7 +92,7 @@ export const Projects = () => {
             <CardWrapper>
               {data.map((item) => (
                 item.id < 5 ? (
-                  <CardInfo key={item.title}>
+                  <CardContent key={item.title}>
                     <a
                       href={item.netlify}
                       alt="project landingpage"
@@ -119,7 +119,7 @@ export const Projects = () => {
                         </Tag>
                       </CardFooter>
                     </DetailsWrapper>
-                  </CardInfo>
+                  </CardContent>
                 ) : null
               ))}
             </CardWrapper>

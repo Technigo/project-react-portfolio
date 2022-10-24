@@ -36,10 +36,11 @@ export const Intro = () => {
       <InnerWrapper>
         <IntroSection>
           <IntroText>
-            <p><Line /><Dot /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet tenetur distinctio blanditiis laboriosam corporis. Dolor
-                  cumque natus ab. Corporis eligendi beatae natus eaque tempore iure,
-                  deleniti laboriosam asperiores deserunt nostrum.
+            <p><Line /><Dot /> I&apos;m a Frontend developer and CX nerd
+             who is looking to join a company with a digital product or service,
+              where I can be part of building great user experiences.
+             I&apos;ve lived in London, Berlin and Stockholm,
+              and enjoy working in an international environment.
             </p>
           </IntroText>
         </IntroSection>
