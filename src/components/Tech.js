@@ -41,8 +41,8 @@ const TechParagraph = styled.p`
   line-height: 1.8;
 
   &:hover {
-    transform: scale(1.1);
-    transition: 900ms linear;
+    transform: scale(1.04);
+    transition: 400ms linear;
   }
 
   @media (max-width: 800px) {

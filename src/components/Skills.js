@@ -62,6 +62,10 @@ const SkillsBoxHeader = styled.h4`
     font-size: 22px;
     line-height: 1.4;
     font-weight: bold;
+
+    &:hover {
+    color: #f0a04b;
+    }
   
     @media (max-width: 800px) {
       font-size: 16px;

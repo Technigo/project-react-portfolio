@@ -57,8 +57,8 @@ const InfoContainer = styled.div`
   display: flex;
 
   &:hover {
-    transform: scale(1.1);
-    transition: 900ms linear;
+    transform: scale(1.04);
+    transition: 400ms linear;
   }
 `;
 

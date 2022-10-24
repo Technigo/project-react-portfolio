@@ -47,8 +47,8 @@ const AboutMeParagraph = styled.p`
     line-height: 1.8;
   
     &:hover {
-      transform: scale(1.1);
-      transition: 1100ms linear;
+      transform: scale(1.04);
+      transition: 500ms linear;
     }
 
     @media (max-width: 800px) {

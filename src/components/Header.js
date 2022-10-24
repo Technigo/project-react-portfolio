@@ -47,7 +47,6 @@ const PaintBrush = styled.span`
 
   &:hover {
     pointer-events: none;
-    background-image: none;
   }
 
 `;
@@ -122,7 +121,7 @@ const HeaderTitle = styled.div`
   position: absolute;
   top: 30%;
   left: 10%;
-  color: black;
+  color: #183a1d;
   line-height: 30px;
 
   h3 {

@@ -71,8 +71,8 @@ const ForMoreImg = styled.img`
 
   &:hover {
     border-radius: 50%;
-    transform: scale(1.1);
-    transition: 900ms linear;
+    transform: scale(1.06);
+    transition: 700ms linear;
     }
     
   @media (max-width: 800px) {
@@ -85,6 +85,11 @@ const ForMoreTitle = styled.h4`
     color: #f0a04b;
     font-size: 24px;
     line-height: 1.4;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #f6c453;
+    }
   
     @media (max-width: 800px) {
       font-size: 16px;
