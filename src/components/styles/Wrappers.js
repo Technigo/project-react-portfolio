@@ -50,6 +50,27 @@ export const InnerWrapper = styled.div`
     text-decoration: none;
   }
   a:hover {
-    text-decoration: underline;
+  }
+
+  a:visited {
+  }
+`;
+
+export const TagWrapper = styled.div`
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  font-weight: bold;
+  line-height: 12px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 3px 0;
+
+  p {
+    border-radius: 4px;
+    background-color: #fddfe7;
+    color: #2b2e34;
+    padding: 5px 8px;
+    margin-right: 5px;
   }
 `;
