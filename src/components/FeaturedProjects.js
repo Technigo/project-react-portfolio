@@ -2,8 +2,8 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
-import { Tags } from './StyledComponents/Tags';
+import { BlockSection, InnerWrapper } from './styles/Wrappers';
+import { Tags } from './styles/Tags';
 import projects from '../projects.json';
 
 export const FeaturedProjects = () => {

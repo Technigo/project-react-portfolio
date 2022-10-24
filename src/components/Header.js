@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InnerWrapper } from './StyledComponents/Wrappers';
+import { InnerWrapper } from './styles/Wrappers';
 import backgroundImg from '../assets/forest.jpeg';
 import profileImg from '../assets/sar.bild.jpg';
-import { IconLinks } from './StyledComponents/IconLinks';
+import { IconLinks } from './styles/IconLinks';
 
 export const Header = () => {
   return (

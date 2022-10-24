@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
+import { BlockSection, InnerWrapper } from './styles/Wrappers';
 
 export const Skills = () => {
   return (

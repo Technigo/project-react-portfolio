@@ -1,7 +1,7 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { BlockSection, InnerWrapper } from './StyledComponents/Wrappers';
-import { IconLinks } from './StyledComponents/IconLinks';
+import { BlockSection, InnerWrapper } from './styles/Wrappers';
+import { IconLinks } from './styles/IconLinks';
 
 export const More = () => {
   return (
