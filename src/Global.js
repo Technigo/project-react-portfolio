@@ -1,29 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-:root {
 .innerwrapper{
 margin-left: 10vw;
 margin-right: 10vw;
 padding-bottom: 10vw; 
 padding-top: 10vw;
 } 
-@media (min-width: 668px) {
-	.innerwrapper{
-margin-left: 5vw;
-margin-right: 5vw;
-} 
-}
-
-@media (min-width: 1024px) {
-	.innerwrapper{
-margin-left: 17vw;
-margin-right: 17vw;
-padding-bottom: 7vw; 
-padding-top: 7vw;
-} 
-
-}
 
 body{
 background-color: white;
@@ -75,6 +58,13 @@ p {
 }
 
 @media (min-width: 668px) {
+	.innerwrapper{
+margin-left: 5vw;
+margin-right: 5vw;
+} 
+
+
+
 
 h1{
 font-size: 4rem;
@@ -100,16 +90,11 @@ line-height: 3rem;
 }
 
 @media (min-width: 1024px) {
-
-h1{
-font-size: 3rem;
-margin-left: 12vw;
+	.innerwrapper{
+margin-left: 17vw;
+margin-right: 17vw;
 } 
 
-h2{
-font-size: 2rem;
-margin-left: 12vw;
-} 
 
 p {
 font-size: 1.5rem;
@@ -117,5 +102,4 @@ line-height: 2rem;
 }
 
 }
-
-}`
+`
