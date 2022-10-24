@@ -5,8 +5,8 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <h2>CONTACT</h2>
-      <p>Kaja Wilbik</p>
-      <p>Phone: +46 720 299 056</p>
+      <h3>Kaja Wilbik</h3>
+      <h3>Phone: +46 720 299 056</h3>
       <a href="mailto:wilbik.kaja@gmail.com">E-mail: wilbik.kaja@gmail.com</a>
     </StyledFooter>
 

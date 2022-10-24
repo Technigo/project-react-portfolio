@@ -8,10 +8,12 @@ import { MyThoughts } from 'components/MyThoughts'
 // import { Icons } from 'components/Icons'
 import { Header } from './components/Header'
 import { Skills } from './components/Skills'
+import { GlobalStyling } from './components/Globalstyling'
 
 export const App = () => {
   return (
-    <div>
+  <GlobalStyling>
+      <div>
       <Header />
       <Pitch />
       <TitleBar name="tech" />
@@ -24,5 +26,7 @@ export const App = () => {
       <Skills />
       <Footer />
     </div>
+  </GlobalStyling>
+
   )
 }

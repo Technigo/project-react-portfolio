@@ -1,10 +1,12 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { StyledBoxDesktop } from './StyledBoxDesktop'
 
 export const MyThoughts = () => {
   return (
-    <StyledMyThought className="thought">
+  <StyledBoxDesktop>
+        <StyledMyThought className="thought">
       <a
         href="https://medium.com/@wilbik.kaja/my-journey-from-the-travel-industry-to-tech-in-22-weeks-after-8-weeks-eb84a8b1cacf"
         target="_blank"
@@ -17,6 +19,8 @@ export const MyThoughts = () => {
         <h3> My journey from the travel industry to tech in 22 weeks</h3>
       </a>
     </StyledMyThought>
+  </StyledBoxDesktop>
+
 
   )
 }

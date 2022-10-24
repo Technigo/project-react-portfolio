@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import ProjectPicture from '../Pictures/ProjectPicture.jpg'
+import { StyledBoxDesktop } from './StyledBoxDesktop'
 
 export const ProjectBox = ({ list }) => {
   const [project, setProject] = useState([]);
@@ -18,8 +19,10 @@ export const ProjectBox = ({ list }) => {
   console.log('everything is fine in fetch', project)
 
   return (
+
     // filtered and maped only forked projects from Github
-    project.filter((projects) => projects.fork === true && projects.name.includes('project')).map((filteredProjects) => {
+    <StyledBoxDesktop>
+    {project.filter((projects) => projects.fork === true && projects.name.includes('project')).map((filteredProjects) => {
       return (
         <StyledProjectBox className="grid" key={filteredProjects.full_name}>
 
@@ -30,19 +33,19 @@ export const ProjectBox = ({ list }) => {
             <h2>{filteredProjects.name}</h2>
             <img src={ProjectPicture} alt="coding" />
             <p>{filteredProjects.description}</p>
-            <div className="tags">
+          </a>
+          <div className="tags">
               {/* fetched tags from Github. First => make a changes in githib in each project */}
               <p>{filteredProjects.topics[0]}</p>
               <p>{filteredProjects.topics[1]}</p>
               <p>{filteredProjects.topics[2]}</p>
             </div>
 
-          </a>
-
         </StyledProjectBox>
 
       )
     })
+   } </StyledBoxDesktop>
   )
 }
 
@@ -59,7 +62,7 @@ const StyledProjectBox = styled.div`
     }
     
     a:hover {
-      color:violet;
+      color: #779a96;
     }
 
     img {
@@ -100,10 +103,11 @@ const StyledProjectBox = styled.div`
 
     @media screen and (min-width: 1024px) {
       margin: 20px;
-display: flex;
-flex-direction:column;
-align-items: center;
-text-align: center;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
 
     h2 {
       text-align: center;
@@ -119,6 +123,12 @@ text-align: center;
       height: 50%;
       align-content:center;
     }
+
+    .tags {
+      margin: 5rem;
+      padding: 7px;
+}
   }
 
 `
+
