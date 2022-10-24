@@ -2,6 +2,8 @@
 During this project we were supposted to redo our portfolio project in React and work with styled components.
 The design should be more or less pixel perfect, apart from colors and pictures.
 
+<img width="1177" alt="Screenshot 2022-10-24 at 11 04 16" src="https://user-images.githubusercontent.com/108176641/197489758-c10b2e64-2cae-4b73-9c4e-42b130141975.png">
+
 ** Project requirements **
 
 ✓ The app should be built with React and Styled Components
@@ -26,4 +28,4 @@ The reusable components were created at last.
 I do need to work a bit more on my styling and accesability.
 
 ## View it live
-petra-eriksson-portfolio.netlify.app
+https://petra-eriksson-portfolio.netlify.app/
