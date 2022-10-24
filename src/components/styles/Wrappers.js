@@ -64,13 +64,31 @@ export const TagWrapper = styled.div`
   line-height: 12px;
   font-size: 12px;
   text-decoration: none;
-  margin: 3px 0;
+  margin: 3px 2px;
+  flex-wrap: wrap;
 
   p {
     border-radius: 4px;
     background-color: #fddfe7;
     color: #2b2e34;
     padding: 5px 8px;
-    margin-right: 5px;
+    margin: 0px 5px 5px 0px;
   }
+`;
+
+export const List = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1024px) {
+ 
+`;
+
+export const Content = styled.div`
+  margin: 50px 0;
+  box-sizing: border-box;
 `;

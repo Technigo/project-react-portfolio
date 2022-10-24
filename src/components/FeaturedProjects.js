@@ -2,7 +2,7 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper } from './styles/Wrappers';
+import { BlockSection, InnerWrapper, List, Content } from './styles/Wrappers';
 import { Tags } from './styles/Tags';
 import { TagGithub } from './styles/TagGithub';
 import projects from '../projects.json';
@@ -35,24 +35,24 @@ export const FeaturedProjects = () => {
     <BlockSection>
       <InnerWrapper>
         <h3>Featured Projects</h3>
-
-        {FeaturedRepos.map((project) => (
-          <FeaturedContent key={project.id}>
-            <a
-              href={project.netlifyLink}
-              target="_blank"
-              rel="noreferrer"
-              tabIndex={-1}
-              aria-hidden>
-              <img src={project.image} alt={project.title} width="100%" />
-            </a>
-            <h5>{project.title}</h5>
-            <p>{project.description}</p>
-            <Tags tags={project.tags} />
-            <TagGithub tagGithub={project.githubLink} />
-          </FeaturedContent>
-        ))}
-
+        <List>
+          {FeaturedRepos.map((project) => (
+            <Content key={project.id}>
+              <a
+                href={project.netlifyLink}
+                target="_blank"
+                rel="noreferrer"
+                tabIndex={-1}
+                aria-hidden>
+                <img src={project.image} alt={project.title} width="100%" />
+              </a>
+              <h5>{project.title}</h5>
+              <p>{project.description}</p>
+              <Tags tags={project.tags} />
+              <TagGithub tagGithub={project.githubLink} />
+            </Content>
+          ))}
+        </List>
         <h4>Other projects</h4>
 
         {OtherRepos.map((project) => (
@@ -79,10 +79,6 @@ export const FeaturedProjects = () => {
     </BlockSection>
   );
 };
-
-const FeaturedContent = styled.div`
-  margin: 50px 0;
-`;
 
 const OtherContent = styled.div`
   margin: 50px 0;
