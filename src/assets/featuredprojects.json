@@ -7,7 +7,7 @@
 	  "netlify_url": "https://steady-gelato-baf009.netlify.app/",
 	  "github_url": "https://github.com/katirum/project-news-site",
 	  "description": "A simple site that focused on the execution of grid, flexbox and responsiveness in many devices.",
-	  "tags": ["HTML", "CSS", "Flexbox", "Grid", "GitHub"]
+	  "tags": ["CSS3", "Flexbox", "Grid", "HTML", "GitHub"]
 	},
 	{
 	  "title": "Ordering Book With A Twist",
@@ -17,7 +17,7 @@
 	  "netlify_url": "https://phenomenal-kelpie-2b24fb.netlify.app/",
 	  "github_url": "https://github.com/katirum/project-chatbot",
 	  "description": "A project done in pairs to create a chatbot for ordering books depending on users' preferences with JavaScript as the main language.",
-	  "tags": ["JavaScript ES6", "CSS", "HTML", "Pair Program", "Github"]
+	  "tags": ["JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
 	},
 	{
 	  "title": "Delicious Survey for Loyal Customers",
@@ -27,16 +27,16 @@
 	  "netlify_url": "https://karticakes-survey.netlify.app/",
 	  "github_url": "https://github.com/katirum/project-survey",
 	  "description": "Survey that can make customers hungry for more cakes. This survey is done with React as the framework.",
-	  "tags": ["React", "JavaScript ES6", "CSS", "HTML", "Github"]
+	  "tags": ["React", "JavaScript ES6", "CSS3", "HTML", "Github"]
 	},
 	{
-	  "title": "Think of Happines Now",
+	  "title": "Think of Happiness Now",
 	  "overlay": "Happy Thoughts",
 	  "id": "4",
 	  "image": "/images/happythought.png",
 	  "netlify_url": "https://yourhappiness.netlify.app/",
 	  "github_url": "https://github.com/katirum/project-happy-thoughts",
 	  "description": "A twitter-liked website where users can post message and it will be displayed after they submit it.",
-	  "tags": ["React", "JavaScript ES6", "CSS", "HTML", "APIs", "Github"]
+	  "tags": ["React", "APIs", "JavaScript ES6", "CSS3", "HTML", "Github"]
 	}
   ]
