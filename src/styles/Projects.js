@@ -15,7 +15,8 @@ display: inline-grid;
 grid-gap: 10px;
 @media (min-width: 800px) {
 grid-template-columns: repeat(2, 1fr);
-width: 60%;
+justify-content: center;
+width: 50%;
 }
 `
 
@@ -46,6 +47,7 @@ margin-bottom: 10px;
     min-width: 300px;
     max-width: 350px;
     height: auto;
+    margin-left: 10%;
     }
 `
 
