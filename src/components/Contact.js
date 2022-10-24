@@ -40,11 +40,11 @@ const ForMoreBox = styled.div`
 `;
 const ForMoreTitle = styled.h2`
     color: white;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1.4;
   
     @media (max-width: 800px) {
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.4;
 `;
 
