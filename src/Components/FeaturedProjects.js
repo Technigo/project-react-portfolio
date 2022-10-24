@@ -3,8 +3,8 @@ import {
 	FeatureLayout,
 } from 'StyledComponents/FeaturedProject.style';
 import {
-	SectionContainer,
-	SectionParagraph,
+	SubTitle,
+	ProjectDesc,
 	Title,
 	Tags,
 } from 'StyledComponents/GlobalStyle';
@@ -14,8 +14,18 @@ export const FeaturedProjects = () => {
 	return (
 		<FeaturedContainer>
 			<Title>Featured Projects</Title>
-
-			<FeatureLayout>{}</FeatureLayout>
+			{projects.map((project) => {
+				return (
+					<FeatureLayout key={project.id}>
+						<img src={project.img} alt={project.repo_name} />
+						<SubTitle> {project.title}</SubTitle>
+						<ProjectDesc>{project.project_description}</ProjectDesc>
+						{project.tags.map((tag) => {
+							return <Tags key={tag.id}>{tag.name}</Tags>;
+						})}
+					</FeatureLayout>
+				);
+			})}
 		</FeaturedContainer>
 	);
 };
