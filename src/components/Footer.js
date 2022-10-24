@@ -68,4 +68,34 @@ img{
 	width: 90%;
 }
 
+@media (min-width: 668px) {
+	.logo-footer{
+	width: 13%;
+}
+
+img{
+	width: 90%;
+}
+}
+
+@media (min-width: 1024px) {
+	.logo-footer{
+	width: 7%;
+}
+
+img{
+	width: 90%;
+}
+
+h3{
+	margin-bottom:1%;
+}
+
+a {
+	padding-top: 1%;
+	padding-bottom:1%;
+	font-size: 1.2rem;
+}
+}   
+
 `

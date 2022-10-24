@@ -52,6 +52,12 @@ div {
 	article {
   top: 10vh;
   }
+	
+	div {
+  position: absolute;  
+  top: 16vh;
+  left: 8vw;
+}
 }
 
 
@@ -61,5 +67,15 @@ div {
     right: 19.2vw;
 		margin-bottom: 0;
   }  
+
+	h1{
+font-size: 2rem;
+margin-left: 10vw;
+} 
+
+h2{
+font-size: 2rem;
+margin-left: 10vw;
+} 
 }
 `

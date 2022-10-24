@@ -45,6 +45,10 @@ width: 11vw;
 @media (min-width: 668px) {
 top: 5vh;
 right: 12vw;
+
+img {
+width: 9vw;    
+}
 }
 
 @media (min-width: 1024px) {
@@ -52,7 +56,7 @@ top: 10vh;
 right: 20vw;    
 
 img {
-width: 5vw;    
+width: 4vw;    
 }
 
 img:hover {
