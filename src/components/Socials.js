@@ -55,4 +55,12 @@ const Icons = styled.div`
 display: flex;
 flex-direction: column;
 align-items: baseline;
+a {
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 20px;
+}
+a:hover {
+  box-shadow: 10px 10px 5px white;
+}
 `;
