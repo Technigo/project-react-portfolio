@@ -52,7 +52,6 @@ export default Header;
 
 const StyledHeader = styled.header`
   position: relative;
-  background: var(--main-color);
   background: linear-gradient(
     354deg,
     rgba(253, 240, 224, 1) 20%,
@@ -76,22 +75,6 @@ const IconsContainer = styled.div`
   position: absolute;
   top: 2.5rem;
   right: 4.5rem;
-   & div {
-    color: white;
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: .65rem .75rem;
-   }
-    & svg {
-      height: 1.5rem;
-      width: 1.6rem;
-    }
-  @media (max-width: 1200px) {
-    right: 3rem;
-  }
-  @media (max-width: 650px) {
-    right: 2rem;
-  }
 `;
 
 const HeadingsContainer = styled.div`

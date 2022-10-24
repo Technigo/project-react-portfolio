@@ -15,8 +15,7 @@ const ProjectList = ({ repos }) => {
                 {project.topics.map((topic) => (topic !== 'portfolio' && <p>{topic}</p>))}
               </TopicsContainer>
               <TopicsContainer>
-                <a href={project.homepage} target="_blank" rel="noreferrer">View it Live</a>
-                <span>|</span> <a href={project.html_url} target="_blank" rel="noreferrer">GitHub Repo</a>
+                <a href={project.html_url} target="_blank" rel="noreferrer">GitHub Repo</a>
               </TopicsContainer>
             </ArticleContainer>
           );
