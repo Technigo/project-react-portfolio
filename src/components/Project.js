@@ -82,7 +82,6 @@ text-decoration: none;
 color: var(--black);
 `
 
-// eslint-disable-next-line no-unused-vars
 const Project = ({ title, name, description, tags, image, url, featured }) => {
   return (
     <ProjectLink href={url} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
