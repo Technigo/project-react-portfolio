@@ -1,5 +1,5 @@
-/*eslint-disable linebreak-style */ 
-import styled from "styled-components";
+/* eslint-disable linebreak-style */
+import styled from 'styled-components';
 
 export const HeaderStyles = styled.header`
   width: 100vw;

@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 import styled, { createGlobalStyle } from 'styled-components';
+
 const GlobalStyles = createGlobalStyle`
 *{
     margin:0;
@@ -49,10 +50,9 @@ h3 {
     font-weight: lighter;
     margin-left: 7%;
     font-size: 1.2rem;
-
 }
 `
-export const SectionHeading  = styled.h4`
+export const SectionHeading = styled.h4`
 max-width: fit-content;
 color: white;
 background-color:#acbdd3;
@@ -74,9 +74,6 @@ letter-spacing: 0.01em;
 color: #5d80b6;
 `
 export const ProjectsWrapper = styled.div`
- 
 `
-
-
 
 export default GlobalStyles;
