@@ -14,6 +14,15 @@ export const Profile = styled.img`
 	top: 60%;
 	border: 2px solid whitesmoke;
 	border-radius: 50%;
+	object-fit: cover;
+`;
+
+export const HeaderIMG = styled.img`
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	right: 30%;
+	top: 1%;
 `;
 
 export const HeaderText = styled.div`

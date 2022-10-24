@@ -3,6 +3,8 @@ import {
 	StyledHeader,
 	HeaderText,
 	IconWrapper,
+	Profile,
+	HeaderIMG,
 } from 'StyledComponents/Header.style';
 import { FaLinkedin, FaGithubSquare, FaStackOverflow } from 'react-icons/fa';
 
@@ -42,7 +44,8 @@ const Header = () => {
 					<FaStackOverflow size="2rem" color="whitesmoke" />
 				</a>
 			</IconWrapper>
-			<img src="" alt="" />
+			<Profile src="img/profile.jpg" />
+			<HeaderIMG src="img/header.png" />
 		</StyledHeader>
 	);
 };
