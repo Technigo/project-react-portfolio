@@ -11,7 +11,7 @@ const OtherProject = () => {
       <section>
         <h3> More projects</h3>
         {projectShowSmall.reverse().map((small) => (
-          <a href={small.url} alt="link to project">
+          <a href={small.url} alt="link to project" target="_blank" rel="noopener noreferrer">
             <div className="otherproject-div" key={small.id}>
               <h4 className="project-title">{small.projectName}</h4>
               <p className="project-description">here comes some infor about project</p>

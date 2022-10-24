@@ -10,8 +10,8 @@ console.log(itemList)
 const Tech = () => {
   return (
     <TechStyling>
+      <SectionHeaderStyling><div><h2>Tech</h2></div></SectionHeaderStyling>
       <section className="section-tech">
-        <SectionHeaderStyling><div><h2>Tech</h2></div></SectionHeaderStyling>
         <p> {itemList}
         </p>
       </section>
@@ -21,11 +21,12 @@ const Tech = () => {
 export default Tech
 
 const TechStyling = styled.section`
-
-  margin-top: 5%;
+.section-tech{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 2vw;
+}
 
   p{
     font-size: 16px;

@@ -78,6 +78,10 @@
         {
           "Skill": "Git",
           "id": "6"
+        },
+        {
+          "Skill": "React",
+          "id": "7"
         }
       ],
      "Tools": [
@@ -169,7 +173,7 @@
           "url": "https://mdahlgrenguesswho.netlify.app/",
           "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6315162c1693a93be6058e72/screenshot_2022-09-04-21-18-50-0000.png",
           "showBig": "yes",
-          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+          "desc": "A game of Guess who, created by using HTML, CSS & JavaScript."
         },
         {
           "projectName": "Happy Thoughts",
@@ -178,7 +182,7 @@
           "url": "https://project-happy-thoughts-miadahlgren.netlify.app/",
           "imageUrl": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63418679288f000008d7c212/screenshot_2022-10-08-14-17-53-0000.png",
           "showBig": "yes",
-          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+          "desc": "A place to put your happy thoughts and get others using POST and GET"
         },
         {
           "projectName": "Music Releases",
@@ -187,7 +191,7 @@
           "url": "https://musicrealeases-younas-and-mia.netlify.app/",
           "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63301d63c9d6db542507c2a7/screenshot_2022-09-25-09-21-17-0000.png",
           "showBig": "yes",
-          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+          "desc": "Fist interaction with json-files. Created a website for music releases using React"
         },
         {
           "projectName": "MovieFlix",
@@ -196,7 +200,7 @@
           "url": "https://movies-project-week-8-david-mia.netlify.app/",
           "imageUrl": "https://screenshot-proxy.netlify.app/f_jpg,w_336/https://d33wubrfki0l68.cloudfront.net/63495973719a2e0009c6f9ca/screenshot_2022-10-14-12-44-02-0000.png",
           "showBig": "yes",
-          "desc": "A game of Guess who, created by using HTML, CSS, JavaScript etc."
+          "desc": "A site that let's the user see the most popular movie releases right now using API, React useSate, useEffect and navigation"
         }
       ],
       "ShowSmall": [

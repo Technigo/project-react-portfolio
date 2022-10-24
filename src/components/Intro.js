@@ -23,6 +23,7 @@ export default Intro
 const IntroStyling = styled.section`
     .intro-section{
       margin-top: 5%;
+      margin-left: 2vw;
       display: flex;
       flex-direction: column;
       align-items: center;

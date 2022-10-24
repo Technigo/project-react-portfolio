@@ -16,7 +16,7 @@ const Projects = () => {
         {projectInfo.reverse().map((project) => (
 
           <div className="projects-div" key={project.id}>
-            <a href={project.url} alt="link to project">
+            <a href={project.url} alt="link to project" target="_blank" rel="noopener noreferrer">
               <img src={project.imageUrl} alt="pic" />
               <h4>{project.projectName}</h4>
               <p className="project-description">{project.desc}</p>
@@ -127,7 +127,7 @@ h4{
 
   }
   .projects-div img{
-    width: 80%;
+    width: 75%;
     margin-top: 10px;
   }
 

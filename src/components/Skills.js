@@ -79,7 +79,7 @@ li{
     .skills-lists div{
     justify-content: left;
     width: 38vw;
-    margin-left: 10vw;
+    margin-left: 8vw;
     }
     
     .tools{

@@ -32,7 +32,7 @@ h2 {
   @media (min-width: 1024px) {
 
     h2 {
-      font-size: 48px;
+      font-size: 35px;
       margin-top: 4vw;
     }
 
