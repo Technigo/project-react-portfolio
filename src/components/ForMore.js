@@ -67,7 +67,7 @@ const ForMoreBox = styled.div`
 
 const ForMoreImg = styled.img`
     height: 45%;
-
+    filter: brightness(0) saturate(100%) invert(98%) sepia(10%) saturate(5922%) hue-rotate(150deg) brightness(76%) contrast(88%);
 
     @media (max-width: 800px) {
         height: 22%; 

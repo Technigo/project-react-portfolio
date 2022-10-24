@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import OtherProject from './OtherProject.json'
+import OtherProject from '../data/OtherProject.json'
 import { ProjectTags, SectionHeader, SubParagraphArrows, InnerWrapper } from './GlobalStyleComponents'
 
 /* Component that fetches data from OtherProject.json, basicaly it prints the list thats

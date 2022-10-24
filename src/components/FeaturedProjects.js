@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import FeaturedProject from './FeaturedProject.json';
+import FeaturedProject from '../data/FeaturedProject.json';
 import { OuterWrapper, SectionHeader, Wrapper, FeaturedProjectWrapper, ProjectCard, ThumbnailWrapper, ThumbnailTitle, ProjectInfoHeader, ProjectInfo } from './GlobalStyleComponents';
 
 /* Component that loops a list (FeaturedProject.json), and prints it */
