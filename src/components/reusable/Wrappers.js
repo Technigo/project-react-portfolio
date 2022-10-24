@@ -12,28 +12,29 @@ export const InnerWrapper = styled.div`
 `;
 export const SectionTitle = styled.div`
     display: table;
-    text-align: center;
-    color: whitesmoke;
-    background-color: var(---secondary);
-    font-size: 22px;
-    line-height: 25px;
-    text-transform: uppercase;
     margin: 20px auto;
     padding: 4px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 25px;
+    background-color: var(---secondary);
+    color: whitesmoke;
+    font-size: 22px;
     font-weight: bold;
 `;
 export const Tag = styled.div`
+    margin: 5px 3px 5px 0px;
     display: flex;
     flex-wrap: wrap;
+    gap: 4px;
     p.tag {
-    background-color: var(---highlight);
-    color: whitesmoke;
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif ;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 12px;
-    padding: 3px 5px;
-    margin: 5px 3px 5px 0px;
-  }
-  `;
+      padding: 3px 5px;
+      text-decoration: none;
+      line-height: 12px;
+      background-color: var(---highlight);
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif ;
+      font-size: 12px;
+      font-weight: bold;
+    }
+`;

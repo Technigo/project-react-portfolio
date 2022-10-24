@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import data from '../data.json';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
-import data from '../data.json'
 import Github from '../icons/gitpink30.png';
 
 export const OtherProjects = () => {
@@ -11,10 +11,10 @@ export const OtherProjects = () => {
   `;
 
   const OtherProjectWrapper = styled.div`
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-`;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  `;
 
   const OtherProjectsContent = styled.div`
     padding: 20px 0;

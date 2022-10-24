@@ -8,14 +8,14 @@ import Github from '../icons/gitpurple60.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
-    position: relative;    
-    background-color: var(---secondary);
-    width: 100%;
-    height: 520px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    border-bottom: 3px solid #F090D9;
+    justify-content: flex-end;    
+    width: 100%;
+    height: 525px;
+    background-color: var(---highlight);
+    border-bottom: 3px solid var(---primary);
   `;
 
   const BackgroundImg = styled.img`
@@ -33,30 +33,29 @@ export const Header = () => {
   `;
 
   const HeaderText = styled.div`
-  color: #f99703;
-  -webkit-text-stroke: 0.01em brown;
     position: absolute;
     width: 300px;
     top: 185px;
     left: 95px;
     padding: 0;
     margin: 0;
+    color: white;
     h2 {
-      font-weight: 700;
-      font-size: 18px;
       line-height: 18px;
       letter-spacing: 0.04em;
+      font-weight: 700;
+      font-size: 18px;
     }
     h1 {
-      font-size: 40px;
-      font-weight: 700;
       line-height: 45px;
       margin: 0;
+      font-size: 40px;
+      font-weight: 700;
     }
     h3 {
+      line-height: 40px;
       font-weight: bold;
       font-size: 28px;
-      line-height: 40px;
     }
   `;
 
@@ -69,7 +68,7 @@ export const Header = () => {
     z-index: 1;
     right: 20%;
     bottom: -67px;
-    border: 3px solid #F090D9;
+    border: 3px solid var(---primary);
   `;
 
   const ProfileImage = styled.img`

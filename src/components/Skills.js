@@ -13,16 +13,16 @@ export const Skills = () => {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    font-size: 17px;
     line-height: 30px;
     color: rgb(135, 133, 133);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
   `;
 
   const Skill = styled.div`
-    margin-top: 30px;
     width: 200px;
+    margin-top: 30px;
     h3 {
       color: #c8aa89c6;
       text-transform: uppercase;

@@ -3,7 +3,7 @@
     "title": "Project Guess Who",
     "sort": 1,
     "image": "../imgs/Waterpink.jpg",
-    "overlay": "gw",
+    "overlay": "test",
     "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
     "github": "https://github.com/SoderstromC/project-guess-who",
     "description": "Interactive game built with Javascript",
@@ -42,7 +42,7 @@
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
     "github": "https://github.com/SoderstromC/project-chatbot",
-    "description": "First pair programming project, a table booking chatbot for restaurants",
+    "description": "First pair programming project. A table booking chatbot for restaurants",
     "tech": ["HTML", "CSS", "JavaScript ES6"]
   },
   {

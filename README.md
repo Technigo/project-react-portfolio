@@ -1,10 +1,27 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Rebuild portfolio in React
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Tech: React, jsx, styled components, created my own JSON to fetch project data
+
+Met Requirements:
+
+✓ The app is built with React and Styled Components
+
+✓ The app has reusable components and reusable styled components
+
+✓ The app look close to the given design
+
+✓ The app fetches data in JSON format
+
+If I had more time / What I will continue adding: 
+
++ Make it responsive
++ Solve overlay issues for project images
++ Replace styling placeholders with wanted properties
++ Iterate on styling across project
++ Snap a new and updated profile picture
++ Create custom domain for portfolio
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://verdant-cuchufli-314c83.netlify.app/

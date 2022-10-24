@@ -4,31 +4,31 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 
 export const Intro = () => {
   const IntroSection = styled.section`
-    background: white;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+    background: white;
   `;
   const IntroText = styled.div`
-    color: #F090D9;
     text-align: center;
+    width: 900px;
     padding: 120px 80px 50px 80px;
+    color: var(---primary);
     font-size: 18px;
     font-weight: 500;
-    width: 900px;
   `;
   const Line = styled.span`
-    width: 30px;
-    border: 1px solid var(---accent);
     display: inline-block;
+    width: 30px;
     margin-bottom: 4px;
+    border: 1px solid var(---accent);
   `;
 
   const Dot = styled.span`
+    display: inline-block;
     height: 10px;
     width: 10px;
     background-color: var(---accent);
     border-radius: 50%;
-    display: inline-block;
   `;
 
   return (

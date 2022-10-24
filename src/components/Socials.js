@@ -9,27 +9,30 @@ export const Socials = () => {
     text-align: center;
     padding: 50px 0;
     background-color: white;
-  `
+  `;
+
   const IconWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    padding: 20px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  `
+    padding: 20px;
+  `;
+
   const IconContainer = styled.div`
     margin: 20px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     &:hover {
-        transform: scale(1.1);
-        }
+      transform: scale(1.1);
+      }
     h3 {
-        color: #c8aa89c6;
-        text-transform: uppercase;
-        }
-    `
+      text-transform: uppercase;
+      color: #c8aa89c6;
+      }
+  `;
+
   return (
     <OuterWrapper>
       <InnerWrapper>

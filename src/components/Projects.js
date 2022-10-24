@@ -1,65 +1,69 @@
 import React from 'react';
 import styled from 'styled-components';
+import data from '../data.json';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
-import data from '../data.json'
 
 export const Projects = () => {
   const ProjectSection = styled.div`
     padding: 75px 0px 10px 0px;
     background-color: white;
-    
   `;
+
   const ProjectWrapper = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 60px;
   `;
+
   const CardWrapper = styled.div`
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 750px;
-    height: fit-content;
     justify-content: space-between;
     align-content: space-between;
+    width: 750px;
+    height: fit-content;
+    margin: 10px;
   `;
 
   const CardContent = styled.div`
-    margin: 10px;  
     width: 335px;
+    margin: 10px;  
       img {
         width: 325px;
         height: 325px;
         display: block;
       }
   `;
+
   const ProjectBackground = styled.img`
+    position: relative;
+    display: flex;
     width: 325px;
     height: 325px; 
-    display: flex;
-    position: relative;
     margin: 0 auto;
     &:hover{
       display: none;
     }
   `;
+
   const CardOverlay = styled.div`
+    position: relative;
+    display: flex;
     width: 325px;
     height: 325px; 
-    background: white;
-    display: flex;
-    position: relative;
     margin: 0 auto;
     z-index: 1;
+    background: white;
     opacity: 80%;
     transition: ease-in .3s;
   `;
+
   const DetailsWrapper = styled.div`
-    margin: 20px 10px;
     display: flex;
     flex-direction: column;
-    height: auto;
     justify-content: space-between;
+    height: auto;
+    margin: 20px 10px;
     h4 {
       color: #c8aa89c6;
       text-transform: uppercase;
@@ -68,7 +72,8 @@ export const Projects = () => {
       color: #c8aa89c6;
       font-size: 15px;
       }
-    `;
+  `;
+
   const CardTags = styled.div`
     display: flex;
     justify-content: space-between;
@@ -79,7 +84,7 @@ export const Projects = () => {
       &:hover {
         transform: scale(1.1);
       }
-    `;
+  `;
 
   return (
     <OuterWrapper>

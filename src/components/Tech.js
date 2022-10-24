@@ -4,18 +4,20 @@ import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 
 export const Tech = () => {
   const TechSection = styled.div`
-    padding: 50px 0px 100px 0px;
     position: relative;
+    padding: 50px 0px 100px 0px;
     width: 100%;
     background-color: white;
     color: #fcfaf88a;
-  `
+  `;
+
   const TechText = styled.div`
     margin-top: 20px;
-    text-align: center;
     padding: 20px 100px 20px 100px;
+    text-align: center;
     color: #c8aa89c6;
   `;
+
   return (
     <OuterWrapper>
       <InnerWrapper>

@@ -6,20 +6,21 @@ import ThoughtsImg from '../images/Yellow.png';
 export const Thoughts = () => {
   const ThoughtsSection = styled.div`
     display: inline-grid;
-    width: 100%;
     justify-content: center;  
-    text-align: center;
+    width: 100%;
     padding: 50px 0;
+    text-align: center;
     background-color: white;
   `;
+
   const ArticleWrapper = styled.article`
     width: 515px;
-    color: #fcfaf88a;
-    text-align: start;
     padding 10px;
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: start;
+    color: #fcfaf88a;
     h4 {
-      margin: 3px;
+      margin: 3px 0px;
       text-transform: uppercase;
     }
     a {
@@ -27,13 +28,15 @@ export const Thoughts = () => {
       color: #c8aa89c6;
     }
   `;
+
   const ArticleImg = styled.img`
     width: 490px;
     margin: 0 auto;
   `;
+
   const Date = styled.h4`
+    padding: 10px 0px 2px 0px;
     color: var(---highlight);
-    padding: 20px 0px 5px 0px;
   `;
 
   return (
@@ -53,14 +56,13 @@ export const Thoughts = () => {
               <h4>Can you become a programmer without a deep technical interest?</h4>
               <p>
               In this short article I write about why got into tech
-                and my love for solving problems for people
               </p>
             </a>
             <Tag>
-              <p className="tag">programming</p>
-              <p className="tag">career change</p>
-              <p className="tag">customer experience</p>
-              <p className="tag">solving problems</p>
+              <p className="tag">Programming</p>
+              <p className="tag">Career Change</p>
+              <p className="tag">Customer Experience</p>
+              <p className="tag">Solving Problems</p>
             </Tag>
           </ArticleWrapper>
         </ThoughtsSection>
