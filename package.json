@@ -11,7 +11,10 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.2",
+    "styled-components": "^5.3.6",
+    "styled-reset": "^4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-flowtype": "^8.0.3",
     "react-scripts": "5.0.1"
   }

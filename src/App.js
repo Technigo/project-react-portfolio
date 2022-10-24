@@ -1,9 +1,15 @@
 import React from 'react'
+import { Reset } from 'styled-reset'
+import { GlobalStyle } from './Global'
+import { Main } from './components/Main'
 
 export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
+	return (
+		<>
+			<Reset />
+			<GlobalStyle />
+			<Main />
+		</>
+	)
 }
+
