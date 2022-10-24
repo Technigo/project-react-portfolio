@@ -10,21 +10,8 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { Section, SectionHeading} from 'GlobalStyles';
 
-const IconStyles = styled.div`
-font-family: 'montserrat';
-text-align:center;
-background-color:#f7f8f9;
-padding-top:10%;
 
-a {
-justify-content: center;
-font-size: 60px;
-color:#b9aba3;
-margin: 1%;
-}
-`
-
-const Social = ({}) =>
+const Social = () =>
    {
     return (
      <Section>
@@ -60,3 +47,17 @@ const Social = ({}) =>
 export default Social;
 
 
+const IconStyles = styled.div`
+font-family: 'montserrat';
+text-align:center;
+background-color:#f7f8f9;
+padding-top:5%;
+padding-bottom: 5%;
+
+a {
+justify-content: center;
+font-size: 60px;
+color:#b9aba3;
+margin: 1%;
+}
+`

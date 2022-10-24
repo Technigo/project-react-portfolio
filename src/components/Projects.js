@@ -6,7 +6,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { projects } from '../data/projects';
-import { SectionHeading, Heading, ProjectFeatured, Otherprojects } from 'GlobalStyles';
+import { SectionHeading, Heading, Project, Otherprojects } from 'GlobalStyles';
 import { otherprojects } from 'data/otherProjects';
 
 export const FeaturedProjects = () => {
@@ -16,12 +16,12 @@ export const FeaturedProjects = () => {
       <ProjectContainer>
       {projects.map((project) => {  //Maping projects array from ./data
         return (
-          <ProjectFeatured key={project}>
+          <Project key={project}>
             <a href={project.url} target="_blank" rel="noopener noreferrer"> 
             <> 
             <Img src={project.imageSrc} />
             </>
-            <Heading>{project.title}</Heading>
+            <Heading>{project.title.toUpperCase()}</Heading>
             <TitleDescription> {project.about} </TitleDescription>
             </a>
             <TagWrapper>
@@ -29,7 +29,7 @@ export const FeaturedProjects = () => {
             return <ProjectTags key={tags}>{tags.toUpperCase()}</ProjectTags>;
           })}
             </TagWrapper>
-            </ProjectFeatured>
+            </Project>
         );
       })}
  
@@ -72,8 +72,7 @@ const ProjectContainer = styled.div`
 }
   @media (min-width: 768px)  {
     grid-template-columns: 1fr 1fr;
-    align-items: baseline;
-    grid-gap: 30px;
+    grid-gap: 20px;
     justify-items: center;
     padding: 0% 20% 0% 20%;
     }
@@ -102,18 +101,18 @@ const TitleDescription = styled.p`
 const TagWrapper = styled.div `
 display: flex;
 max-width: 65%;
+margin-top: 5%;
 `
 
 const ProjectTags = styled.p`
   font-family: "Roboto", sans-serif;
-    color: white;
-    background-color:#2e5894 ;
-    
-    font-size: 12px; 
-    line-height: 12px;
-    padding: 4px;
-    margin: 1px;
-    border-radius: 4px;
+  color: white;
+  background-color:#2e5894 ;
+  font-size: 12px; 
+  line-height: 12px;
+  padding: 4px;
+  margin: 1px;
+  border-radius: 4px;
 `
 
 const OtherContainer = styled.div`

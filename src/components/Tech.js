@@ -8,6 +8,19 @@ import styled from 'styled-components';
 import GlobalStyles from 'GlobalStyles'
 //import { TechStyles } from "./TechStyles";
 
+
+
+export const Tech = () =>
+   {
+    return (
+      <TechStyles>
+       <TechText>HTML5, CSS, <Highlighted>JavaScript</Highlighted> ES6,  APIs, mob-programming, pair-programming, Github, Redux, Node, <Highlighted> React, React Hooks, </Highlighted> Flexbox, JSX </TechText>
+    </TechStyles>
+    );
+  };
+
+export default Tech;
+
 const TechStyles = styled.div`
 font-family: 'montserrat';
 text-align:center;
@@ -34,15 +47,3 @@ const Highlighted = styled.span`
   margin-top: 0;
   font-weight: bolder;
 `
-
-export const Tech = () =>
-   {
-    return (
-      <TechStyles>
-       <TechText>HTML5, CSS, <Highlighted>JavaScript</Highlighted> ES6,  APIs, mob-programming, pair-programming, Github, Redux, Node, <Highlighted> React, React Hooks, </Highlighted> Flexbox, JSX </TechText>
-    </TechStyles>
-    );
-  };
-
-export default Tech;
-

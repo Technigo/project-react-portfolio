@@ -35,9 +35,9 @@ export const Intro = () =>
         <>
         <IntroStyles>
             <IntroText>
-              <p>  Hello! I'm a student at Technigos frontend developer bootcamp.  
+                Hello! I'm a student at Technigos frontend developer bootcamp.  
                 In my jobs, I have seen opportunities where digital tools in many ways would have made it easier for both customers and patients in different ways. 
-                In the future, I hope to be able to, not only develop ideas - but also be involved in building the product itself. </p>
+                In the future, I hope to be able to, not only develop ideas - but also be involved in building the product itself. 
             </IntroText>
         </IntroStyles>
         </>

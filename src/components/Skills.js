@@ -7,30 +7,6 @@ import React from "react";
 import styled from "styled-components";
 import { SectionHeading, Heading } from 'GlobalStyles';
 
-const Section  = styled.section`
-margin-left: 5%;
-margin-right: 5%;
-padding-top:10%;
-text-align: center;
-align-items: center;
-justify-content: center;
-
-`
-const SkillsContainer  = styled.div`
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: 1fr 1fr;
-  
-
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 15%;
-    margin-right: 15%;
-    }
-`
 
 export const Skills = () =>
    {
@@ -74,3 +50,29 @@ export const Skills = () =>
   };
 
 export default Skills;
+
+const Section  = styled.section`
+margin-left: 5%;
+margin-right: 5%;
+padding-top:10%;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding-bottom: 5%;
+
+`
+const SkillsContainer  = styled.div`
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    }
+`
