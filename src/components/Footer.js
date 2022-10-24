@@ -5,7 +5,7 @@ import { TitleTertiary, OuterWrapper, InnerWrapper } from './globalStyling'
 export const Footer = () => {
   return (
     <footer>
-      <OuterWrapper selectedColor="#3f6f58">
+      <OuterWrapper selectedColor="#355F4C">
         <InnerWrapper>
           <TitleTertiary selectedColor="white" marginTop="0">Contact</TitleTertiary>
           <StyledInfo>

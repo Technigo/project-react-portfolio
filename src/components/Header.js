@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import styled from 'styled-components/macro'
 import { Icons } from './Icons'
 import header2 from './images/header2.jpg'
@@ -6,6 +6,8 @@ import profile3 from './images/profile3.jpeg'
 import { IconGroup } from './globalStyling'
 
 export const Header = () => {
+  const IconColor = useMemo(() => ({ color: 'white', size: '2rem', className: 'react-icons' }), []);
+
   return (
     <HeaderStyling>
       <HeaderContent>
@@ -14,6 +16,8 @@ export const Header = () => {
           top="10%"
           justifyContent="flex-end">
           <Icons
+            IconColor={IconColor}
+            color="white"
             iconWidth="20px"
             iconMargin="10px"
             boxMargin="3px"

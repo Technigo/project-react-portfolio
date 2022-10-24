@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { MainHeaders, OuterWrapper, IconGroup, InnerWrapper } from './globalStyling'
 import { Icons } from './Icons'
 
 export const ForMore = () => {
+  const IconColor = useMemo(() => ({ color: '#152d24', size: '2rem', className: 'react-icons' }), []);
+
   return (
     <OuterWrapper selectedColor="#a0bcb8">
       <InnerWrapper>
@@ -10,6 +12,8 @@ export const ForMore = () => {
         <IconGroup
           justifyContent="space-evenly">
           <Icons
+            color="#152d24"
+            IconColor={IconColor}
             iconWidth="23px"
             iconMargin="19px"
             boxWidth="60px"
