@@ -27,6 +27,10 @@ const TextWrapper = styled.div`
   top: 30%;
   max-width: 300px;
 `
+const ImageWrapper = styled.div`
+  padding-top: 15px;
+  justify-content: left;
+`
 
 const Hero = () => {
   return (
@@ -42,7 +46,9 @@ const Hero = () => {
           <h1 className="header-text-title">Frontend Developer</h1>
           <h1 className="header-text-other-title">With A Fashion Background</h1>
         </TextWrapper>
-        <ProfileImage src="./assets/images/me.jpg" />
+        <ImageWrapper>
+          <ProfileImage src="./assets/images/me.jpg" />
+        </ImageWrapper>
       </Wrapper>
     </MainHeader>
   )
