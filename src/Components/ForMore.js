@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import ContentWrapper from './Shared/ContentWrapper';
 import ColorTitle from './Shared/ColorTitle';
-import LinkinLogotypBlack from './Logo_linkedin_black.svg';
-import GithubLogotypeBlack from './Logo_github_black.svg';
+import LinkinLogotypBlack from './Assets/Logo_linkedin_black.svg';
+import GithubLogotypeBlack from './Assets/Logo_github_black.svg';
 import Icons from './Shared/Icons';
 
 const ForMore = () => {

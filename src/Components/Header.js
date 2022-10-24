@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import LinkinLogotypWhite from './Logo_linkedin_white.svg';
-import GithubLogotypeWhite from './Logo_github_white.svg';
+import LinkinLogotypWhite from './Assets/Logo_linkedin_white.svg';
+import GithubLogotypeWhite from './Assets/Logo_github_white.svg';
 
 import ContentWrapper from './Shared/ContentWrapper';
-import Image from '../Assets/Petra.jpg';
+import Image from './Assets/Petra.jpg';
 import Icons from './Shared/Icons';
 
 const Header = () => {
   const HeaderWrapper = styled.div`
     position: relative;
     color: var(--secondaryBackground);
-    margin: 20px 0 30px 0;
+    margin: 10px 0 30px 0;
     display: flex;
     justify-content: start;
     align-items: start;

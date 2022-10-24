@@ -10,9 +10,13 @@ const StyledTagBox = styled.p`
   margin: 2px 5px 2px 0px;
   background-color: var(--buttonBackground);
   display: inline-block;
-`;
+  `;
 
 const TagBox = ({ tag }) => {
-  return <StyledTagBox>{tag}</StyledTagBox>;
-};
+  return (
+    <StyledTagBox>
+      {tag}
+    </StyledTagBox>
+  )
+}
 export default TagBox;
