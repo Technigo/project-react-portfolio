@@ -8,21 +8,18 @@ const Socials = () => {
       <h2>Socials:</h2>
       <ForMoreIcons>
         <Icons>
-          <a href="https://github.com/iracuzzi/" target="_blank" rel="noreferrer">
+          <a href="https://github.com/iracuzzi/" target="_blank" rel="noreferrer" title="Link to my GitHub Profile">
             <GitHubSvg />
-            <p>GitHub</p>
           </a>
         </Icons>
         <Icons>
-          <a href="https://stackoverflow.com/users/19401006/arnau-monforte" target="_blank" rel="noreferrer">
+          <a href="https://stackoverflow.com/users/19401006/arnau-monforte" target="_blank" rel="noreferrer" title="Link to my StackOverflow Profile">
             <StackSvg />
-            <p>Stack Overflow</p>
           </a>
         </Icons>
         <Icons>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" title="Link to my LinkedIn Profile">
             <LinkedInSvg />
-            <p>LinkedIn</p>
           </a>
         </Icons>
       </ForMoreIcons>
@@ -38,8 +35,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 h2 {
-    background: salmon;
-    padding: 5px;
+  background: salmon;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 17px;
 }
 `;
 
@@ -55,7 +55,4 @@ const Icons = styled.div`
 display: flex;
 flex-direction: column;
 align-items: baseline;
-p {
-    text-decoration: none;
-}
 `;

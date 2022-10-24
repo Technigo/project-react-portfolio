@@ -20,7 +20,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 h2 {
-    background: salmon;
-    padding: 5px;
+  background: salmon;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 17px;
 }
 `;

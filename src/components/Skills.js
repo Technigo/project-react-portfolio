@@ -7,7 +7,7 @@ const Skills = () => {
       <h2>Skills:</h2>
       <Info>
         <Tools>
-          <h4>Tools:</h4>
+          <h4>Tools</h4>
           <p>
             VS Code <br />
             GitHub <br />
@@ -15,7 +15,7 @@ const Skills = () => {
           </p>
         </Tools>
         <Code>
-          <h4>Code:</h4>
+          <h4>Code</h4>
           <p>
             React <br />
             JavaScript ES6 <br />
@@ -31,13 +31,17 @@ const Skills = () => {
 export default Skills;
 
 const Container = styled.div`
-margin: 1.5rem;
+
 display: flex;
 flex-direction: column;
 align-items: center;
+line-height: 2rem;
 h2 {
     background: salmon;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 17px;
 }
 
 `;
@@ -45,6 +49,7 @@ h2 {
 const Info = styled.div`
 display: flex;
 flex.direction: wrap;
+font-family: Arial;
 `;
 
 const Tools = styled.div`
@@ -53,6 +58,11 @@ flex-direction: column;
 h4 {
     font-size: large;
     color: salmon;
+    margin-bottom: 0px;
+    text-decoration-line: underline;
+}
+p {
+  margin-top: 0px;
 }
 `;
 
@@ -60,8 +70,14 @@ const Code = styled.div`
 display: flex;
 flex-direction: column;
 margin-left: 4rem;
+font-family: Arial;
 h4 {
     font-size: large;
     color: salmon;
+    margin-bottom: 0px;
+    text-decoration-line: underline;
+}
+p {
+  margin-top: 0px;
 }
 `;

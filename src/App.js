@@ -5,6 +5,7 @@ import Tech from './components/Tech';
 import ProjectList from './components/ProjectList';
 import Skills from './components/Skills'
 import Socials from './components/Socials';
+import Footer from './components/Footer';
 
 const App = () => {
   const [repos, setRepos] = useState([]);
@@ -24,6 +25,7 @@ const App = () => {
       <ProjectList repos={repos} />
       <Skills />
       <Socials />
+      <Footer />
     </>
   )
 };
