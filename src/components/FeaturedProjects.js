@@ -48,8 +48,8 @@ export const FeaturedProjects = () => {
             </a>
             <h5>{project.title}</h5>
             <p>{project.description}</p>
-            <TagGithub tagGithub={project.githubLink} />
             <Tags tags={project.tags} />
+            <TagGithub tagGithub={project.githubLink} />
           </FeaturedContent>
         ))}
 
@@ -71,8 +71,8 @@ export const FeaturedProjects = () => {
                 </p>
               </a>
             </div>
-            <TagGithub tagGithub={project.githubLink} />
             <Tags tags={project.tags} />
+            <TagGithub tagGithub={project.githubLink} />
           </OtherContent>
         ))}
       </InnerWrapper>

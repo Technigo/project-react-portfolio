@@ -20,14 +20,14 @@ export const TagGithub = ({ tagGithub }) => {
 const ClonedTagWrapper = styled(TagWrapper)`
   a {
     border-radius: 4px;
-    background-color: grey;
-    color: #2b2e34;
+    background-color: #fddfe7;
+    color: red;
     padding: 5px 8px;
     margin-right: 5px;
   }
 
   a: hover {
-    background-color: #fddfe7;
-    color: red;
+    background-color: grey;
+    color: #2b2e34;
   }
 `;
