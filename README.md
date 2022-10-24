@@ -27,19 +27,19 @@ const filteredProjects = projects.filter((project) => highlights.includes(projec
 The reusable components were created at last. 
 I do need to work a bit more on my styling and accesability.
 
+
 Things I plan on improving:
+* Section "Other projects":
+  Fetch data from my json file.
+  Layout is broken.
+  Add GitHub links.
 
-Section "Other projects":
-Fetch data from my json file.
-Layout is broken.
-Add GitHub links.
+* The Link component:
+  Add props and layout, to display color and text.
 
-The Link component:
-Add props and layout, to display color and text.
-
-Add background picture to the header.
-
-Fix my font (roboto) problem since font weight is not working.
+* Design:
+  Add background picture to the header.
+  Fix bug with fonts, font weight is not working properly.
 
 ## View it live
 https://petra-eriksson-portfolio.netlify.app/
