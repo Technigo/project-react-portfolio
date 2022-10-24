@@ -30,7 +30,7 @@ export const Skills = () => {
   `;
 
   return (
-    <OuterWrapper background>
+    <OuterWrapper>
       <InnerWrapper>
         <SkillsSection>
           <SectionTitle>

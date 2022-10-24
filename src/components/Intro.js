@@ -32,7 +32,7 @@ export const Intro = () => {
   `;
 
   return (
-    <OuterWrapper background>
+    <OuterWrapper>
       <InnerWrapper>
         <IntroSection>
           <IntroText>
