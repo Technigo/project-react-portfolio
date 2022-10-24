@@ -17,6 +17,9 @@ export const TopicsContainer = styled.div`
         text-decoration: underline;
         ${({ thoughts }) => (thoughts && { marginTop: '0.5rem' })};
       }
+      & a:hover {
+        color: var(--main-color);
+}
 `;
 
 export const Topic = styled.p`
@@ -24,7 +27,7 @@ export const Topic = styled.p`
   color: var(--third-color);
   font-family: var(--sub-font);
   font-size: 0.8rem;
-  margin: 0.6rem 0 0.6rem;
+  margin: 0.4rem 0 0.6rem;
   padding: 0.15rem 0.25rem;
   text-transform: uppercase;
   word-break: keep-all;
