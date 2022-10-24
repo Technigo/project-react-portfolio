@@ -43,10 +43,9 @@ const HeaderBackground = styled.header`
   width: 100%;
 
   @media (min-width: 768px) {
-    height: 50vh;
+    height: 80vh;
   }
   @media (min-width: 1024px) {
-    height: 60vh;
   }
 `;
 
@@ -55,7 +54,7 @@ const HeaderInfo = styled.div`
   left: 0;
   top: 5em;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.6em;
   max-width: 70%;
 
   h1 {
