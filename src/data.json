@@ -1,0 +1,85 @@
+{
+  "highlights": ["guess", "music", "happy", "movies"],
+  "projects": [
+    {
+      "id": "news",
+      "urlGitHub": "https://github.com/petrasson/project-news-site",
+      "urlNetlify": "https://fancy-meringue-155c75.netlify.app/",
+      "coverName": "NEWS SITE",
+      "projectName": "PROJECT NEWS SITE",
+      "descriptionText": "description1",
+      "photo": "JsonImages/chatbot_picture.png",
+      "tags": ["HTML", "CSS"]
+    },
+    {
+      "id": "chat",
+      "urlGitHub": "https://github.com/petrasson/project-chatbot",
+      "urlNetlify": "https://tablebooker.netlify.app/",
+      "coverName": "Chatbot",
+      "projectName": "PROJECT Catbot",
+      "descriptionText": "description2",
+      "photo": "JsonImages/chatbot_picture.png",
+      "tags": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "id": "guess",
+      "urlGitHub": "https://github.com/petrasson/project-guess-who",
+      "urlNetlify": "https://petrasguesswhogame.netlify.app/",
+      "coverName": "GUESS WHO",
+      "projectName": "PROJECT GUESS WHO",
+      "descriptionText": "A digital version of the classical bord game Guess who, built in javascript.",
+      "photo": "JsonImages/guesswhogame_picture.png",
+      "tags": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "id": "weather",
+      "urlGitHub": "https://github.com/petrasson/project-weather-app",
+      "urlNetlify": "https://petraandcharlotteweatherapp.netlify.app/",
+      "coverName": "WEATHER APP",
+      "projectName": "PROJECT WEATHER APP",
+      "descriptionText": "A webb app showing the weather in different cities, fetching data from an API.",
+      "photo": "JsonImages/weatherapp_picture.png",
+      "tags": ["HTML", "CSS", "Javascript"]
+    },
+    {
+      "id": "music",
+      "urlGitHub": "https://github.com/petrasson/project-music-releases",
+      "urlNetlify": "https://kristinandpetrasmusicapp.netlify.app/",
+      "coverName": "MUSIC RELEASES",
+      "projectName": "PROJECT MUSIC RELEASES",
+      "descriptionText": "description1",
+      "photo": "JsonImages/music_release_picture.png",
+      "tags": ["HTML", "CSS", "Javascript", "React"]
+    },
+    {
+      "id": "survey",
+      "urlGitHub": "https://github.com/petrasson/project-survey",
+      "urlNetlify": "https://petrassurvey.netlify.app/",
+      "coverName": "SURVEY",
+      "projectName": "PROJECT SURVEY",
+      "descriptionText": "description1",
+      "photo": "JsonImages/guesswhogame_picture.png",
+      "tags": ["HTML", "CSS", "Javascript", "React"]
+    },
+    {
+      "id": "happy",
+      "urlGitHub": "https://github.com/petrasson/project-happy-thoughts",
+      "urlNetlify": "https://project-happy-thought-petra.netlify.app/",
+      "coverName": "HAPPY THOUGHTS",
+      "projectName": "PROJECT HAPPY THOUGHTS",
+      "descriptionText": "A web app that will let you write and post a happy thought. It's built in react and it's fetching data using an API. In this project we have been practising `useState` and `useEffect`.",
+      "photo": "JsonImages/happy_thought_picture.png",
+      "tags": ["HTML", "CSS", "Javascript", "React"]
+    },
+    {
+      "id": "movies",
+      "urlGitHub": "https://github.com/petrasson/project-movies",
+      "urlNetlify": "https://newly-release-movies.netlify.app/",
+      "coverName": "MOVIES",
+      "projectName": "PROJECT MOVIES",
+      "descriptionText": "A multi-page application showing information about the latest movies. Using React Router and combining `useState` with `useEffect`, passing information in the URL and pick this up in React router to load dynamic content.",
+      "photo": "JsonImages/movie_picture.png",
+      "tags": ["HTML", "CSS", "Javascript", "React"]
+    }
+  ]
+}
