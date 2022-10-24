@@ -39,7 +39,7 @@ line-height: 0;
 `
 
 export const WrapProject = styled.section`
-width: 350px;
+width: 320px;
 height: auto;
 margin-bottom: 10px;
 @media (min-width: 800px) {
@@ -50,15 +50,14 @@ margin-bottom: 10px;
 `
 
 export const WrapOtherProject = styled(WrapProject)`
-width: auto;
-justify-content: center;
+width: 300px;
 @media (min-width: 800px) {
-    max-width: auto;
+  width: 300px;
     }
 `
 
 export const ProjectImage = styled.img`
-width: 350px;
+width: 320px;
 height: 200px;
 margin: 0 auto;
 border-radius: 5px;
@@ -75,7 +74,7 @@ export const Overlay = styled.div`
 position: absolute;
 display: flex;
 justify-content: center;
-width: 350px;
+width: 320px;
 height: 200px;
 margin: 0 auto;
 border-radius: 5px;
@@ -86,15 +85,12 @@ p {
   color: white;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
   line-height: 0;
   color: white;
   position: absolute; 
   top: 40%; 
-  @media (max-width: 690px) {
-    font-size: 25px;
-  }
 }
 &:hover {
   opacity: 0;

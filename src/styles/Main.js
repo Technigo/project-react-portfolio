@@ -19,6 +19,10 @@ export const SecondTitle = styled.h2`
     font-size: 22px;
     color: #677867;
 `
+export const SecondTitleLeft = styled(SecondTitle)`
+    text-align: left;
+`
+
 export const SecondTitleWhite = styled(SecondTitle)`
     color: white;
 `
@@ -34,10 +38,13 @@ export const MainText = styled.p`
     overflow-wrap: break-word;
     text-decoration: none;
     color: black
-    &a:link {
+    a:link {
         textDecoration: none;
         color: black;
       }
+    @media (min-width: 800px) {
+        font-size: 20px;
+        }
 `
 
 export const CenterMainText = styled(MainText)`

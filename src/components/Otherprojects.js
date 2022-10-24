@@ -26,7 +26,7 @@ const Otherprojects = () => {
               <WrapOtherProject>
                 <a href={`https://github.com/Kristin-Larsson/${repo.name}`}>
                   <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
-                </a>
+                  </a>
                   <MainText>{repo.description}</MainText>
                   <ProgramsWrapper>
                     <Programs>{repo.topics[0]}</Programs>

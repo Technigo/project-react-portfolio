@@ -1,5 +1,5 @@
 import React from 'react-dom'
-import { Title, Section, WrapperRow, SecondTitle, MainText } from '../styles/Main'
+import { Title, Section, WrapperRow, SecondTitleLeft, MainText } from '../styles/Main'
 import { List } from '../styles/Skills'
 
 const Skills = () => {
@@ -8,7 +8,7 @@ const Skills = () => {
       <Title>Skills</Title>
       <WrapperRow>
         <List>
-          <SecondTitle>Code</SecondTitle>
+          <SecondTitleLeft>Code</SecondTitleLeft>
           <MainText>
             <li>HTML</li>
             <li>CSS3</li>
@@ -18,7 +18,7 @@ const Skills = () => {
           </MainText>
         </List>
         <List>
-          <SecondTitle>Toolbox</SecondTitle>
+          <SecondTitleLeft>Toolbox</SecondTitleLeft>
           <MainText>
             <li>Figma</li>
             <li>Keynote</li>
@@ -28,7 +28,7 @@ const Skills = () => {
           </MainText>
         </List>
         <List>
-          <SecondTitle>Upcomming</SecondTitle>
+          <SecondTitleLeft>Upcomming</SecondTitleLeft>
           <MainText>
             <li>Redux</li>
             <li>Backend</li>
