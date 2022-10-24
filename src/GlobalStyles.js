@@ -73,6 +73,7 @@ export const ProjectWrapper = styled.article`
         width: 100%;
         height: 20vw;
         object-fit: cover;
+        border: 4px solid #f4f4f4;
     }
 
     a {
@@ -82,7 +83,7 @@ export const ProjectWrapper = styled.article`
 `
 
 export const ProjectTittle = styled.h3`
-      font-family: 'Montserrat',
+      font-family: 'Roboto', sans-serif;
       font-weight: bold;
       text-align: left;
       font-size: 24px;
@@ -99,8 +100,8 @@ export const SocialMediaIcons = styled.div`
   margin: 0 5px;
 
   img {
-    margin: 0 10px;
-    height: 75px;
+    margin: 0 5px;
+    height: 50px;
   }
 `
 

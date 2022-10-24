@@ -81,6 +81,7 @@ const Mailme = styled.img`
   width: 75px;
   border-radius: 50%;
   object-fit: cover;
+  z-index: 99;
 
 @media (min-width: 1024px) {
   right: 15%;
