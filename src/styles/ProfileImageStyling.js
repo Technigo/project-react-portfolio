@@ -11,8 +11,8 @@ const ProfileImage = styled.section`
   background: url("./images/profile_pic2.jpg");
   background-position: -30px 560px;
   background-size: 232px;
-}
 
+}
 /* Galaxy S8+ */
 @media (min-width: 350px) and (max-width: 370px){
   position: absolute;
@@ -27,11 +27,26 @@ const ProfileImage = styled.section`
 }
 
 @media (min-width: 667px) and (max-width: 1024px){
-
+  .profile-pic{
+  position: absolute;
+  left:60%;
+  top: 52%;
+  width: 28vw;
+  height: 28vw;
+  background-position: -0px 760px;
+  background-size: 300px;
+}
 }
 
 @media (min-width: 1024px) {
-
+  .profile-pic{
+    position: absolute;
+    left:60%;
+    top: 52%;
+    width: 18vw;
+    height: 18vw;
+    background-position: -0px 760px;
+    background-size: 300px;
   
 }
 

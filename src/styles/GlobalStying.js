@@ -7,6 +7,8 @@ const GlobalStyling = styled.body`
     div{
         background-color: #ebe2da;
     }
+  
+    
 `
 
 export default GlobalStyling

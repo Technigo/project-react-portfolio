@@ -10,7 +10,7 @@ console.log(itemList)
 const Tech = () => {
   return (
     <TechStyling>
-      <section className="section tech">
+      <section className="section-tech">
         <SectionHeaderStyling><div><h2>Tech</h2></div></SectionHeaderStyling>
         <p> {itemList}
         </p>
@@ -21,5 +21,31 @@ const Tech = () => {
 export default Tech
 
 const TechStyling = styled.section`
+
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p{
+    font-size: 16px;
+  }
+
+  @media (min-width: 667px) and (max-width: 1024px){
+    p {
+      width: 70vw;
+      font-size: 20px; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    p {
+      font-size: 22px; 
+    }
+  }
+    
+
+
+
 
 `

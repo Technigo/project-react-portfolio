@@ -94,4 +94,24 @@ li{
     .code{
         margin: 20px 0px 20px 15px;
     }
+
+    @media (min-width: 667px) and (max-width: 1024px){
+      ul{
+        font-size: 22px;
+    }
+    
+    li{
+        font-size: 20px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      ul{
+        font-size: 24px;
+    }
+    
+    li{
+        font-size: 22px;
+      }
+    }
     `

@@ -2,7 +2,7 @@ import React from 'react';
 import GitHUbIcon from 'icons/github.svg'
 import LinkedInIcon from 'icons/linkedin.svg'
 import StackIcon from 'icons/stack.svg';
-import ProfileImage from 'styles/ProfileImage';
+import ProfileImageStyling from 'styles/ProfileImageStyling';
 import HeaderStyling from 'styles/HeaderStyling';
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
           </div>
         </div>
 
-        <ProfileImage><section className="profile-pic" /></ProfileImage>
+        <ProfileImageStyling><section className="profile-pic" /></ProfileImageStyling>
         <div className="header-text">
           <h1 lang="en">Portfolio</h1>
           <h3 className="name">Mia Dahlgren</h3>

@@ -18,6 +18,25 @@ h2 {
     color: white;
     font-size: 20px;
   }
+
+  /* TABLET */
+  @media (min-width: 667px) and (max-width: 1024px) {
+    
+    h2 {
+      margin-top: 8vw;
+      font-size: 35px;
+    }
+
+  }
+  
+  @media (min-width: 1024px) {
+
+    h2 {
+      font-size: 48px;
+      margin-top: 4vw;
+    }
+
+  }
 `
 
 export default SectionHeaderStyling

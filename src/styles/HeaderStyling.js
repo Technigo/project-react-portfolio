@@ -62,7 +62,6 @@ const HeaderStyling = styled.header`
     color: grey;
     font-size: 4.5vw;
     margin: 0vw 0vw 2vw 3vw;
-/*     background-color: gold;
     opacity: 0.4; */
     }
 
@@ -80,9 +79,60 @@ const HeaderStyling = styled.header`
       flex-direction: column;
       justify-content: flex-start;
       gap: 2px;
-  
+    }
+
+  @media (min-width: 667px) and (max-width: 1024px){
   }
-    
+  
+  @media (min-width: 1024px) {
+    background-color: pink;
+    background: url("./images/nailpolish.jpg") no-repeat;
+    background-size: 2050px;
+    height: 40vw;
+    background-position-y: -440px;
+    background-position-x: -120px;
+
+
+  h1{
+    font-size: 7vw;
+    position:absolute;
+    top: 15vw;
+    margin: 0% 0% 0% 5%;
+
+}
+h2{
+  font-size: 3vw;
+  position:absolute;
+  top: 25vw;
+  margin: 0% 0% 0% 5%;
+}
+.description{
+    font-size: 1.9vw;
+    position:absolute;
+    top: 30vw;
+    margin: 0% 0% 0% 5%;
+}
+
+.name{
+  font-size: 2vw;
+  position:absolute;
+  top: 22vw;
+  margin: 0% 0% 0% 5%;
+}
+
+
+.logo img {
+  width: 2vw;
+}
+
+.logo img:hover {
+  width: 3vw;
+}
+
+.social-media-links{
+  gap: 1vw;
+}
+
     `
 
 export default HeaderStyling
