@@ -1,7 +1,7 @@
 [ 
   { 
     "name": "Oj Vad Film!",
-    "project_name": "Project Movies",
+    "project_name": "Project: Movies",
     "description": "Project done to practice React Router, the useParams hook etc.",
     "github_url": "https://github.com/karlfredrikholm/project-movies",
     "netlify_url": "https://nitflax.netlify.app/",
@@ -10,7 +10,7 @@
   },
   { 
     "name": "Happy Thoughts",
-    "project_name": "Project Happy Thoughts",
+    "project_name": "Project: Happy Thoughts",
     "description": "React project made to practice hooks and get/post requests to API.",
     "github_url": "https://github.com/karlfredrikholm/project-happy-thoughts/",
     "netlify_url": "https://gladatankar.netlify.app/",
@@ -19,7 +19,7 @@
   },
   { 
     "name": "Albums & Singles",
-    "project_name": "Project Music Releases",
+    "project_name": "Project: Music Releases",
     "description": "First React project! Done to get familiar with props and React in general.",
     "github_url": "https://github.com/karlfredrikholm/project-music-releases/",
     "netlify_url": "https://schpoutefi.netlify.app/",
@@ -28,7 +28,7 @@
   },
   { 
     "name": "Weather Web App",
-    "project_name": "Project Weather App",
+    "project_name": "Project: Weather App",
     "description": "Vanilla JS project made to practice working with data from an API.",
     "github_url": "https://github.com/karlfredrikholm/project-weather-app/",
     "netlify_url": "http://fint-vader.netlify.app/",
