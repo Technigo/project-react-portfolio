@@ -20,15 +20,15 @@ export const FeaturedProjects = () => {
       firstProjects.id === 'project-8' ||
       firstProjects.id === 'project-7' ||
       firstProjects.id === 'project-6' ||
-      firstProjects.id === 'project-5'
+      firstProjects.id === 'project-3'
   );
 
   const OtherRepos = projects.filter(
     (firstProjects) =>
-      firstProjects.id === 'project-5' ||
       firstProjects.id === 'project-4' ||
-      firstProjects.id === 'project-3' ||
-      firstProjects.id === 'project-2'
+      firstProjects.id === 'project-5' ||
+      firstProjects.id === 'project-2' ||
+      firstProjects.id === 'project-1'
   );
 
   return (
