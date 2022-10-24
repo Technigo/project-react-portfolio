@@ -19,6 +19,7 @@ const Skills = () => {
               <li>JavaScript ES6</li>
               <li>HTML5</li>
               <li>CSS3</li>
+              <li>JSX</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
@@ -27,6 +28,9 @@ const Skills = () => {
               <li>GitHub</li>
               <li>Slack</li>
               <li>Figma</li>
+              <li>VS Code</li>
+              <li>Notion</li>
+              <li>Netlify</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
@@ -35,6 +39,10 @@ const Skills = () => {
               <li>Pair Programming</li>
               <li>Mob Programming</li>
               <li>Code Review</li>
+              <li>---</li>
+              <li>Web Accessibility</li>
+              <li>API</li>
+              <li>Responsiveness</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
