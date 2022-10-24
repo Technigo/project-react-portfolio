@@ -57,9 +57,6 @@ background-color: ${(props) =>
     props.ForMore ?  "rgb(132, 172, 180)" 
     : "none"};
     
-   
 
-//     ${(props) => props.Intro && css` 
-// `}  
 
 `

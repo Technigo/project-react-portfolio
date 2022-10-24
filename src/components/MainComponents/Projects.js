@@ -4,7 +4,6 @@ import React from 'react'
 import styled from 'styled-components'
 import data from 'components/data.json';
 import GitHub from 'components/images/github_icon.png'
-//import { Button } from './components/Button' //hur får jag in denna?
 
 export const Projects = () => {
     console.log(data);

@@ -81,9 +81,5 @@ const Icon = styled.img `
     right: 10%;
     top: 7%;
 
-
-
-
-
 `
 
