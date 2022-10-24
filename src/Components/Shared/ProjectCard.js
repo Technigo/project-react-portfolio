@@ -25,16 +25,7 @@ const ProjectCard = ({
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.2s linear;
-    }
-    .project-title {
-      padding: 10px 0;
-      font-family: Roboto, sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: var(--sixthTitleSubtitle);
-      display: inline;
-      justify-content: center;
+    
     }
 
     .project-photo {

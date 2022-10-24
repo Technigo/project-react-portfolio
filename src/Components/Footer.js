@@ -18,6 +18,11 @@ const FooterStyle = styled.div`
     font-family: Montserrat, sans-serif;
     letter-spacing: 1px;
   }
+
+  .text{
+    color: var(--secondaryBackground)
+  
+  }
   @media (min-width: 1025px) {
     .contact {
       font-size: 23px;

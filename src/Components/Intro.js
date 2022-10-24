@@ -5,13 +5,13 @@ import DotLine from './Assets/dot_picture.png';
 
 const Intro = () => {
   const TextStyle = styled.div`
-    padding: 45px 0;
+    padding: 35px 0 45px 0;
     font-size: 16px;
     line-height: 34px;
     font-weight: 400;
 
     .dot-image {
-      width: 40px;
+      width: 30px;
     }
   `;
 
@@ -21,8 +21,7 @@ const Intro = () => {
       backgroundColor="var(--thirdBackground)"
       textColor="var(--thirdBackground)">
       <TextStyle>
-        <img className="dot-image" src={DotLine} alt="Intro" />
-        Hello! I am Petra 👋🏼 a curious problem solver that loves learning new
+        <img className="dot-image" src={DotLine} alt="Intro" /> Hello! I am Petra 👋🏼 a curious problem solver that loves learning new
         things. After 6 years of working as a user researcher at Zettle/iZettle
         I recently discovered my passion for building applications. I am now
         looking for a place to grow my skills as a front-end developer.

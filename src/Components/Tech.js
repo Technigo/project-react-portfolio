@@ -9,7 +9,7 @@ const Tech = () => {
     display: row;
     justify-content: center;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 25px 0 45px 0;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;

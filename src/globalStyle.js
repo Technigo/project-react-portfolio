@@ -33,16 +33,10 @@ body {
   letter-spacing: 1.1px;
   line-height: 30px;
   font-family: Montserrat, sans-serif;
+  color: var(--seventhText);
 
 }
 /*TITLES*/
-
-.box-title{
-  padding: 15px 0px 15px 0px;
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-}
 
 .sub-title{
   padding: 10px 0 10px 0;
@@ -66,6 +60,15 @@ body {
   margin: 0 0 10px 0;
 }
 
+.project-title { 
+  padding: 10px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--sixthTitleSubtitle);
+  display: inline;
+  justify-content: center;
 `;
 
 export default GlobalStyle;

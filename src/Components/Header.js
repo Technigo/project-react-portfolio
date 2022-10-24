@@ -26,7 +26,7 @@ const Header = () => {
       width: 10rem;
     }
 
-    .icon-wrapper {
+    .icon-container {
       position: absolute;
       right: 0%;
       top: 0%;
@@ -44,7 +44,7 @@ const Header = () => {
         width: 11rem;
       }
 
-      .icon-wrapper {
+      .icon-container {
         position: absolute;
         right: 3%;
         top: 19%;
@@ -65,7 +65,7 @@ const Header = () => {
         top: auto;
         width: 15rem;
       }
-      .icon-wrapper {
+      .icon-container {
         position: absolute;
         right: 5%;
         top: 27%;
@@ -160,7 +160,7 @@ const Header = () => {
             + user research &<br /> design
           </h2>
         </HeaderTextWrapper>
-        <div className="icon-wrapper">
+        <div className="icon-container">
           <Icons
             githubLogotype={GithubLogotypeWhite}
             linkinLogotyp={LinkinLogotypWhite} />

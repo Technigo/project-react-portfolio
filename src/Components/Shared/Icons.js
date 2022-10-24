@@ -6,7 +6,7 @@ const Icons = ({ linkinLogotyp, githubLogotype }) => {
   width: 60px;
   padding: 0 10px;
 
-  .test {
+  .icon-wrapper {
     display: flex;
     flexdirection: row;  
   }
@@ -20,7 +20,8 @@ const Icons = ({ linkinLogotyp, githubLogotype }) => {
   }
   `
 
-  return (<div className="test"><IconsStyle src={githubLogotype} alt="Github Logo" /><IconsStyle src={linkinLogotyp} alt="Linkedin Logo" /></div>
+  return (<div className="icon-wrapper"><a href="https://github.com/petrasson"><IconsStyle src={githubLogotype} alt="Github Logo" /></a><a href="https://www.linkedin.com/in/petra-eriksson-623b6a163/"><IconsStyle src={linkinLogotyp} alt="Linkedin Logo" /></a></div>
   );
 };
 export default Icons;
+

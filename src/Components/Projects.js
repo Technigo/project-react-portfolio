@@ -11,12 +11,10 @@ const filteredProjects = projects.filter((project) => highlights.includes(projec
 
 const ProjectStyle = styled.div`
   background-color: var(--secondBackground); 
-  padding: 15px 0 40px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 34px;
-
 
   .project-box{
     display: grid;
@@ -37,7 +35,7 @@ const ProjectStyle = styled.div`
 
   @media (min-width: 1025px) {
     .project-box{
-    padding: 30px 0 50px 0;
+    padding: 20px 0 45px 0;
     grid-template-columns: repeat(2, 1fr);
     
   }}

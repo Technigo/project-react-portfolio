@@ -1,3 +1,4 @@
+/* The coloured title box */
 import React from 'react';
 import styled from 'styled-components/macro';
 
@@ -11,7 +12,7 @@ const ColorTitle = (props) => {
   `;
   const TitleStyle = styled.h2`
     background-color: var(--fourthTitle);
-    padding: 6px 6px;
+    padding: 1px 6px;
     margin: 20px;
     font-size: 21px;
     font-weight: 500;

@@ -4,48 +4,59 @@ import ContentWrapper from './Shared/ContentWrapper';
 
 const OtherProjectStyle = styled.div`
   background-color: var(--thirdBackground);
+  padding: 45px 0;
 
-  .other-projects {
+  .sub-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .other-projects-wrapper{
+    padding: 15px 0px 15px 0px;
+    margin: 0px;
+  }
+
+  .project-title{
+    display: inline;
+  }
+
+  .link-other-projects {
     text-decoration: none;
   }
-  .other-project-text {
-    font-weight: 400;
-    color: var(--seventhText);
+
+  .project-row{
+    display: inline;
+    margin: 30px 0;
   }
+ 
 `;
 const OtherProjects = () => {
   return (
     <ContentWrapper as="section" backgroundColor="var(--thirdBackground)">
       <OtherProjectStyle>
-        <div className="box-title">
+        <div className="title-other-projects-wrapper">
           <h2 className="sub-title">OTHER PROJECTS</h2>
         </div>
-        <div className="project-row">
-          <a
-            className="other-projects"
-            href="https://kristinandpetrasmusicapp.netlify.app/"
-            target="_blank"
-            rel="noreferrer">
-            <h2 className="small-title">
-              MUSIC RELEASES
-              <span className="other-project-text">
-                - A project in React, fetching data from an API. &gt;&gt;
-              </span>
-            </h2>
-          </a>
+        <div className="other-projects-wrapper">
+          <div className="project-row">
+            <a
+              className="link-other-projects"
+              href="https://kristinandpetrasmusicapp.netlify.app/"
+              target="_blank"
+              rel="noreferrer">
+              <h2 className="project-title">MUSIC RELEASES</h2>
+              <div className="text">- A project in React, fetching data from an API. <h2 className="project-title"> &gt;&gt;</h2></div>
+            </a>
+          </div>
 
           <div className="project-row">
             <a
-              className="other-projects"
+              className="link-other-projects"
               href="https://chat-bot-table-booker.netlify.app/"
               target="_blank"
               rel="noreferrer">
-              <h2 className="small-title">
-                CHATBOT
-                <span className="other-project-text">
-                  - A project focusing on basic javascript. &gt;&gt;
-                </span>
-              </h2>
+              <h2 className="project-title">CHATBOT</h2>
+              <div className="text">- A project focusing on basic javascript.<h2 className="project-title"> &gt;&gt;</h2></div>
             </a>
           </div>
         </div>

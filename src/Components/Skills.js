@@ -7,7 +7,7 @@ const Skills = () => {
   const SkillsStyle = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // padding: 30px 0 60px 0 ;
+    padding: 30px 0 60px 0 ;
     gap: 5px;
     align-items: start;
     text-align: center;
@@ -19,6 +19,9 @@ const Skills = () => {
     .project-text {
       width: auto;
       margin: 0;
+    }
+    .small-title{
+      padding-top: 20px;
     }
 
     @media (min-width: 667px) and (max-width: 1024px) {

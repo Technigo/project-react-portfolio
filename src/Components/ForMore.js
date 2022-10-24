@@ -8,39 +8,34 @@ import Icons from './Shared/Icons';
 
 const ForMore = () => {
   const ForMoreStyle = styled.div`
-  display: row;  
-  justify-content: center;
-  text-align: center;
-  padding: 28px 0;
+    display: row;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 0 60px 0;
 
-  .links{
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    margin: 10px 0 10px 0;
-  }
-    p{
-      display: inline-block;
+    .links {
+      font-family: Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      margin: 10px 0 10px 0;
+    }
+    .sub-title {
+      font-size: 15px;
       padding: 0 6px;
-      
-}
-
-`
+    }
+  `;
   return (
-    <ContentWrapper
-      as="section"
-      backgroundColor="var(--thirdBackground)">
-
-      <ColorTitle
-        background="var(--fourthTitle)"
-        title="FOR MORE" />
+    <ContentWrapper as="section" backgroundColor="var(--thirdBackground)">
+      <ColorTitle background="var(--fourthTitle)" title="FOR MORE" />
       <ForMoreStyle>
-        <div className="icon-wrapper"><Icons
-          githubLogotype={GithubLogotypeBlack}
-          linkinLogotyp={LinkinLogotypBlack}
-          padding="40px" />
+        <div className="icon-container">
+          <Icons
+            githubLogotype={GithubLogotypeBlack}
+            linkinLogotyp={LinkinLogotypBlack}
+            padding="40px" />
+          <a href="https://github.com/petrasson"><div className="sub-title">GITHUB</div></a>
+          <a href="https://www.linkedin.com/in/petra-eriksson-623b6a163/"><div className="sub-title">LINKEDIN</div></a>
         </div>
-        <div className="links"><p>GITHUB</p><p>LINKEDIN</p></div>
       </ForMoreStyle>
     </ContentWrapper>
   );
