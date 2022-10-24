@@ -10,6 +10,14 @@ a {
 }
 } `;
 
+export const Project = styled.div`
+
+`
+
+export const Otherprojects = styled.div`
+
+`
+
 export const Section = styled.section`
 display: flex;
 flex-direction: column;

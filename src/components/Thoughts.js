@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionHeading } from 'GlobalStyles';
@@ -48,4 +49,4 @@ const ThoughtsContainer = styled.div`
     padding: 0% 20% 0% 20%;
     }
 `
-
+*/

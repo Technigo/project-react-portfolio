@@ -28,11 +28,9 @@ export const Footer = () =>
     return (
    <Section>
     <FooterStyles>
-       <FooterText>
-        <p>Johanna Rosenholm </p>
-        <p>Rosenholm.Johanna88@gmail.com</p>
-        <p>+46 70 980 90 30</p> 
-       </FooterText>
+       <FooterText> Johanna Rosenholm </FooterText>
+       <FooterText> Rosenholm.Johanna88@gmail.com </FooterText>
+       <FooterText> +46 70 980 90 30 </FooterText>
     </FooterStyles>
     </Section>
     );

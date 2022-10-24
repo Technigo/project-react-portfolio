@@ -1,3 +1,4 @@
+/*
 export const thoughts = [
   {
   imageSrc:'', 
@@ -15,4 +16,4 @@ export const thoughts = [
   url:'',
   },
   ];
-  
+  */

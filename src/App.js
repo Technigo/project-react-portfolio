@@ -10,7 +10,7 @@ import Tech from './components/Tech';
 import Footer from './components/Footer';
 import Social from './components/Social';
 import Skills from './components/Skills';
-import { Projects } from './components/Projects';
+import { FeaturedProjects } from './components/Projects';
 import GlobalStyles from 'GlobalStyles'
 
 export const App = () => {
@@ -25,7 +25,7 @@ export const App = () => {
       />
       <Intro/>
       <Tech/>
-      <Projects />
+      <FeaturedProjects />
       <Skills/>
       <Social/>
       <Footer />

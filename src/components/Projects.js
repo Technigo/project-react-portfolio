@@ -1,17 +1,22 @@
+/*eslint-disable linebreak-style*/   
+/*eslint-disable indent */   
+/*eslint-disable spaced-comment*/  
+/*eslint-disable no-trailing-spaces*/  
+/*eslint-disable no-multiple-empty-lines*/ 
 import React from 'react';
 import styled from 'styled-components';
 import { projects } from '../data/projects';
-import { SectionHeading, Heading } from 'GlobalStyles';
+import { SectionHeading, Heading, ProjectFeatured, Otherprojects } from 'GlobalStyles';
 import { otherprojects } from 'data/otherProjects';
 
-export const Projects = ({ }) => {
+export const FeaturedProjects = () => {
   return (
     <Section>
       <SectionHeading>FEATURED PROJECTS</SectionHeading>
       <ProjectContainer>
-      {projects.map((project, index) => {
+      {projects.map((project) => {  //Maping projects array from ./data
         return (
-          <projects key={index}>
+          <ProjectFeatured key={project}>
             <a href={project.url} target="_blank" rel="noopener noreferrer"> 
             <> 
             <Img src={project.imageSrc} />
@@ -20,25 +25,25 @@ export const Projects = ({ }) => {
             <TitleDescription> {project.about} </TitleDescription>
             </a>
             <TagWrapper>
-            {project.tags.map((tags, index) => {
-            return <ProjectTags key={index}>{tags.toUpperCase()}</ProjectTags>;
+            {project.tags.map((tags) => {
+            return <ProjectTags key={tags}>{tags.toUpperCase()}</ProjectTags>;
           })}
             </TagWrapper>
-            </projects>
+            </ProjectFeatured>
         );
       })}
  
       <OtherContainer>
       <OtherHeading>Other Projects</OtherHeading>
-      {otherprojects.map((other, index) => {
+      {otherprojects.map((other) => {
         return (
-          <otherprojects key={index}>
+          <Otherprojects key={other}>
           <a href={other.url} target="_blank" rel="noopener noreferrer"> 
            <OtherTitle>
           {other.project}
           </OtherTitle>
           </a>
-          </otherprojects>
+          </Otherprojects>
         );
       })}
       </OtherContainer>
@@ -110,7 +115,6 @@ const ProjectTags = styled.p`
     margin: 1px;
     border-radius: 4px;
 `
-
 
 const OtherContainer = styled.div`
   align-items: start;
