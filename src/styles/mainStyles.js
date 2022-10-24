@@ -1,5 +1,7 @@
 import styled from 'styled-components/macro';
 
+// The main styled of this project
+
 const sizes = {
   mobileS: '320px',
   mobileM: '375px',
@@ -21,6 +23,7 @@ export const Devices = {
 };
 
 export const OuterWrapper = styled.div`
+  overflow-x: hidden;
   background-color: white;
   display: flex;
   justify-content: center;

@@ -7,10 +7,16 @@ import backgroundImageLarge from '../Images/pexels-tara-winstead-large.jpg';
 import ProfileImage from '../Images/Linda.jpg';
 
 const Header = () => {
+  // Function that navigates the user to the bottom of the page, when the image is clicked
+  let linksBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+    linksBottom = '';
+  }
+
   return (
     <Background>
       <CloneWrapper>
-        <HeaderLinks type="image" src={linksImg} name="links-at-the-bottom" alt="bottom-scroll" />
+        <HeaderLinks type="image" src={linksImg} onClick={linksBottom} name="links-at-the-bottom" alt="bottom-scroll" />
         <TitleName>PORTFOLIO: <BoldName>LINDA MALM</BoldName></TitleName>
         <TitleFirst>frontend developer</TitleFirst>
         <TitleSecond>+ digital designer</TitleSecond>

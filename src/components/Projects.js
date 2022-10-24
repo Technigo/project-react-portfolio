@@ -30,6 +30,24 @@ const Projects = () => {
       .catch((error) => console.error(error))
   }, []);
 
+  const FeaturedProjectsMobile = filteredList.filter(
+    (project) => (project.name !== 'project-news-site')
+    && (project.name !== 'project-portfolio')
+    && (project.name !== 'project-guess-who')
+    && (project.name !== 'project-react-portfolio')
+    && (project.name !== 'project-weather-app')
+    && (project.name !== 'project-chatbot')
+    && (project.name !== 'project-movies')
+    && (project.name !== 'project-music-releases')
+  );
+
+  const OtherProjectsMobile = filteredList.filter(
+    (project) => (project.name !== 'project-news-site')
+    && (project.name !== 'project-portfolio')
+    && (project.name !== 'project-happy-thoughts')
+    && (project.name !== 'project-survey')
+  );
+
   const FeaturedProjects = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
@@ -37,7 +55,7 @@ const Projects = () => {
     && (project.name !== 'project-react-portfolio')
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
-  )
+  );
 
   const OtherProjects = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
@@ -46,12 +64,12 @@ const Projects = () => {
     && (project.name !== 'project-movies')
     && (project.name !== 'project-music-releases')
     && (project.name !== 'project-survey')
-  )
+  );
 
   const renderTags = (tags) => {
     return tags.map((tag) => {
-      return (<Tag>{tag}</Tag>)
-    })
+      return (<Tag>{tag}</Tag>);
+    });
   }
 
   const renderProjects = (projects, addImage) => {
@@ -59,7 +77,7 @@ const Projects = () => {
       return (
         <SingleWrap>
           <ProjectLinks key={project.id} href={project.homepage}>
-            {addImage && <div className="test">
+            {addImage && <div className="image-component">
               <div className="image-overlay" />
               <h3 className="image-text">{project.name.replace(/-/g, ' ')}</h3>
               <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
@@ -77,12 +95,18 @@ const Projects = () => {
     <MainSections coloredBackground>
       <InnerWrapper>
         <MainHeader>FEATURED PROJECTS</MainHeader>
+        <FeatureWrapMobile>
+          {renderProjects(FeaturedProjectsMobile, true)}
+        </FeatureWrapMobile>
         <FeatureWrap>
           {renderProjects(FeaturedProjects, true)}
         </FeatureWrap>
         <SecondHeader>OTHER PROJECTS</SecondHeader>
+        <OtherWrapMobile>
+          {renderProjects(OtherProjectsMobile, false).reverse()}
+        </OtherWrapMobile>
         <OtherWrap>
-          {renderProjects(OtherProjects, false)}
+          {renderProjects(OtherProjects, false).reverse()}
         </OtherWrap>
       </InnerWrapper>
     </MainSections>
@@ -109,7 +133,7 @@ const ProjectText = styled(MainText)`
   font-family: 'Roboto', sans-serif; 
   text-align: left;
   margin: 0%;
-  margin-bottom: 3%;
+  margin-bottom: 0%;
 
   @media ${Devices.laptop} {
     &:hover {
@@ -122,10 +146,11 @@ const ProjectText = styled(MainText)`
 const Tag = styled.h4`
   font-size: 10px;
   font-family: 'Roboto', sans-serif; 
-  padding: 2%;
+  padding: 3%;
   color: black;
   background:  #cee663;
-  margin-right: 2%;
+  border-radius: 5px;
+  margin-right: 5%;
   white-space: nowrap; 
 `
 
@@ -151,7 +176,16 @@ const SingleWrap = styled.div`
     grid-template-columns: auto auto;
   }
 `
+
+const FeatureWrapMobile = styled.div`
+
+  @media ${Devices.tablet} {
+    display: none;
+  }
+`
+
 const FeatureWrap = styled.div`
+  display: none;
 
   @media ${Devices.tablet} {
     display: grid;
@@ -166,18 +200,12 @@ const FeatureWrap = styled.div`
   }
 `
 
-const OtherWrap = styled.div`
-
+const OtherWrapMobile = styled.div`
+  margin: 5%;
   a {
-    display: grid;
-    grid-template-columns: 175px auto;
+    display: flex;
     width: 100%;
 
-    @media ${Devices.tablet} {
-      display: grid;
-      grid-template-columns: 175px auto;
-      width: 100%;
-    }
   }
 
   .box-text {
@@ -186,19 +214,33 @@ const OtherWrap = styled.div`
     padding-top: 1%;
     width: 35%;
   }
+
+  @media ${Devices.tablet} {
+    display: none;
+  }
 `
 
-/*
+const OtherWrap = styled.div`
+  display: none;
 
-<div class="other-projects">
-                    <a href="https://github.com/malmen237/project-news-site">
-                        <h3 class="title">NEWS SITE</h3>
-                        <p>Responsive web site using HTML and CSS for a news site.</p>
-                        <div class="box-text">
-                            <h4><mark>HTML5</mark></h4>
-                            <h4><mark>CSS3</mark></h4>
-                        </div>
-                    </a>
-                </div>
+  @media ${Devices.tablet} {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-*/
+  a {
+    @media ${Devices.tablet} {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .box-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 3%;
+    width: 35%;
+  }
+`

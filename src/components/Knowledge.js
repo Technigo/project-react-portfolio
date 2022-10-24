@@ -1,6 +1,7 @@
 import React from 'react';
-import { InnerWrapper, /* Devices, */MainHeader, MainSections, MainText } from 'styles/mainStyles';
+import { InnerWrapper, MainHeader, MainSections, MainText } from 'styles/mainStyles';
 
+// The "Tech"-section of the site
 const Knowledge = () => {
   return (
     <MainSections>

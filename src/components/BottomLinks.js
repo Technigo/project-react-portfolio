@@ -5,6 +5,7 @@ import LinkedInImg from '../Images/linked-in.png';
 import GithubImg from '../Images/github.png';
 import StackOverflowImg from '../Images/stack-overflow.png';
 
+// Links found on the bottom of the page
 const BottomLinks = () => {
   return (
     <MainSections>

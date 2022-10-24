@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { Devices } from 'styles/mainStyles';
 
+// Contact-information
 const Footer = () => {
   return (
     <FooterWrapper>

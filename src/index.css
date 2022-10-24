@@ -24,7 +24,7 @@ code {
 }
 
 /* FEATURED PROJECTS */
-.test {
+.image-component {
   position: relative;
   width: 100%;
   height: auto;
@@ -36,10 +36,11 @@ code {
   height: 100%;
   color: transparent;
   transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.test:hover > .image-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+.image-component:hover > .image-overlay {
+  background-color: rgba(0, 0, 0, 0);
   transition: 0.5s ease;
 }
 
@@ -47,18 +48,21 @@ code {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   color: white;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 40%;
   left: 20%;
+  transition: 0.5s ease;  
 }
 
-.test:hover > .image-text {
-  opacity: 1;        
+.image-component:hover > .image-text {
+  opacity: 0;     
+  transition: 0.5s ease;   
 }
 
 .featured-projects {
   width: 100%;
+
 } 
 
 /* TABLET */
@@ -79,11 +83,6 @@ code {
   /* FEATURED PROJECTS */
 
   .featured-projects img {
-      opacity: 0.5;
       padding: 8% 2%;
-  }
-
-  .featured-projects img:hover {
-      opacity: 1.0;
-  }   
+  } 
 }
