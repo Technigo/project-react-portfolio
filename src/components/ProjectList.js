@@ -41,6 +41,10 @@ background: none;
 color: #2B5A71;
 padding-top: 50px;
 font-size: 1.8rem;
+&:hover{
+  background: none;
+  color: #7E4B48;
+}
 `;
 
 const ListDescription = styled(ProjectDescription)`
