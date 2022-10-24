@@ -7,4 +7,4 @@ I did som tweaks to the design and made mobile, tablet and desktop versions in F
 I would finnish the styling and add the SoMe links if I had more time.
 
 ## View it live
-https://jocular-starburst-7f811c.netlify.app
+https://candid-kitsune-a75bef.netlify.app
