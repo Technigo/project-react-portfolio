@@ -23,7 +23,7 @@
         "image": "",
         "netlify_url": "https://v-k-music.netlify.app/",
         "github_url": "https://github.com/katirum/project-music-releases",
-        "description": "New music app done in pair. Fetched data from Spotify API",
+        "description": "New music app done in pair. Fetched data from Spotify API.",
         "tags": ["React", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
       },
       {
@@ -32,7 +32,7 @@
         "image": "",
         "netlify_url": "https://enchanting-dodol-8f5cc6.netlify.app/",
         "github_url": "https://github.com/katirum/project-business-site",
-        "description": "A website created in mob programming session that contains forms and JavaScript for people who wants to sign up for an event ",
+        "description": "A website created in mob programming session that contains forms and JavaScript for people who wants to sign up for an event.",
         "tags": ["JavaScript ES6", "CSS3", "HTML", "Mob Program", "Github"]
       },
       {
@@ -41,7 +41,7 @@
         "image": "",
         "netlify_url": "https://joel-tika-movies.netlify.app/",
         "github_url": "https://github.com/katirum/project-movies",
-        "description": "A multipage site that shows the current most popular movies and a details page about the selected movie when clicked",
+        "description": "A multipage site that shows the current most popular movies and a details page about the selected movie when clicked.",
         "tags": ["React", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
       }
   ]
