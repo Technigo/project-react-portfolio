@@ -34,6 +34,6 @@ export const Tag = styled.div`
     text-decoration: none;
     line-height: 12px;
     padding: 3px 5px;
-    margin: 3px;
+    margin: 5px 3px 5px 0px;
   }
   `;

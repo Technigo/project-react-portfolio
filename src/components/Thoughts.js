@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
+import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
 import ThoughtsImg from '../images/Yellow.png';
 
 export const Thoughts = () => {
@@ -56,6 +56,12 @@ export const Thoughts = () => {
                 and my love for solving problems for people
               </p>
             </a>
+            <Tag>
+              <p className="tag">programming</p>
+              <p className="tag">career change</p>
+              <p className="tag">customer Experience</p>
+              <p className="tag">solving problems</p>
+            </Tag>
           </ArticleWrapper>
         </ThoughtsSection>
       </InnerWrapper>

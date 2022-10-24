@@ -69,11 +69,11 @@ export const Projects = () => {
       font-size: 15px;
       }
     `;
-  const CardFooter = styled.div`
+  const CardTags = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
     a {
       transition: all 0.2s ease-in-out;
       &:hover {
@@ -99,7 +99,7 @@ export const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer">
                       <CardOverlay>
-                        <ProjectBackground img src={item.image} alt="project poster" />
+                        <ProjectBackground img src={item.image} alt="placeholder" />
                       </CardOverlay>
                     </a>
                     <DetailsWrapper>
@@ -111,13 +111,13 @@ export const Projects = () => {
                         <h4>{item.title}</h4>
                         <p>{item.description}</p>
                       </a>
-                      <CardFooter>
+                      <CardTags>
                         <Tag>
                           {item.tools.map((tag) => (
                             <p className="tag" key={tag}>{tag}</p>
                           ))}
                         </Tag>
-                      </CardFooter>
+                      </CardTags>
                     </DetailsWrapper>
                   </CardContent>
                 ) : null
