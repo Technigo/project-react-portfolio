@@ -71,7 +71,7 @@ const ForMoreImg = styled.img`
 
   &:hover {
     border-radius: 50%;
-    transform: scale(1.06);
+    transform: scale(0.8);
     transition: 700ms linear;
     }
     
