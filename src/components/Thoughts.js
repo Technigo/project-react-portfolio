@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { InnerWrapper, /* Devices, */MainHeader, MainSections, Title, MainText } from 'styles/mainStyles';
+import { InnerWrapper, Devices, MainHeader, MainSections, Title, MainText } from 'styles/mainStyles';
 import Item1Image from '../Images/computer.jpeg';
 
 // Section that links to the article on medium
@@ -41,6 +41,13 @@ const ThoughtsLinks = styled.a`
   padding-bottom: 8%;
   text-decoration: none;
   color: black;
+
+  @media ${Devices.laptop} {
+    &:hover {
+      text-decoration: underline;
+      color: #6fb9bd;
+    }
+  }
 `
 
 const ThoughtsImage = styled.img`
