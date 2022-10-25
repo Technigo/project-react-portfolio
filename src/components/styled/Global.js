@@ -51,7 +51,7 @@ code {
 a {
     color: black;
     font-family: var(--main-font);
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -124,6 +124,7 @@ h5 {
 }
 
 h6 {
+
   color: white;
   font-size: 1.5rem;
   font-weight: 900;

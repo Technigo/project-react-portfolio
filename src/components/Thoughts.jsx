@@ -18,11 +18,11 @@ const Thoughts = () => {
             rel="noreferrer">
             <ThoughtsImage style={{ backgroundImage: `url(${thoughtImg})` }}>
               <div>
-                <h6>How I Got Started</h6>
+                <h6>November 2022</h6>
               </div>
             </ThoughtsImage>
           </a>
-          <h5>November 2022</h5>
+          <h5>Some personal gibberish</h5>
           <Paragraph grid>Some personal gibberish about how
           I started learning web development.
           </Paragraph>

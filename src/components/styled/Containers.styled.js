@@ -16,7 +16,6 @@ export const ArticleContainer = styled.article`
 
     & h5 {
       margin-bottom: 0.1rem;
-      ${({ thoughts }) => (thoughts && { fontWeight: '500', textTransform: 'capitalize' })};
     }
 `;
 
@@ -27,13 +26,12 @@ export const ProjectImage = styled.div`
   margin-bottom: 0.6rem;
 
     & div {
-      background-color: var(--main-color);
-      opacity: 0.9;
+      background-color: #8088ffcd;
       height: 100%;
       transition: all 0.5s;
       text-align: center;
     }
-
+    
     &:hover div {
       opacity: 0;
     }
@@ -43,6 +41,6 @@ export const ThoughtsImage = styled(ProjectImage)`
   box-shadow: 3px 3px var(--main-color);
 
    & div {
-    background-color: var(--third-color);
+    background-color: #a3a3a3be;
    }
 `;
