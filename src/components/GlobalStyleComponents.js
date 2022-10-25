@@ -176,7 +176,7 @@ export const ProjectInfoHeader = styled.h3`
 
 export const ProjectInfo = styled.p`
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: #183a1d;
   font-size: 24px;
   line-height: 1.4;
 
