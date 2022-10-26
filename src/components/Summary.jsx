@@ -9,7 +9,7 @@ const Summary = () => {
       <Paragraph main>
         <Line /><Dot />
           Welcome! I&apos;m a freshly
-          baked frontend developer named Fredrik. With a background in office
+          baked front-end developer named Fredrik. With a background in office
           management I now strive to keep my code as neat as possible. Always
           eager to deepen my knowledge and sharpen my coding skills.
       </Paragraph>
