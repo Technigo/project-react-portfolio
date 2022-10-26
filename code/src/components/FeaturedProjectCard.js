@@ -19,12 +19,12 @@ export const FeaturedProjectCard = () => {
               <img src={project.image} alt={project.overlay} />
             </ProjectDisplay>
           </a>
-          <SubTitle>{project.title}</SubTitle>
+          <SubTitleFP>{project.title}</SubTitleFP>
           <SubParagraph primary>{project.description}
           </SubParagraph>
           <SkillTagContainer>
             {project.tags && project.tags.map((tag) => (
-              <SkillTag key={tag.id}> {tag.name}</SkillTag>))}
+              <SkillTagFP key={tag.id}> {tag.name}</SkillTagFP>))}
           </SkillTagContainer>
         </ProjectCard>
       ))}
@@ -72,8 +72,8 @@ const FeaturedProjectWrapper = styled.div`
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 100px;
+  gap: 30px;
+  margin-bottom: 30px;
 
   @media (max-width: 800px) {
     display: grid;
@@ -92,7 +92,7 @@ const ProjectCard = styled.div`
 `;
 
 const ProjectDisplay = styled.div`
-  margin: 2%;
+  /* margin: 2%; */
   position: relative;
 
   img {
@@ -109,14 +109,15 @@ const ProjectDisplayOverlay = styled.div`
   right: 0;
   width: 100%;
   transition: .5s;
-  background-color: rgba(98, 44, 98, 0.6);
+  background-color: rgba(27, 27, 27, 0.6);
   
   h5 {
-    color: var(--clr-med);
+    color: var(--clr-light);
     text-shadow: 
-    rgb(62, 57, 57) 11px 11px 21px,
-    rgb(168, 158, 158) -11px -11px 21px; 
-    font-size: 1.2rem;
+    var(--clr-dark) 2px 2px,
+    var(--clr-sDark) 15px 15px 25px,
+    var(--clr-sLight) -15px -15px 25px; 
+    font-size: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,4 +130,12 @@ const ProjectDisplayOverlay = styled.div`
   &:hover{
     opacity: 0;
   }
+`;
+const SubTitleFP = styled(SubTitle)`
+  color: var(--clr-dark);
+`;
+
+const SkillTagFP = styled(SkillTag)`
+  background-color: var(--clr-light);
+
 `;

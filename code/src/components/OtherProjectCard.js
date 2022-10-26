@@ -80,6 +80,7 @@ export const SubTitle = styled.h4`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
 
   @media (min-width: 668px) {
     margin-right: 20px;

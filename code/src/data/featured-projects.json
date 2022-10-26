@@ -4,7 +4,7 @@
     "title-description": "1 news site about avocados",
     "overlay": "Coffee",
     "description": "With React as the framework, creating Typeform-like survey to collect data from your users.",
-    "image": "/CoffeeSurvey.png",
+    "image": "/assets/CoffeeSurvey.png",
     "repo": "project-servey",
     "url": "https://project-survay-nina-berggren.netlify.app/",
     "tags": [
@@ -32,7 +32,7 @@
     "title-description": "1 news site about avocados",
     "overlay": "Guess Who?",
     "description": "Create your own digital version of the classic board game, Guess Who?",
-    "image": "/images/Guess_Who.jpg",
+    "image": "/assets/Guess_Who.jpg",
     "repo": "project-guess-who",
     "url": "https://guesswho-nina-berggren.netlify.app/",
     "tags": [
@@ -55,7 +55,7 @@
     "title-description": "1 news site about avocados",
     "overlay": "Happy Thoughts",
     "description": "Using React, fetching and posting data to an API. A website simular to twitter, where users can post message and hand out likes.",
-    "image": "code/src/images/Movie_Project.jpg",
+    "image": "/assets/Happy_Thoughts.jpg",
     "repo": "project-happy-thoughts",
     "url": "https://happy-thought-nina-berggren.netlify.app/",
     "tags": [
@@ -87,7 +87,7 @@
     "title-description": "1 news site about avocados",
     "overlay": "Movies",
     "description": "Create a React app with multiple pages using routes.",
-    "image": "./images/Movie_Project.jpg",
+    "image": "/assets/Movie_Project.jpg",
     "repo": "project-movies",
     "url": "https://project-movies-linnea-nina.netlify.app/",
     "tags": [

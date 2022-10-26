@@ -5,13 +5,15 @@
 :root {
   --clr-dark: #622c62;
   --clr-medium: #195c75;
-  --clr-med: #68a0b8;
+  --clr-med: #6d9fb5;
   --clr-light: #f6c6f6;
   --clr-white: #fff;
   --clr-lightgrey: #c9c8c8;
-  --clr-darkGray: #1b1b1b;
+  --clr-darkGray: rgb(27, 27, 27);
   --clr-footer: #fff;
   --clr-section: #f8e9f0;
+  --clr-sDark: rgb(24, 25, 26);
+  --clr-sLight:rgb(198, 208, 211);
 
   --font-main: 'Roboto', sans-serif; 
   --font-second: "Montserrat"; 
@@ -90,6 +92,7 @@ p, ul {
 
 a {
   text-decoration: none;
+  
 }
 
 b {
