@@ -34,6 +34,12 @@ const Thoughts = () => {
               Read Article
             </a>
           </TopicsContainer>
+          <a
+            href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665/"
+            target="_blank"
+            rel="noreferrer">
+            {'>>'}
+          </a>
         </ArticleContainer>
 
         <ArticleContainer thoughts>
@@ -48,14 +54,12 @@ const Thoughts = () => {
           <Paragraph grid>Some personal gibberish about something
           else.
           </Paragraph>
-          <TopicsContainer thoughts>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer">
-              Read Article
-            </a>
-          </TopicsContainer>
+          <a
+            href="#"
+            target="_blank"
+            rel="noreferrer">
+            {'>>'}
+          </a>
         </ArticleContainer>
 
       </ProjectsGrid>
