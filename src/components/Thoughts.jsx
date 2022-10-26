@@ -25,7 +25,7 @@ const Thoughts = () => {
           </a>
           <h5>Some personal gibberish</h5>
           <Paragraph grid>Some personal gibberish about how
-          I started learning web development. {'>>'}
+          I started learning web development.
           </Paragraph>
           <TopicsContainer thoughts>
             <a
