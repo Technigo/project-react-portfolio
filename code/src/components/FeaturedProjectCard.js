@@ -137,5 +137,4 @@ const SubTitleFP = styled(SubTitle)`
 
 const SkillTagFP = styled(SkillTag)`
   background-color: var(--clr-light);
-
 `;

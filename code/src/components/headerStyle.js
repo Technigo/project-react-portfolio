@@ -5,7 +5,7 @@ import heroImage from '../images/dunes_jeremy-bishop_L.jpg'
 //  Styled components for Header.js
 
 export const HeaderContainer = styled.header`
-  background-image: url(${heroImage});;
+  background-image: url(${heroImage});
   width: 100%;
   height: 480px;
   background-position: center;
