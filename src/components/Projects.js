@@ -64,6 +64,7 @@ const Projects = () => {
     && (project.name !== 'project-react-portfolio')
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
+    && (project.name !== 'project-quiz')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -74,6 +75,7 @@ const Projects = () => {
     && (project.name !== 'project-movies')
     && (project.name !== 'project-music-releases')
     && (project.name !== 'project-survey')
+    && (project.name !== 'project-quiz')
   );
 
   // Function that sets the code-tags into separate units
