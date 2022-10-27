@@ -1,0 +1,39 @@
+[
+    {
+      "title": "Movie project",
+      "title-description": "Responsive website that shows popular movies",
+      "project-description": "Responsive multi-page website built using React & React Router, and fetching diffrent APIs",
+      "repo-name": "project-movies",
+      "netlify-name": "https://project-movies-neah-viktor.netlify.app/",
+      "tags": ["React", "React Hooks", "APIs", "React Router"],
+      "image": "/PublicImages/MovieProject.jpg"
+    },
+    {
+      "title": "ChatBot",
+      "title-description": "Website with a chatbot that helps you with coding",
+      "project-description": "Responsive website using HTML, CSS and JavaScript ES6 for when you need help with coding.",
+      "repo-name": "project-chatbot",
+      "netlify-name": "https://loquacious-pika-011cac.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "Pair programming"],
+      "image": "/PublicImages/chatbot.jpg"
+    },
+    {
+      "title": "Weather app",
+      "title-description": "Responsive Website which shows the weather",
+      "project-description": "Weather app made by using HTML, CSS and JavaScript ES6 for fetching data from API and funtionality",
+      "repo-name": "project-weather-app",
+      "netlify-name": "https://sensational-cocada-846c34.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "Pair programming", "APIs"],
+      "image": "/PublicImages/WeatherApp.jpg"
+    },
+    {
+      "title": "Happy Thoughts",
+      "title-description": "Responsive Twitter replica where you share your thoughts",
+      "project-description": "A responsive website where you write your thoughts, built in react where you get APIs and post APIs",
+      "repo-name": "project-happy-thoughts",
+      "netlify-name": "https://dynamic-puffpuff-f7c490.netlify.app/",
+      "tags": ["React", "React UseEffect", "API GET", "API POST"],
+      "image": "/PublicImages/HappyThoughts.jpg"
+    }
+  ]
+  

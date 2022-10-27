@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Project Survey",
+      "description": "Responsive website that is a typeform-like survey for collecting data from your users, built in React ",
+      "netlify": "https://relaxed-semifreddo-3917b6.netlify.app/",
+      "tags": ["React", "React Hooks", "React Stat", "JavaScript ES6", "Accessibility"]
+    },
+    {
+      "title": "Music realeases",
+      "description": "Responsive website built in React, which collects movie-data from a file and prints them",
+      "netlify": "https://v-k-music.netlify.app/",
+      "tags": ["React", "React Props", "JavaScript ES6", "Pair programming"]
+    },
+    {
+      "title": "Weather app",
+      "description": "Weather app made by using HTML, CSS and JavaScript ES6 for fetching data from API and funtionality",
+      "netlify": "https://sensational-cocada-846c34.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "Pair programming", "APIs"]
+    },
+    {
+      "title": "My first ever website",
+      "description": "A responsive website built in HTML and CSS3, where you can get proposal ideas",
+      "netlify": "https://dynamic-puffpuff-f7c490.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6"]
+    }
+  ]
+  
