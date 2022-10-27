@@ -21,13 +21,14 @@ const TechHeader = styled.h2`
   color: white;
   padding: 10px 15px;
   margin-bottom:0;
+  margin-top:40px;
 
   @media (max-width: 1023px) {
     font-size: 22px;
     line-height: 1;
   }
   @media (min-width: 1024px) {
-     margin-top: 20px;
+     margin-top: 60px;
   }
 `;
 

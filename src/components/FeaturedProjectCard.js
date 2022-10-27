@@ -43,7 +43,7 @@ export default FeaturedProjectCard;
 const Wrapper = styled.div`
 background-color: #FFF;
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   max-width: 1100px;
   display: flex;
   flex-direction: column;
@@ -54,9 +54,10 @@ background-color: #FFF;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 
-  @media (max-width: 800px) {
+  @media (min-width: 800px) {
     font-size: 16px;
     line-height: 1.4;
+    margin-bottom: 80px;
   }
 `;
 

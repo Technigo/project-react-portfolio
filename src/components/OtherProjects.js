@@ -1,63 +1,126 @@
 import React from 'react'
-import 'index';
 import styled from 'styled-components';
+import OtherProject from 'OtherProject.json';
 
-const OtherProjects = ({ subTitle }) => {
+const OtherProjects = ({ color, tagColor }) => {
   return (
-    <OtherProjectContainer>
-      <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
-        <InfoContainer>
-          <SubTitle>{subTitle}</SubTitle>
-          <SubParagraph>
-            Project to display the weather in a chosen city with info from an
-            API
-          </SubParagraph>
-        </InfoContainer>
-      </a>
-      <SkillTagContainer>
-        <SkillTag>HTML</SkillTag>
-        <SkillTag>CSS</SkillTag>
-        <SkillTag>JavaScript</SkillTag>
-      </SkillTagContainer>
-    </OtherProjectContainer>
+    <OtherProjectOuterWrapper>
+      <InnerWrapper>
+        <OtherProjectsHeader color={color}>OTHER PROJECTS</OtherProjectsHeader>
+        <OtherProjectsContainer>
+          {OtherProject.map((project) => {
+            return (
+              <ProjectCard>
+                <a href={project.netlify}>
+                  <InfoContainer>
+                    <SubTitle>{project.title}</SubTitle>
+                    <SubParagraph>
+                      {project.description}<SubParagraphArrows>{'>>>'}</SubParagraphArrows>
+                    </SubParagraph>
+                  </InfoContainer>
+            </a> {/* eslint-disable-line */}
+                <SkillTagContainer>
+                  {project.tags.map((tag) => (
+                    <ProjectTags key={tag} tagColor={tagColor}>
+                      {tag}
+                    </ProjectTags>
+                  ))}
+                </SkillTagContainer>
+              </ProjectCard>
+            );
+          })}
+        </OtherProjectsContainer>
+      </InnerWrapper>
+    </OtherProjectOuterWrapper>
   );
 };
 export default OtherProjects;
 
-export const InfoContainer = styled.div`s
-  display: flex;
-`;
-
-export const SkillTagContainer = styled.div`
-  width:50%;
-`;
-
-export const OtherProjectContainer = styled.div`
-  width: 100%;  
-  display: flex;
-  flex-direction:column;
+export const OtherProjectOuterWrapper = styled.div`
   background-color: #FFF;
-  margin 0;
+  width: 100%;
+  margin: 0 auto 80px auto;
+  padding-bottom: 80px;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1.4;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 `;
 
-export const SkillTag = styled.p`
-  background-color: pink;
+const OtherProjectsHeader = styled.h2`
+  font-size: 48px;
+  line-height: 1;
+  padding: 10px 15px;
+  margin: 40px auto 60px auto;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #262626;;
+  color: white;
   display: inline-block;
-  margin: 3%;
-  padding: 1%;
-  background-color: #FFF;
-  border:2px solid black;
+
+
+  @media (max-width: 800px) {
+    font-size: 22px;
+    line-height: 1;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+  }
+`;
+
+export const OtherProjectsContainer = styled.div`
+
+`;
+
+export const ProjectCard = styled.div`
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+`;
+
+export const InnerWrapper = styled.div`
+width:80%;
+display: flex;
+flex-direction:column;
+justify-content:center;
+`;
+
+export const InfoContainer = styled.div`
 `;
 
 export const SubTitle = styled.h4`
-  color: red;
-  text-decoration: underline;
-  margin-right: 1%;
-  font-size: 18px;
-  font-weight: bold;
-  margin-block-end: 1em;
-  margin-block-start: 1em;
+color:black;
+text-decoration: none;
 `;
+
+export const SkillTagContainer = styled.div`
+padding-bottom: 20px;
+`;
+
+const ProjectTags = styled.li`
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  padding: 5px 10px;
+  background-color: ${(props) => props.tagColor};
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  border: 1px solid black;
+
+  @media (max-width: 800px) {
+    padding: 2px;
+    font-size: 14px;
+    margin-right: 3px;
+  }
+`
 
 export const SubParagraph = styled.p`
   color: black;
@@ -66,4 +129,6 @@ export const SubParagraph = styled.p`
   margin-block-end: 1em;
   margin-block-start: 1em;
 `;
-/* h4 is optional just write the size you want, and then the project you want. */
+
+export const SubParagraphArrows = styled.p`
+`;

@@ -42,9 +42,11 @@ p{
   justify-content: center;
 }
 
-.typing {
+/* this adds the typing-effect*/
+
+/*.typing {
   width: 25ch;
-  animation: typing 10s steps(30, end) infinite, blink-caret .5s step-end infinite;
+  animation: typing 10s steps(25, end) infinite, blink-caret .5s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -52,7 +54,7 @@ p{
   font-size: 21px;
   color: white;
   padding-top:10px;
-}
+}*/
 
 @keyframes typing {
   from {
