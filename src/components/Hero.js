@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import Icon from './Icon'
 import Wrapper from './Wrapper'
 import { ProfileImage } from './ComponentLibrary'

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { Subheading } from './ComponentLibrary'
 import PageSection from './PageSection'
 

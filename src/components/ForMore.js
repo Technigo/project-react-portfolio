@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { Heading } from './ComponentLibrary'
 import PageSection from './PageSection'
 import Icon from './Icon'
