@@ -1,10 +1,10 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { BlockSection, InnerWrapper, TagWrapper } from './styles/Wrappers';
+import { BlockSectionWhite, InnerWrapper, TagWrapper } from './styles/Wrappers';
 
 export const Technologies = () => {
   return (
-    <BlockSection>
+    <BlockSectionWhite>
       <InnerWrapper>
         <h3>Tech</h3>
         <TagWrapper className="wrap-text">
@@ -21,11 +21,11 @@ export const Technologies = () => {
           <p>Mongo DB</p>
           <p>Web Accessibly</p>
           <p>API:s</p>
-          <p>mob-programming</p>
-          <p>pair-programming</p>
+          <p>Mob-Programming</p>
+          <p>Pair-Programming</p>
           <p>Github</p>
         </TagWrapper>
       </InnerWrapper>
-    </BlockSection>
+    </BlockSectionWhite>
   );
 };

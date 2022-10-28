@@ -8,6 +8,20 @@ export const BlockSection = styled.div`
   }
 `;
 
+export const BlockSectionWhite = styled(BlockSection)`
+  background-color: white;
+  h6 {
+    color: red;
+    font-size: 1.5rem;
+  }
+  p {
+    color: black;
+  }
+  a {
+    color: black;
+  }
+`;
+
 export const InnerWrapper = styled.div`
   width: 80%;
   height: inherit;
@@ -89,6 +103,34 @@ export const List = styled.div`
 `;
 
 export const Content = styled.div`
-  margin: 50px 0;
+  margin: 10px 0;
   box-sizing: border-box;
+`;
+
+export const LinksWrapper = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 10px;
+`;
+
+export const Link = styled.div`
+  margin-top: 2em;
+  img {
+    height: 3em;
+    width: 3em;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      height: 4em;
+      width: 4em;
+    }
+  }
+  @media (min-width: 1024px) {
+    img {
+      height: 4.2em;
+      width: 4.2em;
+    }
+  }
 `;

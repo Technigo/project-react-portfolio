@@ -1,11 +1,17 @@
+/* eslint-disable comma-dangle */
 import React from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper, List, Content } from './styles/Wrappers';
+import {
+  BlockSectionWhite,
+  InnerWrapper,
+  List,
+  Content,
+} from './styles/Wrappers';
 import articleImg from '../assets/article.jpeg';
 
 export const Articles = () => {
   return (
-    <BlockSection>
+    <BlockSectionWhite>
       <InnerWrapper>
         <h3>My thoughts about code</h3>
         <List>
@@ -30,7 +36,7 @@ export const Articles = () => {
           </ClonedContent>
         </List>
       </InnerWrapper>
-    </BlockSection>
+    </BlockSectionWhite>
   );
 };
 
