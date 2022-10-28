@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { InnerWrapper } from './styles/Wrappers';
-import backgroundImg from '../assets/forest.jpeg';
+// import backgroundImg from '../assets/forest.jpeg';
+import backgroundImg from '../assets/watercolor.png';
 import profileImg from '../assets/sar.bild.jpg';
 import { IconLinks } from './styles/IconLinks';
 
@@ -32,8 +33,8 @@ export const Header = () => {
 const HeaderBackground = styled.header`
   position: relative;
   background-image: linear-gradient(
-      rgba(11, 11, 11, 0.52),
-      rgba(11, 11, 11, 0.52)
+      rgba(11, 11, 11, 0.2),
+      rgba(11, 11, 11, 0.2)
     ),
     url(${backgroundImg});
   background-size: cover;
