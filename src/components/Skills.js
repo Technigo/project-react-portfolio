@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper, List, Content } from './styles/Wrappers';
+import { BlockSection, InnerWrapper, Content } from './styles/Wrappers';
 
 export const Skills = () => {
   return (
@@ -49,6 +49,16 @@ export const Skills = () => {
 };
 
 const ClonedContent = styled(Content)`
-  grid-template-columns: 1fr 1fr;
   text-align: center;
+`;
+
+const List = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr ;
+
+@media (min-width: 768px) {
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+@media (min-width: 1024px) {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
