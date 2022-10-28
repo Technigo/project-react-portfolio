@@ -67,7 +67,7 @@ export const FeaturedProjects = () => {
                 <h5>{project.title}</h5>
                 <p>
                   {project.description}
-                  <h5> &gt;&gt;</h5>
+                  <RedBoldSpan> &gt;&gt;</RedBoldSpan>
                 </p>
               </a>
             </div>
@@ -82,4 +82,10 @@ export const FeaturedProjects = () => {
 
 const OtherContent = styled.div`
   margin: 50px 0;
+`;
+
+const RedBoldSpan = styled.span`
+  color: #fa382f;
+  text-transform: uppercase;
+  font-weight: bold;
 `;
