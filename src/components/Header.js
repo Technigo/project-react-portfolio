@@ -13,8 +13,7 @@ import stackoverflow from '../assets/stackoverflow.png';
 
 const Header = () => {
   return (
-    <>
-      <HeaderBackground woods={woods} />
+    <HeaderBackground>
       <HeaderWrapper>
         <SocMedLinks
           linkedin={linkedin}
@@ -22,14 +21,16 @@ const Header = () => {
           stackoverflow={stackoverflow} />
         <ProfileImage />
       </HeaderWrapper>
-    </>
+    </HeaderBackground>
   )
 }
 
 const HeaderBackground = styled.div`
+    background-image: url(${woods});
     width: 100vw;
+    height: 30vh;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
 
 `;
 
