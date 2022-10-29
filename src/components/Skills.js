@@ -20,6 +20,7 @@ const Skills = () => {
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JSX</li>
+              <li>Redux</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
@@ -31,26 +32,32 @@ const Skills = () => {
               <li>VS Code</li>
               <li>Notion</li>
               <li>Netlify</li>
+              <li>Postman</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
             <SkillsHead>More</SkillsHead>
             <ul>
+              <li>Agile Methodology</li>
               <li>Pair Programming</li>
               <li>Mob Programming</li>
               <li>Code Review</li>
               <li>---</li>
               <li>Web Accessibility</li>
               <li>API</li>
-              <li>Responsiveness</li>
+              <li>Responsivene Design</li>
             </ul>
           </SkillsCard>
           <SkillsCard>
             <SkillsHead>Upcoming</SkillsHead>
             <ul>
-              <li>Redux</li>
+              <li>Mongo DB</li>
               <li>Node.js</li>
-              <li>Agile Methodology</li>
+              <li>React Native</li>
+              <li>Mongoose</li>
+              <li>Rest API</li>
+              <li>Authentication</li>
+              <li>Express</li>
             </ul>
           </SkillsCard>
         </SkillsArticle>

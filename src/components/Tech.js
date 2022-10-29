@@ -12,9 +12,9 @@ const Tech = () => {
         </HeadWrapper>
         <TextWrapper>
           <p tabIndex="0">
-     HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-     Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
-     pair-programming, Github.
+     HTML, CSS, Flexbox, JavaScript, ES6, JSX, Styled-Components, React, React Hooks, Redux,
+     Node.js, Mongo DB, Web Accessibly, API:s, Mob-Programming,
+     Pair-Programming, GitHub.
           </p>
         </TextWrapper>
       </InnerWrapper>

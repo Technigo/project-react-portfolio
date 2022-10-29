@@ -9,8 +9,8 @@ import { ClonedSectionWrapper, InnerWrapper, HeadH4, H5Head, SectionWrapper, Hea
 
 const FetchedInfo = () => {
   const [repos, setRepos] = useState([]);
-  const featuredForDisplay = ['project-happy-thoughts', 'project-movies', 'project-music-releases', 'project-guess-who', 'project-weather-app', 'project-survey']
-  const otherForDisplay = ['project-chatbot', 'project-portfolio', 'project-business-site', 'project-news-site']
+  const featuredForDisplay = ['project-redux-quiz', 'project-happy-thoughts', 'project-movies', 'project-music-releases', 'project-guess-who', 'project-weather-app']
+  const otherForDisplay = ['project-survey', 'project-chatbot', 'project-portfolio', 'project-business-site', 'project-news-site']
 
   useEffect(() => {
     fetch(BASE_URL)
@@ -30,7 +30,7 @@ const FetchedInfo = () => {
         key={repo.id}
         deployedLink={repo.homepage}
         projectImage={imageLink}
-        projectTitle={repo.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
+        projectTitle={repo.name.replace(/project-/, '').replace(/redux/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         projectDescription={repo.description}
         techTags={repo.topics}
         repoLink={repo.html_url} />

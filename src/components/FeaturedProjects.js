@@ -83,6 +83,8 @@ export const ImageContainer = styled.div`
 `
 export const TagWrapper = styled.div`
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-bottom: 5%;
   padding-top: 3%;
   `
