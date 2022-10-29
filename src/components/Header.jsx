@@ -41,7 +41,7 @@ const Header = () => {
 
       <HeadingsContainer>
         <h1>Portfolio: Fredrik Holm</h1>
-        <h2>Front-end developer</h2>
+        <h2>Frontend developer</h2>
         <h3>with organizational skills</h3>
       </HeadingsContainer>
 
