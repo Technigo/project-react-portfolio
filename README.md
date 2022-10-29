@@ -1,10 +1,11 @@
 # React Portfolio
-Replace this readme with your own information about your project.
+Project About creating a responsive portfolio in React using reusable and styled components. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Had some strugles with time this week, so still have some work to do with the components - code and style
+Got some issues with uploading the portfolio to Netlify, but now it works! :)
+But still have some components and style that needs to be worked on.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The site now works on Netlify: https://rosenholmjohanna.netlify.app/
