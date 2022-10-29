@@ -11,6 +11,7 @@ export const ForMoreSocialBar = styled.div`
         margin: 1rem;
         border-radius: 50%;
         background: #eeeeee;
+        opacity: 0.9;
         box-shadow: 11px 11px 21px #a19797, -11px -11px 21px #d9cdcd;
         
         &:hover {

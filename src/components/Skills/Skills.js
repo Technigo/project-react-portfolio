@@ -14,7 +14,6 @@ const Skills = () => {
           <p>CSS3</p>
           <p>Javascript ES6</p>
           <p>React</p>
-          <p>GitHub</p>
           <p>Redux</p>
           <p>Node.js</p>
         </div>
@@ -23,6 +22,8 @@ const Skills = () => {
           <p>Figma</p>
           <p>Slack</p>
           <p>Visual Studio Code</p>
+          <p>Git</p>
+          <p>GitHub</p>
         </div>
         <div>
           <SubHeadings>MORE</SubHeadings>

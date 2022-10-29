@@ -7,7 +7,7 @@ const Tech = () => {
     <SectionContainer bgColor="#eeeeee">
       <SectionHeadings>TECH</SectionHeadings>
       <SectionText>
-        HTML, CSS, JavaScript, ES6, Flexbox, JSX, React, React Hooks, Redux,
+        HTML, CSS, JavaScript ES6, Flexbox, JSX, React, React Hooks, Redux,
         Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
         pair-programming, Github.
       </SectionText>

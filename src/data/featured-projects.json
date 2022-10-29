@@ -60,15 +60,27 @@
 		]
 	},
   {
-		"overlay_title": "GUESS WHO?",
+		"overlay_title": "FRIENDS QUIZ",
 		"id": 3,
-		"img_src": "/images/guess-who.PNG",
-		"title": "GUESS WHO? - GAME",
-		"project_description": "  A digital version of the classic board game using Javascript ES6, HTML and CSS. With a fun Family Guy theme.",
-    	"repo_name": "project-guess-who",
-		"netlify_name": "project-guesswho-sofierydmark",
-    	"url": "https://github.com/SofieRydmark/project-guess-who",
+		"img_src": "/images/redux-quiz.PNG",
+		"title": "QUIZ USING REDUX",
+		"project_description": "  A trivia quiz built in react using Redux and styled components",
+    	"repo_name": "project-redux-quiz",
+		"netlify_name": "friends-redux-quiz",
+    	"url": "https://github.com/SofieRydmark/project-redux-quiz",
 		"tags": [
+			{
+				"id": 8,
+				"name": "React"
+			  },
+			  {
+				"id": 7,
+				"name": "Redux"
+			  },
+			{
+				"id": 9,
+				"name": "Styled components"
+			  },
 			{
 				"id": 4,
 				"name": "HTML5"
@@ -76,11 +88,7 @@
 			  {
 				"id": 5,
 				"name": "CSS3"
-			  },
-			  {
-				"id": 6,
-				"name": "Javascript ES6"
-			  }
+			  }	 
 		]
 	},
   {
