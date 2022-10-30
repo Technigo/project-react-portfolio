@@ -36,11 +36,12 @@ export const Lollipop = () => (
 
 const Title = styled.h2`
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 45px;
     letter-spacing: 1px;
     color: white;
 `
@@ -60,12 +61,11 @@ export const Heading = ({ children }) => (
 
 export const Subheading = styled.h2`
     text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    letter-spacing: 1px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 `
 

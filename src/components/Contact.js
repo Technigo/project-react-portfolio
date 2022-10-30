@@ -1,12 +1,12 @@
 import React from 'react'
-import styled from 'styled-components/macro'
+import styled from 'styled-components'
 import { Subheading } from './ComponentLibrary'
 import PageSection from './PageSection'
 
 const FooterText = styled.p`
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: center;
     color: var(--white);
     line-height: 1.6;
@@ -15,7 +15,7 @@ const FooterText = styled.p`
 const EmailLink = styled.a`
 font-family: "Montserrat", sans-serif;
 font-weight: 400;
-font-size: 18px;
+font-size: 1.1rem;
 text-align: center;
 color: var(--white);
 line-height: 1.6;

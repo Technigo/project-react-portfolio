@@ -19,7 +19,7 @@ const IconContainer = styled.div`
   grid-template-columns: repeat(3, 40px);
   justify-content: right;
   gap: 10px;
-  padding-top: 20px;
+  padding-top: 40px;
 `
 
 const TextWrapper = styled.div`
@@ -28,7 +28,7 @@ const TextWrapper = styled.div`
   max-width: 300px;
 `
 const ImageWrapper = styled.div`
-  padding-top: 15px;
+  /* padding-top: 5px; */
   justify-content: left;
 `
 

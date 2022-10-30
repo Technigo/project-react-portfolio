@@ -79,13 +79,6 @@ a:active {
 	outline-style: solid;
 	outline-offset: 4px;
   }
-
-
-  .header-text-wrapper {
-	position: absolute;
-	top: 30%;
-	max-width: 300px;
-  }
   
   .header-text-name {
 	font-family: "Roboto", sans-serif;
@@ -167,16 +160,6 @@ a:active {
 
 
 
-
-
-
-
-
-
-
-  
-
-
   /* MOBILE */
 
 @media (max-width: 669px) {
@@ -192,18 +175,6 @@ a:active {
 	  display: none;
 	}
   
-	.section-title {
-	  font-size: 30px;
-	}
-  
-	.main-header {
-	  height: 500px;
-	}
-  
-	.profile-image {
-	  margin-top: 280px;
-	}
-  
 	.featured-projects-container {
 	  grid-template-columns: 1fr 1fr;
 	}
@@ -216,7 +187,7 @@ a:active {
 	  grid-template-columns: repeat(3, 1fr);
 	}
   
-	.for-more-icons {
+	/* .for-more-icons {
 	  gap: 20px;
 	  grid-template-columns: repeat(3, 130px);
 	}
@@ -230,20 +201,17 @@ a:active {
 	  width: 40px;
 	  height: 40px;
 	}
-  
-	.for-more-entry-site-name {
+   */
+
+	/* .for-more-entry-site-name {
 	  text-align: center;
 	  padding-top: 15px;
 	  font-size: 15px;
-	}
+	} */
   }
   
   /* DESKTOP */
   
   @media (min-width: 992px) {
-  
-	.profile-image {
-	  margin-top: 290px;
-	}
   
 	}

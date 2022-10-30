@@ -46,7 +46,7 @@ const ProjectName = styled.h2`
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.1rem;
   letter-spacing: 1px;
 `
 
@@ -71,8 +71,8 @@ const ProjectTag = styled.span`
   font-weight: 400;
   background-color: var(--tagbg);
   text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
   padding: 4px 6px;
   margin: 6px 6px 0 0;
 `

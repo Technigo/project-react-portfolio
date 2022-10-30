@@ -12,7 +12,7 @@ const IconTitle = styled.div`
   color: ${(props) => props.color};
   text-align: center;
   padding-top: 15px;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 1.3;
 `
 
