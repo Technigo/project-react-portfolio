@@ -6,9 +6,9 @@ import FeaturedProj from './components/FeaturedProj';
 /* import OtherProj from './components/OtherProj';
 import MyThoughts from './components/MyThoughts';
 import MoreThoughts from './components/MoreThoughts';
-import Skills from './components/Skills';
+import Skills from './components/Skills'; */
 import ForMore from './components/ForMore';
-import Footer from './components/Footer'; */
+import Footer from './components/Footer';
 
 export const App = () => {
   return (
@@ -21,9 +21,9 @@ export const App = () => {
       <OtherProj />
       <MyThoughts />
       <MoreThoughts />
-      <Skills />
+      <Skills /> */}
       <ForMore />
-  <Footer /> */}
+      <Footer />
     </>
   )
 }

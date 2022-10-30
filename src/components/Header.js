@@ -26,6 +26,7 @@ const Header = () => {
 }
 
 const HeaderBackground = styled.div`
+    position: relative;
     background-image: url(${woods});
     width: 100vw;
     height: 30vh;
