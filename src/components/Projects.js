@@ -64,7 +64,7 @@ const Projects = () => {
     && (project.name !== 'project-react-portfolio')
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
-    && (project.name !== 'project-quiz')
+    && (project.name !== 'project-redux-quiz')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -75,7 +75,7 @@ const Projects = () => {
     && (project.name !== 'project-movies')
     && (project.name !== 'project-music-releases')
     && (project.name !== 'project-survey')
-    && (project.name !== 'project-quiz')
+    && (project.name !== 'project-redux-quiz')
   );
 
   // Function that sets the code-tags into separate units
@@ -95,7 +95,7 @@ const Projects = () => {
             so the image only appears with projects in the featured list */}
             {addImage && <div className="image-component">
               <div className="image-overlay" />
-              <h3 className="image-text">{project.name.replace(/-/g, ' ')}</h3>
+              <h3 className="image-text">{project.name.replace(/-/g, ' ').toUpperCase()}</h3>
               <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
             </div>}
             <ClonedTitle key={project.id}>{project.name.replace(/-/g, ' ')}</ClonedTitle>
