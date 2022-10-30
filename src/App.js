@@ -1,9 +1,12 @@
 import React from 'react'
+import Main from 'components/Main'
+import { GlobalStyle } from './components/styles/GlobalStyles'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <GlobalStyle />
+      <Main />
+    </>
   )
 }
