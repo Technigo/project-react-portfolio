@@ -1,9 +1,10 @@
 import React from 'react'
+import Container from 'components/Container'
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Container />
     </div>
   )
 }
