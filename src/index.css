@@ -73,12 +73,19 @@ a:active {
   text-decoration: none;
 }
 
-:focus {
-	outline-color: var(--black);
-	outline-width: medium;
-	outline-style: solid;
-	outline-offset: 4px;
+*:focus {
+    outline: 0.125rem solid var(--black);
+    outline-offset: 0.125rem;
   }
+
+*:focus:not(:focus-visible) {
+    /* Remove focus indication when a mouse is used */
+    outline: none;
+}
+*:focus-visible {
+    outline: 0.125rem solid var(--black);
+    outline-offset: 0.125rem;
+}
   
   .header-text-name {
 	font-family: "Roboto", sans-serif;
@@ -183,9 +190,7 @@ a:active {
 	  grid-template-columns: 1fr 1fr;
 	}
   
-	.skills-container {
-	  grid-template-columns: repeat(3, 1fr);
-	}
+
   
 	/* .for-more-icons {
 	  gap: 20px;
@@ -201,9 +206,9 @@ a:active {
 	  width: 40px;
 	  height: 40px;
 	}
-   */
+  
 
-	/* .for-more-entry-site-name {
+	.for-more-entry-site-name {
 	  text-align: center;
 	  padding-top: 15px;
 	  font-size: 15px;
