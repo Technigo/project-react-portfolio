@@ -20,15 +20,35 @@ const SkillsSubheading = styled.h3`
     text-align: center;
 `
 
+const SkillsContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content;
+    gap: 10px;
+
+    /* tablet and larger -v */
+    @media (min-width: 668px) {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+`
+
+const SkillsMore = styled.div`
+   /* hide section on mobile */
+   @media (max-width: 669px) {
+     display: none;
+  }
+`
+
 const Skills = () => {
   return (
     <PageSection backgroundColor="var(--sectionbg)">
       <Wrapper>
         <Heading>Skills</Heading>
-        <div className="skills-container">
-          <div className="skill-grid-code">
+        <SkillsContainer>
+          <div>
             <SkillsSubheading>Code</SkillsSubheading>
-            <SkillsList className="skill-grid-list">
+            <SkillsList>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript ES6</li>
@@ -36,31 +56,31 @@ const Skills = () => {
               <li>Bootstrap</li>
             </SkillsList>
           </div>
-          <div className="skill-grid-toolbox">
+          <div>
             <SkillsSubheading>Toolbox</SkillsSubheading>
-            <SkillsList className="skill-grid-list">
+            <SkillsList>
               <li>VS Code</li>
               <li>Slack</li>
             </SkillsList>
           </div>
-          <div className="skill-grid-more hidden-on-mobile">
+          <SkillsMore>
             <SkillsSubheading>More</SkillsSubheading>
-            <SkillsList className="skill-grid-list">
+            <SkillsList>
               <li>Lorem</li>
               <li>to the</li>
               <li>ipsum</li>
             </SkillsList>
-          </div>
-          <div className="skill-grid-upcoming">
+          </SkillsMore>
+          <div>
             <SkillsSubheading>Upcoming</SkillsSubheading>
-            <SkillsList className="skill-grid-list">
+            <SkillsList>
               <li>React</li>
               <li>Redux</li>
               <li>Styled Components</li>
               <li>Node.js</li>
             </SkillsList>
           </div>
-        </div>
+        </SkillsContainer>
       </Wrapper>
     </PageSection>
   )
