@@ -59,7 +59,7 @@ export const Projects = () => {
             <ProjectCard key={project.id}>
               <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
                 <ProjectDescription>
-                  <TitleQuaternary>{project.name}</TitleQuaternary>
+                  <TitleQuaternary>{project.name.replaceAll('-', ' ').replaceAll('project', '')}</TitleQuaternary>
                   <p>{project.description} <span> &gt;&gt;</span></p>
                 </ProjectDescription>
               </StyledDescriptionLink>
