@@ -29,7 +29,7 @@ const Thoughts = () => {
           </Paragraph>
           <TopicsContainer thoughts>
             <a
-              href="#"
+              href="https://medium.com/@karlfredrikholm/some-personal-jibberish-about-how-i-started-learning-web-development-637271bdc665/"
               target="_blank"
               rel="noreferrer">
               Read article <span>{'>>'}</span>
