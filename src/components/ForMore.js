@@ -16,7 +16,6 @@ const IconContainer = styled.div`
     grid-template-columns: repeat(3, 90px);
     gap: 10px;
   }
-
 `
 
 const ForMore = () => {

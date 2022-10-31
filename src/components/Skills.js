@@ -4,32 +4,31 @@ import { Heading, Wrapper } from './ComponentLibrary'
 import PageSection from './PageSection'
 
 const SkillsList = styled.ul`
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
 `
 
 const SkillsSubheading = styled.h3`
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    color: var(--accent);
-    padding-bottom: 3px;
-    text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: var(--accent);
+  padding-bottom: 3px;
+  text-align: center;
 `
 
 const SkillsContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: fit-content;
+  gap: 10px;
 
-    /* tablet and larger -v */
-    @media (min-width: 668px) {
-      grid-template-columns: repeat(3, 1fr);
+   /* tablet and larger -v */
+   @media (min-width: 668px) {
+    grid-template-columns: repeat(3, 1fr);
   }
-
 `
 
 const SkillsMore = styled.div`
