@@ -9,7 +9,7 @@ const OtherProjects = () => {
     <StyledOtherProjects>
       <SectionSubTitle>Other Projects</SectionSubTitle>
       <div>
-        {projects.slice(2, 7).map((projectList) => (
+        {projects.slice(2, 8).map((projectList) => (
           <ProjectWrapper key={projectList.id}>
             <a
               href={projectList.netlify_link}

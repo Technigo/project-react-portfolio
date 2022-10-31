@@ -175,5 +175,27 @@
           "tech": "API"
           }
       ]
-      }
-    ]
+      },
+      {
+          "title": "Space Trivia Quiz",
+          "id": 8,
+          "project_description": "A quiz built in React Redux to test your space knowledge. Mob- and Pair-programmed.",
+          "repo_link": "https://github.com/juliaostedt/project-redux-quiz",
+          "netlify_link": "https://space-trivia.netlify.app/",
+          "project_img": "",
+          "tags": [
+          {
+          "id": 1,
+          "tech": "React"
+          },
+          {
+          "id": 2,
+          "tech": "Redux"
+          },
+          {
+          "id": 3,
+          "tech": "Styled components"
+          }
+      ]
+      } 
+]
