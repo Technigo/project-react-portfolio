@@ -70,7 +70,7 @@ const Icon = ({ variant, showText = false, size = 80, color = 'var(--heading)' }
           </IconImage>
         </IconBorder>
         {showText && (
-          <IconTitle color={color}>
+          <IconTitle color={color} size={size}>
             {title}
           </IconTitle>
         )}
