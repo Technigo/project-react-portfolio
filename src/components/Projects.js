@@ -1,16 +1,26 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Heading, Subheading, Wrapper } from './ComponentLibrary'
 import PageSection from './PageSection'
 import Project from './Project'
 import projectData from '../projects.json'
+
+const FeaturedProjectContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @media (max-width: 669px) {
+    grid-template-columns: 1fr;
+  }
+`
 
 const Projects = () => {
   return (
     <PageSection backgroundColor="var(--sectionbg)">
       <Wrapper>
         <Heading>Featured Projects</Heading>
-        <div style={{ gridTemplateColumns: '1fr 1fr', display: 'grid', gap: 30 }}>
-
+        <FeaturedProjectContainer>
           {projectData.filter((project) => project.featured).map((project) => (
             <Project
               key={project.name}
@@ -22,7 +32,7 @@ const Projects = () => {
               url={project.url}
               featured />
           ))}
-        </div>
+        </FeaturedProjectContainer>
 
         <Subheading>Other Projects</Subheading>
         {projectData.filter((project) => !project.featured).map((project) => (
