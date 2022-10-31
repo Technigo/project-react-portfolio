@@ -69,3 +69,14 @@ export const Subheading = styled.h2`
     padding-bottom: 20px;
 `
 
+export const HideOnMobile = styled.span`
+  @media (max-width: 669px) {
+    display: none;
+  }
+`
+
+export const Wrapper = styled.div`
+width: 90%;
+max-width: 800px;
+margin: 0 auto;
+`

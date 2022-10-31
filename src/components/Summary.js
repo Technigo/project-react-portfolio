@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import PageSection from './PageSection'
-import Wrapper from './Wrapper'
-
-import { Lollipop } from './ComponentLibrary'
+import { Lollipop, Wrapper } from './ComponentLibrary'
 
 const SummaryText = styled.p`
     font-family: "Montserrat", sans-serif;

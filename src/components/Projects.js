@@ -1,8 +1,7 @@
 import React from 'react'
-import { Heading, Subheading } from './ComponentLibrary'
+import { Heading, Subheading, Wrapper } from './ComponentLibrary'
 import PageSection from './PageSection'
 import Project from './Project'
-import Wrapper from './Wrapper'
 import projectData from '../projects.json'
 
 const Projects = () => {

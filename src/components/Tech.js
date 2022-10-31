@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { Heading } from './ComponentLibrary'
+import { Heading, Wrapper } from './ComponentLibrary'
 import PageSection from './PageSection'
-import Wrapper from './Wrapper'
 
 const TechText = styled.p`
     font-family: "Montserrat", sans-serif;

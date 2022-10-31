@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import Icon from './Icon'
-import Wrapper from './Wrapper'
-import { ProfileImage } from './ComponentLibrary'
+import { ProfileImage, Wrapper } from './ComponentLibrary'
 
 const MainHeader = styled.header`
   width: 100%;

@@ -84,7 +84,7 @@ color: var(--black);
 
 const Project = ({ title, name, description, tags, image, url, featured }) => {
   return (
-    <ProjectLink href={url} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+    <ProjectLink href={url} target="_blank" rel="noreferrer">
 
       <ProjectCard>
         {featured && (
