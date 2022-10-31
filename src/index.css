@@ -115,66 +115,6 @@ a:active {
 
 
 
-  .skills-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: fit-content fit-content;
-	gap: 10px;
-  }
-  
-  .skill-grid-upcoming {
-	grid-row-start: 2;
-  }
-
-
-  .for-more-icons {
-	display: grid;
-	grid-template-columns: repeat(3, 95px);
-	justify-content: center;
-	gap: 25px;
-  }
-  
-  .for-more-icon-container {
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	border: 2px solid var(--heading);
-	display: grid;
-	margin: 0 auto;
-  }
-  
-  .for-more-icon {
-	width: 28px;
-	height: 28px;
-	align-self: center;
-	justify-self: center;
-	fill: var(--heading);
-  }
-  
-  .for-more-entry-site-name {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-family: "Roboto", sans-serif;
-	color: var(--heading);
-	text-align: center;
-	padding-top: 15px;
-	font-size: 15px;
-	line-height: 1.3;
-  }
-  
-
-
-
-
-
-  /* MOBILE */
-
-@media (max-width: 669px) {
-	.hidden-on-mobile {
-	  display: none;
-	}
-  }
-  
   /* TABLET */
   
   @media (min-width: 668px) {
@@ -190,33 +130,5 @@ a:active {
 	  grid-template-columns: 1fr 1fr;
 	}
   
-
-  
-	/* .for-more-icons {
-	  gap: 20px;
-	  grid-template-columns: repeat(3, 130px);
-	}
-  
-	.for-more-icon-container {
-	  width: 90px;
-	  height: 90px;
-	}
-  
-	.for-more-icon {
-	  width: 40px;
-	  height: 40px;
-	}
-  
-
-	.for-more-entry-site-name {
-	  text-align: center;
-	  padding-top: 15px;
-	  font-size: 15px;
-	} */
   }
   
-  /* DESKTOP */
-  
-  @media (min-width: 992px) {
-  
-	}
