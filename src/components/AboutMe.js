@@ -6,9 +6,14 @@ export const AboutMe = () => {
   return (
     <BlockSection>
       <InnerWrapper>
-        <p>
+        <Paragraph>
           <Line />
-          <Dot /> Hello, I am a student at{' '}
+          <Dot /> Welcome to my page! I am a Frontend Developer with a
+          background as a Design Engineer who love to improve user experience
+          for digital services that the users love while working with a modern
+          tech stack. I have experience working as a team leader and enjoy
+          enabling teams to collaborate and thrive while reaching their full
+          potential. I am currently a student at{' '}
           <a
             href="https://www.technigo.io/program"
             target="_blank"
@@ -16,11 +21,10 @@ export const AboutMe = () => {
             tabIndex={-1}
             aria-hidden>
             <b>Technigo </b>
-          </a>
-          and prosper to become a web developer. Currently working as a
-          mechanical engineer. Welcome to my portfolio where you can follow my
-          projects and journey.
-        </p>
+          </a>{' '}
+          where I am learning a lot of exciting things. Feel free to have a look
+          at my portfolio and let me know what you think.
+        </Paragraph>
       </InnerWrapper>
     </BlockSection>
   );
@@ -38,4 +42,8 @@ const Dot = styled.span`
   background-color: #fa382f;
   border-radius: 50%;
   display: inline-block;
+`;
+
+const Paragraph = styled.p`
+  line-height: 1.6;
 `;
