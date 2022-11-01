@@ -3,7 +3,7 @@
     "id": "project-10",
     "title": "Quizflix",
     "description": "Quiz game with a Netflix theme using global state in Redux.",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63497103af42e70008e86a1b/screenshot_2022-10-14-14-24-31-0000.png",
+    "image": "image/quizflix.jpg",
     "netlifyLink": "https://quizflix.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-redux-quiz",
     "isFeatured": true,
@@ -11,7 +11,6 @@
       { "name": "JavaScript" },
       { "name": "HTM5L" },
       { "name": "CSS3" },
-      { "name": "API" },
       { "name": "React" },
       { "name": "Redux" }
     ]
@@ -19,8 +18,8 @@
   {
     "id": "project-9",
     "title": "Popular Movies",
-    "description": "React apps with multiple pages using routes",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63497103af42e70008e86a1b/screenshot_2022-10-14-14-24-31-0000.png",
+    "description": "React apps with multiple pages using routes.",
+    "image": "image/popular-movies.jpg",
     "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-movies",
     "tags": [
@@ -35,7 +34,7 @@
     "id": "project-8",
     "title": "Happy Thoughts",
     "description": "Practice how to react to changes in state or a component mounting using useEffect.",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63494404aa9e560008e08e64/screenshot_2022-10-14-11-12-46-0000.png",
+    "image": "image/happy-thoughts.jpg",
     "netlifyLink": "https://technigo-happy-thoughts.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-happy-thoughts",
     "tags": [
@@ -51,7 +50,7 @@
     "id": "project-7",
     "title": "Mad Lib - Dragon Sneeze",
     "description": "Typeform-like survey to collect data from users made into a mad lib story.",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63395034a2d0c3000aaca2b4/screenshot_2022-10-02-08-48-25-0000.png",
+    "image": "image/dragon-sneeze.jpg",
     "netlifyLink": "https://mad-lib-dragon-sneeze.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-survey",
     "tags": [
@@ -66,7 +65,7 @@
     "id": "project-6",
     "title": "Music releases",
     "description": "First project using JSX and react with JSON api. Project was to fetch data and show cover albums with links using map.",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63318a26dcd8020008c3a7ac/screenshot_2022-09-26-11-17-20-0000.png",
+    "image": "image/music-releases.jpg",
     "netlifyLink": "https://music-releases-saralie-antonella.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-music-releases",
     "tags": [
@@ -79,8 +78,8 @@
   {
     "id": "project-5",
     "title": "Weather App",
-    "description": "Web application built in JavaScript with external API",
-    "image": "./assets/project/sthlm-weather.jpg",
+    "description": "Web application built in JavaScript with external API.",
+    "image": "image/sthlm-weather.jpg",
     "netlifyLink": "https://stockholm-weather.netlify.app/",
     "githubLink": "https://github.com/juliaostedt/project-weather-app",
     "tags": [
@@ -93,8 +92,8 @@
   {
     "id": "project-4",
     "title": "Guess who",
-    "description": "Game created to learn basic JavaScript",
-    "image": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6314fda567c58a2a8aaa7d8f/screenshot_2022-09-04-19-34-11-0000.png",
+    "description": "Game created to learn basic JavaScript.",
+    "image": "image/guess-who.jpg",
     "netlifyLink": "https://guess-who-by-saralie.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-guess-who",
     "tags": [{ "name": "JavaScript" }, { "name": "HTM5L" }, { "name": "CSS3" }]
@@ -102,8 +101,8 @@
   {
     "id": "project-3",
     "title": "Chat Bot - Puppy Rescue",
-    "description": "An interactive chatbot made into a game",
-    "image": "./assets/project/puppyrescue.png",
+    "description": "An interactive chatbot made into a game.",
+    "image": "image/puppyrescue.jpg",
     "netlifyLink": "https://delightful-praline-eda5a7.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-chatbot?organization=Scarylie&organization=Scarylie",
     "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
@@ -111,8 +110,8 @@
   {
     "id": "project-2",
     "title": "Business site",
-    "description": "A business site with an accordion, styling, and header to practice JavaScript",
-    "image": "./assets/project/forest-to-you.jpg",
+    "description": "A business site with an accordion, styling, and header to practice JavaScript.",
+    "image": "image/forest-to-you.jpg",
     "netlifyLink": "https://astounding-fairy-f2a605.netlify.app",
     "githubLink": "https://github.com/Petrasoderstrom1612/project-business-site",
     "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
@@ -120,8 +119,8 @@
   {
     "id": "project-1",
     "title": "News Site",
-    "description": "Project to build a simple website using responsive design",
-    "image": "./assets/project/re-discover.jpg",
+    "description": "Project to build a simple website using responsive design.",
+    "image": "image/re-discover.jpg",
     "netlifyLink": "https://re-discover-saralie-news-site.netlify.app/",
     "githubLink": "https://github.com/Scarylie/Project-news-site-Re-Discover",
     "tags": [{ "name": "HTML5" }, { "name": "CSS3" }, { "name": "responsive" }]
