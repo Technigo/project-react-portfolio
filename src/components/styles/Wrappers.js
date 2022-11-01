@@ -35,7 +35,7 @@ export const InnerWrapper = styled.div`
     color: white;
     font-weight: 700;
     width: fit-content;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -43,7 +43,6 @@ export const InnerWrapper = styled.div`
     color: #fa382f;
     text-transform: uppercase;
     margin: 0;
-
     text-align: center;
   }
 
