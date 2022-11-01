@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Cloud Weather",
+        "title": "Weather app built in JavaScript",
+        "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "APIs"
+        ],
+        "image": "/assets/images/projects/cloud.jpg",
+        "url": "https://github.com/a-well/project-weather-app",
+        "featured": true
+    },
+    {
+        "name": "Catnews",
+        "title": "Made up news about cats",
+        "description": "A website for an imaginary news magazine, using HTML and CSS only.",
+        "tags": [
+            "HTML5",
+            "CSS3"
+        ],
+        "image": "/assets/images/projects/catnews.jpg",
+        "url": "https://github.com/a-well/project-news-site",
+        "featured": true
+    },
+    {
+        "name": "Guess Who?",
+        "title": "A game built in JavaScript",
+        "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "image": "/assets/images/projects/guesswho.jpg",
+        "url": "https://github.com/a-well/project-guess-who",
+        "featured": true
+    },
+    {
+        "name": "Tablebooker",
+        "title": "Chat bot helping you book your table",
+        "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "image": "/assets/images/projects/tablebooker.jpg",
+        "url": "https://github.com/a-well/project-chatbot",
+        "featured": true
+    },
+    {
+        "name": "Dogwalker",
+        "title": "Weather app built in JavaScript",
+        "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
+        "tags": [
+            "HTML5",
+            "CSS3"
+        ],
+        "image": "",
+        "url": "https://github.com/a-well/project-business-site",
+        "featured": false
+    }
+]
