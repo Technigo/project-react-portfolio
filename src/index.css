@@ -16,7 +16,5 @@ code {
 }
 
 .wrap-text {
-  flex-wrap: wrap;
-  margin-top: 2px;
   justify-content: center;
 }
