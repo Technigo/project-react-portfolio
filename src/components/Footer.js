@@ -1,5 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { BlockSection, InnerWrapper } from './styles/Wrappers';
 
 export const Footer = () => {
@@ -11,12 +13,12 @@ export const Footer = () => {
           <p>Saralie Bognandi</p>
           <p>
             <a className="address-style" href="tel:+46 70 459 08 38 ">
-              +46 70 459 08 38
+              <FontAwesomeIcon icon={faPhone} /> +46 70 459 08 38
             </a>
           </p>
           <p>
             <a href="mailto: saralie.bognandi@gmail.com" className="email">
-              saralie.bognandi@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} /> saralie.bognandi@gmail.com
             </a>
           </p>
         </FooterStyled>
