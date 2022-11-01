@@ -6,7 +6,7 @@ import { BlockSection, InnerWrapper } from './styles/Wrappers';
 
 export const Footer = () => {
   return (
-    <BlockSection>
+    <FooterBlockSection>
       <InnerWrapper>
         <FooterStyled>
           <h4>Contact</h4>
@@ -23,11 +23,11 @@ export const Footer = () => {
           </p>
         </FooterStyled>
       </InnerWrapper>
-    </BlockSection>
+    </FooterBlockSection>
   );
 };
 
-export const FooterStyled = styled.div`
+const FooterStyled = styled.div`
   color: white;
   text-align: center;
 
@@ -42,4 +42,8 @@ export const FooterStyled = styled.div`
   h4 {
     margin: 10px;
   }
+`;
+
+const FooterBlockSection = styled(BlockSection)`
+  background-color: blue;
 `;
