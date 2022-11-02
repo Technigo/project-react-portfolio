@@ -23,8 +23,8 @@ const Experience = () => {
         </div>
 
         <div className="experience__two">
-          <h2 className="">ARRAY OF DIFFERENT WORKING EXPERIENCE</h2>
-          <h3 className="mt-5">2010-2015</h3>
+          <h2 className="pt-9">ARRAY OF DIFFERENT WORKING EXPERIENCE</h2>
+          <h3 className="">2010-2015</h3>
           <p>
               I worked in a number of different roles,
               such as in the entertainment industry abroad as a TV host,

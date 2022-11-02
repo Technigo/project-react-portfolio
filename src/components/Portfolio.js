@@ -4,7 +4,7 @@ import img1 from '../Assets/guesswho.png'
 import img2 from '../Assets/musicrelease.png'
 import img3 from '../Assets/happythought.png'
 import img4 from '../Assets/projectmovies.png'
-import img5 from '../Assets/survey.png'
+import img5 from '../Assets/reduxQuiz.png'
 import img6 from '../Assets/phonebook.png'
 
 const data = [
@@ -39,9 +39,9 @@ const data = [
   {
     id: 5,
     image: img5,
-    title: 'Survey',
-    github: 'https://github.com/Bibiruu/project-movies',
-    demo: 'https://week8movies.netlify.app/'
+    title: 'Redux Quiz',
+    github: 'https://github.com/Bibiruu/project-redux-quiz',
+    demo: 'https://friends-redux-quiz.netlify.app/'
   },
   {
     id: 6,
