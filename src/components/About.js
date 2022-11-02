@@ -31,23 +31,18 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaExpandArrowsAlt className="about__icon" />
-              <a href="https://github.com/Bibiruu" target="_blank" rel="noreferrer">
-                <h5>Experience</h5>
-              </a>
+              <h5>Organizations</h5>
+              <p>Volunteering: UN Women, Helsinki Missio, Espoo City</p>
             </article>
-
             <article className="about__card">
               <AiFillFolderOpen className="about__icon" />
-              <a href="https://github.com/Bibiruu" target="_blank" rel="noreferrer">
-                <h5>Folder</h5>
-              </a>
+              <h5>Fun fact</h5>
+              <p>I used to play professional Football</p>
             </article>
-
             <article className="about__card">
               <FaExpandArrowsAlt className="about__icon" />
-              <a href="https://github.com/Bibiruu" target="_blank" rel="noreferrer">
-                <h5>Folder</h5>
-              </a>
+              <h5>Hobbies</h5>
+              <p>Gym, Travel, Reading </p>
             </article>
           </div>
 
@@ -55,7 +50,9 @@ const About = () => {
           Graduating from a coding school this upcoming Decemeber. Now I feel it is time
           to take a step towards the challenge of becoming a Frontend web developer!
           What really made me dive into coding, was the beauty and potential of decetralized
-          tech like blockchain! I have strong skills in the Frontend side and right now my
+          tech like blockchain! I am going to take my certified technical exam by the end of
+          Decemeber 2022 regarding the development in Ethereum.
+          I have strong skills in the Frontend side and right now my
           main coding languange is JSX/Javascript.
           Im very motivated to grow in a cutting edge environment while learning
           to thrive with the brightest minds in the software scene.

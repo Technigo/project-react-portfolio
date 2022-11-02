@@ -33,7 +33,7 @@ const Experience = () => {
               required high pressure tolerance, organizational skills and
               financial knowledge in planning,budgeting and bookeeping.
               I have learned tremendously from marketing, used a variety of systems,
-            and honed my interaction skills to excellence.
+              and honed my interaction skills to excellence.
           </p>
         </div>
 

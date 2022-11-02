@@ -16,7 +16,7 @@ const Contact = () => {
       <h2>Contact me</h2>
 
       <div className="container contact_container">
-        <div className="contact__options">
+        <div className="contact__options p-9">
           <article className="contact__option">
             <MdOutlineMail className="contact__option-icon" />
             <h4>Email</h4>
@@ -25,7 +25,7 @@ const Contact = () => {
           <article className="contact__option">
             <FaWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
-            <a href="https://api.whatsapp.com/send?phone=+358408323607" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=358408323607" target="_blank" rel="noreferrer">Send a message</a>
           </article>
           <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
