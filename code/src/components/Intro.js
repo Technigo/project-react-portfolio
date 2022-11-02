@@ -12,12 +12,12 @@ export const Intro = () => {
         <Line />
         <Dot />
         Hi there! I am a frontend developer with a broad background in many diffrent fields,
-        Mechanical engineer within design and product development, Sportfashion design, Print
-        and Advertising and I also have built log houses... With me in your team you get a
+        Mechanical engineer within design and product development, sportfashion design, print
+        and advertising and I also have built log houses... With me in your team you get a
         positive, creative and structured problem solver - driven by development and improvement.
         I learn quickly and constantly want to develop myself and others. As a person, I`m
         driven, communicative & unpretentious. I am motivated by learning new things, meeting
-        people and creating value. I`m looking forward to working in the Tech industrie and
+        people and creating value. I`m looking forward to working in the Tech industry and
         being a part of the coding community.
       </TextIntro>
     </ContainerWrapperIntro>

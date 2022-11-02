@@ -1,7 +1,7 @@
 [
     {
           "id": 1,
-          "title": "CHATBOT WildBeast Burgers",
+          "title": "CHATBOT WildeBeast Burgers",
           "project_description": "Pair project, with using HTML, CSS and JavaScript ES6 create a responsive chatbot. With question/response interaction",
           "repo_name": "project-chatbot",
           "url": "https://wildebeest-burgers.netlify.app/",
