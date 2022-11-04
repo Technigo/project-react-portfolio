@@ -22,7 +22,7 @@ const FeaturedProjects = () => {
             <h5>{project.project_name}</h5>
             <Paragraph grid>{project.description}</Paragraph>
             <TopicsContainer aria-hidden>
-              {project.topics.map((topic) => <Topic>{topic}</Topic>)}
+              {project.topics.reverse().map((topic) => <Topic>{topic}</Topic>)}
             </TopicsContainer>
             <TopicsContainer>
               <a href={project.netlify_url} target="_blank" rel="noreferrer">View it Live</a>
