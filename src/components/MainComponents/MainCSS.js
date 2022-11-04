@@ -24,9 +24,9 @@ export const Main= () => {
             <Projects/>
         </Body>
 
-         <Body Thoughts> 
+         {/* <Body Thoughts> 
             <Thoughts/>
-        </Body> 
+        </Body>  */}
 
         <Body Skills> 
             <Skills/>
@@ -53,7 +53,7 @@ background-color: ${(props) =>
     props.Tech ? "#ffffff" :
     props.Projects ? "#f6f5f0" :
     props.Thoughts ? "#ffffff" :
-    props.Skills ? "#f6f5f0" :
+    props.Skills ? "#ffffff" :
     props.ForMore ?  "rgb(132, 172, 180)" 
     : "none"};
 

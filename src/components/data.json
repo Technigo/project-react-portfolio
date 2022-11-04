@@ -2,9 +2,9 @@
 [
   {
 		"title": "Movie Releases",
-		"titleDescription": "A multi-page application",
+		"titleDescription": "Movie Releases - A multi-page application",
 		"projectDescription": "A multi-page application passing information in the URL and pick this up in React router to load dynamic content",
-		"Image":"https://thumbs.dreamstime.com/b/popcorn-icon-set-cinema-movie-night-two-big-size-strip-box-package-pop-corn-food-red-white-text-flat-design-style-yellow-172069651.jpg",
+		"Image":"./ProjectImages/2.png",
    		"Repo": "https://github.com/JosefineEngdahl/project-movies",
 		"Netifly": "https://newly-release-movies.netlify.app",
 		"tags": [
@@ -15,10 +15,24 @@
 	},
 
 	{
-		"title": "Survey",
+		"title": "Redux Todo-list",
+		"titleDescription": "XX",
+		"projectDescription": "XX",
+		"Image": "./ProjectImages/4.png",
+   		"Repo": "https://github.com/JosefineEngdahl/project-survey",
+		"Netifly": "https://neon-griffin-82bf07.netlify.app/",
+		"tags": [
+			"React",
+			"CSS"
+		]
+
+	},
+
+	{
+		"title": "React Survey",
 		"titleDescription": "Are you our next stand-up comedian?",
 		"projectDescription": "A survey form created with React that investigates if you are our next stand-up comedian!",
-		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/chatbot.jpg",
+		"Image": "./ProjectImages/1.png",
    		"Repo": "https://github.com/JosefineEngdahl/project-survey",
 		"Netifly": "https://neon-griffin-82bf07.netlify.app/",
 		"tags": [
@@ -33,7 +47,7 @@
 		"titleDescription": "A weather app built utilising APIs",
 		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
    		"Repo": "https://github.com/JosefineEngdahl/project-weather-app",
-		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/Weatherapp.jpg",
+		"Image": "./ProjectImages/6.png",
 		"Netifly": "https://silver-profiterole-7224fd.netlify.app",
 		"tags": [
 			"HTML",
@@ -43,12 +57,25 @@
 		]
 
 	},
+{
+	"title": "Redux Quiz",
+		"titleDescription": "Try out your skills in this randome questions quiz",
+		"projectDescription": "Responsive web site using Redux Toolbox & styled components",
+		"Image": "./ProjectImages/3.png",
+   		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
+		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
+		"tags": [
+			"React",
+			"Redux",
+			"Styled Components"
+		]
+	},
 
 	{
-		"title": "Guess Who",
-		"titleDescription": "Boardgame built in JavaScript",
-		"projectDescription": "Responsive web site using HTML, CSS and JavaScript",
-		"Image": "https://josefine-engdahl-portfolio.netlify.app/images/guesswho.jpg",
+		"title": "Happy Thoughts",
+		"titleDescription": "Sending happy thougts with API fetch och post requests",
+		"projectDescription": "Responsive web site using React",
+		"Image": "./ProjectImages/5.png",
    		"Repo": "https://github.com/Technigo/project-guess-who/pull/198",
 		"Netifly": "https://coruscating-paprenjak-d576fc.netlify.app/",
 		"tags": [

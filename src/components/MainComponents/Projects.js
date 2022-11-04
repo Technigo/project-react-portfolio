@@ -19,14 +19,14 @@ export const Projects = () => {
                 href={data.Netifly}
                 alt='project landingpage'
                 target='_blank'>
-  
+
           <Image    
             src= {data.Image} 
             alt= ""/> 
           <BigText>{data.title}</BigText>
-          
+      
             <AllText>
-              <MediumText>{data.titleDescription}</MediumText>
+              <b>{data.titleDescription}</b>
               <SmallText>{data.projectDescription}</SmallText>
            </AllText>
          </a>
@@ -60,9 +60,9 @@ export const Projects = () => {
 
     <a href="https://steady-faun-1238b0.netlify.app" target="_blank">
       <SmallText>
-        <Dot></Dot>
+        <Dot></Dot> 
         <> </>
-        <b> Happy Thoughts · </b> Sending happy thougts with API fetch och post requests <b> >> </b>
+        <b> Guess who? · </b> Boardgame built in JavaScript <b> >> </b>
       </SmallText>
     </a>       
  
@@ -112,15 +112,15 @@ const Cards = styled.div`
   transform: none;
 	}
 
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 const Card = styled.div`
   position: relative;
   width: 300px;
+  text-align: center;
 
-&:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s;
-}
 `
 const Image = styled.img `
   background-position: center;
@@ -129,11 +129,21 @@ const Image = styled.img `
   height: 300px;
   border-radius: 8px;
   text-align: center;
+  opacity: 0.6;
+  
+
+  &:hover {
+    transform: scale(0.95);
+    transition: transform 0.5s;
+    opacity: 1;
+  }
+
 
 @media (min-width: 668px) {
   width: auto;
   margin: 0px; 
   transform: none;
+  
   }
 `
 
@@ -147,24 +157,20 @@ const AllText = styled.div`
   position: relative;
 `
 
-const BigText = styled.h1`
+const BigText = styled.p`
   font-family: "Roboto";
-  font-weight: bold;
-  font-size: 17px;
-  border-radius: 10px;
-  text-align: center;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: grey;
   position: absolute;
-  top: 30%;
   left: 50%;
-  color: rgb(255, 255, 255);
-  padding: 15px;
-  background:rgb(132, 172, 180);
+  top: 5%;
   transform: translate(-50%, -50%);
 
-&:hover {
-  background: hotpink;
-  color: white;
-}
+  @media (max-width: 668px) {
+    top: 10%;
+    
+    }
 `
 const MediumText = styled.h5`
   font-weight: bold;
@@ -173,10 +179,11 @@ const MediumText = styled.h5`
   color: #ba4622;
   line-height: 20px; 
   margin: 10px 0 0 10px; 
+  border: solid red 2px;
 `
 const SmallText = styled.p`
   line-height: 25px;  
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   font-family: "Montserrat";
   display: block;

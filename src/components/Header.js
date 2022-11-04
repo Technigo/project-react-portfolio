@@ -6,7 +6,7 @@ import ProfilePicture from 'components/images/Josefine_SB.jpeg'
 import LinkedIn from 'components/images/linkedin_icon.png'
 import GitHub from 'components/images/github_icon.png'
 import StackOverflow from 'components/images/stack_overflow_icon.png'
-import HeroVideo from 'components/images/production_ID_3864185.mp4'
+import HeroVideo from 'components/images/HeroMovie.mp4'
 
 const LinkedInURL = 'https://www.linkedin.com/in/josefine-engdahl-2654946a'
 const GitHubURL = 'https://github.com/JosefineEngdahl'
