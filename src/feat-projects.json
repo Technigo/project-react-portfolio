@@ -1,5 +1,14 @@
 [ 
   { 
+    "name": "To-do List",
+    "project_name": "Project: Todos",
+    "description": "Simple to-do list web app done to get familiar with Redux, reducers, Redux toolkit etc.",
+    "github_url": "https://github.com/karlfredrikholm/project-todos",
+    "netlify_url": "https://checka.netlify.app/",
+    "topics": [ "Redux", "React", "Styled Components"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/redux_todo.png"
+  },
+  { 
     "name": "Oj Vad Film!",
     "project_name": "Project: Movies",
     "description": "Project done to practice React Router, the useParams hook etc.",
