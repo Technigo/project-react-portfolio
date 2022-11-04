@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { Intro } from 'components/MainComponents/Intro'
 import { Skills } from 'components/MainComponents/Skills'
 import { Projects } from 'components/MainComponents/Projects'
@@ -56,7 +56,5 @@ background-color: ${(props) =>
     props.Skills ? "#f6f5f0" :
     props.ForMore ?  "rgb(132, 172, 180)" 
     : "none"};
-    
-
 
 `
