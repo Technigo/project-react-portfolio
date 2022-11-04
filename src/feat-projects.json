@@ -2,14 +2,14 @@
   { 
     "name": "To-do List",
     "project_name": "Project: Todos",
-    "description": "Simple to-do list web app done to get familiar with Redux, reducers, Redux toolkit etc.",
+    "description": "Simple web app done to get familiar with Redux, Redux toolkit etc.",
     "github_url": "https://github.com/karlfredrikholm/project-todos",
     "netlify_url": "https://checka.netlify.app/",
     "topics": [ "Redux", "React", "Styled Components"],
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/redux_todo.png"
   },
   { 
-    "name": "Oj Vad Film!",
+    "name": "Movies",
     "project_name": "Project: Movies",
     "description": "Project done to practice React Router, the useParams hook etc.",
     "github_url": "https://github.com/karlfredrikholm/project-movies",
@@ -27,15 +27,6 @@
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/happy_thoughts.png"
   },
   { 
-    "name": "Albums & Singles",
-    "project_name": "Project: Music Releases",
-    "description": "First React project! Done to get familiar with props and React in general.",
-    "github_url": "https://github.com/karlfredrikholm/project-music-releases/",
-    "netlify_url": "https://schpoutefi.netlify.app/",
-    "topics": [ "React", "JS-ES6", "CSS3"],
-    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/music_releases.png"
-  },
-  { 
     "name": "Weather Web App",
     "project_name": "Project: Weather App",
     "description": "Vanilla JS project made to practice working with data from an API.",
@@ -43,5 +34,14 @@
     "netlify_url": "http://fint-vader.netlify.app/",
     "topics": [ "JS-ES6", "CSS3", "HTML5"],
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/weather_app.png"
+  },
+  { 
+    "name": "Albums & Singles",
+    "project_name": "Project: Music Releases",
+    "description": "First React project! Done to get familiar with props and React in general.",
+    "github_url": "https://github.com/karlfredrikholm/project-music-releases/",
+    "netlify_url": "https://schpoutefi.netlify.app/",
+    "topics": [ "React", "JS-ES6", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/music_releases.png"
   }
 ]

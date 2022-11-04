@@ -10,7 +10,7 @@ const FeaturedProjects = () => {
     <SectionContainer bg>
       <h4>Featured Projects</h4>
       <ProjectsGrid>
-        {data.map((project) => (
+        {data.slice(0, 4).map((project) => (
           <ArticleContainer key={project.name}>
             <a href={project.netlify_url} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden>
               <ProjectImage style={{ backgroundImage: `url(${project.image})` }}>
