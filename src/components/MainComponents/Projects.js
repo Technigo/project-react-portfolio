@@ -9,8 +9,15 @@ export const Projects = () => {
     console.log(data);
     return (
   <Wrapper> 
-    <h3>Featured Projects</h3>
-
+    <section>
+    <div className="HeartContainer">
+      <div className="heart"></div>
+  </div>
+        <h3>Featured Projects</h3>
+        <div className="container">
+      <div className="heart"></div>
+  </div>
+      </section>
     <Cards>
       {data.map((data) => (
         <div key={data.title}>
@@ -94,6 +101,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;  
+  section{
+    display: flex;
+    display: columns;       
+    align-items: center;
+    margin: 0px;   
+}
+
 `
 
 const Cards = styled.div`
@@ -172,15 +186,15 @@ const BigText = styled.p`
     
     }
 `
-const MediumText = styled.h5`
-  font-weight: bold;
-  font-size: 16px;
-  font-family: "Montserrat";
-  color: #ba4622;
-  line-height: 20px; 
-  margin: 10px 0 0 10px; 
-  border: solid red 2px;
-`
+// const MediumText = styled.h5`
+//   font-weight: bold;
+//   font-size: 16px;
+//   font-family: "Montserrat";
+//   color: #ba4622;
+//   line-height: 20px; 
+//   margin: 10px 0 0 10px; 
+//   border: solid red 2px;
+// `
 const SmallText = styled.p`
   line-height: 25px;  
   font-size: 15px;

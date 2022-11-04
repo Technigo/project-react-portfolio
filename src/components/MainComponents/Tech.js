@@ -1,15 +1,19 @@
-/* eslint-disable */
+/* eslint-disable max-len */
 
 import React from 'react'
 import styled from 'styled-components'
 
 export const Tech = () => {
-    return (
-        <Wrapper> 
-         <h3>Tech</h3>
-             <Text>HTML, CSS, JavaScript, React, Web Accessibly, API:s, mob-programming, pair-programming, Github</Text>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <section>
+        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
+        <h3>Tech</h3>
+        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
+      </section>
+      <Text>HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`
@@ -18,10 +22,21 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;  
+
+    section{
+       display: flex;
+       display: columns;       
+       align-items: center;
+       margin: 0px;   
+}
     `
 
- const Text = styled.p `
+const Text = styled.p`
  margin: 10px 10px 20px 10px;
+
+ l{
+    color: grey;
+ }
 
 @media (min-width: 668px) {
     width: 65%; 
@@ -33,6 +48,4 @@ const Wrapper = styled.div`
     margin: 20px 0px 50px 0%; 
  }
 `
- 
- 
 

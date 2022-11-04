@@ -6,7 +6,11 @@ import styled from 'styled-components'
 export const Skills = () => {
     return (
         <Wrapper> 
-            <h3>Skills</h3>
+     <section>
+     <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
+        <h3>Skills</h3>
+        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
+      </section>
     <InnerWrapper>        
         <Skill>
             <Code>
@@ -51,6 +55,12 @@ height; 100%;
 display: flex;
 flex-direction: column;
 align-items: center;  
+section{
+    display: flex;
+    display: columns;       
+    align-items: center;
+    margin: 0px;   
+ }
 
 `
 const InnerWrapper = styled.div`

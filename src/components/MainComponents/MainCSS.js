@@ -54,7 +54,7 @@ background-color: ${(props) =>
     props.Projects ? "#f6f5f0" :
     props.Thoughts ? "#ffffff" :
     props.Skills ? "#ffffff" :
-    props.ForMore ?  "rgb(132, 172, 180)" 
+    props.ForMore ?  "#70888F" 
     : "none"};
 
 `

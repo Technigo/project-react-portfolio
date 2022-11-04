@@ -31,7 +31,7 @@ margin: 45px 10px 20px 10px;
     }
 `
 const Line = styled.span`
-    border: 1px solid #c85c3b;
+    border: 1px solid #F9B930;
     width: 30px;
     display: inline-block;
     margin-bottom: 4px;
@@ -40,7 +40,7 @@ const Line = styled.span`
   const Dot = styled.span`
     height: 10px;
     width: 10px;
-    background-color: #c85c3b;
+    background-color: #F9B930;;
     border-radius: 50%;
     display: inline-block;
 `

@@ -16,7 +16,7 @@ export const Footer = () => {
 }
 
 const Foot = styled.div `
-background: rgb(132, 172, 180);
+background: #70888F;
 text-align: center;
 flex-direction: column;
 align-items: center;

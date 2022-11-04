@@ -58,6 +58,9 @@ height; 100%;
 display: flex;
 flex-direction: column;
 align-items: center;  
+h3{
+    color: white;
+}
 `
 
 const SocialMediaContainer = styled.div`
