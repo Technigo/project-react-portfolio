@@ -33,7 +33,7 @@ const OtherProjects = () => {
       .then((data) => SetOtherProjects(data))
   })
 
-  const filteredProjects = otherProjects.filter((project) => (project.name.includes('chatbot')) || (project.name.includes('movies')))
+  const filteredProjects = otherProjects.filter((project) => (project.name.includes('happy')) || (project.name.includes('guess')) || (project.name.includes('redux')) || (project.name.includes('chatbot')) || (project.name.includes('weather')))
   return (
     <OuterWrapper>
       <InnerWrapper>

@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable linebreak-style */
 import React from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper } from 'StyledComponents/GlobalComponents'
@@ -34,14 +36,11 @@ const AboutMe = () => {
       <InnerWrapper>
         <BackgroundInfo>
 
-          <p> <Line /><Dot /> Hello! Im an aspiring frontend developer with 8 years of
-        experience within office administration
-        and with a degree in journalism, and a bachelors
-        degree in culture. Autumn of 2021 I decided that
-        I wanted to take my very mixed background into
-        tech and started to learn how to code. My best soft
-        skills are that Im paying a lot of attention to
-        details and that Im ambitious.
+          <p> <Line /><Dot /> Hello! I'm an aspiring frontend developer with 8 years of
+        experience within office- and care administration.
+        Autumn of 2021 I decided that I wanted to switch career into tech, and joined
+        Technigos bootcamp in august 2022. I pay a lot of attention to details, and I also
+        really like to socialize, which makes coding the perfect fit for me.
           </p>
         </BackgroundInfo>
       </InnerWrapper>

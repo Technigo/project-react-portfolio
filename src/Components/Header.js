@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, SoMeIcons } from '../StyledComponents/GlobalComponents'
-import ceciliaportfolio from '../images/ceciliaportfolio.jpg'
+import cicci from '../images/cicci.jpg'
 import leaves from '../images/leaves.jpg'
 
 const Headerbackground = styled.header`
@@ -80,7 +80,7 @@ const Header = () => {
             <i className="fa-brands fa-linkedin-in" />
           </a>
         </ClonedSoMeIcons>
-        <ProfileImage src={ceciliaportfolio} alt="Picture of Cecilia" />
+        <ProfileImage src={cicci} alt="Picture of Cecilia" />
         <TextContainer>
           <h3>Portfolio: Cecilia Rådén</h3>
           <h1>frontend developer</h1>
