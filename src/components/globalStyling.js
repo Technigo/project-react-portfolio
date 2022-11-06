@@ -68,6 +68,7 @@ export const SingleTag = styled.p`
     padding: 3px 8px;
     border-radius: 2px;
     width: fit-content;
+    white-space: nowrap;
 `
 
 export const GridDiv = styled.div`

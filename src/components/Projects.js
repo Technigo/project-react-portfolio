@@ -118,6 +118,7 @@ span {
 const Tags = styled.div`
     display: flex;
     margin: 0.5rem 0rem 0rem 0rem;
+    flex-wrap: wrap;
 `
 export const FeaturedProjectsImg = styled.img`
     width: ${(props) => (props.width)};
