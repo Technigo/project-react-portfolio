@@ -6,7 +6,7 @@ import { GitHubSvg, LinkedInSvg, StackSvg } from './Icons';
 
 const ForMore = () => {
   return (
-    <SectionContainer>
+    <SectionContainer bg>
       <h4>For More</h4>
       <ForMoreIcons>
         <div>

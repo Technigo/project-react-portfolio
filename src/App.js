@@ -3,10 +3,10 @@ import GlobalStyles from 'components/styled/Global';
 import { OuterWrapper, InnerWrapper } from 'components/styled/Wrappers.styled';
 import Header from './components/Header';
 import Summary from './components/Summary';
-import Tech from './components/Tech';
+// import Tech from './components/Tech';
 import FeaturedProjects from './components/FeaturedProjects';
 import OtherProjects from './components/OtherProjects';
-import Thoughts from './components/Thoughts';
+// import Thoughts from './components/Thoughts';
 import Skills from './components/Skills';
 import ForMore from './components/ForMore';
 import Footer from './components/Footer';
@@ -28,10 +28,10 @@ const App = () => {
         <InnerWrapper>
           <Header />
           <Summary />
-          <Tech />
+          {/* <Tech /> */}
           <FeaturedProjects />
           <OtherProjects repos={repos} />
-          <Thoughts />
+          {/* <Thoughts /> */}
           <Skills />
           <ForMore />
           <Footer />

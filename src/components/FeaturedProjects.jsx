@@ -7,7 +7,7 @@ import data from '../feat-projects';
 
 const FeaturedProjects = () => {
   return (
-    <SectionContainer bg>
+    <SectionContainer>
       <h4>Featured Projects</h4>
       <ProjectsGrid>
         {data.slice(0, 4).map((project) => (
