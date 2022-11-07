@@ -17,10 +17,10 @@ export const More = () => {
               aria-label="linkedin"
               target="_blank"
               rel="noreferrer">
-              <div>
+              <Div>
                 <LinkedInSvg />
                 <p>LinkedIn</p>
-              </div>
+              </Div>
             </a>
           </Link>
           <Link>
@@ -31,10 +31,10 @@ export const More = () => {
               aria-label="github"
               target="_blank"
               rel="noreferrer">
-              <div>
+              <Div>
                 <GitHubSvg />
                 <p>GitHub</p>
-              </div>
+              </Div>
             </a>
           </Link>
           <Link>
@@ -45,10 +45,10 @@ export const More = () => {
               aria-label="StackOverflow"
               target="_blank"
               rel="noreferrer">
-              <div>
+              <Div>
                 <StackSvg />
                 <p>Stack Overflow</p>
-              </div>
+              </Div>
             </a>
           </Link>
         </LinksWrapper>
@@ -69,17 +69,22 @@ const Link = styled.div`
   margin-top: 2em;
 
   & svg {
-    background-color: pink;
-    border-radius: 50%;
+    background-color: #fa382f;
+    border-radius: 1em;
     padding: 1em;
     width: 3.5rem;
     height: 3.5rem;
   }
 
   & p {
-    color: pink;
-    text-decoration: none;
-    text-transform: none;
-    width: fit-content;
+    color: #fa382f;
+    font-size: 0.7em;
+    // text-decoration: none;
+    // text-transform: none;
+    // width: fit-content;
   }
+`;
+
+const Div = styled.div`
+  text-align: center;
 `;

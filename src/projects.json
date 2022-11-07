@@ -1,5 +1,21 @@
 [
   {
+    "id": "project-11",
+    "title": "ToDo",
+    "description": "A to do list using Redux and glocal state.",
+    "image": "image/to-do-project.jpg",
+    "netlifyLink": "https://get-it-done-saralie.netlify.app/",
+    "githubLink": "https://github.com/Scarylie/project-todos",
+    "isFeatured": true,
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
+      { "name": "React" },
+      { "name": "Redux" }
+    ]
+  },
+  {
     "id": "project-10",
     "title": "Quizflix",
     "description": "Quiz game with a Netflix theme using global state in Redux.",
@@ -9,7 +25,7 @@
     "isFeatured": true,
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTM5L" },
+      { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "React" },
       { "name": "Redux" }
@@ -24,7 +40,7 @@
     "githubLink": "https://github.com/Scarylie/project-movies",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTM5L" },
+      { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "API" },
       { "name": "React" }
@@ -70,7 +86,7 @@
     "githubLink": "https://github.com/Scarylie/project-music-releases",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTM5L" },
+      { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "API" }
     ]
@@ -84,7 +100,7 @@
     "githubLink": "https://github.com/juliaostedt/project-weather-app",
     "tags": [
       { "name": "JavaScript" },
-      { "name": "HTM5L" },
+      { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "API" }
     ]
@@ -96,7 +112,7 @@
     "image": "image/guess-who.jpg",
     "netlifyLink": "https://guess-who-by-saralie.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-guess-who",
-    "tags": [{ "name": "JavaScript" }, { "name": "HTM5L" }, { "name": "CSS3" }]
+    "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
   },
   {
     "id": "project-3",
