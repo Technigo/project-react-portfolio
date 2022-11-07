@@ -8,7 +8,7 @@ import FeaturedProjects from './components/FeaturedProjects';
 import OtherProjects from './components/OtherProjects';
 // import Thoughts from './components/Thoughts';
 import Skills from './components/Skills';
-import ForMore from './components/ForMore';
+// import ForMore from './components/ForMore';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
           <OtherProjects repos={repos} />
           {/* <Thoughts /> */}
           <Skills />
-          <ForMore />
+          {/* <ForMore /> */}
           <Footer />
         </InnerWrapper>
       </OuterWrapper>
