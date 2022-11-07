@@ -20,14 +20,14 @@
 	  "tools": ["React", "Node", "CSS", "JavaScript ES6", "API"]
 	},
 	{
-	  "title": "Interstellar Academy",
-	  "overlay": "Interstellar academy",
+	  "title": "Todo today",
+	  "overlay": "todo app",
 	  "id": "3",
-	  "image": "https://images2.imgbox.com/2f/43/oYNbT54y_o.png",
-	  "netlify": "https://interstellaracademy.netlify.app",
-	  "github": "https://github.com/Sneezan/Landing-Page",
-	  "description": "A landing page for a fictional business with forms and FAQ",
-	  "tools": ["CSS", "HTML", "GitHub", "Hamburger menu", "No JS"]
+	  "image": "https://i.imgur.com/pZ7Baka.png",
+	  "netlify": "https://complete-today.netlify.app",
+	  "github": "https://github.com/Sneezan/project-todos",
+	  "description": "A todo app built with react and redux, packaged beautifully.",
+	  "tools": ["React", "Redux", "JavaScript ES6", "FAB", "Styled components"]
 	},
 	{
 	  "title": "Dental self assessment",

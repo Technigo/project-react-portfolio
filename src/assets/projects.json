@@ -1,7 +1,7 @@
 [
   {
     "title": "AI RENDERED IMAGES QUIZ",
-    "id": "9",
+    "id": "8",
     "image": "",
     "netlify": "https://quiz-ai.netlify.app/",
     "github": "https://github.com/Sneezan/project-redux-quiz",
@@ -10,7 +10,7 @@
   },
     {
         "title": "Happy Thoughts",
-        "id": "10",
+        "id": "9",
         "image": "",
         "netlify": "https://onlyhappythoughts.netlify.app//",
         "github": "https://github.com/Sneezan/project-happy-thoughts",
@@ -19,7 +19,7 @@
       },
       {
         "title": "Cloud - a weather app",
-        "id": "11",
+        "id": "10",
         "image": "",
         "netlify": "https://weatherclouds.netlify.app",
         "github": "https://github.com/Sneezan/project-weather-app",
@@ -28,7 +28,7 @@
       },
       {
         "title": "React portfolio",
-        "id": "12",
+        "id": "11",
         "image": "",
         "netlify": "",
         "github": "https://github.com/Sneezan/project-react-portfolio",
@@ -37,7 +37,7 @@
       },
       {
         "title": "Guess Who Game",
-        "id": "13",
+        "id": "12",
         "image": "",
         "netlify": "https://guess-who-ceciliaf.netlify.app",
         "github": "https://github.com/Sneezan/project-guess-who-game",
@@ -46,12 +46,22 @@
       },
       {
         "title": "The PepBot",
-        "id": "14",
+        "id": "13",
         "image": "",
         "netlify": "https://thepepbot.netlify.app",
         "github": "https://github.com/Sneezan/project-chatbot",
         "description": "A simple collapsible bot-style chat, one of the first JS projects",
         "tools": ["JavaScript ES6", "CSS", "Collapsible"]
+      },
+      {
+        "title": "Interstellar Academy",
+        "overlay": "Interstellar academy",
+        "id": "14",
+        "image": "https://images2.imgbox.com/2f/43/oYNbT54y_o.png",
+        "netlify": "https://interstellaracademy.netlify.app",
+        "github": "https://github.com/Sneezan/Landing-Page",
+        "description": "A landing page for a fictional business with forms and FAQ",
+        "tools": ["CSS", "HTML", "GitHub", "Hamburger menu", "No JS"]
       },
       {
         "title": "PossiNews, a positive news site",
