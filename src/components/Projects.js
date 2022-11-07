@@ -7,8 +7,9 @@ import GuessWho from './assets/guesswho.png'
 import HappyThoughts from './assets/happythoughts.png'
 import Movies from './assets/movies.png'
 import Weather from './assets/weather.png'
+import Todo from './assets/todo.png'
 
-const ProjectContainer = styled.div`
+export const ProjectContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 15px;
@@ -20,7 +21,7 @@ margin-bottom: 30px;
   }
 `
 
-const CardContainer = styled.div`
+export const CardContainer = styled.div`
 display: grid;
 padding: 0px 0px 10px 0px;
 gap: 20px;
@@ -53,31 +54,30 @@ justify-content: space-evenly;
 margin: 0px auto;
 `
 
-const ProjectImage = styled.img`
+export const ProjectImage = styled.img`
 width: 100%;
 margin-bottom: 0.5rem;
 transition: opacity 0.4s;
 display: block;
 position: relative;
 justify-content: center;
-}
 `
 
-const ProjectInfo = styled.p`
+export const ProjectInfo = styled.p`
 font-family: 'Montserrat', sans-serif;
 text-align: center;
 font-size: 20px;
 margin: 0px auto;
 `
 
-const LanguageIconContainer = styled.div`
+export const LanguageIconContainer = styled.div`
 display: flex;
 gap: 10px;
 align-items: center;
 margin: 0px auto;
 `
 
-const LanguageIcon = styled.p`
+export const LanguageIcon = styled.p`
 border: 1px solid;
 font-family: 'Montserrat', sans-serif;
 padding: 4px;
@@ -114,25 +114,25 @@ const Projects = () => {
       <SectionHeadline><SectionHeadlineBg>PROJECTS</SectionHeadlineBg></SectionHeadline>
       <ProjectContainer>
         <CardContainer>
-          <ProjectImage src={GuessWho} alt="Guess Who-game" />
+          <ProjectImage src={Todo} alt="To-do app" />
           {/* <OverlayContainer>
             <OverlayText>GUESS WHO?</OverlayText>
           </OverlayContainer> */}
           <ProjectInfo>
-            A digital take on a classic game, made with vanilla JavaScript.
+            An app where you can add today's tasks.
           </ProjectInfo>
           <LanguageIconContainer>
-            <LanguageIcon>HTML</LanguageIcon>
             <LanguageIcon>CSS</LanguageIcon>
-            <LanguageIcon>JavaScript</LanguageIcon>
+            <LanguageIcon>Styled components</LanguageIcon>
+            <LanguageIcon>Redux</LanguageIcon>
             <a
-              href="https://github.com/hannanorgard/project-guess-who"
+              href="https://github.com/hannanorgard/project-todos"
               target="_blank"
               rel="noreferrer">
               <FaGithub size="25px" />
             </a>
             <a
-              href="https://guezzwho.netlify.app/"
+              href="https://hannastodolist.netlify.app/"
               target="_blank"
               rel="noreferrer">
               <MdWeb size="25px" />

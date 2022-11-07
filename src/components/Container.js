@@ -7,6 +7,7 @@ import Tech from './Tech';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
 import Contact from './Contact';
+import Thoughts from './Thoughts';
 import { Background } from './Body';
 
 const Footer = styled.p`
@@ -24,6 +25,7 @@ const Container = () => {
         <About />
         <Tech />
         <Portfolio />
+        <Thoughts />
         <Skills />
         <Contact />
         <Footer>Hanna Nörgård 2022</Footer>

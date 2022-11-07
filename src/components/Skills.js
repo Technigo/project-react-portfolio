@@ -77,11 +77,12 @@ justify-content: space-evenly;
   display: grid;
   grid-column-start: 3;
   text-align: center;
+}
 `
 
 const Skills = () => {
   return (
-    <Section>
+    <Section first>
       <SectionHeadline><SectionHeadlineBg>SKILLS</SectionHeadlineBg></SectionHeadline>
       <SkillsContainer>
         <Code>

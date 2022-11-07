@@ -36,7 +36,7 @@ color: black;
 
 const Contact = () => {
   return (
-    <Section first>
+    <Section>
       <SectionHeadline><SectionHeadlineBg>Contact</SectionHeadlineBg></SectionHeadline>
       <Container>
         <Info bold>Hanna Nörgård</Info>
