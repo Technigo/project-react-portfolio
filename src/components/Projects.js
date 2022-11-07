@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Section, SectionHeadline, SectionHeadlineBg } from 'StyledComponents/Section';
 import { FaGithub } from 'react-icons/fa'
 import { MdWeb } from 'react-icons/md'
-import GuessWho from './assets/guesswho.png'
 import HappyThoughts from './assets/happythoughts.png'
 import Movies from './assets/movies.png'
 import Weather from './assets/weather.png'
@@ -119,7 +118,7 @@ const Projects = () => {
             <OverlayText>GUESS WHO?</OverlayText>
           </OverlayContainer> */}
           <ProjectInfo>
-            An app where you can add today's tasks.
+            An app where you can add today&apos;s tasks.
           </ProjectInfo>
           <LanguageIconContainer>
             <LanguageIcon>CSS</LanguageIcon>
