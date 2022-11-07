@@ -1,7 +1,39 @@
 [
-  {
-		"overlay_title": "MOVIE SITE",
+	{
+		"overlay_title": "TO-DO APP",
 		"id": 1,
+		"img_src": "/images/taskmonster.PNG",
+		"title": "TASKMONSTER",
+		"project_description": "A to-do app built in React with Redux. ",
+		"repo_name": "project-todo",
+		"netlify_name": "redux-tasklist",
+		"url": "https://github.com/SofieRydmark/project-todos",
+		"tags": [
+			{
+				"id": 8,
+				"name": "React"
+			},
+			{
+				"id": 7,
+				"name": "Redux"
+			},
+			{
+				"id": 9,
+				"name": "Styled components"
+			  },
+			{
+				"id": 4,
+				"name": "HTML5"
+			},
+			{
+				"id": 5,
+				"name": "CSS3"
+			}
+		]
+	},	
+	{
+		"overlay_title": "MOVIE SITE",
+		"id": 3,
 		"img_src": "/images/project-movies.png",
 		"title": "MINIFLIX",
 		"project_description": "Browse popular movies and series. Built using hooks and routes in React with the use of APIs. ",
@@ -31,35 +63,7 @@
 			  }
 		]
 	},	
-  {
-		"overlay_title": "HAPPY THOUGHTS",
-		"id": 2,
-		"img_src": "/images/happy-thoughts.png",
-		"title": "HAPPY THOUGHTS CHAT",
-		"project_description": "A live chatboard where you can post happy thoughts, built in React using APIs",
-    	"repo_name": "project-happy-thoughts",
-		"netlify_name": "w7-happy-thoughts.netlify.app",
-    	"url": "https://github.com/SofieRydmark/project-happy-thoughts",
-		"tags": [
-			{
-				"id": 2,
-				"name": "React Hooks"
-			  },
-			  {
-				"id": 3,
-				"name": "APIs"
-			  },
-			  {
-				"id": 4,
-				"name": "HTML5"
-			  },
-			  {
-				"id": 5,
-				"name": "CSS3"
-			  }	 
-		]
-	},
-  {
+	{
 		"overlay_title": "FRIENDS QUIZ",
 		"id": 3,
 		"img_src": "/images/redux-quiz.PNG",
@@ -91,9 +95,66 @@
 			  }	 
 		]
 	},
+	{
+		"overlay_title": "HAPPY THOUGHTS",
+		"id": 4,
+		"img_src": "/images/happy-thoughts.png",
+		"title": "HAPPY THOUGHTS CHAT",
+		"project_description": "A live chatboard where you can post happy thoughts, built in React using APIs",
+		"repo_name": "project-happy-thoughts",
+		"netlify_name": "w7-happy-thoughts.netlify.app",
+		"url": "https://github.com/SofieRydmark/project-happy-thoughts",
+		"tags": [
+			{
+				"id": 2,
+				"name": "React Hooks"
+			},
+			{
+				"id": 3,
+				"name": "APIs"
+			},
+			{
+				"id": 4,
+				"name": "HTML5"
+			},
+			{
+				"id": 5,
+				"name": "CSS3"
+			}	 
+		]
+	},
+
+	{
+		"overlay_title": "MUSIC RELEASES",
+		"id": 5,
+		"img_src": "/images/musicreleases.PNG",
+		"title": "MUSIC RELEASES",
+		"project_description": "A responsive music site showing new releases and popular artists using APIs",
+		"repo_name": "project-music-releases",
+		"netlify_name": "https://w5-music-releases.netlify.app/",
+		"url": "https://github.com/SofieRydmark/project-music-releases",
+		"tags": [
+			{
+				"id": 3,
+				"name": "APIs"
+			  },
+			{
+				"id": 6,
+				"name": "Javascript ES6"
+			},
+			{
+				"id": 4,
+				"name": "HTML5"
+			},
+			{
+				"id": 5,
+				"name": "CSS3"
+			}	 
+		]
+	},
   {
 		"overlay_title": "WEATHER APP",
-		"id": 4,
+		"id": 6,
 		"img_src": "/images/weatherapp.PNG",
 		"title": "WEATHER APP",
 		"project_description": "A responsive weather app using APIs that tells you today's weather, temperature and a 5-day forecast.",
@@ -112,8 +173,7 @@
 			  {
 				"id": 6,
 				"name": "Javascript ES6"
-			  }
-			  ,
+			  },
 			  {
 				"id": 3,
 				"name": "APIs"

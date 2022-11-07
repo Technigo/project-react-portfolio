@@ -36,7 +36,7 @@ const Skills = () => {
         </div>
         <div>
           <SubHeadings>UPCOMING</SubHeadings>
-          <p>Wordpress</p>
+          <p>Final project</p>
           <p>C#</p>
         </div>
       </SkillsWrapper>
