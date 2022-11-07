@@ -37,6 +37,10 @@ font-size: 19px;
 text-align: left;
 text-transform: uppercase;
 line-height: 0;
+&:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 `
 
 export const WrapProject = styled.section`
@@ -54,7 +58,7 @@ margin-bottom: 10px;
 export const WrapOtherProject = styled(WrapProject)`
 width: 300px;
 @media (min-width: 800px) {
-  width: 300px;
+  width: 900px;
     }
 `
 
@@ -81,7 +85,7 @@ height: 200px;
 margin: 0 auto;
 border-radius: 5px;
 background: rgb(196, 187, 176);
-opacity: 0.7;
+opacity: 0.8;
 transition: all 0.3s ease-in-out;
 p {
   color: white;
@@ -93,6 +97,10 @@ p {
   color: white;
   position: absolute; 
   top: 40%; 
+}
+.background{
+  background-color: white;
+  opacity: 2.8;
 }
 &:hover {
   opacity: 0;

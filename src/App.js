@@ -17,7 +17,6 @@ export const App = () => {
       <Tech />
       <FeaturedProjects />
       <Otherprojects />
-      <Mythoughts />
       <Skills />
       <Formore />
       <Footer />
