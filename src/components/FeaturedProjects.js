@@ -12,7 +12,7 @@ export const FeaturedProjects = () => {
       setFeaturedProjects(data)
     })
 
-  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey') || (firstProjects.name === 'project-chatbot') || (firstProjects.name === 'project-guess-who'));
+  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-movies') || (firstProjects.name === 'project-survey') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-guess-who'));
   return (
     <OuterWrapper beige>
       <Heading dark>FEATURED PROJECTS</Heading>

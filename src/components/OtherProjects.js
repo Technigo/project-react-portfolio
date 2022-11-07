@@ -12,7 +12,7 @@ export const OtherProjects = () => {
       setOtherProjects(data)
     })
 
-  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site'));
+  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site'));
   return (
     <OuterWrapper beige>
       <InnerWrapper>
