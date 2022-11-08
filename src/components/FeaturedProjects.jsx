@@ -12,14 +12,14 @@ const FeaturedProjects = () => {
       <ProjectsGrid>
         {data.slice(0, 4).map((project) => (
           <ArticleContainer key={project.name}>
-            <a href={project.netlify_url} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden>
+            <a href={project.netlify_url} target="_blank" rel="noreferrer">
               <ProjectImage style={{ backgroundImage: `url(${project.image})` }}>
                 <div>
                   <h6>{project.name}</h6>
                 </div>
               </ProjectImage>
             </a>
-            <h5>{project.project_name}</h5>
+            {/* <h5>{project.project_name}</h5> */}
             <Paragraph grid>{project.description}</Paragraph>
             <TopicsContainer aria-hidden>
               {project.topics.map((topic) => <Topic>{topic}</Topic>)}

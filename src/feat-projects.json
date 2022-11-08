@@ -2,10 +2,10 @@
   { 
     "name": "To-do List",
     "project_name": "Project: Todos",
-    "description": "Simple web app done to get familiar with Redux and Redux toolkit etc.",
+    "description": "Simple web app done to get familiar with Redux.",
     "github_url": "https://github.com/karlfredrikholm/project-todos",
     "netlify_url": "https://checka.netlify.app/",
-    "topics": [ "Redux", "React", "Styled Components"],
+    "topics": [ "Redux", "React", "CSS3"],
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/redux_todo.png"
   },
   { 
@@ -27,9 +27,9 @@
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/happy_thoughts.png"
   },
   { 
-    "name": "Weather Web App",
+    "name": "Weather App",
     "project_name": "Project: Weather App",
-    "description": "Vanilla JS project made to practice working with data from an API.",
+    "description": "Web app made to practice working with data from an API.",
     "github_url": "https://github.com/karlfredrikholm/project-weather-app/",
     "netlify_url": "http://fint-vader.netlify.app/",
     "topics": [ "JS-ES6", "CSS3", "HTML5"],

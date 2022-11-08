@@ -22,7 +22,7 @@ export const ArticleContainer = styled.article`
 export const ProjectImage = styled.div`
   background-size: cover;
   aspect-ratio: 1.5 / 1;
-  box-shadow: 3px 3px var(--third-color);
+  // box-shadow: 2px 2px var(--third-color);
   margin-bottom: 0.6rem;
 
     & div {

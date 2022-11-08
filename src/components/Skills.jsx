@@ -9,7 +9,7 @@ const Skills = () => {
       <SkillsGrid skills>
 
         <ul>
-          <h5>Tools</h5>
+          <li><h5>Tools</h5></li>
           <li>VS Code</li>
           <li>GitHub</li>
           <li>Adobe CC</li>
@@ -17,7 +17,7 @@ const Skills = () => {
         </ul>
 
         <ul>
-          <h5>Code</h5>
+          <li><h5>Code</h5></li>
           <li>React</li>
           <li>JavaScript ES6</li>
           <li>CSS3</li>
@@ -25,7 +25,7 @@ const Skills = () => {
         </ul>
 
         <ul>
-          <h5>Soon</h5>
+          <li><h5>Soon</h5></li>
           <li>Redux</li>
           <li>Node.js</li>
           <li>Mongo DB</li>
