@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+  --clr-dark: #622c62;
+  --clr-medium: #195c75;
+  --clr-med: #6d9fb5;
+  --clr-light: #f6c6f6;
+  --clr-white: #fff;
+  --clr-lightgrey: #c9c8c8;
+  --clr-darkGray: rgb(27, 27, 27);
+  --clr-footer: #fff;
+  --clr-section: #f8e9f0;
+  --clr-sDark: rgb(24, 25, 26);
+  --clr-sLight:rgb(198, 208, 211);
+
+  --font-main: 'Roboto', sans-serif; 
+  --font-second: "Montserrat"; 
+ 
+}
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--clr-darkGray);
+  font-family: var(--font-main), -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  width: 100%;
+}
+
+
+
+h1, h4 {
+  font-weight: 400;
+  color: var(--clr-light);
+  /* display: inline-block; */
+}
+/* h2 {       SC global
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFF;
+  background-color: var(--clr-dark);
+  border-radius: 3px;
+  display: inline-block;
+  align-self: center;
+  margin: 47px 0 20px;
+  padding: 8px 16px;
+} */
+
+/* h3 {
+  font-family: var(--font-second);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--clr-white);
+  text-align: center;
+  margin: 40px 0 30px
+} */
+
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: 1.5px;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  display: inline-block;
+  /* margin: 1em 0 1em; */
+  padding-bottom: 0.5em;  
+}
+
+p, ul {
+  font-family: var(--font-second);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+b {
+    color: var(--clr-medium);
+    font-weight: bolder;
+}
