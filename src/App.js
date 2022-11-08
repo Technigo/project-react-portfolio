@@ -1,9 +1,22 @@
 import React from 'react'
+import Header from './components/Header'
+import Nav from './components/Nav'
+import About from './components/About'
+import Experience from './components/Experience'
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Skills />
+      <Portfolio />
+      <Contact />
+    </>
   )
 }
