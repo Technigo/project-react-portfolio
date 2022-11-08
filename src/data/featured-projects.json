@@ -7,7 +7,7 @@
 		"project_description": "A to-do app built in React with Redux. ",
 		"repo_name": "project-todo",
 		"netlify_name": "redux-tasklist",
-		"url": "https://github.com/SofieRydmark/project-todos",
+		"url": "https://redux-tasklist.netlify.app/",
 		"tags": [
 			{
 				"id": 8,
