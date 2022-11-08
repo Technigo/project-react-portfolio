@@ -2,7 +2,7 @@
   { 
     "name": "To-do List",
     "project_name": "Project: Todos",
-    "description": "Simple web app done to get familiar with Redux.",
+    "description": "Simple web app done to get familiar with Redux, Redux toolkit etc.",
     "github_url": "https://github.com/karlfredrikholm/project-todos",
     "netlify_url": "https://checka.netlify.app/",
     "topics": [ "Redux", "React", "CSS3"],
