@@ -16,7 +16,7 @@ const OtherProjects = ({ repos }) => {
                 <h5>{project.name.split('-').join(' ').slice(8)}</h5>
                 <Paragraph>{project.description}</Paragraph>
                 <TopicsContainer aria-hidden>
-                  {project.topics.reverse().map((topic) => (topic !== 'portfolio' && <Topic>{topic}</Topic>))}
+                  {project.topics.reverse().map((topic) => (topic !== 'portfolio' && <Topic>{topic.split('-').join(' ')}</Topic>))}
                 </TopicsContainer>
                 <TopicsContainer>
                   <a href={project.homepage} target="_blank" rel="noreferrer">View it Live</a>
