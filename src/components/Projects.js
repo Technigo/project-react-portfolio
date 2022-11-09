@@ -45,20 +45,19 @@ const Projects = () => {
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
     && (project.name !== 'project-movies')
-    && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-labyrinth')
     && (project.name !== 'project-todos')
-    && (project.name !== 'project-survey')
     && (project.name !== 'project-happy-thoughts')
+    && (project.name !== 'project-music-releases')
   );
 
   // Filtered list of other projects for mobile view
   const OtherProjectsMobile = filteredList.filter(
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
-    && (project.name !== 'project-happy-thoughts')
     && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-labyrinth')
+    && (project.name !== 'project-survey')
   );
 
   // Filtered list of featured projects for tablet/desktop view
@@ -71,6 +70,7 @@ const Projects = () => {
     && (project.name !== 'project-chatbot')
     && (project.name !== 'project-music-releases')
     && (project.name !== 'project-labyrinth')
+    && (project.name !== 'project-movies')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -78,7 +78,6 @@ const Projects = () => {
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
     && (project.name !== 'project-happy-thoughts')
-    && (project.name !== 'project-movies')
     && (project.name !== 'project-survey')
     && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-todos')
