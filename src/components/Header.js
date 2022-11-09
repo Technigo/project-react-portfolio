@@ -12,16 +12,40 @@ const LinkedInURL = 'https://www.linkedin.com/in/josefine-engdahl-2654946a'
 const GitHubURL = 'https://github.com/JosefineEngdahl'
 const StackOverflowURL = 'https://stackoverflow.com/users/19477357/josefine-engdahl?tab=profile'
 
+
+// export const AutoplayVideo = () => (
+// <div
+//     dangerouslySetInnerHTML={{
+//      __html:`
+//         <video
+//         autoPlay 
+//         muted 
+//         loop 
+//         playsinline 
+//         className="hero-video">
+//         src={HeroVideo}
+//         </video>`
+//      }}
+// />
+// )
+
 export const Header = () => {
 
     return (
-    <HeadNav> 
+        <HeadNav> 
+     {/* <AutoplayVideo/> */}
         <Hero
-        autoPlay muted loop playsinline 
-        className="hero-video" 
-        src={HeroVideo}>
-        </Hero>
-        
+        type="video/mp4"
+            autoPlay muted loop playsinline 
+            className="hero-video"
+            src={HeroVideo}>
+        </Hero> 
+
+ {/* <Hero>
+ autoPlay muted loop playsinline 
+  <source src="/HeroMovie.mp4"  />
+</Hero> */}
+
         <ProfileImage
             src= {ProfilePicture} 
             alt= "Profile image"/> 
@@ -91,7 +115,6 @@ const SmallHead= styled.div `
 @media (min-width: 1024px) {
     font-size: 25px;   
     }
-
 `
 
 const HeadNav = styled.div `
@@ -106,15 +129,16 @@ background-repeat: no-repeat;
 height: 50vh;      
 }
 `
-const Hero = styled.video `
-width: 100%;
-height: 65vh;
-object-fit: cover;
-position: relative; 
 
-@media (min-width: 668px) and (max-width: 1024px) {
-    height: 50vh;
-    }
+const Hero = styled.video`
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    position: relative; 
+
+    @media (min-width: 668px) and (max-width: 1024px) {
+        height: 50vh;
+        }
 `
 
 const ProfileImage = styled.img`
