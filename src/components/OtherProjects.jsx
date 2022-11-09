@@ -6,7 +6,7 @@ import { Topic, TopicsContainer } from './styled/Topics.styled';
 
 const OtherProjects = ({ repos }) => {
   return (
-    <SectionContainer bg>
+    <SectionContainer>
       <h4>Other Projects</h4>
       <ProjectsGrid other>
         {repos.reverse().map((project) => {
