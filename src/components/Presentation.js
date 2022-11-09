@@ -10,11 +10,10 @@ const Presentation = () => {
       <InnerWrapper>
         <PresentationText>
           <StartImage src={startFigure} alt="start-figure" />
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis illo enim assumenda
-        eligendi a ad omnis tenetur! Recusandae molestias reprehenderit sed corrupti, non iste
-        praesentium at quasi sit saepe quaerat! Explicabo similique sequi numquam quis! Minima
-        iste quod, eveniet temporibus doloribus harum blanditiis tempora hic architecto, fugit
-        qui error repellat voluptas labore!
+          En bild säger mer än tusen ord, det är det jag älskar med bildberättandet
+           och därmed möjligheten att med hjälp av bilder kunna skildra känslor och
+           historier för andra människor. Mitt mål är att aldrig nöja mig och därmed
+           sluta utvecklas, utan hela tiden sträva efter att bli bättre.
         </PresentationText>
       </InnerWrapper>
     </MainSections>

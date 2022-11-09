@@ -45,9 +45,11 @@ const Projects = () => {
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
     && (project.name !== 'project-movies')
-    && (project.name !== 'project-music-releases')
     && (project.name !== 'project-redux-quiz')
+    && (project.name !== 'project-labyrinth')
     && (project.name !== 'project-todos')
+    && (project.name !== 'project-survey')
+    && (project.name !== 'project-happy-thoughts')
   );
 
   // Filtered list of other projects for mobile view
@@ -55,9 +57,8 @@ const Projects = () => {
     (project) => (project.name !== 'project-news-site')
     && (project.name !== 'project-portfolio')
     && (project.name !== 'project-happy-thoughts')
-    && (project.name !== 'project-survey')
     && (project.name !== 'project-redux-quiz')
-    && (project.name !== 'project-todos')
+    && (project.name !== 'project-labyrinth')
   );
 
   // Filtered list of featured projects for tablet/desktop view
@@ -68,8 +69,8 @@ const Projects = () => {
     && (project.name !== 'project-react-portfolio')
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
-    && (project.name !== 'project-redux-quiz')
-    && (project.name !== 'project-todos')
+    && (project.name !== 'project-music-releases')
+    && (project.name !== 'project-labyrinth')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -78,10 +79,10 @@ const Projects = () => {
     && (project.name !== 'project-portfolio')
     && (project.name !== 'project-happy-thoughts')
     && (project.name !== 'project-movies')
-    && (project.name !== 'project-music-releases')
     && (project.name !== 'project-survey')
     && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-todos')
+    && (project.name !== 'project-labyrinth')
   );
 
   // Function that sets the code-tags into separate units

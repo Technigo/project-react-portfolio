@@ -133,7 +133,7 @@ const ProfileImg = styled.img`
   }
 
   @media ${Devices.laptop} {
-    width: 10%;
+    width: 15%;
     right: 80%;
   } 
 
