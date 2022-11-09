@@ -174,6 +174,7 @@ const Tag = styled.h4`
   border-radius: 5px;
   margin-right: 5%;
   white-space: nowrap; 
+  margin-bottom: 2%;
 `
 
 const Tags = styled.div`
@@ -181,6 +182,7 @@ const Tags = styled.div`
   flex-direction: row;
   width: 80%;
   padding: 0%;
+  flex-wrap: wrap;
 `
 const SingleWrap = styled.div`
   display: flex;
