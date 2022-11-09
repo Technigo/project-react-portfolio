@@ -229,12 +229,10 @@ const OtherWrapMobile = styled.div`
   a {
     display: flex;
     width: 100%;
-
   }
 
   .box-text {
     grid-column-start: 1;
-    grid-column-end: 3;
     padding-top: 1%;
     width: 35%;
   }
@@ -263,7 +261,6 @@ const OtherWrap = styled.div`
 
   .box-text {
     grid-column-start: 1;
-    grid-column-end: 3;
     padding-top: 3%;
     width: 35%;
   }
