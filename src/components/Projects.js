@@ -234,7 +234,7 @@ const OtherWrapMobile = styled.div`
   .box-text {
     grid-column-start: 1;
     padding-top: 1%;
-    width: 35%;
+    width: 40%;
   }
 
   @media ${Devices.tablet} {
@@ -262,6 +262,6 @@ const OtherWrap = styled.div`
   .box-text {
     grid-column-start: 1;
     padding-top: 3%;
-    width: 35%;
+    width: 40%;
   }
 `
