@@ -182,7 +182,6 @@ const Tags = styled.div`
   flex-direction: row;
   width: 80%;
   padding: 0%;
-  flex-wrap: wrap;
 `
 const SingleWrap = styled.div`
   display: flex;
