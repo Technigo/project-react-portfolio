@@ -27,14 +27,14 @@ export const Main= () => {
          {/* <Body Thoughts> 
             <Thoughts/>
         </Body>  */}
-
+{/* 
         <Body Skills> 
             <Skills/>
-        </Body>
+        </Body> */}
 
-        <Body ForMore> 
+        {/* <Body ForMore> 
             <ForMore/>
-        </Body> 
+        </Body>  */}
 
  </>
 )
@@ -49,12 +49,12 @@ align-items: center;
 margin: auto; 
 
 background-color: ${(props) => 
-    props.Intro ? "#f6f5f0" :
-    props.Tech ? "#ffffff" :
-    props.Projects ? "#f6f5f0" :
-    props.Thoughts ? "#ffffff" :
-    props.Skills ? "#ffffff" :
-    props.ForMore ?  "#70888F" 
+    props.Intro ? "#f3edeb" :
+    props.Tech ? "#f3edeb" :
+    props.Projects ? "#f3edeb"  :
+    props.Thoughts ?"#f3edeb"  :
+    props.Skills ? "#f3edeb"  :
+    props.ForMore ?  "#f3edeb" 
     : "none"};
 
 `

@@ -244,7 +244,7 @@ width: 95%;
   const Dot = styled.span`
     height: 10px;
     width: 10px;
-    background-color: #c85c3b;
+    background-color: #FFB800;
     border-radius: 50%;
     display: inline-block;
 `

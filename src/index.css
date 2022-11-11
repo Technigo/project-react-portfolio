@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color: white;
+  background-color: #f3edeb;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Anton", "Bebas Neue",
     sans-serif;
@@ -25,22 +25,24 @@ h3 {
   /* font-weight: bolder;
   background-color:  #c85c3b; */
   text-align: center;
-  color:#F9B930;
+  color:#FFB800;
   letter-spacing: 0.1em;
   padding: 5px 20px 5px 20px;
   font-size: 20px;
-  margin: 25px 0px 15px 0px; 
+  margin: 25px 0px 0px 0px; 
   text-transform: uppercase;
+  font-weight: lighter;
 }
 
 
 h4 {
   font-family: "Anton";
+  font-weight: lighter;
   text-align: center;
   padding: 7px;
   border-radius: 5px;
-  font-size: 20px;
-  color:#F9B930;
+  font-size: 18px;
+  color:#FFB800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -50,7 +52,7 @@ h4 {
 h5 {
   font-weight: bold;
   font-family: "Bebas Neue";
-  color: #c85c3b;
+  color: #FFB800;
   /* line-height: 20px;  */
   font-size: 20px;
   margin: 10px 0 0 10px; 
@@ -65,6 +67,39 @@ p {
   font-size: 16px;
   /* display: flex; */
   text-align: center;
+}
+
+
+.curve {
+
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: #f3edeb;
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #FFB800;
+  transform: translate(-4%, 40%);
+  z-index: -1;
 }
 
 /* 
@@ -133,7 +168,7 @@ h4{
 
 b {
   font-weight: bolder;
-  color: #c85c3b;
+  color: #FFB800;
   font-family: "Anton";
   letter-spacing: 0.1em;
 }

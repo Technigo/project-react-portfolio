@@ -6,12 +6,14 @@ import styled from 'styled-components'
 export const Tech = () => {
   return (
     <Wrapper>
-      <section>
-        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
-        <h3>Tech</h3>
-        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
-      </section>
-      <Text>HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
+      {/* <section>
+        <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" /> */}
+      <h3>Skills</h3>
+      {/* <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
+      </section> */}
+      <Text> <b>TECH:</b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
+      <Text> <b>OTHER: </b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
+      <Text><b>TOOLBOX:</b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
     </Wrapper>
   )
 }
