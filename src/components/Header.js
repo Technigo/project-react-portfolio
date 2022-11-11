@@ -20,7 +20,7 @@ const Header = ({ lnIcon, gitHubIcon }) => {
         </IconsHeader>
         <Profile src={myPicture} alt="author" />
         <HeaderText>
-          <h5>Antonella Cardozo</h5>
+          <h5>Antonella Cardozo (She/Her)</h5>
           <h1>Software Developer</h1>
           <p>+ HR</p>
         </HeaderText>
