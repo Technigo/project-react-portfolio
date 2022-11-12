@@ -16,7 +16,7 @@ export const Skills = () => {
   `
 
   return (
-    <OuterWrapper backgroundLightBlue>
+    <OuterWrapper>
       <InnerWrapper>
         <SiteSection>
           <SectionTitle>

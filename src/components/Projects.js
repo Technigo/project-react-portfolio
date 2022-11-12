@@ -85,7 +85,7 @@ export const Projects = () => {
   `
 
   return (
-    <OuterWrapper backgroundLightBlue>
+    <OuterWrapper>
       <InnerWrapper>
         <SiteSection>
           <SectionTitle>

@@ -19,10 +19,11 @@ export const About = () => {
   `
 
   return (
-    <OuterWrapper backgroundLightBlue>
+    <OuterWrapper>
       <InnerWrapper>
         <SiteSection>
-          <p><Line /><Dot /> Hello! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <p><Line /><Dot /> Hello! I&apos;m Annika. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
                 Eveniet tenetur distinctio blanditiis laboriosam corporis. Dolor
                 cumque natus ab. Corporis eligendi beatae natus eaque tempore iure,
                 deleniti laboriosam asperiores deserunt nostrum.

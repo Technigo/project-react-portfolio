@@ -17,7 +17,7 @@ export const Thoughts = () => {
   color: var(--color-mediumblue);
   `
   return (
-    <OuterWrapper>
+    <OuterWrapper backgroundLightGrey>
       <InnerWrapper>
         <SiteSection>
           <SectionTitle>

@@ -8,15 +8,19 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { InnerWrapper, OuterWrapper } from './global/GlobalStyling';
 import Annika from '../assets/Annika.jpg'
-import BackgroundImg from '../assets/BackgroundImg.jpg'
+// import BackgroundImg from '../assets/BackgroundImg.jpg'
+import Banner2 from '../assets/Banner2.jpg'
+
+//  background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${BackgroundImg});
 
 export const Header = () => {
   const HeaderBackground = styled.header`
     position: relative;
     height: 70vh;
     width: 100%;
-    background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${BackgroundImg});
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(82, 81, 81, 0.2), rgba(0, 0, 0, 0.5)), url(${Banner2});
+
+    background-repeat: no-repeat;background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
 `
@@ -29,6 +33,8 @@ export const Header = () => {
         text-transform: uppercase;
         padding-left: 3px;
         color: var(--color-white);
+        text-shadow: 1px 1px 2px white;
+    
     }
 
     h1 {
@@ -38,6 +44,8 @@ export const Header = () => {
         text-transform: uppercase;
         padding-left: 3px;
         color: var(--color-white);
+        text-shadow: 1px 1px 2px white;
+     
 
         @media (min-width: 667px) {
           font-size: 48px;
@@ -51,13 +59,14 @@ export const Header = () => {
         text-transform: uppercase;
         padding-left: 3px;
         color: var(--color-white);
+        text-shadow: 1px 1px 2px white;
     }
 `
   const ProfileImageWrapper = styled.div`
     position: absolute;
     overflow: hidden;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border: 2px solid #fff;
     border-radius: 50%;
     z-index: 1;
@@ -71,8 +80,8 @@ export const Header = () => {
     }
 
     @media (min-width: 1024px) {
-      height: 200px;
-      width: 200px;
+      height: 250px;
+      width: 250px;
       right: 20%;
     }
 `

@@ -14,7 +14,7 @@ export const OuterWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${(props) => (props.backgroundLightBlue ? 'var(--color-lightblue)' : 'var(--color-text-white)')};
+    background-color: ${(props) => (props.backgroundLightGrey ? 'var(--color-lightgrey)' : 'var(--color-text-white)')};
 `
 export const InnerWrapper = styled.div`
     width: 75%;

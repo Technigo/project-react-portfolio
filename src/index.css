@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
-  --color-darkblue: #213249;
+  --color-darkblue: #3a3631;
   --color-mediumblue: #416586;
-  --color-lightblue: #cfddf1;
+  /* --color-lightblue: #cfddf1;*/
+  --color-lightgrey: #f0efea;
   --color-white: #fff;
-  --color-bronze: #b46048;
+  --color-bronze: #7c6c56;
 }
 
 body {

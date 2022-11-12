@@ -7,7 +7,7 @@ export const Tech = () => {
     font-weight: 700;
   `
   return (
-    <OuterWrapper>
+    <OuterWrapper backgroundLightGrey>
       <InnerWrapper>
         <SiteSection>
           <SectionTitle>

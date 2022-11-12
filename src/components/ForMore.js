@@ -23,7 +23,7 @@ export const ForMore = () => {
     }
     `
   return (
-    <OuterWrapper>
+    <OuterWrapper backgroundLightGrey>
       <InnerWrapper>
         <SiteSection>
           <SectionTitle>
@@ -35,7 +35,7 @@ export const ForMore = () => {
                 href="https://github.com/agadman"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="3x" color="#416586" />
+                <FontAwesomeIcon icon={faGithub} size="3x" color="#333" />
               </a>
               <p>Github</p>
             </IconContainer>
@@ -44,7 +44,7 @@ export const ForMore = () => {
                 href="https://www.linkedin.com/in/annika-gadman-85238a123/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#416586" />
+                <FontAwesomeIcon icon={faLinkedin} size="3x" color="#0a66c2" />
               </a>
               <p>LinkedIn</p>
             </IconContainer>
