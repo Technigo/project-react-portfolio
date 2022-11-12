@@ -32,7 +32,7 @@ export const ForMore = () => {
           <IconWrapper>
             <IconContainer>
               <a
-                href="https://github.com/"
+                href="https://github.com/agadman"
                 target="_blank"
                 rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} size="3x" color="#416586" />
@@ -41,7 +41,7 @@ export const ForMore = () => {
             </IconContainer>
             <IconContainer>
               <a
-                href="https://www.linkedin.com/in/lovisa-carling/"
+                href="https://www.linkedin.com/in/annika-gadman-85238a123/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="3x" color="#416586" />
@@ -50,7 +50,7 @@ export const ForMore = () => {
             </IconContainer>
             <IconContainer>
               <a
-                href="https://stackoverflow.com/users/16687109/asivol"
+                href="https://stackoverflow.com/users/19438256/annika"
                 target="_blank"
                 rel="noopener noreferrer">
                 <FontAwesomeIcon

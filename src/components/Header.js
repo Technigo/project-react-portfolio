@@ -107,19 +107,19 @@ export const Header = () => {
         <InnerWrapper>
           <IconWrapper>
             <a
-              href="https://github.com/Asivol93"
+              href="https://github.com/agadman"
               target="_blank"
               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} size="3x" color="var(--color-white)" />
             </a>
             <a
-              href="https://www.linkedin.com/in/lovisa-carling/"
+              href="https://www.linkedin.com/in/annika-gadman-85238a123/"
               target="_blank"
               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2x" color="var(--color-white)" />
             </a>
             <a
-              href="https://stackoverflow.com/users/16687109/asivol"
+              href="https://stackoverflow.com/users/19438256/annika"
               target="_blank"
               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faStackOverflow} size="3x" color="var(--color-white)" />
