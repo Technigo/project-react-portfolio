@@ -3,18 +3,6 @@ import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const Skills = () => {
-  const SkillsParent = styled.div`
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  `
-
-  const SkillsChild = styled.div`
-    width: 200px;
-  `
-
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -58,3 +46,14 @@ export const Skills = () => {
     </OuterWrapper>
   )
 }
+
+const SkillsParent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+`
+const SkillsChild = styled.div`
+  width: 200px;
+`

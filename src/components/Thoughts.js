@@ -3,19 +3,6 @@ import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const Thoughts = () => {
-  const ArticleContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  `
-  const ThoughtArticle = styled.article`
-    width: 100%;
-    text-align: left;
-  `
-
-  const Date = styled.p`
-  color: var(--color-mediumblue);
-  `
   return (
     <OuterWrapper backgroundLightGrey>
       <InnerWrapper>
@@ -40,3 +27,16 @@ export const Thoughts = () => {
     </OuterWrapper>
   )
 }
+
+const ArticleContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
+const ThoughtArticle = styled.article`
+  width: 100%;
+  text-align: left;
+`
+const Date = styled.p`
+  color: var(--color-mediumblue);
+`

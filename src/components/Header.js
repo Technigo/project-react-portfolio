@@ -22,7 +22,7 @@ export const Header = () => {
               <FontAwesomeIcon icon={faGithub} size="3x" color="var(--color-white)" />
             </a>
             <a
-              href="https://www.linkedin.com/in/annika-gadman-85238a123/"
+              href="https://se.linkedin.com/in/annika-gadman-85238a123"
               target="_blank"
               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="3x" color="var(--color-white)" />

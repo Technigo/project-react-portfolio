@@ -3,9 +3,6 @@ import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
 
 export const Tech = () => {
-  const TechSkillHighlight = styled.span`
-    font-weight: 700;
-  `
   return (
     <OuterWrapper backgroundLightGrey>
       <InnerWrapper>
@@ -21,6 +18,7 @@ export const Tech = () => {
             <TechSkillHighlight> JavaScript</TechSkillHighlight>,
             <TechSkillHighlight> React</TechSkillHighlight>,
             <TechSkillHighlight> JSX</TechSkillHighlight>,
+            <TechSkillHighlight> Redux</TechSkillHighlight>,
             Web Accessability,
             API:s,
             Mob-programming,
@@ -32,3 +30,7 @@ export const Tech = () => {
     </OuterWrapper>
   )
 }
+
+const TechSkillHighlight = styled.span`
+  font-weight: 700;
+`
