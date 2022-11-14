@@ -38,7 +38,7 @@ export const ForMoreHeader = styled.h2`
     line-height: 1;
   }
   @media (min-width: 1024px) {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1;
   }
 `;

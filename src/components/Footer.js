@@ -43,18 +43,17 @@ p{
 }
 
 /* this adds the typing-effect*/
-
-/*.typing {
-  width: 25ch;
-  animation: typing 10s steps(25, end) infinite, blink-caret .5s step-end infinite;
+/*
+.typing {
+  width: 29ch;
+  animation: typing 10s steps(22, end) infinite, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
-  color: white;
+  font-family: monospace;
+  font-size: 2em;
   padding-top:10px;
-}*/
+}
 
 @keyframes typing {
   from {
@@ -72,18 +71,44 @@ p{
 }
 
 @media (min-width: 668px){
+*/
 
 p.contact{
-    font-size:38px;
+    font-size:22px;
 }
 
 p{
-    font-size:30px;
+    font-size:18px;
+}
+.typing{
+  font-size: 18px;
+}
+
+@media (min-width: 668px) and (max-width: 1023px) {
+p.contact{
+  font-size: 38px;
+}
+p{
+  font-size: 30px;
 }
 .typing{
   font-size: 30px;
+  padding-top: 10px;
 }
-`;
+};
+
+@media (min-width: 1024px) {
+p.contact{
+  font-size: 38px;
+}
+p{
+  font-size: 30px;
+}
+.typing{
+  font-size: 30px;
+  padding-top: 10px;
+}
+}`;
 
 export const ImageCredWrapper = styled.div`
 width: 100%;

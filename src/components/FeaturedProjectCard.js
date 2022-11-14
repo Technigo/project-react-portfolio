@@ -76,6 +76,9 @@ const SectionHeader = styled.h2`
     padding: 10px 15px;
     margin-bottom: 40px;
   }
+  @media (min-width: 1024px) {
+     font-size: 40px;
+  }
 `;
 
 const FeaturedProjectWrapper = styled.div`
@@ -140,7 +143,7 @@ const ThumbnailTitle = styled.h2`
 const ProjectInfoHeader = styled.h3`
   font-family: "Roboto Bold", sans-serif;
   color: ${(props) => props.color};
-  font-size: 24px;
+  font-size: 22px;
 
   ${ProjectCard}:hover & {
     text-decoration: underline;
@@ -154,15 +157,16 @@ const ProjectInfoHeader = styled.h3`
 const ProjectInfo = styled.p`
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 24px;
+  font-size: 17px;
   line-height: 1.4;
+  padding-right: 10px;
 
   ${ProjectCard}:hover & {
     text-decoration: underline;
   }
 
   @media (max-width: 800px) {
-    font-size: 20px;
+    font-size: 17px;
   }
 `;
 
@@ -176,6 +180,7 @@ const ProjectTags = styled.li`
   font-size: 16px;
   margin-right: 5px;
   border: 1px solid black;
+  margin-top: 5px;
 
   @media (max-width: 800px) {
     padding: 2px;

@@ -18,7 +18,7 @@ const OtherProjects = ({ color, tagColor }) => {
                       {project.description}<SubParagraphArrows>{'>>>'}</SubParagraphArrows>
                     </SubParagraph>
                   </InfoContainer>
-            </a> {/* eslint-disable-line */}
+                </a>
                 <SkillTagContainer>
                   {project.tags.map((tag) => (
                     <ProjectTags key={tag} tagColor={tagColor}>
@@ -74,6 +74,9 @@ const OtherProjectsHeader = styled.h2`
     padding: 10px 15px;
     margin-bottom: 40px;
   }
+  @media (min-width: 1024px) {
+     font-size: 40px;
+  }
 `;
 
 export const OtherProjectsContainer = styled.div`
@@ -124,7 +127,6 @@ const ProjectTags = styled.li`
 
 export const SubParagraph = styled.p`
   color: black;
-  text-decoration: underline;
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;

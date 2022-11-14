@@ -1,39 +1,75 @@
 [
     {
-      "title": "Business Site",
-      "title-description": "A simple business site",
-      "project-description": "A web site including a booking form and FAQ section.",
-      "repo-name": "project-business-site",
-      "netlify-name": "https://enchanting-dodol-8f5cc6.netlify.app/",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/images/project-thumbnails/Project-business-site.png"
+      "title": "To Do",
+      "title-description": "A To do list App",
+      "project-description": "A To Do App to which the user can add and remove tasks, using Redux. The user can mark a task as completed or not and, using custom checkboxes.",
+      "repo-name": "project-todos",
+      "netlify-name": "https://todo-sofia.netlify.app",
+      "tags": ["HTML", "CSS", "Styled Components","React","JSX","Redux"],
+      "image": "/images/project-thumbnails/ToDo-App-Mockup.png"
     },
     {
       "title": "HAPPY THOUGHTS",
       "title-description": "A twitter-like app",
-      "project-description": "A responsive web site created in React. It is fetching and posting data to an API, using useState and useEffect hooks.",
+      "project-description": "A responsive web site created in React which is fetching and posting data to an API, using useState and useEffect hooks.",
       "repo-name": "project-happy-thoughts",
       "netlify-name": "https://dontworry-behappy.netlify.app/",
-      "tags": ["HTML5", "CSS3", "React", "JavaScript","ES6","APIs","Github"],
+      "tags": ["HTML", "CSS", "React", "Fetch","APIs"],
       "image": "images/project-thumbnails/project-happy-thoughts.png"
     },
     {
-      "title": "Avocado News 3",
-      "title-description": "3 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
+      "title": "Music Releases",
+      "title-description": "Music releases list",
+      "project-description": "A project in which I practised React, creating components and using data from Spotify. A responsive web site using HTML & CSS, also a practise in pair-programming.",
+      "repo-name": "project-music-releases",
       "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/mapty.PNG"
+      "tags": ["HTML5", "CSS3", "JavaScript", "React", "JSX","React Components", "React props"],
+      "image": "/images/project-thumbnails/Music-releases.png"
     },
     {
-      "title": "Avocado News 4",
-      "title-description": "4 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
+      "title": "Labyrinth",
+      "title-description": "A labyrinth game",
+      "project-description": "A text based game, an app that retrieves a list of actions from the backend and presents them to the user as interactable items. Handles the response delay with a loading animation.",
+      "repo-name": "project-labyrinth",
+      "netlify-name": "https://labyrinth-linnea-sofia.netlify.app/",
+      "tags": ["HTML5", "CSS3","Styled Components","React","JSX","Redux","Thunks"],
+      "image": "/images/project-thumbnails/Labyrinth.png"
+    },
+    {
+      "title": "Weather app",
+      "title-description": "A weather forecast app",
+      "project-description": "This is a weather app showing current weather and a forecast for three cities. The app fetch data from an API, follows given design guidelines and is responsive. The project is made by team of 2 using basic branching and merging in Git.",
+      "repo-name": "project-weather-app",
+      "netlify-name": "https://enchanting-dodol-8f5cc6.netlify.app/",
+      "tags": ["HTML5", "CSS3", "API"],
+      "image": "/images/project-thumbnails/Weather.png"
+       },
+    {
+      "title": "Quiz",
+      "title-description": "A multiple choise quiz",
+      "project-description": "This is a multiple-choice quiz game, made using Redux and via mob programming. My first project using Redux.",
+      "repo-name": "project-nredux-quiz",
+      "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/quiz",
+      "tags": ["HTML5", "CSS3","Redux"],
+      "image": "/images/project-thumbnails/Quiz.png"
+    },
+    {
+      "title": "Guess Who Game",
+      "title-description": "A Guess Who Game",
+      "project-description": "In this project I created a Guess Who game using JavaScript, practising objects, arrays and functions.",
+      "repo-name": "project-guess-who",
+      "netlify-name": "https://shiny-scone-950594.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript"],
+      "image": "/images/project-thumbnails/Guess-who.png"
+    },
+    {
+      "title": "Chatbot",
+      "title-description": "A Chatbot",
+      "project-description": "In this project I created a Guess Who game using JavaScript, practising objects, arrays and functions.",
+      "repo-name": "chatbot",
+      "netlify-name": "https://loquacious-pika-011cac.netlify.app/",
       "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/guessmynumber.PNG"
+      "image": "/images/project-thumbnails/Chatbot.png"
     }
   ]
   

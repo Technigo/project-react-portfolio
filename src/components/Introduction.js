@@ -3,6 +3,18 @@ import styled from 'styled-components';
 
 import heroImage2 from 'assets/heroImage2.jpg';
 
+export const Introduction = () => {
+  return (
+    <IntroductionWrapper>
+      <IntroductionContent>
+      Sofia is an ambitious Frontend Developer with an interest
+       for user experience, function and design. She has a
+       solution oriented mindset, easily adapt to new conditions
+        and is eager to learn more.
+      </IntroductionContent>
+    </IntroductionWrapper>
+  );
+};
 export const IntroductionWrapper = styled.div`
 margin:0;
 background-image: url(${heroImage2});
@@ -12,11 +24,10 @@ color: black;
 display: flex;
 justify-content: center;
 padding: 50px 0;
+text-align: center;
 `;
 
 export const IntroductionContent = styled.p`
-font-size: 17px;
-width:80%;
 
 .line {
     border: 1px solid black;
@@ -36,24 +47,10 @@ width:80%;
 
 @media (min-width: 1024px){
     width:50%;
-    font-size: 30px;
+    font-size: 20px;
 
   img{
-  height: 75px;  
-  } 
+  height: 75px;
+  }
 }
 `;
-
-export const Introduction = () => {
-  return (
-    <IntroductionWrapper>
-      <IntroductionContent>
-      This is an accessible presentation in the first section.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-       sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-         ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </IntroductionContent>
-    </IntroductionWrapper>
-  );
-};

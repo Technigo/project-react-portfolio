@@ -11,7 +11,6 @@ flex-direction: column;
 
 @media (min-width: 1024px){
   }
-}
 `;
 
 const TechHeader = styled.h2`
@@ -32,11 +31,12 @@ const TechHeader = styled.h2`
   }
 `;
 
-export const ScrollLeftWrapper = styled.div`
+export const ScrollWrapper = styled.div`
 width: 100%;
+display: flex;
 `;
 
-export const TechContent = styled.p`
+export const ScrollContent = styled.p`
     width: 100%;
     line-height: 50px;
     white-space: nowrap;
@@ -72,7 +72,8 @@ export const TechContent = styled.p`
     -webkit-transform: translateX(-100%); /* Browser bug fix */
     transform: translateX(-100%); 
     }
-    }}
+    }
+  }
 
 @media (min-width: 668px) and (max-width: 1023px){
     {
@@ -88,16 +89,16 @@ export const TechContent = styled.p`
 }
 `;
 
-export const Tech = ({ color }) => {
+export const TechRoll = ({ color }) => {
   return (
     <TechWrapper>
       <TechHeader color={color}>TECH</TechHeader>
-      <ScrollLeftWrapper>
-        <TechContent className="ScrollLeft">
+      <ScrollWrapper>
+        <ScrollContent className="ScrollLeft">
      HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
 Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
-        </TechContent>
-      </ScrollLeftWrapper>
+        </ScrollContent>
+      </ScrollWrapper>
     </TechWrapper>
   );
 };
