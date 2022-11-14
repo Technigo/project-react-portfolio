@@ -83,11 +83,23 @@ const IconsContainer = styled.div`
     border: 2px solid white;
     border-radius: 50%;
     padding: .65rem .75rem;
+    transition: all .3s ease;
    }
 
+   @media (min-width: 768px) {
+    & div:hover {
+    transform: scale(1.1);
+    };
+
+   & div:hover svg {
+    transform: scale(1.2);
+    };
+   }
+  
     & svg {
       height: 1.5rem;
       width: 1.6rem;
+      transition: all .3s ease;
     }
 
   @media (max-width: 1200px) {
