@@ -86,6 +86,7 @@ const Mailme = styled.img`
 
 @media (min-width: 1024px) {
   right: 15%;
+  top: 70%;
   height: 85px;
   width: 85px;
 
