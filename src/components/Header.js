@@ -33,13 +33,17 @@ export const Header = () => {
 
     return (
         <HeadNav> 
+
+<Hero autoPlay muted loop playsinline className="hero-video">
+  <source src={HeroVideo}/>
+</Hero>
      {/* <AutoplayVideo/> */}
-        <Hero
+        {/* <Hero
         type="video/mp4"
             autoPlay muted loop playsinline 
-            className="hero-video"
-            src={HeroVideo}>
-        </Hero> 
+            className="hero-video">
+            <source src="src/components/images/HeroMovie.mp4"/>
+        </Hero>  */}
 
  {/* <Hero>
  autoPlay muted loop playsinline 
