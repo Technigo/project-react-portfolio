@@ -10,10 +10,8 @@ export const Projects = () => {
       .then((res) => res.json())
       .then((data) => setProjectsList(data))
   }
-  // To filter the array of projects and remove the 2 projects with portfolio (index 6-7).
-  // Will need to update this if the index changes with new projects.
-  const FilteredProjects = projectsList.filter((item) => item.name.includes('project-'));
-  FilteredProjects.splice(6, 2);
+  // To filter the array of projects
+  const FilteredProjects = projectsList.filter((item) => !item.name.includes('portfolio'));
 
   // Filtering my starred projects to make them the featured projects
   const FeaturedProjects = FilteredProjects.filter((project) => project.stargazers_count !== 0)
