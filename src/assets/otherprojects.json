@@ -43,5 +43,33 @@
         "github_url": "https://github.com/katirum/project-movies",
         "description": "A multipage site that shows the current most popular movies and a details page about the selected movie when clicked.",
         "tags": ["React", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
+      },
+      {
+        "title": "Quiz with Redux",
+        "id": "10",
+        "image": "",
+        "netlify_url": "https://the-better-hippo-team-quiz.netlify.app/",
+        "github_url": "https://github.com/katirum/project-redux-quiz",
+        "description": "A group project to create a quiz with main focus on learning how to use Redux.",
+        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Mob Program", "Github"]
+      },
+      {
+        "title": "Daily Planner",
+        "id": "11",
+        "image": "",
+        "netlify_url": "https://thedailyplanner.netlify.app/",
+        "github_url": "https://github.com/katirum/project-todos",
+        "description": "An individual project to create an app to store user's list of things to do.",
+        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Github"]
+      },
+      {
+        "title": "Labyrinth",
+        "id": "12",
+        "image": "",
+        "netlify_url": "https://lostducklabyrinth.netlify.app/",
+        "github_url": "https://github.com/katirum/project-labyrinth/blob/master/code/README.md",
+        "description": "A project done in pairs to create a text based game Labyrinth to practice how APIs work together with Redux.",
+        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
       }
+
   ]

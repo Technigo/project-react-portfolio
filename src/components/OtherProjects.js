@@ -8,7 +8,7 @@ export const OtherProjects = () => {
     <Wrapper primary>
       <SectionTitle primary>OTHER PROJECTS</SectionTitle>
       <OtherProjectsContainer>
-        {data.map((item) => (
+        {data.reverse().map((item) => (
           <OtherProjectsDisplay key={item.id}>
             <a
               href={item.netlify_url}
@@ -93,5 +93,5 @@ const GithubRepoButton = styled.a`
   transition: transform .5s; 
 
     &:hover{
-    transform: scale(0.90);
+    transform: scale(0.90);}
 `

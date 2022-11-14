@@ -10,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
   body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    max-width: 1024px;
     font-family: 'Montserrat', sans-serif;
+    max-width: 1024px;
 
     @media (min-width: 1024px){
       border: 3px solid rgb(0, 51, 51, 0.1);
@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
 
 /* Wrappers for the whole section in each component */
 export const Wrapper = styled.section`
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
