@@ -9,7 +9,7 @@ const Header = () => {
       <IconsContainer>
         <a
           href="https://www.linkedin.com/in/fredrik-holm-10406b106/"
-          title="Link to my LinkedIn Profile"
+          title="Link to LinkedIn Profile"
           target="_blank"
           rel="noreferrer"
           aria-hidden>
@@ -20,7 +20,7 @@ const Header = () => {
         <a
           href="https://github.com/karlfredrikholm/"
           target="_blank"
-          title="Link to my GitHub Profile"
+          title="Link to GitHub Profile"
           rel="noreferrer"
           aria-hidden>
           <div>
@@ -30,7 +30,7 @@ const Header = () => {
         <a
           href="https://stackoverflow.com/users/19384002/fredrik-holm"
           target="_blank"
-          title="Link to my Stack Overflow Profile"
+          title="Link to Stack Overflow Profile"
           rel="noreferrer"
           aria-hidden>
           <div>
