@@ -29,7 +29,7 @@ h3 {
   letter-spacing: 0.1em;
   padding: 5px 20px 5px 20px;
   font-size: 20px;
-  margin: 25px 0px 0px 0px; 
+  margin: 25px 0px 15px 0px; 
   text-transform: uppercase;
   font-weight: lighter;
 }
@@ -70,7 +70,7 @@ p {
 }
 
 
-.curve {
+/* .curve {
 
   position: absolute;
   height: 250px;
@@ -100,7 +100,7 @@ p {
   background-color: #FFB800;
   transform: translate(-4%, 40%);
   z-index: -1;
-}
+} */
 
 /* 
 .heart {
