@@ -60,7 +60,7 @@ const HeaderText = styled.div`
   white-space: wrap;
 
   .heading-name {
-    font-family: Roboto;
+    font-family: Karla;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

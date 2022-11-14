@@ -2,7 +2,7 @@
 Create a portfolio using React using Styled Components 
 
 ## The problem
-This week the main problem was time 
+It is not a problem but my portfolio is always a work in progress. 
 
 ## View it live
 https://capable-gumdrop-8a2d64.netlify.app/

@@ -74,6 +74,10 @@ export const ProjectWrapper = styled.article`
         height: 20vw;
         object-fit: cover;
         border: 4px solid #f4f4f4;
+    
+      @media (max-width: 640px) {
+        height: 40vw;
+      }
     }
 
     a {
@@ -83,7 +87,7 @@ export const ProjectWrapper = styled.article`
 `
 
 export const ProjectTittle = styled.h3`
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Karla', sans-serif;
       font-weight: bold;
       text-align: left;
       font-size: 24px;
