@@ -2,14 +2,12 @@ import React from 'react'
 import { FiGithub } from 'react-icons/fi';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { ImStackoverflow } from 'react-icons/im';
-import { IconContext } from 'react-icons';
 import styled from 'styled-components/macro'
 
 // eslint-disable-next-line max-len
-export const Icons = ({ boxWidth, linkWidth, linkedin, github, stackOverflow, color, IconColor }) => {
+export const Icons = ({ boxWidth, linkWidth, linkedin, github, stackOverflow, color }) => {
   return (
-    <IconContext.Provider value={IconColor}>
-
+    <>
       <StyledLink color={color} linkWidth={linkWidth} href="https://www.linkedin.com/in/linneaajger" aria-label="link to Linneas linkedin-profile">
         <OuterBox color={color} boxWidth={boxWidth}>
           <FaLinkedinIn />
@@ -28,7 +26,7 @@ export const Icons = ({ boxWidth, linkWidth, linkedin, github, stackOverflow, co
         </OuterBox>
         <p color={color}>{stackOverflow}</p>
       </StyledLink>
-    </IconContext.Provider>
+    </>
   )
 }
 
@@ -50,6 +48,11 @@ transition: 0.3s ease-in-out;
 &:hover {
 transform: scale(1.1);
 transform: translate(0%,-10%);}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+}
 `
 
 const StyledLink = styled.a`
