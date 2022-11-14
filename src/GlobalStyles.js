@@ -83,7 +83,7 @@ export const ProjectWrapper = styled.article`
 `
 
 export const ProjectTittle = styled.h3`
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
       text-align: left;
       font-size: 24px;
