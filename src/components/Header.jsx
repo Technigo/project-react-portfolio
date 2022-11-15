@@ -86,7 +86,7 @@ const IconsContainer = styled.div`
     transition: all .3s ease;
    }
 
-   @media (min-width: 768px) {
+   @media (min-width: 850px) {
     & div:hover {
     transform: scale(1.1);
     };

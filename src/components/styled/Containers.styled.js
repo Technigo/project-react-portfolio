@@ -32,7 +32,7 @@ export const ProjectImage = styled.div`
       text-align: center;
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: 850px) {
       &:hover div {
         opacity: 0;
       }
