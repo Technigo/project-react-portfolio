@@ -98,6 +98,18 @@ export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .for-more {
+    height: 48px;
+    filter: invert(13%) sepia(18%) saturate(351%) hue-rotate(149deg) brightness(20%) contrast(95%);
+    margin: 0 .5rem;
+    width: 48px;
+
+    @media (min-width: 600px) {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
 `
 
 export const SubHeading = styled.h3`

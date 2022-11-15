@@ -1,13 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import styled from 'styled-components/macro';
+import Logos from './Logos';
 import { LogoContainer, StyledLogo } from './ReusableStyles.style';
 
 const ForMore = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
     <section>
       <h2>For more</h2>
-      <StyledDarkLogoContainer>
+      <Logos
+        style={{ position: 'static' }}
+        section="for-more"
+        githubLogo={githubLogo}
+        linkedinLogo={linkedinLogo} />
+      {/* <StyledDarkLogoContainer>
         <a href="https://www.linkedin.com/in/elin-s-683a867a/" aria-label="Link to LinkedIn profile">
           <DarkLogo src={linkedinLogo} alt="LinkedIn logo" />
         </a>
@@ -16,8 +22,8 @@ const ForMore = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
         </a>
         {/* <a href="https://stackoverflow.com/c/technigo/users/375" aria-label="Link to Stack Overflow profile">
           <DarkLogo src={stackOverflowLogo} alt="Stack Overflow logo" />
-        </a> */}
-      </StyledDarkLogoContainer>
+        </a>
+      </StyledDarkLogoContainer> */}
     </section>
   )
 }
