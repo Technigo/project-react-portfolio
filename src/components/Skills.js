@@ -14,6 +14,7 @@ const Skills = () => {
             <SkillsText>CSS3</SkillsText>
             <SkillsText>JavaScript ES6</SkillsText>
             <SkillsText>React</SkillsText>
+            <SkillsText>Redux</SkillsText>
             <SkillsText>Styled Components</SkillsText>
             <SkillsText>GitHub</SkillsText>
           </SkillsColumns>
@@ -28,8 +29,8 @@ const Skills = () => {
           </SkillsColumns>
           <SkillsColumns>
             <SkillsTitel>UPCOMING</SkillsTitel>
-            <SkillsText>Redux</SkillsText>
             <SkillsText>Node.js</SkillsText>
+            <SkillsText>Mongo DB</SkillsText>
           </SkillsColumns>
         </Grid>
       </InnerWrapper>
