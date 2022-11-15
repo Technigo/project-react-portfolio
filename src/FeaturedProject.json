@@ -4,36 +4,36 @@
       "title-description": "Movie site that lists recent movie releases",
       "project-description": "A multi-page React application using React Router.",
       "repo-name": "project-movies",
-      "netlify-name": "avocodo-news",
+      "netlify-name": "",
       "tags": ["React", "JSX", "API", "Pair-programming"],
       "image": "../Thumbnails/movie_site_thumbnail.jpg"
     },
     {
-      "title": "Happy Thoughts",
-      "title-description": "2 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-new",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/forkify.PNG"
+      "title": "todo app",
+      "title-description": "App that keep track of your tasks",
+      "project-description": "An application built in React and Redux.",
+      "repo-name": "project-to-do-app",
+      "netlify-name": "https://lisa-to-do.netlify.app/",
+      "tags": ["React", "Redux", "Styled components"],
+      "image": "../Thumbnails/to_do_thumbnail.jpg"
     },
     {
-      "title": "Survey",
-      "title-description": "3 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/mapty.PNG"
+      "title": "Happy thoughts",
+      "title-description": "Website where you can post and like happy thoughts.",
+      "project-description": "Built in React fetching and posting data to an API.",
+      "repo-name": "project-happy-Thoughts",
+      "netlify-name": "https://lisa-happy-thoughts.netlify.app/",
+      "tags": ["React", "JSX",  "API"],
+      "image": "../Thumbnails/happy_thoughts_thumbnail.jpg"
     },
     {
-      "title": "Music Releases",
-      "title-description": "4 news site about avocados",
-      "project-description": "A responsive web site using HTML & CSS",
-      "repo-name": "project-news-site",
-      "netlify-name": "avocodo-news",
-      "tags": ["HTML5", "CSS3"],
-      "image": "/Assets/project-thumbnails/guessmynumber.PNG"
+      "title": "quiz",
+      "title-description": "A movie quote quiz",
+      "project-description": "A multiple-choice quiz built with Redux",
+      "repo-name": "project-redux-quiz",
+      "netlify-name": "https://hippos-movie-quote-quiz.netlify.app/quiz",
+      "tags": ["Redux", "Mob-programming"],
+      "image": "../Thumbnails/quiz_thumbnail.jpg"
     }
 ]
   

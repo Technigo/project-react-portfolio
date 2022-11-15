@@ -99,4 +99,3 @@ export const SubParagraph = styled.p`
   texta-align: left;
 
 `;
-/* h4 is optional just write the size you want, and then the project you want. */
