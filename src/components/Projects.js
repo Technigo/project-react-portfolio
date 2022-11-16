@@ -16,7 +16,8 @@ const Projects = () => {
     'project-weather-app',
     'project-happy-thoughts',
     'project-music-releases',
-    'project-movies'
+    'project-movies',
+    'project-labyrinth'
   ]
   const otherProjectsToFilter = [
     'project-chat-bot',
