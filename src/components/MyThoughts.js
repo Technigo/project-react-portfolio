@@ -13,8 +13,14 @@ export const MyThoughts = () => {
           <Image src={compTalk} alt="" />
           <p><HighLighted>NOV 2022</HighLighted></p>
           <h3>Taking a plunge into the deep end</h3>
-          <p>…and staying afloat
-            Changing careers and entering the world of tech - the journey so far.
+          <p>What can I say, sometimes in life you surprise yourself.
+            That has certainly been the case with my newfound love for programming.
+            Thinking back to about five years ago, when I would ask my programmer
+            partner almost daily what was so interesting in that black screen with
+            the different coloured text (yet resisting most of his attempts to actually show me),
+            it’s not something I would’ve ever imagined enjoying.
+          {/* …and staying afloat
+            Changing careers and entering the world of tech - the journey so far. */}
           <HighLighted><span>{' >'}{'>'}</span></HighLighted>
           </p>
         </ProjectCard>
