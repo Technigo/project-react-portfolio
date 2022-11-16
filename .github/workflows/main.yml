@@ -24,4 +24,4 @@ jobs:
          mkdir ~/.ssh
          echo "${{ secrets.DEPLOYMENT_PRIVATE_KEY }}" > ~/.ssh/id_rsa
          chmod 600 ~/.ssh/id_rsa
-         scp -P2447 -r -o StrictHostKeyChecking=no code/* tina@brucette.yolocolo.se:webroot/
+         scp -P2447 -r -o StrictHostKeyChecking=no src/* tina@brucette.yolocolo.se:webroot/
