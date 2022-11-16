@@ -9,20 +9,20 @@ export const MyThoughts = () => {
     <OuterWrapper>
       <MainHeadline>MY THOUGHTS ABOUT CODE</MainHeadline>
       <InnerWrapper>
-        <ProjectCard href="#" target="_blank" rel="noopener noreferrer">
+        <ProjectCard href="https://medium.com/@tinabruce42/taking-a-plunge-into-the-deep-end-b919570557f" target="_blank" rel="noopener noreferrer">
           <Image src={compTalk} alt="" />
-          <p><HighLighted>MMM YYYY</HighLighted></p>
-          <h3>Learning to speak the computer&apos;s language</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Esse doloremque molestias asperiores
-          ipsa et aliquid non corrupti offici.
+          <p><HighLighted>NOV 2022</HighLighted></p>
+          <h3>Taking a plunge into the deep end</h3>
+          <p>…and staying afloat
+            Changing careers and entering the world of tech - the journey so far.
           <HighLighted><span>{' >'}{'>'}</span></HighLighted>
           </p>
         </ProjectCard>
         <ProjectCard href="#" target="_blank" rel="noopener noreferrer">
           <Image src={eyeForDesign} alt="" />
           <p><HighLighted>MMM YYYY</HighLighted></p>
-          <h3>Developing an eye for design</h3>
+          <h3>Coming soon...</h3>
+          {/* Developing an eye for design */}
           <p>Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Esse doloremque molestias asperiores
           ipsa et aliquid non corrupti offici.
