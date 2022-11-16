@@ -6,10 +6,11 @@ import { OuterWrapperSection, InnerWrapperSection, BlueTitle, TagWrapper } from 
 
 const TechSkills = () => {
   const skillTags = [
-    'HTML',
-    'CSS',
     'JavaScript ES6',
     'React',
+    'Redux',
+    'HTML',
+    'CSS',
     'API:s',
     'GitHub',
     'mob-programming',

@@ -7,11 +7,11 @@ const SkillsSection = () => {
   const skills = [
     {
       name: 'CODE',
-      tags: ['HTML5', 'CSS3', 'JavaScript ES6', 'React', 'GitHub']
+      tags: ['JavaScript ES6', 'React', 'Redux', 'HTML5', 'CSS3', 'GitHub', 'API:s']
     },
     {
       name: 'TOOLBOX',
-      tags: ['Photoshop', 'Illustrator', 'InDesign', 'AutoCad', 'Figma', 'Slack']
+      tags: ['Google Cloud', 'MongoDB', 'Photoshop', 'Illustrator', 'InDesign', 'AutoCad', 'Figma', 'Slack', ' Netlify']
     },
     {
       name: 'MORE',
@@ -19,7 +19,7 @@ const SkillsSection = () => {
     },
     {
       name: 'UPCOMING',
-      tags: ['Redux', 'Node.js']
+      tags: ['Node.js']
     }
   ]
   return (
