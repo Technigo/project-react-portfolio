@@ -19,8 +19,6 @@ export const MyThoughts = () => {
             partner almost daily what was so interesting in that black screen with
             the different coloured text (yet resisting most of his attempts to actually show me),
             it’s not something I would’ve ever imagined enjoying.
-          {/* …and staying afloat
-            Changing careers and entering the world of tech - the journey so far. */}
           <HighLighted><span>{' >'}{'>'}</span></HighLighted>
           </p>
         </ProjectCard>
