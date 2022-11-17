@@ -1,5 +1,5 @@
 import React from 'react'
-import OtherProjects from 'components/OtherProjects'
+/* import OtherProjects from 'components/OtherProjects' */
 import { Header } from './components/Header'
 import { Tech } from './components/Tech'
 import { Introduction } from './components/Introduction'
@@ -15,7 +15,7 @@ export const App = () => {
       <Introduction />
       <Tech color="#262626" />
       <FeaturedProjectCard color="#262626" tagColor="FFF9F3"> </FeaturedProjectCard>
-      <OtherProjects color="262626" tagcolor="FFF9F3"> </OtherProjects>
+      {/* <OtherProjects color="262626" tagcolor="FFF9F3"> </OtherProjects> */}
       <Skills />
       <ForMore color="#262626"> </ForMore>
       <Footer />

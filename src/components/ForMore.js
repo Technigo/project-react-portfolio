@@ -6,6 +6,37 @@ import GithubIcon from 'assets/Github_icon.png';
 /* import StackOverflowIcon from 'assets/StackO_icon.png'; */
 import { GITHUB_URL, LINKEDIN_URL/* , STACKOVERFLOW_URL */ } from 'utils/Urls';
 
+export const ForMore = ({ color }) => {
+  return (
+    <ForMoreWrapper>
+      <ForMoreHeader color={color}>FOR MORE</ForMoreHeader>
+      <ForMoreIconsWrapper>
+        <div className="iconContainer">
+          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+            <img src={LinkedinIcon} lang="eng" alt="Linkedin icon" />
+            <p>LINKEDIN</p>
+          </a>
+        </div>
+        <div className="iconContainer">
+          <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+            <img src={GithubIcon} lang="eng" alt="Github icon" />
+            <p>GITHUB</p>
+          </a>
+        </div>
+        {/* <div className="iconContainer">
+           <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
+            <img
+              src={StackOverflowIcon}
+              lang="eng"
+              alt="Stackoverflow icon" />
+            <p>STACK OVERFLOW</p>
+            </a>
+        </div> */}
+      </ForMoreIconsWrapper>
+    </ForMoreWrapper>
+  );
+};
+
 export const ForMoreWrapper = styled.div`
 background-image: url(${heroImage2});
 background-size: cover;
@@ -97,8 +128,7 @@ export const ForMoreIconsWrapper = styled.div`
     height: 60px;
     display: block;
     padding-top:50px;
-
-          }
+ }
   .iconContainer {
       height: 160px;
       width: 160px;
@@ -111,33 +141,3 @@ export const ForMoreIconsWrapper = styled.div`
   }
 `;
 
-export const ForMore = ({ color }) => {
-  return (
-    <ForMoreWrapper>
-      <ForMoreHeader color={color}>FOR MORE</ForMoreHeader>
-      <ForMoreIconsWrapper>
-        <div className="iconContainer">
-          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
-            <img src={LinkedinIcon} lang="eng" alt="Linkedin icon" />
-            <p>LINKEDIN</p>
-          </a>
-        </div>
-        <div className="iconContainer">
-          <a href={GITHUB_URL} target="_blank" rel="noreferrer">
-            <img src={GithubIcon} lang="eng" alt="Github icon" />
-            <p>GITHUB</p>
-          </a>
-        </div>
-        {/* <div className="iconContainer">
-           <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
-            <img
-              src={StackOverflowIcon}
-              lang="eng"
-              alt="Stackoverflow icon" />
-            <p>STACK OVERFLOW</p>
-            </a>
-        </div> */}
-      </ForMoreIconsWrapper>
-    </ForMoreWrapper>
-  );
-};

@@ -22,7 +22,7 @@
       "title-description": "Music releases list",
       "project-description": "A project in which I practised React, creating components and using data from Spotify. A responsive web site using HTML & CSS, also a practise in pair-programming.",
       "repo-name": "project-music-releases",
-      "netlify-name": "avocodo-news",
+      "netlify-name": "https://sofia-linda-project-music-release.netlify.app/",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "JSX","React Components", "React props"],
       "image": "/images/project-thumbnails/Music-releases.png"
     },
@@ -40,7 +40,7 @@
       "title-description": "A weather forecast app",
       "project-description": "This is a weather app showing current weather and a forecast for three cities. The app fetch data from an API, follows given design guidelines and is responsive. The project is made by team of 2 using basic branching and merging in Git.",
       "repo-name": "project-weather-app",
-      "netlify-name": "https://enchanting-dodol-8f5cc6.netlify.app/",
+      "netlify-name": "https://helpful-pony-3b978e.netlify.app/",
       "tags": ["HTML5", "CSS3", "API"],
       "image": "/images/project-thumbnails/Weather.png"
        },
@@ -49,7 +49,7 @@
       "title-description": "A multiple choise quiz",
       "project-description": "This is a multiple-choice quiz game, made using Redux and via mob programming. My first project using Redux.",
       "repo-name": "project-nredux-quiz",
-      "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/quiz",
+      "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/",
       "tags": ["HTML5", "CSS3","Redux"],
       "image": "/images/project-thumbnails/Quiz.png"
     },

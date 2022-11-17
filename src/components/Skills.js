@@ -6,10 +6,78 @@ export const Skills = () => {
     <SkillsOuterWrapper>
       <SkillsInnerWrapper>
         <SkillsHeader> SKILLS </SkillsHeader>
+        <SkillContainer>
+          <ColumnOne>
+            <div>
+              <SectionSubHeading>CODE</SectionSubHeading>
+              <SkillText>HTML5</SkillText>
+              <SkillText>CSS3</SkillText>
+              <SkillText>JavaScript ES6</SkillText>
+            </div>
+          </ColumnOne>
+          <ColumnTwo>
+            <SectionSubHeading>TOOLBOX</SectionSubHeading>
+            <SkillText>VSC</SkillText>
+            <SkillText>Github</SkillText>
+            <SkillText>Figma</SkillText>
+            <SkillText>Slack</SkillText>
+            <div>
+              <SectionSubHeading>UPCOMING</SectionSubHeading>
+              <SkillText>React</SkillText>
+              <SkillText>Redux</SkillText>
+              <SkillText>Node.js</SkillText>
+            </div>
+          </ColumnTwo>
+          <ColumnThree>
+            <SectionSubHeading>MORE</SectionSubHeading>
+            <SkillText>Ms Office</SkillText>
+            <SkillText>Project Management</SkillText>
+          </ColumnThree>
+        </SkillContainer>
       </SkillsInnerWrapper>
     </SkillsOuterWrapper>
   )
 }
+
+export const SectionSubHeading = styled.h3`
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 800;
+    padding-top: 10px;
+`
+// letter-spacing: 2px;
+export const SectionSubSubHeading = styled.h4`
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 600;
+    padding-top: 10px;
+`
+
+const SkillContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+`
+
+const SkillText = styled.p`
+  font-family: 'Roboto', sans-serif;
+`
+
+export const ColumnOne = styled.div`
+  
+`;
+
+export const ColumnTwo = styled.div`
+`;
+
+export const ColumnThree = styled.div`
+  
+`;
+
+export const SkillTagContainer = styled.div`
+  display: flex;
+`;
 
 export const SkillsOuterWrapper = styled.div`
   background-color: #FFF;
@@ -21,7 +89,7 @@ export const SkillsOuterWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.4;
   border-right: 1px solid black;
   border-bottom: 1px solid black;

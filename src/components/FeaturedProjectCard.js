@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FeaturedProject from 'FeaturedProject.json';
+import Github from 'assets/Github_icon.png';
 
 const FeaturedProjectCard = ({ color, tagColor }) => {
   const GITHUB_NAME = 'Sofia-Andersson';
@@ -13,7 +14,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
           return (
             <ProjectCard
               key={project.title}
-              href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+              href={`${project['netlify-name']}`}
               target="_blank">
               <ThumbnailWrapper url={project.image}>
                 <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
@@ -30,6 +31,18 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
                   </ProjectTags>
                 ))}
               </ul>
+              <Button>
+                <a
+                  href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                  alt="project landingpage"
+                  target="_blank"
+                  rel="noreferrer">
+                  <Icon2
+                    className="icon2"
+                    src={Github}
+                    alt="Github" />
+                </a>
+              </Button>
             </ProjectCard>
           );
         })}
@@ -187,4 +200,28 @@ const ProjectTags = styled.li`
     font-size: 14px;
     margin-right: 3px;
   }
+`;
+
+const Button = styled.button`
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid black;
+  width: 50px;
+  margin: -15px 0 10px 0;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  @media (max-width: 800px) {
+  }
+`;
+
+const Icon2 = styled.img`
+  height:25px;
+  width:25px;
+  padding: 5px 0 0 0;
 `;
