@@ -15,9 +15,7 @@ const Projects = () => {
   useEffect(() => {
     const options = {
       method: 'GET',
-      headers: {
-        Authorization: `token ${process.env.REACT_APP_API_TOKEN}`
-      }
+      headers: {}
     }
     fetch(BASE_URL, options)
       .then((response) => response.json())
@@ -99,8 +97,6 @@ const Projects = () => {
       return (
         <SingleWrap>
           <ProjectLinks key={project.id} href={project.homepage}>
-            {/* This part will only be rendered when it's set to true,
-            so the image only appears with projects in the featured list */}
             {addImage && <div className="image-component">
               <div className="image-overlay" />
               <h3 className="image-text">{project.name.replace(/-/g, ' ').toUpperCase()}</h3>
