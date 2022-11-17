@@ -173,6 +173,7 @@ const ProjectInfo = styled.p`
   font-size: 17px;
   line-height: 1.4;
   padding-right: 10px;
+  margin: 0;
 
   ${ProjectCard}:hover & {
     text-decoration: underline;
