@@ -11,11 +11,12 @@ export const Projects = () => {
       .then((data) => setProjectsList(data))
   }
   // To filter the array of projects
-  const FilteredProjects = projectsList.filter((item) => !item.name.includes('portfolio'));
+  const filteredProjects = projectsList.filter((item) => !item.name.includes('portfolio'))
+  const secondaryFiltering = filteredProjects.filter((item) => !item.name.includes('practice'))
 
   // Filtering my starred projects to make them the featured projects
-  const FeaturedProjects = FilteredProjects.filter((project) => project.stargazers_count !== 0)
-  const OtherProjects = FilteredProjects.filter((project) => project.stargazers_count === 0)
+  const FeaturedProjects = secondaryFiltering.filter((project) => project.stargazers_count !== 0)
+  const OtherProjects = secondaryFiltering.filter((project) => project.stargazers_count === 0)
 
   useEffect(() => {
     FetchProjects()
