@@ -33,9 +33,9 @@ const TechStack = () => {
         <SectionTitle>Tech Stack</SectionTitle>
         <TechStackWrap>
           <Highlight>JavaScript ES6 </Highlight>| HTML5 |<Highlight> React </Highlight> |
-          <Highlight> CSS </Highlight>| Flexbox | web Accessibly |  API:s |
+          <Highlight> CSS </Highlight>| Redux | Flexbox | APIs |
           <Highlight> Agile Methodologies</Highlight>  |  mob-programming |
-         pair-programming |  <Highlight>GitHub</Highlight>
+         pair-programming |  <Highlight>Git</Highlight> | web Accessibly |
         </TechStackWrap>
       </Wrapper>
     </TechSection>

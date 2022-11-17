@@ -55,8 +55,4 @@ color: #2B5A71;
 export const Highlight = styled.span`
   font-weight: 600;
   color: #C6F700;
-
-  &:hover{
-    color: #6583A4; 
-  }
 `;

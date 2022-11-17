@@ -16,7 +16,12 @@ const SkillSection = () => {
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Node.js</li>
-              <li>🔜 Redux</li>
+              <li>Redux</li>
+              <li>Espress.js</li>
+              <li>Git</li>
+              <li>Mongo DB</li>
+              <li>Styled Components</li>
+              <li>Material UI</li>
             </ul>
           </SkillsBox>
           <SkillsBox>
@@ -69,10 +74,6 @@ const SkillsBox = styled.div`
     font-size: 18px;
         grid-gap: 20px;
     @media (min-width: 700px) {
-    &:hover{
-      font-weight: 500;
-      color: #C6F700;
-    }
   }
 }
   h5 {

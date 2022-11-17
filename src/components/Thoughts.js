@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
-import ArticleMockup from '../images/ArticleIMGBlue.png'
+import ArticleMockup from '../images/ArtigleGoodGirl2.png'
 
 const Thoughts = () => {
   return (
@@ -13,7 +13,19 @@ const Thoughts = () => {
             <ArticleImg src={ArticleMockup} />
           </ImageWrapper>
           <ArticleWrapper>
-            <Date>18 October</Date>
+            <Date>17 November</Date>
+            <a
+              href="https://medium.com/@ceciliafraanlund/confessions-of-a-good-girl-ff3babcbb2ca"
+              target="_blank"
+              rel="noopener noreferrer">
+              <h4> Final Project and performance anxiety</h4>
+              <p>
+              With less than four weeks left of of this final sprint,
+              it´s time to think about the final project. In fact, I have 10
+              days to come up with a fullstack project <Span>&gt;&gt;</Span>
+              </p>
+            </a>
+            <Date>16 October</Date>
             <a
               href="https://medium.com/@ceciliafraanlund/8-things-i-wish-i-knew-before-starting-a-tech-boot-camp-cca7e03bf133"
               target="_blank"
@@ -21,9 +33,8 @@ const Thoughts = () => {
               <h4>8 Things I wish I knew before starting a Tech Bootcamp  </h4>
               <p>
               This week I completed the second sprint and I am almost halfway through
-              the program and I am not the same person who started this journey.
-              Including the pre-project and intro days, I’ve been a
-              coder for 10 weeks. <Span>&gt;&gt;</Span>
+              the program and I am not the same person who started this
+              journey <Span>&gt;&gt;</Span>
               </p>
             </a>
           </ArticleWrapper>
@@ -53,6 +64,10 @@ padding: 5%;
   a {
     text-decoration: none;
     color: white;
+  }
+
+  p {
+    margin-top: 3px;
   }
 
 @media (min-width: 900px) {
