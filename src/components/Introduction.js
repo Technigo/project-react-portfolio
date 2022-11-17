@@ -7,6 +7,7 @@ export const Introduction = () => {
   return (
     <IntroductionWrapper>
       <IntroductionContent>
+        <Line /><Dot />
       Sofia is an ambitious Frontend Developer with an interest
        for user experience, function and design. She has a
        solution oriented mindset, easily adapt to new conditions
@@ -29,13 +30,7 @@ text-align: center;
 
 export const IntroductionContent = styled.p`
 
-.line {
-    border: 1px solid black;
-    width: 40px;
-    display: inline-block;
-    margin-bottom: 4px;
-    margin-right: -8px;
-}
+width: 80%;
 
 @media (min-width: 668px) and (max-width: 1023px){
     width:70%;
@@ -54,3 +49,19 @@ export const IntroductionContent = styled.p`
   }
 }
 `;
+
+const Line = styled.span`
+  border: 1px solid black;
+  width: 40px;
+  display: inline-block;
+  margin-bottom: 4px;
+`
+
+const Dot = styled.span`
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+`

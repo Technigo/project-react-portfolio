@@ -9,7 +9,7 @@
       "image": "/images/project-thumbnails/ToDo-App-Mockup.png"
     },
     {
-      "title": "HAPPY THOUGHTS",
+      "title": "Happy thoughts",
       "title-description": "A twitter-like app",
       "project-description": "A responsive web site created in React which is fetching and posting data to an API, using useState and useEffect hooks.",
       "repo-name": "project-happy-thoughts",
@@ -48,7 +48,7 @@
       "title": "Quiz",
       "title-description": "A multiple choise quiz",
       "project-description": "This is a multiple-choice quiz game, made using Redux and via mob programming. My first project using Redux.",
-      "repo-name": "project-nredux-quiz",
+      "repo-name": "project-redux-quiz",
       "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/",
       "tags": ["HTML5", "CSS3","Redux"],
       "image": "/images/project-thumbnails/Quiz.png"
