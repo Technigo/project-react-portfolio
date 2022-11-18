@@ -41,10 +41,15 @@ export const Paragraph = styled.p`
   font-size: 1.06rem;
   line-height: 1.8rem;
   padding-top: 0.8rem;
+  margin: 0 auto;
 
   @media (min-width: 668px) {
     font-size: 1.2rem;
     line-height: 1.8rem;
+  }
+
+  @media (min-width: 1025px) {
+    width: 68%;
   }
 `
 
