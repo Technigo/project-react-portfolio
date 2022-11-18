@@ -26,8 +26,8 @@ const ProjectCard = () => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <ProjectTitle>{item.title}</ProjectTitle>
+                <ProjectDescription>{item.description}</ProjectDescription>
               </Link>
-              <ProjectDescription>{item.description}</ProjectDescription>
             </TitleContainer>
             <TagContainer>
               {item.tools.map((tag) => (

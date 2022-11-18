@@ -100,6 +100,7 @@ border: none;
 font-size: 12px;
 height: 14px;
 font-weight: 600;
+border-radius: 5px;
 padding: 5px;
 &:hover{
     color: #C6F700;

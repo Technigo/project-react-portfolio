@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
-import ArticleMockup from '../images/ArtigleGoodGirl2.png'
+import ArticleMockup from '../images/Coding.png'
 
 const Thoughts = () => {
   return (

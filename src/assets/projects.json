@@ -1,12 +1,21 @@
 [
   {
-    "title": "AI RENDERED IMAGES QUIZ",
+    "title": "Labyrinth game",
+    "id": "6",
+    "image": "",
+    "netlify": "https://developerslabyrinth.netlify.app",
+    "github": "https://github.com/Sneezan/project-labyrinth",
+    "description": "Navigate through the semi-fun developers labyrinth",
+    "tools": ["React", "Redux", "JavaScript", "pair-programming"]
+  },
+  {
+    "title": "Small backend project",
     "id": "8",
     "image": "",
-    "netlify": "https://quiz-ai.netlify.app/",
-    "github": "https://github.com/Sneezan/project-redux-quiz",
-    "description": "Do you really have a better eye than an AI?",
-    "tools": ["React", "Redux", "JavaScript", "mob-programming"]
+    "netlify": "",
+    "github": "https://github.com/Sneezan/project-express-api",
+    "description": "Backend project building an API with no frontend",
+    "tools": ["Backend", "Node.js", "RESTapi"]
   },
     {
         "title": "Happy Thoughts",
@@ -17,23 +26,14 @@
         "description": "Retro-style react website where you can send & like happy thoughts with API",
         "tools": ["CSS", "JavaScript", "React", "API"]
       },
-      {
-        "title": "Cloud - a weather app",
-        "id": "10",
+      { 
+        "title": "AI RENDERED IMAGES QUIZ",
+        "id": "7",
         "image": "",
-        "netlify": "https://weatherclouds.netlify.app",
-        "github": "https://github.com/Sneezan/project-weather-app",
-        "description": "Simple and stylish weather app built with JavaScript & open weather API",
-        "tools": ["JavaScript ES6", "API", "CSS"]
-      },
-      {
-        "title": "React portfolio",
-        "id": "11",
-        "image": "",
-        "netlify": "",
-        "github": "https://github.com/Sneezan/project-react-portfolio",
-        "description": "You are viewing this project right now! But click to see the code on GitHub",
-        "tools": ["React", "Styled components", "JavaScript"]
+        "netlify": "https://quiz-ai.netlify.app/",
+        "github": "https://github.com/Sneezan/project-redux-quiz",
+        "description": "Do you really have a better eye than an AI?",
+        "tools": ["React", "Redux", "JavaScript", "mob-programming", "routes"]
       },
       {
         "title": "Guess Who Game",

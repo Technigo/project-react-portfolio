@@ -23,20 +23,40 @@
 	  "title": "Todo today",
 	  "overlay": "todo app",
 	  "id": "3",
-	  "image": "https://i.imgur.com/pZ7Baka.png",
+	  "image": "https://i.imgur.com/h2tJ5f5.png",
 	  "netlify": "https://complete-today.netlify.app",
 	  "github": "https://github.com/Sneezan/project-todos",
 	  "description": "A todo app built with react and redux, packaged beautifully.",
-	  "tools": ["React", "Redux", "JavaScript ES6", "FAB", "Styled components"]
+	  "tools": ["React", "Redux", "JavaScript ES6", "FAB" ]
 	},
 	{
-	  "title": "Dental self assessment",
-	  "overlay": "The Self Assessment",
-	  "id": "4",
-	  "image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
-	  "netlify": "https://selfassesment.netlify.app",
-	  "github": "https://github.com/Sneezan/project-survey",
-	  "description": "An homage to my previous career, now patients can self-assess.",
-	  "tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
-	}
+	"title": "Cecilia's portfolio",
+	"overlay": "The portfolio",
+	"id": "4",
+	"image": "https://i.imgur.com/fxVCs5d.png",
+	"netlify": "https://github.com/Sneezan/project-react-portfolio",
+	"github": "https://github.com/Sneezan/project-react-portfolio",
+	"description": "You are actually viewing this project live right now!Click to view on GitHub",
+	"tools": ["React", "Styled components", "JavaScript"]
+  },
+  {
+	"title": "Dental self assessment",
+	"overlay": "The Self Assessment",
+	"id": "5",
+	"image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
+	"netlify": "https://selfassesment.netlify.app",
+	"github": "https://github.com/Sneezan/project-survey",
+	"description": "An homage to my previous career, now patients can self-assess.",
+	"tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
+  },
+  {
+  "title": "Cloud - a weather app",
+  "overlay": "A weather app",
+  "id": "6",
+  "image": "https://i.imgur.com/iATc4NK.png",
+  "netlify": "https://weatherclouds.netlify.app",
+  "github": "https://github.com/Sneezan/project-weather-app",
+  "description": "Simple and stylish weather app built with JavaScript & open weather API",
+  "tools": ["JavaScript ES6", "API", "CSS"]
+}
   ]
