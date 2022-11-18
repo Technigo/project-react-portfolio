@@ -1,4 +1,21 @@
 [
+  {
+    "title": "Music releases",
+    "title-description": "New music App",
+    "project-description": "An app where you can see newly released music",
+    "repo-name": "project-music-releases",
+    "netlify-name": "neah-and-linnea-music-releases",
+    "tags": ["React", "API", "Pair-programming"]
+  },
+  {
+    "title": "Sport Survey",
+    "title-description": "Sport survey app",
+    "project-description": "A survey about physical activity among adults",
+    "repo-name": "project-survey",
+    "netlify-name": "sport-survey-neah",
+    "tags": ["Components", "JavaScript ES6"]
+  },
+  
     {
       "title": "Guess Who",
       "title-description": "Guess who game",

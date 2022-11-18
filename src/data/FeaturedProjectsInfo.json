@@ -1,22 +1,33 @@
 [
-    {
-      "title": "Popular Movies",
-      "title-description": "Popular Movies App",
-      "project-description": "A responsive web site displaying popular movies and their details",
-      "repo-name": "project-movies",
-      "netlify-name": "project-movies-neah-viktor",
-      "tags": ["React", "API", "Routes", "Pair-programming"],
-      "image": "/Assets/thumbnail-movies.png"
-    },
-    {
-      "title": "New Music",
-      "title-description": "New music releases App",
-      "project-description": "Pair project that displays recently released music",
-      "repo-name": "project-music-releases",
-      "netlify-name": "neah-and-linnea-music-releases",
-      "tags": ["React", "API", "Pair-programming"],
-      "image": "/Assets/thumbnail-music-releases.png"
-    },
+  {
+    "title": "Todos",
+    "title-description": "Todo App",
+    "project-description": "A responsive web displaying popular a todo list",
+    "repo-name": "project-todos",
+    "netlify-name": "todos-neah",
+    "tags": ["React", "Redux"],
+    "image": "/Assets/thumbnail-todos.png"
+  },
+
+  {
+    "title": "Movie Quiz",
+    "title-description": "Movie Quiz App",
+    "project-description": "A quiz that tests your knowledge of movie quotes",
+    "repo-name": "project-redux-quiz",
+    "netlify-name": "hippos-movie-quote-quiz",
+    "tags": ["React", "Redux", "Routes", "Mob-programming"],
+    "image": "/Assets/thumbnail-quote-quiz.png"
+  },
+
+  {
+    "title": "Popular Movies",
+    "title-description": "Popular Movies App",
+    "project-description": "A responsive web site displaying popular movies and their details",
+    "repo-name": "project-movies",
+    "netlify-name": "project-movies-neah-viktor",
+    "tags": ["React", "API", "Routes", "Pair-programming"],
+    "image": "/Assets/thumbnail-movies.png"
+  },
     {
       "title": "Happy Thoughts",
       "title-description": "Post happy thoughts app",
@@ -25,15 +36,6 @@
       "netlify-name": "happy-thoughts-neahr",
       "tags": ["React", "API", "CSS"],
       "image": "/Assets/thumbnail-happy-thoughts.png"
-    },
-    {
-      "title": "Sport Survey",
-      "title-description": "Sport survey app",
-      "project-description": "A survey about physical activity among adults",
-      "repo-name": "project-survey",
-      "netlify-name": "sport-survey-neah",
-      "tags": ["Components", "JavaScript ES6"],
-      "image": "/Assets/thumbnail-survey.png"
     }
   ]
   
