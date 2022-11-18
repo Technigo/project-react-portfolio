@@ -14,14 +14,17 @@ export const Skills = () => {
           <SkillName primary>HTML5</SkillName>
           <SkillName primary>APIs</SkillName>
           <SkillName primary>React</SkillName>
-          <SkillName primary>🔜 Redux</SkillName>
+          <SkillName primary>Redux</SkillName>
+          <SkillName primary>🔜MongoDB</SkillName>
         </SkillsList>
         <SkillsList>
           <OverlinedHeading>TOOLBOX</OverlinedHeading>
           <SkillName primary>GitHub</SkillName>
           <SkillName primary>VSCode</SkillName>
           <SkillName primary>Figma</SkillName>
+          <SkillName primary>Canva</SkillName>
           <SkillName primary>Slack</SkillName>
+          <SkillName primary>Google Cloud</SkillName>
           <SkillName primary>Stack Overflow</SkillName>
         </SkillsList>
         <SkillsList>
