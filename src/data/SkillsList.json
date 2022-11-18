@@ -1,7 +1,7 @@
 [
     {
       "skill-title": "Code",
-      "skill-list": ["HTML", "CSS", "Javascript", "React"]
+      "skill-list": ["HTML", "CSS", "Javascript", "React", "Redux"]
     },
     {
         "skill-title": "Toolbox",
@@ -13,6 +13,6 @@
       },
       {
         "skill-title": "Upcoming",
-        "skill-list": ["Node.js", "Redux"]
+        "skill-list": ["Node.js", "MongoDB", "Python"]
       }
   ]
