@@ -6,7 +6,7 @@ export const Footer = () => {
     <OuterWrapper backGroundcolor="#5A415A">
       <MediumHeadline color="white">CONTACT</MediumHeadline>
       <Paragraph color="white">Tina Bruce</Paragraph>
-      <Paragraph color="white">+46 72 181 0112</Paragraph>
+      {/* <Paragraph color="white">+46 72 181 0112</Paragraph> */}
       <Paragraph color="white">tinabruce42@hotmail.com</Paragraph>
     </OuterWrapper>
   )

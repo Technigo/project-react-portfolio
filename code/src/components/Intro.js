@@ -9,10 +9,11 @@ export const Intro = () => {
       <InnerWrapper backGroundcolor="#f4f4f4">
         <Paragraph>
           <StartFigure src={startFigure} alt="lollipop separator" />
-           Hello! I’m a frontend developer with a particular interest in the problem-solving
-          aspect of programming. I have a background in working with clinical trials in the
-          pharmaceutical industry, which has developed an attention to detail whilst working
-          towards a bigger end goal.
+           Hello! I am a frontend developer who previously worked with clinical trial
+           start-up in the pharmaceutical industry. Detail-oriented and a relentless
+           problem solver, the puzzle-like aspect of programming is what
+           draws me to it the most - understanding how things connect and seeing the
+           immediate effects of my work.
         </Paragraph>
       </InnerWrapper>
     </OuterWrapper>
