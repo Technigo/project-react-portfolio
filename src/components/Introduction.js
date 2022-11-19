@@ -7,12 +7,13 @@ export const Introduction = () => {
     <IntroductionWrapper primary>
       <MainText primary>Hello! My name is Kartika,
         and I&apos;m a curious front-end developer from Indonesia
-        who&apos;s currently based in Sweden.
+        who&apos;s who&apos;s aiming to be a fullstack developer.
         I am an eager learner and always committed to finish all tasks at hand.
       </MainText>
-      <MainText primary>I have worked in retail,
-        which fast-paced nature has developed my communication, selling, customer service,
-        and problem solving skills.
+      <MainText primary>I am always up to challenges and willing to learn.
+      I am flexible and I adapt easily in a new environment.
+      I love working in teams but I can also initiate individual projects with little supervision
+      as I am discipline and efficient with my time.
       </MainText>
     </IntroductionWrapper>
   )

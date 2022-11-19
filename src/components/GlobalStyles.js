@@ -55,7 +55,7 @@ export const GridWrapper = styled.section`
 export const MainText = styled.p`
   font-size: 15px;
   color: ${(props) => (props.primary ? '#003333' : 'white')};
-  line-height: 25px;
+  line-height: 35px;
   margin: 0;
 
   @media (min-width: 600px) and (max-width: 1023px){
