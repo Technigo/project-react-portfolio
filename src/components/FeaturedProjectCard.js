@@ -50,7 +50,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
       <ForMore
         href="https://github.com/Sofia-Andersson"
         alt="Sofias_github_page"
-        target="_blank"> Go to github to see more of my projects...
+        target="_blank"> Go to github to see more projects created by Sofia...
       </ForMore>
     </Wrapper>
   );
