@@ -8,11 +8,12 @@ export const About = () => {
       <InnerWrapper>
         <SiteSection>
           <AboutText>
-            <p><Line /><Dot /> Hello! I&apos;m Annika. A Frontend developer, with
-            ambition to go full stack.After 10+ years in the travel industry, with
-            experience in customer service, business change and as product owner, I
-            took the opportunity to do a career change. My curiosity for
-            creative, simple IT solutions and problem solving led me into coding.
+            <p><Line /><Dot /> Hello! I&apos;m Annika, a frontend developer with 10+ years
+            background in the travel industry. Most recently I have worked as a business change
+            driver and as a product owner. Working close to developers raised a curiosity for
+            coding. I want to create user friendly applications.
+            I’m solution-focused and a creative person who is excited
+            to learn more.
             </p>
           </AboutText>
         </SiteSection>
@@ -22,7 +23,7 @@ export const About = () => {
 }
 
 const Line = styled.span`
-  border: 1px solid var(--color-darkblue);
+  border: 1px solid var(--color-brown);
   width: 40px;
   display: inline-block;
   margin-bottom: 4px;
@@ -30,7 +31,7 @@ const Line = styled.span`
 const Dot = styled.span`
   height: 10px;
   width: 10px;
-  background-color: var(--color-darkblue);
+  background-color: var(--color-brown);
   border-radius: 50%;
   display: inline-block;
 `

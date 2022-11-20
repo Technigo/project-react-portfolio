@@ -3,25 +3,6 @@ import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper } from './global/GlobalStyling';
 
 export const Footer = () => {
-  const FooterBackground = styled.footer`
-    text-align: center;
-    background-color: var(--color-darkblue);
-    color: var(--color-white);
-    width: 100%;
-    padding: 7%;
-    `
-  const FooterHeading = styled.h2`
-    text-transform: uppercase;
-    color: var(color-white);
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    `
-  const FooterEmail = styled.a`
-    color: var(--color-white);
-    font-size: 16px;
-    text-decoration: none;
-  `
   return (
     <OuterWrapper background>
       <FooterBackground>
@@ -35,3 +16,23 @@ export const Footer = () => {
     </OuterWrapper>
   )
 }
+
+const FooterBackground = styled.footer`
+text-align: center;
+background-color: var(--color-brown);
+color: var(--color-white);
+width: 100%;
+padding: 7%;
+`
+const FooterHeading = styled.h2`
+text-transform: uppercase;
+color: var(color-white);
+margin-bottom: 20px;
+font-weight: 700;
+font-size: 20px;
+`
+const FooterEmail = styled.a`
+color: var(--color-white);
+font-size: 16px;
+text-decoration: none;
+`

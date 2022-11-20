@@ -18,6 +18,7 @@ export const Skills = () => {
               <p>Javascript</p>
               <p>Jsx</p>
               <p>React</p>
+              <p>Redux</p>
               <p>PHP</p>
             </SkillsChild>
             <SkillsChild>
@@ -28,6 +29,7 @@ export const Skills = () => {
               <p>VSCode</p>
               <p>Sublime text</p>
               <p>PHPStorm</p>
+              <p>MYSQL</p>
             </SkillsChild>
             <SkillsChild>
               <h3>More</h3>
@@ -37,7 +39,6 @@ export const Skills = () => {
             </SkillsChild>
             <SkillsChild>
               <h3>Upcoming</h3>
-              <p>Redux</p>
               <p>Node.js</p>
             </SkillsChild>
           </SkillsParent>
@@ -55,5 +56,5 @@ const SkillsParent = styled.div`
   justify-content: center;
 `
 const SkillsChild = styled.div`
-  width: 200px;
+  width: 150px;
 `

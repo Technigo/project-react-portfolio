@@ -1,158 +1,97 @@
-import React from 'react';
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
-import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle, Tag } from './global/GlobalStyling';
+import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
+import { ProjectCard } from './ProjectCard'
 import data from '../data.json'
 
+const projectsPerRow = 2;
+
 export const Projects = () => {
+  const [next, setNext] = useState(projectsPerRow);
+  const loadMoreProjects = () => {
+    setNext(next + projectsPerRow);
+  };
   return (
     <OuterWrapper>
       <InnerWrapper>
         <SiteSection>
-          <SectionTitle>
-            <p>Featured projects</p>
-          </SectionTitle>
-          <CardContainer>
-            {data.map((item) => (
-              item.id < 3 ? (
-                <CardInfo key={item.title}>
-                  <ProjectLink
-                    href={item.netlify}
-                    alt="project landingpage"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <CardOverlay />
-                    <img src={item.image} alt="project poster" />
-                  </ProjectLink>
-                  <DetailsWrapper>
-                    <ProjectCardHeading>{item.title}</ProjectCardHeading>
-                    <a
-                      href={item.github}
-                      alt="project landingpage"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <p>{item.description}</p>
-                    </a>
-                    <Tag>
-                      {item.tools.map((tag) => (
-                        <p key={tag}>{tag}</p>
-                      ))}
-                    </Tag>
-                  </DetailsWrapper>
-                </CardInfo>
-              ) : null
+          <SectionTitle>Featured Projects</SectionTitle>
+          <FeaturedProjectsWrapper>
+            {data.filter((project) => project.featured).map((project) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                href={project.github}
+                image={project.image}
+                name={project.name}
+                tools={project.tools}
+                featured />
             ))}
-          </CardContainer>
+          </FeaturedProjectsWrapper>
 
-          <OtherProjectHeading>other projects</OtherProjectHeading>
-          <OtherProjects>
-            {data.map((item) => (
-              item.id > 2 ? (
-                <OtherProjectsWrapper>
-                  <OtherProjectsList key={item.title}>
-                    <ProjectLink
-                      href={item.netlify}
-                      alt="project landingpage"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <p>{item.title}</p>
-                    </ProjectLink>
-                    <ProjectLinkDescription
-                      href={item.github}
-                      alt="project landingpage"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <p>{item.description}<span>{'>>>'}</span></p>
-                    </ProjectLinkDescription>
-                    <Tag>
-                      {item.tools.map((tag) => (
-                        <p key={tag}>{tag}</p>
-                      ))}
-                    </Tag>
-                  </OtherProjectsList>
-                </OtherProjectsWrapper>
-              ) : null
+          <OtherProjectHeading>Other Projects</OtherProjectHeading>
+          <OtherProjectsWrapper>
+            {data.filter((project) => !project.featured).reverse().slice(0, next).map((project) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                tools={project.tools}
+                href={project.github} />
             ))}
-          </OtherProjects>
+            {next < data.length && (
+              <LoadMoreWrapper>
+                <LoadMoreProjectsButton
+                  className="mt-4 button-one"
+                  onClick={loadMoreProjects}>
+                Load more
+                </LoadMoreProjectsButton>
+              </LoadMoreWrapper>
+            )}
+          </OtherProjectsWrapper>
         </SiteSection>
       </InnerWrapper>
     </OuterWrapper>
   )
 }
 
-const CardContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    margin-bottom: 20px;
-    a {
-      text-decoration: none;
-      color: #000;
-      position: relative;
-      display: block;
-    }
-    @media (max-width: 798px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
+const LoadMoreWrapper = styled.div`
+width: 100%;
+text-align: center;
 `
-const CardInfo = styled.div`
-    margin-top: 50px;
-    padding-bottom: 30px;
-    width: 100%;
 
-    img {
-      width: 100%;
-      height:250px;
-      display: block;
-    }
+const LoadMoreProjectsButton = styled.button`
+border: none;
+border-top: 1px solid var(--color-turquoise);
+border-bottom: 1px solid var(--color-turquoise);
+margin-top: 30px;
+background-color: var(--color-white);
+cursor: pointer;
+transition: transform .2s;
+
+&:hover {
+  transform: scale(1.5);
+}
 `
-const CardOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(156, 166, 197, 0.2);
-  transition: all 0.3s ease-in-out;
-  
-  &:hover {
-    background-color: transparent;
-  }
-`
-const DetailsWrapper = styled.div`
+
+const FeaturedProjectsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   text-align: left;
+  @media (max-width: 667px) {
+    grid-template-columns: 1fr;
+  }
 `
-const ProjectCardHeading = styled.h3`
-    color: var(--color-mediumblue);
+const OtherProjectsWrapper = styled.div`
+  margin-bottom: 30px;
+  text-align: left;
   `
-
 const OtherProjectHeading = styled.h3`
-    color: var(--color-darkblue);
+    color: #548179;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 30px;
-  `
-
-const OtherProjects = styled.div`
-    padding: 20px 0;
-  `
-
-const OtherProjectsWrapper = styled.div`
-  margin-bottom: 30px;
-  `
-
-const OtherProjectsList = styled.p`
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: left;
-    color:  var(--color-darkblue);
-  `
-
-const ProjectLink = styled.a`
-    color:  var(--color-mediumblue);
-  `
-
-const ProjectLinkDescription = styled.a`
-    text-decoration: none;
-    color:  var(--color-darkblue);
+    margin-top: 50px;
   `

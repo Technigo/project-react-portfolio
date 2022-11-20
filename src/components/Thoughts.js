@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, SiteSection, SectionTitle } from './global/GlobalStyling';
+import { PolaroidTest } from './PolaroidThoughts'
 
 export const Thoughts = () => {
   return (
@@ -10,6 +11,7 @@ export const Thoughts = () => {
           <SectionTitle>
             <p>My thoughts</p>
           </SectionTitle>
+          <PolaroidTest />
           <ArticleContainer>
             <ThoughtArticle>
               <Date>Oct 2022</Date>

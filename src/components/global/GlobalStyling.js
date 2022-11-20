@@ -17,13 +17,14 @@ export const OuterWrapper = styled.div`
     background-color: ${(props) => (props.backgroundLightGrey ? 'var(--color-lightgrey)' : 'var(--color-text-white)')};
 `
 export const InnerWrapper = styled.div`
-    width: 75%;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
 `
 
 export const SectionTitle = styled.div`
     padding: 10px;   
-    background-color: var(--color-bronze);
+    background-color: var(--color-turquoise);
     color: white;
     margin: 0 auto 30px;
     border-radius: 3px;
@@ -38,11 +39,11 @@ export const Tag = styled.div`
     flex-wrap: wrap;
 
     p {
-    background: var(--color-darkblue);
+    background: var(--color-turquoise);
     color: var(--color-white);
     border-radius: 5px;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-decoration: none;
     line-height: 12px;

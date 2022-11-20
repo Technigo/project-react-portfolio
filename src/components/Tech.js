@@ -11,18 +11,18 @@ export const Tech = () => {
             <p>tech</p>
           </SectionTitle>
           <p>
-            <TechSkillHighlight>HTML</TechSkillHighlight>,
-            <TechSkillHighlight>CSS</TechSkillHighlight>,
-            Flexbox,
-            Grid,
-            <TechSkillHighlight> JavaScript</TechSkillHighlight>,
-            <TechSkillHighlight> React</TechSkillHighlight>,
-            <TechSkillHighlight> JSX</TechSkillHighlight>,
-            <TechSkillHighlight> Redux</TechSkillHighlight>,
-            Web Accessability,
-            API:s,
-            Mob-programming,
-            Pair-programming,
+            <TechSkillHighlight>HTML</TechSkillHighlight> |
+            <TechSkillHighlight> CSS</TechSkillHighlight> |
+            Flexbox |
+            Grid |
+            <TechSkillHighlight> JavaScript</TechSkillHighlight> |
+            <TechSkillHighlight> React</TechSkillHighlight> |
+            <TechSkillHighlight> JSX</TechSkillHighlight> |
+            <TechSkillHighlight> Redux</TechSkillHighlight> |
+            Web Accessability |
+            API:s |
+            Mob-programming |
+            Pair-programming |
             GitHub
           </p>
         </SiteSection>
