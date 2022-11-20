@@ -132,7 +132,7 @@ export const Footer = () => {
       <FooterContent>
         <p className="contact">CONTACT</p>
         <p>Sofia Andersson</p>
-        <p>+46 70 00 00 00</p>
+        {/* <p>+46 70 00 00 00</p> */}
         <typingWrapper>
           <div className="typing">sofia.e.i.andersson@gmail.com</div>
         </typingWrapper>

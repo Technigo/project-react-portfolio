@@ -47,6 +47,11 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
           );
         })}
       </FeaturedProjectWrapper>
+      <ForMore
+        href="https://github.com/Sofia-Andersson"
+        alt="Sofias_github_page"
+        target="_blank"> Go to github to see more of my projects...
+      </ForMore>
     </Wrapper>
   );
 };
@@ -225,4 +230,11 @@ const Icon2 = styled.img`
   height:25px;
   width:25px;
   padding: 5px 0 0 0;
+`;
+
+const ForMore = styled.a`
+margin: 0 0 40px 0;
+color: black;
+font-size: 17px;
+font-weight: bold;
 `;

@@ -13,6 +13,9 @@ export const Skills = () => {
               <SkillText>HTML5</SkillText>
               <SkillText>CSS3</SkillText>
               <SkillText>JavaScript ES6</SkillText>
+              <SkillText>React</SkillText>
+              <SkillText>Redux</SkillText>
+              <SkillText>Node.js</SkillText>
             </div>
           </ColumnOne>
           <ColumnTwo>
@@ -21,12 +24,6 @@ export const Skills = () => {
             <SkillText>Github</SkillText>
             <SkillText>Figma</SkillText>
             <SkillText>Slack</SkillText>
-            <div>
-              <SectionSubHeading>UPCOMING</SectionSubHeading>
-              <SkillText>React</SkillText>
-              <SkillText>Redux</SkillText>
-              <SkillText>Node.js</SkillText>
-            </div>
           </ColumnTwo>
           <ColumnThree>
             <SectionSubHeading>MORE</SectionSubHeading>

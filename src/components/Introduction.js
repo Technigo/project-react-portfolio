@@ -25,7 +25,7 @@ color: black;
 display: flex;
 justify-content: center;
 padding: 50px 0;
-text-align: center;
+text-align: start;
 `;
 
 export const IntroductionContent = styled.p`

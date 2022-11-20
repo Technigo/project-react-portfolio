@@ -8,7 +8,7 @@ export const Tech = ({ color }) => {
       <TextWrapper>
         <TextContent className="ScrollLeft">
      HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+Node.js, Mongo DB, Web Accessibilitly, API:s, mob-programming, pair-programming, Github.
         </TextContent>
       </TextWrapper>
     </TechWrapper>
@@ -37,8 +37,8 @@ const TechHeader = styled.h2`
   margin-top:40px;
 
   @media (max-width: 1023px) {
-    font-size: 20px;
-    line-height: 1;
+    margin-top: 60px;
+     font-size: 40px;
   }
   @media (min-width: 1024px) {
      margin-top: 60px;
