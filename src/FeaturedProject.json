@@ -2,7 +2,7 @@
     {
       "title": "To Do",
       "title-description": "A To do list App",
-      "project-description": "A To Do App to which the user can add and remove tasks, using Redux. The user can mark a task as completed or not and, using custom checkboxes.",
+      "project-description": "A To Do App to which the user can add and remove tasks, using Redux. The user can mark a task as completed or not, using custom checkboxes.",
       "repo-name": "project-todos",
       "netlify-name": "https://todo-sofia.netlify.app",
       "tags": ["HTML", "CSS", "Styled Components","React","JSX","Redux"],
@@ -41,7 +41,7 @@
       "project-description": "This is a weather app showing current weather and a forecast for three cities. The app fetch data from an API, follows given design guidelines and is responsive. The project is made by team of 2 using basic branching and merging in Git.",
       "repo-name": "project-weather-app",
       "netlify-name": "https://helpful-pony-3b978e.netlify.app/",
-      "tags": ["HTML5", "CSS3", "API"],
+      "tags": ["HTML5", "CSS3", "API", "JavaScript"],
       "image": "/images/project-thumbnails/Weather.png"
        },
     {
@@ -50,7 +50,7 @@
       "project-description": "This is a multiple-choice quiz game, made using Redux and via mob programming. My first project using Redux.",
       "repo-name": "project-redux-quiz",
       "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/",
-      "tags": ["HTML5", "CSS3","Redux"],
+      "tags": ["HTML5", "CSS3","Redux", "Styled Components", "JavaScript"],
       "image": "/images/project-thumbnails/Quiz.png"
     },
     {
@@ -65,7 +65,7 @@
     {
       "title": "Chatbot",
       "title-description": "A Chatbot",
-      "project-description": "In this project I created a Guess Who game using JavaScript, practising objects, arrays and functions.",
+      "project-description": "In this project I created a chatbot JavaScript, through pair-programming.",
       "repo-name": "chatbot",
       "netlify-name": "https://loquacious-pika-011cac.netlify.app/",
       "tags": ["HTML5", "CSS3"],
