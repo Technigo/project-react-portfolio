@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ContainerColored, HeaderContainer, SectionHeader, TagWrapper, TagWrapperText } from 'GlobalStyles';
+import { ContainerWhite, HeaderContainer, SectionHeader, TagWrapper, TagWrapperText } from 'GlobalStyles';
 import data from 'data.json'
 
 /* ---------- Styled components ----------- */
@@ -26,11 +26,11 @@ color: orange; `
 
 const ProjectList = () => {
   return (
-    <ContainerColored>
+    <ContainerWhite>
       <HeaderContainer>
         <SectionHeader>Other Projects</SectionHeader>
       </HeaderContainer>
-      {data.slice(4, 8).map((projectList) => (
+      {data.slice(4, 15).map((projectList) => (
         <List key={projectList.id}>
           <Link
             href={projectList.url_netlify}
@@ -48,7 +48,7 @@ const ProjectList = () => {
         </List>
       ))}
 
-    </ContainerColored>
+    </ContainerWhite>
   )
 }
 export default ProjectList

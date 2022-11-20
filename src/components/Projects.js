@@ -12,8 +12,9 @@ align-content: center;
 gap: 30px; 
 
 @media (min-width: 768px) {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;  */
+  
     
   }
   @media (min-width: 1024px) {
@@ -34,6 +35,17 @@ const ProjectContainer = styled.div`
 const Img = styled.img`
 width: 100%;
 height: 100%;  
+@media (min-width: 768px) {
+  width: 100%;
+  height: 20vw;   
+  
+    
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 25vw;   
+    
+  }
 `
 const ImageContainer = styled.div`
 position: relative;
@@ -115,7 +127,7 @@ const Projects = () => {
           <Description>{project.description}
             <br />
             <Deployed href={project.url_netlify}>
-              Deployed site
+              DEMO
             </Deployed>
           </Description>
 

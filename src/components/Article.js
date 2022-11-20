@@ -32,7 +32,7 @@ padding-left: 2em;
  `
 
 const Img = styled.img`
- width: 500px;
+width: 100%;
 height: 100%; `
 
 const Link = styled.a`

@@ -57,41 +57,113 @@
       ]
     },
 
+    
     {
-        "title": "Weather app",
+      "title": "Weather app",
+      "id": 3,
+      "img_src": "/assets/weather.jpg",
+      "title-description": "An app that tells today's weather",
+      "description": "A weather app build in Javascript and using a weather API. You can search for a location or use geolocation to see todays weather and a 5 days-forecast.",
+      "repo-name": "project-weather-app",
+      "url": "https://github.com/AmandaElvkull/project-weather-app",
+      "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+      "tags": [
+        {
+        "id": 1,
+        "tech": "JavaScript"
+        },
+        {
+        "id": 2,
+        "tech": "HTML"
+        },
+        {
         "id": 3,
-        "img_src": "/assets/weather.jpg",
-        "title-description": "An app that tells today's weather",
-        "description": "A weather app build in Javascript and using a weather API. You can search for a location or use geolocation to see todays weather and a 5 days-forecast.",
-        "repo-name": "project-weather-app",
-        "url": "https://github.com/AmandaElvkull/project-weather-app",
-        "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
-        "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          },
-          {
-          "id": 4,
-          "tech": "API"
-          }
+        "tech": "CSS"
+        },
+        {
+        "id": 4,
+        "tech": "API"
+        }
 
-      ]
-    },
+    ]
+  },
+  {
+    "title": "X-MAS QUIZ",
+    "id": 4,
+    "img_src": "/assets/christmas.jpg",
+    "title-description": "A quiz about christmas",
+    "description": "An christmas quiz build in React and Redux done by mob-programming. Where we have used store and the global state. ",
+    "repo-name": "project-redux-quiz",
+    "url": "https://github.com/AmandaElvkull/project-redux-quiz",
+    "url_netlify": "https://iridescent-flan-a55802.netlify.app/",
+    "tags": [
+      {
+      "id": 1,
+      "tech": "JavaScript"
+      },
+      {
+      "id": 2,
+      "tech": "HTML"
+      },
+      {
+      "id": 3,
+      "tech": "CSS"
+      },
+      {
+      "id": 4,
+      "tech": "React"
+      },
+      {
+        "id": 5,
+        "tech": "Redux"
+        }
+
+  ]
+},
+{
+  "title": "Todo-list",
+  "id": 5,
+  "img_src": "/assets/guesswho.jpg",
+  "title_description": "A webpage where you can create todo build in React and redux",
+  "description": "A responsive app build in React where you can create and store your todos. It inclueds to set due date and when it was posted.",
+  "repo-name": "project-guess-who",
+  "url": "https://github.com/AmandaElvkull/project-todos",
+  "url_netlify": "https://comfy-puffpuff-eada25.netlify.app/",
+  "tags": [
+    {
+      "id": 1,
+      "tech": "JavaScript"
+      },
+      {
+      "id": 2,
+      "tech": "HTML"
+      },
+      {
+      "id": 3,
+      "tech": "CSS"
+      },
+      {
+      "id": 4,
+      "tech": "React"
+      },
+      {
+        "id": 5,
+        "tech": "Redux"
+        }
+        ,
+      {
+        "id": 5,
+        "tech": "Styled components"
+        }
+
+]
+},
 
     {
         "title": "Guess who",
-        "id": 4,
+        "id": 6,
         "img_src": "/assets/guesswho.jpg",
-        "title-description": "A digital version of the classic board game Guess Who",
+        "title_description": "A digital version of the classic board game Guess Who",
         "description": "A responsive app build in Javascript where you can play a digital version of the classic boardgame Guess Who.",
         "repo-name": "project-guess-who",
         "url": "https://github.com/AmandaElvkull/project-guess-who",
@@ -113,7 +185,7 @@
     },
     {
         "title": "Chatbot",
-        "id": 5,
+        "id": 7,
         "img_src": "/assets/guesswho.jpg",
         "title_description": "A responsive chatbot",
         "description": "A responsive app build in Javascript where you can interact with a chatbot",
@@ -138,7 +210,7 @@
     ,
     {
         "title": "IceCreamland",
-        "id": 6,
+        "id": 8,
         "img_src": "/assets/guesswho.jpg",
         "title_description": "A page where you can order Ice Cream",
         "description": "A project where you can order Ice cream as a survery form ",
@@ -168,7 +240,7 @@
     ,
     {
         "title": "MusicRelase",
-        "id": 7,
+        "id": 9,
         "img_src": "/assets/guesswho.jpg",
         "title_description": "A responsive page where you can see playlist from spotify",
         "description": "A page where you can see the most popular songlist from spotify build in react with spotify API",
@@ -194,5 +266,67 @@
           "tech": "React"
           }
       ]
-    }
+    },
+    {
+      "title": "Labyrinth",
+      "id": 10,
+      "img_src": "/assets/guesswho.jpg",
+      "title_description": "A maze game build in React and Redux",
+      "description": "You will get to try your skills in this digital maze and find your way out. It build in React and redux. ",
+      "repo-name": "project-music-release",
+      "url": "https://github.com/AmandaElvkull/project-labyrinth",
+      "url_netlify": "https://calm-paletas-3715f8.netlify.app/",
+      "tags": [
+        {
+        "id": 1,
+        "tech": "API"
+        },
+        {
+        "id": 2,
+        "tech": "HTML"
+        },
+        {
+        "id": 3,
+        "tech": "CSS"
+        }
+        ,
+        {
+        "id": 4,
+        "tech": "React"
+        },
+        {
+        "id": 5,
+        "tech": "Redux"
+        }
+    ]
+  },
+  {
+    "title": "Express API ",
+    "id": 11,
+    "img_src": "/assets/guesswho.jpg",
+    "title_description": "An express api build backend from database and deployed at Google cloud",
+    "description": " I have build my own express api from a database with movies and   ",
+    "repo-name": "project-music-release",
+    "url": "https://github.com/AmandaElvkull/project-labyrinth",
+    "url_netlify": "https://calm-paletas-3715f8.netlify.app/",
+    "tags": [
+      {
+      "id": 1,
+      "tech": "API"
+      },
+      {
+      "id": 2,
+      "tech": "Node.js"
+      },
+      {
+      "id": 3,
+      "tech": "Backend"
+      }
+      ,
+      {
+      "id": 4,
+      "tech": "Express-API"
+      }
+  ]
+}
   ]

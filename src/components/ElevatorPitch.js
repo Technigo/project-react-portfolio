@@ -30,6 +30,10 @@ const ElevatorPitch = () => {
         interact with websites, apps and other digital products.I`ve always wanted to combine
         my customer service
         experience with programming to create a more seamless customer journey.
+        What I love about programming is how you can find different solutions and you need
+        to challenge yourself to take your code to the next level, you are never fully learned.
+        I´m driven, ambitious and always want to learn new things. I´ll bring a good atmosphere
+        to your workplace, can-do attitude and someone who wants to make an impact.
       </Pitch>
     </ContainerColored>
   )
