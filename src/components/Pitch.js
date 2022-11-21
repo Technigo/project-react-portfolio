@@ -4,11 +4,9 @@ import styled from 'styled-components';
 export const Pitch = () => {
   return (
     <StyledPitch>
-      <h3>I am a frontend developer and a people-oriented person with a strong background in tourism and recreation changing my career into TECH.
-
-I am a self-driven, responsible, and punctual person with a strong learning desire and the ability to work alone or as a part of a team, and strong interpersonal skills. I am proficient at public speaking and I have excellent time-management and planning skills.
-
-I have experience in HTML, CSS, React JS and Redux, and I am learning Node.js. I have also previous experience working with WordPress, and Canva and basic knowledge of how to use GIMP. 
+      <h3>
+          I’m a frontend developer and a people-oriented person with a background in tourism and recreation.
+          I am a swift learner with ease in learning languages.
       </h3>
     </StyledPitch>
 
