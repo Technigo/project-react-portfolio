@@ -10,13 +10,13 @@ margin-top: 20px;
 
 export const Wrapper = styled.section`
 justify-content: center;
-width: 80%;
-display: inline-grid;
+max-width: 1000px;
+display: grid;
 grid-gap: 10px;
 @media (min-width: 800px) {
 grid-template-columns: repeat(2, 1fr);
+width: 60%;
 justify-content: center;
-width: 50%;
 }
 `
 
@@ -44,21 +44,25 @@ line-height: 0;
 `
 
 export const WrapProject = styled.section`
+position: relative;
 width: 320px;
-height: auto;
+height: 410px;
 margin-bottom: 10px;
 @media (min-width: 800px) {
-    min-width: 300px;
-    max-width: 350px;
-    height: auto;
     margin-left: 10%;
+    min-width: 400px;
+    max-width: 450px;
+    height: 400px;
+    margin-bottom: 15px;
     }
 `
 
-export const WrapOtherProject = styled(WrapProject)`
-width: 300px;
+export const WrapOtherProject = styled.div`
+position: relative;
+margin-bottom: 5px;
+width: 100%;
+height: 170px;
 @media (min-width: 800px) {
-  width: 900px;
     }
 `
 
@@ -72,8 +76,11 @@ overflow: hidden;
 display: block;
 @media (min-width: 800px) {
   width: 100%;
-  height: 200px;
+  height: 230px;
   }
+&:hover {
+  cursor: pointer;
+}
 `
 
 export const Overlay = styled.div`
@@ -85,8 +92,11 @@ height: 200px;
 margin: 0 auto;
 border-radius: 5px;
 background: rgb(196, 187, 176);
-opacity: 0.8;
 transition: all 0.3s ease-in-out;
+@media (min-width: 800px) {
+  width: 100%;
+  height: 230px;
+  }
 p {
   color: white;
   font-style: normal;
@@ -94,13 +104,8 @@ p {
   font-size: 20px;
   text-transform: uppercase;
   line-height: 0;
-  color: white;
   position: absolute; 
   top: 40%; 
-}
-.background{
-  background-color: white;
-  opacity: 2.8;
 }
 &:hover {
   opacity: 0;
@@ -109,13 +114,14 @@ p {
 
 export const ProgramsWrapper = styled.div`
 display: flex;
+position: absolute;
+bottom: 0;
 width: 100%;
 `
 
 export const Programs = styled.p`
 font-size: 13px;
 background-color: #D3E4CD;
-border-radius: 5px;
 padding: 4px;
 margin-right: 6px;
 text-transform: uppercase;

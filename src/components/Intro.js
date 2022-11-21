@@ -6,10 +6,10 @@ const Intro = () => {
   return (
     <Section>
       <Wrapper>
-        <MainText> <Line /><Dot />I am a creative and driven frontend developer. 
-        Previously my career has been spent in fashion design as a product developer. 
-        Since the summer of 2022 I am on a path leading to a new career, currently studying 
-        frontend development.
+        <MainText> <Line /><Dot />I'm a solution oriented frontend developer with a background in design and product development.
+        I'm eager to learn and have a passion for writing clean and reusable code. From my previous work I bring with me great 
+        communication skills, problem-solving abilities and an eye for details. My goal is to soon be working in a fun team as 
+        a frontend developer where I can continue to grow my newfound passion for writing code.
         </MainText>
       </Wrapper>
     </Section>

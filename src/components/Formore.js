@@ -7,7 +7,6 @@ import Linkedin from '../icons/linkedin.svg'
 const Formore = () => {
   return (
     <Section>
-      <Title>For more</Title>
       <IconsWrapper>
         <a href="https://github.com/Kristin-Larsson"><Icon src={Github} alt="Github" /></a>
         <a href="https://www.linkedin.com/in/kristin-larsson/"><Icon src={Linkedin} alt="Linkedin" /></a>

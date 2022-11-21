@@ -4,7 +4,6 @@ export const Title = styled.h1`
     flex-direction: column;
     background-color: #677867;
     text-transform: uppercase;
-    border-radius: 3px;
     padding: 5px;
     font-size: 22px;
     color: white;
@@ -14,7 +13,6 @@ export const Title = styled.h1`
 export const SecondTitle = styled.h2`
     text-align: center;
     text-transform: uppercase;
-    border-radius: 3px;
     padding: 5px;
     font-size: 22px;
     color: #677867;
@@ -25,13 +23,14 @@ export const SecondTitleLeft = styled(SecondTitle)`
 
 export const SecondTitleWhite = styled(SecondTitle)`
     color: white;
+    padding: 0px;
 `
 
 export const MainText = styled.p`
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     margin: 0;
     text-align: left;
@@ -43,7 +42,7 @@ export const MainText = styled.p`
         color: black;
       }
     @media (min-width: 800px) {
-        font-size: 20px;
+        font-size: 18px;
         }
 `
 

@@ -18,7 +18,6 @@ export const App = () => {
       <FeaturedProjects />
       <Otherprojects />
       <Skills />
-      <Formore />
       <Footer />
     </>
   )
