@@ -22,6 +22,7 @@ justify-content: center;
 
 export const OtherProjectsWrapper = styled(Wrapper)`
 justify-content: center;
+width: 80%;
 @media (min-width: 800px) {
 grid-template-columns: 1fr;
 width: 60%;
@@ -46,7 +47,7 @@ line-height: 0;
 export const WrapProject = styled.section`
 position: relative;
 width: 320px;
-height: 370px;
+height: 375px;
 margin-bottom: 10px;
 @media (min-width: 800px) {
     margin-left: 10%;
@@ -61,7 +62,7 @@ export const WrapOtherProject = styled.div`
 position: relative;
 margin-bottom: 5px;
 width: 100%;
-height: 170px;
+height: auto;
 @media (min-width: 800px) {
     }
 `
@@ -115,6 +116,12 @@ p {
 export const ProgramsWrapper = styled.div`
 display: flex;
 position: absolute;
+bottom: 0;
+width: 100%;
+`
+export const OtherProgramsWrapper = styled(ProgramsWrapper)`
+display: flex;
+position: relative;
 bottom: 0;
 width: 100%;
 `

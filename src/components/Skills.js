@@ -14,6 +14,7 @@ const Skills = () => {
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Redux</li>
             <li>Github</li>
           </MainText>
         </List>
@@ -23,14 +24,14 @@ const Skills = () => {
             <li>Figma</li>
             <li>Keynote</li>
             <li>Photoshop</li>
-            <li>illustrator</li>
+            <li>Illustrator</li>
             <li>Slack</li>
           </MainText>
         </List>
         <List>
           <SecondTitleLeft>Upcomming</SecondTitleLeft>
           <MainText>
-            <li>Redux</li>
+            <li>MondoDB</li>
             <li>Backend</li>
           </MainText>
         </List>

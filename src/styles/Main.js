@@ -18,7 +18,9 @@ export const SecondTitle = styled.h2`
     color: #677867;
 `
 export const SecondTitleLeft = styled(SecondTitle)`
+    font-size: 20px;
     text-align: left;
+    padding: 0px;
 `
 
 export const SecondTitleWhite = styled(SecondTitle)`

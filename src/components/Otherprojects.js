@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ProjectTitle, Programs, ProgramsWrapper, WrapOtherProject, OtherProjectsWrapper } from '../styles/Projects'
+import { ProjectTitle, Programs, OtherProgramsWrapper, WrapOtherProject, OtherProjectsWrapper } from '../styles/Projects'
 import { MainText, SecondTitle, Section } from '../styles/Main'
 
 const Otherprojects = () => {
@@ -28,11 +28,11 @@ const Otherprojects = () => {
                   <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
                   </a>
                   <MainText>{repo.description}</MainText>
-                  <ProgramsWrapper>
+                  <OtherProgramsWrapper>
                     <Programs>{repo.topics[0]}</Programs>
                     <Programs>{repo.topics[1]}</Programs>
                     <Programs>{repo.topics[2]}</Programs>
-                  </ProgramsWrapper>
+                  </OtherProgramsWrapper>
               </WrapOtherProject>
             </div>
           )
