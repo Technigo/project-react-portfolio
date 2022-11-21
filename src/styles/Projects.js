@@ -25,7 +25,6 @@ justify-content: center;
 width: 80%;
 @media (min-width: 800px) {
 grid-template-columns: 1fr;
-width: 60%;
 justify-content: center;
 }
 `
@@ -53,7 +52,7 @@ margin-bottom: 10px;
     margin-left: 10%;
     min-width: 400px;
     max-width: 450px;
-    height: 400px;
+    height: 410px;
     margin-bottom: 15px;
     }
 `
