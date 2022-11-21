@@ -46,7 +46,7 @@ line-height: 0;
 export const WrapProject = styled.section`
 position: relative;
 width: 320px;
-height: 410px;
+height: 370px;
 margin-bottom: 10px;
 @media (min-width: 800px) {
     margin-left: 10%;
