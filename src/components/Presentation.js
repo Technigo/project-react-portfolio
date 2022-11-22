@@ -10,10 +10,10 @@ const Presentation = () => {
       <InnerWrapper>
         <PresentationText>
           <StartImage src={startFigure} alt="start-figure" />
-          En bild säger mer än tusen ord, det är det jag älskar med bildberättandet
-           och därmed möjligheten att med hjälp av bilder kunna skildra känslor och
-           historier för andra människor. Mitt mål är att aldrig nöja mig och därmed
-           sluta utvecklas, utan hela tiden sträva efter att bli bättre.
+          I’m a music loving gamer that have realized how much fun coding can
+           be and how much you can do with computers. The more I learn the
+           more fun I have and I’m looking forward to a future where I can
+           continue to evolve and where there’s always something more to learn.
         </PresentationText>
       </InnerWrapper>
     </MainSections>
