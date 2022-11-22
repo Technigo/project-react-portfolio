@@ -17,4 +17,4 @@ Tech focus:
 - Fetch data in JSON format
 
 ## View it live
-https://verdant-cuchufli-314c83.netlify.app/
+https://carolinesodertrom-portfolio.netlify.app/
