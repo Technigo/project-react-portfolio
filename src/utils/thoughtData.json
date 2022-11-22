@@ -11,12 +11,12 @@
     },
     {
       "id": "2",
-      "monthYear": "Coming soon",
-      "title": "Accessibility and code",
-      "overlayText": "Accessibility and code",
-      "description": "",
-      "image": "https://picsum.photos/200/300",
-      "link": "#"
+      "monthYear": "November 2022",
+      "title": "Code accessibility in the digital society",
+      "overlayText": "Code accessibility",
+      "description": "As the digitalization of companies and authorities goes further and further, to not exclude people from society, developers need to be mindful of accessibility. Here are my thoughts about code accessibility.",
+      "image": "https://miro.medium.com/max/1400/0*B5AcelrktiGGAIIv",
+      "link": "https://medium.com/@elin.segelov/code-accessibility-in-the-digital-society-8844a08c3d0c"
     }
   ],
   

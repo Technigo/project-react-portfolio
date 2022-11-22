@@ -1,2 +1,2 @@
-export const featuredForDisplay = ['project-happy-thoughts', 'project-movies', 'project-todos', 'project-guess-who']
-export const otherForDisplay = ['project-music-releases', 'project-chatbot', 'project-news-site']
+export const featuredForDisplay = ['project-labyrinth', 'project-todos', 'project-happy-thoughts', 'project-movies']
+export const otherForDisplay = ['project-guess-who', 'project-music-releases', 'project-chatbot', 'project-news-site']
