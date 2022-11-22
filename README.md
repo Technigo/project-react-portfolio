@@ -1,27 +1,20 @@
 # React Portfolio
-Rebuild portfolio in React
 
-## The problem
-Tech: React, jsx, styled components, created my own JSON to fetch project data
+Rebuilt my portfolio in React and created my own JSON to fetch project data
 
-Met Requirements:
+Tech: React, jsx, styled components, 
 
-✓ The app is built with React and Styled Components
+Tech focus:
 
-✓ The app has reusable components and reusable styled components
+- What role color, typography and overall hierarchy play in web design
 
-✓ The app look close to the given design
+- How to use Styled Components as a CSS framework
 
-✓ The app fetches data in JSON format
+- The app has reusable components and reusable styled components
 
-If I had more time / What I will continue adding: 
+- Follow a desing spec for overall layout
 
-+ Make it responsive
-+ Solve overlay issues for project images
-+ Replace styling placeholders with wanted properties
-+ Iterate on styling across project
-+ Snap a new and updated profile picture
-+ Create custom domain for portfolio
+- Fetch data in JSON format
 
 ## View it live
 https://verdant-cuchufli-314c83.netlify.app/
