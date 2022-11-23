@@ -8,8 +8,8 @@ const Tech = () => {
     <OuterWrapper className="background">
       <InnerWrapper>
         <h2>Tech</h2>
-        <StyledParagraph>HTML, CSS, Flexbox, JavaScript, Web Accessibly,
-          API:s, mob-programming, pair-programming, Github
+        <StyledParagraph>
+          Javascript, React, Redux, NodeJS, MongoDB, React Native, Express, and RESTful APIs
         </StyledParagraph>
       </InnerWrapper>
     </OuterWrapper>

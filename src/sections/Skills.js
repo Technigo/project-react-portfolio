@@ -12,34 +12,34 @@ const Skills = () => {
           <StyledUlWrapper>
             <h3>Code</h3>
             <ul>
-              <li>Github</li>
               <li>HTML & CSS</li>
               <li>Javascript</li>
               <li>React</li>
+              <li>Redux</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
             </ul>
           </StyledUlWrapper>
           <StyledUlWrapper>
             <h3>Toolbox</h3>
             <ul>
+              <li>Github</li>
               <li>Figma</li>
+              <li>Sketch</li>
               <li>Invision</li>
-              <li>Photoshop</li>
               <li>Illustrator</li>
+              <li>Photoshop</li>
             </ul>
           </StyledUlWrapper>
           <StyledUlWrapper>
             <h3>More</h3>
             <ul>
               <li>WCAG 2.1</li>
-              <li>UI-design</li>
+              <li>Visual design</li>
               <li>Design systems</li>
-            </ul>
-          </StyledUlWrapper>
-          <StyledUlWrapper>
-            <h3>Upcoming</h3>
-            <ul>
-              <li>Redux</li>
-              <li>Node.js</li>
+              <li>Organizing projects</li>
+              <li>Team development</li>
+              <li>Cross functional-teamwork</li>
             </ul>
           </StyledUlWrapper>
         </StyledWrapper>
@@ -52,12 +52,20 @@ export default Skills;
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: 32px;
 
   @media (min-width: 668px) {
       flex-direction: row;
+      gap: 72px;
   }
 `;
 
 const StyledUlWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 668px) {
+    align-items: flex-start;
+  }
 `;

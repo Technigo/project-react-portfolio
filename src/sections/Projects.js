@@ -9,12 +9,12 @@ const Projects = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
+        <h2>Featured projects</h2>
         <ProjectWrapper>
-          <h2>Featured projects</h2>
           <FeaturedProject />
         </ProjectWrapper>
+        <h3>Other projects</h3>
         <ProjectWrapper>
-          <h3>Other projects</h3>
           <OtherProject />
         </ProjectWrapper>
       </InnerWrapper>
@@ -29,7 +29,11 @@ const ProjectWrapper = styled.div`
   align-items: center;
   margin-bottom: 72px;
 
+  :last-of-type {
+    margin-bottom: 0;
+  }
+
   @media (min-width: 668px) {
-    align-items: flex-start;
+    
     }
 `;

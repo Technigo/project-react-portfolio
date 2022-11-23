@@ -7,9 +7,15 @@ const Projects = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <StyledParagraph>My name is Linus, I&apos;m a fullstack javascript developer and
-            based in Stockholm, Sweden. I&apos;m always looking for exciting opportunities to
-            improve my craft and work together with amazing people. That&apos;s where you come in!
+        <StyledParagraph>
+          Hello, I am Linus.
+        </StyledParagraph>
+        <StyledParagraph>
+          A Curious, and creative frontend developer
+          based in Stockholm with a passion for
+          design systems and visual design. I’m a
+          team player by heart, a maker and maven
+          who’s eager to build and learn new things.
         </StyledParagraph>
       </InnerWrapper>
     </OuterWrapper>
