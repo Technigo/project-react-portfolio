@@ -5,50 +5,22 @@ import styled from 'styled-components'
 import ProfilePicture from 'components/images/Josefine_SB.jpeg'
 import LinkedIn from 'components/images/linkedin_icon.png'
 import GitHub from 'components/images/github_icon.png'
-import StackOverflow from 'components/images/stack_overflow_icon.png'
+// import StackOverflow from 'components/images/stack_overflow_icon.png'
 import HeroVideo from 'components/images/HeroMovie.mp4'
 
 const LinkedInURL = 'https://www.linkedin.com/in/josefine-engdahl-2654946a'
 const GitHubURL = 'https://github.com/JosefineEngdahl'
-const StackOverflowURL = 'https://stackoverflow.com/users/19477357/josefine-engdahl?tab=profile'
+// const StackOverflowURL = 'https://stackoverflow.com/users/19477357/josefine-engdahl?tab=profile'
 
 
-// export const AutoplayVideo = () => (
-// <div
-//     dangerouslySetInnerHTML={{
-//      __html:`
-//         <video
-//         autoPlay 
-//         muted 
-//         loop 
-//         playsinline 
-//         className="hero-video">
-//         src={HeroVideo}
-//         </video>`
-//      }}
-// />
-// )
 
 export const Header = () => {
+return (
 
-    return (
-        <HeadNav> 
-
-<Hero autoPlay muted loop playsinline className="hero-video">
-  <source src={HeroVideo}/>
-</Hero>
-     {/* <AutoplayVideo/> */}
-        {/* <Hero
-        type="video/mp4"
-            autoPlay muted loop playsinline 
-            className="hero-video">
-            <source src="src/components/images/HeroMovie.mp4"/>
-        </Hero>  */}
-
- {/* <Hero>
- autoPlay muted loop playsinline 
-  <source src="/HeroMovie.mp4"  />
-</Hero> */}
+<HeadNav> 
+    <Hero autoPlay muted loop playsinline className="hero-video">
+    <source src={HeroVideo}/>
+    </Hero>
 
         <ProfileImage
             src= {ProfilePicture} 
@@ -72,21 +44,21 @@ export const Header = () => {
                 alt= "Github"/>
          </a>
 
-        <a 
+        {/* <a 
             href={StackOverflowURL} 
             target="_blank">
                 <Icon3 
                 className= "icon3" 
                 src={StackOverflow}
                 alt= "Stack Overflow"/>
-            </a>
+            </a> */}
              
         <Text>
             <SmallHead>PORTFOLIO: <Name>JOSEFINE ENGDAHL</Name></SmallHead>
             <BigHead>frontend developer </BigHead>
             <MediumHead> & business controller</MediumHead>
        </Text>
-    </HeadNav>
+</HeadNav>
   
  )
 }

@@ -169,8 +169,9 @@ h4{
 b {
   font-weight: bolder;
   color: #FFB800;
-  font-family: "Anton";
+  font-family: "Roboto";
   letter-spacing: 0.1em;
+  font-size: 18px;
 }
 
 

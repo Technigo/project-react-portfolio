@@ -11,9 +11,9 @@ export const Tech = () => {
       <h3>Skills</h3>
       {/* <div className="wavy-line wavy-line-yellow" data-text="xxxxxx" />
       </section> */}
-      <Text> <b>TECH:</b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
-      <Text> <b>OTHER: </b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
-      <Text><b>TOOLBOX:</b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob-programming  <l>| </l> pair-programming  <l>| </l> Github</Text>
+      <Text> <b>TECH:</b> HTML <l>| </l>CSS  <l>| </l> JavaScript  <l>| </l> React  <l>| </l> Redux <l>|</l> Node.js <l>| </l> Web Accessibly  <l>| </l> API:s  <l>| </l> mob- & pair programming  <l>|</l> Github</Text>
+      <Text> <b>OTHER: </b> Finance <l>| </l>Business Strategy  <l>| </l> Project Management  <l>| </l> Presentation Skills </Text>
+      <Text><b>TOOLBOX:</b> Figma <l>| </l>Slack  <l>| </l> Discord  <l>| </l> Teams  <l>| </l> excel  <l>| </l> Powerpoint  <l>| </l> Word  </Text>
     </Wrapper>
   )
 }

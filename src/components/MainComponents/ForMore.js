@@ -27,7 +27,7 @@ export const ForMore = () => {
              </SocialMedia>
 
     
-                <SocialMedia
+                {/* <SocialMedia
                 href={StackOverflowURL}
                 target="_blank">
                     <Icon 
@@ -35,7 +35,7 @@ export const ForMore = () => {
                     src={StackOverflow}
                     alt= "Stack Overflow"/>GITHUB
                 </SocialMedia>
-        
+         */}
     
                 <SocialMedia 
                 href={LinkedInURL}
@@ -43,7 +43,7 @@ export const ForMore = () => {
                     <Icon
                      className= "icon"
                     src={LinkedIn}
-                    alt= "LinkedIn"/>GITHUB
+                    alt= "LinkedIn"/>LINKEDIN
                 </SocialMedia>
      
 
@@ -65,7 +65,7 @@ h3{
 
 const SocialMediaContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     margin:25px 0px 0px 0px;   
 `

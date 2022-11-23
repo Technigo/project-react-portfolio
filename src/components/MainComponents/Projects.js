@@ -64,29 +64,30 @@ export const Projects = () => {
   <OtherProjects>
   <h4>Other projects</h4>
 
-
-    <a href="https://steady-faun-1238b0.netlify.app" target="_blank">
+  <a href="https://charlotte-josefine-maze.netlify.app" target="_blank">
       <SmallText>
-        <Dot></Dot> 
-        <> </>
-        <b> Guess who? · </b> Boardgame built in JavaScript <b> >> </b>
+      <b> Labyrinth · </b>Find your way out <b>  >> </b>
+      </SmallText>
+    </a>    
+
+    <a href="https://coruscating-paprenjak-d576fc.netlify.app" target="_blank">
+      <SmallText>
+      <b> Guess Who? · </b>Classic boardgame <b>  >> </b>
       </SmallText>
     </a>       
  
     <a href="https://thepepbot.netlify.app" target="_blank">
         <SmallText>
-          <Dot></Dot>
           <> </>
-          <b> Pep Bot · </b>Chat bot ( or Pep Bot) built in JavaScript <b> >> </b>
+          <b> Chat bot · </b> or Pep bot <b> >> </b>
         </SmallText>  
     </a>       
 
     <a 
       href="https://celadon-brioche-831b80.netlify.app" target="_blank">
         <SmallText>
-          <Dot></Dot>
           <> </>
-          <b> Music Releases · </b>Music releases API built with React, designed as a music streaming platform with icons and hover effects. <b> >> </b>
+          <b> Music Releases · </b> Spotify's API <b> >> </b>
         </SmallText>
     </a>       
           

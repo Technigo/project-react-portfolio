@@ -27,10 +27,9 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 470px;
-    // padding-top: 100px;
+    padding: 20px;
+    // min-height: 470px;
     background: #FFB800;
-
 `
 
 const Foot = styled.div `
