@@ -1,10 +1,19 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Week 9 at technigo bootcamp.
+This weeks project was to remake my portfolio to make it in React with reusable components.
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I have based the structure of this project on the sections that my portfolio is built on. Each section has 2 components- 1 with html and functions and 1 with styling.
+For the main styling- text, wrapper, sections, title I have a component called main.
+
+When I found a good structure I think this was a nice way to build the portfolio and a good way to learn components and reusable components. 
+
+If I had more time I would 
+-look through my code again and see where I could remove a styled component and reuse a component that already exists.
+-Check the styling and go through wrapper, margin, center
+-Add article
+-Change size of other projects container.
+-Add hover effect over all links.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://kristinlarsson-portfolio.netlify.app/
