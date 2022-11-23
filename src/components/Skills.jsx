@@ -28,7 +28,7 @@ const Skills = () => {
           <li><h5>More</h5></li>
           <li>Redux</li>
           <li>Node.js</li>
-          <li>Mongo DB</li>
+          <li>MongoDB</li>
         </ul>
 
       </SkillsGrid>

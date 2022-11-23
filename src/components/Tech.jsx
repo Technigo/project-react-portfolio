@@ -7,8 +7,8 @@ const Tech = () => {
     <SectionContainer less>
       <h4>Tech</h4>
       <Paragraph main center>
-        React, JavaScript ES6, CSS3, HTML5, Redux, Styled Components,
-        GitHub, Web Accessibility, Mob Programming
+        HTML5, CSS, JavaScript ES6, React.js, Styled Components, Redux,
+        GitHub, Web Accessibility, Mob Programming, Node.js, MongoDB
       </Paragraph>
     </SectionContainer>
   );
