@@ -1,7 +1,16 @@
  [ 
   {
-    "title": "Project Guess Who",
+    "title": "Happy Thoughts Feed",
     "sort": 1,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://remarkable-melba-22a98c.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-happy-thoughts",
+    "description": "A live feed of Happy thoughts built in React",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6", "API"]
+  },
+  {
+    "title": "Guess Who Game",
+    "sort": 2,
     "image": "../imgs/Waterpink.jpg",
     "overlay": "test",
     "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
@@ -10,8 +19,8 @@
     "tech": ["HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Project Weather App",
-    "sort": 2,
+    "title": "Weather App",
+    "sort": 3,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://silver-profiterole-7224fd.netlify.app/",
     "github": "https://github.com/SoderstromC/project-weather-app",
@@ -19,17 +28,26 @@
     "tech": ["HTML", "CSS", "JavaScript ES6", "API"]
   },
   {
-    "title": "Project Happy Thoughts",
-    "sort": 3,
+    "title": "Labyrinth",
+    "sort": 4,
     "image": "../imgs/Waterpink.jpg",
-    "netlify": "https://remarkable-melba-22a98c.netlify.app/",
-    "github": "https://github.com/SoderstromC/project-happy-thoughts",
-    "description": "A twitter like feed of Happy thoughts built in React",
-    "tech": ["React", "HTML", "CSS", "JavaScript ES6", "API"]
+    "netlify": "https://turtles-labyrinth.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-labyrinth",
+    "description": "A labyrinth game using thunks to fetch API's",
+    "tech": ["React","Redux", "HTML", "CSS", "Jsx", "API"]
   },
   {
-    "title": "Project Survey",
-    "sort": 4,
+    "title": "Quiz",
+    "sort": 5,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://randomstuffquiz.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-redux-quiz",
+    "description": "Multiple-choice quiz using Redux, mob programming",
+    "tech": ["React","Redux", "HTML", "CSS", "Jsx"]
+  },
+  {
+    "title": "Survey",
+    "sort": 6,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://marvelous-brioche-781150.netlify.app",
     "github": "https://github.com/SoderstromC/project-survey",
@@ -37,30 +55,30 @@
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Project Chatbot",
+    "title": "Chatbot",
     "sort": 5,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
     "github": "https://github.com/SoderstromC/project-chatbot",
-    "description": "First pair programming project. A table booking chatbot for restaurants",
+    "description": "A table booking chatbot for restaurants, first pair programming project",
     "tech": ["HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Project Music Releases",
+    "title": "Music Releases",
     "sort": 6,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://celadon-brioche-831b80.netlify.app/",
     "github": "https://github.com/SoderstromC/project-music-releases",
-    "description": "A page that shows new album and artist releases",
+    "description": "A page that shows new album and artist releases, pair programming",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Project Movies",
+    "title": "Movie Site",
     "sort": 7,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://toprated-movies.netlify.app",
     "github": "https://github.com/SoderstromC/project-movies",
-    "description": "Multipage site built with React Router. Shows 20 top-rated movies and their details",
+    "description": "Multipage site built with React Router, pair programming",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   }
 ]

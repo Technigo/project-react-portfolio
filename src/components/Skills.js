@@ -39,11 +39,12 @@ export const Skills = () => {
           <SkillsWrapper>
             <Skill>
               <h3>code</h3>
+              <p>React</p>
+              <p>Javascript ES6</p>
+              <p>Jsx</p>
+              <p>Redux</p>
               <p>HTML5</p>
               <p>CSS3</p>
-              <p>Javascript ES6</p>
-              <p>React</p>
-              <p>Jsx</p>
             </Skill>
             <Skill>
               <h3>toolbox</h3>
@@ -64,7 +65,7 @@ export const Skills = () => {
             </Skill>
             <Skill>
               <h3>upcoming</h3>
-              <p>Redux</p>
+              <p>MongoDB</p>
               <p>Node.js</p>
             </Skill>
           </SkillsWrapper>

@@ -4,7 +4,7 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 
 export const Footer = () => {
   const FooterBackground = styled.footer`
-    border-top: solid 2px var(---primary);
+    // border-top: solid 1px var(---primary);
     background-color: var(---highlight);
     display: flex;
     justify-content: center;

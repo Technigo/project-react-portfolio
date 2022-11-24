@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
+import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Linkedin from '../icons/linkedin602.png';
 import Github from '../icons/github602.png';
 
@@ -37,9 +37,9 @@ export const Socials = () => {
     <OuterWrapper>
       <InnerWrapper>
         <SocialsSection>
-          <SectionTitle>
+          {/* <SectionTitle>
             <p>for more</p>
-          </SectionTitle>
+          </SectionTitle> */}
           <IconWrapper>
             <IconContainer>
               <a

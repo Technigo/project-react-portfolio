@@ -56,6 +56,7 @@ export const Thoughts = () => {
               <h4>Can you become a programmer without a deep technical interest?</h4>
               <p>
               In this short article I write about why got into tech
+               and what I am looking for in my career as a developer
               </p>
             </a>
             <Tag>

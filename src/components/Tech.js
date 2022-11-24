@@ -16,6 +16,7 @@ export const Tech = () => {
     padding: 20px 100px 20px 100px;
     text-align: center;
     color: #c8aa89c6;
+    font-weight: bold;
   `;
 
   return (
@@ -26,8 +27,7 @@ export const Tech = () => {
             <p>tech</p>
           </SectionTitle>
           <TechText>
-            HTML5, CSS, JavaScript ES6, React, Flexbox, Web accessibility,
-             APIs, mob programming, pair programming, GitHub
+          React, JavaScript ES6, HTML5, CSS3
           </TechText>
         </TechSection>
       </InnerWrapper>

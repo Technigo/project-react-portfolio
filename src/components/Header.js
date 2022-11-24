@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/Watercolor.jpg';
-import Linkedin from '../icons/linkedinpurple60.png';
-import Github from '../icons/gitpurple60.png';
+import BackgroundImage from '../images/Yellow.png';
+import Linkedin from '../icons/linkedinpink60.png';
+import Github from '../icons/gitpink60.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
@@ -15,11 +15,12 @@ export const Header = () => {
     width: 100%;
     height: 525px;
     background-color: var(---highlight);
-    border-bottom: 3px solid var(---primary);
+    border-bottom: 1px solid var(---primary);
   `;
 
   const BackgroundImg = styled.img`
     background-size: cover;
+    border: none;
     @media (max-width: 760px) {
       height: 100%;
     }
@@ -36,10 +37,10 @@ export const Header = () => {
     position: absolute;
     width: 300px;
     top: 185px;
-    left: 95px;
+    left: 140px;
     padding: 0;
     margin: 0;
-    color: white;
+    color: #f06fdf;
     h2 {
       line-height: 18px;
       letter-spacing: 0.04em;
@@ -68,7 +69,7 @@ export const Header = () => {
     z-index: 1;
     right: 20%;
     bottom: -67px;
-    border: 3px solid var(---primary);
+    border: 1px solid var(---primary);
   `;
 
   const ProfileImage = styled.img`

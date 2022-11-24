@@ -17,7 +17,7 @@ export const SectionTitle = styled.div`
     text-align: center;
     text-transform: uppercase;
     line-height: 25px;
-    background-color: var(---secondary);
+    background-color: var(---primary);
     color: whitesmoke;
     font-size: 22px;
     font-weight: bold;
