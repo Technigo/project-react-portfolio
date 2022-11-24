@@ -6,7 +6,7 @@ import Github from '../icons/gitpink30.png';
 
 export const OtherProjects = () => {
   const OtherProjectSection = styled.div`
-    padding: 50px 0;
+    padding: 60px 0 50px 0;
     background-color: white;
   `;
 

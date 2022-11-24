@@ -46,8 +46,17 @@
     "tech": ["React","Redux", "HTML", "CSS", "Jsx"]
   },
   {
-    "title": "Survey",
+    "title": "Movie Site",
     "sort": 6,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://toprated-movies.netlify.app",
+    "github": "https://github.com/SoderstromC/project-movies",
+    "description": "Multipage site built with React Router, pair programming",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
+  },
+  {
+    "title": "Survey",
+    "sort": 7,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://marvelous-brioche-781150.netlify.app",
     "github": "https://github.com/SoderstromC/project-survey",
@@ -55,17 +64,8 @@
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Chatbot",
-    "sort": 5,
-    "image": "../imgs/Waterpink.jpg",
-    "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
-    "github": "https://github.com/SoderstromC/project-chatbot",
-    "description": "A table booking chatbot for restaurants, first pair programming project",
-    "tech": ["HTML", "CSS", "JavaScript ES6"]
-  },
-  {
     "title": "Music Releases",
-    "sort": 6,
+    "sort": 8,
     "image": "../imgs/Waterpink.jpg",
     "netlify": "https://celadon-brioche-831b80.netlify.app/",
     "github": "https://github.com/SoderstromC/project-music-releases",
@@ -73,12 +73,12 @@
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
   },
   {
-    "title": "Movie Site",
-    "sort": 7,
+    "title": "Chatbot",
+    "sort": 9,
     "image": "../imgs/Waterpink.jpg",
-    "netlify": "https://toprated-movies.netlify.app",
-    "github": "https://github.com/SoderstromC/project-movies",
-    "description": "Multipage site built with React Router, pair programming",
-    "tech": ["React", "HTML", "CSS", "JavaScript ES6"]
+    "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
+    "github": "https://github.com/SoderstromC/project-chatbot",
+    "description": "A table booking chatbot for restaurants, first pair programming project",
+    "tech": ["HTML", "CSS", "JavaScript ES6"]
   }
 ]

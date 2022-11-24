@@ -69,7 +69,7 @@ export const Header = () => {
     z-index: 1;
     right: 20%;
     bottom: -67px;
-    border: 1px solid var(---primary);
+    border: 2px solid var(---primary);
   `;
 
   const ProfileImage = styled.img`

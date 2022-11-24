@@ -9,6 +9,8 @@ export const Tech = () => {
     width: 100%;
     background-color: white;
     color: #fcfaf88a;
+    border-top: solid 1px var(---main);
+    border-bottom: solid 1px var(---main);
   `;
 
   const TechText = styled.div`
@@ -27,7 +29,7 @@ export const Tech = () => {
             <p>tech</p>
           </SectionTitle>
           <TechText>
-          React, JavaScript ES6, HTML5, CSS3
+          React | JavaScript | ES6 | HTML5 | CSS3
           </TechText>
         </TechSection>
       </InnerWrapper>

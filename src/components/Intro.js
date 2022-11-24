@@ -36,15 +36,13 @@ export const Intro = () => {
       <InnerWrapper>
         <IntroSection>
           <IntroText>
-            <p><Line /><Dot /> I&apos;m a Frontend developer and CX nerd.
-             I’ve spent the last 8 years helping Tech companies lead digital transformation
-              by integrating traditional operational functions
-              such as Customer Service and Sales, into a technical context.
-               Organising teams around the value they create for the customer
-                and setting up structures for close collaboration with Product development teams
-                 to ensure a seamless customer experience across human and digital interaction.
-             I&apos;ve lived in London, Berlin and Stockholm, and are looking to join a company
-              where I can be part of building great experiences in an international environment.
+            <p><Line /><Dot />
+              <em> Previous Ops leader turned Frontend Developer,
+              who made a career leap to explore how technology
+              can be used to solve meaningful problems for people. Excited to grow my
+              skills in building memorable user experiences, with a long term ambition
+                to go back into leadership, leading tech teams.
+              </em>
             </p>
           </IntroText>
         </IntroSection>

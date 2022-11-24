@@ -7,6 +7,7 @@ export const Projects = () => {
   const ProjectSection = styled.div`
     padding: 75px 0px 10px 0px;
     background-color: white;
+    border-bottom: solid 1px var(---main);
   `;
 
   const ProjectWrapper = styled.div`
@@ -52,11 +53,25 @@ export const Projects = () => {
     width: 325px;
     height: 325px; 
     margin: 0 auto;
-    z-index: 1;
+    z-index: 2;
     background: white;
     opacity: 80%;
     transition: ease-in .3s;
   `;
+
+  const MainProjectTitle = styled.h2`
+    color: var(---primary);
+    // background-color: transparent;
+    font-size: 24px;
+    line-height: 30px;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    margin: 20px;
+    transition: 0.5s ease;   
+    text-align: center; 
+    width: 275px;
+  `
 
   const DetailsWrapper = styled.div`
     display: flex;
@@ -104,6 +119,7 @@ export const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer">
                       <CardOverlay>
+                        <MainProjectTitle>{item.title}</MainProjectTitle>
                         <ProjectBackground img src={item.image} alt="placeholder" />
                       </CardOverlay>
                     </a>

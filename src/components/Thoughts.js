@@ -8,7 +8,7 @@ export const Thoughts = () => {
     display: inline-grid;
     justify-content: center;  
     width: 100%;
-    padding: 50px 0;
+    padding: 60px 0;
     text-align: center;
     background-color: white;
   `;
