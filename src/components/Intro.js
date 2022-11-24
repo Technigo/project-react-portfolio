@@ -15,6 +15,10 @@ export const Intro = () => {
     color: var(---primary);
     font-size: 18px;
     font-weight: 500;
+    @media (max-width: 760px) {
+      padding: 120px 30px 50px 30px;
+      font-size: 16px;
+    }
   `;
   const Line = styled.span`
     display: inline-block;

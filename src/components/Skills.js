@@ -20,6 +20,9 @@ export const Skills = () => {
     color: rgb(135, 133, 133);
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
+    @media (max-width: 760px) {
+      font-size: 11px;
+    }
   `;
 
   const Skill = styled.div`

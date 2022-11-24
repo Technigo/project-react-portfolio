@@ -27,11 +27,17 @@ export const Thoughts = () => {
       text-decoration: none;
       color: #c8aa89c6;
     }
+    @media (max-width: 760px) {
+      width: 350px;
+    }
   `;
 
   const ArticleImg = styled.img`
     width: 490px;
     margin: 0 auto;
+    @media (max-width: 760px) {
+      width: 325px;
+    }
   `;
 
   const Date = styled.h4`

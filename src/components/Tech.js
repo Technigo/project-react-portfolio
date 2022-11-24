@@ -19,6 +19,9 @@ export const Tech = () => {
     text-align: center;
     color: #c8aa89c6;
     font-weight: bold;
+    @media (max-width: 760px) {
+      padding: 20px 0px 20px 0px;
+    }
   `;
 
   return (

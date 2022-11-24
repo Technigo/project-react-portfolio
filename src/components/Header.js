@@ -31,6 +31,9 @@ export const Header = () => {
     display: flex;
     top: 76px;
     right: 91px;
+    @media (max-width: 760px) {
+      right: 40px;
+    }
   `;
 
   const HeaderText = styled.div`
@@ -58,6 +61,18 @@ export const Header = () => {
       font-weight: bold;
       font-size: 28px;
     }
+
+    @media (max-width: 760px) {
+      width: 243px;
+      left: 70px;
+      h1 {
+        line-height: 37px;
+        font-size: 35px;
+      }
+      h2 {
+        line-height: 20px;
+      }
+    }
   `;
 
   const ProfileImageWrapper = styled.div`
@@ -70,6 +85,10 @@ export const Header = () => {
     right: 20%;
     bottom: -67px;
     border: 2px solid var(---primary);
+    @media (max-width: 760px) {
+      height: 200px;
+      width: 200px;
+    }
   `;
 
   const ProfileImage = styled.img`
