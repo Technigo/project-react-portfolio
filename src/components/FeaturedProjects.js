@@ -73,7 +73,7 @@ const ImageOverlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 
   p {

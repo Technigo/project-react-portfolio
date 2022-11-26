@@ -20,28 +20,28 @@
         "image": "./assets/survey.png",
         "netlify": "https://find-a-friend-survey.netlify.app/",
         "github": "https://github.com/jesshansson/project-survey"
-    },    
+    },      
     {
         "featured": true,
         "display": true,
-        "name": "Popular Movies",
-        "overlayname": "Movies",
-        "description": "A website that shows the most popular movies today, built with React components, fetching the data from an API.",
-        "tags": ["HTML", "CSS", "JavaScript", "React"],
-        "image": "./assets/movies.png",
-        "netlify": "https://popularmovies-us.netlify.app/",
-        "github": "https://github.com/jesshansson/project-movies"
-    },    
+        "name": "Todo",
+        "overlayname": "Todo-list",
+        "description": "An interactive app where the user can create a to-do list, built with Redux",
+        "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+        "image": "./assets/todos.png",
+        "netlify": "https://the-todos.netlify.app/",
+        "github": "https://github.com/jesshansson/project-todos1"
+    },
     {
         "featured": true,
         "display": true,
-        "name": "Fem&Tech - a news site",
-        "overlayname": "News site",
-        "description": "A news site built with flexbox and grid about women in the tech business",
-        "tags": ["HTML", "CSS"],
-        "image": "./assets/femntech.png",
-        "netlify": "https://femntech-news.netlify.app/",
-        "github": "https://github.com/jesshansson/project-news-site"
+        "name": "The Amazing maze",
+        "overlayname": "Redux Maze",
+        "description": "In interactive labyrint built with Redux, where the user navigates through a text-based adventure.",
+        "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+        "image": "./assets/amazingmaze.jpg",
+        "netlify": "https://the-amazing-maze.netlify.app/",
+        "github": "https://github.com/jesshansson/project-labyrinth"
     }
 
 ]

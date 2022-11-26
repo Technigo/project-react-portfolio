@@ -8,7 +8,7 @@ export const Footer = () => {
       <FooterTitle>CONTACT</FooterTitle>
       <FooterText>
         <p>Jessica Hansson</p>
-        <p>+46735117716</p>
+        <p>+46 73 511 77 16</p>
         <p><A href="mailto:jessica.hansson@hotmail.se" target="_blank" rel="noreferrer">jessica.hansson@hotmail.se</A></p>
       </FooterText>
     </FooterWrapper>
