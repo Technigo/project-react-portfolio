@@ -11,7 +11,7 @@ export const OtherProjects = () => {
         {data.reverse().map((item) => (
           <OtherProjectsDisplay key={item.id}>
             <a
-              href={item.netlify_url}
+              href={item.url}
               target="_blank"
               rel="noreferrer"
               role="button">
