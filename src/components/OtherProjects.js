@@ -41,11 +41,7 @@ export const OtherProjects = () => {
 const OtherProjectsContainer = styled.div`
   padding-top: 10%;
 
-  @media (min-width: 668px) and (max-width: 1023px){
-    padding-top: 5%;
-    }
-
-  @media (min-width: 1024px){
+  @media (min-width: 668px){
     padding-top: 5%;
     }
 `

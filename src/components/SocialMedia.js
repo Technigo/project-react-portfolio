@@ -54,12 +54,9 @@ margin-top: 10%;
     filter: invert(1);
   }
 
-  @media (min-width: 600px) and (max-width: 1023px) {
+  @media (min-width: 600px){
     margin: 5% 10% 0 10%;
   }
-
-  @media (min-width: 1024px){
-    margin: 5% 10% 0 10%;
 `
 
 const SocialMediaLink = styled(IconLink)`
@@ -103,4 +100,5 @@ const SocialMediaLink = styled(IconLink)`
     padding: 5px;
     color: #003333;
    }
+  }
 `

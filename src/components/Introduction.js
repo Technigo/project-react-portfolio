@@ -6,8 +6,8 @@ export const Introduction = () => {
   return (
     <IntroductionWrapper primary>
       <MainText primary>Hello! My name is Kartika,
-        and I&apos;m a curious front-end developer from Indonesia
-        who&apos;s who&apos;s aiming to be a fullstack developer.
+        and I&apos;m a curious front-end developer from Indonesia living in Sweden
+        who&apos;s aiming to be a fullstack developer.
         I am an eager learner and always committed to finish all tasks at hand.
       </MainText>
       <MainText primary>I am always up to challenges and willing to learn.
@@ -24,12 +24,8 @@ const IntroductionWrapper = styled(Wrapper)`
   text-align: justify;
   
 
-  @media (min-width: 668px) and (max-width: 1023px){
+  @media (min-width: 668px){
     padding: 10%;   
-  }
-
-  @media (min-width: 1024px){
-    padding: 10%; 
   }
 `
 

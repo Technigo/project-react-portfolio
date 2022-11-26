@@ -19,11 +19,7 @@ export const FooterWrapper = styled(Wrapper)`
   background: linear-gradient(180deg, #003333, #001F1F, #001515);
   padding-top: 20%;
 
-  @media (min-width: 668px) and (max-width: 1023px) {
-    padding-top: 10%;
-  }
-
-  @media (min-width: 1024px){
+  @media (min-width: 668px){
     padding-top: 10%;
   }
 `

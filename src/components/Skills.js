@@ -15,7 +15,8 @@ export const Skills = () => {
           <SkillName primary>APIs</SkillName>
           <SkillName primary>React</SkillName>
           <SkillName primary>Redux</SkillName>
-          <SkillName primary>🔜MongoDB</SkillName>
+          <SkillName primary>Express</SkillName>
+          <SkillName primary>MongoDB</SkillName>
         </SkillsList>
         <SkillsList>
           <OverlinedHeading>TOOLBOX</OverlinedHeading>
@@ -24,16 +25,17 @@ export const Skills = () => {
           <SkillName primary>Figma</SkillName>
           <SkillName primary>Canva</SkillName>
           <SkillName primary>Slack</SkillName>
+          <SkillName primary>Netlify</SkillName>
           <SkillName primary>Google Cloud</SkillName>
           <SkillName primary>Stack Overflow</SkillName>
         </SkillsList>
         <SkillsList>
           <OverlinedHeading>MORE</OverlinedHeading>
-          <SkillName primary>Pair-Programming</SkillName>
-          <SkillName primary>Mob-Programming</SkillName>
           <SkillName primary>Responsive Design</SkillName>
           <SkillName primary>Agile Methodology</SkillName>
+          <SkillName primary>Mob Programming</SkillName>
           <SkillName primary>Indonesian</SkillName>
+          <SkillName primary>Swedish</SkillName>
         </SkillsList>
       </SkillsContainer>
     </Wrapper>
@@ -41,17 +43,14 @@ export const Skills = () => {
 }
 
 const SkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 5% 0 0 0;
 
-  @media (min-width: 668px) and (max-width: 1023px){
-    flex-direction: row;
+  @media (min-width: 668px){
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 1024px){
-    flex-direction: row;
-  }
 `
 
 const SkillsList = styled.div`

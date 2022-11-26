@@ -42,11 +42,7 @@ export const GridWrapper = styled.section`
   display: grid;
   grid-template-columns: 100%;
 
-  @media (min-width: 668px) and (max-width: 1023px){
-    grid-template-columns: 50% 50%;
-  }
-
-  @media (min-width: 1024px){
+  @media (min-width: 668px){
     grid-template-columns: 50% 50%;
   }
          
@@ -179,13 +175,7 @@ export const Tags = styled.div`
     font-size: 10px;
     }
 
-  @media (min-width: 600px) and (max-width: 1023px){
-    p{
-      font-size: 12px;
-    }
-  }
-
-  @media (min-width: 1024px){
+  @media (min-width: 600px){
     p{
       font-size: 12px;
     }

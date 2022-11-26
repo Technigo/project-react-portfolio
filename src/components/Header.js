@@ -44,11 +44,7 @@ const HeaderContainer = styled.header`
   background-size: cover;
   position: relative;
 
-  @media (min-width: 668px) and (max-width: 1023px){
-    height: 450px;
-  }
-
-  @media (min-width: 1024px){
+  @media (min-width: 668px){
     height: 450px;
   }
 `
