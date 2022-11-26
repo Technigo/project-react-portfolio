@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ProjectCard, Image, OuterWrapper, InnerWrapper, AlignLeftWrapper, MainHeadline, MediumHeadline } from 'styles/GlobalStyles';
+import { ProjectCard, Image, OuterWrapper, InnerWrapper, MainHeadline } from 'styles/GlobalStyles';
 import compTalk from '../assets/compTalk.jpg';
 import eyeForDesign from '../assets/eyeForDesign.jpg';
 
@@ -35,14 +35,16 @@ export const MyThoughts = () => {
         </ProjectCard>
       </InnerWrapper>
 
-      <MediumHeadline color="#BA4C08">MORE THOUGHTS</MediumHeadline>
+      {/* <MediumHeadline color="#BA4C08">MORE THOUGHTS</MediumHeadline>
       <AlignLeftWrapper>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <p>
-            <HighLighted>MMM YYYY.</HighLighted> COMING SOON...Lorem ipsum dolor sit amet. <HighLighted>{'>'}{'>'}</HighLighted>
+            <HighLighted>MMM YYYY.
+            </HighLighted> COMING SOON...Lorem ipsum dolor sit amet.
+            <HighLighted>{'>'}{'>'}</HighLighted>
           </p>
         </a>
-      </AlignLeftWrapper>
+      </AlignLeftWrapper> */}
     </OuterWrapper>
   )
 }
