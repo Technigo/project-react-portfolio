@@ -17,6 +17,7 @@ export const Skills = () => {
             <li>GitHub</li>
             <li>Redux</li>
             <li>Node.js</li>
+            <li>Mongo DB</li>
             <li>Python</li>
             <li>C</li>
           </List>
