@@ -49,6 +49,10 @@ const ListWrapper = styled(InnerWrapper)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: 668px) {
+    justify-content: space-evenly;
+  }
 `
 
 const List = styled.ul`
