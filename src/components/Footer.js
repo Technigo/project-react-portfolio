@@ -3,6 +3,24 @@ import styled from 'styled-components';
 
 import heroImage from 'assets/heroImage.jpg';
 
+export const Footer = () => {
+  return (
+    <FooterWrapper>
+      <FooterContent>
+        <p className="contact">CONTACT</p>
+        <p>Sofia Andersson</p>
+        {/* <p>+46 70 00 00 00</p> */}
+        <typingWrapper>
+          <div className="typing">sofia.e.i.andersson@gmail.com</div>
+        </typingWrapper>
+        <ImageCredWrapper>
+          <p className="imagecred">Image: Photo by Courtney Smith on Unsplash </p>
+        </ImageCredWrapper>
+      </FooterContent>
+    </FooterWrapper>
+  );
+};
+
 export const FooterWrapper = styled.section`
 background-image: url(${heroImage});
 margin:0;
@@ -13,7 +31,6 @@ color: white;
 display: flex;
 align-items: center;
 justify-content:center;
-
 `;
 
 export const FooterContent = styled.div`
@@ -125,21 +142,3 @@ margin-top:70px;
   }
 }
 `;
-
-export const Footer = () => {
-  return (
-    <FooterWrapper>
-      <FooterContent>
-        <p className="contact">CONTACT</p>
-        <p>Sofia Andersson</p>
-        {/* <p>+46 70 00 00 00</p> */}
-        <typingWrapper>
-          <div className="typing">sofia.e.i.andersson@gmail.com</div>
-        </typingWrapper>
-        <ImageCredWrapper>
-          <p className="imagecred">Image: Photo by Courtney Smith on Unsplash </p>
-        </ImageCredWrapper>
-      </FooterContent>
-    </FooterWrapper>
-  );
-};

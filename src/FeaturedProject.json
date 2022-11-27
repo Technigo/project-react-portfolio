@@ -46,7 +46,7 @@
        },
     {
       "title": "Quiz",
-      "title-description": "A multiple choise quiz",
+      "title-description": "A multiple choice quiz",
       "project-description": "This is a multiple-choice quiz game, made using Redux and via mob programming. My first project using Redux.",
       "repo-name": "project-redux-quiz",
       "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/",

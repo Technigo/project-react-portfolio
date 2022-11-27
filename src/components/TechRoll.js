@@ -1,6 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export const TechRoll = ({ color }) => {
+  return (
+    <TechWrapper>
+      <TechHeader color={color}>TECH</TechHeader>
+      <ScrollWrapper>
+        <ScrollContent className="ScrollLeft">
+     HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+        </ScrollContent>
+      </ScrollWrapper>
+    </TechWrapper>
+  );
+};
+
 export const TechWrapper = styled.div`
 margin:0;
 width: 100%;
@@ -88,17 +102,3 @@ export const ScrollContent = styled.p`
   }
 }
 `;
-
-export const TechRoll = ({ color }) => {
-  return (
-    <TechWrapper>
-      <TechHeader color={color}>TECH</TechHeader>
-      <ScrollWrapper>
-        <ScrollContent className="ScrollLeft">
-     HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
-        </ScrollContent>
-      </ScrollWrapper>
-    </TechWrapper>
-  );
-};

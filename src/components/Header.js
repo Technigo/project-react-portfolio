@@ -8,6 +8,33 @@ import heroGithub from 'assets/github-icon.svg';
 import profileImage from 'assets/profileImage-4.jpg';
 import { GITHUB_URL, LINKEDIN_URL /* , STACKOVERFLOW_URL */ } from 'utils/Urls';
 
+export const Header = () => {
+  return (
+    <HeaderContainer>
+      <HeaderIcons>
+        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
+        </a>
+        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
+          <img src={heroGithub} alt="Github icon for the header" />
+        </a>
+        {/* <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
+          <img
+            src={heroStackOverflow}
+            alt="Stack Overflow icon for the header" />
+  </a> */}
+      </HeaderIcons>
+      <HeaderTitle>
+        <h3><span className="name">PORTFOLIO:</span> SOFIA ANDERSSON</h3>
+        <h1>frontend developer</h1>
+      </HeaderTitle>
+      <HeaderImage>
+        <img src={profileImage} alt="Mrs Cakes" />
+      </HeaderImage>
+    </HeaderContainer>
+  );
+};
+
 export const HeaderContainer = styled.header`
   background-image: url(${heroImage});
   width: 100%;
@@ -123,29 +150,3 @@ export const HeaderImage = styled.div`
   }
 `;
 
-export const Header = () => {
-  return (
-    <HeaderContainer>
-      <HeaderIcons>
-        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
-          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
-        </a>
-        <a href={GITHUB_URL} target="_blank" rel="noreferrer">
-          <img src={heroGithub} alt="Github icon for the header" />
-        </a>
-        {/* <a href={STACKOVERFLOW_URL} target="_blank" rel="noreferrer">
-          <img
-            src={heroStackOverflow}
-            alt="Stack Overflow icon for the header" />
-  </a> */}
-      </HeaderIcons>
-      <HeaderTitle>
-        <h3><span className="name">PORTFOLIO:</span> SOFIA ANDERSSON</h3>
-        <h1>frontend developer</h1>
-      </HeaderTitle>
-      <HeaderImage>
-        <img src={profileImage} alt="Mrs Cakes" />
-      </HeaderImage>
-    </HeaderContainer>
-  );
-};
