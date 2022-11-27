@@ -16,6 +16,7 @@ export const Introduction = () => {
     </IntroductionWrapper>
   );
 };
+
 export const IntroductionWrapper = styled.div`
 margin:0;
 background-image: url(${heroImage2});
