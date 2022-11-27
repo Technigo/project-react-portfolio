@@ -54,13 +54,13 @@
         "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Mob Program", "Github"]
       },
       {
-        "title": "Daily Planner",
+        "title": "A News Site for Plants Lovers",
         "id": "11",
         "image": "",
-        "url": "https://thedailyplanner.netlify.app/",
-        "github_url": "https://github.com/katirum/project-todos",
-        "description": "An individual project to create an app to store user's list of things to do.",
-        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Github"]
+        "url": "https://steady-gelato-baf009.netlify.app/",
+        "github_url": "https://github.com/katirum/project-news-site",
+        "description": "A first simple site that focused on the execution of grid, flexbox and responsiveness in many devices.",
+        "tags": ["CSS3", "Flexbox", "Grid", "HTML", "GitHub"]
       },
       {
         "title": "Labyrinth",
