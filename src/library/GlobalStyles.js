@@ -42,7 +42,6 @@ export const OuterWrapperGrey = styled.section`
 export const InnerWrapper = styled.section`
     widht: 100%;
     margin: 0 auto;
-    border: 2px solid lime;
     text-align: center;
     font-size: 1.3rem;
 

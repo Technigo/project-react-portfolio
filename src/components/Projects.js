@@ -17,7 +17,7 @@ export const Projects = ({ color, tagColor }) => {
                 key={project.title}
                 href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
                 target="_blank">
-                <ThumbnailWrapper url={project.image}>
+                <ThumbnailWrapper url="../assets/happy-thoughts">
                   <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
                 </ThumbnailWrapper>
                 <ProjectInfoHeader color={color}>
@@ -63,12 +63,6 @@ const ProjectCard = styled.a`
   gap: 5px;
   text-decoration: none;
   position: relative;
-
-  /* Optional hover effect, delete if not desired */
-  /* &:hover {
-    transform: translateY(-1%);
-    transition: transform 0.3s;
-  } */
 `;
 
 const ThumbnailWrapper = styled.div`
@@ -79,8 +73,8 @@ const ThumbnailWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  font-size: 26px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
   background-image: linear-gradient(180deg, #1c232580, #1c232580),
     url(${(props) => props.url});
   &:hover {
@@ -98,30 +92,14 @@ const ThumbnailTitle = styled.h2`
 const ProjectInfoHeader = styled.h3`
   font-family: "Roboto Bold", sans-serif;
   color: ${(props) => props.color};
-  font-size: 24px;
-
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 800px) {
-    font-size: 20px;
-  }
+  font-size: 1.2rem;
 `;
 
 const ProjectInfo = styled.p`
   font-family: "Roboto", sans-serif;
   color: black;
-  font-size: 24px;
+  font-size: 1.2rem;
   line-height: 1.4;
-
-  ${ProjectCard}:hover & {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 800px) {
-    font-size: 20px;
-  }
 `;
 
 const ProjectTags = styled.li`
