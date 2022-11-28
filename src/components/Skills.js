@@ -13,7 +13,6 @@ margin-bottom: 40px;
 
 @media (max-width: 768px) {
   grid-template-columns: 1fr;
-  padding: 15px;
   text-align: center;
 }
 `
@@ -24,7 +23,8 @@ justify-content: center;
 text-align: center;
 grid-column-start: 2;
 @media (max-width: 768px) {
-  grid-column-start: 3;
+  justify-content: center;
+  grid-column: 1;
   text-align: center;
 }
 `
@@ -36,7 +36,8 @@ text-align: center;
 margin-right: 1.5rem;
 grid-column-start: 3;
 @media (max-width: 768px) {
-  grid-column-start: 3;
+  justify-content: center;
+  grid-column: 1;
   text-align: center;
 }
 `
@@ -47,7 +48,8 @@ justify-content: center;
 margin-left: 0;
 grid-column-start: 4;
 @media (max-width: 768px) {
-  grid-column-start: 3;
+  justify-content: center;
+  grid-column: 1;
   text-align: center;
 }
 `
