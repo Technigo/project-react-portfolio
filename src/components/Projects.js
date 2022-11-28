@@ -7,6 +7,8 @@ import HappyThoughts from './assets/happythoughts.png'
 import Movies from './assets/movies.png'
 import Weather from './assets/weather.png'
 import Todo from './assets/todo.png'
+import PremierLeague from './assets/premierleague.png'
+import Labyrinth from './assets/labyrinth.png'
 
 export const ProjectContainer = styled.div`
 display: grid;
@@ -113,12 +115,64 @@ const Projects = () => {
       <SectionHeadline><SectionHeadlineBg>PROJECTS</SectionHeadlineBg></SectionHeadline>
       <ProjectContainer>
         <CardContainer>
+          <ProjectImage src={PremierLeague} alt="Premier League app" />
+          {/* <OverlayContainer>
+            <OverlayText>GUESS WHO?</OverlayText>
+          </OverlayContainer> */}
+          <ProjectInfo>
+            Backend-heavy project for football nerds.
+          </ProjectInfo>
+          <LanguageIconContainer>
+            <LanguageIcon>Express API</LanguageIcon>
+            <LanguageIcon>Node.js</LanguageIcon>
+            <LanguageIcon>React</LanguageIcon>
+            <a
+              href="https://github.com/hannanorgard/premierleague"
+              target="_blank"
+              rel="noreferrer">
+              <FaGithub size="25px" />
+            </a>
+            <a
+              href="https://plstatistics.netlify.app/"
+              target="_blank"
+              rel="noreferrer">
+              <MdWeb size="25px" />
+            </a>
+          </LanguageIconContainer>
+        </CardContainer>
+        <CardContainer>
+          <ProjectImage src={Labyrinth} alt="Labyrinth app" />
+          {/* <OverlayContainer>
+            <OverlayText>GUESS WHO?</OverlayText>
+          </OverlayContainer> */}
+          <ProjectInfo>
+            An API-based text game in retro style.
+          </ProjectInfo>
+          <LanguageIconContainer>
+            <LanguageIcon>Styled components</LanguageIcon>
+            <LanguageIcon>Redux</LanguageIcon>
+            <LanguageIcon>API</LanguageIcon>
+            <a
+              href="https://github.com/hannanorgard/project-labyrinth"
+              target="_blank"
+              rel="noreferrer">
+              <FaGithub size="25px" />
+            </a>
+            <a
+              href="https://kimhannanick-project-labyrinth.netlify.app/"
+              target="_blank"
+              rel="noreferrer">
+              <MdWeb size="25px" />
+            </a>
+          </LanguageIconContainer>
+        </CardContainer>
+        <CardContainer>
           <ProjectImage src={Todo} alt="To-do app" />
           {/* <OverlayContainer>
             <OverlayText>GUESS WHO?</OverlayText>
           </OverlayContainer> */}
           <ProjectInfo>
-            An app where you can add today&apos;s tasks.
+          An app where you can add today&apos;s tasks.
           </ProjectInfo>
           <LanguageIconContainer>
             <LanguageIcon>CSS</LanguageIcon>
