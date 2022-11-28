@@ -5,7 +5,7 @@ import { ForMoreSocialBar } from './ForMore.styles';
 
 const ForMore = () => {
   return (
-    <SectionContainer bgColor="#eeeeee">
+    <SectionContainer>
       <SectionHeadings>FOR MORE</SectionHeadings>
       <ForMoreSocialBar>
         <a href="https://www.linkedin.com/in/sofierydmark/" role="button" aria-pressed="false" aria-label="linkedin-profile" target="_blank" rel="noreferrer">

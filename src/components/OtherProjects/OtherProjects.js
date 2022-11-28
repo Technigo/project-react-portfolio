@@ -6,7 +6,7 @@ import { ProjectWrapper, StyledProjectGrid } from 'components/FeaturedProjects/F
 
 const OtherProjects = () => {
   return (
-    <SectionContainer bgColor="#eeeeee">
+    <SectionContainer bgColor="#d0c9c05c">
       <SectionHeadings>OTHER PROJECTS</SectionHeadings>
       <StyledProjectGrid>
 

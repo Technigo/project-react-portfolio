@@ -1,27 +1,27 @@
 [
     {
           "id": 1,
-          "title": "HOTEL CHATBOT",
-          "project_description": "Responsive web site using HTML, CSS and JavaScript ES6 where you are able to order amenities etc.",
-          "repo_name": "project-chatbot",
-          "url": "https://github.com/SofieRydmark/project-chatbot",
+          "title": "WEATHER APP",
+          "project_description": "A responsive weather app using APIs that tells you today's weather, temperature and a 5-day forecast.",
+          "repo_name": "project-weather-app",
+          "url": "https://github.com/SofieRydmark/project-weather-app",
           "tags": [
+            {
+              "id": 4,
+              "name": "HTML5"
+              },
               {
-                  "id": 1,
-                  "name": "HTML5"
-                },
-                {
-                  "id": 2,
-                  "name": "CSS3"
-                },
-                {
-                  "id": 3,
-                  "name": "Pair Programming"
-                },
-                {
-                  "id": 4,
-                  "name": "Javascript ES6"
-                }
+              "id": 5,
+              "name": "CSS3"
+              },
+              {
+              "id": 6,
+              "name": "Javascript ES6"
+              },
+              {
+              "id": 3,
+              "name": "APIs"
+              }
 
           ]
       },	

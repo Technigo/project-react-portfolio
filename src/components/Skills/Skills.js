@@ -5,7 +5,7 @@ import { SkillsWrapper } from './Skills.styles';
 
 const Skills = () => {
   return (
-    <SectionContainer>
+    <SectionContainer bgColor="#d0c9c05c">
       <SectionHeadings>SKILLS</SectionHeadings>
       <SkillsWrapper>
         <div>

@@ -34,8 +34,8 @@ export const SectionHeadings = styled.h2`
     font-style: normal;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #ffffff;
-    background-color: ${(props) => (props.bgColor || '#829460')};
+    color: ${(props) => (props.textColor || '#EDE4E0')};
+    background-color: ${(props) => (props.bgColor || '#6D8B74')};
     line-height: 1.68rem;
     align-self: center;
     max-width: fit-content;
@@ -112,7 +112,7 @@ export const Tags = styled.ol`
         font-size: 1rem;
         letter-spacing: 0.01rem;
         color: #ffffff;
-        background-color: ${(props) => (props.bgColor || '#3a4b38')};
+        background-color: ${(props) => (props.bgColor || '#9F8772')};
         border-radius: 3px;
         padding: 5px;
         margin: 5px 10px 0 0;
@@ -139,7 +139,7 @@ export const ScrollBtn = styled.button`
     right: 10%;
     z-index: 99;
     border: none;
-    background-color: #e8dcdc;
+    background-color: #EFEAD8;
     cursor: pointer;
     padding: 15px;
     border-radius: 2px;

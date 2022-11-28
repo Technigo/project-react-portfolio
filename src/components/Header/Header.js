@@ -19,7 +19,7 @@ const Header = () => {
 
       <HeaderText>
         <span style={{ width: 'max-content' }}>PORTFOLIO:<span style={{ fontWeight: '700' }}> SOFIE RYDMARK</span></span>
-        <span style={{ fontWeight: '700', fontSize: '3rem', letterSpacing: '0.04rem' }}>frontend developer</span>
+        <span style={{ fontWeight: '400', fontSize: '3rem', fontFamily: "'Yeseva One', cursive" }}>Frontend Developer</span>
         <span style={{ fontWeight: '400', fontSize: '1.6rem', letterSpacing: '0.04rem' }}>with media buying experience</span>
       </HeaderText>
 

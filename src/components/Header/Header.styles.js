@@ -1,19 +1,19 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components/macro'
+import '../../index.css'
 
 export const StyledHeader = styled.header`
 
     height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1500313721839-c6e156097456?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background: url(./images/background.png);
     background-size: cover;
-
     &::before {
     content: '';
     position: absolute;
     top: 400px;
     height: 100px;
     width: 100vw;
-    background: url('https://images.unsplash.com/photo-1500313721839-c6e156097456?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+    background: radial-gradient(circle, rgba(95,113,97,1) 0%, rgba(109,139,116,0.9332107843137255) 93%);
     background-image: url('./images/wave3.png');
     background-size: 1900% 100%;
   }
@@ -22,17 +22,22 @@ export const StyledHeader = styled.header`
   @media (min-width: 768px) and (max-width: 991px) {
 
     &::before {
-      background-size: 160% 100%;
+      background-size: 579% 100%;
   }
+
   }
 
   @media (min-width: 992px) {
 
     &::before {
-      background-size: 160% 100%;
+      background-size:  237% 100%;
+
     }
-  
-}
+  }
+    @media (min-width: 1280px) {
+      background-position: center;
+
+  }
 `
 export const ProfilePic = styled.img`
 
@@ -64,12 +69,10 @@ export const HeaderText = styled.h1`
     width: 0%;
     left: 30px;
     top: 200px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    font-family: "Roboto";
     font-size: 0.8rem;
     letter-spacing: 0.04rem;
-    color: #ffff;
+    color: #000000d9;
    
     @media (min-width: 768px) and (max-width: 991px) {
       left: 100px;
@@ -79,6 +82,7 @@ export const HeaderText = styled.h1`
       left: 200px;
       top: 130px;
       font-size: 1.4rem;
+      width: unset;
     }
 
  `
@@ -93,7 +97,7 @@ export const HeaderSocialBar = styled.div`
     img {
       width: 55px;
       margin-left: 10px;
-      filter: invert();
+      filter: invert(0.15);
       border-radius: 50%;
       box-shadow: 7px 7px 15px #f1efef6b, -7px -7px 15px #ffffff57;
 

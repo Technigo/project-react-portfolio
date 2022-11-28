@@ -4,7 +4,7 @@ import { SectionContainer, SectionHeadings, SectionText } from 'Globalstyles';
 
 const Tech = () => {
   return (
-    <SectionContainer bgColor="#eeeeee">
+    <SectionContainer bgColor="#d0c9c05c">
       <SectionHeadings>TECH</SectionHeadings>
       <SectionText>
         HTML, CSS, JavaScript ES6, Flexbox, JSX, React, React Hooks, Redux,

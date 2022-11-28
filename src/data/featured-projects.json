@@ -1,7 +1,43 @@
 [
+		{
+		"overlay_title": "LABYRINTH",
+		"id": 1,
+		"img_src": "/images/labyrinth.PNG",
+		"title": "INTERACTIVE GAME",
+		"project_description": "An interactive game where the user needs to find they way out of a labyrinth.",
+		"repo_name": "project-labyrinth",
+		"netlify_name": "labyrinth-cave",
+		"url": "https://github.com/SofieRydmark/project-labyrinth",
+		"tags": [
+			{
+				"id": 8,
+				"name": "React"
+			},
+			{
+				"id": 7,
+				"name": "Redux"
+			},
+			{
+				"id": 10,
+				"name": "Animations"
+				},
+			{
+				"id": 4,
+				"name": "HTML5"
+			},
+			{
+				"id": 5,
+				"name": "CSS3"
+			},
+			{
+				"id": 3,
+				"name": "APIs"
+			}
+		]
+		},
 	{
 		"overlay_title": "TO-DO APP",
-		"id": 1,
+		"id": 2,
 		"img_src": "/images/taskmonster.PNG",
 		"title": "TASKMONSTER",
 		"project_description": "A to-do app built in React with Redux. ",
@@ -65,7 +101,7 @@
 	},	
 	{
 		"overlay_title": "FRIENDS QUIZ",
-		"id": 3,
+		"id": 4,
 		"img_src": "/images/redux-quiz.PNG",
 		"title": "QUIZ USING REDUX",
 		"project_description": "  A trivia quiz built in react using Redux and styled components",
@@ -97,7 +133,7 @@
 	},
 	{
 		"overlay_title": "HAPPY THOUGHTS",
-		"id": 4,
+		"id": 5,
 		"img_src": "/images/happy-thoughts.png",
 		"title": "HAPPY THOUGHTS CHAT",
 		"project_description": "A live chatboard where you can post happy thoughts, built in React using APIs",
@@ -126,7 +162,7 @@
 
 	{
 		"overlay_title": "MUSIC RELEASES",
-		"id": 5,
+		"id": 6,
 		"img_src": "/images/musicreleases.PNG",
 		"title": "MUSIC RELEASES",
 		"project_description": "A responsive music site showing new releases and popular artists using APIs",
@@ -150,34 +186,6 @@
 				"id": 5,
 				"name": "CSS3"
 			}	 
-		]
-	},
-  {
-		"overlay_title": "WEATHER APP",
-		"id": 6,
-		"img_src": "/images/weatherapp.PNG",
-		"title": "WEATHER APP",
-		"project_description": "A responsive weather app using APIs that tells you today's weather, temperature and a 5-day forecast.",
-    	"repo_name": "project-weather-app",
-		"netlify_name": "weather-app-week3",
-    	"url": "https://github.com/SofieRydmark/project-weather-app",
-		"tags": [
-			{
-				"id": 4,
-				"name": "HTML5"
-			  },
-			  {
-				"id": 5,
-				"name": "CSS3"
-			  },
-			  {
-				"id": 6,
-				"name": "Javascript ES6"
-			  },
-			  {
-				"id": 3,
-				"name": "APIs"
-			  }
 		]
 	}
 ]
