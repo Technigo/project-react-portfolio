@@ -49,6 +49,7 @@ const Projects = () => {
     && (project.name !== 'project-music-releases')
     && (project.name !== 'project-express-api')
     && (project.name !== 'project-mongo-api')
+    && (project.name !== 'project-happy-thoughts-api')
   );
 
   // Filtered list of other projects for mobile view
@@ -57,7 +58,7 @@ const Projects = () => {
     && (project.name !== 'project-portfolio')
     && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-survey')
-    && (project.name !== 'project-mongo-api')
+    && (project.name !== 'project-happy-thoughts-api')
   );
 
   // Filtered list of featured projects for tablet/desktop view
@@ -73,6 +74,7 @@ const Projects = () => {
     && (project.name !== 'project-movies')
     && (project.name !== 'project-express-api')
     && (project.name !== 'project-mongo-api')
+    && (project.name !== 'project-happy-thoughts-api')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -83,7 +85,7 @@ const Projects = () => {
     && (project.name !== 'project-survey')
     && (project.name !== 'project-redux-quiz')
     && (project.name !== 'project-todos')
-    && (project.name !== 'project-mongo-api')
+    && (project.name !== 'project-happy-thoughts-api')
   );
 
   // Function that sets the code-tags into separate units
