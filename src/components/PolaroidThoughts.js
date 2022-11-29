@@ -17,8 +17,6 @@ export const PolaroidTest = () => {
 }
 
 const PictureContainer = styled.div`
- position: relative;
-  height: 500px;
 
   .polaroid {
     border: 1px solid darkgrey;
@@ -40,7 +38,15 @@ const PictureContainer = styled.div`
     font-family: 'Indie Flower', cursive;
   }
 
+  @media (max-width: 899px) {
+    display: flex;
+    flex-direction: column;
+  
+    }
+
   @media (min-width: 900px) {
+    position: relative;
+    height: 500px;
     .polaroid {
       position: absolute;
       border: 1px solid darkgrey;
