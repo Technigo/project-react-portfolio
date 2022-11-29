@@ -7,7 +7,7 @@
     "github": "https://github.com/SoderstromC/project-happy-thoughts",
     "description": "Feed of Happy thoughts built in React",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6", "API"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Guess Who Game",
@@ -18,7 +18,7 @@
     "github": "https://github.com/SoderstromC/project-guess-who",
     "description": "Interactive game built with Javascript",
     "tech": ["HTML", "CSS", "JavaScript ES6"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Weather App",
@@ -28,7 +28,7 @@
     "github": "https://github.com/SoderstromC/project-weather-app",
     "description": "A weather app built with Javascript",
     "tech": ["HTML", "CSS", "JavaScript ES6", "API"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Labyrinth",
@@ -38,7 +38,7 @@
     "github": "https://github.com/SoderstromC/project-labyrinth",
     "description": "A labyrinth game using thunks",
     "tech": ["React","Redux", "HTML", "CSS", "Jsx", "API"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Quiz",
@@ -48,7 +48,7 @@
     "github": "https://github.com/SoderstromC/project-redux-quiz",
     "description": "Multiple-choice quiz using Redux, mob programming",
     "tech": ["React","Redux", "HTML", "CSS", "Jsx"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Movie Site",
@@ -58,7 +58,7 @@
     "github": "https://github.com/SoderstromC/project-movies",
     "description": "Multipage site built with React Router, pair programming",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Survey",
@@ -68,7 +68,7 @@
     "github": "https://github.com/SoderstromC/project-survey",
     "description": "A survey which generates a tailored pomodoro recipe based on your answers",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Music Releases",
@@ -78,7 +78,7 @@
     "github": "https://github.com/SoderstromC/project-music-releases",
     "description": "A page that shows new album and artist releases, pair programming",
     "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   },
   {
     "title": "Chatbot",
@@ -88,6 +88,6 @@
     "github": "https://github.com/SoderstromC/project-chatbot",
     "description": "A table booking chatbot for restaurants, first pair programming project",
     "tech": ["HTML", "CSS", "JavaScript ES6"],
-    "navigate": "GO TO PROJECT"
+    "navigate": "GO TO WEBSITE"
   }
 ]

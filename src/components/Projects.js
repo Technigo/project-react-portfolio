@@ -60,23 +60,26 @@ export const Projects = () => {
     border: 1px solid grey;
     &:hover{
       background: whitesmoke;
+      border: 3px solid grey;
+      p {
+        color: white;
+        background-color: var(---primary);
+      }
     }
   `;
 
   const MainProjectTitle = styled.p`
-    display:flex;
     color: transparent;
     margin-top: 10px;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    transition: 0.5s ease;   
+    text-align: center; 
+    width: 275px;
     &:hover{
-      display: block;
-      color: white;
-      background-color: var(---primary);
-      font-size: 17px;
-      font-weight: bold;
-      line-height: 22px;
-      transition: 0.5s ease;   
-      text-align: center; 
-      width: 275px;
+
     }
   `
 
@@ -93,6 +96,12 @@ export const Projects = () => {
     p {
       color: grey;
       font-size: 15px;
+      }
+      &:hover{
+        h4 {
+        // font-size: 17px;
+        color: black;
+        }
       }
   `;
 

@@ -11,7 +11,7 @@ export const Intro = () => {
   const IntroText = styled.div`
     text-align: center;
     width: 900px;
-    padding: 120px 80px 120px 80px;
+    padding: 110px 80px 120px 80px;
     color: grey;
     font-size: 17px;
     font-weight: 500;

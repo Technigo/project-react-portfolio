@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/dive2.jpg';
-import Linkedin from '../icons/linkedinwhite.png';
-import Github from '../icons/githubwhite.png';
+import BackgroundImage from '../images/Waterpink.jpg';
+import Linkedin from '../icons/linkedin602.png';
+import Github from '../icons/github602.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
@@ -23,8 +23,9 @@ export const Header = () => {
     background-size: cover;
     border: none;
     height: 100%;
+
     @media (max-width: 760px) {
-      width: min-content;
+      
     }
   `;
 
@@ -45,7 +46,7 @@ export const Header = () => {
     left: 140px;
     padding: 0;
     margin: 0;
-    color: whitesmoke;
+    color: var(---primary);
     h2 {
       line-height: 18px;
       letter-spacing: 0.04em;
@@ -84,8 +85,8 @@ export const Header = () => {
     width: 200px;
     border-radius: 50%;
     z-index: 1;
-    right: 5%;
-    bottom: -54px;
+    right: 10%;
+    bottom: -10px;
     @media (max-width: 820px) {
       height: 130px;
     width: 130px;

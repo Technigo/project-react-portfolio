@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 
 export const Skills = () => {
@@ -32,7 +32,10 @@ export const Skills = () => {
     h3 {
       color: grey;
       text-transform: uppercase;
-      font-size: 18px;
+      font-size: 16px;
+      }
+    @media (max-width: 760px) {
+      width: 80px;
       }
   `;
 

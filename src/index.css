@@ -17,11 +17,13 @@
   -webkit-font-smoothing: antialiased;
 }
 body {
-  background-color: var(---main);
+  background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-
+root > * {
+  padding: 0 10px 0 10px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
