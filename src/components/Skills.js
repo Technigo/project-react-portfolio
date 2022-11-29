@@ -5,10 +5,10 @@ import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 export const Skills = () => {
   const SkillsSection = styled.div`
     text-align: center;
-    padding: 70px 0;
+    padding: 90px 0 100px 0;
     background-color: white;
-    border-top: solid 1px var(---main);
-    border-bottom: solid 1px var(---main);
+    // border-top: solid 1px var(---main);
+    // border-bottom: solid 1px var(---main);
   `;
 
   const SkillsWrapper = styled.div`
@@ -28,9 +28,11 @@ export const Skills = () => {
   const Skill = styled.div`
     width: 200px;
     margin-top: 30px;
+    color: grey;
     h3 {
-      color: #c8aa89c6;
+      color: grey;
       text-transform: uppercase;
+      font-size: 18px;
       }
   `;
 
@@ -59,14 +61,14 @@ export const Skills = () => {
               <p>Figma</p>
               <p>Slack</p>
               <p>Notion</p>
-              <p>Code Pen</p>
+              {/* <p>Code Pen</p> */}
             </Skill>
             <Skill>
               <h3>more</h3>
               <p>Leadership</p>
               <p>Scaling teams</p>
               <p>Discovery</p>
-              <p>Customer Experience</p>
+              <p>CX</p>
             </Skill>
             <Skill>
               <h3>upcoming</h3>

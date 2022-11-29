@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
-import Linkedin from '../icons/linkedin602.png';
-import Github from '../icons/github602.png';
+import Linkedin from '../icons/linkedinwhite.png';
+import Github from '../icons/githubwhite.png';
 
 export const Socials = () => {
   const SocialsSection = styled.div`
     text-align: center;
-    padding: 50px 0;
-    background-color: white;
+    padding: 0 0 50px 0;
+    background-color: var(---highlight);
   `;
 
   const IconWrapper = styled.div`
@@ -17,7 +17,7 @@ export const Socials = () => {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
   `;
 
   const IconContainer = styled.div`
@@ -29,7 +29,7 @@ export const Socials = () => {
       }
     h3 {
       text-transform: uppercase;
-      color: #c8aa89c6;
+      color: white;
       }
   `;
 

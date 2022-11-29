@@ -11,9 +11,9 @@ export const Intro = () => {
   const IntroText = styled.div`
     text-align: center;
     width: 900px;
-    padding: 120px 80px 50px 80px;
-    color: var(---primary);
-    font-size: 18px;
+    padding: 120px 80px 120px 80px;
+    color: grey;
+    font-size: 17px;
     font-weight: 500;
     @media (max-width: 760px) {
       padding: 120px 30px 50px 30px;
@@ -24,14 +24,14 @@ export const Intro = () => {
     display: inline-block;
     width: 30px;
     margin-bottom: 4px;
-    border: 1px solid var(---accent);
+    border: 1px solid var(---highlight);
   `;
 
   const Dot = styled.span`
     display: inline-block;
     height: 10px;
     width: 10px;
-    background-color: var(---accent);
+    background-color: var(---highlight);
     border-radius: 50%;
   `;
 

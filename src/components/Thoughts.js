@@ -1,31 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
-import ThoughtsImg from '../images/Yellow.png';
+import ThoughtsImg from '../images/Waterpink.jpg';
 
 export const Thoughts = () => {
   const ThoughtsSection = styled.div`
     display: inline-grid;
     justify-content: center;  
     width: 100%;
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
     background-color: white;
   `;
 
   const ArticleWrapper = styled.article`
-    width: 515px;
-    padding 10px;
+    width: 458px;
+    padding: 10px;
     margin-top: 10px;
     text-align: start;
-    color: #fcfaf88a;
+    color: grey;
+    display: flex;
+    flex-direction: column;
     h4 {
       margin: 3px 0px;
       text-transform: uppercase;
     }
     a {
       text-decoration: none;
-      color: #c8aa89c6;
+      color: grey;
     }
     @media (max-width: 760px) {
       width: 350px;
@@ -33,10 +35,10 @@ export const Thoughts = () => {
   `;
 
   const ArticleImg = styled.img`
-    width: 490px;
+    width: 320px;
     margin: 0 auto;
     @media (max-width: 760px) {
-      width: 325px;
+      width: 225px;
     }
   `;
 
@@ -69,7 +71,7 @@ export const Thoughts = () => {
               <p className="tag">Programming</p>
               <p className="tag">Career Change</p>
               <p className="tag">Customer Experience</p>
-              <p className="tag">Solving Problems</p>
+              {/* <p className="tag">Solving Problems</p> */}
             </Tag>
           </ArticleWrapper>
         </ThoughtsSection>

@@ -23,7 +23,7 @@ export const SectionTitle = styled.div`
     font-weight: bold;
 `;
 export const Tag = styled.div`
-    margin: 5px 3px 5px 0px;
+    margin: 4px 3px 5px 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;

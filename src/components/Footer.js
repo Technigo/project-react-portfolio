@@ -9,7 +9,7 @@ export const Footer = () => {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 70px 0px;
+    padding: 70px 0 0 0;
   `;
 
   const FooterWrapper = styled.div`
@@ -39,6 +39,7 @@ export const Footer = () => {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 23px;
   `;
 
   return (

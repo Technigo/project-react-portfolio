@@ -5,7 +5,7 @@ import { OuterWrapper, InnerWrapper, SectionTitle } from './reusable/Wrappers';
 export const Tech = () => {
   const TechSection = styled.div`
     position: relative;
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 50px 0px;
     width: 100%;
     background-color: white;
     color: #fcfaf88a;
@@ -17,7 +17,7 @@ export const Tech = () => {
     margin-top: 20px;
     padding: 20px 100px 20px 100px;
     text-align: center;
-    color: #c8aa89c6;
+    color: grey;
     font-weight: bold;
     @media (max-width: 760px) {
       padding: 20px 0px 20px 0px;
@@ -32,7 +32,7 @@ export const Tech = () => {
             <p>tech</p>
           </SectionTitle>
           <TechText>
-          React | JavaScript | ES6 | HTML5 | CSS3
+          React | JavaScript ES6 | HTML5 | CSS3
           </TechText>
         </TechSection>
       </InnerWrapper>

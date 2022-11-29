@@ -1,13 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import data from '../data.json';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
 
 export const Projects = () => {
   const ProjectSection = styled.div`
-    padding: 75px 0px 10px 0px;
+    padding: 100px 0px 10px 0px;
     background-color: white;
-    border-bottom: solid 1px var(---main);
+    // border-bottom: solid 1px var(---main);
   `;
 
   const ProjectWrapper = styled.div`
@@ -27,12 +27,14 @@ export const Projects = () => {
   `;
 
   const CardContent = styled.div`
-    width: 335px;
-    margin: 10px;  
+    width: 350px;
+    margin: 10px;
+    padding: 10px; 
       img {
-        width: 325px;
-        height: 325px;
+        width: 80px;
+        height: 80px;
         display: block;
+        margin-top: 17px;
       }
   `;
 
@@ -42,35 +44,40 @@ export const Projects = () => {
     width: 325px;
     height: 325px; 
     margin: 0 auto;
-    &:hover{
-      display: none;
-    }
   `;
 
   const CardOverlay = styled.div`
     position: relative;
     display: flex;
-    width: 325px;
-    height: 325px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 220px; 
     margin: 0 auto;
-    z-index: 2;
+    z-index: 1;
     background: white;
-    opacity: 80%;
     transition: ease-in .3s;
+    border: 1px solid grey;
+    &:hover{
+      background: whitesmoke;
+    }
   `;
 
-  const MainProjectTitle = styled.h2`
-    color: var(---primary);
-    // background-color: transparent;
-    font-size: 24px;
-    line-height: 30px;
-    position: absolute;
-    top: 30%;
-    z-index: 1;
-    margin: 20px;
-    transition: 0.5s ease;   
-    text-align: center; 
-    width: 275px;
+  const MainProjectTitle = styled.p`
+    display:flex;
+    color: transparent;
+    margin-top: 10px;
+    &:hover{
+      display: block;
+      color: white;
+      background-color: var(---primary);
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 22px;
+      transition: 0.5s ease;   
+      text-align: center; 
+      width: 275px;
+    }
   `
 
   const DetailsWrapper = styled.div`
@@ -78,13 +85,13 @@ export const Projects = () => {
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    margin: 20px 10px;
+    margin: 10px 0px;
     h4 {
-      color: #c8aa89c6;
+      color: var(---primary);
       text-transform: uppercase;
       }
     p {
-      color: #c8aa89c6;
+      color: grey;
       font-size: 15px;
       }
   `;
@@ -93,7 +100,7 @@ export const Projects = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 4px;
     a {
       transition: all 0.2s ease-in-out;
       &:hover {
@@ -119,8 +126,8 @@ export const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer">
                       <CardOverlay>
-                        <MainProjectTitle>{item.title}</MainProjectTitle>
                         <ProjectBackground img src={item.image} alt="placeholder" />
+                        <MainProjectTitle>{item.navigate}</MainProjectTitle>
                       </CardOverlay>
                     </a>
                     <DetailsWrapper>

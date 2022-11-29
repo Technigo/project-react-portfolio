@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/Yellow.png';
-import Linkedin from '../icons/linkedinpink60.png';
-import Github from '../icons/gitpink60.png';
+import BackgroundImage from '../images/dive2.jpg';
+import Linkedin from '../icons/linkedinwhite.png';
+import Github from '../icons/githubwhite.png';
 
 export const Header = () => {
   const HeaderBackground = styled.header`
@@ -14,22 +14,24 @@ export const Header = () => {
     justify-content: flex-end;    
     width: 100%;
     height: 525px;
-    background-color: var(---highlight);
-    border-bottom: 1px solid var(---primary);
+    background-color: whitesmoke;
+    // border-bottom: 1px solid var(---primary);
   `;
 
   const BackgroundImg = styled.img`
+  // display: none;
     background-size: cover;
     border: none;
+    height: 100%;
     @media (max-width: 760px) {
-      height: 100%;
+      width: min-content;
     }
   `;
 
   const IconsContainer = styled.div`
     position: absolute;
     display: flex;
-    top: 76px;
+    top: 38px;
     right: 91px;
     @media (max-width: 760px) {
       right: 40px;
@@ -43,7 +45,7 @@ export const Header = () => {
     left: 140px;
     padding: 0;
     margin: 0;
-    color: #f06fdf;
+    color: whitesmoke;
     h2 {
       line-height: 18px;
       letter-spacing: 0.04em;
@@ -78,16 +80,15 @@ export const Header = () => {
   const ProfileImageWrapper = styled.div`
     position: absolute;
     overflow: hidden;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     z-index: 1;
-    right: 20%;
-    bottom: -67px;
-    border: 2px solid var(---primary);
-    @media (max-width: 760px) {
-      height: 200px;
-      width: 200px;
+    right: 5%;
+    bottom: -54px;
+    @media (max-width: 820px) {
+      height: 130px;
+    width: 130px;
     }
   `;
 

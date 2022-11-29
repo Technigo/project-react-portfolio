@@ -25,13 +25,13 @@ export const OtherProjects = () => {
   const OtherProjectsList = styled.div`
     text-align: left;
     text-decoration: none;
-    margin: 10px;
+    margin: 25px 0;
     h4 {
-      color: #c8aa89c6;
+      color: grey;
       text-transform: uppercase;
       }
     p {
-      color: #c8aa89c6;
+      color: grey;
       font-size: 15px;
       }
   `;
