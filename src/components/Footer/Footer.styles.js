@@ -4,7 +4,7 @@ import { HeaderSocialBar } from 'components/Header/Header.styles'
 
 export const StyledFooter = styled.footer`
     background: #6D8B74;
-    height: 25vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ export const FooterSocialBar = styled(HeaderSocialBar)`
     top: unset;
     display: flex;
     align-self: center;
-    margin: 20px;
+    padding-top: 30px;
 
 `
 
