@@ -16,6 +16,7 @@ const Skills = () => {
           <p>React</p>
           <p>Redux</p>
           <p>Node.js</p>
+          <p>MongoDB</p>
         </div>
         <div>
           <SubHeadings>TOOLBOX</SubHeadings>

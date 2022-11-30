@@ -8,9 +8,7 @@ import Tech from 'components/Tech/Tech'
 import FeaturedProjects from 'components/FeaturedProjects/FeaturedProjects'
 import OtherProjects from 'components/OtherProjects/OtherProjects'
 import MyThoughts from 'components/MyThoughts/MyThoughts'
-// import MoreThoughts from 'components/MoreThoughts/MoreThoughts'
 import Skills from 'components/Skills/Skills'
-import ForMore from 'components/ForMore/ForMore'
 import Footer from 'components/Footer/Footer'
 
 export const App = () => {
@@ -24,9 +22,7 @@ export const App = () => {
       <FeaturedProjects />
       <OtherProjects />
       <MyThoughts />
-      {/* <MoreThoughts /> */}
       <Skills />
-      <ForMore />
       <Footer />
     </>
 

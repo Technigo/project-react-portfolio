@@ -1,12 +1,14 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components/macro'
+import { HeaderSocialBar } from 'components/Header/Header.styles'
 
 export const StyledFooter = styled.footer`
-    background: #efead8;
+    background: #6D8B74;
     height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 30px;
 
     a {
     text-decoration: none;
@@ -14,3 +16,13 @@ export const StyledFooter = styled.footer`
     }
 
 `
+export const FooterSocialBar = styled(HeaderSocialBar)`
+    position: unset;
+    right: unset;
+    top: unset;
+    display: flex;
+    align-self: center;
+    margin: 20px;
+
+`
+

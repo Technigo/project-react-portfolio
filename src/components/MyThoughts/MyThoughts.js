@@ -6,7 +6,7 @@ import { StyledMyThoughts } from './MyThoughts.styles';
 const MyThoughts = () => {
   return (
     <SectionContainer>
-      <SectionHeadings>MY THOUGHTS</SectionHeadings>
+      <SectionHeadings>THOUGHTS</SectionHeadings>
       <StyledMyThoughts>
         <a href="https://medium.com/@sofie.rydmark/coding-all-night-71a8ee6d7199" role="button" aria-pressed="false" aria-label="mythoughts" target="_blank" rel="noreferrer">
           <img src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="coding-all-night" />

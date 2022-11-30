@@ -34,7 +34,7 @@ export const SectionHeadings = styled.h2`
     font-style: normal;
     font-size: 1.2rem;
     font-weight: 700;
-    color: ${(props) => (props.textColor || '#EDE4E0')};
+    color: ${(props) => (props.textColor || '#ffff')};
     background-color: ${(props) => (props.bgColor || '#6D8B74')};
     line-height: 1.68rem;
     align-self: center;

@@ -88,31 +88,79 @@ export const HeaderText = styled.h1`
  `
 
 export const HeaderSocialBar = styled.div`
-    position: absolute;
-    right: 20px;
-    top: 100px;
-    display: flex;
-    flex-direction: row;
 
-    img {
-      width: 55px;
-      margin-left: 10px;
-      filter: invert(0.15);
-      border-radius: 50%;
-      box-shadow: 7px 7px 15px #f1efef6b, -7px -7px 15px #ffffff57;
+  font-size: 1.5rem;
+  text-align: center;
 
-      &:hover {
-        box-shadow:  7px 7px 15px #f1efef6b, -7px -7px 15px #efa4a429;
-    }
-    }
+ a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px !important;
+    position: relative;
+    margin: 0 9px;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-      right: 50px;
-    }
+  a i,
+  a span{
+      position: relative;
+      top: 2px;
+      left: 1px; 
+  }
+  a:before{
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid #111;
+      
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      
+      -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+      -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+      -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+      -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+      transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+      
+  }
+  a:hover{
+      color: #fff;
+  }
+  a:hover:before{
+      background: #111;
+  }
+      position: absolute;
+      right: 20px;
+      top: 100px;
+      display: flex;
+      flex-direction: row;
 
-    @media (min-width: 992px) {
-      right: 150px;
-    }
+  @media (min-width: 768px) and (max-width: 991px) {
+    right: 50px;
+  }
+
+  @media (min-width: 992px) {
+    right: 150px;
+  }
 
 
 `

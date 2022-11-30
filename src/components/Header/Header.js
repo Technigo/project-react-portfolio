@@ -6,15 +6,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderSocialBar>
-        <a href="https://www.linkedin.com/in/sofierydmark/" role="button" aria-pressed="false" aria-label="linkedin-profile" target="_blank" rel="noreferrer">
-          <img src="images/linkedin.svg" alt="linkedin" />
-        </a>
-        <a href="https://github.com/SofieRydmark" role="button" aria-pressed="false" aria-label="github-profile" target="_blank" rel="noreferrer">
-          <img src="images/github.svg" alt="github" />
-        </a>
-        <a href="https://stackoverflow.com/c/technigo/users/394/" role="button" aria-pressed="false" aria-label="stackOverflow-profile" target="_blank" rel="noreferrer">
-          <img src="images/stackOverflow.svg" alt="stackOverflow" />
-        </a>
+        <a href="https://stackoverflow.com/c/technigo/users/394/" title="stackOverflow" role="button" aria-pressed="false" aria-label="stackOverflow-profile" target="_blank" rel="noreferrer"><i className="fa fa-stack-overflow" /></a>
+        <a href="https://www.linkedin.com/in/sofierydmark/" title="LinkedIn" role="button" aria-pressed="false" aria-label="linkedin-profile" target="_blank" rel="noreferrer"><i className="fa fa-linkedin" /></a>
+        <a href="https://github.com/SofieRydmark" title="github" role="button" aria-pressed="false" aria-label="github-profile" rel="noreferrer" target="_blank"><i className="fa fa-github" /></a>
       </HeaderSocialBar>
 
       <HeaderText>
