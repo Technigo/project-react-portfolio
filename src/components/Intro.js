@@ -9,8 +9,12 @@ const Intro = () => {
       <ContentWrapper>
         <p>
           <Line /><Dot />
-        Hi there! I'm a frontend developer with fullstack ambition and a background in social
-        work. I am passionate about code and have a big interest in CSS.
+          Hello World! I am a problem-solving Frontend Developer with great communication
+          skills and a knack for seeing things from different perspectives. I have several
+          years of working experience in social work, where I got to level up my interpersonal
+          skills. Now I want to use those skills together with my passion for coding to become
+          a truly skilled and communicative developer. I am aiming to go full-stack and learning
+          mobile app development further down the road.
         </p>
       </ContentWrapper>
     </StyledIntro>
@@ -22,10 +26,10 @@ export default Intro;
 const StyledIntro = styled(DarkerContainer)`
   height: 40vh;
 
-
 p {
   letter-spacing: 1px;
-}`
+}
+`
 
 const Line = styled.span`
   border: 1px solid var(--ligtherGreen);
