@@ -17,7 +17,7 @@ const FeaturedProjects = () => {
   })
 
   // Filtering out the projects I do not want to include in the Featured projects-section
-  const featuredProjects = projects.filter((project) => project.name.includes('happy-thoughts') || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
+  const featuredProjects = projects.filter((project) => project.name === 'project-happy-thoughts' || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
 
   return (
     <OuterWrapper gray>
