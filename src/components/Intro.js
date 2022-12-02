@@ -18,8 +18,8 @@ const Intro = () => {
     <section>
       <Container>
         <IntroText>
-        I'm a Junior Software Developer who is <b>passionate about writing clean and maintainable code and improving user experience</b>.
-        I've been familiar with the IT industry for a long time, since I worked for several years as an IT Recruiter in several consultancies.<br />
+          I'm a Junior Software Developer who is <b>passionate about writing clean and maintainable code as well as creating smart features and solutions. I'm interested in working in a cross-functional team to create solutions that make things easier and better for end users.</b><br />
+           I've been familiar with the IT industry for a long time, since I worked for several years as an IT Recruiter in several consultancies.<br />
           <br />My main interest is working with <b>JavaScript, either with React.js or Node.js.</b>.
         </IntroText>
       </Container>
