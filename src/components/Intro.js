@@ -24,7 +24,7 @@ const Intro = () => {
 export default Intro;
 
 const StyledIntro = styled(DarkerContainer)`
-  height: 40vh;
+  min-height: 40vh;
 
 p {
   letter-spacing: 1px;
