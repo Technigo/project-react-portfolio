@@ -8,8 +8,9 @@ export const About = () => {
       <InnerWrapper>
         <SiteSection>
           <AboutText>
-            <p><Line /><Dot /> Hello! I&apos;m Annika,
-            Recently, I have decided to take on the challenge of becoming a Frontend developer.
+            <p><Line /><Dot /> Hello! I&apos;m Annika. I&apos;m a positive and self-motivated
+            person with 10+ years background in the
+            travel industry who decided to take on the challenge of becoming a Frontend developer.
             With my experience from various positions, projects, working in cross-functional teams,
             offering technical support, and delivering customer service, I look forward to creating
             and contributing with user-friendly and straightforward solutions.
