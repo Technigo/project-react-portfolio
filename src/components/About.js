@@ -8,12 +8,14 @@ export const About = () => {
       <InnerWrapper>
         <SiteSection>
           <AboutText>
-            <p><Line /><Dot /> Hello! I&apos;m Annika, a frontend developer with 10+ years
-            background in the travel industry. Most recently I have worked as a business change
-            driver and as a product owner. Working close to developers raised a curiosity for
-            coding. I want to create user friendly applications.
-            I’m solution-focused and a creative person who is excited
-            to learn more.
+            <p><Line /><Dot /> Hello! I&apos;m Annika,
+            I have a 10+ years background in the travel industry.
+            Recently, I have decided to take on the challenge of becoming a Frontend developer.
+            With my experience from various projects, working in cross-functional teams,
+            offering technical support, and delivering customer service, I look forward to
+            creating and contributing user-friendly and straightforward solutions.
+            I am seeking opportunities where I can utilize my skills, allowing me to expand my
+            knowledge and progress my career as a Frontend developer.
             </p>
           </AboutText>
         </SiteSection>
