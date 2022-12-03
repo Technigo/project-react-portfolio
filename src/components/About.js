@@ -9,13 +9,13 @@ export const About = () => {
         <SiteSection>
           <AboutText>
             <p><Line /><Dot /> Hello! I&apos;m Annika,
-            I have a 10+ years background in the travel industry.
             Recently, I have decided to take on the challenge of becoming a Frontend developer.
-            With my experience from various projects, working in cross-functional teams,
-            offering technical support, and delivering customer service, I look forward to
-            creating and contributing user-friendly and straightforward solutions.
-            I am seeking opportunities where I can utilize my skills, allowing me to expand my
-            knowledge and progress my career as a Frontend developer.
+            With my experience from various positions, projects, working in cross-functional teams,
+            offering technical support, and delivering customer service, I look forward to creating
+            and contributing with user-friendly and straightforward solutions.
+            I am seeking opportunities where I can utilize and evolve my skills in an inspiring
+             environment, allowing me to expand my knowledge and progress my career as a Frontend
+             developer while contributing to your meaningful mission.
             </p>
           </AboutText>
         </SiteSection>
