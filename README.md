@@ -1,10 +1,8 @@
 # React Portfolio
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Converting my previously Portfolio built in CSS and HTML, to a one built in React and using the Github API. 
 
 ## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This projects was an exercise in React and API. In addition to that the styling is done in style components. My portfolio is currently not done and I will sort that out in a day or two (that is then what I would do with more time).
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://thriving-taffy-c2d1a4.netlify.app/
