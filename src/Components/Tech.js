@@ -25,7 +25,8 @@ const Tech = () => {
           </TitleContainer>
           <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX,
             React, React Hooks, Redux, Node.js, Web accessibility,
-            API:s, mob-programming, pair-programming, GitHub
+            API:s, mob-programming, pair-programming, GitHub, Agile Methodologies,
+             Google Cloud Platform (GCP), MongoDB
           </p>
         </MyTech>
       </InnerWrapper>

@@ -64,7 +64,7 @@ const Projects = () => {
       .then((data) => SetProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => (project.name.includes('redux')) || (project.name.includes('todo')) || (project.name === 'project-happy-thoughts') || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
+  const filteredProjects = projects.filter((project) => (project.name.includes('todo')) || (project.name === 'project-happy-thoughts') || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
 
   return (
     <OuterWrapper>
