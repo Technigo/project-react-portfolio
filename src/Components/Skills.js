@@ -62,6 +62,9 @@ const Skills = () => {
             <ul>CSS</ul>
             <ul>JavaScript</ul>
             <ul>React</ul>
+            <ul>Redux</ul>
+            <ul>Node</ul>
+            <ul>Mongoose</ul>
           </Code>
           <Toolbox>
             <RedTitle>TOOLBOX</RedTitle>
@@ -70,10 +73,14 @@ const Skills = () => {
             <ul>VS Code</ul>
             <ul>Codepen</ul>
             <ul>Github</ul>
+            <ul>MongoDB</ul>
+            <ul>Postman</ul>
+            <ul>Atlas</ul>
+            <ul>Google Cloud Platform</ul>
           </Toolbox>
           <More>
             <RedTitle>UPCOMING</RedTitle>
-            <ul>Redux</ul>
+            <ul>More backend coming soon...</ul>
           </More>
         </SkillList>
       </InnerWrapper>
