@@ -12,7 +12,7 @@ const Skills = () => {
           <li><h5>Tools</h5></li>
           <li>VS Code</li>
           <li>GitHub</li>
-          <li>Adobe CC</li>
+          <li>Adobe PS</li>
           <li>Figma</li>
         </ul>
 
@@ -20,7 +20,7 @@ const Skills = () => {
           <li><h5>Code</h5></li>
           <li>JavaScript ES6</li>
           <li>React.js</li>
-          <li>CSS3</li>
+          <li>CSS</li>
           <li>HTML5</li>
         </ul>
 
