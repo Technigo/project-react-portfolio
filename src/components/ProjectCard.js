@@ -32,7 +32,7 @@ const ProjectLink = styled.a`
 `
 
 const ProjectShowCase = styled.div`
-  height: 200px;
+  height: 450px;
   position: relative;
   overflow: hidden;
 `
@@ -40,7 +40,7 @@ const ProjectShowCase = styled.div`
 const NameWrapper = styled.div`
 @media (min-width: 667px) {
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   width: 100%;
   top: 0;
   height: 100%;
