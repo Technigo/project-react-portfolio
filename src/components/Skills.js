@@ -33,7 +33,8 @@ export const Skills = () => {
             </SkillsChild>
             <SkillsChild>
               <h3>More</h3>
-              <p>Requirements</p>
+              <p>Change management</p>
+              <p>Requirement setting on digital capabilities</p>
               <p>Product business owner</p>
               <p>Wordpress</p>
             </SkillsChild>
@@ -56,5 +57,5 @@ const SkillsParent = styled.div`
   justify-content: center;
 `
 const SkillsChild = styled.div`
-  width: 150px;
+  width: 200px;
 `

@@ -2,16 +2,14 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { Tag } from './global/GlobalStyling';
 
-export const ProjectCard = ({ href, featured, image, name, title, description, tools }) => {
+export const ProjectCard = ({ href, featured, image, title, description, tools }) => {
   return (
     <ProjectLink href={href} target="_blank" rel="noreferrer">
       <Project>
         {featured && (
           <ProjectShowCase>
             <ProjectImage src={image} />
-            <NameWrapper>
-              <ProjectName>{name}</ProjectName>
-            </NameWrapper>
+            <Overlay />
           </ProjectShowCase>
         )}
         <ProjectTitle>{title}</ProjectTitle>
@@ -37,7 +35,7 @@ const ProjectShowCase = styled.div`
   overflow: hidden;
 `
 
-const NameWrapper = styled.div`
+const Overlay = styled.div`
 @media (min-width: 667px) {
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
@@ -47,23 +45,6 @@ const NameWrapper = styled.div`
   transition: all ease 600ms;
 }
 `
-const ProjectName = styled.h2`  
-@media (min-width: 667px) {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  color: white;
-  padding: 0;
-  line-height: 20px;
-  text-align: center;
-  transition: all 300ms ease;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-`
-
 const ProjectImage = styled.img`
   position: absolute; 
   object-fit: cover;
@@ -74,7 +55,7 @@ const ProjectImage = styled.img`
 
 const Project = styled.article`
 @media (min-width: 667px) {
-  &:hover ${NameWrapper} {
+  &:hover ${Overlay} {
     opacity: 0;
   }
   &:hover ${ProjectImage} {

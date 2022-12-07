@@ -6,11 +6,9 @@ export const PolaroidTest = () => {
     <PictureContainer>
       <div className="polaroid image1">
         <img src="https://images2.imgbox.com/33/ca/TVs12ijO_o.jpg?download=true" alt="Image1" />
-        <p>Write a first thought</p>
       </div>
       <div className="polaroid image2">
         <img src="https://images2.imgbox.com/67/bd/wSvF54Wi_o.jpg?download=true" alt="Image2" />
-        <p>Write a second thought</p>
       </div>
     </PictureContainer>
   )

@@ -47,10 +47,10 @@ const ThoughtArticle = styled.article`
   }
   a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-text);
   }
   span {
-    color: #333;
+    color: var(--color-text);
     font-weight: 700;
   }
 `
