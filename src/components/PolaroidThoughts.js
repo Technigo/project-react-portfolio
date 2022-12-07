@@ -5,7 +5,7 @@ export const PolaroidTest = () => {
   return (
     <PictureContainer>
       <div className="polaroid image1">
-        <img src="https://images2.imgbox.com/81/29/ktXm6dkw_o.jpg?download=true" alt="Image1" />
+        <img src="https://images2.imgbox.com/33/ca/TVs12ijO_o.jpg?download=true" alt="Image1" />
         <p>Write a first thought</p>
       </div>
       <div className="polaroid image2">

@@ -14,14 +14,17 @@ export const Thoughts = () => {
           <PolaroidTest />
           <ArticleContainer>
             <ThoughtArticle>
-              <Date>Oct 2022</Date>
-              <h3>Why I started coding</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Fuga, voluptates. Voluptatem praesentium ut quibusdam facilis dolore
-                in quas sint temporibus amet, mollitia, exercitationem numquam?
-                Sed omnis distinctio nisi odio deleniti.
-              </p>
+              <Date>Dec 6th 2022</Date>
+              <a
+                href="https://medium.com/@annika.gadman/the-power-of-teamwork-learning-in-groups-helps-me-accelerate-my-learning-e6107fc2c968"
+                target="_blank"
+                rel="noopener noreferrer">
+                <h3>The Power of Teamwork: Learning in Groups Helps Me Accelerate My Learning</h3>
+                <p>Remote courses are a great opportunity to develop skills —
+                  like web development that I&apos;m interested in — while having the
+                  freedom to study wherever and whenever I want. <span>&gt;&gt;&gt;</span>
+                </p>
+              </a>
             </ThoughtArticle>
           </ArticleContainer>
         </SiteSection>
@@ -38,6 +41,18 @@ const ArticleContainer = styled.div`
 const ThoughtArticle = styled.article`
   width: 100%;
   text-align: left;
+
+  h3 {
+    text-decoration: underline;
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  span {
+    color: #333;
+    font-weight: 700;
+  }
 `
 const Date = styled.p`
   color: var(--color-mediumblue);
