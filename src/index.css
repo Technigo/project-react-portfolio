@@ -1,5 +1,16 @@
+
+/*
+font-family: 'Roboto', sans-serif; 
+font-family: 'Montserrat', sans-serif;
+colors:  #6fb9bd #96A749 #D64819 #E6836C #e9722d
+*/
+
+
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +21,69 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* FEATURED PROJECTS */
+.image-component {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.image-component:hover > .image-overlay {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
+}
+
+.image-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  opacity: 1;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transition: 0.5s ease;  
+}
+
+.image-component:hover > .image-text {
+  opacity: 0;     
+  transition: 0.5s ease;   
+}
+
+.featured-projects {
+  width: 100%;
+
+} 
+
+/* TABLET */
+@media (min-width: 668px) and (max-width:1024px) {
+
+  /* FEATURED PROJECTS */
+  .box-text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 1%;
+    width: 35%;
+  }
+}  
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+  /* FEATURED PROJECTS */
+
+  .featured-projects img {
+      padding: 8% 2%;
+  } 
 }
