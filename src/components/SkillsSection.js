@@ -33,6 +33,8 @@ const SkillSection = () => {
               <li>Slack</li>
               <li>Github</li>
               <li>VScode</li>
+              <li>Google Cloud</li>
+              <li>Postman</li>
               <li>Adobe Illustrator</li>
             </ul>
           </SkillsBox>
