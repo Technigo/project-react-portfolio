@@ -80,14 +80,13 @@ const Title = styled.h1`
     top: 35%;
     left: 10%;
     color: white;
-    font-size: 2.8rem;
-    line-height: 2.4rem;
+    font-size: 3rem;
+    line-height: 2.8rem;
     font-family: roboto;
-    text-shadow: 0px 0px 2px black;
-  
+
   @media (min-width: 900px) {
-    font-size: 3.7rem;
-    line-height: 2.9rem;
+    font-size: 4.9rem;
+    line-height: 3.9rem;
     left: 20%;
   } 
   

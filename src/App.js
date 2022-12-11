@@ -9,6 +9,7 @@ import SkillSection from 'components/SkillsSection';
 import Thoughts from 'components/Thoughts';
 import MoreSection from 'components/MoreSection';
 import ContactFooter from 'components/ContactFooter';
+import FinalProject from 'components/FinalProject';
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
       <AboutSection />
       <TechStack />
       <FeaturedProjects />
+      <FinalProject />
       <Thoughts />
       <SkillSection />
       <MoreSection />

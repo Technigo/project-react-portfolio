@@ -7,10 +7,10 @@ const AboutSection = () => {
     <Section primary>
       <Wrapper>
         <AboutWrapper>
-          <About> <Line /><Dot /> Hi there, I´m Cecilia - a frontend developer with love
-            for code and design! I thrive in challenging environments and strive
-            to deliver something extra. Welcome to my corner where I publish
-            the latest projects I´ve been working on.
+          <About> <Line /><Dot /> Hi, I´m Cecilia - an ambitious, social and out-going
+            frontend developer with love for code and design! I have a long experience from
+            working towards clients and I thrive in challenging environments
+            where I strive to deliver out-of-the-box solutions.
           </About>
         </AboutWrapper>
       </Wrapper>

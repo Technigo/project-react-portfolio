@@ -34,8 +34,9 @@ const TechStack = () => {
         <TechStackWrap>
           <Highlight>JavaScript ES6 </Highlight>| HTML5 |<Highlight> React </Highlight> |
           <Highlight> CSS </Highlight>| Redux | <Highlight> Node.js </Highlight> | Flexbox | APIs |
-          <Highlight> Agile Methodologies</Highlight>  |  mob-programming |
-         pair-programming |  <Highlight>Git</Highlight> | web Accessibility
+          <Highlight> Agile Methodologies</Highlight>  |  mob-programming |  MongoDB & Mongoose |
+         Git |  <Highlight>Pair-programming</Highlight> | web Accessibility |
+          <Highlight> team oriented</Highlight>
         </TechStackWrap>
       </Wrapper>
     </TechSection>

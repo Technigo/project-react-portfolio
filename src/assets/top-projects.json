@@ -7,8 +7,18 @@
 	  "netlify": "https://newly-release-movies.netlify.app/",
 	  "github": "https://github.com/Sneezan/project-movies",
 	  "description": "Bring drinks and snacks, movies & chill coming up!",
-	  "tools": ["React", "JavaScript ES6", "Node", "CSS", "APIs"]
+	  "tools": ["React", "JavaScript ES6", "Node.js", "CSS", "APIs"]
 	},
+	{
+		"title": "Authenticated",
+		"overlay": "log in ",
+		"id": "7",
+		"image": "  https://i.imgur.com/aXEAZ0J.png",
+		"netlify": "https://authenticated.netlify.app/",
+		"github": "https://github.com/Sneezan/project-auth",
+		"description": "A log in page that authenticates the user and encrypts passwords.",
+		"tools": ["Backend", "Node.js", "JavaScript ES6", "Fullstack"]
+	  },
 	{
 	  "title": "Music releases",
 	  "overlay": "new music releases",
@@ -30,13 +40,23 @@
 	  "tools": ["React", "Redux", "JavaScript ES6", "FAB" ]
 	},
 	{
+		"title": "Happy Thoughts",
+		"overlay": "the nice twitter",
+		"id": "8",
+		"image": "https://i.imgur.com/fiIiv4d.png",
+		"netlify": "https://onlyhappythoughts.netlify.app",
+		"github": "https://github.com/Sneezan/project-happy-thoughts",
+		"description": "Happy thoughts project was updated with a shiny, new backend.",
+		"tools": ["Backend", "Fullstack", "JavaScript ES6", "API", "CSS"]
+	  },
+	{
 	"title": "Cecilia's portfolio",
 	"overlay": "The portfolio",
 	"id": "4",
 	"image": "https://i.imgur.com/fxVCs5d.png",
 	"netlify": "https://github.com/Sneezan/project-react-portfolio",
 	"github": "https://github.com/Sneezan/project-react-portfolio",
-	"description": "You are actually viewing this project live right now!Click to view on GitHub",
+	"description": "You are actually viewing this project live right now! Click to view on GitHub",
 	"tools": ["React", "Styled components", "JavaScript"]
   },
   {
@@ -60,3 +80,5 @@
   "tools": ["JavaScript ES6", "API", "CSS"]
 }
   ]
+
+
