@@ -1,11 +1,11 @@
 [
     {
       "skill-title": "Code",
-      "skill-list": ["HTML", "CSS", "Javascript", "React", "Redux"]
+      "skill-list": ["HTML", "CSS", "Javascript", "React", "Redux", "Node.js", "MongoDB"]
     },
     {
         "skill-title": "Toolbox",
-        "skill-list": ["Figma", "Stack Overflow", "Github", "Slack", "Excel"]
+        "skill-list": ["Figma", "Stack Overflow", "Github", "Slack", "Excel", "Postman", "MongoDBCompass"]
       },
       {
         "skill-title": "More",
@@ -13,6 +13,6 @@
       },
       {
         "skill-title": "Upcoming",
-        "skill-list": ["Node.js", "MongoDB", "Python"]
+        "skill-list": [ "Python"]
       }
   ]

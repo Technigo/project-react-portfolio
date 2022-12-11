@@ -1,5 +1,14 @@
 [
   {
+    "title": "Popular Movies",
+    "title-description": "Popular Movies App",
+    "project-description": "A responsive web site displaying popular movies and their details",
+    "repo-name": "project-movies",
+    "netlify-name": "project-movies-neah-viktor",
+    "tags": ["React", "API", "Routes", "Pair-programming"],
+    "image": "/Assets/thumbnail-movies.png"
+  },
+  {
     "title": "Music releases",
     "title-description": "New music App",
     "project-description": "An app where you can see newly released music",

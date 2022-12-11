@@ -1,11 +1,29 @@
 [
   {
+    "title": "Arts and Crafts",
+    "title-description": "Arts and crafts Page",
+    "project-description": "A site where you can register/login using encrypted passwords and authentification",
+    "repo-name": "project-auth",
+    "netlify-name": "arts-and-craft-society",
+    "tags": ["React", "Redux", "Routes", "API", "Node.js", "MongoDB"],
+    "image": "/Assets/thumbnail-secret-society.png"
+  },
+  {
+    "title": "Happy Thoughts",
+    "title-description": "Post happy thoughts app",
+    "project-description": "Frontend + backend project. A Twitter-like app to post and fetch messages from an API ",
+    "repo-name": "project-happy-thoughts",
+    "netlify-name": "happy-thoughts-neahr",
+    "tags": ["React", "API", "Node.js", "MongoDB"],
+    "image": "/Assets/thumbnail-happy-thoughts.png"
+  },
+  {
     "title": "Todos",
     "title-description": "Todo App",
     "project-description": "A responsive web app displaying a todo list",
     "repo-name": "project-todos",
     "netlify-name": "todos-neah",
-    "tags": ["React", "Redux"],
+    "tags": ["React", "Redux", "Styled components"],
     "image": "/Assets/thumbnail-todos.png"
   },
 
@@ -17,25 +35,6 @@
     "netlify-name": "hippos-movie-quote-quiz",
     "tags": ["React", "Redux", "Routes", "Mob-programming"],
     "image": "/Assets/thumbnail-quote-quiz.png"
-  },
-
-  {
-    "title": "Popular Movies",
-    "title-description": "Popular Movies App",
-    "project-description": "A responsive web site displaying popular movies and their details",
-    "repo-name": "project-movies",
-    "netlify-name": "project-movies-neah-viktor",
-    "tags": ["React", "API", "Routes", "Pair-programming"],
-    "image": "/Assets/thumbnail-movies.png"
-  },
-    {
-      "title": "Happy Thoughts",
-      "title-description": "Post happy thoughts app",
-      "project-description": "A Twitter-like app to post and fetch happy thoughts",
-      "repo-name": "project-happy-thoughts",
-      "netlify-name": "happy-thoughts-neahr",
-      "tags": ["React", "API", "CSS"],
-      "image": "/Assets/thumbnail-happy-thoughts.png"
-    }
+  }
   ]
   

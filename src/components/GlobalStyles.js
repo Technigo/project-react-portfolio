@@ -68,10 +68,10 @@ padding: 0% 10% 0% 10%;
 /* skill tags for featured and other projects */
 
 export const ProjectTags = styled.li`
-padding: 0;
 font-family: "Roboto", sans-serif;
 color: black;
 padding: 0.5%;
+line-height: 1.5;
 background-color: #ff7b0038;
 display: inline;
 font-size: 90%;
