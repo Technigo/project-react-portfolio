@@ -13,6 +13,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
       <Wrapper>
         <SectionHeader color={color}>FEATURED PROJECTS</SectionHeader>
         <FeaturedProjectWrapper>
+          {/* Loop projects */}
           {FeaturedProject.map((project) => {
             return (
               <ProjectCard
@@ -27,6 +28,7 @@ const FeaturedProjectCard = ({ color, tagColor }) => {
                 </ProjectInfoHeader>
                 <ProjectInfo>{project['project-description']}</ProjectInfo>
                 <ul style={{ padding: 0 }}>
+                  {/* Loop tags per project */}
                   {project.tags.map((tag) => (
                     <ProjectTags tagColor={tagColor} key={tag}>
                       {tag}

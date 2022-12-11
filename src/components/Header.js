@@ -36,7 +36,7 @@ const Header = () => {
   );
 };
 
-/* My styled components for Header */
+/* Styled components for Header */
 
 const PaintBrush = styled.span`
   background-image: linear-gradient(180deg,#f6c453,#f6c453);

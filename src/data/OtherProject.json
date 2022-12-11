@@ -1,5 +1,41 @@
 [
     {
+      "title": "Backend Project - Happy thoughts API",
+      "description": "An individual project to create an backend API to our previous project: Happy thoughts",
+      "netlify": "https://project-happy-thoughts-api-nczig4g6cq-lz.a.run.app/",
+      "tags": ["MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Github"]
+    },
+    {
+      "title": "Backend Project - Mongo API",
+      "description": "A project focuses on how to use MongoDB to store data and how to query that data from your API. I retrieved data from Kaggle and convert it to JSON file.",
+      "netlify": "https://project-mongo-api-afvtyql6wq-lz.a.run.app/",
+      "tags": ["MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Github"]
+    },
+    {
+      "title": "Backend Project - Express API",
+      "description": "The basic of backend. Main focus is building my own API. Then I created several routes and endpoints that return single result or array of elements.",
+      "netlify": "https://project-express-api-o3miizti7q-lz.a.run.app",
+      "tags": ["Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Github"]
+    },
+    {
+      "title": "To do",
+      "description": "An individual project to create an app to store user's list of things to do.",
+      "netlify": "https://cool-faloodeh-60abd0.netlify.app/",
+      "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Github"]
+    },
+    {
+      "title": "Labyrinth",
+      "description": "A project done in pairs to create a text based game Labyrinth to practice how APIs work together with Redux.",
+      "netlify": "https://retro-nina-and-viktors-labyrinth.netlify.app/",
+      "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
+    },
+    {
+      "title": "Quiz with Redux",
+      "description": "A group project to create a quiz with main focus on learning how to use Redux.",
+      "netlify": "https://hippos-movie-quote-quiz.netlify.app/",
+      "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Mob Program", "Github"]
+    },
+    {
       "title": "Project Survey",
       "description": "Responsive website that is a typeform-like survey for collecting data from your users, built in React ",
       "netlify": "https://relaxed-semifreddo-3917b6.netlify.app/",
