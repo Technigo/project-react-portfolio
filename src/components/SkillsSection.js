@@ -34,7 +34,6 @@ const SkillSection = () => {
               <li>Github</li>
               <li>VScode</li>
               <li>Adobe Illustrator</li>
-              <li>Adobe Illustrator</li>
             </ul>
           </SkillsBox>
         </SkillWrapper>
