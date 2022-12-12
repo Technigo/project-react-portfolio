@@ -2,7 +2,7 @@
     {
       "id": "1",
       "title": "News site",
-      "name": "Test",
+      "name": "News site",
       "image": "https://images2.imgbox.com/4f/68/Iv9es37j_o.jpg?download=true",
       "netlify": "https://projectmusicreleases.netlify.app/",
       "github": "https://github.com/agadman/project-news-site",
@@ -13,7 +13,7 @@
     {
       "id": "2",
       "title": "Chatbot",
-      "name": "Test",
+      "name": "Chatbot",
       "image": "",
       "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
       "github": "https://github.com/agadman/project-chatbot",
@@ -34,13 +34,13 @@
     {
       "id": "4",
       "title": "Weather App",
-      "name": "Test",
+      "name": "Weather App",
       "image": "https://images2.imgbox.com/c9/ef/UDEj5ASl_o.png?download=true",
       "netlify": "https://tablebooker.netlify.app/",
       "github": "https://github.com/agadman/project-chatbot",
       "description": "Our task was to create a chatbot >>>",
       "tools": ["HTML", "CSS", "JavaScript"],
-      "featured": true
+      "featured": false
     },
     {
       "id": "5",
@@ -111,12 +111,23 @@
       {
         "id": "11",
         "title": "Labyrinth",
-        "name": "Test",
+        "name": "Labyrinth",
         "image": "",
         "netlify": " https://remarkable-sundae-d1bafe.netlify.app",
         "github": "https://github.com/agadman/project-chatbot",
         "description": "Our task was to create a chatbot >>>",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Redux"],
         "featured": false
-      }             
+      },
+      {
+        "id": "12",
+        "title": "Authentication",
+        "name": "Authentication",
+        "image": "https://images2.imgbox.com/f6/6f/YUWKB8Nl_o.png?download=true",
+        "netlify": "https://charlotte-annika-auth-project.netlify.app/",
+        "github": "https://github.com/agadman/project-auth",
+        "description": "The goal was to build an API with authentication to implement a registration flow, using access token and to securly save passwords in a database.  >>>",
+        "tools": ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js", "Backend"],
+        "featured": true
+      }                 
   ]

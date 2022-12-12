@@ -17,7 +17,7 @@ export const Projects = () => {
         <SiteSection>
           <SectionTitle>Featured Projects</SectionTitle>
           <FeaturedProjectsWrapper>
-            {data.filter((project) => project.featured).map((project) => (
+            {data.filter((project) => project.featured).reverse().map((project) => (
               <ProjectCard
                 key={project.id}
                 title={project.title}
