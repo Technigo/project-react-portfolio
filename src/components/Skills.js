@@ -45,11 +45,10 @@ export const SkillsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
 `
 
 export const SkillsList = styled.div`
-    display: flex;
-    text-align: center;
 
     ul {
       margin-bottom: 2rem;    
@@ -58,5 +57,14 @@ export const SkillsList = styled.div`
     li{
       font-size: 1.3rem;
       line-height: 2rem;
+    }
+
+    @media (min-width: 668px) {
+      display: flex;
+      width: 70%;
+      
+      div {
+      width: 50%;
+    }
     }
 `
