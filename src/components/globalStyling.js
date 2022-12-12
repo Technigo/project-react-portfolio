@@ -22,12 +22,15 @@ export const MainHeaders = styled.h2`
     font-size: 1.3rem;
     line-height: 1.7rem;
     text-align: center;
-    /* background-color: #285841; */
-    background-color: #3b41c5;
     color: white;
     padding: 0.5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
+    border-radius: 3px;
+    /* background-color: #285841; */
+    /* background-color: #3b41c5; */
+    background: linear-gradient(0deg, rgb(59 65 197) 0%, rgb(114 96 192) 100%);
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 15%);
 `
 
 export const TitleTertiary = styled.h3`
