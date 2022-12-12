@@ -4,7 +4,7 @@ import { InnerWrapper, MainHeaders, OuterWrapper, SingleTag, GridDiv } from './g
 
 export const Thoughts = () => {
   return (
-    <OuterWrapper>
+    <OuterWrapper backgroundImage="linear-gradient(180deg, #fec8ab 0%, #ffffff 100%);">
       <InnerWrapper>
         <MainHeaders>my thoughts about code</MainHeaders>
         <GridDiv>
@@ -38,7 +38,8 @@ export const Thoughts = () => {
 export const StyledArticle = styled.article`
     padding: 30px;
     border-radius: 30px;
-    background-color: #a0bcb8;
+    /* background-color: #a0bcb8; */
+    background-color: #e7783d38;;
     width: 100%;
     transition: 0.3s ease-in-out;
 
@@ -54,13 +55,14 @@ export const StyledArticle = styled.article`
   h4 {
     font-weight: 700;
     text-transform: uppercase;
-    color: #152D24;
+    color: #551a8b;
     margin: 0.5rem 0rem;  }
 
 
 &:hover {
   transform: scale(1.01);
-  background-color: #bdd2cf;
+  background-color: #f3b492;
+  /* background-color: #bdd2cf; */
 }
 
 @media (min-width: 668px) {

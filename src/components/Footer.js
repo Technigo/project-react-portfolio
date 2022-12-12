@@ -5,7 +5,7 @@ import { TitleTertiary, OuterWrapper, InnerWrapper } from './globalStyling'
 export const Footer = () => {
   return (
     <footer>
-      <OuterWrapper selectedColor="#355F4C">
+      <OuterWrapper selectedColor="#3b41c5">
         <InnerWrapper>
           <TitleTertiary selectedColor="white" marginTop="0">Contact</TitleTertiary>
           <StyledInfo>
@@ -27,7 +27,7 @@ export const StyledInfo = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 3rem 0 6rem 0;
+  margin: 3rem 0 3rem 0;
   
   a {
     text-decoration: none;

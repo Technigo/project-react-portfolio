@@ -36,8 +36,8 @@ const HeaderStyling = styled.div`
     height: 520px;
     left: 0px;
     top: 0px;
-    background-image: url(${header2});
-    background-size: cover;
+    /* background-image: url(${header2}); */
+    background-image: linear-gradient(to bottom, #3b41c5 0%, #a981bb 49%, #ffc8ab 100%);    background-size: cover;
     width: 100%;
     color: white;
 
@@ -67,7 +67,7 @@ const Headlines = styled.div`
     font-weight: 700;
     font-size: 2.3rem;
     line-height: 2.8rem;
-    text-shadow: 0.5px 0.5px 0.5px #000;
+    /* text-shadow: 0.5px 0.5px 0.5px #000; */
 
     }
     
@@ -88,7 +88,7 @@ const ProfilePicture = styled.img`
     right: 0%;
     bottom: -30px;
     max-width: 180px;
-    border: 2px solid #feffff;
+    /* border: 2px solid #feffff; */
     border-radius: 50%;
 
     @media (min-width: 668px) {

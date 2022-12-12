@@ -15,7 +15,7 @@ export const Projects = () => {
   const secondaryFiltering = filteredProjects.filter((item) => !item.name.includes('practice'))
 
   // Filtering my starred projects to make them the featured projects
-  const FeaturedProjects = secondaryFiltering.filter((project) => project.stargazers_count !== 0)
+  const FeaturedProjects = secondaryFiltering.filter((project) => project.stargazers_count === 1)
   const OtherProjects = secondaryFiltering.filter((project) => project.stargazers_count === 0)
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export const Projects = () => {
   }, [])
 
   return (
-    <OuterWrapper selectedColor="#578e8724">
+    <OuterWrapper backgroundImage="linear-gradient(180deg, #ffffff 0%, #fec8ab 100%);">
       <InnerWrapper>
         <MainHeaders>featured projects</MainHeaders>
         <GridDiv>
@@ -53,7 +53,7 @@ export const Projects = () => {
         </GridDiv>
 
         <div>
-          <TitleTertiary selectedColor="#285841" marginTop="10%">other projects</TitleTertiary>
+          <TitleTertiary selectedColor="#551A8B" marginTop="10%">other projects</TitleTertiary>
           {OtherProjects.reverse().map((project) => (
             <ProjectCard key={project.id}>
               <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
@@ -87,10 +87,11 @@ export const StyledDescriptionLink = styled.a`
 
 const StyledLink = styled.a`
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  color:#285841;
+  color:#551A8B;
+  /* color:#285841; */
 
   &:hover {
         text-decoration: underline;
@@ -105,12 +106,13 @@ a{
 }
 
 span {
-  color:#285841;
+  color:#7260c0;
   font-weight: 700;
 }
 
 &:hover {
         text-decoration: underline;
+        text-decoration-color: #551A8B;
     }
 
 `

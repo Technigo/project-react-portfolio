@@ -2,6 +2,7 @@ import styled from 'styled-components/macro'
 
 export const OuterWrapper = styled.div`
     background-color: ${(props) => (props.selectedColor)};
+    background-image:${(props) => (props.backgroundImage)};
 
 `
 export const InnerWrapper = styled.div`
@@ -21,7 +22,8 @@ export const MainHeaders = styled.h2`
     font-size: 1.3rem;
     line-height: 1.7rem;
     text-align: center;
-    background-color: #285841;
+    /* background-color: #285841; */
+    background-color: #3b41c5;
     color: white;
     padding: 0.5rem;
     margin-bottom: 2rem;
@@ -41,9 +43,10 @@ export const TitleTertiary = styled.h3`
 
 export const TitleQuaternary = styled.h4`
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
-    color: #285841;
+    /* color: #285841; */
+    color: #7260c0;
     text-transform: uppercase;
     margin: 0.5rem 0rem;
 

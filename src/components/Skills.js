@@ -4,7 +4,7 @@ import { InnerWrapper, MainHeaders, OuterWrapper, TitleQuaternary } from './glob
 
 export const Skills = () => {
   return (
-    <OuterWrapper selectedColor="#578e8724">
+    <OuterWrapper backgroundImage="linear-gradient(180deg,#ffffff 0%,#fec8ab 100%)">
       <InnerWrapper>
         <SkillsContainer>
           <MainHeaders>skills</MainHeaders>
@@ -65,6 +65,6 @@ export const SkillsList = styled.div`
 
     li{
       font-size: 1.3rem;
-      line-height: 1.8rem;
+      line-height: 2rem;
     }
 `
