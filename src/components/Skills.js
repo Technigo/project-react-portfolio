@@ -16,27 +16,19 @@ export const Skills = () => {
                 <li>CSS3</li>
                 <li>JavaScript ES6</li>
                 <li>React </li>
-                <li> Styled Components</li>
-                <li> GitHub</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Styled Components</li>
               </ul>
-              <div>
-                <TitleQuaternary>UPCOMING</TitleQuaternary>
-                <ul>
-                  <li>Redux</li>
-                  <li>Node.js</li>
-                </ul>
-              </div>
             </div>
             <div className="toolbox">
               <TitleQuaternary>TOOLBOX</TitleQuaternary>
               <ul>
-                <li>Atom</li>
+                <li>GitHub</li>
                 <li>Postman</li>
-                <li>Adobe Photoshop</li>
                 <li>Figma</li>
                 <li>Keynote</li>
                 <li>Slack</li>
-                <li>Node.js</li>
               </ul>
             </div>
 
