@@ -62,9 +62,9 @@ export const SkillsList = styled.div`
     @media (min-width: 668px) {
       display: flex;
       width: 70%;
-      
-      div {
-      width: 50%;
-    }
+
+        div {
+        width: 50%;
+      }
     }
 `
