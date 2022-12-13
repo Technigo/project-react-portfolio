@@ -7,7 +7,7 @@
       "url": "https://thedailyplanner.netlify.app/",
       "github_url": "https://github.com/katirum/project-todos",
       "description": "An individual project to create an app to store user's list of things to do.",
-      "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Github"]
+      "tags": ["React", "Redux", "APIs", "JavaScript ES6", "Styled Components", "HTML", "Github"]
 	},
 	{
 	  "title": "Ordering Book With A Twist",

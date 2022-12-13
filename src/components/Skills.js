@@ -17,6 +17,8 @@ export const Skills = () => {
           <SkillName primary>Redux</SkillName>
           <SkillName primary>Express</SkillName>
           <SkillName primary>MongoDB</SkillName>
+          <SkillName primary>Node JS</SkillName>
+          <SkillName primary>Styled Components</SkillName>
         </SkillsList>
         <SkillsList>
           <OverlinedHeading>TOOLBOX</OverlinedHeading>
@@ -31,6 +33,7 @@ export const Skills = () => {
         </SkillsList>
         <SkillsList>
           <OverlinedHeading>MORE</OverlinedHeading>
+          <SkillName primary>Googling</SkillName>
           <SkillName primary>Responsive Design</SkillName>
           <SkillName primary>Agile Methodology</SkillName>
           <SkillName primary>Mob Programming</SkillName>

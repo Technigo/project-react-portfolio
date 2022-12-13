@@ -51,7 +51,7 @@
         "url": "https://the-better-hippo-team-quiz.netlify.app/",
         "github_url": "https://github.com/katirum/project-redux-quiz",
         "description": "A group project to create a quiz with main focus on learning how to use Redux.",
-        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Mob Program", "Github"]
+        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "Styled Components", "HTML", "Mob Program", "Github"]
       },
       {
         "title": "A News Site for Plants Lovers",
@@ -69,7 +69,7 @@
         "url": "https://lostducklabyrinth.netlify.app/",
         "github_url": "https://github.com/katirum/project-labyrinth/tree/master/code",
         "description": "A project done in pairs to create a text based game Labyrinth to practice how APIs work together with Redux.",
-        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "CSS3", "HTML", "Pair Program", "Github"]
+        "tags": ["React", "Redux", "APIs", "JavaScript ES6", "Styled Components", "HTML", "Pair Program", "Github"]
       },
       {
         "title": "Backend Project - Express API",
@@ -88,6 +88,24 @@
         "github_url": "https://github.com/katirum/project-mongo-api",
         "description": "A project focuses on how to use MongoDB to store data and how to query that data from your API. I retrieved data from Kaggle and convert it to JSON file.",
         "tags": ["MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Github"]
+      },
+      {
+        "title": "Backend + Frontend Project - Happy Thoughts",
+        "id": "15",
+        "image": "",
+        "url": "https://project-happy-thoughts-api-thr246hagq-lz.a.run.app/",
+        "github_url": "https://github.com/katirum/project-happy-thoughts-api",
+        "description": "Another backend project where I learnt about allowing user to POST data to my API and then use that data to save new objects in my Mongo database.Then The backend project is connected to the frontend project from previous weeks",
+        "tags": ["MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Github"]
+      },
+      {
+        "title": "Backend + Frontend Project - Authentication API",
+        "id": "16",
+        "image": "",
+        "url": "https://project-auth-7mqtjapw2a-uc.a.run.app/",
+        "github_url": "https://github.com/katirum/project-auth",
+        "description": "This project's goal was developing an API with authentication in order to implement a login/register interface with authentication. We learned how to authenticate users using tokens and how to store passwords in databases in a secure way. We also created a Frontend with a form to register, login and be able to see restricted content in case the login was successful.",
+        "tags": ["Authentication", "MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Styled Components", "Pair Program", "Github"]
       }
 
   ]

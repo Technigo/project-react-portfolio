@@ -7,8 +7,10 @@ export const TechSkills = () => {
   return (
     <Wrapper>
       <SectionTitle>TECH</SectionTitle>
-      <TechSkillsName>JavaScript, React, Redux, MongoDB, Express, RESTful API, CSS, HTML,
-      Github, Figma, Mob-programming, Agile Methodology.
+      <TechSkillsName>
+        JavaScript, React, Redux, Node JS, MongoDB, Express, RESTful API,
+        Styled Components, CSS, HTML,
+        Github, Figma, Mob-programming, Agile Methodology.
       </TechSkillsName>
     </Wrapper>
   )

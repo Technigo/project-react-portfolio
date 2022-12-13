@@ -9,7 +9,6 @@ export const Footer = () => {
       <ContactInfoContainer>
         <MainText>Kartika Purwahyuningrum</MainText>
         <MainText>tikaprw@gmail.com</MainText>
-        <MainText>+46-70203 4940</MainText>
       </ContactInfoContainer>
     </FooterWrapper>
   )

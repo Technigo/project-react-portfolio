@@ -6,7 +6,7 @@ import { Wrapper, SectionTitle, IconLink } from './GlobalStyles';
 export const SocialMedia = () => {
   return (
     <Wrapper>
-      <SectionTitle>FIND ME</SectionTitle>
+      <SectionTitle>SAY HI TO ME!</SectionTitle>
       <SocialMediaContainer>
         <SocialMediaLink
           primary

@@ -5,15 +5,16 @@ import { Wrapper, MainText } from './GlobalStyles';
 export const Introduction = () => {
   return (
     <IntroductionWrapper primary>
-      <MainText primary>Hello! My name is Kartika,
-        and I&apos;m a curious front-end developer from Indonesia living in Sweden
+      <MainText primary>
+        Hello! My name is Kartika,
+        and I&apos;m a frontend developer from Indonesia living in Sweden
         who&apos;s aiming to be a fullstack developer.
-        I am an eager learner and always committed to finish all tasks at hand.
-      </MainText>
-      <MainText primary>I am always up to challenges and willing to learn.
-      I am flexible and I adapt easily in a new environment.
-      I love working in teams but I can also initiate individual projects with little supervision
-      as I am discipline and efficient with my time.
+        I love programming because I find my
+        personality aligned with it. The fun and intensity I get
+        from programming, allows me to develop myself. My
+        ambitious self also get pushed by the constant change of
+        tech world. I feel the need to learn more and more. and
+        with my can-do attitude, I always make sure I finish my task correctly fast.
       </MainText>
     </IntroductionWrapper>
   )
