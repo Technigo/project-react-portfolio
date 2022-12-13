@@ -100,7 +100,7 @@ export const InfoContainer = styled.div`
 
 export const SubTitle = styled.h4`
 color:black;
-text-decoration: none;
+text-decoration: underline;
 `;
 
 export const SkillTagContainer = styled.div`
@@ -130,6 +130,7 @@ export const SubParagraph = styled.p`
   font-size: 18px;
   margin-block-end: 1em;
   margin-block-start: 1em;
+  text-decoration: underline;
 `;
 
 export const SubParagraphArrows = styled.p`

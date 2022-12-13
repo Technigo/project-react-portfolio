@@ -13,6 +13,7 @@ export const Skills = () => {
               <SkillText>HTML5</SkillText>
               <SkillText>CSS3</SkillText>
               <SkillText>JavaScript ES6</SkillText>
+              <SkillText>Styled Components</SkillText>
               <SkillText>React</SkillText>
               <SkillText>Redux</SkillText>
               <SkillText>Node.js</SkillText>

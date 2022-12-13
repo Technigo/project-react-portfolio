@@ -1,27 +1,33 @@
 [
     {
-      "title": "Project XX xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxxx xxxxxx xxxxx xxxxxx xxxxx ",
-      "description": "Responsive website ",
-      "netlify": "https://",
-      "tags": ["React", "React Hooks", "React Stat", "JavaScript ES6", "Accessibility"]
+      "title": "Backend Project: Happy thoughts API ",
+      "description": "Create an API to be used for the previously made frontent Happy Thoughts Project. The user POST data to the API which is saved in the database.",
+      "netlify": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
+      "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
     },
     {
-      "title": "Project XX",
-      "description": "Responsive website",
-      "netlify": "https://",
-      "tags": ["React", "React Props", "JavaScript ES6", "Pair programming"]
+      "title": "Backend Project: Project Mongo API",
+      "description": "In this project I have created an API with endpoints using mongoose to model data, stored in MongoDB.",
+      "netlify": "https://github.com/Sofia-Andersson/project-mongo-api",
+      "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
     },
     {
-      "title": "Project XX",
-      "description": "Responsive website ",
-      "netlify": "https://",
-      "tags": ["HTML5", "CSS3", "JavaScript ES6", "Pair programming", "APIs"]
+      "title": "Backend Project: Project Express API",
+      "description": "Create an express API with at least 2 routes that return single result or an array of elements.",
+      "netlify": "https://github.com/Sofia-Andersson/project-express-api",
+      "tags": ["Express", "JavaScript ES6", "APIs"]
     },
     {
-      "title": "Project XX",
-      "description": "A responsive website ",
-      "netlify": "https://",
-      "tags": ["HTML5", "CSS3", "JavaScript ES6"]
+      "title": "Movies",
+      "description": "In this project we have created an app to show popular movies and some information about each movie, fetching information from an API. We created the app through pair-programming.",
+      "netlify": "https://movies-lisa-sofia.netlify.app/",
+      "tags": ["React Router", "React", "JavaScript ES6", "useState", "useEffect", "fetch", "CSS3" ]
+    },
+    {
+      "title": "Business site",
+      "description": "A first try on a simple business-site create through mob-programming.",
+      "netlify": "https://enchanting-dodol-8f5cc6.netlify.app/",
+      "tags": ["HTML5", "CSS3" ]
     }
   ]
   
