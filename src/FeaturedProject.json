@@ -1,5 +1,14 @@
 [
     {
+      "title": "Happy thoughts",
+      "title-description": "A twitter-like app",
+      "project-description": "A responsive web site created in React which is fetching and posting data to an API, using useState and useEffect hooks.",
+      "repo-name": "project-happy-thoughts",
+      "netlify-name": "https://dontworry-behappy.netlify.app/",
+      "tags": ["HTML", "CSS", "React", "Fetch", "APIs"],
+      "image": "images/project-thumbnails/project-happy-thoughts.png"
+    },
+    {
       "title": "To Do",
       "title-description": "A To do list App",
       "project-description": "A To Do App to which the user can add and remove tasks, using Redux. The user can mark a task as completed or not, using custom checkboxes.",
@@ -7,15 +16,6 @@
       "netlify-name": "https://todo-sofia.netlify.app",
       "tags": ["HTML", "CSS", "Styled Components","React","JSX","Redux"],
       "image": "/images/project-thumbnails/ToDo-App-Mockup.png"
-    },
-    {
-      "title": "Happy thoughts",
-      "title-description": "A twitter-like app",
-      "project-description": "A responsive web site created in React which is fetching and posting data to an API, using useState and useEffect hooks.",
-      "repo-name": "project-happy-thoughts",
-      "netlify-name": "https://dontworry-behappy.netlify.app/",
-      "tags": ["HTML", "CSS", "React", "Fetch","APIs"],
-      "image": "images/project-thumbnails/project-happy-thoughts.png"
     },
     {
       "title": "Music Releases",
