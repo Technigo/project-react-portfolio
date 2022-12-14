@@ -20,6 +20,8 @@ export const Tech = () => {
               | API`s |
             <SpanBold> Ract </SpanBold>
               | JSX | React Hooks | Styled Components |
+            <SpanBold> Redux </SpanBold>
+            | Global state | Actions & Reducers |
             <SpanBold> Project Planning </SpanBold>
               | Figma | Typography |
             <SpanBold> Web Accessibly </SpanBold>
@@ -30,8 +32,10 @@ export const Tech = () => {
               |
             <SpanBold> API:s </SpanBold>
               | Github |
-            <SpanBold> ADOBE CREATIVE SUITE </SpanBold>
-              | Illustrator | Photoshop | Indesign |
+            <SpanBold> ADOBE creative suite 6 </SpanBold>
+            |
+            <SpanBold> Backend </SpanBold>
+            | MongoDB | mongoose |
           </TextSection>
         </FlexWrapper>
       </ContainerWrapper>

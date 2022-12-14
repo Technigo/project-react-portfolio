@@ -16,11 +16,11 @@
                 },
                 {
                   "id": 3,
-                  "name": "Pair Programming"
+                  "name": "Pair/mob Programming"
                 },
                 {
                   "id": 4,
-                  "name": "Javascript"
+                  "name": "JavaScript"
                 }
 
           ]
@@ -38,7 +38,7 @@
                 },
                 {
                   "id": 4,
-                  "name": "Javascript"
+                  "name": "JavaScript"
                 },
                 {
                   "id": 1,
@@ -50,7 +50,7 @@
                 },
                 {
                   "id": 3,
-                  "name": "Pair Programming"
+                  "name": "Pair/mob Programming"
                 }
           ]
       },
@@ -71,7 +71,7 @@
               },
               {
                 "id": 3,
-                "name": "Pair Programming"
+                "name": "Pair/mob Programming"
               },             
               {
                 "id": 2,

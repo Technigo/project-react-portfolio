@@ -1,4 +1,4 @@
-[
+ [
   {
     "title": "Coffee Survey",
     "title-description": "1 news site about avocados",
@@ -38,7 +38,7 @@
     "tags": [
         {
           "id": 4,
-          "name": "Javascript"
+          "name": "JavaScript"
         },
         {
           "id": 1,
@@ -105,7 +105,7 @@
         },
         {
           "id": 3,
-          "name": "Pair Programming"
+          "name": "Pair/mob Programming"
         },
         {
           "id": 8,

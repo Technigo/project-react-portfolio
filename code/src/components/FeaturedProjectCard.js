@@ -71,6 +71,7 @@ export const FeaturedProjectCard = () => {
 const FeaturedProjectWrapper = styled.div`
   text-align: left;
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 30px;

@@ -87,7 +87,7 @@ export const TextSection = styled(Text)`
   }
 
   @media (min-width: 1024px) {
-    padding: 0% 20%;
+    padding: 0% 15%;
     /* max-width: 1000px; */
   } 
 `;
