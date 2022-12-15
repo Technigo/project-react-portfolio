@@ -20,7 +20,7 @@ const Skills = () => {
         <List>
           <SecondTitleLeft>Code</SecondTitleLeft>
           <MainText>
-            <li>MondoDB</li>
+            <li>MongoDB</li>
             <li>Node.js</li>
             <li>Styled components</li>
           </MainText>
