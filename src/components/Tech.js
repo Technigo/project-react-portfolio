@@ -7,10 +7,10 @@ const Tech = () => {
     <SectionColor>
       <Title>Tech</Title>
       <Wrapper>
-        <CenterMainText>HTML, CSS, <HightLight>JavaScript, </HightLight>Flexbox, Grid,
-          <HightLight>React, </HightLight>React Hooks, Webb accessibility, API:S, mob-programming,
-          pair-programming, Github,<HightLight>Redux, </HightLight> MongoDB, Node.js 
-          <HightLight> Adobe Creative Suite.</HightLight>
+        <CenterMainText>HTML, CSS, <HightLight>JavaScript</HightLight>, 
+          <HightLight> React</HightLight>, Webb accessibility, API:S, mob-programming,
+          pair-programming, <HightLight> Agile Methodologies </HightLight>, Github, <HightLight>Redux, </HightLight> MongoDB and Mongoose, Node.js 
+          <HightLight> Adobe Creative Suite</HightLight>, Flexbox, Grid.
         </CenterMainText>
       </Wrapper>
     </SectionColor>

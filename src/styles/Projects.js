@@ -30,16 +30,25 @@ justify-content: center;
 `
 
 export const ProjectTitle = styled.h3`
+line-height: 0px;
 color: #677867;
 font-style: normal;
 font-weight: 700;
 font-size: 19px;
-text-align: left;
 text-transform: uppercase;
-line-height: 0;
 &:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.03);
+}
+`
+export const Icon = styled.img`
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    &:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 `
 

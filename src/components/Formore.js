@@ -1,8 +1,8 @@
 import React from 'react-dom'
 import { Title, Section } from '../styles/Main'
 import { IconsWrapper, Icon } from '../styles/ForMore'
-import Github from '../icons/github.svg'
-import Linkedin from '../icons/linkedin.svg'
+import Github from '../icons/github.png'
+import Linkedin from '../icons/linkedin.png'
 
 const Formore = () => {
   return (

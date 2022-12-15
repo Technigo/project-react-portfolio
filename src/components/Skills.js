@@ -10,29 +10,31 @@ const Skills = () => {
         <List>
           <SecondTitleLeft>Code</SecondTitleLeft>
           <MainText>
-            <li>HTML</li>
-            <li>CSS3</li>
             <li>JavaScript</li>
             <li>React</li>
             <li>Redux</li>
-            <li>Github</li>
+            <li>HTML</li>
+            <li>CSS</li>
           </MainText>
         </List>
         <List>
-          <SecondTitleLeft>Toolbox</SecondTitleLeft>
+          <SecondTitleLeft>Code</SecondTitleLeft>
           <MainText>
-            <li>Figma</li>
-            <li>Keynote</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Slack</li>
+            <li>MondoDB</li>
+            <li>Node.js</li>
+            <li>Styled components</li>
           </MainText>
         </List>
         <List>
           <SecondTitleLeft>Upcomming</SecondTitleLeft>
           <MainText>
-            <li>MondoDB</li>
-            <li>Backend</li>
+            <li>Figma</li>
+            <li>Slack</li>
+            <li>Github</li>
+            <li>VScode</li>
+            <li>Postman</li>
+            <li>Adobe photoshop</li>
+            <li>Adobe illustrator</li>
           </MainText>
         </List>
       </WrapperRow>

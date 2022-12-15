@@ -87,3 +87,12 @@ export const WrapperRow = styled(Wrapper)`
         width:50%
         }
 `
+
+export const LinkedinIcon = styled.img`
+width: 50px;
+`
+
+export const GithubIcon = styled.img`
+width: 60px;
+margin-top:-5px;
+`

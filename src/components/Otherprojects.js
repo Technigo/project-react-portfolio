@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ProjectTitle, Programs, OtherProgramsWrapper, WrapOtherProject, OtherProjectsWrapper } from '../styles/Projects'
+import githubicon from '../icons/greengithub.png'
+import { ProjectTitle, Programs, OtherProgramsWrapper, WrapOtherProject, OtherProjectsWrapper, Icon } from '../styles/Projects'
 import { MainText, SecondTitle, Section } from '../styles/Main'
 
 const Otherprojects = () => {
-  const selectedprojects = ['project-chatbot', 'project-music-releases', 'project-business-site']
+  const selectedprojects = ['project-auth', 'project-music-releases', 'project-mongo-api']
 
   const [repos, setRepos] = useState([])
 
@@ -24,11 +25,12 @@ const Otherprojects = () => {
           return (
             <div key={repo.id}>
               <WrapOtherProject>
-                <a href={`https://github.com/Kristin-Larsson/${repo.name}`}>
+                <a href={repo.homepage}>
                   <ProjectTitle>{repo.name.replace(/-/g, ' ')}</ProjectTitle>
                   </a>
                   <MainText>{repo.description}</MainText>
                   <OtherProgramsWrapper>
+                    <a href={`https://github.com/Kristin-Larsson/${repo.name}`}><Icon src={githubicon} alt="github Icon" /></a>
                     <Programs>{repo.topics[0]}</Programs>
                     <Programs>{repo.topics[1]}</Programs>
                     <Programs>{repo.topics[2]}</Programs>
