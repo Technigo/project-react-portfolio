@@ -26,7 +26,6 @@ const About = () => {
             <img src={me} alt="AboutImg" />
           </div>
         </div>
-
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
@@ -45,7 +44,6 @@ const About = () => {
               <p>Gym, Travel, Reading </p>
             </article>
           </div>
-
           <p>
           Graduating from a coding school this upcoming Decemeber. Now I feel it is time
           to take a step towards the challenge of becoming a Frontend web developer!
@@ -62,7 +60,6 @@ const About = () => {
           I would be a right fit, because I am ready to dedicate as an aspiring
           developer raw undivided attention for learning and growth for this opportunity,
            that truly is a once in a life time chance.
-
           </p>
           <a href="#contact" className="btn btn-primary">Lets Talk</a>
         </div>

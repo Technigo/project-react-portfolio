@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.18.9",
+    "@emailjs/browser": "^3.10.0",
+    "email-js": "^2.0.2",
     "eslint": "^8.21.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
@@ -13,6 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "save": "^2.9.0",
     "styled-components": "^5.3.6"
   },
   "scripts": {
