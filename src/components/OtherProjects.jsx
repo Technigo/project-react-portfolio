@@ -9,7 +9,7 @@ const OtherProjects = ({ repos }) => {
     <SectionContainer>
       <h4>Other Projects</h4>
       <ProjectsGrid other>
-        {repos.reverse().map((project) => {
+        {repos.map((project) => {
           if (project.topics.includes('portfolio')) {
             return (
               <ArticleContainer other key={project.id}>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import GlobalStyles from 'components/styled/Global';
 import { OuterWrapper, InnerWrapper } from 'components/styled/Wrappers.styled';
+import { BASE_URL } from 'components/utils/api';
 import Header from './components/Header';
 import Summary from './components/Summary';
 // import Tech from './components/Tech';
@@ -15,7 +16,7 @@ const App = () => {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.github.com/users/karlfredrikholm/repos')
+    fetch(BASE_URL)
       .then((res) => res.json())
       .then((data) => setRepos(data))
       .catch((error) => console.error(error))
