@@ -1,0 +1,84 @@
+[
+	{
+	  "title": "Newest movie releases",
+	  "overlay": "new movies",
+	  "id": "1",
+	  "image": "https://images2.imgbox.com/97/4c/W7s0RLHd_o.png",
+	  "netlify": "https://newly-release-movies.netlify.app/",
+	  "github": "https://github.com/Sneezan/project-movies",
+	  "description": "Bring drinks and snacks, movies & chill coming up!",
+	  "tools": ["React", "JavaScript ES6", "Node.js", "CSS", "APIs"]
+	},
+	{
+		"title": "Authenticated",
+		"overlay": "log in ",
+		"id": "7",
+		"image": "  https://i.imgur.com/aXEAZ0J.png",
+		"netlify": "https://authenticated.netlify.app/",
+		"github": "https://github.com/Sneezan/project-auth",
+		"description": "A log in page that authenticates the user and encrypts passwords.",
+		"tools": ["Backend", "Node.js", "JavaScript ES6", "Fullstack"]
+	  },
+	{
+	  "title": "Music releases",
+	  "overlay": "new music releases",
+	  "id": "2",
+	  "image": "https://images2.imgbox.com/04/b3/cxsi9iCr_o.png",
+	  "netlify": "https://the-music-release-project.netlify.app",
+	  "github": "https://github.com/Sneezan/project-music-releases",
+	  "description": "With react components, you can time travel to fall 2019.",
+	  "tools": ["React", "Node", "CSS", "JavaScript ES6", "API"]
+	},
+	{
+	  "title": "Todo today",
+	  "overlay": "todo app",
+	  "id": "3",
+	  "image": "https://i.imgur.com/h2tJ5f5.png",
+	  "netlify": "https://complete-today.netlify.app",
+	  "github": "https://github.com/Sneezan/project-todos",
+	  "description": "A todo app built with react and redux, packaged beautifully.",
+	  "tools": ["React", "Redux", "JavaScript ES6", "FAB" ]
+	},
+	{
+		"title": "Happy Thoughts",
+		"overlay": "the nice twitter",
+		"id": "8",
+		"image": "https://i.imgur.com/fiIiv4d.png",
+		"netlify": "https://onlyhappythoughts.netlify.app",
+		"github": "https://github.com/Sneezan/project-happy-thoughts",
+		"description": "Happy thoughts project was updated with a shiny, new backend.",
+		"tools": ["Backend", "Fullstack", "JavaScript ES6", "API", "CSS"]
+	  },
+	{
+	"title": "Cecilia's portfolio",
+	"overlay": "The portfolio",
+	"id": "4",
+	"image": "https://i.imgur.com/fxVCs5d.png",
+	"netlify": "https://github.com/Sneezan/project-react-portfolio",
+	"github": "https://github.com/Sneezan/project-react-portfolio",
+	"description": "You are actually viewing this project live right now! Click to view on GitHub",
+	"tools": ["React", "Styled components", "JavaScript"]
+  },
+  {
+	"title": "Dental self assessment",
+	"overlay": "The Self Assessment",
+	"id": "5",
+	"image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
+	"netlify": "https://selfassesment.netlify.app",
+	"github": "https://github.com/Sneezan/project-survey",
+	"description": "An homage to my previous career, now patients can self-assess.",
+	"tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
+  },
+  {
+  "title": "Cloud - a weather app",
+  "overlay": "A weather app",
+  "id": "6",
+  "image": "https://i.imgur.com/iATc4NK.png",
+  "netlify": "https://weatherclouds.netlify.app",
+  "github": "https://github.com/Sneezan/project-weather-app",
+  "description": "Simple and stylish weather app built with JavaScript & open weather API",
+  "tools": ["JavaScript ES6", "API", "CSS"]
+}
+  ]
+
+

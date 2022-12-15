@@ -1,9 +1,28 @@
 import React from 'react'
+import './index.css';
+import Header from 'components/Header.js'
+import AboutSection from 'components/AboutSection';
+
+import TechStack from 'components/TechStack';
+import FeaturedProjects from 'components/FeaturedProjects';
+import SkillSection from 'components/SkillsSection';
+import Thoughts from 'components/Thoughts';
+import MoreSection from 'components/MoreSection';
+import ContactFooter from 'components/ContactFooter';
+import FinalProject from 'components/FinalProject';
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Header />
+      <AboutSection />
+      <TechStack />
+      <FeaturedProjects />
+      <FinalProject />
+      <Thoughts />
+      <SkillSection />
+      <MoreSection />
+      <ContactFooter />
     </div>
   )
 }
