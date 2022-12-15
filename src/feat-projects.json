@@ -1,5 +1,14 @@
 [ 
   { 
+    "name": "To-do List",
+    "project_name": "Project: Todos",
+    "description": "Simple web app done to get familiar with Redux, Redux toolkit etc.",
+    "github_url": "https://github.com/karlfredrikholm/project-todos",
+    "netlify_url": "https://checka.netlify.app/",
+    "topics": [ "Redux", "React", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/redux_todo.png"
+  },
+  { 
     "name": "Happy Thoughts",
     "project_name": "Project: Happy Thoughts",
     "description": "Project made to practice hooks and GET/POST requests to API.",
@@ -7,6 +16,24 @@
     "netlify_url": "https://gladatankar.netlify.app/",
     "topics": [ "React", "JS ES6", "CSS3"],
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/happy_thoughts.png"
+  },
+  { 
+    "name": "Movies",
+    "project_name": "Project: Movies",
+    "description": "Project done to practice React Router, the useParams hook etc.",
+    "github_url": "https://github.com/karlfredrikholm/project-movies",
+    "netlify_url": "https://nitflax.netlify.app/",
+    "topics": [ "React Router", "API", "CSS3"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_movies.png"
+  },
+  {
+    "name": "Survey",
+    "project_name": "Project: Survey",
+    "description": "Survey made to practice useState in React.",
+    "github_url": "https://github.com/karlfredrikholm/project-survey",
+    "netlify_url": "https://webdevsurvey.netlify.app/",
+    "topics": [ "React", "CSS3", "JS ES6"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-survey/master/src/assets/project_survey.png"
   },
   { 
     "name": "Weather App",
@@ -25,23 +52,5 @@
     "netlify_url": "https://schpoutefi.netlify.app/",
     "topics": [ "React", "JS ES6", "CSS3"],
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/music_releases.png"
-  },
-  { 
-    "name": "To-do List",
-    "project_name": "Project: Todos",
-    "description": "Simple web app done to get familiar with Redux, Redux toolkit etc.",
-    "github_url": "https://github.com/karlfredrikholm/project-todos",
-    "netlify_url": "https://checka.netlify.app/",
-    "topics": [ "Redux", "React", "CSS3"],
-    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/redux_todo.png"
-  },
-  { 
-    "name": "Movies",
-    "project_name": "Project: Movies",
-    "description": "Project done to practice React Router, the useParams hook etc.",
-    "github_url": "https://github.com/karlfredrikholm/project-movies",
-    "netlify_url": "https://nitflax.netlify.app/",
-    "topics": [ "React Router", "API", "CSS3"],
-    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_movies.png"
   }
 ]
