@@ -27,13 +27,22 @@
     "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_movies.png"
   },
   {
+    "name": "Log in",
+    "project_name": "Project: Register/login",
+    "description": "Simple login flow made to practice Express, MongoDB etc.",
+    "github_url": "https://github.com/karlfredrikholm/project-auth",
+    "netlify_url": "https://glittery-halva-09357e.netlify.app/",
+    "topics": [ "Express", "MongoDB", "React"],
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_auth.png"
+  },
+  {
     "name": "Survey",
     "project_name": "Project: Survey",
     "description": "Survey made to practice useState in React.",
     "github_url": "https://github.com/karlfredrikholm/project-survey",
     "netlify_url": "https://webdevsurvey.netlify.app/",
     "topics": [ "React", "CSS3", "JS ES6"],
-    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-survey/master/src/assets/project_survey.png"
+    "image": "https://raw.githubusercontent.com/karlfredrikholm/project-react-portfolio/master/src/assets/project_survey.png"
   },
   { 
     "name": "Weather App",
