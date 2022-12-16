@@ -28,22 +28,26 @@ flex-direction: column;
 `;
 
 const TechHeader = styled.h2`
-  font-size: 48px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: ${(props) => props.color};
-  color: white;
-  padding: 10px 15px;
-  margin-bottom:0;
-  margin-top:40px;
+font-size: 48px;
+line-height: 1;
+padding: 10px 15px;
+margin: 40px auto 60px auto;
+font-family: 'Montserrat', sans-serif;
+background-color: #262626;;
+color: white;
+display: inline-block;
 
-  @media (max-width: 1023px) {
-    margin-top: 60px;
-     font-size: 40px;
-  }
-  @media (min-width: 1024px) {
-     margin-top: 60px;
-     font-size: 40px;
-  }
+@media (max-width: 800px) {
+  font-size: 22px;
+  line-height: 1;
+  padding: 10px 15px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1024px) {
+  margin-top: 60px;
+  font-size: 40px;
+}
 `;
 
 export const TextWrapper = styled.div`
