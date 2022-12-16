@@ -106,6 +106,15 @@
         "github_url": "https://github.com/katirum/project-auth",
         "description": "This project's goal was developing an API with authentication in order to implement a login/register interface with authentication. We learned how to authenticate users using tokens and how to store passwords in databases in a secure way. We also created a Frontend with a form to register, login and be able to see restricted content in case the login was successful.",
         "tags": ["Authentication", "MongoDB", "Express", "Node", "Google Cloud", "Postman", "RESTful API", "JavaScript ES6", "Styled Components", "Pair Program", "Github"]
+      },
+      {
+        "title": "Side project - Webpage for A Mechanic",
+        "id": "17",
+        "image": "",
+        "url": "https://github.com/katirum/side-project-mechanic-site",
+        "github_url": "https://github.com/katirum/side-project-mechanic-site",
+        "description": "A side project that is planned, designed and executed by myself. The project is ongoing, therefore it is not ready to be deployed. It's made with React and React router dom to navigate between pages",
+        "tags": ["JavaScript ES6", "React", "JSON", "Styled Components", "HTML", "Github"]
       }
 
   ]

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Code",
+        "id": "1",
+        "skills": ["JavaScript ES6", "React", "Redux", "RESTFUL APIs", "Node JS", "Express", "MongoDB", "Styled Components", "CSS", "HTML"]
+    },
+    {
+        "title": "Toolbox",
+        "id": "2",
+        "skills": ["Github", "Frontend Tool: NPM", "VSCode", "Figma", "Canva", "Slack", "Netlify", "Google CLoud", "Stack Overflow"]
+    },
+    {
+        "title": "More",
+        "id": "3",
+        "skills": ["Googling", "Responsive Design", "Agile Methodology", "Mob Programming", "Indonesian", "Swedish"]
+    }
+]
