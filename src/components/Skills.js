@@ -11,30 +11,32 @@ const Skills = () => {
         <SkillsWrapper>
 
           <SkillsList>
+            <SkillsTitles>CODE</SkillsTitles>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript ES6</li>
-              <li>GitHub</li>
+              <li>React</li>
+              <li>Styled Components</li>
 
             </ul>
           </SkillsList>
-
           <SkillsList>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>Figma</li>
-              <li>Slack</li>
-              <li>CodePen</li>
-
-            </ul>
-          </SkillsList>
-
-          <SkillsList>
+            <SkillsTitles>CODE</SkillsTitles>
             <ul>
               <li>Node.js</li>
               <li>Redux</li>
-              <li>React</li>
+              <li>GitHub</li>
+            </ul>
+          </SkillsList>
+          <SkillsList>
+            <SkillsTitles>TOOLBOX</SkillsTitles>
+            <ul>
+              <li>Visual Studio Code</li>
+              <li>Figma</li>
+              <li>Codewars</li>
+              <li>CodePen</li>
+              <li>Postman</li>
             </ul>
           </SkillsList>
 
@@ -55,10 +57,10 @@ const SkillsWrapper = styled.div`
     letter-spacing: 0em;
 `
 
-/* const SkillsTitles = styled.h3`
+const SkillsTitles = styled.h3`
     font-weight: 700;
     padding: 7px;
-` */
+`
 const SkillsList = styled.li`
     font-weight: 400;
     line-height: 29px;

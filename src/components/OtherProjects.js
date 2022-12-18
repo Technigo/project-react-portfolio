@@ -14,7 +14,10 @@ const OtherProjects = () => {
       .then((data) => SetProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'project-express-api') && (project.name !== 'project-react-portfolio') && (project.name !== 'project-happy-thoughts') && (project.name !== 'project-survey') && (project.name !== 'jessicahansson') && (project.name !== 'project-portfolio') && (project.name !== 'project-todos') && (project.name !== 'unit-tests'))
+  const filteredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'project-express-api')
+  && (project.name !== 'project-react-portfolio') && (project.name !== 'project-happy-thoughts') && (project.name !== 'project-survey')
+  && (project.name !== 'jessicahansson') && (project.name !== 'project-portfolio') && (project.name !== 'project-todos') && (project.name !== 'unit-tests')
+  && (project.name !== 'final-project'))
 
   return (
     <OuterWrapper grey>

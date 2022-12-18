@@ -6,7 +6,6 @@ import BackgroundImage from '../Images/background1.jpg'
 import ProfileImage from '../Images/jhansson.png'
 import GitHubIcon from '../Images/github-header-icon.png'
 import LinkedinIcon from '../Images/linkedin-header-icon.png'
-import StackIcon from '../Images/stack-header-icon.png'
 
 export const Header = () => {
   return (
@@ -22,9 +21,6 @@ export const Header = () => {
         </a>
         <a href="https://www.linkedin.com/in/jesshansson/">
           <img src={LinkedinIcon} alt="LinkedIn icon" />
-        </a>
-        <a href="https://stackoverflow.com/users/19466381/jessica">
-          <img src={StackIcon} alt="StackOverflow icon" />
         </a>
       </SoMeContainer>
       <ProfilePic src={ProfileImage} alt="Jessica Hansson" />
