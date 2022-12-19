@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './contact.css'
 // import styled from 'styled-components'
 import { MdOutlineMail } from 'react-icons/md'
@@ -7,6 +7,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const [message, setMessage] = useState('')
+
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -14,6 +16,7 @@ const Contact = () => {
 
     emailjs.sendForm('service_df8z6dd', 'template_aj2ys7k', form.current, 'O_yTxsK_MvTo8Qoh2')
       .then((result) => {
+        setMessage('Thank you, message sent!')
         console.log(result.text);
       }, (error) => {
         console.log(error.text);
@@ -49,6 +52,7 @@ const Contact = () => {
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your message" required />
           <button type="submit" className="btn btn-primary">Send Message</button>
+          <div className="message">{message}</div>
         </form>
       </div>
     </section>
