@@ -77,7 +77,7 @@ const HeaderText = styled.div`
 const Mailme = styled.img`
   position: fixed;
   right: 10%;
-  top: 60%;
+  top: 50%;
   height: 75px;
   width: 75px;
   border-radius: 50%;
@@ -86,7 +86,7 @@ const Mailme = styled.img`
 
 @media (min-width: 1024px) {
   right: 15%;
-  top: 70%;
+  top: 60%;
   height: 85px;
   width: 85px;
 
