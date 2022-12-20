@@ -1,82 +1,108 @@
 [
-    {
-          "id": 1,
-          "title": "CHATBOT WildeBeast Burgers",
-          "project_description": "Pair project, with using HTML, CSS and JavaScript ES6 create a responsive chatbot. With question/response interaction",
-          "repo_name": "project-chatbot",
-          "url": "https://wildebeest-burgers.netlify.app/",
-          "tags": [
-              {
-                  "id": 1,
-                  "name": "HTML5"
-                },
-                {
-                  "id": 2,
-                  "name": "CSS3"
-                },
-                {
-                  "id": 3,
-                  "name": "Pair/mob Programming"
-                },
-                {
-                  "id": 4,
-                  "name": "JavaScript"
-                }
-
-          ]
-      },	
-    {
-          "id": 2,
-          "title": "Weather App",
-          "project_description": "Working with API fetch from external website and create a app with predetermined design",
-          "repo": "project-weatherApp",
-          "url": "https://weatherapp-nina-linda.netlify.app/",
-          "tags": [
-              {
-                  "id": 5,
-                  "name": "API"
-                },
-                {
-                  "id": 4,
-                  "name": "JavaScript"
-                },
-                {
-                  "id": 1,
-                  "name": "HTML5"
-                },
-                {
-                  "id": 2,
-                  "name": "CSS3"
-                },
-                {
-                  "id": 3,
-                  "name": "Pair/mob Programming"
-                }
-          ]
+  {
+  "id": 1,
+  "title": "Guess Who?",
+  "project_description": "Create your own digital version of the classic board game, Guess Who?",
+  "image": "/assets/Guess_Who.jpg",
+  "url": "https://guesswho-nina-berggren.netlify.app/",
+  "repo_name": "project-guess-who",
+  "repo_url": "https://github.com/NinaBerggren/project-guess-who",
+  "tags": [
+      {
+        "id": 4,
+        "name": "JavaScript"
       },
-    {
-        "id": 3,
-        "title": "Music-releases",
-        "project_description": "With React, JSX and React components bould a website with API. And follow a design screenshots as closely as possible ",
-        "repo": "project-survey",
-        "url": "https://project-music-release-nina-lisa.netlify.app/",
-        "tags": [
-              {
-                "id": 6,
-                "name": "React"
-              },
-              {
-                "id": 5,
-                "name": "API"
-              },
-              {
-                "id": 3,
-                "name": "Pair/mob Programming"
-              },             
-              {
-                "id": 2,
-                "name": "CSS3"
-              } 
-        ]
-    }
+      {
+        "id": 1,
+        "name": "HTML5"
+      },
+      {
+        "id": 2,
+        "name": "CSS3"
+      } 
+  ]  
+},
+{
+  "id": 2,
+  "title": "CHATBOT WildeBeast Burgers",
+  "project_description": "Pair project, with using HTML, CSS and JavaScript ES6 create a responsive chatbot. With question/response interaction",
+  "url": "https://wildebeest-burgers.netlify.app/",
+  "repo_name": "project-chatbot",
+  "repo_url": "https://github.com/NinaBerggren/project-chatbot",
+  "tags": [
+      {
+          "id": 1,
+          "name": "HTML5"
+        },
+        {
+          "id": 2,
+          "name": "CSS3"
+        },
+        {
+          "id": 3,
+          "name": "Pair/mob Programming"
+        },
+        {
+          "id": 4,
+          "name": "JavaScript"
+        }
+
+  ]
+},	
+{
+  "id": 3,
+  "title": "Weather App",
+  "project_description": "Working with API fetch from external website and create a app with predetermined design",
+  "url": "https://weatherapp-nina-linda.netlify.app/",
+  "repo_name": "project-weather-app",
+  "repo_url": "https://github.com/NinaBerggren/project-weather-app",
+  "tags": [
+      {
+          "id": 5,
+          "name": "API"
+        },
+        {
+          "id": 4,
+          "name": "JavaScript"
+        },
+        {
+          "id": 1,
+          "name": "HTML5"
+        },
+        {
+          "id": 2,
+          "name": "CSS3"
+        },
+        {
+          "id": 3,
+          "name": "Pair/mob Programming"
+        }
+  ]
+},
+{
+  "id": 4,
+  "title": "Music-releases",
+  "project_description": "With React, JSX and React components bould a website with API. And follow a design screenshots as closely as possible ",
+  "url": "https://project-music-release-nina-lisa.netlify.app/",
+  "repo_name": "project-music-releases",
+  "repo_url": "https://github.com/NinaBerggren/project-music-releases",
+  "tags": [
+        {
+          "id": 6,
+          "name": "React"
+        },
+        {
+          "id": 5,
+          "name": "API"
+        },
+        {
+          "id": 3,
+          "name": "Pair/mob Programming"
+        },             
+        {
+          "id": 2,
+          "name": "CSS3"
+        } 
+  ]
+}
 ]

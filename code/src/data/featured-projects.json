@@ -4,9 +4,10 @@
     "title-description": "1 news site about avocados",
     "overlay": "Coffee",
     "description": "With React as the framework, creating Typeform-like survey to collect data from your users.",
-    "image": "/assets/CoffeeSurvey.png",
+    "image": "/assets/survey_mocup.png",
     "repo": "project-servey",
     "url": "https://project-survay-nina-berggren.netlify.app/",
+    "repo_url": "https://github.com/NinaBerggren/project-survey",
     "tags": [
         {
           "id": 6,
@@ -28,13 +29,14 @@
     ]  
   },
   {
-    "title": "Guess Who?",
+    "title": "Todo list",
     "title-description": "1 news site about avocados",
     "overlay": "Guess Who?",
     "description": "Create your own digital version of the classic board game, Guess Who?",
-    "image": "/assets/Guess_Who.jpg",
-    "repo": "project-guess-who",
+    "image": "/assets/todos.png",
+    "repo": "project-todos",
     "url": "https://guesswho-nina-berggren.netlify.app/",
+    "repo_url": "https://github.com/NinaBerggren/project-todos",
     "tags": [
         {
           "id": 4,

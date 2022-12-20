@@ -21,6 +21,11 @@ export const OtherProjectCard = () => {
           <SkillTagContainer>
             {project.tags && project.tags.map((tag) => (
               <SkillTag key={tag.id}> {tag.name}</SkillTag>))}
+            <RepoTag>
+              <a href={project.repo_url} title="link to Nina's Github repo" aria-label={project.repo_name} target="_blank" rel="noreferrer">
+                <i className="fab fa-github" alt="GitHub icon" />
+              </a>
+            </RepoTag>
           </SkillTagContainer>
         </OtherProjectContainer>
       ))}
@@ -70,6 +75,38 @@ export const SkillTag = styled.p`
   margin-right: 1em;
   padding: 0.3em 0.75em;
   margin-bottom: 0.5em;
+  /* border: 2px solid pink; */
+`;
+
+export const RepoTag = styled(SkillTag)`
+  background-color: var(--clr-medium);
+  width: 3rem;
+
+  &:hover {
+    background-color: var(--clr-med);
+  }
+
+  a {
+    display: flex;
+    justify-content: center; 
+    height: 100%;
+    width: 100%;
+  
+  }
+
+  i {
+    color: var(--clr-white);
+    font-size: 1rem;
+  }
+
+  i:hover {
+    color: var(--clr-darkGray);
+  }
+
+  a:hover{
+    background-color: var(--clr-med);
+  } 
+ 
 `;
 
 // ----------------

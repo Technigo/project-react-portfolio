@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 import FeaturedProject from 'data/featured-projects.json'
-import { SubTitle, SubParagraph, SkillTag, SkillTagContainer } from './OtherProjectCard'
+import { SubTitle, SubParagraph, SkillTag, RepoTag, SkillTagContainer } from './OtherProjectCard'
 
 // react component
 
@@ -25,6 +25,11 @@ export const FeaturedProjectCard = () => {
           <SkillTagContainer>
             {project.tags && project.tags.map((tag) => (
               <SkillTagFP key={tag.id}> {tag.name}</SkillTagFP>))}
+            <RepoTagFP>
+              <a href={project.repo_url} title="link to Nina's Github repo" aria-label={project.repo} target="_blank" rel="noreferrer">
+                <i className="fab fa-github" alt="GitHub icon" />
+              </a>
+            </RepoTagFP>
           </SkillTagContainer>
         </ProjectCard>
       ))}
@@ -33,40 +38,6 @@ export const FeaturedProjectCard = () => {
 }
 
 // styled components
-
-// const Wrapper = styled.div`
-//   width: 80%;
-//   margin: 0 auto;
-//   max-width: 1100px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: 24px;
-//   line-height: 1.4;
-
-//   @media (max-width: 800px) {
-//     font-size: 16px;
-//     line-height: 1.4;
-//   }
-// `;
-
-// const SectionHeader = styled.h2`
-//   font-size: 50px;
-//   line-height: 1;
-//   padding: 10px 15px;
-//   margin-bottom: 100px;
-//   font-family: "Montserrat Bold";
-//   background-color: ${(props) => props.color};
-//   color: white;
-
-//   @media (max-width: 800px) {
-//     font-size: 22px;
-//     line-height: 1;
-//     padding: 10px 15px;
-//     margin-bottom: 40px;
-//   }
-// `;
 
 const FeaturedProjectWrapper = styled.div`
   text-align: left;
@@ -138,4 +109,16 @@ const SubTitleFP = styled(SubTitle)`
 
 const SkillTagFP = styled(SkillTag)`
   background-color: var(--clr-light);
+`;
+
+const RepoTagFP = styled(RepoTag)`
+  background-color: var(--clr-dark);
+
+  &:hover {
+    background-color: var(--clr-light);
+  }
+
+  a:hover{
+    background-color: var(--clr-light);
+  } 
 `;
