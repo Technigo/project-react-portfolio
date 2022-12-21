@@ -1,0 +1,93 @@
+
+[
+  {
+		"title": "Movie Releases",
+		"titleDescription": "Movie Releases - A multi-page application",
+		"projectDescription": "A multi-page application passing information in the URL and load dynamic content",
+		"Image":"./ProjectImages/2.png",
+   		"Repo": "https://github.com/JosefineEngdahl/project-movies",
+		"Netifly": "https://newly-release-movies.netlify.app",
+		"tags": [
+			"React",
+			"CSS"
+		]
+
+	},
+
+	{
+		"title": "Redux Quiz",
+			"titleDescription": "Try out your skills in this randome questions quiz",
+			"projectDescription": "Responsive web site using Redux Toolbox & styled components. Try your knowledge in this randome quiz.",
+			"Image": "./ProjectImages/3.png",
+			   "Repo": "https://github.com/JosefineEngdahl/project-redux-quiz",
+			"Netifly": "https://randomstuffquiz.netlify.app",
+			"tags": [
+				"React",
+				"Redux",
+				"Styled Components"
+			]
+		},
+
+	{
+		"title": "React Survey",
+		"titleDescription": "Are you our next stand-up comedian?",
+		"projectDescription": "A survey form created with React, find out if you're the next big stand-up comedian.",
+		"Image": "./ProjectImages/1.png",
+   		"Repo": "https://github.com/JosefineEngdahl/project-survey",
+		"Netifly": "https://neon-griffin-82bf07.netlify.app/",
+		"tags": [
+			"React",
+			"CSS"
+		]
+
+	},
+
+	{
+		"title": "Weather App",
+		"titleDescription": "A weather app built utilising APIs.",
+		"projectDescription": "Responsive web site using HTML, CSS and JavaScript. Styling changes depending on the weather",
+   		"Repo": "https://github.com/JosefineEngdahl/project-weather-app",
+		"Image": "./ProjectImages/6.png",
+		"Netifly": "https://silver-profiterole-7224fd.netlify.app",
+		"tags": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"API"
+		]
+
+	},
+
+
+	{
+		"title": "Happy Thoughts",
+		"titleDescription": "Sending happy thougts with API",
+		"projectDescription": "Responsive web site sending happy thougts with API fetch och post requests, using React",
+		"Image": "./ProjectImages/5.png",
+   		"Repo": "https://github.com/JosefineEngdahl/project-happy-thoughts",
+		"Netifly": "https://steady-faun-1238b0.netlify.app",
+		"tags": [
+			"HTML5",
+			"CSS",
+			"JavaScript"
+		]
+
+	},
+	{
+		"title": "Redux Todo-list",
+		"titleDescription": "Project built with React & Redux",
+		"projectDescription": "Responsive to do-list web app built with HTML, React and Redux. Styled with Styled Components.",
+		"Image": "./ProjectImages/4.png",
+   		"Repo": "https://github.com/JosefineEngdahl/project-todos",
+		"Netifly": "https://josefines-todo-lists.netlify.app/",
+		"tags": [
+			"React",
+			"CSS",
+			"HTML",
+			"Styled Components"
+		]
+
+	}
+
+
+]
