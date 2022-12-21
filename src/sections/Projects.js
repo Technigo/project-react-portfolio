@@ -2,20 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { OuterWrapper, InnerWrapper } from 'styles/MainStyles';
-import FeaturedProject from 'components/FeaturedProject';
-import OtherProject from 'components/OtherProject';
+import ProjectCard from 'components/ProjectCard';
 
 const Projects = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <h2>Featured projects</h2>
+        <h2>Projects</h2>
         <ProjectWrapper>
-          <FeaturedProject />
-        </ProjectWrapper>
-        <h3>Other projects</h3>
-        <ProjectWrapper>
-          <OtherProject />
+          <ProjectCard />
         </ProjectWrapper>
       </InnerWrapper>
     </OuterWrapper>
@@ -28,6 +23,7 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 72px;
+  width: 100%;
 
   :last-of-type {
     margin-bottom: 0;

@@ -4,8 +4,7 @@
     "netlify": "https://silver-profiterole-7224fd.netlify.app/",
     "github": "https://github.com/JosefineEngdahl/project-weather-app",
     "title": "Weather app",
-    "description": "Responsive website connected with weather API",
-    "image": "https://i.imgur.com/0ajugjo.jpg",
+    "description": "Web app built in JavaScript using Open Weather API.",
     "tags": [
       "API",
       "HTML",
@@ -18,8 +17,49 @@
     "netlify": "https://the-music-release-project.netlify.app/",
     "github": "https://github.com/Technigo/project-music-releases/pull/221?",
     "title": "Music page",
-    "description": "Responsive music release page made using React",
-    "image": "https://i.imgur.com/DqrHqPW.jpg",
+    "description": "Spotify-like music site built with React.",
+    "tags": [
+      "API",
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  {
+    "id": "3",
+    "netlify": "https://moviereleases.netlify.app",
+    "github": "https://github.com/erilinus/project-movies",
+    "title": "Movie Site",
+    "description": "A single page application built with React, list's popular movies and displays information about them.",
+    "tags": [
+      "API",
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  {
+    "id": "4",
+    "netlify": "https://lehappythoughts.netlify.app",
+    "github": "https://github.com/erilinus/project-happy-thoughts",
+    "title": "Happy Thoughts",
+    "description": "Twitter-like social media platform with only happy thoughts. Built with React to post and fetch data from an API.",
+    "tags": [
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "5",
+    "netlify": "https://passiveaggressivegen.netlify.app",
+    "github": "https://github.com/erilinus/project-survey",
+    "title": "Passive Aggressive Generator",
+    "description": "A survey that gives you suggestions to what you should write to a current nuisance in your life.",
     "tags": [
       "React",
       "HTML",
