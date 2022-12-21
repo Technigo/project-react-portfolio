@@ -19,9 +19,9 @@ return (
 
 <HeadNav> 
 
-<Hero autoPlay muted loop playsinline className="hero-video">
+{/* <Hero autoPlay muted loop playsinline className="hero-video">
   <source src="./HeroMovie.mp4" type="video/mp4"/>
-</Hero>
+</Hero> */}
     {/* <Hero autoPlay muted loop playsinline className="hero-video">
     <source src={HeroVideo}/>
     </Hero> */}
@@ -104,6 +104,7 @@ position: relative;
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+background-color: #FFB800;
 
 @media (min-width: 668px) and (max-width: 1024px) {
 height: 50vh;      
