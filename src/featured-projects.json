@@ -66,5 +66,19 @@
       "CSS",
       "Javascript"
     ]
+  },
+  {
+    "id": "6",
+    "netlify": "https://lelabyrinth.netlify.app/",
+    "github": "https://github.com/erilinus/project-labyrinth",
+    "title": "The Labyrinth",
+    "description": "A text adventure game based on Technigos API for a game called `The Labyrinth`",
+    "tags": [
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Redux"
+    ]
   }
 ]
