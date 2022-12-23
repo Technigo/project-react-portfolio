@@ -123,6 +123,7 @@ const Tags = styled.div`
 `
 export const FeaturedProjectsImg = styled.img`
     width: ${(props) => (props.width)};
+    border-radius: 10px;
   `
 
 const Overlay = styled.div`
