@@ -31,7 +31,7 @@ export const Projects = () => {
             <ProjectCard key={project.id}>
               <StyledDescriptionLink target="_blank" rel="noopener noreferrer" href={project.homepage}>
                 <Overlay>
-                  <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/code/thumbnail.png`} alt="thumbnail of project" />
+                  <FeaturedProjectsImg width="100%" src={`https://raw.githubusercontent.com/linneaajger/${project.name}/master/thumbnail.png`} alt="thumbnail of project" />
                   <OverlayText>
                     <h4>{project.name.replaceAll('-', ' ').replaceAll('project', '')}</h4>
                   </OverlayText>
