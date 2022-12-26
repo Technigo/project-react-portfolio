@@ -80,5 +80,19 @@
       "Javascript",
       "Redux"
     ]
+  },
+  {
+    "id": "7",
+    "netlify": "https://letasks.netlify.app/",
+    "github": "https://github.com/erilinus/project-todos",
+    "title": "Todo-list",
+    "description": "Just a simple todo-list practicing redux",
+    "tags": [
+      "React",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Redux"
+    ]
   }
 ]
