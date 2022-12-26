@@ -12,7 +12,9 @@ const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
         <HeroText>
           <h3>Portfolio: Elin Segelöv</h3>
           <h1>frontend <br /> developer</h1>
-          <NoBackgroundH2>with a background in social work</NoBackgroundH2>
+          <NoBackgroundH2>
+            with a knack for seeing things from different perspectives
+          </NoBackgroundH2>
         </HeroText>
         <Logos
           githubLogo={githubLogo}
