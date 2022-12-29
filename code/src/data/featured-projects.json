@@ -1,10 +1,10 @@
  [
   {
     "title": "Coffee Survey",
-    "title-description": "1 news site about avocados",
+    "title-description": "",
     "overlay": "Coffee",
     "description": "With React as the framework, creating Typeform-like survey to collect data from your users.",
-    "image": "/assets/survey_mocup.png",
+    "image": "/assets/servey.png",
     "repo": "project-servey",
     "url": "https://project-survay-nina-berggren.netlify.app/",
     "repo_url": "https://github.com/NinaBerggren/project-survey",
@@ -30,84 +30,78 @@
   },
   {
     "title": "Todo list",
-    "title-description": "1 news site about avocados",
-    "overlay": "Guess Who?",
-    "description": "Create your own digital version of the classic board game, Guess Who?",
-    "image": "/assets/todos.png",
+    "title-description": "",
+    "overlay": "Todo-List",
+    "description": "Pull together all the parts of Redux, structure redux store and use selectors and dispatch actions to interact.",
+    "image": "/assets/todo.png",
     "repo": "project-todos",
-    "url": "https://guesswho-nina-berggren.netlify.app/",
+    "url": "https://todo-app-nina-berggren.netlify.app/",
     "repo_url": "https://github.com/NinaBerggren/project-todos",
     "tags": [
-        {
-          "id": 4,
-          "name": "JavaScript"
-        },
-        {
-          "id": 1,
-          "name": "HTML5"
-        },
-        {
-          "id": 2,
-          "name": "CSS3"
-        } 
+      {
+        "id": 10,
+        "name": "Redux"
+      },
+      {
+        "id": 11,
+        "name": "Redux toolkit"
+      },
+      {
+        "id": 18,
+        "name": "Styled components"
+      }
     ]  
   },
   {
     "title": "Happy Thoughts",
-    "title-description": "1 news site about avocados",
+    "title-description": "",
     "overlay": "Happy Thoughts",
-    "description": "Using React, fetching and posting data to an API. A website simular to twitter, where users can post message and hand out likes.",
-    "image": "/assets/Happy_Thoughts.jpg",
+    "description": "Using React, fetching and posting data to an API. A website simular to twitter, where users can post message and hand out likes. Use Mongo DB to store data and set up endpoints to fetch data.",
+    "image": "/assets/happy.png",
     "repo": "project-happy-thoughts",
     "url": "https://happy-thought-nina-berggren.netlify.app/",
+    "repo_url": "https://github.com/NinaBerggren/project-happy-thoughts-api",
     "tags": [
-      {
-        "id": 5,
-        "name": "API"
-      },
       {
         "id": 6,
         "name": "React"
       },
       {
-        "id": 7,
-        "name": "JSX"
+        "id": 18,
+        "name": "Styled components"
+      },    
+      {
+        "id": 14,
+        "name": "Mongo DB"
       },
       {
-        "id": 8,
-        "name": "React Hooks"
-      },
-      {
-        "id": 2,
-        "name": "CSS3"
-      }  
+        "id": 16,
+        "name": "Fullstack"
+      }     
        
     ]  
   },
   {
     "title": "Popular Movies",
-    "title-description": "1 news site about avocados",
+    "title-description": "",
     "overlay": "Movies",
     "description": "Create a React app with multiple pages using routes.",
-    "image": "/assets/Movie_Project.jpg",
+    "image": "/assets/movie.png",
     "repo": "project-movies",
     "url": "https://project-movies-linnea-nina.netlify.app/",
+    "repo_url": "https://github.com/NinaBerggren/project-movies",
     "tags": [
       {
+        "id": 3,
+        "name": "Pair/mob Programming"
+      },
+        {
           "id": 5,
           "name": "API"
         },
         {
           "id": 6,
           "name": "React"
-        },
-        {
-          "id": 7,
-          "name": "JSX"
-        },
-        {
-          "id": 3,
-          "name": "Pair/mob Programming"
         },
         {
           "id": 8,
@@ -119,6 +113,72 @@
         }
        
     ]  
-  }
+  },
+  {
+   "title": "Labyrinth - game",
+   "overlay": "Labytinth",
+   "description": " An interactive game where the user needs to find they way out of a labyrinth. Using an API, async actions and other ways of writing Redux, without Redux toolkit. View in 1520 x 820 px, will update responsivness at a later time.",
+   "image": "/assets/labyrinth.png",
+   "url": "https://retro-nina-and-viktors-labyrinth.netlify.app/",
+   "repo_name": "project-labyrinth",
+   "repo_url": "https://github.com/NinaBerggren/project-labyrinth",
+   "tags": [
+     {
+       "id": 3,
+       "name": "Pair/mob Programming"
+     },
+     {
+      "id": 5,
+      "name": "API"
+    },
+     {
+       "id": 9,
+       "name": "React Router"
+     },
+     {
+       "id": 10,
+       "name": "Redux"
+     },
+     {
+       "id": 18,
+       "name": "Styled components"
+     }
+
+ ]  
+ },
+ {
+  "title": "Music releases",
+  "title-description": "",
+  "overlay": "Music releases",
+  "description": "A responsive music site showing new releases and popular artists from 2019 using API.",
+  "image": "/assets/music.png",
+  "repo": "project-music-releases",
+  "url": "https://project-music-release-nina-lisa.netlify.app/",
+  "repo_url": "https://github.com/NinaBerggren/project-music-releases",
+  "tags": [
+      {
+        "id": 3,
+        "name": "Pair/mob Programming"
+      },
+      {
+        "id": 1,
+        "name": "HTML5"
+      },     
+      {
+        "id": 2,
+        "name": "CSS3"
+      },
+      {
+        "id": 4,
+        "name": "JavaScript"
+      },
+      {
+        "id": 5,
+        "name": "API"
+      }     
+     
+  ]  
+}
+
 
 ]

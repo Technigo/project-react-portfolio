@@ -1,6 +1,117 @@
 [
   {
-  "id": 1,
+     "id": 1,
+    "title": "Quiz",
+    "project_description": "Team's task to build a multiple-choice trivia quiz game using Redux. The Team Chooses topic and design of the game",
+    "image": "",
+    "url": "https://hippos-movie-quote-quiz.netlify.app/quiz",
+    "repo_name": "project-redux-quiz",
+    "repo_url": "https://github.com/NinaBerggren/project-redux-quiz",
+    "tags": [
+      {
+        "id": 3,
+        "name": "Pair/mob Programming"
+      },
+      {
+        "id": 9,
+        "name": "React Router"
+      },
+      {
+        "id": 10,
+        "name": "Redux"
+      },
+      {
+        "id": 18,
+        "name": "Styled components"
+      }
+
+  ]  
+  },
+  {
+    "id": 2,
+   "title": "Express API",
+   "project_description": "Learning the basics of backend, Build my own RESTful API by using Node.js and Express.",
+   "image": "",
+   "url": "https://project-express-api-o6rcefp6oa-lz.a.run.app",
+   "repo_name": "project-express-api",
+   "repo_url": "https://github.com/NinaBerggren/project-express-api",
+   "tags": [
+    {
+      "id": 12,
+      "name": "Backend"
+    },
+    {
+      "id": 13,
+      "name": "Express API"
+    },
+    {
+      "id": 14,
+      "name": "Mongo DB"
+    },
+    {
+      "id": 17,
+      "name": "Node.js"
+    }
+  
+  ]  
+  },
+  {
+    "id": 3,
+   "title": "Mongo API",
+   "project_description": "Backend project using Express API and MongoDB, start using a database to store and retrieve data. To acces MongoDB we are using Mongoose,",
+   "image": "",
+   "url": "https://project-mongo-api-niuqg32zrq-lz.a.run.app",
+   "repo_name": "project-mongo-api",
+   "repo_url": "https://github.com/NinaBerggren/project-mongo-api",
+   "tags": [
+    {
+      "id": 12,
+      "name": "Backend"
+    },
+    {
+      "id": 13,
+      "name": "Express API"
+    },
+    {
+      "id": 14,
+      "name": "Mongo DB"
+    },
+    {
+      "id": 15,
+      "name": "mongoose"
+    }
+  
+  ]  
+  },
+  {
+    "id": 4,
+   "title": "Authentification",
+   "project_description": "Fullstack project, practised authorization in backend and created frontend with React routes, using bcrypt and crypto npm packages.",
+   "image": "",
+   "url": "https://project-auth-w16-nina-joel.netlify.app/",
+   "repo_name": "project-auth",
+   "repo_url": "https://github.com/NinaBerggren/project-auth",
+   "tags": [
+    {
+      "id": 3,
+      "name": "Pair/mob Programming"
+    },
+    {
+      "id": 14,
+      "name": "Mongo DB"
+    },
+    {
+      "id": 15,
+      "name": "mongoose"
+    },
+    {
+      "id": 16,
+      "name": "Fullstack"
+    }  
+  ]  
+  },
+  {
+  "id": 5,
   "title": "Guess Who?",
   "project_description": "Create your own digital version of the classic board game, Guess Who?",
   "image": "/assets/Guess_Who.jpg",
@@ -23,7 +134,7 @@
   ]  
 },
 {
-  "id": 2,
+  "id": 6,
   "title": "CHATBOT WildeBeast Burgers",
   "project_description": "Pair project, with using HTML, CSS and JavaScript ES6 create a responsive chatbot. With question/response interaction",
   "url": "https://wildebeest-burgers.netlify.app/",
@@ -50,7 +161,7 @@
   ]
 },	
 {
-  "id": 3,
+  "id": 7,
   "title": "Weather App",
   "project_description": "Working with API fetch from external website and create a app with predetermined design",
   "url": "https://weatherapp-nina-linda.netlify.app/",
@@ -77,32 +188,6 @@
           "id": 3,
           "name": "Pair/mob Programming"
         }
-  ]
-},
-{
-  "id": 4,
-  "title": "Music-releases",
-  "project_description": "With React, JSX and React components bould a website with API. And follow a design screenshots as closely as possible ",
-  "url": "https://project-music-release-nina-lisa.netlify.app/",
-  "repo_name": "project-music-releases",
-  "repo_url": "https://github.com/NinaBerggren/project-music-releases",
-  "tags": [
-        {
-          "id": 6,
-          "name": "React"
-        },
-        {
-          "id": 5,
-          "name": "API"
-        },
-        {
-          "id": 3,
-          "name": "Pair/mob Programming"
-        },             
-        {
-          "id": 2,
-          "name": "CSS3"
-        } 
   ]
 }
 ]
