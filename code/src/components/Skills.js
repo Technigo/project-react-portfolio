@@ -18,19 +18,22 @@ export const Skills = () => {
               <li>CSS3</li>
               <li>JavaScript ES6</li>
               <li>React</li>
-              <li>API´s</li>
-              <li>GitHub</li>
+              <li>Redux</li>
+              <li>MongoDB</li>
+              <li>Node.js</li>
             </ul>
           </SkillsContainerItem>
           <SkillsContainerItem>
             <h5>toolbox</h5>
             <ul>
-              <li>VSCode</li>
+              <li>Visual Studio Code</li>
+              <li>GitHub</li>
               <li>CodePen</li>
               <li>Figma</li>
               <li>Slack</li>
               <li>Notion</li>
               <li>Prezi</li>
+              <li>Google cloud</li>
               <li>Office 365°</li>
               <li>Adobe Creative Suite</li>
             </ul>
@@ -40,18 +43,18 @@ export const Skills = () => {
             <ul>
               <li>Layout</li>
               <li>Typography</li>
+              <li>API´s</li>
+              <li>Backend development</li>
               <li>Print & Advertising</li>
               <li>Agile methodology</li>
               <li>Mob-programming</li>
-              <li>Communication</li>
+              <li>Online Communication strategy</li>
             </ul>
           </SkillsContainerItem>
           <SkillsContainerItem>
             <h5>uppcomming</h5>
             <ul>
-              <li>Node.js</li>
-              <li>Backend development</li>
-              <li>Redux</li>
+              <li>Final project</li>
             </ul>
           </SkillsContainerItem>
         </SkillsContainer>
