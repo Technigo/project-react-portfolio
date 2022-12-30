@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { InnerWrapper, OuterWrapper } from 'StyledComponents/GlobalStyles';
 import { SectionHeading } from 'StyledComponents/HeadlineStyles';
 import { SocialMediaContainer } from 'StyledComponents/SocialMediaContainer'
@@ -39,8 +39,9 @@ const SoMeContainer = styled(SocialMediaContainer)`
   }
 
   @media (max-width: 668px) {
-    img {
-    width: 60%;
+    a {
+    width: 30%;
+    text-align: center;
     }
   }
   `

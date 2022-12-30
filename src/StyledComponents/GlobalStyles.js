@@ -36,7 +36,5 @@ export const A = styled.a`
   text-decoration: none;
   outline: none;
   color: inherit;
-  &&:Hover {
-    text-decoration: underline;
-  }
+
 `

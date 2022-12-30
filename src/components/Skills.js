@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper } from 'StyledComponents/GlobalStyles';
 import { SectionHeading } from 'StyledComponents/HeadlineStyles';
 
@@ -17,8 +17,6 @@ const Skills = () => {
               <li>CSS3</li>
               <li>JavaScript ES6</li>
               <li>React</li>
-              <li>Styled Components</li>
-
             </ul>
           </SkillsList>
           <SkillsList>

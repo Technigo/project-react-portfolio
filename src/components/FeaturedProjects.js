@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, P, A } from 'StyledComponents/GlobalStyles'
 import { SectionHeading, SubHeading } from 'StyledComponents/HeadlineStyles'
 import { Tag, TagContainer } from 'StyledComponents/TagStyles'
@@ -25,7 +25,7 @@ export const FeaturedProjects = () => {
               </a>
               <DetailsWrapper>
                 <A href={item.netlify}>
-                  <SubHeading>{item.name}</SubHeading>
+                  <SubHeadingProject>{item.name}</SubHeadingProject>
                   <PProject>{item.description}</PProject>
                 </A>
                 <TagContainer>
@@ -42,6 +42,14 @@ export const FeaturedProjects = () => {
     </OuterWrapper>
   )
 }
+
+const SubHeadingProject = styled(SubHeading)`
+  transition: ease-out 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`
 
 const ProjectInfo = styled.div`
   padding-bottom: 20px;

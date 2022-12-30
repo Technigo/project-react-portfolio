@@ -8,8 +8,9 @@ export const Tech = () => {
       <InnerWrapper>
         <SectionHeading>TECH</SectionHeading>
         <P>
-        HTML, CSS, Flexbox, Bootstrap, JavaScript ES6, JSX, React, React Hooks, Redux, Node.js,
-        Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
+        HTML, CSS, Flexbox, JavaScript ES6, React, Redux, Node.js,
+        MongoDB & Mongoose, Web Accessibly, API:s, mob-programming, pair-programming, Github,
+        Agile Methodologies
         </P>
       </InnerWrapper>
     </OuterWrapper>

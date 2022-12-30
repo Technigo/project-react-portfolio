@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { A, InnerWrapper, OuterWrapper, P } from 'StyledComponents/GlobalStyles';
 import { SectionHeading } from 'StyledComponents/HeadlineStyles';
 import { Arrow } from './OtherProjects.js'

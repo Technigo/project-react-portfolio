@@ -24,7 +24,7 @@
     {
         "featured": true,
         "display": true,
-        "name": "Todo",
+        "name": "Redux Todo-list",
         "overlayname": "Todo-list",
         "description": "An interactive app where the user can create a to-do list, built with Redux",
         "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
@@ -37,7 +37,7 @@
         "display": true,
         "name": "The Amazing maze",
         "overlayname": "Redux Maze",
-        "description": "In interactive labyrint built with Redux, where the user navigates through a text-based adventure.",
+        "description": "An interactive labyrint built with Redux, where the user navigates through a text-based adventure.",
         "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
         "image": "./assets/amazingmaze.jpg",
         "netlify": "https://the-amazing-maze.netlify.app/",

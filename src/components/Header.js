@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { HeaderFirstHeading, HeaderSecondHeading, HeaderThirdHeading } from 'StyledComponents/HeadlineStyles'
 import { SocialMediaContainer } from 'StyledComponents/SocialMediaContainer'
 import BackgroundImage from '../Images/background1.jpg'
@@ -90,7 +90,7 @@ const Bold = styled.span`
 const SoMeContainer = styled(SocialMediaContainer)`
     @media (max-width: 750px) {
     position: absolute;
-    width: 200px;
+    width: 150px;
     right: 1vh;
     top: 3vh;
     

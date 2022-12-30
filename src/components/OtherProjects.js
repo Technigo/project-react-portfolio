@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { InnerWrapper, OuterWrapper, A, P } from 'StyledComponents/GlobalStyles';
 import { SectionHeading } from 'StyledComponents/HeadlineStyles';
 import { Tag, TagContainer } from 'StyledComponents/TagStyles.js'
@@ -14,10 +14,10 @@ const OtherProjects = () => {
       .then((data) => SetProjects(data))
   })
 
-  const filteredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'project-express-api')
+  const filteredProjects = projects.filter((project) => (project.name !== 'project-business-site') && (project.name !== 'express-api-frontend')
   && (project.name !== 'project-react-portfolio') && (project.name !== 'project-happy-thoughts') && (project.name !== 'project-survey')
   && (project.name !== 'jessicahansson') && (project.name !== 'project-portfolio') && (project.name !== 'project-todos') && (project.name !== 'unit-tests')
-  && (project.name !== 'final-project'))
+  && (project.name !== 'final-project') && (project.name !== 'project-labyrinth'))
 
   return (
     <OuterWrapper grey>
@@ -46,6 +46,11 @@ const ProjectHeading = styled.h3`
     letter-spacing: 0.01em;
     color: #aa658f;
     padding-top: 30px;
+    
+    
+  &:hover {
+    text-decoration: underline;
+  }
    
 `
 const POther = styled(P)`
