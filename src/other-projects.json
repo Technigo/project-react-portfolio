@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "netlify": "https://creative-lolly-f0d26c.netlify.app/",
+    "github": "https://github.com/erilinus/project-guess-who",
+    "title": "Guess who",
+    "description": "Simple game, practicing working with arrays",
+    "image": "https://i.imgur.com/RqD3veY.jpg",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  },
+  {
+    "id": "2",
+    "netlify": "https://subtle-paletas-e779d4.netlify.app/",
+    "github": "https://github.com/erilinus/project-chatbot",
+    "title": "Chatbot",
+    "description": "Practice using if-statements to create a chatbot that tells jokes.",
+    "image": "https://i.imgur.com/9Q7BCNx.jpg",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }
+]
