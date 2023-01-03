@@ -52,7 +52,7 @@ export const Skills = () => {
             </ul>
           </SkillsContainerItem>
           <SkillsContainerItem>
-            <h5>uppcomming</h5>
+            <h5>upcomming</h5>
             <ul>
               <li>Final project</li>
             </ul>

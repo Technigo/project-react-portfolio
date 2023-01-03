@@ -116,7 +116,7 @@
   },
   {
    "title": "Labyrinth - game",
-   "overlay": "Labytinth",
+   "overlay": "Labyrinth",
    "description": " An interactive game where the user needs to find they way out of a labyrinth. Using an API, async actions and other ways of writing Redux, without Redux toolkit. View in 1520 x 820 px, will update responsivness at a later time.",
    "image": "/assets/labyrinth.png",
    "url": "https://retro-nina-and-viktors-labyrinth.netlify.app/",
