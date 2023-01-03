@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { SectionSubHeading, InnerWrapper, OuterWrapperGrey } from '../library/GlobalStyles'
 
 export const OtherProjects = ({ subTitle }) => {

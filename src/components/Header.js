@@ -1,33 +1,31 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import heroImage from '../assets/irina-iriser-ztMuZyqEQpg-unsplash.jpg';
 import heroLinkedin from '../assets/linkedin-icon.svg';
 import heroGithub from '../assets/github-icon.svg';
-import heroStackOverflow from '../assets/stackoverflow-icon.svg';
 import profileImage from '../assets/profil-pic.jpg';
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderIcons>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img src={heroLinkedin} alt="LinkedIn icon for the header" />
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img src={heroGithub} alt="Github icon for the header" />
-        </a>
-        <a href="https://google.com" target="_blank" rel="noreferrer">
-          <img src={heroStackOverflow} alt="Stack Overflow icon for the header" />
-        </a>
-      </HeaderIcons>
-      <HeaderTitle>
-        <h3>PORTFOLIO: LINDA NORBERG</h3>
-        <h1>Frontend</h1>
-        <h1>Developer</h1>
-      </HeaderTitle>
-      <HeaderImage>
-        <img src={profileImage} alt="Portrait" />
-      </HeaderImage>
+      <HeaderWrapper>
+        <HeaderIcons>
+          <a href="https://www.linkedin.com/in/linda-norberg-0780a296/" target="_blank" rel="noreferrer">
+            <img src={heroLinkedin} alt="LinkedIn icon for the header" />
+          </a>
+          <a href="https://github.com/lindanorberg" target="_blank" rel="noreferrer">
+            <img src={heroGithub} alt="Github icon for the header" />
+          </a>
+        </HeaderIcons>
+        <HeaderTitle>
+          <h3>PORTFOLIO: LINDA NORBERG</h3>
+          <h1>Frontend</h1>
+          <h1>Developer</h1>
+        </HeaderTitle>
+        <HeaderImage>
+          <img src={profileImage} alt="Portrait" />
+        </HeaderImage>
+      </HeaderWrapper>
     </HeaderContainer>
   );
 };
@@ -41,14 +39,29 @@ const HeaderContainer = styled.header`
   position: relative;
 `;
 
+const HeaderWrapper = styled.div`
+  width: 90%;
+  margin: 0 auto; 
+  position: relative;
+
+  @media (min-width: 668px) {
+      width: 70%;
+  }
+
+  @media (min-width: 1350px) {
+      width: 55%;
+  }
+`;
+
 const HeaderIcons = styled.div`
   position: absolute;
-  right: 5%;
-  top: 10%;
+  right: 0;
+  top: 5vh;
+  display: flex;
+  gap: 10px;
   
   img{
-    height: 3rem;
-    margin-right: 1rem;    
+    height: 3rem;   
     }
 
   img:hover{
@@ -62,17 +75,11 @@ const HeaderIcons = styled.div`
   }
 
   @media (min-width: 1024px){
-    right: 8%;
-    top: 10%;
-
     img{
     height: 5rem;  
     }
 
   @media (min-width: 1400px){
-    right: 20%;
-    top: 10%;
-
     img{
     height: 5rem;  
     }
@@ -81,9 +88,9 @@ const HeaderIcons = styled.div`
 `;
 
 const HeaderTitle = styled.div`
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  position: relative;
+  top: 18vh;
+  left: 0;
   color: whitesmoke;
   line-height: 30px;
   font-family: 'Roboto', sans-serif;
@@ -112,8 +119,6 @@ const HeaderTitle = styled.div`
   }
 
   @media (min-width: 1024px) {
-    left: 15%;
-
     h3 {
       font-size: 30px;
     }
@@ -126,8 +131,6 @@ const HeaderTitle = styled.div`
   }
 
   @media (min-width: 1400px) {
-    left: 25%;
-
     h3 {
       font-size: 30px;
     }
@@ -147,9 +150,8 @@ const HeaderImage = styled.div`
     width: 170px;
     height: 170px;
     position: absolute;
-    bottom: -5%;
-    right: 10%;
-    dipslay: block;
+    bottom: -35vh;
+    right: 0;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {
@@ -163,8 +165,6 @@ const HeaderImage = styled.div`
     img {
       width: 240px;
       height: 240px;
-      bottom: -8%;
-      right: 15%;
     }
   }
 
@@ -172,8 +172,6 @@ const HeaderImage = styled.div`
     img {
       width: 18rem;
       height: 18rem;
-      bottom: -10%;
-      right: 20%;
     }
   }
 `;

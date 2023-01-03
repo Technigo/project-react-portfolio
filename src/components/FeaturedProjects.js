@@ -1,25 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
-import projects from '../library/projects.json';
-import { SectionHeading, InnerWrapper, OuterWrapperGrey } from '../library/GlobalStyles'
+import styled from 'styled-components/macro';
+import featuredProjects from '../library/featuredProjects.json';
+import { SectionHeading, InnerWrapper, OuterWrapperGrey, GridWrapper } from '../library/GlobalStyles'
 
-export const Projects = ({ color, tagColor }) => {
-  const GITHUB_NAME = 'lindanorberg';
+export const FeaturedProjects = ({ color, tagColor }) => {
+  // const GITHUB_NAME = 'lindanorberg';
 
   return (
     <OuterWrapperGrey>
       <InnerWrapper>
         <SectionHeading>FEATURED PROJECTS</SectionHeading>
-        <FeaturedProjectWrapper>
-          {projects.map((project) => {
+        <GridWrapper>
+          {featuredProjects.map((project) => {
             return (
               <ProjectCard
-                key={project.title}
-                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                key={project.id}
+                href={project.netlify}
                 target="_blank">
-                <ThumbnailWrapper url="../assets/happy-thoughts">
-                  <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>
-                </ThumbnailWrapper>
+                <CardWrapper url={project.image}>
+                  <CardTitle>{project.title.toUpperCase()}</CardTitle>
+                </CardWrapper>
                 <ProjectInfoHeader color={color}>
                   {project['title-description'].toUpperCase()}
                 </ProjectInfoHeader>
@@ -34,26 +34,11 @@ export const Projects = ({ color, tagColor }) => {
               </ProjectCard>
             );
           })}
-        </FeaturedProjectWrapper>
+        </GridWrapper>
       </InnerWrapper>
     </OuterWrapperGrey>
   );
 };
-
-const FeaturedProjectWrapper = styled.div`
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 100px;
-
-  @media (max-width: 800px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
-  }
-`;
 
 const ProjectCard = styled.a`
   transform: translateY(0%);
@@ -65,28 +50,28 @@ const ProjectCard = styled.a`
   position: relative;
 `;
 
-const ThumbnailWrapper = styled.div`
+const CardWrapper = styled.div`
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   font-size: 1.3rem;
-  background-image: linear-gradient(180deg, #1c232580, #1c232580),
-    url(${(props) => props.url});
+  background-image: linear-gradient(#0000006f, #0000006f), url(${(props) => props.url}); 
   &:hover {
     background-image: linear-gradient(#1c23255e, #1c23255e),
       url(${(props) => props.url});
   }
 `;
 
-const ThumbnailTitle = styled.h2`
-  font-family: "Montserrat Bold";
+const CardTitle = styled.h2`
+  font-family: 'Montserrat', sans-serif;
   color: white;
   position: absolute;
+  font-size: 1.5rem;
 `;
 
 const ProjectInfoHeader = styled.h3`
@@ -103,18 +88,18 @@ const ProjectInfo = styled.p`
 `;
 
 const ProjectTags = styled.li`
-  padding: 0;
   font-family: "Roboto", sans-serif;
   color: black;
   padding: 5px 10px;
   background-color: ${(props) => props.tagColor};
   display: inline;
-  font-size: 16px;
-  margin-right: 5px;
+  font-size: 1rem;
+  margin: 0 10px 0 0;
+
 
   @media (max-width: 800px) {
     padding: 2px;
     font-size: 14px;
-    margin-right: 3px;
+    margin: 10px;
   }
 `;

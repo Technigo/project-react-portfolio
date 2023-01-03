@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const SectionHeading = styled.h2`
-    background-color: #BA4581;
+    background-color: var(--color-darkGreen);
     color: whitesmoke;
     display: inline-block;
-    padding: 4px;
+    padding: 0 15px;
     margin: 20px 0 20px 0;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -12,14 +12,14 @@ export const SectionHeading = styled.h2`
 
 export const SectionSubHeading = styled.h3`
     font-family: 'Montserrat', sans-serif;
-    color: #BA4581;
+    color: var(--color-darkGreen);
     font-weight: 800;
     padding-top: 10px;
 `
 // letter-spacing: 2px;
 export const SectionSubSubHeading = styled.h4`
     font-family: 'Roboto', sans-serif;
-    color: #BA4581;
+    color: var(--color-darkGreen);
     font-weight: 600;
     padding-top: 10px;
 `
@@ -40,10 +40,11 @@ export const OuterWrapperGrey = styled.section`
     ;
 `
 export const InnerWrapper = styled.section`
-    widht: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
 
     @media (min-width: 668px) {
         width: 70%;
@@ -53,3 +54,18 @@ export const InnerWrapper = styled.section`
         width: 55%;
     }
 `
+
+export const GridWrapper = styled.div`
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 100px;
+
+  @media (max-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+`;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { InnerWrapper, SectionSubHeading, OuterWrapper } from '../library/GlobalStyles'
 
 export const MoreThoughts = ({ subTitle }) => {

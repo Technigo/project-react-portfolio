@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { InnerWrapper, SectionHeading, SectionSubHeading, OuterWrapperGrey } from '../library/GlobalStyles'
 
 export const Skills = () => {

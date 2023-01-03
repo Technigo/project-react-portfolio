@@ -1,14 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { InnerWrapper } from '../library/GlobalStyles'
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterTitle>CONTACT</FooterTitle>
-      <div>Linda Norberg</div>
-      <div>+46 739 06 99 23</div>
-      <div>linda@norberg.tv</div>
+      <p>Linda Norberg</p>
+      <p>+46 739 06 99 23</p>
+      <a href="mailto:linda@norberg.tv">or send me a mail here</a>
     </FooterWrapper>
   );
 };
@@ -26,4 +26,9 @@ const FooterWrapper = styled(InnerWrapper)`
     text-align: center;
     padding: 45px 0 60px 0;
     line-height: 1.5;
+    
+    a {
+      color: whitesmoke;
+      &: hover{color: grey};
+    }
 `

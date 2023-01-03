@@ -1,81 +1,44 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import blogPic from '../assets/blog-pic.png';
-import { SectionHeading, InnerWrapper, OuterWrapper } from '../library/GlobalStyles'
+import { SectionHeading, InnerWrapper, OuterWrapper, GridWrapper } from '../library/GlobalStyles'
 
 export const Thoughts = () => {
   return (
     <OuterWrapper>
       <InnerWrapper>
-        <SectionHeading>MY THOUGHTS ABOUT CODE</SectionHeading>
-        <AllMyThoughtsCards>
-          <div className="MyThoughtsCard">
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noreferrer"
-              alt="bild">
-              <img src={blogPic} lang="eng" alt="Girhub project" />
-              <DateTitle>DEC 2022</DateTitle>
-              <BlogTitle>Blog title</BlogTitle>
-              <BlogText>Blog Text</BlogText>
-              <EndingArrows>{'>>'}</EndingArrows>
-            </a>
-          </div>
-          <div className="MyThoughtsCard">
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noreferrer"
-              alt="bild">
-              <img src={blogPic} lang="eng" alt="Girhub project" />
-              <DateTitle>DEC 2022</DateTitle>
-              <BlogTitle>Blog title</BlogTitle>
-              <BlogText>Blog Text</BlogText>
-              <EndingArrows>{'>>'}</EndingArrows>
-            </a>
-          </div>
-        </AllMyThoughtsCards>
+        <SectionHeading>MY THOUGHTS</SectionHeading>
+        <GridWrapper>
+          <a
+            href="https://medium.com/@linda_31582/my-first-encounter-with-mob-programming-5cb160db41b"
+            target="_blank"
+            rel="noreferrer"
+            alt="bild">
+            <img src={blogPic} lang="eng" alt="Girhub project" />
+            <BlogDate>OCT 2022</BlogDate>
+            <BlogTitle>My first encounter with mob programming</BlogTitle>
+            <BlogText>Blogpost about my first mob programming project
+               with my awesome team Hippo during Technigo Bootcamp <Span>{'>>'}</Span>
+            </BlogText>
+          </a>
+        </GridWrapper>
       </InnerWrapper>
     </OuterWrapper>
   );
 };
 
-// export const MyThoughtsContainer = styled.section`
-//   width: 100%;
-//   height: 300px;
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-
-//   @media (min-width: 668px) {
-//     display: flex;
-//   }
-// `;
-
-export const AllMyThoughtsCards = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: center;
-  justify-content: space-around;
-
-  .MyThoughtsCard {
-  }
+const Span = styled.span`
+  color: var(--color-eggplantPink);
 `;
 
-export const DateTitle = styled.p`
-  color: #ff0000;
+const BlogDate = styled.p`
+  color: var(--color-eggplantPink);
 `;
 
-export const BlogTitle = styled.p`
+const BlogTitle = styled.p`
   font-weight: bold;
 `;
 
-export const BlogText = styled.p`
-  font-size: 10px;
+const BlogText = styled.p`
 `;
 
-export const EndingArrows = styled.p`
-  font-size: 9px;
-  color: #f44336;
-`;

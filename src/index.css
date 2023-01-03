@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 :root {
-  --color-eggplantPink: #6f455e;
+  --color-eggplantPink:#BA4581;
+  
   /* #7d586e */
+    /* #6f455e */
   --color-darkGreen: #456f56;
   --color-lightGreen: #b5c5bb;
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
