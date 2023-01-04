@@ -1,10 +1,20 @@
 # React Portfolio
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Rebuilt my portfolio in React and created my own JSON to fetch project data
 
-## The problem
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Tech: React, jsx, styled components, 
+
+Tech focus:
+
+- What role color, typography and overall hierarchy play in web design
+
+- How to use Styled Components as a CSS framework
+
+- The app has reusable components and reusable styled components
+
+- Follow a desing spec for overall layout
+
+- Fetch data in JSON format
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://carolinesodertrom-portfolio.netlify.app/

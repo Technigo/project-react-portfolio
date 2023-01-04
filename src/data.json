@@ -1,0 +1,93 @@
+ [ 
+  {
+    "title": "Happy Thoughts Feed",
+    "sort": 1,
+    "image": "../imgs/feed.png",
+    "netlify": "https://carolines-happy-thoughts.netlify.app",
+    "github": "https://github.com/SoderstromC/project-happy-thoughts",
+    "description": "Feed of Happy thoughts built in React",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6", "API"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Guess Who Game",
+    "sort": 2,
+    "image": "../imgs/anonymity2.png",
+    "overlay": "test",
+    "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-guess-who",
+    "description": "Interactive game built with Javascript",
+    "tech": ["HTML", "CSS", "JavaScript ES6"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Weather App",
+    "sort": 3,
+    "image": "../imgs/rain.png",
+    "netlify": "https://silver-profiterole-7224fd.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-weather-app",
+    "description": "A weather app built with Javascript",
+    "tech": ["HTML", "CSS", "JavaScript ES6", "API"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Labyrinth",
+    "sort": 4,
+    "image": "../imgs/maze.png",
+    "netlify": "https://turtles-labyrinth.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-labyrinth",
+    "description": "A labyrinth game using thunks",
+    "tech": ["React","Redux", "HTML", "CSS", "Jsx", "API"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Quiz",
+    "sort": 5,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://randomstuffquiz.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-redux-quiz",
+    "description": "Multiple-choice quiz using Redux, mob programming",
+    "tech": ["React","Redux", "HTML", "CSS", "Jsx"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Movie Site",
+    "sort": 6,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://toprated-movies.netlify.app",
+    "github": "https://github.com/SoderstromC/project-movies",
+    "description": "Multipage site built with React Router, pair programming",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Survey",
+    "sort": 7,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://carolines-pomodoro.netlify.app",
+    "github": "https://github.com/SoderstromC/project-survey",
+    "description": "A survey which generates a tailored pomodoro recipe based on your answers",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Music Releases",
+    "sort": 8,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://celadon-brioche-831b80.netlify.app/",
+    "github": "https://github.com/SoderstromC/project-music-releases",
+    "description": "A page that shows new album and artist releases, pair programming",
+    "tech": ["React", "HTML", "CSS", "JavaScript ES6"],
+    "navigate": "GO TO WEBSITE"
+  },
+  {
+    "title": "Chatbot",
+    "sort": 9,
+    "image": "../imgs/Waterpink.jpg",
+    "netlify": "https://animated-lebkuchen-1f1c42.netlify.app",
+    "github": "https://github.com/SoderstromC/project-chatbot",
+    "description": "A table booking chatbot for restaurants, first pair programming project",
+    "tech": ["HTML", "CSS", "JavaScript ES6"],
+    "navigate": "GO TO WEBSITE"
+  }
+]
