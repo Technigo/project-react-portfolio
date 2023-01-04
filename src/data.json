@@ -1,0 +1,40 @@
+[
+  {
+    "name": "header",
+    "background": "",
+    "profile_image": "",
+    "icons": {
+      "linkedin": "",
+      "github": "",
+      "stackoverflow": ""
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/david-ballester-font-3626bb8a/",
+      "github": "https://github.com/Fonnt",
+      "stackoverflow": "https://stackoverflow.com/users/19384589/font"
+    },
+    "info": {
+      "p": "PORTFOLIO: DAVID BALLESTER",
+      "h1": "frontend developer",
+      "h2": "+leading"
+    }
+  }
+]
+
+/* 
+{
+  "id": "project-8",
+  "title": "Popular Movies",
+  "description": "React apps with multiple pages using routes",
+  "image": "/link-to-image/image3.jpg",
+  "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
+  "technologies": [
+    { "name": "JavaScript" },
+    { "name": "HTML" },
+    { "name": "CSS" },
+    { "name": "API" },
+    { "name": "React" },
+    {
+      "name": "GitHub",
+      "githubLink": "https://github.com/Scarylie/project-movies"
+ */
