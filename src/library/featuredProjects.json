@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "HAPPY THOUGHTS",
+      "title-description": "A twitter like feed of happy thoughts",
+      "project-description": "Built in react, using an API for fetching and sending thoughts and counting hearts",
+      "repo-name": "project-happy-thoughts",
+      "netlify": "https://frabjous-nasturtium-a2ae42.netlify.app",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "React", "APIs"],
+      "image": "/images/happy-thoughts.png"
+    },
+    {
+      "id": 2,
+      "title": "WEATHER APP",
+      "title-description": "Fetching weather info from API",
+      "project-description": "Responsive webb site showing current weather and a 5-day forcast",
+      "repo-name": "project-weather-app",
+      "netlify": "https://weatherapp-nina-linda.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "Pair programming"],
+      "image": "/images/weather-app.png"
+    },
+    {
+      "id": 3,
+      "title": "SURVEY",
+      "title-description": "A short confetti survey",
+      "project-description": "A project to practise useState in React and connect HTML form inputs to state. Design your own confetti to celebrate.",
+      "repo-name": "project-survey",
+      "netlify": "https://gentle-jelly-fccbea.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "React", "React Hooks"],
+      "image": "/images/project-survey-image.png"
+    },
+    {
+      "id": 4,
+      "title": "TO DO LIST",
+      "title-description": "List your todos and mark them done",
+      "project-description": "Continued my redux learning by practising writing reducers and actions, structuring and interact with a redux store.",
+      "repo-name": "project-todo",
+      "netlify": "https://lindas-todo.netlify.app/",
+      "tags": ["HTML5", "CSS3", "JavaScript ES6", "React", "Redux"],
+      "image": "/images/project-todo-image.png"
+    }
+]
+  
+
+

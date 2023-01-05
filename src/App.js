@@ -1,9 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Header } from './components/Header';
+import { Introduction } from './components/Introduction';
+import { TechSection } from './components/TechSection';
+import { FeaturedProjects } from './components/FeaturedProjects';
+import { OtherProjects } from './components/OtherProjects';
+import { Thoughts } from './components/Thoughts';
+import { MoreThoughts } from './components/MoreThoughts';
+import { Skills } from './components/Skills';
+import { ForMore } from './components/ForMore';
+import { Footer } from './components/Footer'
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Header />
+      <Introduction />
+      <TechSection />
+      <FeaturedProjects color="#7d586e" tagColor="#c7d4cc" />
+      <OtherProjects subTitle="Weather app" />
+      <Thoughts />
+      <MoreThoughts subTitle="Remote tips" />
+      <Skills />
+      <ForMore color="green" />
+      <Footer />
     </div>
   )
 }
