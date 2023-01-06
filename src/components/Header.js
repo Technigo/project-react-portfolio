@@ -45,7 +45,7 @@ const HeaderWrapper = styled.div`
   position: relative;
 
   @media (min-width: 668px) {
-      width: 70%;
+      width: 60%;
   }
 
   @media (min-width: 1350px) {
@@ -158,6 +158,7 @@ const HeaderImage = styled.div`
     img {
       width: 230px;
       height: 230px;
+      bottom: -36vh;
     }
   }
 

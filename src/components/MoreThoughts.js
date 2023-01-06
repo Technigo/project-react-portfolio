@@ -25,10 +25,6 @@ export const InfoContainer = styled.div`
   display: flex;
 `;
 
-export const SkillTagContainer = styled.div`
-  display: flex;
-`;
-
 export const OtherProjectContainer = styled.div`
   display: flex;
   flex-direction: column;

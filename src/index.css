@@ -6,7 +6,9 @@
   /* #7d586e */
     /* #6f455e */
   --color-darkGreen: #456f56;
-  --color-lightGreen: #b5c5bb;
+  --color-lightGreen: #c7d4cc;
+  --color-darkGrey: #454545a0;
+  --color-lightGrey: #7c7c7ca0;
 }
 
 body {
@@ -29,4 +31,5 @@ p, h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  color: black;
 }

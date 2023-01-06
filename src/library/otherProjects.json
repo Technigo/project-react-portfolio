@@ -1,30 +1,30 @@
 [
   {
     "id": 11,  
-    "title": "Backend Project: Happy thoughts API ",
-    "description": "Create an API to be used for the previously made frontent Happy Thoughts Project. The user POST data to the API which is saved in the database.",
-    "url": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
+    "title": "HAPPY THOUGHTS API ",
+    "description": "To be used for frontend Happy Thoughts Project.",
+    "url": "https://github.com/lindanorberg/project-happy-thoughts-api",
     "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
   },
   {
     "id": 12,  
-    "title": "Backend Project: Happy thoughts API ",
-    "description": "Create an API to be used for the previously made frontent Happy Thoughts Project. The user POST data to the API which is saved in the database.",
-    "url": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
-    "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
+    "title": "GUESS WHO",
+    "description": "A game I did to learn about JavaScript",
+    "url": "https://guess-who-linda-norberg.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript ES6"]
   },
   {
     "id": 13,  
-    "title": "Backend Project: Happy thoughts API ",
-    "description": "Create an API to be used for the previously made frontent Happy Thoughts Project. The user POST data to the API which is saved in the database.",
-    "netlify": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
-    "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
+    "title": "REDUX QUIZ",
+    "description": "Mob programmed quiz with a redux store",
+    "netlify": "https://hippos-movie-quote-quiz.netlify.app/",
+    "tags": ["HTML", "CSS", "JavaScript ES6", "Redux", "Styled Components"]
   }, 
   {
     "id": 14,  
-    "title": "Backend Project: Happy thoughts API ",
-    "description": "Create an API to be used for the previously made frontent Happy Thoughts Project. The user POST data to the API which is saved in the database.",
+    "title": "LABYRINTH",
+    "description": "A text based game created by pair programming to learn Redux",
     "netlify": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
-    "tags": ["MongoDB", "Express", "Google cloud", "Restful API", "Postman", "JavaScript ES6"]
+    "tags": ["React", "Redux", "API", "Restful API", "JavaScript ES6", "Pair programming", "Styled Components" ]
   }
 ]

@@ -31,26 +31,20 @@ export const ForMore = () => {
   )
 }
 
-// export const ForMoreContainer = styled.section`
-//   width: 100%;
-//   height: 300px;
-//   background-size: cover;
-//   position: relative;
-// `;
-
 export const ForMoreIcons = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+  margin: 20px 0 30px 0;
 
   img {
     height: 60px;
     width: 60px;
     margin: 0 auto;
     display: block;
-    filter: brightness(0) saturate(100%) invert(31%) sepia(18%) saturate(1025%) hue-rotate(272deg) brightness(88%) contrast(88%);
+    filter: brightness(0) saturate(100%) invert(44%) sepia(26%) saturate(1424%) hue-rotate(277deg) brightness(81%) contrast(90%);
   }
 
   img:hover {
@@ -68,7 +62,7 @@ export const ForMoreIcons = styled.div`
   }
 
   p {
-    color: black;
+    color: var(--color-eggplantPink);
     font-size: 1rem;
     padding-top: 10px;
     font-weight: bold;

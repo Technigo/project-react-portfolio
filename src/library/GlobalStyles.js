@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const SectionHeading = styled.h2`
     background-color: var(--color-darkGreen);
@@ -12,14 +12,14 @@ export const SectionHeading = styled.h2`
 
 export const SectionSubHeading = styled.h3`
     font-family: 'Montserrat', sans-serif;
-    color: var(--color-darkGreen);
+    color: var(--color-eggplantPink);
     font-weight: 800;
     padding-top: 10px;
 `
 // letter-spacing: 2px;
 export const SectionSubSubHeading = styled.h4`
     font-family: 'Roboto', sans-serif;
-    color: var(--color-darkGreen);
+    color: var(--color-eggplantPink);
     font-weight: 600;
     padding-top: 10px;
 `
@@ -47,7 +47,7 @@ export const InnerWrapper = styled.section`
     line-height: 1.6;
 
     @media (min-width: 668px) {
-        width: 70%;
+        width: 60%;
     }
 
     @media (min-width: 1350px) {
@@ -56,16 +56,35 @@ export const InnerWrapper = styled.section`
 `
 
 export const GridWrapper = styled.div`
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 100px;
-
-  @media (max-width: 800px) {
+    text-align: left;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 50px;
-  }
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 20px;
+
+    @media (max-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+`;
+
+export const ProjectTags = styled.p`
+    font-family: "Roboto", sans-serif;
+    color: black;
+    padding: 5px 10px;
+    background-color: var(--color-lightGreen);
+    display: inline;
+    font-size: 0.8rem;
+    margin: 0 6px 6px 0;
+`;
+
+export const TagWrapper = styled.div`
+    display: flex; 
+    flex-wrap: wrap;
+`;
+
+export const Span = styled.span`
+  color: var(--color-eggplantPink);
 `;

@@ -1,67 +1,64 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { SectionSubHeading, InnerWrapper, OuterWrapperGrey } from '../library/GlobalStyles'
+import { SectionSubHeading, InnerWrapper, OuterWrapperGrey, ProjectTags, TagWrapper, Span } from '../library/GlobalStyles';
+import otherProjects from '../library/otherProjects.json';
 
-export const OtherProjects = ({ subTitle }) => {
+export const OtherProjects = () => {
   return (
-    <OuterWrapperGrey>
+    <OuterWrapperGreyOther>
       <InnerWrapper>
         <SectionSubHeading>OTHER PROJECTS</SectionSubHeading>
-        <a href="INSERT-LINK-TO-PROJECTS-NETLIFY">
-          <InfoContainer>
-            <SubTitle>{subTitle}</SubTitle>
-            <SubParagraph>
-                Project to display the weather in a chosen city with info from an
-                API
-            </SubParagraph>
-          </InfoContainer>
-        </a>
-        <SkillTagContainer>
-          <SkillTag>HTML</SkillTag>
-          <SkillTag>CSS</SkillTag>
-          <SkillTag>JavaScript</SkillTag>
-        </SkillTagContainer>
+        {otherProjects.map((project) => {
+          return (
+            <>
+              <a
+                key={project.id}
+                href={project.url}>
+                <InfoContainer>
+                  <SubTitle>{project.title}</SubTitle>
+                  <SubParagraph>
+                    {project.description}<Span>{'>>'}</Span>
+                  </SubParagraph>
+                </InfoContainer>
+              </a>
+              <TagWrapper>
+                {project.tags.map((tag) => (
+                  <ProjectTags>
+                    {tag}
+                  </ProjectTags>
+                ))}
+              </TagWrapper>
+            </>
+          );
+        })}
       </InnerWrapper>
-    </OuterWrapperGrey>
+    </OuterWrapperGreyOther>
   );
 };
 
+const OuterWrapperGreyOther = styled(OuterWrapperGrey)`
+  padding-top: 0;
+`;
+
 const InfoContainer = styled.div`
   display: flex;
-`;
+  text-align: left;
 
-const SkillTagContainer = styled.div`
-  display: flex;
-`;
-
-// const OtherProjectContainer = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   width: 80%;
-//   margin: 0 auto;
-// `;
-
-const SkillTag = styled.p`
-  background-color: pink;
-  display: inline-block;
-  margin: 3%;
-  padding: 1%;
 `;
 
 const SubTitle = styled.h4`
-  color: red;
+  color: var(--color-eggplantPink);
   text-decoration: underline;
   margin-right: 1%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-block-end: 1em;
   margin-block-start: 1em;
 `;
 
 const SubParagraph = styled.p`
-  color: black;
   text-decoration: underline;
-  font-size: 18px;
+  font-size: 16px;
   margin-block-end: 1em;
   margin-block-start: 1em;
 `;

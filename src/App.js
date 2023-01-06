@@ -5,7 +5,7 @@ import { TechSection } from './components/TechSection';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { OtherProjects } from './components/OtherProjects';
 import { Thoughts } from './components/Thoughts';
-import { MoreThoughts } from './components/MoreThoughts';
+// import { MoreThoughts } from './components/MoreThoughts';
 import { Skills } from './components/Skills';
 import { ForMore } from './components/ForMore';
 import { Footer } from './components/Footer'
@@ -16,13 +16,14 @@ export const App = () => {
       <Header />
       <Introduction />
       <TechSection />
-      <FeaturedProjects color="#7d586e" tagColor="#c7d4cc" />
-      <OtherProjects subTitle="Weather app" />
+      <FeaturedProjects />
+      <OtherProjects />
       <Thoughts />
-      <MoreThoughts subTitle="Remote tips" />
       <Skills />
       <ForMore color="green" />
       <Footer />
     </div>
   )
 }
+
+// <MoreThoughts subTitle="Remote tips" />

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import featuredProjects from '../library/featuredProjects.json';
-import { SectionHeading, InnerWrapper, OuterWrapperGrey, GridWrapper } from '../library/GlobalStyles'
+import { SectionHeading, InnerWrapper, OuterWrapperGrey, GridWrapper, TagWrapper, ProjectTags } from '../library/GlobalStyles'
 
-export const FeaturedProjects = ({ color, tagColor }) => {
+export const FeaturedProjects = () => {
   // const GITHUB_NAME = 'lindanorberg';
 
   return (
@@ -20,17 +20,17 @@ export const FeaturedProjects = ({ color, tagColor }) => {
                 <CardWrapper url={project.image}>
                   <CardTitle>{project.title.toUpperCase()}</CardTitle>
                 </CardWrapper>
-                <ProjectInfoHeader color={color}>
+                <ProjectInfoHeader>
                   {project['title-description'].toUpperCase()}
                 </ProjectInfoHeader>
                 <ProjectInfo>{project['project-description']}</ProjectInfo>
-                <ul style={{ padding: 0 }}>
+                <TagWrapper>
                   {project.tags.map((tag) => (
-                    <ProjectTags tagColor={tagColor}>
+                    <ProjectTags>
                       {tag}
                     </ProjectTags>
                   ))}
-                </ul>
+                </TagWrapper>
               </ProjectCard>
             );
           })}
@@ -53,14 +53,14 @@ const ProjectCard = styled.a`
 const CardWrapper = styled.div`
   background-size: cover;
   background-position: center;
-  height: 280px;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
   font-size: 1.3rem;
-  background-image: linear-gradient(#0000006f, #0000006f), url(${(props) => props.url}); 
+  background-image: linear-gradient(#454545a0, #454545a0), url(${(props) => props.url}); 
   &:hover {
     background-image: linear-gradient(#1c23255e, #1c23255e),
       url(${(props) => props.url});
@@ -76,7 +76,7 @@ const CardTitle = styled.h2`
 
 const ProjectInfoHeader = styled.h3`
   font-family: "Roboto Bold", sans-serif;
-  color: ${(props) => props.color};
+  color: var(--color-eggplantPink);
   font-size: 1.2rem;
 `;
 
@@ -85,21 +85,6 @@ const ProjectInfo = styled.p`
   color: black;
   font-size: 1.2rem;
   line-height: 1.4;
+  margin-bottom: 5px;
 `;
 
-const ProjectTags = styled.li`
-  font-family: "Roboto", sans-serif;
-  color: black;
-  padding: 5px 10px;
-  background-color: ${(props) => props.tagColor};
-  display: inline;
-  font-size: 1rem;
-  margin: 0 10px 0 0;
-
-
-  @media (max-width: 800px) {
-    padding: 2px;
-    font-size: 14px;
-    margin: 10px;
-  }
-`;
