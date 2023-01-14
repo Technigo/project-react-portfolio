@@ -15,7 +15,7 @@ export const Thoughts = () => {
             rel="noreferrer"
             alt="bild">
             <ImgWrapper>
-              <img src={blogPic} lang="eng" alt="Girhub project" />
+              <img src={blogPic} alt="Hands holding" />
             </ImgWrapper>
             <BlogDate>OCT 2022</BlogDate>
 
