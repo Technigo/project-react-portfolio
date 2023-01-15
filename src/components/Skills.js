@@ -55,6 +55,9 @@ export const Skills = () => {
               <p>Redux</p>
               <p>HTML5</p>
               <p>CSS3</p>
+              <p>MongoDB</p>
+              <p>Node.js</p>
+              <p>Mongoose</p>
             </Skill>
             <Skill>
               <h3>toolbox</h3>
@@ -62,21 +65,16 @@ export const Skills = () => {
               <p>VS Code</p>
               <p>G suite</p>
               <p>Figma</p>
-              <p>Slack</p>
               <p>Notion</p>
-              {/* <p>Code Pen</p> */}
             </Skill>
             <Skill>
               <h3>more</h3>
               <p>Leadership</p>
-              <p>Scaling teams</p>
+              <p>Scaling organisations</p>
+              <p>Customer interviews</p>
+              <p>Team building</p>
               <p>Discovery</p>
               <p>CX</p>
-            </Skill>
-            <Skill>
-              <h3>upcoming</h3>
-              <p>MongoDB</p>
-              <p>Node.js</p>
             </Skill>
           </SkillsWrapper>
         </SkillsSection>
