@@ -17,30 +17,26 @@ export const Skills = () => {
         </div>
         <div className="toolbox">
           <ul>
-            <li>Atom*</li>
+            <li>MongoDB</li>
             <li>Postman</li>
             <li>GIMP</li>
-            <li>Canva</li>
+            <li>Android Emulator</li>
+            <li>Notion</li>
             <li>Figma</li>
-            <li>Keynote*</li>
-            <li>Slack</li>
+            <li>Canva</li>
           </ul>
 
         </div>
         <div className="More">
           <ul>
             <li>Agile Methodology</li>
-            <li>Design Lead</li>
-            <li>Strategy*</li>
-            <li>Process design*</li>
+            <li>Project planning</li>
+            <li>Time menagment</li>
+            <li>Process design</li>
           </ul>
 
         </div>
       </StyledSkills>
-      <div className="notes">
-        <p>* skills will be acquire until the end of education</p>
-
-      </div>
     </>
 
   )
