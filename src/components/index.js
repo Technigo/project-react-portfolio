@@ -16,4 +16,4 @@ export { default as Skills } from './Skills/Skills'
 
 // Other
 export { default as MyThoughts } from './MyThoughts/MyThoughts'
-export { default as ScrollButton } from './ScrollButton'
+export { default as ScrollButton } from './Footer/ScrollButton'
