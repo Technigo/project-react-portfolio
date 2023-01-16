@@ -7,7 +7,7 @@ const Intro = () => {
       <Text>
         I am a creative web designer and frontend developer with a background in education.
         My goal is to use my problem solution mindset and knowledge about learning,
-        to help entrepreneurs and small buisnesses create amazing websites.
+        to help entrepreneurs and small businesses create amazing websites.
       </Text>
     </SectionContainer>
 
