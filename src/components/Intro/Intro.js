@@ -16,11 +16,11 @@ const Intro = () => {
           autoplay
           speed={1}
         />
-        Hello! I <span>&apos;</span>m a Frontend Developer from Technigo<span>&apos;</span>s Web
-        developer bootcamp. I have worked for nearly 10 years in media and recently as a
-        programmatic trader. I love that you can be so creative with code and I have a good eye for
-        design and the use of CSS. I am a very fast learner that thrive in a team who help each
-        other and have fun.
+        Hello! I <span>&apos;</span>m a Frontend Developer who changed career last year. I have
+        worked for nearly 10 years in media, before code became my new passion, and most recently as
+        a team leader of programmatic traders. I love that you can be so creative with code and I
+        have a really good eye for design and the use of CSS. I am a very fast learner that thrive
+        in a team who help each other and have fun.
       </SectionText>
     </SectionContainer>
   )

@@ -1,11 +1,12 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable jsx-quotes */
 import React from 'react'
-import { SectionContainer, SectionHeadings, SubHeadings } from 'Globalstyles';
-import { SkillsWrapper } from './Skills.styles';
+import { SectionContainer, SectionHeadings, SubHeadings } from 'Globalstyles'
+import { SkillsWrapper } from './Skills.styles'
 
 const Skills = () => {
   return (
-    <SectionContainer bgColor="#d0c9c05c">
+    <SectionContainer bgColor='#d0c9c05c'>
       <SectionHeadings>SKILLS</SectionHeadings>
       <SkillsWrapper>
         <div>
@@ -14,17 +15,18 @@ const Skills = () => {
           <p>CSS3</p>
           <p>Javascript ES6</p>
           <p>React</p>
+          <p>React Native</p>
           <p>Redux</p>
           <p>Node.js</p>
           <p>MongoDB</p>
         </div>
         <div>
           <SubHeadings>TOOLBOX</SubHeadings>
-          <p>Figma</p>
-          <p>Slack</p>
           <p>Visual Studio Code</p>
           <p>Git</p>
           <p>GitHub</p>
+          <p>Figma</p>
+          <p>Slack</p>
         </div>
         <div>
           <SubHeadings>MORE</SubHeadings>
@@ -37,12 +39,11 @@ const Skills = () => {
         </div>
         <div>
           <SubHeadings>UPCOMING</SubHeadings>
-          <p>Final project</p>
-          <p>C#</p>
+          <p>Flutter</p>
         </div>
       </SkillsWrapper>
     </SectionContainer>
   )
 }
 
-export default Skills;
+export default Skills

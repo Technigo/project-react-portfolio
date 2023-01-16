@@ -1,15 +1,21 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable comma-dangle */
+
 import React from 'react'
 import GlobalStyles from 'Globalstyles'
-import ScrollButton from 'components/Scrollbutton'
-import Header from 'components/Header/Header'
-import Intro from 'components/Intro/Intro'
-import Tech from 'components/Tech/Tech'
-import FeaturedProjects from 'components/FeaturedProjects/FeaturedProjects'
-import OtherProjects from 'components/OtherProjects/OtherProjects'
-import MyThoughts from 'components/MyThoughts/MyThoughts'
-import Skills from 'components/Skills/Skills'
-import Footer from 'components/Footer/Footer'
+
+import {
+  ScrollButton,
+  Header,
+  Footer,
+  Intro,
+  Tech,
+  FinalProject,
+  FeaturedProjects,
+  OtherProjects,
+  MyThoughts,
+  Skills,
+} from './components'
 
 export const App = () => {
   return (
@@ -19,12 +25,12 @@ export const App = () => {
       <Header />
       <Intro />
       <Tech />
+      <FinalProject />
       <FeaturedProjects />
       <OtherProjects />
       <MyThoughts />
       <Skills />
       <Footer />
     </>
-
   )
 }

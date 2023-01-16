@@ -9,7 +9,7 @@ const Tech = () => {
       <SectionHeadings>TECH</SectionHeadings>
       <SectionText>
         HTML, CSS, JavaScript ES6, Flexbox, JSX, React, React Native, Redux, Node.js, Mongo DB, Web
-        Accessibly, API:s, mob-programming, pair-programming, Github.
+        Accessibly, API:s, mob-programming, pair-programming, Git.
       </SectionText>
     </SectionContainer>
   )
