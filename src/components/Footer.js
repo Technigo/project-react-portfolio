@@ -14,9 +14,9 @@ const Footer = () => {
 }
 
 const FooterWrapper = styled.div`
-     background-color: var(--third-bg-color);
+     background-color: #EB7126;
      text-align: center;
-     color: #585B58;
+     color: whitesmoke;
      padding-top: 1.5rem;
      padding-bottom: 1.5rem;
 `;

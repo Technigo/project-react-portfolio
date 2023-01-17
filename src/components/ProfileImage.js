@@ -10,7 +10,7 @@ export const ProfileImage = () => {
 
 export const ProfileImageStyling = styled.img`
     position: absolute;
-    top: 68%;
+    top: 75%;
     right: 8%;
     width: 120px;
     height: auto;

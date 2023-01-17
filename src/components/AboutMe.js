@@ -1,23 +1,25 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { OuterWrapper, InnerWrapper, Paragraph } from '../styles/GlobalStyles';
+import { HeaderWrapper, Paragraph } from '../styles/GlobalStyles';
 import lollipop from '../assets/lollipop.png';
 
 const AboutMe = () => {
   return (
-    <OuterWrapper>
-      <InnerWrapper>
-        <Paragraph>
-          <StartSymbol src={lollipop} alt="lollipop separator" />
-            Hello! I am a Frontend developer currently studying at Technigos bootcamp.
-            So far we have covered a number of coding languages inclduing CSS, HTML, Javascript,
-            React and Redux.
-            Before joining this course I was a Revenue Manager schooled in working strategicly
-            with large amounts of data, property Mgmt Systems and I have spent a number of years
-            in Management teams in the Hospitality business.
-        </Paragraph>
-      </InnerWrapper>
-    </OuterWrapper>
+    <HeaderWrapper>
+      <Paragraph>
+        <StartSymbol src={lollipop} alt="lollipop separator" />
+          Hello! I am a strategic and experienced Revenue Manager
+          with many years in hotel management teams.
+          I easily maintain the helicopter view while not losing focus
+          on details and thrive on problem solving.
+          Working in teams suits me and I love being one part of a larger whole.
+          Now adding coding to my skill set by studying at Technigos bootcamp.
+          Focusing on JavaScript (ES6), React, HTML5, CSS and server-side programming with Node.js,
+          with weekly projects covering everything from the basics of programming to structuring
+          web projects using the latest technology.
+      </Paragraph>
+    </HeaderWrapper>
+
   )
 }
 

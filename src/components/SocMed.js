@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
+const SocMedLinks = ({ linkedin, github, stackoverflow, alignment, orange }) => {
   return (
-    <NavBar className="SocMedLinks">
+    <NavBar alignment={alignment} orange={orange}>
       <a href="https://www.linkedin.com/in/thérèse-ånmark/" target="_blank" rel="noreferrer">
-        <img src={linkedin} alt="linkedIn" />
+        <img src={linkedin} alt="linkedIn icon" />
       </a>
       <a href="https://github.com/Tanmark" target="_blank" rel="noreferrer">
-        <img src={github} alt="github" />
+        <img src={github} alt="github icon" />
       </a>
       <a href="https://stackoverflow.com/users/14751780/tanmark" target="_blank" rel="noreferrer">
         <img src={stackoverflow} alt="stackoverflow" />
@@ -17,11 +17,10 @@ const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
   )
 }
 
-export const NavBar = styled.div`
-    position: absolute;
-    right: 1%;
-    top: 5%;
-    
-`;
+export const NavBar = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+`
 
-export default SocMedLinks
+export default SocMedLinks;

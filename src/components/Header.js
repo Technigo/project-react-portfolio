@@ -29,7 +29,7 @@ const HeaderBackground = styled.div`
     position: relative;
     background-image: url(${woods});
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
 

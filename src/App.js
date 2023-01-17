@@ -2,9 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 /* import Tech from './components/Tech'; */
-import FeaturedProj from './components/FeaturedProj';
-/* import OtherProj from './components/OtherProj';
-import MyThoughts from './components/MyThoughts';
+import AllProjects from './components/AllProjects';
+/* import MyThoughts from './components/MyThoughts';
 import MoreThoughts from './components/MoreThoughts';
 import Skills from './components/Skills'; */
 import ForMore from './components/ForMore';
@@ -16,8 +15,9 @@ export const App = () => {
     <>
       <Header />
       <AboutMe />
-      <FeaturedProj />
-      {/* <Tech />
+      <AllProjects />
+      {/*
+      <Tech />
       <OtherProj />
       <MyThoughts />
       <MoreThoughts />

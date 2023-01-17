@@ -20,10 +20,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+p {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+a {
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--color-purple);
+}
+
+
+
+
+
 
 /* Colors */
 /* White background/text #F9FCFB 
