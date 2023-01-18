@@ -5,8 +5,8 @@ export const GlobalStyling = styled.div`
 background: ${(props) => (props.secondary ? '#c5c0b173' : "#e6e0d4 ")} ;
 border: 5px solid black;
  @media screen and (min-width: 1024px) {
-    margin: 5px;
-    border: solid black;
+    /* margin: 5px;
+    border: solid black; */
     h2 {
         font-size: 2rem;
     }
