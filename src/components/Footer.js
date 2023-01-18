@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { SmallHeadline } from 'styles/GlobalStyles';
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <SmallHeadline>CONTACT</SmallHeadline>
+      <p>CONTACT</p>
       <p>Thérèse Ånmark</p>
       <p>+46 769 417 655</p>
       <p>thereseanmark@hotmail.com</p>

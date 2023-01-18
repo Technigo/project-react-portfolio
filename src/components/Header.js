@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import woods from '../assets/woods.jpg';
-/* Components */
 import { HeaderWrapper } from '../styles/GlobalStyles';
 import SocMedLinks from './SocMed';
 import { ProfileImage } from './ProfileImage';
+import Title from './Title'
 
 /* Images */
+import woods from '../assets/woods.jpg';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import stackoverflow from '../assets/stackoverflow.png';
@@ -19,6 +19,7 @@ const Header = () => {
           linkedin={linkedin}
           github={github}
           stackoverflow={stackoverflow} />
+        <Title />
         <ProfileImage />
       </HeaderWrapper>
     </HeaderBackground>

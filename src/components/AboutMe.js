@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { HeaderWrapper, Paragraph } from '../styles/GlobalStyles';
+import { InnerWrapper, OuterWrapper, Paragraph } from '../styles/GlobalStyles';
 import lollipop from '../assets/lollipop.png';
 
 const AboutMe = () => {
   return (
-    <HeaderWrapper>
-      <Paragraph>
-        <StartSymbol src={lollipop} alt="lollipop separator" />
+    <OuterWrapper>
+      <InnerWrapper>
+        <Paragraph>
+          <StartSymbol src={lollipop} alt="lollipop separator" />
           Hello! I am a strategic and experienced Revenue Manager
           with many years in hotel management teams.
           I easily maintain the helicopter view while not losing focus
@@ -17,15 +18,20 @@ const AboutMe = () => {
           Focusing on JavaScript (ES6), React, HTML5, CSS and server-side programming with Node.js,
           with weekly projects covering everything from the basics of programming to structuring
           web projects using the latest technology.
-      </Paragraph>
-    </HeaderWrapper>
+        </Paragraph>
+      </InnerWrapper>
+    </OuterWrapper>
 
   )
 }
 
 const StartSymbol = styled.img`
   width: 3rem;
+  margin-right: 5px;
 
+  @media (min-width: 668px) {
+    width: 6.1rem;
+  }
 `
 
 export default AboutMe

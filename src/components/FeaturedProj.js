@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { BASE_URL, PROJECT_THUMBNAIL } from 'util/URLs';
-import { ProjectCard, Image, Tags, Tag, OuterWrapper } from '../styles/GlobalStyles';
+import { ProjectCard, Image, Tags, Tag } from '../styles/GlobalStyles';
 
 const FeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -30,26 +30,25 @@ const FeaturedProjects = () => {
   return (
     mainProjects.map((project) => {
       return (
-        <OuterWrapper>
-          <ProjectCard key={project.id}>
-            <a href={project.homepage} target="_blank" rel="noreferrer">
-              <ImageContainer>
-                <ImageOverlay />
-                <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />
-                <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
-                <p>{project.description}</p>
-                <Tags>{getTags(project.topics)}</Tags>
-              </ImageContainer>
-            </a>
-          </ProjectCard>
-        </OuterWrapper>
+
+        <ProjectCard key={project.id}>
+          <a href={project.homepage} target="_blank" rel="noreferrer">
+            <ImageContainer>
+              <ImageOverlay />
+              <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />
+              <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
+              <p>{project.description}</p>
+              <Tags>{getTags(project.topics)}</Tags>
+            </ImageContainer>
+          </a>
+        </ProjectCard>
+
       );
     })
   )
 }
 
 export const ImageContainer = styled.div`
-  border: 2px solid red;
   position: relative;
   transition: 0.5s ease;
 `

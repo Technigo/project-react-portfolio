@@ -1,18 +1,20 @@
 import React from 'react';
-import { OuterWrapper, InnerWrapper, MediumHeadline } from 'styles/GlobalStyles';
+import { OuterWrapper, InnerWrapper, LargeHeadline, AlignLeftWrapper } from 'styles/GlobalStyles';
 import FeaturedProjects from './FeaturedProj'
 import OtherProjects from './OtherProj';
 
 const AllProjects = () => {
   return (
     <OuterWrapper>
-      <MediumHeadline>FEATURED PROJECTS</MediumHeadline>
+      <LargeHeadline>FEATURED PROJECTS</LargeHeadline>
       <InnerWrapper>
         <FeaturedProjects />
       </InnerWrapper>
 
-      <MediumHeadline>OTHER PROJECTS</MediumHeadline>
-      <OtherProjects />
+      <LargeHeadline>OTHER PROJECTS</LargeHeadline>
+      <AlignLeftWrapper>
+        <OtherProjects />
+      </AlignLeftWrapper>
     </OuterWrapper>
   )
 }

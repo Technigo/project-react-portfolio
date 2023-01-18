@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 
-const SocMedLinks = ({ linkedin, github, stackoverflow, alignment, orange }) => {
+const SocMedLinks = ({ linkedin, github, stackoverflow }) => {
   return (
-    <NavBar alignment={alignment} orange={orange}>
+    <NavBar>
       <a href="https://www.linkedin.com/in/thérèse-ånmark/" target="_blank" rel="noreferrer">
         <img src={linkedin} alt="linkedIn icon" />
       </a>
@@ -21,6 +21,7 @@ export const NavBar = styled.nav`
   display: flex;
   justify-content: flex-end;
   margin-bottom: 2rem;
+
 `
 
 export default SocMedLinks;

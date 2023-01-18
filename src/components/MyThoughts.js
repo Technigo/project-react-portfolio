@@ -1,19 +1,17 @@
 import React from 'react';
 // import styled from 'styled-components';
-import { ProjectCard, Image, OuterWrapper, InnerWrapper, MainHeadline } from 'styles/GlobalStyles';
+import { OuterWrapper, LargeHeadline, InnerWrapper } from 'styles/GlobalStyles';
 
-export const MyThoughts = () => {
+const MyThoughts = () => {
   return (
     <OuterWrapper>
-      <MainHeadline>MY THOUGHTS ABOUT CODE</MainHeadline>
+      <LargeHeadline>MY THOUGHTS ABOUT CODE</LargeHeadline>
       <InnerWrapper>
-        <ProjectCard>
-
-        </ProjectCard>
-        <ProjectCard>
-
-        </ProjectCard>
+        <p>
+        Future thoughts about code will be published here.
+        </p>
       </InnerWrapper>
     </OuterWrapper>
   )
 }
+export default MyThoughts;
