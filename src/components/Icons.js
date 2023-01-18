@@ -31,7 +31,7 @@ export const Icons = (size) => {
 
 const IconsHeader = styled.i`
  position: absolute;
-    font-size: 40px;
+    font-size: 2rem;
     top: 30px;
     right: 30px;
     padding:3px;
@@ -41,7 +41,7 @@ const IconsHeader = styled.i`
     display: flex;
     text-decoration: none;
     border: solid #3b362ad6;
-    color: #3b362ad6;
+    color: black;
     color: 3b362ad6;
     border-radius: 40%;
     padding: 10px;

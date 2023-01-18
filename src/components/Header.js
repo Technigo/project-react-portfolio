@@ -3,15 +3,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icons } from './Icons'
 import myPicture from '../Pictures/myPicture.jpg';
-import backgroundPic from '../Pictures/backgroundPic.PNG';
+// import backgroundPic from '../Pictures/backgroundPic.PNG';
+import BackgroundPix2 from '../Pictures/BackgroundPix2.png'
+import Trianglify from '../Pictures/Trianglify.svg'
 
 export const Header = () => {
   return (
     <StyledHeader>
       <div className="headerTitle">
-        <h1>Portfolio:</h1>
-        <h1>Kaja Wilbik</h1>
-        <h2>Front-end developer</h2>
+        <h1>Portfolio: Kaja Wilbik</h1>
+        {/* <h1>Kaja Wilbik</h1> */}
+        <h2>Frontend developer</h2>
       </div><img src={myPicture} alt="Kajas profile" />
       <Icons size="40px" />
     </StyledHeader>
@@ -19,11 +21,11 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
- background-image: url(${backgroundPic});
+ background-image: url(${Trianglify});
  background-size: cover; // make a background picture cover the whole page
+ border-bottom:  5px solid  black;
  display: flex;
-    height: 520px;
-    width: 100vw;
+    height: 40vh;
     left: 0px;
     top: 0px;
     background-repeat: no-repeat;
@@ -35,35 +37,48 @@ img {
     justify-items: flex-end;
     position: absolute;
     right: 24px;
-    top: 420px;
-    width: 180px;
-    height: 180px;
+    top: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border:solid cadetblue;
+    border:solid black;
 }
 
-.headerTitle {
-    padding:10px;
-    font-size: 20px;
+.headerTitle h1 {
+    font-size: 1.5rem;
+    color: black
 }
 
 .headerTitle h2 {
     color:black;
+    font-size: 2rem;
 }
 
+
+
 @media screen and (min-width: 1024px) {
-    .myPicture {
-    top: 350px;
+    img {
+    top: 200px;
     right: 50px;
     position: absolute;
-    width: 270px;
-    height: 270px;
+    width: 200px;
+    height: 200px;
    } 
 
-   .headerTitle{
-    font-size: xx-large;
-    text-align: center;
+   .headerTitle {
+    margin-left: 20px;
+    margin-top: 70px;
+    /* font-size: xx-large; */
    }
+
+   h1 {
+    font-size: 2rem;
+   }
+
+   h2 {
+    font-size: 4rem
+   }
+
 }
  `

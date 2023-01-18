@@ -5,8 +5,9 @@ export const Pitch = () => {
   return (
     <StyledPitch>
       <h3>
-          I’m a frontend developer and a people-oriented person with a background in tourism and recreation.
+          Hello! I’m a frontend developer and a people-oriented person with a background in tourism and recreation.
           I am a swift learner with ease in learning languages.
+          
       </h3>
     </StyledPitch>
 
@@ -14,6 +15,13 @@ export const Pitch = () => {
 }
 
 const StyledPitch = styled.div`
-    margin-top: 45px;
-    padding: 20px;  
+  text-align: center;
+  flex-direction: column;
+  margin: 50px 50px 0px 0px;
+  padding-top: 20px;  
+  padding-left: 20px;
+
+  @media screen and (min-width: 1024px) {
+    margin: 50px 250px 0px 50px;
+  }
 `

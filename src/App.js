@@ -9,20 +9,29 @@ import { MyThoughts } from 'components/MyThoughts'
 import { Header } from './components/Header'
 import { Skills } from './components/Skills'
 import { GlobalStyling } from './components/Globalstyling'
+import { TitleBarStyling } from './components/Globalstyling'
 
-export const App = () => {
+export const App = ({secondary}) => {
   return (
   <GlobalStyling>
       <div>
       <Header />
-      <Pitch />
+      <Pitch secondary />
+      <TitleBarStyling>
       <TitleBar name="tech" />
-      <TechInfo />
+      </TitleBarStyling>
+      <TechInfo/>
+      <TitleBarStyling>
       <TitleBar name="projects" />
+      </TitleBarStyling>
       <ProjectBox />
+      {/* <TitleBarStyling>
       <TitleBar name="My thoughts" />
-      <MyThoughts />
+      </TitleBarStyling>
+      <MyThoughts /> */}
+      <TitleBarStyling>
       <TitleBar name="Skills" />
+      </TitleBarStyling>
       <Skills />
       <Footer />
     </div>

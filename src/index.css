@@ -1,7 +1,7 @@
 body {
   font-family: Montserrat;
   font-weight: 700;
-  background: #e6e0d4;
+  /* background: #e6e0d4; */
   margin: 0px;
 }
 
@@ -14,5 +14,11 @@ code {
   margin: 20px;
 
 }
+ * {
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+
+ }
 
 

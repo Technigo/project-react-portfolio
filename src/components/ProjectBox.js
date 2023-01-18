@@ -52,7 +52,6 @@ export const ProjectBox = ({ list }) => {
 const StyledProjectBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 80%;
     padding: 20px;
     align-items: center;
 
@@ -115,7 +114,7 @@ const StyledProjectBox = styled.div`
     }
 
     p {
-      font-size: 30px;
+      font-size: 2rem;
     }
     
     img {
@@ -125,7 +124,6 @@ const StyledProjectBox = styled.div`
     }
 
     .tags {
-      margin: 5rem;
       padding: 7px;
 }
   }

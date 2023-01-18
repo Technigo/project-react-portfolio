@@ -14,5 +14,10 @@ export const TechInfo = () => {
 
 const StyledTechInfo = styled.div`
 margin:20px;
+
+h3 {
+text-align: center;
+padding: 20px;
+}
 `
 

@@ -21,6 +21,7 @@ const StyledFooter = styled.div`
         flex-wrap: wrap;
         margin-top:15px;
         padding-bottom: 15px;
+        border-top: solid black;
     
     p, a {
         font-size: x-large;

@@ -12,7 +12,9 @@ export const TitleBar = ({ name }) => {
 
 const StyledTitleBar = styled.div`
   background-color: #779a96;
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px
+   
 
 `
