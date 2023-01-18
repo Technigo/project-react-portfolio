@@ -25,8 +25,8 @@ border: 5px solid black;
 `
 export const TitleBarStyling = styled.div`
  @media screen and (min-width: 1024px) {
-    margin-top: 50px;
-    width: 30%;
+    margin: 50px;
+    width: 25%;
     margin-left: 450px;
     border-bottom: solid black;
  }
