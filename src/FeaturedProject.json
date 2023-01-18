@@ -1,4 +1,13 @@
 [
+    {
+      "title": "THNX",
+      "title-description": "A Gratitude Journaling app",
+      "project-description": "An app where the user can submit 3 daily gratefulness thoughts. These three thoughts are stored and previously added thoughts can be viewed, only by the user. The project includes backend and frontend.",
+      "repo-name": "project-Thnxs",
+      "netlify-name": "https://thnx.netlify.app/",
+      "tags": ["React", "Node.js", "Styled Components","MongoDB","Mongoose","Figma","SweetAlert","Lottie"],
+      "image": "/images/project-thumbnails/Project-Thnxs.png"
+    },    
      {
       "title": "To Do",
       "title-description": "A To do list App",
