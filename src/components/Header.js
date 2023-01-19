@@ -37,7 +37,7 @@ img {
     justify-items: flex-end;
     position: absolute;
     right: 24px;
-    top: 250px;
+    top: 230px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
