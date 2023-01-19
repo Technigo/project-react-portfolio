@@ -31,7 +31,7 @@ export const Icons = (size) => {
 
 const IconsHeader = styled.i`
  position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: 30px;
     right: 30px;
     padding:3px;

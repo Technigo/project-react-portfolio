@@ -38,21 +38,21 @@ img {
     position: absolute;
     right: 24px;
     top: 250px;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border:solid black;
 }
 
 .headerTitle h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black
 }
 
 .headerTitle h2 {
     color:black;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
