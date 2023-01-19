@@ -72,11 +72,11 @@ img {
     /* font-size: xx-large; */
    }
 
-   h1 {
+  .headerTitle h1 {
     font-size: 2rem;
    }
 
-   h2 {
+  .headerTitle {
     font-size: 4rem
    }
 
