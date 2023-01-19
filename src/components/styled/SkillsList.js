@@ -12,12 +12,12 @@ text-align: center;
 }
 
 & li {
-    padding: 0.1em;
+    padding: 0.1rem;
 }
 & li:first-child {
     color: #112D4E;
-    padding: 0.5em;
-    border-radius: 1em;
-    margin-bottom: 0.7em;  
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.7rem;  
 }
 `

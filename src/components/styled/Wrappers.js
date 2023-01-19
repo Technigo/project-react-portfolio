@@ -5,28 +5,28 @@ export const OuterWrapper = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 1em 0em;
+  padding: 1rem 0rem;
   
   &:nth-of-type(2n) {
   background-color: #DBE2EF;
   }
 
-  @media only screen and (min-width: 600px) {
-  padding: 2em 0em;
+  @media only screen and (min-width: 60rem) {
+  padding: 2rem 0rem;
   }
 `
 
 export const InnerWrapper = styled.div`
   width: 90%;
-  margin: 0em auto;
+  margin: 0rem auto;
   
   & p {
-    margin: ${(props) => (props.centertext ? '0em auto' : '')};
-    padding-bottom: 1em;
+    margin: ${(props) => (props.centertext ? '0rem auto' : '')};
+    padding-bottom: 1rem;
     max-width: 640px;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 60rem) {
   width: 75%;
   }
 `
@@ -36,7 +36,7 @@ export const HeaderOuterWrapper = styled.header`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 2em 0em;
+  padding: 2rem 0rem;
   background-image: url(images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,8 +44,8 @@ export const HeaderOuterWrapper = styled.header`
   height: 50vh;
   position: relative;
 
-  @media only screen and (min-width: 600px) {
-  padding: 2em 0em
+  @media only screen and (min-width: 60rem) {
+  padding: 2rem 0rem
   }
 `
 
@@ -58,9 +58,9 @@ export const FooterOuterWrapper = styled.footer`
   color: #F9F7F7;
   text-align: center;
   text-shadow: #000000 0px 0px 1px;
-  padding: 2em 0em;
+  padding: 2rem 0rem;
 
   & div p {
-    margin-top: 1em;
+    margin-top: 1rem;
   }
 `

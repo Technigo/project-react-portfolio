@@ -4,7 +4,7 @@ export const ProfileImage = styled.div`
   position: absolute;
   right: 5%;
   left: 60%;
-  bottom: -5px;
+  bottom: -0.3rem;
 
 & img {
   box-shadow: #000000 0px 5px 15px;
@@ -15,15 +15,15 @@ export const ProfileImage = styled.div`
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 60rem) {
   right: 5%;
   left: 70%; 
-  bottom: -25px;
+  bottom: -2rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 80rem) {
   right: 10%;
   left: 70%; 
-  bottom: -25px;
+  bottom: -2rem;
 }
 `

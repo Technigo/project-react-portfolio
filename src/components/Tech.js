@@ -22,21 +22,6 @@ export const Tech = () => {
             <p>Bootstrap</p>
           </div>
           <div>
-            <img title="LESS" alt="LESS logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" />
-            <p>LESS</p>
-          </div>
-          <div>
-            <img title="Tailwind" alt="Tailwind logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
-            <p>Tailwind CSS</p>
-          </div>
-          <div>
-            <img title="Webflow" alt="Webflow logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" />
-            <p>Webflow</p>
-          </div>
-          <div><img title="Wordpress" alt="Wordpress logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain-wordmark.svg" />
-            <p>Wordpress</p>
-          </div>
-          <div>
             <img title="Javascript (ES6)" alt="Javascript logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             <p>JavaScript (ES6)</p>
           </div>
