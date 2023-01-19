@@ -21,12 +21,6 @@ export const ForMore = () => {
               alt="link to Niclas' GitHub profile"
               src="images/icon-github.png" />
           </a>
-          <a href="https://stackoverflow.com/users/19388159/niclas-jensen">
-            <SoMeIcon
-              title="My StackOverflow profile"
-              alt="link to Niclas' StackOverflow profile"
-              src="images/icon-stackoverflow.png" />
-          </a>
         </IconGroup>
       </InnerWrapper>
     </OuterWrapper>
