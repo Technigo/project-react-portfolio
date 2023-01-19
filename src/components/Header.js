@@ -76,8 +76,8 @@ img {
     font-size: 2rem;
    }
 
-  .headerTitle {
-    font-size: 4rem
+  .headerTitle h2 {
+    font-size: 4rem;
    }
 
 }
