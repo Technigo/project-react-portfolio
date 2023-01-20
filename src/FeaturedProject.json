@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Movies",
+      "title-description": "Movie site listing 50 top rated movies",
+      "project-description": "A multi-page React application using React Router.",
+      "repo-name": "project-movies",
+      "netlify-name": "https://linda-and-marias-movies-app.netlify.app/",
+      "tags": ["React", "JSX", "API", "Pair-programming"],
+      "image": "../Thumbnails/movie_site_thumbnail.jpg"
+    },
+    {
+      "title": "Todo",
+      "title-description": "App to handle your todos",
+      "project-description": "An application built in React and Redux.",
+      "repo-name": "project-todos",
+      "netlify-name": "https://marias-todo-app.netlify.app/",
+      "tags": ["React", "Redux"],
+      "image": "../Thumbnails/to_do_thumbnail.jpg"
+    },
+    {
+      "title": "Happy Thoughts",
+      "title-description": "Website to post and like happy thoughts.",
+      "project-description": "A React site fetching and posting data to an API.",
+      "repo-name": "project-happy-thoughts",
+      "netlify-name": "https://maria-wellanders-happy-thoughts.netlify.app/",
+      "tags": ["React", "JSX",  "API"],
+      "image": "../Thumbnails/happy_thoughts_thumbnail.jpg"
+    },
+    {
+      "title": "Quiz",
+      "title-description": "A Swedish spelling quiz",
+      "project-description": "A multiple-choice Redux quiz.",
+      "repo-name": "project-redux-quiz",
+      "netlify-name": "https://the-better-hippo-team-quiz.netlify.app/",
+      "tags": ["Redux", "Mob-programming"],
+      "image": "../Thumbnails/quiz_thumbnail.jpg"
+    }
+]
