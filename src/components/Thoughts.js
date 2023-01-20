@@ -17,7 +17,7 @@ export const Thoughts = () => {
               <DateTitle>OCT 2022</DateTitle>
               <BlogTitle>Though week</BlogTitle>
               <BlogText>This week has been really though.
-                This really is a roller coaster. Right now I'm in the valley of it.
+                This really is a roller coaster. Right now I am in the valley of it.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>
@@ -32,7 +32,7 @@ export const Thoughts = () => {
               <DateTitle>OCT 2022</DateTitle>
               <BlogTitle>Smooth week</BlogTitle>
               <BlogText>This week has been really fun and smooth.
-                As said before: It's a roller coaster. I'm in the clouds now.
+                As said before: It i a roller coaster. I am in the clouds now.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>

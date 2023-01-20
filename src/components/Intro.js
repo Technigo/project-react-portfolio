@@ -5,7 +5,7 @@ export const Intro = () => {
   return (
     <IntroOuterWrapper>
       <IntroInnerWrapper>
-        <p> Hello! I'm a Frontend Developer - but I haven't always been.
+        <p> Hello! I am a Frontend Developer - but I have not always been.
             I have a background in accounting and studies in
             French international business and administration.
             In programming, I adore the combo of logic and creativity to produce robust,
