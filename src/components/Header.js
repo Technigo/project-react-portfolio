@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import heroImage from '../assets/hot_image.jpg';
+import heroImage from '../assets/header_image.jpg';
 import heroLinkedin from '../assets/linkedin_icon.png';
 import heroGithub from '../assets/github_icon.png';
 import heroStackOverflow from '../assets/stackoverflow_icon.png';
