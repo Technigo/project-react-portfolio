@@ -14,75 +14,74 @@ const Header = () => {
         <SocialLinks />
       </LinkContainer>
       <HeaderInfo tabIndex="0">
-        <h3>Portfolio: <SpanName>Sarah Kneedler</SpanName></h3>
+        <h3>
+          Portfolio: <SpanName>Sarah Kneedler</SpanName>
+        </h3>
         <h1>frontend developer</h1>
         <h2>+ with a philosophy bachelor in social work</h2>
       </HeaderInfo>
-      <ProfileImg
-        src={ProfilePic}
-        alt="Photo of Sarah"
-        tabIndex="0" />
+      <ProfileImg src={ProfilePic} alt="Photo of Sarah" tabIndex="0" />
     </HeaderBackground>
-  )
-}
+  );
+};
 
 export default Header;
 
 // --- BackgroundImage ---
 const HeaderBackground = styled.header`
-    background-image: url(${HeadImg});
-    position: relative;
-    height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  background-image: url(${HeadImg});
+  position: relative;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    @media (min-width: 1024px) {
-       height: 65vh;
-    } 
-    `
+  @media (min-width: 1024px) {
+    height: 65vh;
+  }
+`;
 // --- Links ---
 export const LinkContainer = styled.nav`
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5vh;
-    margin-top: 10%;
-    gap: 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5vh;
+  margin-top: 10%;
+  gap: 15px;
 
-    @media (min-width: 768px) {
-      margin-right: 10vw;
-      margin-top: 8vh;
-    };
-    @media (min-width: 1024px) {
-      margin-right: 17vw;
-    }
-    `
+  @media (min-width: 768px) {
+    margin-right: 10vw;
+    margin-top: 8vh;
+  }
+  @media (min-width: 1024px) {
+    margin-right: 17vw;
+  }
+`;
 // ---Header text and container---
 const HeaderInfo = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 55vw;
-    height: 25vh;
-    left: 10%;
-    top: 25%;
-    color: white; 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 55vw;
+  height: 25vh;
+  left: 10%;
+  top: 25%;
+  color: white;
 
-    @media (min-width: 768px) {
-        width: 45vw;
-        left: 13vw;
-        top: 18vh;
-    }
-    @media (min-width: 1024px) {
-      width: 30vw;
-      top: 18vh;
-      left: 22vw;
-    }
+  @media (min-width: 768px) {
+    width: 45vw;
+    left: 13vw;
+    top: 18vh;
+  }
+  @media (min-width: 1024px) {
+    width: 30vw;
+    top: 18vh;
+    left: 22vw;
+  }
 
-    & h1 {
+  & h1 {
     font-weight: bold;
     font-size: 35px;
     letter-spacing: 0.04em;
@@ -93,7 +92,7 @@ const HeaderInfo = styled.div`
       font-size: 40px;
     }
   }
-   & h2 {
+  & h2 {
     font-weight: 500;
     font-size: 25px;
 
@@ -104,20 +103,19 @@ const HeaderInfo = styled.div`
       font-size: 30px;
     }
   }
-   & h3 {
+  & h3 {
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
 
     @media (min-width: 768px) {
-      font-size: 19px
-       
+      font-size: 19px;
     }
     @media (min-width: 1024px) {
       font-size: 24px;
     }
   }
-`
+`;
 const SpanName = styled.span`
   font-size: 17px;
   text-transform: uppercase;
@@ -128,37 +126,37 @@ const SpanName = styled.span`
 
   @media (min-width: 768px) {
     font-size: 19px;
-    display: inline
+    display: inline;
   }
   @media (min-width: 1024px) {
     font-size: 24px;
-    display: inline
+    display: inline;
   }
-`
+`;
 // ---Profile img ---
 const ProfileImg = styled.img`
-    position: absolute;
-    right: 10%;
-    bottom: -6vh;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    border: 2px solid whitesmoke;
-    overflow: hidden;
-    object-fit: cover;
-    
-    @media (min-width: 768px) {
-      height: 10rem;
-      width: 10rem;
-      border: 3px solid white;
-      right: 15vw;
-      bottom: -6vh;
-    }
+  position: absolute;
+  right: 10%;
+  bottom: -6vh;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  overflow: hidden;
+  object-fit: cover;
 
-    @media (min-width: 1024px) {
-      height: 13rem;
-      width: 13rem;
-      right: 18vw;
-      bottom: -7vh;
-    }
-  `
+  @media (min-width: 768px) {
+    height: 10rem;
+    width: 10rem;
+    border: 3px solid white;
+    right: 15vw;
+    bottom: -6vh;
+  }
+
+  @media (min-width: 1024px) {
+    height: 13rem;
+    width: 13rem;
+    right: 18vw;
+    bottom: -7vh;
+  }
+`;
