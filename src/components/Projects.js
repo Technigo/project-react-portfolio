@@ -24,7 +24,7 @@ const Projects = () => {
         // that's not Technigo-projects and sets them into an array
         const listItems = [];
         data.map((item) => {
-          if (item.fork === true && item.name.includes('project')) {
+          if (item.name.includes('project')) {
             listItems.push(item);
           }
           return 0;
@@ -51,7 +51,7 @@ const Projects = () => {
     && (project.name !== 'project-mongo-api')
     && (project.name !== 'project-happy-thoughts-api')
     && (project.name !== 'project-auth')
-    && (project.name !== 'project-math-app')
+    && (project.name !== 'project-redux-quiz')
   );
 
   // Filtered list of other projects for mobile view
@@ -80,7 +80,7 @@ const Projects = () => {
     && (project.name !== 'project-mongo-api')
     && (project.name !== 'project-happy-thoughts-api')
     && (project.name !== 'project-auth')
-    && (project.name !== 'project-math-app')
+    && (project.name !== 'project-todos')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -112,7 +112,8 @@ const Projects = () => {
             {addImage && <div className="image-component">
               <div className="image-overlay" />
               <h3 className="image-text">{project.name.replace(/-/g, ' ').toUpperCase()}</h3>
-              <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
+              {project.name === 'project-math-app' ? <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/frontend/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />
+                : <img src={`https://raw.githubusercontent.com/malmen237/${project.name}/master/code/thumbnail/thumbnail.png`} className="featured-projects" alt="first-page" />}
             </div>}
             <ClonedTitle key={project.id}>{project.name.replace(/-/g, ' ').toUpperCase()}</ClonedTitle>
             <ProjectText>{project.description}</ProjectText>

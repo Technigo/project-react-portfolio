@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, MainSections, Title, MainText } from 'styles/mainStyles';
-import Item1Image from '../Images/computer.jpeg';
+import Item1Image from '../Images/computer.png';
+import Item2Image from '../Images/mathbook.jpeg';
 
 // Section that links to the article on medium
 const Thoughts = () => {
@@ -15,7 +16,15 @@ const Thoughts = () => {
             <ThoughtsImage src={Item1Image} />
             <Title>My journey into code</Title>
             <ThoughtsText>It feels like my work-life has been
-             a series of surprising discoveries.
+             a series of surprising discoveries...
+            </ThoughtsText>
+          </ThoughtsLinks>
+          <ThoughtsLinks href="https://medium.com/@linda.malm237/how-i-learned-to-love-coding-math-ee960ff8a13a">
+            {/* Image by Joshua_seajw92 from Pixabay */}
+            <ThoughtsImage src={Item2Image} />
+            <Title>How I learned to love coding math</Title>
+            <ThoughtsText>I&apos;ve always struggled with math, not
+               because it was hard but...
             </ThoughtsText>
           </ThoughtsLinks>
         </ThoughtsWrapper>
@@ -38,7 +47,8 @@ const ThoughtsLinks = styled.a`
   align-items: flex-start;
   flex-direction: column;
   width: 270px;
-  padding-bottom: 8%;
+  /* padding-bottom: 8%; */
+  padding: 5% 2%;
   text-decoration: none;
   color: black;
 

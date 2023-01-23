@@ -19,7 +19,7 @@ const Header = () => {
         <HeaderLinks type="image" src={linksImg} onClick={linksBottom} name="links-at-the-bottom" alt="bottom-scroll" />
         <TitleName>PORTFOLIO: <BoldName>LINDA MALM</BoldName></TitleName>
         <TitleFirst>frontend developer</TitleFirst>
-        <TitleSecond>+ visual storyteller</TitleSecond>
+        <TitleSecond>+ fullstack desire</TitleSecond>
         <ProfileImg src={ProfileImage} alt="Linda-Malm" />
       </CloneWrapper>
     </Background>

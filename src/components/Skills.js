@@ -17,20 +17,30 @@ const Skills = () => {
             <SkillsText>Redux</SkillsText>
             <SkillsText>Styled Components</SkillsText>
             <SkillsText>GitHub</SkillsText>
+            <SkillsText>Node.js</SkillsText>
+            <SkillsText>Mongoose</SkillsText>
           </SkillsColumns>
           <SkillsColumns>
             <SkillsTitel>TOOLBOX</SkillsTitel>
             <SkillsText>Visual Studio Code</SkillsText>
             <SkillsText>Figma</SkillsText>
             <SkillsText>Postman</SkillsText>
+            <SkillsText>Mongo DB</SkillsText>
+            <SkillsText>Google Cloud</SkillsText>
+            <SkillsText>Firebase</SkillsText>
             <SkillsText>Slack</SkillsText>
             <SkillsText>Avid Media Composer</SkillsText>
             <SkillsText>Adobe Premiere</SkillsText>
           </SkillsColumns>
           <SkillsColumns>
+            <SkillsTitel>OPERATING SYSTEMS</SkillsTitel>
+            <SkillsText>Mac OS</SkillsText>
+            <SkillsText>Linux</SkillsText>
+            <SkillsText>Windows</SkillsText>
             <SkillsTitel>UPCOMING</SkillsTitel>
-            <SkillsText>Node.js</SkillsText>
-            <SkillsText>Mongo DB</SkillsText>
+            <SkillsText>Linux Servers</SkillsText>
+            <SkillsText>Virtual machines</SkillsText>
+            <SkillsText>React Native</SkillsText>
           </SkillsColumns>
         </Grid>
       </InnerWrapper>
