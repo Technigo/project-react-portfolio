@@ -1,8 +1,46 @@
 [
   {
+    "id": "project-13",
+    "title": "Quizzis - final project",
+    "description": "A website where it's possible to create and play quizzes",
+    "image": "image/final-project.jpg",
+    "netlifyLink": "https://quizzis.netlify.app/",
+    "githubLink": "https://github.com/Scarylie/final-project-quiz",
+    "isFeatured": true,
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
+      { "name": "React" },
+      { "name": "Redux" },
+      { "name": "API" },
+      { "name": "MongoDB" },
+      { "name": "Express" }
+    ]
+  },
+  {
+    "id": "project-12",
+    "title": "Authentication",
+    "description": "Frontend and backend authentication",
+    "image": "image/auth.jpg",
+    "netlifyLink": "https://send-christmas-greetings.netlify.app/",
+    "githubLink": "https://github.com/Scarylie/project-auth",
+    "isFeatured": false,
+    "tags": [
+      { "name": "JavaScript" },
+      { "name": "HTML5" },
+      { "name": "CSS3" },
+      { "name": "React" },
+      { "name": "Redux" },
+      { "name": "API" },
+      { "name": "MongoDB" },
+      { "name": "Express" }
+    ]
+  },
+  {
     "id": "project-11",
     "title": "ToDo",
-    "description": "A to do list using Redux and glocal state.",
+    "description": "A to do list using Redux and global state.",
     "image": "image/to-do-project.jpg",
     "netlifyLink": "https://get-it-done-saralie.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-todos",
@@ -38,6 +76,7 @@
     "image": "image/popular-movies.jpg",
     "netlifyLink": "https://popular-movies-project-technigo.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-movies",
+    "isFeatured": false,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
@@ -53,13 +92,16 @@
     "image": "image/happy-thoughts.jpg",
     "netlifyLink": "https://technigo-happy-thoughts.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-happy-thoughts",
+    "isFeatured": true,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
       { "name": "CSS3" },
       { "name": "API" },
       { "name": "React" },
-      { "name": "useEffect" }
+      { "name": "useEffect" },
+      { "name": "MongoDB" },
+      { "name": "express" }
     ]
   },
   {
@@ -69,6 +111,7 @@
     "image": "image/dragon-sneeze.jpg",
     "netlifyLink": "https://mad-lib-dragon-sneeze.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-survey",
+    "isFeatured": false,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
@@ -84,6 +127,7 @@
     "image": "image/music-releases.jpg",
     "netlifyLink": "https://music-releases-saralie-antonella.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-music-releases",
+    "isFeatured": false,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
@@ -98,6 +142,7 @@
     "image": "image/sthlm-weather.jpg",
     "netlifyLink": "https://stockholm-weather.netlify.app/",
     "githubLink": "https://github.com/juliaostedt/project-weather-app",
+    "isFeatured": false,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
@@ -112,6 +157,7 @@
     "image": "image/guess-who.jpg",
     "netlifyLink": "https://guess-who-by-saralie.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-guess-who",
+    "isFeatured": false,
     "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
   },
   {
@@ -121,6 +167,7 @@
     "image": "image/puppyrescue.jpg",
     "netlifyLink": "https://delightful-praline-eda5a7.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-chatbot?organization=Scarylie&organization=Scarylie",
+    "isFeatured": false,
     "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
   },
   {
@@ -130,6 +177,7 @@
     "image": "image/forest-to-you.jpg",
     "netlifyLink": "https://astounding-fairy-f2a605.netlify.app",
     "githubLink": "https://github.com/Petrasoderstrom1612/project-business-site",
+    "isFeatured": false,
     "tags": [{ "name": "JavaScript" }, { "name": "HTML5" }, { "name": "CSS3" }]
   },
   {
@@ -139,6 +187,7 @@
     "image": "image/re-discover.jpg",
     "netlifyLink": "https://re-discover-saralie-news-site.netlify.app/",
     "githubLink": "https://github.com/Scarylie/Project-news-site-Re-Discover",
+    "isFeatured": false,
     "tags": [{ "name": "HTML5" }, { "name": "CSS3" }, { "name": "responsive" }]
   }
 ]
