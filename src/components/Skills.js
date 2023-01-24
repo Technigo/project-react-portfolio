@@ -50,12 +50,16 @@ const Skills = () => {
 const SkillsWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 6vh;
+    grid-gap: 2vh;
     margin-bottom: 25px;
     text-align: center;
     font-family: "Roboto";
     font-size: 17px;
     letter-spacing: 0em;
+    
+    @media (min-width: 668px) {
+      grid-gap: 6vh;
+    }
 `
 
 const SkillsTitles = styled.h3`
