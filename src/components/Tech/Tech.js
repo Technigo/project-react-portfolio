@@ -8,7 +8,7 @@ const Tech = () => {
     <SectionContainer bgColor='#d0c9c05c'>
       <SectionHeadings>TECH</SectionHeadings>
       <SectionText>
-        HTML, CSS, JavaScript ES6, React.js, React Native, Redux, Node.js, MongoDB, Web
+        HTML5, CSS3, JavaScript ES6, React.js, React Native, Redux, Node.js, MongoDB, Web
         Accessibility, REST API:s, Mob-programming, Pair-programming, Git.
       </SectionText>
     </SectionContainer>
