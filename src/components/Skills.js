@@ -71,7 +71,7 @@ const List = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 
-  @media (min-width: 768px) {
+  @media (min-width: 500px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
