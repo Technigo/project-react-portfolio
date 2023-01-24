@@ -17,10 +17,10 @@ export const FeaturedProjects = () => {
 
   const FeaturedRepos = projects.filter(
     (firstProjects) =>
-      firstProjects.id === 'project-10' ||
-      firstProjects.id === 'project-9' ||
-      firstProjects.id === 'project-7' ||
-      firstProjects.id === 'project-3'
+      firstProjects.isFeatured === true ||
+      firstProjects.isFeatured === true ||
+      firstProjects.isFeatured === true ||
+      firstProjects.isFeatured === true
   );
 
   const OtherRepos = projects.filter(

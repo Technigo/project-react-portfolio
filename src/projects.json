@@ -41,7 +41,7 @@
     "id": "project-11",
     "title": "ToDo",
     "description": "A to do list using Redux and global state.",
-    "image": "image/to-do-project.jpg",
+    "image": "image/todo.jpg",
     "netlifyLink": "https://get-it-done-saralie.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-todos",
     "isFeatured": true,
@@ -60,7 +60,7 @@
     "image": "image/quizflix.jpg",
     "netlifyLink": "https://quizflix.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-redux-quiz",
-    "isFeatured": true,
+    "isFeatured": false,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
@@ -111,7 +111,7 @@
     "image": "image/dragon-sneeze.jpg",
     "netlifyLink": "https://mad-lib-dragon-sneeze.netlify.app/",
     "githubLink": "https://github.com/Scarylie/project-survey",
-    "isFeatured": false,
+    "isFeatured": true,
     "tags": [
       { "name": "JavaScript" },
       { "name": "HTML5" },
