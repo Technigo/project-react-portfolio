@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BlockSection = styled.div`
   padding: 50px 0;
-  background: pink;
+  background: #ffa7b6;
 
   & h1 {
   }
