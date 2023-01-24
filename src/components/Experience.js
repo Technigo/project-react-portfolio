@@ -10,9 +10,9 @@ const Experience = () => {
         <div className="experience__one">
           <h2>ELMAN SIIVOUS OY</h2>
           <h3>2019-</h3>
+          <p>Finance Manager</p>
           <p className>
-            Finance Manager
-            Building currently a booking system for the client side interaction.
+            Coding currently a booking system for the client side interaction.
             Booking app estimatedly ready by end of Janury 2023. Responsible for
             managing the company's overall operations. Delegating and directing
             agendas, staff recruitment, managing company organizational
