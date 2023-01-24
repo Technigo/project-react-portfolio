@@ -77,7 +77,7 @@ export const TagWrapper = styled.div`
   line-height: 12px;
   font-size: 12px;
   text-decoration: none;
-  margin: 3px 2px;
+  margin: 3px 2px 3px 0;
   flex-wrap: wrap;
 
   p {

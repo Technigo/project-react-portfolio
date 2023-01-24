@@ -1,6 +1,8 @@
+/* eslint-disable no-const-assign */
+/* eslint-disable indent */
 /* eslint-disable operator-linebreak */
 /* eslint-disable implicit-arrow-linebreak */
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { BlockSection, InnerWrapper, List, Content } from './styles/Wrappers';
 import { Tags } from './styles/Tags';
@@ -8,6 +10,8 @@ import { TagGithub } from './styles/TagGithub';
 import projects from '../projects.json';
 
 export const FeaturedProjects = () => {
+  const [showAll, setShowAll] = useState(false);
+
   console.log('Projects', { projects });
   // fetch(projects)
   //   .then((reponse) => reponse.json())
@@ -23,15 +27,16 @@ export const FeaturedProjects = () => {
       firstProjects.isFeatured === true
   );
 
-  const OtherRepos = projects.filter(
-    (firstProjects) =>
-      firstProjects.id === 'project-8' ||
-      firstProjects.id === 'project-6' ||
-      firstProjects.id === 'project-5' ||
-      firstProjects.id === 'project-4' ||
-      firstProjects.id === 'project-2' ||
-      firstProjects.id === 'project-1'
-  );
+  const OtherRepos = showAll
+    ? projects.filter((firstProjects) => firstProjects.isFeatured === false)
+    : projects
+        .filter((firstProjects) => firstProjects.isFeatured === false)
+        .slice(0, 3);
+
+  const handleShowAll = () => {
+    // prettier-ignore
+    setShowAll(!showAll);
+  };
 
   return (
     <BlockSection>
@@ -77,10 +82,21 @@ export const FeaturedProjects = () => {
             <TagGithub tagGithub={project.githubLink} />
           </OtherContent>
         ))}
+        <ShowMoreButton onClick={handleShowAll}>
+          {showAll ? 'Show less' : 'Show more'}
+        </ShowMoreButton>
       </InnerWrapper>
     </BlockSection>
   );
 };
+
+const ShowMoreButton = styled.button`
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: red;
+  background: transparent;
+  border: 1px solid red;
+`;
 
 const OtherContent = styled.div`
   margin: 50px 0;
