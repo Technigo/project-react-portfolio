@@ -39,6 +39,7 @@ const Skills = () => {
         </div>
         <div>
           <SubHeadings>UPCOMING</SubHeadings>
+          <p>WordPress</p>
           <p>Flutter</p>
         </div>
       </SkillsWrapper>

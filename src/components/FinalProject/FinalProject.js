@@ -19,12 +19,12 @@ const FinalProject = () => {
             target='_blank'
             rel='noreferrer'>
             <OverlayImage>
-              <h2>UNDER CONSTRUCTION</h2>
+              <h2>FINAL PROJECT</h2>
             </OverlayImage>
             <img src='/images/Planda.PNG' alt='planda' />
             <SubHeadings>PLANDA</SubHeadings>
             <ArticleText>
-              Fullstack app created in React Native (Expo). On Google Playstore within this week.
+              Fullstack app created in React Native (Expo). On Google Playstore soon.
             </ArticleText>
             <Tags>
               <li>React Native</li>
