@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react'
+import React from "react";
 
 const Experience = () => {
   return (
@@ -10,37 +10,23 @@ const Experience = () => {
         <div className="experience__one">
           <h2>ELMAN SIIVOUS OY</h2>
           <h3>2019-</h3>
-          <p className>Responsible for managing the company's overall operations.
-             Delegating and directing agendas, staff recruitment, managing
-            company organizational structure,
-            leading the development of companys short and long term strategy.
-            I am very familiar in client relations regarding governement
-            projects and subcon protocols with big companies.
-            driving profitability and keeping the revenue stable during
-            this pandemic, has been my greatest success with my team as
-            the revenue increased 50% during 2018-2020.
+          <p className>
+            Building currently a booking system for the client side interaction.
+            Booking app estimatedly ready by end of Janury 2023. Responsible for
+            managing the company's overall operations. Delegating and directing
+            agendas, staff recruitment, managing company organizational
+            structure, leading the development of companys short and long term
+            strategy. I am very familiar in client relations regarding
+            governement projects and subcon protocols with big companies.
+            driving profitability and keeping the revenue stable during this
+            pandemic, has been my greatest success with my team as the revenue
+            increased 50% during 2018-2020.
           </p>
         </div>
-
-        <div className="experience__two">
-          <h2 className="pt-9">ARRAY OF DIFFERENT WORKING EXPERIENCE</h2>
-          <h3 className="">2010-2015</h3>
-          <p>
-              I worked in a number of different roles,
-              such as in the entertainment industry abroad as a TV host,
-              model and as a beauty queen. I have also been a producer at
-              Sandstorm music festival in the Philippines. These jobs have
-              required high pressure tolerance, organizational skills and
-              financial knowledge in planning,budgeting and bookeeping.
-              I have learned tremendously from marketing, used a variety of systems,
-              and honed my interaction skills to excellence.
-          </p>
-        </div>
-
         <p />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

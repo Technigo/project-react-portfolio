@@ -4,7 +4,7 @@ import { BsTerminal, BsPatchCheckFill } from 'react-icons/bs'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { DiJavascript } from 'react-icons/di'
 import { GrGroup } from 'react-icons/gr'
-import { SiRedux, SiSolidity, SiTailwindcss, SiMongodb } from 'react-icons/si'
+import { SiRedux, SiSolidity, SiTailwindcss, SiMongodb, SiAntdesign, SiMysql } from 'react-icons/si'
 import { FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa'
 
 const Skills = () => {
@@ -36,6 +36,13 @@ const Skills = () => {
               <div>
                 <SiTailwindcss />
                 <h4>Tailwind</h4>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
+                <SiAntdesign />
+                <h4>AntDesign</h4>
               </div>
             </article>
             <article className="skills__details">
@@ -82,8 +89,15 @@ const Skills = () => {
             <article className="skills__details">
               <BsPatchCheckFill className="skills__details-icon" />
               <div>
+                <SiMysql />
+                <h4>mySQL</h4>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
                 <SiSolidity />
-                <h4>Solidity</h4>
+                <h4>Solidity(Learning)</h4>
               </div>
             </article>
             <article className="skills__details">

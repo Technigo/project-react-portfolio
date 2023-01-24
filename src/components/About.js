@@ -1,18 +1,9 @@
 // import styled from 'styled-components'
-import React from 'react'
-import './about.css'
-import { FaExpandArrowsAlt } from 'react-icons/fa'
-import { AiFillFolderOpen } from 'react-icons/ai'
-import me from '../Assets/me about.jpg'
-
-/* const Section = styled.section`
-  margin-top: 8rem;
-
-  section > h2, section > h5 {
-    text-align: center;
-    color: var(--color-light);
-  }
-` */
+import React from "react";
+import "./about.css";
+import { FaExpandArrowsAlt } from "react-icons/fa";
+import { AiFillFolderOpen } from "react-icons/ai";
+import me from "../Assets/me about.jpg";
 
 const About = () => {
   return (
@@ -45,27 +36,27 @@ const About = () => {
             </article>
           </div>
           <p>
-          Graduating from a coding school this upcoming Decemeber. Now I feel it is time
-          to take a step towards the challenge of becoming a Frontend web developer!
-          What really made me dive into coding, was the beauty and potential of decetralized
-          tech like blockchain! I am going to take my certified technical exam by the end of
-          Decemeber 2022 regarding the development in Ethereum.
-          I have strong skills in the Frontend side and right now my
-          main coding languange is JSX/Javascript.
-          Im very motivated to grow in a cutting edge environment while learning
-          to thrive with the brightest minds in the software scene.
-
-          You will have a team player who is eager to learn new things and
-          who knows how to create a good spirit for your work team! I believe
-          I would be a right fit, because I am ready to dedicate as an aspiring
-          developer raw undivided attention for learning and growth for this opportunity,
-           that truly is a once in a life time chance.
+            Completed my University studies and went straight to a coding
+            bootcamp to enchance my coding skills. Time to take a step towards
+            the challenge of becoming a Fullstack developer! What really made me
+            dive into coding, was the beauty and potential of decetralized tech
+            like blockchain! Going to take my certified technical exam in
+            Ethereum by the end of January 2023. I am very motivated to grow in
+            a cutting edge environment while learning to thrive with the
+            brightest minds in the software scene. You will have a team player
+            who is eager to learn new things and who knows how to create a good
+            spirit for your work team! I believe I would be a right fit, because
+            I am ready to dedicate as an aspiring developer raw undivided
+            attention for learning and growth for every given opportunity.
+            Please checkout my tech CV for even more details.
           </p>
-          <a href="#contact" className="btn btn-primary">Lets Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Lets Talk
+          </a>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
