@@ -1,4 +1,15 @@
 [
+      {
+        "featured": true,
+        "display": true,
+        "name": "Kulturligtvis",
+        "overlayname": "Fullstack project",
+        "description": "A fullstack project where people can find new friends through meetups",
+        "tags": ["HTML","Styled Components", "JavaScript", "API", "React", "Redux", "MongoDB", "Mongoose"],
+        "image": "./assets/kulturligtvis2.png",
+        "netlify": "https://kulturligtvis.netlify.app/",
+        "github": "https://github.com/jesshansson/final-project"
+    },
     {
         "featured": true,
         "display": true ,
@@ -42,6 +53,17 @@
         "image": "./assets/amazingmaze.jpg",
         "netlify": "https://the-amazing-maze.netlify.app/",
         "github": "https://github.com/jesshansson/project-labyrinth"
-    }
+    },    
+    {
+      "featured": true,
+      "display": true,
+      "name": "Popular movies",
+      "overlayname": "Movies chart",
+      "description": "A website that shows the currently most popular movies in the US, built with React components, fetching the data from an API.",
+      "tags": ["HTML","CSS", "JavaScript", "API", "React", "API"],
+      "image": "./assets/movies2.png",
+      "netlify": "https://popularmovies-us.netlify.app/",
+      "github": "https://github.com/jesshansson/project-movies"
+  }
 
 ]

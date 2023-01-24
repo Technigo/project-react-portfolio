@@ -17,13 +17,16 @@ const Skills = () => {
               <li>CSS3</li>
               <li>JavaScript ES6</li>
               <li>React</li>
+              <li>Redux</li>
             </ul>
           </SkillsList>
           <SkillsList>
             <SkillsTitles>CODE</SkillsTitles>
             <ul>
               <li>Node.js</li>
-              <li>Redux</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>Styled components</li>
               <li>GitHub</li>
             </ul>
           </SkillsList>
@@ -47,8 +50,8 @@ const Skills = () => {
 const SkillsWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 6vh;
-    height: 30vh;
+    grid-gap: 6vh;
+    margin-bottom: 25px;
     text-align: center;
     font-family: "Roboto";
     font-size: 17px;

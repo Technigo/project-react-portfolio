@@ -103,7 +103,7 @@ const SoMeContainer = styled(SocialMediaContainer)`
 
   @media (min-width: 668px){
     position: absolute;
-    right: 2vh;
+    right: 5vh;
     top: 4vh;
 
     img {  
@@ -112,7 +112,7 @@ const SoMeContainer = styled(SocialMediaContainer)`
       }
     }
     a {
-      width: 40%;
+      width: 80%;
       margin: 5px;
     }
   }
