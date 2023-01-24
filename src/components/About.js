@@ -1,9 +1,9 @@
 // import styled from 'styled-components'
-import React from "react";
-import "./about.css";
-import { FaExpandArrowsAlt } from "react-icons/fa";
-import { AiFillFolderOpen } from "react-icons/ai";
-import me from "../Assets/me about.jpg";
+import React from 'react';
+import './about.css';
+import { FaExpandArrowsAlt } from 'react-icons/fa';
+import { AiFillFolderOpen } from 'react-icons/ai';
+import me from '../Assets/me about.jpg';
 
 const About = () => {
   return (
@@ -48,7 +48,7 @@ const About = () => {
             spirit for your work team! I believe I would be a right fit, because
             I am ready to dedicate as an aspiring developer raw undivided
             attention for learning and growth for every given opportunity.
-            Please checkout my tech CV for even more details.
+            Please checkout my tech CV for even more details
           </p>
           <a href="#contact" className="btn btn-primary">
             Lets Talk
