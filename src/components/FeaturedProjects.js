@@ -4,7 +4,7 @@
 /* eslint-disable implicit-arrow-linebreak */
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { BlockSection, InnerWrapper, List, Content } from './styles/Wrappers';
+import { BlockSection, InnerWrapper, List } from './styles/Wrappers';
 import { Tags } from './styles/Tags';
 import { TagGithub } from './styles/TagGithub';
 import projects from '../projects.json';
@@ -12,19 +12,8 @@ import projects from '../projects.json';
 export const FeaturedProjects = () => {
   const [showAll, setShowAll] = useState(false);
 
-  console.log('Projects', { projects });
-  // fetch(projects)
-  //   .then((reponse) => reponse.json())
-  //   .then((prop) => {
-  //     setRepos(prop);
-  //   });
-
   const FeaturedRepos = projects.filter(
-    (firstProjects) =>
-      firstProjects.isFeatured === true ||
-      firstProjects.isFeatured === true ||
-      firstProjects.isFeatured === true ||
-      firstProjects.isFeatured === true
+    (firstProjects) => firstProjects.isFeatured === true
   );
 
   const OtherRepos = showAll
@@ -44,7 +33,7 @@ export const FeaturedProjects = () => {
         <h3>Featured Projects</h3>
         <List>
           {FeaturedRepos.map((project) => (
-            <Content key={project.id}>
+            <FeaturedProject key={project.id}>
               <a
                 href={project.netlifyLink}
                 target="_blank"
@@ -53,11 +42,17 @@ export const FeaturedProjects = () => {
                 aria-hidden>
                 <img src={project.image} alt={project.title} width="100%" />
               </a>
-              <h5>{project.title}</h5>
-              <p>{project.description}</p>
-              <Tags tags={project.tags} />
-              <TagGithub tagGithub={project.githubLink} />
-            </Content>
+              <FeaturedContentInfo>
+                <FeaturedContentInfoHeading>
+                  {project.title}
+                </FeaturedContentInfoHeading>
+                <FeaturedContentInfoDescription>
+                  {project.description}
+                </FeaturedContentInfoDescription>
+                <Tags tags={project.tags} />
+                <TagGithub tagGithub={project.githubLink} />
+              </FeaturedContentInfo>
+            </FeaturedProject>
           ))}
         </List>
         <h4>Other projects</h4>
@@ -90,12 +85,31 @@ export const FeaturedProjects = () => {
   );
 };
 
+const FeaturedProject = styled.div`
+  background-color: white;
+  border-radius: 10px;
+`;
+const FeaturedContentInfo = styled.div`
+  padding: 20px;
+
+  p {
+    color: black;
+  }
+`;
+
+const FeaturedContentInfoHeading = styled.h5`
+  font-size: 16px;
+  margin-bottom: 10px;
+`;
+const FeaturedContentInfoDescription = styled.div`
+  margin-bottom: 20px;
+`;
 const ShowMoreButton = styled.button`
   border-radius: 4px;
   padding: 8px 16px;
-  color: red;
+  color: #ff284d;
   background: transparent;
-  border: 1px solid red;
+  border: 1px solid #ff284d;
 `;
 
 const OtherContent = styled.div`

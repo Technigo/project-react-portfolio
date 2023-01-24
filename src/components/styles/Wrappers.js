@@ -4,14 +4,19 @@ export const BlockSection = styled.div`
   padding: 50px 0;
   background: #ffa7b6;
 
-  & h1 {
+  p {
+    color: white;
+  }
+
+  a {
+    color: white;
   }
 `;
 
 export const BlockSectionWhite = styled(BlockSection)`
   background-color: white;
   h6 {
-    color: red;
+    color: #ff284d;
     font-size: 1.5rem;
   }
   p {
@@ -35,8 +40,9 @@ export const InnerWrapper = styled.div`
     color: white;
     font-weight: 700;
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     text-align: center;
+    padding: 2px 6px;
   }
 
   h4 {
@@ -82,7 +88,7 @@ export const TagWrapper = styled.div`
 
   p {
     border-radius: 4px;
-    background-color: #fddfe7;
+    background-color: #ffdae0;
     color: #2b2e34;
     padding: 5px 8px;
     margin: 0px 5px 5px 0px;
@@ -92,7 +98,8 @@ export const TagWrapper = styled.div`
 export const List = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 50px;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;

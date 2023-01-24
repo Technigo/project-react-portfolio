@@ -45,5 +45,5 @@ const FooterStyled = styled.div`
 `;
 
 const FooterBlockSection = styled(BlockSection)`
-  background-color: blue;
+  background-color: #8da1ff;
 `;

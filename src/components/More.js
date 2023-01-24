@@ -61,6 +61,10 @@ const LinksWrapper = styled.nav`
   flex-direction: row;
   gap: 3em;
   align-items: center;
+
+  a {
+    color: white;
+  }
 `;
 
 const Link = styled.div`
@@ -68,7 +72,7 @@ const Link = styled.div`
 
   & svg {
     background-color: #fa382f;
-    border-radius: 1em;
+    border-radius: 50px;
     padding: 1em;
     width: 3.5rem;
     height: 3.5rem;
