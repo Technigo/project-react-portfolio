@@ -1,56 +1,54 @@
+/* eslint-disable comma-dangle */
 import React from 'react';
 import styled from 'styled-components';
 import { LinkedInSvg, GitHubSvg, StackSvg } from 'components/Icons';
 import { BlockSectionWhite, InnerWrapper } from './styles/Wrappers';
 
 export const More = () => {
+  const more = [
+    {
+      title: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/saralie-bognandi-439939b3/',
+      arialabel: 'Linkedin',
+      svg: LinkedInSvg,
+    },
+    {
+      title: 'GitHub',
+      href: 'https://github.com/Scarylie',
+      arialabel: 'GitHub',
+      svg: GitHubSvg,
+    },
+    {
+      title: 'StackOverflow',
+      href: 'https://stackoverflow.com/users/19424645/saralie',
+      arialabel: 'StackOverflow',
+      svg: StackSvg,
+    },
+  ];
+
   return (
     <BlockSectionWhite>
       <InnerWrapper>
         <h3>More</h3>
         <LinksWrapper>
-          <Link>
-            <a
-              href="https://www.linkedin.com/in/saralie-bognandi-439939b3/"
-              role="button"
-              aria-pressed="false"
-              aria-label="linkedin"
-              target="_blank"
-              rel="noreferrer">
-              <Div>
-                <LinkedInSvg />
-                <p>LinkedIn</p>
-              </Div>
-            </a>
-          </Link>
-          <Link>
-            <a
-              href="https://github.com/Scarylie"
-              role="button"
-              aria-pressed="false"
-              aria-label="github"
-              target="_blank"
-              rel="noreferrer">
-              <Div>
-                <GitHubSvg />
-                <p>GitHub</p>
-              </Div>
-            </a>
-          </Link>
-          <Link>
-            <a
-              href="https://stackoverflow.com/users/19424645/saralie"
-              role="button"
-              aria-pressed="false"
-              aria-label="StackOverflow"
-              target="_blank"
-              rel="noreferrer">
-              <Div>
-                <StackSvg />
-                <p>Stack Overflow</p>
-              </Div>
-            </a>
-          </Link>
+          {more.map((info) => {
+            return (
+              <Link key={info.title}>
+                <a
+                  href={info.href}
+                  role="button"
+                  aria-pressed="false"
+                  aria-label={info.arialabel}
+                  target="_blank"
+                  rel="noreferrer">
+                  <Div>
+                    <info.svg />
+                    <p>{info.title}</p>
+                  </Div>
+                </a>
+              </Link>
+            );
+          })}
         </LinksWrapper>
       </InnerWrapper>
     </BlockSectionWhite>

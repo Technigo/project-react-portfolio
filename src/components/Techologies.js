@@ -1,8 +1,28 @@
+/* eslint-disable comma-dangle */
 import React from 'react';
 import styled from 'styled-components';
 import { BlockSectionWhite, InnerWrapper, TagWrapper } from './styles/Wrappers';
 
 export const Technologies = () => {
+  const tech = [
+    'HTML',
+    'CSS',
+    'Flexbox',
+    'JavaScript',
+    'ES6',
+    'JSX',
+    'React',
+    'React Hooks',
+    'Redux',
+    'Node.js',
+    'Mongo DB',
+    'Web Accessibly',
+    'API:s',
+    'Mob-Programming',
+    'Pair-Programming',
+    'Github',
+  ];
+
   return (
     <BlockSectionWhite>
       <InnerWrapper>
@@ -10,22 +30,9 @@ export const Technologies = () => {
           <h3>Tech</h3>
         </Title>
         <TagWrapper className="wrap-text">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Flexbox</p>
-          <p>JavaScript</p>
-          <p>ES6</p>
-          <p>JSX</p>
-          <p>React</p>
-          <p>React Hooks</p>
-          <p>Redux</p>
-          <p>Node.js</p>
-          <p>Mongo DB</p>
-          <p>Web Accessibly</p>
-          <p>API:s</p>
-          <p>Mob-Programming</p>
-          <p>Pair-Programming</p>
-          <p>Github</p>
+          {tech.map((tag) => {
+            return <p key={tag}>{tag}</p>;
+          })}
         </TagWrapper>
       </InnerWrapper>
     </BlockSectionWhite>
