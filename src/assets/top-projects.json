@@ -1,4 +1,14 @@
 [
+		{
+		  "title": "Project Gripp",
+		  "overlay": "Final Project",
+		  "id": "1",
+		  "image": "https://images2.imgbox.com/97/4c/W7s0RLHd_o.png",
+		  "netlify": "https://newly-release-movies.netlify.app/",
+		  "github": "https://github.com/Sneezan/project-movies",
+		  "description": "A simple card game to promote mental health",
+		  "tools": ["React NATIVE", "Node.js", "MongoDB", "Express API"]
+		},
 	{
 	  "title": "Newest movie releases",
 	  "overlay": "new movies",
