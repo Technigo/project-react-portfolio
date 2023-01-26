@@ -11,9 +11,9 @@ const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
       <HeroContainer>
         <HeroText>
           <h3>Portfolio: Elin Segelöv</h3>
-          <h1>frontend <br /> developer</h1>
+          <h1>frontend</h1> <h1>developer</h1>
           <NoBackgroundH2>
-            with a knack for seeing things from different perspectives
+            and proficient googler
           </NoBackgroundH2>
         </HeroText>
         <Logos
@@ -34,19 +34,22 @@ const StyledHeader = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
+  max-height: 30rem;
   position: relative;
   width: 100vw;
-
-@media (min-width: 600px) {
+  
+  @media (min-width: 600px) {
+  height: 30rem;
   display: flex;
   justify-content: center;
 }
 `
 const HeroContainer = styled.div`
   position: relative;
-  width: 90%;
-
+  height: 100%;
+  
   @media (min-width: 600px) {
+    width: 100%;
     max-width: 1000px;
   }
 `
@@ -54,7 +57,8 @@ const HeroText = styled.div`
   color: #FCF8EC;
   position: absolute;
   left: 1rem;
-  top: 7rem;
+  top: 10rem;
+  width: fit-content;
 
   h2 {
   margin-top: 0;
@@ -76,20 +80,17 @@ const HeroText = styled.div`
       font-size: 50px;
     }
   }
-
 `
 const PortraitImg = styled.img`
   border: solid white 2px;
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  right: -1rem;
-  top: 49vh;
+  right: 1rem;
+  bottom: -1.5rem;
   width: 7rem;
 
 @media (min-width: 600px) {
-    right: 1rem;
-    top: 43vh;
-    width: 20vh;
+    width: 10rem;
 }
 `
