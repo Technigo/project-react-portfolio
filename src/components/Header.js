@@ -5,7 +5,7 @@ import styled from 'styled-components/macro';
 import linkedInIcon from 'assets/linkedin-color-icon-white.svg'
 import gitHubIcon from 'assets/github-icon-white.svg'
 import stackOverflowIcon from 'assets/stackoverflow-icon-white.svg'
-import profilePic from 'assets/profile-pic.jpg'
+import profilePic from 'assets/profile-pic.webp'
 
 import { gitHubLink, linkedInLink, stackOverflowLink } from 'utils/Urls';
 import { OuterWrapper, InnerWrapper } from 'styles/ProjectStyles';
