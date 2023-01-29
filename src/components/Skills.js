@@ -62,6 +62,7 @@ export const Skills = () => {
             <Skill>
               <h3>toolbox</h3>
               <p>Github</p>
+              <p>Jira</p>
               <p>VS Code</p>
               <p>G suite</p>
               <p>Figma</p>
