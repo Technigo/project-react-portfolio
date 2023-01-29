@@ -32,7 +32,7 @@ export const Tech = () => {
             <p>tech</p>
           </SectionTitle>
           <TechText>
-          React | JavaScript ES6 | HTML5 | CSS3
+          React | JavaScript ES6 | HTML5 | CSS3 | NodeJS | Redux
           </TechText>
         </TechSection>
       </InnerWrapper>
