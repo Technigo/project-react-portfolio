@@ -71,6 +71,7 @@ export const Skills = () => {
             <Skill>
               <h3>more</h3>
               <p>Leadership</p>
+              <p>Agile</p>
               <p>Scaling organisations</p>
               <p>Customer interviews</p>
               <p>Team building</p>
