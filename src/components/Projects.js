@@ -235,7 +235,7 @@ const FeatureWrap = styled.div`
 `
 
 const OtherWrapMobile = styled.div`
-  margin: 5%;
+  margin: 10%;
   a {
     display: flex;
     width: 100%;
@@ -254,6 +254,7 @@ const OtherWrapMobile = styled.div`
 
 const OtherWrap = styled.div`
   display: none;
+  margin: 5%;
 
   @media ${Devices.tablet} {
     display: flex;

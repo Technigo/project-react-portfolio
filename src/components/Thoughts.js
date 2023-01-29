@@ -39,6 +39,11 @@ const ThoughtsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  @media ${Devices.tablet} {
+    flex-direction: row;
+  }
 `
 
 const ThoughtsLinks = styled.a`
