@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 /* ---section, backgrounds and general wrapper--*/
 export const Section = styled.section`
-  background-color: ${(props) => (props.primary ? '#7E4B48' : '#FDFBF8')};
   padding: 10px;
   padding-bottom: 15px;
 `;
@@ -23,16 +22,7 @@ export const SectionTitle = styled.h2`
   padding: 10px;
   margin: 10px auto;
   margin-bottom: 20px;
-  background: #7E4B48;
-  border-radius: 10px;;
   color: white;
-
-@media (min-width: 750px) {
-&:hover{
-  background: #2B5A71;
-}
-}
-  
 `;
 
 export const SubTitle = styled.h2`
@@ -49,10 +39,10 @@ export const SubTitle = styled.h2`
 
 export const Span = styled.span`
 font-weight: 900;
-color: #2B5A71;
+color: var(--mineShaft);
 `;
 
 export const Highlight = styled.span`
   font-weight: 600;
-  color: #C6F700;
+  color: var(--warmWhite);
 `;

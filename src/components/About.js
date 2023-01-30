@@ -4,6 +4,7 @@ export const AboutWrapper = styled.div`
   padding: 6%;
   padding-right: 5%;
   padding-left: 5%;
+  background-color: var(--vivaMagentaDark);
 @media (min-width: 900px) {
 padding-left: 10%;
 padding-right: 10%;
@@ -20,7 +21,7 @@ padding-right: 25%;
 
 export const Line = styled.span`
     width: 30px;
-    border: 1px solid #C6F700;
+    border: 1px solid var(--lightRose);
     display: inline-block;
     margin-bottom: 4px;
 `;
@@ -28,10 +29,24 @@ export const Line = styled.span`
 export const Dot = styled.span`
     height: 10px;
     width: 10px;
-    background-color: #C6F700;
+    background-color: var(--lightRose);
     border-radius: 50%;
     display: inline-block;
 `;
+
+export const LinkedPrompt = styled.div`
+display: flex;
+justify-content: center;
+`
+
+export const LinkedBtn = styled.button`
+background-color: transparent;
+border: none;
+font-size: 2rem;
+&:hover{
+  font-size: 2.4rem;
+}
+`
 
 export const About = styled.p`
   line-height: 1.6rem;

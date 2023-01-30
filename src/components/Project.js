@@ -32,12 +32,13 @@ export const ProjectBox = styled.div`
 export const Overlay = styled.div`
   width: 337px;
   height: 200px; 
-  background: #002F33;
+  background: var(--vivaMagenta);
+  border-radius: 20px;
   display: flex;
   position: relative;
   margin: 0 auto;
   z-index: 1;
-  opacity: 80%;
+  opacity: 90%;
   transition: ease-in .3s;
   
   &:hover{
@@ -82,7 +83,7 @@ export const ProjectDescription = styled.h3`
 color: black;
 font-weight: 400;
 &:hover{
-    color: #7E4B48;
+    color: var(--vivaMagenta);
 }
 `;
 
@@ -94,15 +95,12 @@ export const TagContainer = styled.div`
 `;
 
 export const Tag = styled.span`
-color: #fff;
-background-color: #2B5A71;
+color: white;
+background-color: var(--vivaMagenta);
 border: none;
 font-size: 12px;
 height: 14px;
 font-weight: 600;
 border-radius: 5px;
 padding: 5px;
-&:hover{
-    color: #C6F700;
-}
 `;

@@ -48,6 +48,7 @@ const ProjectBackground = styled.img`
   background: #002F33;
   display: flex;
   position: relative;
+  border-radius: 20px;
   margin: 0 auto;
   top: -50%;
   @media (min-width: 900px) {

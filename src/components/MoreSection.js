@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, SectionTitle, TextWrapper } from 'components/Section';
+import { Section, TextWrapper } from 'components/Section';
 
-import GitHub from '../images/NeonCat.png'
-import LInkedIn from '../images/NeonLink.png'
+import GitHub from '../images/1.png'
+import LInkedIn from '../images/2.png'
 
 const MoreSection = () => {
   return (
     <IconSection>
-      <SectionTitle>FOR MORE</SectionTitle>
       <IconWrap>
         <IconContainer>
           <a
@@ -35,19 +34,21 @@ const MoreSection = () => {
 export default MoreSection;
 
 const IconWrap = styled(TextWrapper)`
-display:flex;
+display: flex;
 `;
 
 const IconSection = styled(Section)`
-background-color: #2B5A71;
+background-color: var(--vivaMagentaDark);
 `;
 
 const IconContainer = styled.div`
 margin: 0 auto;
-
 img{
     width: 90px;
     padding:10px;
     margin: 20px;
-}
+&:hover{
+  transition: ease-out .3s;
+  scale: 1.1;
+}}
 `;

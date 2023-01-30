@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
-import ArticleMockup from '../images/Coding.png'
+import ArticleMockup from '../images/finishedvideo.png'
 
 const Thoughts = () => {
   return (
@@ -47,7 +47,7 @@ const Thoughts = () => {
 export default Thoughts;
 
 const ThoughtsSection = styled(Section)`
-background-color: #2B5A71;
+background-color: var(--vivaMagenta);
 `
 
 const ArticleWrapper = styled.div`
@@ -58,7 +58,7 @@ padding: 5%;
     text-transform: uppercase;
   }
   span {
-    color: #C6F700;
+    color: var(--mineShaft);
     font-weight: 800;
   }
   a {
@@ -87,7 +87,7 @@ const ImageWrapper = styled.div`
 display:flex;
 `;
 const Date = styled.h4`
-color: #C6F700;
+color: var(--mineShaft);
 text-transform: uppercase;
 `;
 

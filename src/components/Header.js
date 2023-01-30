@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
-import Cecilia from '../images/Cecilia.png'
-import GitHub from '../images/NeonCat.png'
-import LInkedIn from '../images/NeonLink.png'
-import BackgroundImage from '../images/HeaderSpace.png'
+import Cecilia from '../images/profile.png'
+import GitHub from '../images/1m.png'
+import LInkedIn from '../images/2m.png'
+import BackgroundImage from '../images/pinksilk.png'
 
 const Header = () => {
   return (
@@ -31,14 +31,19 @@ const Header = () => {
         <Name>Cecilia Frånlund</Name>
         <Title>frontend developer</Title>
       </Background>
-      <ProfileImage src={Cecilia} alt="cecilia" />
+      <a
+        href="https://www.linkedin.com/in/ceciliafranlund/"
+        target="_blank"
+        rel="noreferrer">
+        <ProfileImage src={Cecilia} alt="cecilia" link />
+      </a>
     </>
   );
 };
 export default Header;
 
 const Background = styled.header`
-  background-color: #2B5A71;
+  background-color: var(--rose);
   width: 100%;
   height: 450px;
   display: flex;
@@ -65,7 +70,10 @@ const IconsContainer = styled.div`
   & img {
     height: auto;
     width: 55px;
-  }
+    &:hover{
+  transition: ease-out .3s;
+  scale: 1.2;
+}}
   @media (max-width: 1200px) {
     right: 3rem;
   }
@@ -79,11 +87,11 @@ const Title = styled.h1`
     width: 300px;
     top: 35%;
     left: 10%;
-    color: white;
+    color: var(--mineShaft);
     font-size: 3rem;
     line-height: 2.8rem;
     font-family: roboto;
-
+    text-shadow: 0px 0px 1px black;
   @media (min-width: 900px) {
     font-size: 4.9rem;
     line-height: 3.9rem;
@@ -105,7 +113,7 @@ const Name = styled.h3`
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: #C6F700;
+    color: var(--warmWhite);
     text-shadow: 0px 0px 2px black;
     @media (min-width: 900px) {
     font-size: 1.5rem;
@@ -124,13 +132,13 @@ const ProfileImage = styled.img`
     right: -20px;
     top: 230px;
     border-radius: 50%;
-    border: 4px solid #444444;
+    border: 5px solid var(--vivaMagentaDark);
 
     @media (min-width: 770px) {
       right: 20px;
       &:hover {
       filter: blur(2px);
-      border: 4px solid #C6F700;
+      border: 5px solid var(--rose);
     }
   }
   @media (min-width: 900px) {

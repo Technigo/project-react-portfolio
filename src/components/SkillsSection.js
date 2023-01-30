@@ -71,6 +71,7 @@ const SkillsBox = styled.div`
     display: inline;
     text-align: center;
     line-height: 25px;
+    color: white;
   }
   li {
     font-size: 18px;
@@ -82,6 +83,6 @@ const SkillsBox = styled.div`
     text-transform: uppercase;
     font-size: 20px;
     margin: 4px;
-    color: #2B5A71;
+    color: var(--rose);
   }
 `;

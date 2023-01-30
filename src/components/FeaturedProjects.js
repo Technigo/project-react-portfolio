@@ -7,7 +7,7 @@ import ProjectList from './ProjectList';
 const FeaturedProjects = () => {
   return (
     <FeaturedWrap>
-      <SectionTitle>Featured projects </SectionTitle>
+      <FeaturedTitle>Featured projects </FeaturedTitle>
       <ProjectCard />
       <ProjectList />
     </FeaturedWrap>
@@ -21,6 +21,7 @@ export default FeaturedProjects;
 const FeaturedWrap = styled(Section)`
 padding-left: 1%;
 padding-right: 1%;
+background-color: var(--warmWhite);
 @media (min-width: 1000px) {
 padding-left: 15%;
 padding-right: 15%;
@@ -34,3 +35,10 @@ padding-left: 25%;
 padding-right: 25%;
   }
 `;
+
+const FeaturedTitle = styled(SectionTitle)`
+color: var(--vivaMagenta);
+border: 3.5px solid var(--vivaMagenta);
+margin-top: 30px;
+margin-bottom: 40px;
+`

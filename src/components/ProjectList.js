@@ -37,18 +37,13 @@ margin: 2px;
 `;
 
 const OtherSectionTitile = styled(SectionTitle)`
-background: none;
-color: #2B5A71;
+color: var(--vivaMagenta);
 padding-top: 50px;
-font-size: 1.8rem;
-&:hover{
-  background: none;
-  color: #7E4B48;
-}
+font-size: 1.7rem;
 `;
 
 const ListDescription = styled(ProjectDescription)`
-color: #2B5A71;
+color: var(--mineShaft);;
 font-size: 1.3rem;
 font-weight: 500;
 `;

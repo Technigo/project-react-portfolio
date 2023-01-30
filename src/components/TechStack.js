@@ -9,7 +9,7 @@ padding-right: 10%;
 padding: 6%;
 text-align: center;
 font-size: 1.3rem;
-color: white;
+color: var(--milanoPink);
 @media (min-width: 800px) {
 padding-left: 25%;
 padding-right: 25%;
@@ -23,7 +23,7 @@ font-size: 1.7rem;
 `;
 
 const TechSection = styled(Section)`
-background-color:#42404A;
+background-color: var(--vivaMagenta);
 `
 
 const TechStack = () => {
