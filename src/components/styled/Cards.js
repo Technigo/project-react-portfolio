@@ -5,7 +5,7 @@ export const CardholderDiv = styled.div`
   grid-template-columns: 1fr;
   gap: 2rem;
   
-  @media only screen and (min-width: 60rem) {
+  @media only screen and (min-width: 80rem) {
     grid-template-columns: 1fr 1fr;
   }
 `
