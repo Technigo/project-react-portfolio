@@ -1,5 +1,14 @@
 [
   {
+    "title": "Todos",
+    "title-description": "Todo App",
+    "project-description": "A responsive web app displaying a todo list",
+    "repo-name": "project-todos",
+    "netlify-name": "todos-neah",
+    "tags": ["React", "Redux", "Styled components"],
+    "image": "/Assets/thumbnail-todos.png"
+  },
+  {
     "title": "Popular Movies",
     "title-description": "Popular Movies App",
     "project-description": "A responsive web site displaying popular movies and their details",

@@ -4,7 +4,7 @@ import FeaturedProjectsInfo from 'data/FeaturedProjectsInfo';
 import { OuterWrapper, InnerWrapper, MainHeading, ProjectTags } from './GlobalStyles';
 
 export const FeaturedProjects = ({ color }) => {
-  const GITHUB_NAME = 'Archkrull';
+  /* const GITHUB_NAME = 'Archkrull'; */
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -18,7 +18,8 @@ export const FeaturedProjects = ({ color }) => {
             return (
               <ProjectCard
                 key={project.title}
-                href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`}
+                href={`https://${project['netlify-name']}.netlify.app/`}
+                /* href={`https://github.com/${GITHUB_NAME}/${project['repo-name']}`} */
                 target="_blank">
                 <ThumbnailWrapper url={project.image}>
                   <ThumbnailTitle>{project.title.toUpperCase()}</ThumbnailTitle>

@@ -1,5 +1,14 @@
 [
   {
+    "title": "Languable",
+    "title-description": "Language exchange app",
+    "project-description": "A website for creating events and meeting other people to learn new languages",
+    "repo-name": "final-project",
+    "netlify-name": "languable",
+    "tags": ["React", "Material UI", "Firebase", "Node.js"],
+    "image": "/Assets/thumbnail-languable.png"
+  },
+  {
     "title": "Arts and Crafts",
     "title-description": "Arts and crafts Page",
     "project-description": "A site where you can register/login using encrypted passwords and authentification",
@@ -17,15 +26,7 @@
     "tags": ["React", "API", "Node.js", "MongoDB"],
     "image": "/Assets/thumbnail-happy-thoughts.png"
   },
-  {
-    "title": "Todos",
-    "title-description": "Todo App",
-    "project-description": "A responsive web app displaying a todo list",
-    "repo-name": "project-todos",
-    "netlify-name": "todos-neah",
-    "tags": ["React", "Redux", "Styled components"],
-    "image": "/Assets/thumbnail-todos.png"
-  },
+ 
 
   {
     "title": "Movie Quiz",
