@@ -6,6 +6,7 @@ const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 
 export const FeaturedProjects = () => {
   const [featuredProjects, setFeaturedProjects] = useState([''])
+
   fetch(GithubAPI)
     .then((res) => res.json())
     .then((data) => {
@@ -67,9 +68,9 @@ export const BigProjectsImage = styled.img`
   border: 2px solid #D36B00;
   border-radius: 10px;
   opacity: 0.7;
-&: hover {
+/* &: hover {
   opacity: 1;
-}
+} */
 `
 
 export const ProjectNameOverImage = styled.h2`
@@ -83,14 +84,14 @@ export const ProjectNameOverImage = styled.h2`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-&: hover {
+/* &: hover {
   opacity: 1;
-}
+} */
 `
 
 export const ProjectLink = styled.a`
   color: white;
-&: :visited {
+/* &: :visited {
   color:white;
-}
+} */
 `
