@@ -6,6 +6,7 @@ const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 
 export const OtherProjects = () => {
   const [otherProjects, setOtherProjects] = useState([''])
+
   fetch(GithubAPI)
     .then((res) => res.json())
     .then((data) => {
@@ -14,7 +15,7 @@ export const OtherProjects = () => {
 
   const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-happy-thoughts-api') || (secondProjects.name === 'project-mongo-api') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-auth') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site') || (secondProjects.name === 'project-survey') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-guess-who'));
   return (
-    <OuterWrapper beige>
+    <OuterWrapper>
       <InnerWrapper>
         <OtherProjectsContent>
           <Heading>OTHER PROJECTS</Heading>
