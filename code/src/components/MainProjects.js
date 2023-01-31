@@ -37,7 +37,7 @@ export const MainProjects = () => {
               <ImageOverlay />
               {project.name === 'project-math-app' ? <Image src={MATH_THUMBNAIL(project.name)} alt="" />
                 : <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />}
-              <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
+              <OverlayTitle className="title">{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
             </ImageContainer>
           </a>
 
@@ -57,6 +57,10 @@ const ImageContainer = styled.div`
   position: relative;
   /* This transition will cause the text to fade */
   transition: 0.5s ease;
+
+  &:hover > .title {
+    color: transparent;
+  }
 `
 
 const ImageOverlay = styled.div`
@@ -83,10 +87,5 @@ const OverlayTitle = styled.p`
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
-  
-  /* This causes the text to fade, color is the text color */
-  &:hover {
-    color: transparent;
-  }
 `
 
