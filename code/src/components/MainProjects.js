@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BASE_URL, PROJECT_THUMBNAIL } from 'utils/urls';
+import { BASE_URL, PROJECT_THUMBNAIL, MATH_THUMBNAIL } from 'utils/urls';
 import styled from 'styled-components/macro';
 import { ProjectCard, Image, SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
@@ -35,7 +35,8 @@ export const MainProjects = () => {
           <a href={project.homepage} target="_blank" rel="noopener noreferrer">
             <ImageContainer>
               <ImageOverlay />
-              <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />
+              {project.name === 'project-math-app' ? <Image src={MATH_THUMBNAIL(project.name)} alt="" />
+                : <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />}
               <OverlayTitle>{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
             </ImageContainer>
           </a>
