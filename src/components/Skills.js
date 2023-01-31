@@ -17,11 +17,10 @@ export const Skills = () => {
               <li>ES6</li>
               <li>React</li>
               <li>Styled Components</li>
-              <li>GitHub</li>
             </SkillsText>
           </SkillsColumn>
           <SkillsColumn>
-            <SkillsHeader>UPCOMING</SkillsHeader>
+            <SkillsHeader>CODE</SkillsHeader>
             <SkillsText>
               <li>Redux</li>
               <li>Node.js</li>
@@ -39,7 +38,7 @@ export const Skills = () => {
   )
 }
 
-export const SkillsContent = styled.div`
+const SkillsContent = styled.div`
   display: flex;
   justify-items: center;
   font-family: 'Roboto', sans-serif;
@@ -47,12 +46,12 @@ export const SkillsContent = styled.div`
   column-gap: 50px;
   line-height: 25px;
 `
-export const SkillsColumn = styled.ul`
+const SkillsColumn = styled.ul`
   text-align: center;
   width: 30%;
 `
 
-export const SkillsHeader = styled.h6`
+const SkillsHeader = styled.h6`
   color: #D36B00;
   padding-top: 10px;
   font-size: 20px;
@@ -60,7 +59,7 @@ export const SkillsHeader = styled.h6`
   font-size:25px ;
 }
 `
-export const SkillsText = styled.p`
+const SkillsText = styled.p`
   font-size: 17px;
 @media (min-width: 1025px) {
   font-size:20px ;

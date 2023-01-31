@@ -10,8 +10,7 @@ export const Footer = () => {
           <FooterHeading>CONTACT</FooterHeading>
           <FooterText>
             <p>Maria Westling</p>
-            <p>+46 70 398 45 54</p>
-            <p>maria.westling@gmail.com</p>
+            <Email href="mailto:maria.westling@gmail.com">maria.westling@gmail.com</Email>
           </FooterText>
         </FooterContent>
       </InnerWrapper>
@@ -19,14 +18,14 @@ export const Footer = () => {
   )
 }
 
-export const FooterWrapper = styled.footer`
+const FooterWrapper = styled.footer`
   background-color: #D36B00;
   width: 100%;
   display: flex;
   justify-content: center;
 `
 
-export const FooterContent = styled.div`
+const FooterContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +34,7 @@ export const FooterContent = styled.div`
   color: white;
 `
 
-export const FooterHeading = styled.h3`
+const FooterHeading = styled.h3`
   font-weight: 700;
   padding-bottom: 25px;
   font-size: 21px;
@@ -44,10 +43,14 @@ export const FooterHeading = styled.h3`
 }
 `
 
-export const FooterText = styled.div`
+const FooterText = styled.div`
   font-size: 17px;
   line-height: 25px;
 @media (min-width: 1025px) {
   font-size: 20px;
 }
+`
+const Email = styled.a`
+text-decoration: none;
+color: white;
 `

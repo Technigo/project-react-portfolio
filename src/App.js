@@ -1,5 +1,4 @@
 import React from 'react'
-// import styled from 'styled-components'
 import { Header } from './components/Header'
 import { Intro } from './components/Intro'
 import { ForMore } from './components/ForMore'
@@ -8,8 +7,8 @@ import { Footer } from './components/Footer'
 import { Knowledge } from './components/Knowledge'
 import { FeaturedProjects } from './components/FeaturedProjects'
 import { OtherProjects } from './components/OtherProjects'
-import { Thoughts } from './components/Thoughts'
-import { MoreThoughts } from './components/MoreThoughts'
+// import { Thoughts } from './components/Thoughts'
+// import { MoreThoughts } from './components/MoreThoughts'
 
 export const App = () => {
   return (
@@ -19,8 +18,8 @@ export const App = () => {
       <Knowledge />
       <FeaturedProjects />
       <OtherProjects />
-      <Thoughts />
-      <MoreThoughts />
+      {/* <Thoughts />
+      <MoreThoughts /> */}
       <Skills />
       <ForMore />
       <Footer />

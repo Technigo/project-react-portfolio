@@ -12,7 +12,7 @@ export const OtherProjects = () => {
       setOtherProjects(data)
     })
 
-  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site'));
+  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-happy-thoughts-api') || (secondProjects.name === 'project-mongo-api') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-auth') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site') || (secondProjects.name === 'project-survey') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-guess-who'));
   return (
     <OuterWrapper beige>
       <InnerWrapper>
@@ -37,19 +37,19 @@ export const OtherProjects = () => {
   )
 }
 
-export const OtherProjectsContent = styled.div`
+const OtherProjectsContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   font-family:'Roboto', sans-serif;
   line-height: 30px;
 `
-export const OtherProjectsContainer = styled.div`
+const OtherProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 7%;
 `
-export const OtherProjectLink = styled.a`
+const OtherProjectLink = styled.a`
  &:link {
   color:black;
   text-decoration: none;

@@ -26,13 +26,13 @@ export const ForMore = () => {
   )
 }
 
-export const SoMeGrid = styled.div`
+const SoMeGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 100px);
   justify-content: center;
 `
 
-export const GridContent = styled.div`
+const GridContent = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
@@ -41,7 +41,7 @@ export const GridContent = styled.div`
   color: #42032C;
 `
 
-export const SoMeLink = styled.a`
+const SoMeLink = styled.a`
  &:link {
   color:black;
   text-decoration: none;

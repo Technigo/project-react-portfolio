@@ -1,4 +1,3 @@
-// import React from 'react'
 import styled from 'styled-components'
 
 export const OuterWrapper = styled.section`
@@ -25,7 +24,8 @@ export const Heading = styled.h2`
   font-weight: 700;
   display: inline;
   margin: 30px 0px 20px 0px;
-  padding: 4px;
+  padding: 8px;
+  border-radius: 5px;
   text-align: center;
   color: ${(props) => (props.dark ? '#F1EFDC' : '#42032C')};
   background-color: ${(props) => (props.dark ? '#42032C' : 'none')};

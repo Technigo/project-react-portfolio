@@ -19,11 +19,11 @@ export const Intro = () => {
   )
 }
 
-export const IntroContent = styled.div`
+const IntroContent = styled.div`
   display: block;
 `
 
-export const IntroText = styled.p`
+const IntroText = styled.p`
   font-family: 'Montserrat', sans-serif;
   display: inline;
   line-height: 30px;
