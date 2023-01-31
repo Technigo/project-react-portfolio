@@ -5,4 +5,4 @@ This is my portfolio with my projects made during the Tecnnigo bootcamp for web 
 If I had more time, I would have added more effects, and found out a good way to link to my Medium-page. I will go back and fix this later.
 
 ## View it live
-https://marwebdesign.netlify.app/
+https://mariawestling.netlify.app/
