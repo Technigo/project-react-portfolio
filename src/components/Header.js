@@ -28,6 +28,7 @@ export const Header = () => {
         <HeaderHeading>
           <h1>PORTFOLIO: NICLAS JENSEN</h1>
           <h2>frontend developer</h2>
+          <h2>+ language specialist</h2>
         </HeaderHeading>
         <ProfileImage>
           <img src="images/profile-image.jpg" alt="Profile" />

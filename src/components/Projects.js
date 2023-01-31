@@ -10,17 +10,17 @@ export const Projects = () => {
       <InnerWrapper>
         <SectionHeading>FEATURED PROJECTS</SectionHeading>
         <CardholderDiv>
-          <a href="https://github.com/jnbjensen/hobit-frontend-fork">
-            <CardDiv>
+          <CardDiv>
+            <a href="https://github.com/jnbjensen/hobit-frontend-fork">
               <div>
                 <CardImage
-                  src="images/hobit.png"
+                  src="images/hobit-1200x700.png"
                   alt="hobit project"
                   title="View project on GitHub" />
               </div>
               <CardTextDiv>
                 <h4>Hobit</h4>
-                <p>A full-stack app that gamifies the building of healthy habits through daily challenges.
+                <p>A full-stack app that gamifies the building of healthy habits through daily challenges. Includes user registration/login & authentication.
                 </p>
               </CardTextDiv>
               <TagDiv card>
@@ -33,13 +33,14 @@ export const Projects = () => {
                 <div>Express</div>
                 <div>MongoDB</div>
               </TagDiv>
-            </CardDiv>
-          </a>
-          <a href="https://github.com/jnbjensen/project-happy-thoughts">
-            <CardDiv>
+            </a>
+          </CardDiv>
+
+          <CardDiv>
+            <a href="https://github.com/jnbjensen/project-happy-thoughts">
               <div>
                 <CardImage
-                  src="images/happythoughts.png"
+                  src="images/happythoughts-1200x700.png"
                   alt="happy thoughts project"
                   title="View project on GitHub" />
               </div>
@@ -60,13 +61,13 @@ export const Projects = () => {
                 <div>Express</div>
                 <div>MongoDB</div>
               </TagDiv>
-            </CardDiv>
-          </a>
-          <a href="https://github.com/jnbjensen/project-todos">
-            <CardDiv>
+            </a>
+          </CardDiv>
+          <CardDiv>
+            <a href="https://github.com/jnbjensen/project-todos">
               <div>
                 <CardImage
-                  src="images/tasklist.png"
+                  src="images/tasklist-1200x700.png"
                   alt="tasklist project"
                   title="View project on GitHub" />
               </div>
@@ -82,13 +83,13 @@ export const Projects = () => {
                 <div>React</div>
                 <div>Redux</div>
               </TagDiv>
-            </CardDiv>
-          </a>
-          <a href="https://github.com/jnbjensen/project-redux-quiz">
-            <CardDiv>
+            </a>
+          </CardDiv>
+          <CardDiv>
+            <a href="https://github.com/jnbjensen/project-redux-quiz">
               <div>
                 <CardImage
-                  src="images/reduxquiz.png"
+                  src="images/reduxquiz-1200x700.png"
                   alt="redux quiz project"
                   title="View project on GitHub" />
               </div>
@@ -104,10 +105,9 @@ export const Projects = () => {
                 <div>React</div>
                 <div>Redux</div>
               </TagDiv>
-            </CardDiv>
-          </a>
+            </a>
+          </CardDiv>
         </CardholderDiv>
-
         <SubsectionHeading>OTHER PROJECTS</SubsectionHeading>
         <div>
           <p><a href="https://github.com/jnbjensen/project-labyrinth" rel="noreferrer" target="_blank"><InlineHeading>LABYRINTH</InlineHeading></a> A retro text-based adventure game which uses an API to chart the user&apos;s course through the story.

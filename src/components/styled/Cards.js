@@ -31,7 +31,7 @@ export const CardTextDiv = styled.div`
   font-size: 0.9rem;
   
   & p, h4 {
-    margin-left: 0.3rem;
+    margin: 0.3rem 0rem 0.3rem 0.3rem;
   }
 `
 
@@ -47,12 +47,14 @@ export const CardImage = styled.img`
 export const TagDiv = styled.div`
   display: flex;
   justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
 
   & div {
     color:#000000;
     background-color:#DBE2EF;
     font-size: 0.8rem;
-    margin: ${(props) => (props.card ? '0.3em 0.3em 0.6em 0.6em' : '0em 1em 2em 0em')};;
+    margin: ${(props) => (props.card ? '0.5rem 0.3rem' : '0rem 1rem 2rem 0rem')};;
     padding: 0.4em;
     border-radius: 0.7rem;
     border: 1px solid black;
