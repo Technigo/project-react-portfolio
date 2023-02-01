@@ -6,7 +6,6 @@ import { StyledTagWrapper, StyledRepoTag, OverlayText } from './ReusableStyles.s
 const FeaturedProject = (
   {
     deployedLink,
-
     projectTitle,
     defaultBranch,
     projectDescription,
@@ -14,18 +13,20 @@ const FeaturedProject = (
     repoLink
   }
 ) => {
+  const repoImgSrc = `https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/thumbnailForPortfolio/thumbnail.webp`;
+
+  const titleWithSpaces = ((projectTitle.split('-')).join(' '))
+
   const projectTags = techTags.map((tech) => {
     return <span key={tech}>{tech}</span>
   })
 
-  const titleWithSpaces = ((projectTitle.split('-')).join(' '))
-
   return (
     <StyledFeaturedProject>
       <a href={deployedLink}>
-        <ImageContainerWithOverlay c>
+        <ImageContainerWithOverlay>
           <div className="overlay" />
-          <img src={`https://raw.githubusercontent.com/ElinSegelov/${projectTitle}/${defaultBranch}/code/src/assets/images/thumbnail.webp`} alt={titleWithSpaces} />
+          <img src={repoImgSrc} alt={titleWithSpaces} />
           <OverlayText aria-hidden="true">{titleWithSpaces}</OverlayText>
         </ImageContainerWithOverlay>
         <h3>{titleWithSpaces}.</h3>
