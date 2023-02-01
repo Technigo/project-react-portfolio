@@ -38,17 +38,20 @@ export const MainProjects = () => {
             <OverlayTitle className="title">MATH APP</OverlayTitle>
           </ImageContainer>
         </a>
-        <a href="https://github.com/brucette/project-math-app" target="_blank" rel="noopener noreferrer">
-          <SmallHeadline>Math App</SmallHeadline>
-          <p>
+
+        <SmallHeadline>Math App</SmallHeadline>
+        <p>
             A fullstack project of a math training and quiz app,
             where users can train their skills and challenge other users.
             For anyone wanting get better at math.
-          </p>
-          <Tags>
-            {renderTags(['full-stack', 'react-redux', 'api-rest', 'express', 'mongodb', 'node-js', 'styled-components'])}
-          </Tags>
-        </a>
+        </p>
+        <Tags>
+          {renderTags(['full-stack', 'react-redux', 'api-rest', 'express', 'mongodb', 'node-js', 'styled-components'])}
+        </Tags>
+
+        <div>
+          <Link href="https://github.com/brucette/project-math-app" target="_blank" rel="noopener noreferrer">View Code</Link>
+        </div>
       </ProjectCard>
       <ProjectCard>
         <a href="https://bookit.brucette.com/" target="_blank" rel="noopener noreferrer">
@@ -58,15 +61,17 @@ export const MainProjects = () => {
             <OverlayTitle className="title">BookIt</OverlayTitle>
           </ImageContainer>
         </a>
-        <a href="https://github.com/brucette/BookIt" target="_blank" rel="noopener noreferrer">
-          <SmallHeadline>BookIt</SmallHeadline>
-          <p>
+
+        <SmallHeadline>BookIt</SmallHeadline>
+        <p>
             A fullstack project of a booking system where users
             can create an account and view and book available timeslots,
             as well as view all bookings and cancel their upcoming bookings.
-          </p>
-          <Tags>{renderTags(['full-stack', 'flask', 'python3', 'javascript', 'sqlite3', 'css', 'html'])}</Tags>
-        </a>
+        </p>
+        <Tags>{renderTags(['full-stack', 'flask', 'python3', 'javascript', 'sqlite3', 'css', 'html'])}</Tags>
+        <div>
+          <Link href="https://github.com/brucette/BookIt" target="_blank" rel="noopener noreferrer">View Code</Link>
+        </div>
       </ProjectCard>
       {mainFour.map((project) => {
         return (

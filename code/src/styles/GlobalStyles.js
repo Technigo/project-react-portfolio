@@ -114,7 +114,6 @@ export const ProjectCard = styled.section`
   }
 
   @media (min-width: 1025px) {
-    cursor: pointer;
     width: 35vw;
   }
 `
