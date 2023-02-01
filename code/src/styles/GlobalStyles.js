@@ -93,6 +93,8 @@ export const SmallHeadline = styled.h4`
   line-height: 1.8rem;
   color:  #BA4C08;
   text-transform: uppercase;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 
   @media (min-width: 668px) {
     font-size: 1.3rem;
