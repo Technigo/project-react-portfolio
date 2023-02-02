@@ -74,7 +74,7 @@ export const ThoughtsImage = styled.img`
   border: 2px solid #D36B00;
   border-radius: 10px;
   opacity: 0.7;
-&: hover {
+&:hover {
   opacity: 1;
 }
 `

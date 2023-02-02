@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading, TopicsContainer } from './Styling'
 
@@ -7,12 +7,13 @@ const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 export const FeaturedProjects = () => {
   const [featuredProjects, setFeaturedProjects] = useState([''])
 
-  fetch(GithubAPI)
-    .then((res) => res.json())
-    .then((data) => {
-      setFeaturedProjects(data)
-    })
-
+  useEffect(() => {
+    fetch(GithubAPI)
+      .then((res) => res.json())
+      .then((data) => {
+        setFeaturedProjects(data)
+      })
+  }, [])
   const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-happy-thoughts') || (firstProjects.name === 'project-labyrinth') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-redux-quiz'));
   return (
     <OuterWrapper beige>
@@ -21,14 +22,14 @@ export const FeaturedProjects = () => {
         <FeaturedProjectsContent>
           {BigProjects.map((prop) => (
             <FeaturedProjectsContainer key={prop.id}>
-              <ProjectLink href={prop.html_url} alt="Link to project" target="_blank">
+              <ProjectLink href={prop.homepage} alt="Link to project" target="_blank">
                 <ImageAndName>
                   <BigProjectsImage alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
                   <ProjectNameOverImage>{prop.name}</ProjectNameOverImage>
                 </ImageAndName>
+                <ProjectsHeading>{prop.name}</ProjectsHeading>
               </ProjectLink>
-              <ProjectsHeading>{prop.name}</ProjectsHeading>
-              <p>{prop.description}</p>
+              <ProjectLink href={prop.html_url} alt="Link to project" target="_blank">{prop.description}</ProjectLink>
               <TopicsContainer>
                 {prop.topics.map((tag) => (
                   <Topics>{tag}</Topics>
@@ -68,9 +69,9 @@ const BigProjectsImage = styled.img`
   border: 2px solid #D36B00;
   border-radius: 10px;
   opacity: 0.7;
-/* &: hover {
+&:hover {
   opacity: 1;
-} */
+}
 `
 
 const ProjectNameOverImage = styled.h2`
@@ -84,14 +85,15 @@ const ProjectNameOverImage = styled.h2`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-/* &: hover {
+&:hover {
   opacity: 1;
-} */
+}
 `
 
 const ProjectLink = styled.a`
-  color: white;
-/* &: :visited {
-  color:white;
-} */
+  color: black;
+  text-decoration: none;
+&:visited {
+  color:black;
+}
 `

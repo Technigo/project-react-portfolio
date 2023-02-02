@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading, ProjectsParagraph, TopicsContainer } from './Styling'
 
@@ -7,11 +7,13 @@ const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 export const OtherProjects = () => {
   const [otherProjects, setOtherProjects] = useState([''])
 
-  fetch(GithubAPI)
-    .then((res) => res.json())
-    .then((data) => {
-      setOtherProjects(data)
-    })
+  useEffect(() => {
+    fetch(GithubAPI)
+      .then((res) => res.json())
+      .then((data) => {
+        setOtherProjects(data)
+      })
+  }, [])
 
   const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-happy-thoughts-api') || (secondProjects.name === 'project-mongo-api') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-auth') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site') || (secondProjects.name === 'project-survey') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-guess-who'));
   return (
@@ -21,8 +23,10 @@ export const OtherProjects = () => {
           <Heading>OTHER PROJECTS</Heading>
           {SmallProjects.map((prop) => (
             <OtherProjectsContainer key={prop.id}>
-              <OtherProjectLink href={prop.html_url} alt="Link to project" target="_blank">
+              <OtherProjectLink href={prop.homepage} alt="Link to project" target="_blank">
                 <ProjectsHeading>{prop.name}</ProjectsHeading>
+              </OtherProjectLink>
+              <OtherProjectLink href={prop.html_url} alt="Link to project" target="_blank">
                 <ProjectsParagraph>{prop.description}</ProjectsParagraph>
               </OtherProjectLink>
               <TopicsContainer>
@@ -48,7 +52,7 @@ const OtherProjectsContent = styled.div`
 const OtherProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 7%;
+  padding: 7px;
 `
 const OtherProjectLink = styled.a`
  &:link {
