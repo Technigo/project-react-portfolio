@@ -7,11 +7,7 @@ const Intro = () => {
   return (
     <StyledIntro>
       <IntroText>
-        <Line /><Dot />Hi! I am Julia, a Technigo student aspiring to become a frontend
-            developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nullam dapibus sollicitudin massa id feugiat. Sed bibendum iaculis
-            sem, sit amet mattis ex viverra at. Donec porttitor vulputate elit,
-            vel dignissim est. Mauris sit amet ipsum justo.
+        <Line /><Dot />Hi! I am Julia, I’m a creative-minded explorer with a love for new technologies and design. I strive to constantly grow while solving problems that matter and creating engaging solutions for products that people love! I stay motivated by collaborating with like-minded and with a curiosity about learning new things.
       </IntroText>
     </StyledIntro>
   )
