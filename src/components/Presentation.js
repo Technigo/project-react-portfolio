@@ -6,7 +6,7 @@ import startFigure from '../Images/start-figure.png';
 const Presentation = () => {
   return (
     <MainSections coloredBackground>
-      <InnerWrapper>
+      <PresentationWrapper>
         <PresentationText>
           <StartImage src={startFigure} alt="start-figure" />
           I’m a music loving gamer that have realized how much fun coding can
@@ -14,12 +14,16 @@ const Presentation = () => {
            more fun I have and I’m looking forward to a future where I can
            continue to evolve and where there’s always something more to learn.
         </PresentationText>
-      </InnerWrapper>
+      </PresentationWrapper>
     </MainSections>
   )
 }
 
 export default Presentation;
+
+const PresentationWrapper = styled(InnerWrapper)`
+  margin-top: 2%;
+`
 
 const StartImage = styled.img`
   width: 50px;

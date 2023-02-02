@@ -10,6 +10,7 @@ const Footer = () => {
       <FooterText>Linda Malm</FooterText>
       <FooterText>+46 73 951 79 71</FooterText>
       <FooterText>linda.malm237@gmail.com</FooterText>
+      <FooterInfo>This page is hosted on a server that I built myself.</FooterInfo>
     </FooterWrapper>
   )
 }
@@ -59,6 +60,22 @@ const FooterText = styled.p`
   color: #FFFFFF;
   font-size: 17px;
   line-height: 25px;
+
+  @media ${Devices.tablet} {
+    font-size: 18px;
+  }
+
+  @media ${Devices.laptop} {
+    font-size: 18px;
+  }
+`
+
+const FooterInfo = styled.p`
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 25px;
+  padding-top: 1%;
+  text-align: center;
 
   @media ${Devices.tablet} {
     font-size: 18px;
