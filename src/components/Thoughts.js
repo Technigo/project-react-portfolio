@@ -9,7 +9,7 @@ const Thoughts = () => {
   return (
     <MainSections>
       <InnerWrapper>
-        <MainHeader>MY THOUGHTS ABOUT CODE</MainHeader>
+        <MainHeader>MY THOUGHTS</MainHeader>
         <ThoughtsWrapper>
           <ThoughtsLinks href="https://medium.com/@linda.malm237/my-journey-into-code-d99d7eda6d7d">
             {/* Image by StockSnap from Pixabay */}

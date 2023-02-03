@@ -52,6 +52,10 @@ export const MainSections = styled.section`
   background-color: ${(props) => (props.coloredBackground ? 'rgb(253, 248, 240)' : '#FFF')};
   width: 100vw;
   padding: 5%;
+
+  @media ${Devices.tablet} {
+    padding: 1% 0% 5% 0% ;
+  }
 `
 
 export const LinkedItems = styled.a`
@@ -74,11 +78,11 @@ export const MainHeader = styled.h2`
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 2%;
-  background-color: #e9722d;
-  border-radius: 10px;
-  align-self: center;
   margin: 5% 10%;
+
+  &:first-line {
+    background-color: #e9722d;
+  }
 
   @media ${Devices.tablet} {
   font-size: 25px;

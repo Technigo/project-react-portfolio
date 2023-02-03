@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { Devices } from 'styles/mainStyles';
+import piImg from '../Images/pi.png';
+import linuxImg from '../Images/linux.png';
 
 // Contact-information
 const Footer = () => {
@@ -11,6 +13,10 @@ const Footer = () => {
       <FooterText>+46 73 951 79 71</FooterText>
       <FooterText>linda.malm237@gmail.com</FooterText>
       <FooterInfo>This page is hosted on a server that I built myself.</FooterInfo>
+      <ImageWrapper>
+        <Pi src={piImg} alt="raspberry pi logo" />
+        <Linux src={linuxImg} alt="linux penguin logo" />
+      </ImageWrapper>
     </FooterWrapper>
   )
 }
@@ -23,18 +29,18 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 200px; 
+  height: 350px; 
   width: 100vw;
   background: #48a0a4; 
   font-family: 'Montserrat', sans-serif;
 
   @media ${Devices.tablet} {
-    height: 300px; 
+    height: 350px; 
     padding-bottom: 5%;
   }
 
   @media ${Devices.laptop} {
-    height: 300px; 
+    height: 400px; 
     padding-bottom: 5%;
   }
 `
@@ -84,4 +90,22 @@ const FooterInfo = styled.p`
   @media ${Devices.laptop} {
     font-size: 18px;
   }
+`
+
+const ImageWrapper = styled.div`
+  display: flex;
+  margin-top: 2%;
+`
+
+const Linux = styled.img`
+  display: block;
+  height: 100px;
+  width: auto;
+`
+
+const Pi = styled.img`
+  display: block;
+  margin-top: 5%;
+  height: 65px;
+  width: auto;
 `

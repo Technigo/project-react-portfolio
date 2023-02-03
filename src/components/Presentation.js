@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import { InnerWrapper, MainSections, MainText } from 'styles/mainStyles';
+import { InnerWrapper, MainSections, MainText, Devices } from 'styles/mainStyles';
 import startFigure from '../Images/start-figure.png';
 
 const Presentation = () => {
@@ -23,6 +23,10 @@ export default Presentation;
 
 const PresentationWrapper = styled(InnerWrapper)`
   margin-top: 2%;
+
+  @media ${Devices.tablet} {
+    margin-top: 0%;
+  }
 `
 
 const StartImage = styled.img`
