@@ -25,7 +25,7 @@ const PresentationWrapper = styled(InnerWrapper)`
   margin-top: 2%;
 
   @media ${Devices.tablet} {
-    margin-top: 0%;
+    margin-top: 3%;
   }
 `
 
