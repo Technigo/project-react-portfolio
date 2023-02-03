@@ -113,7 +113,7 @@
         "title": "Labyrinth",
         "name": "Labyrinth",
         "image": "",
-        "netlify": "",
+        "netlify": "https://developerslabyrinth.netlify.app/",
         "github": "https://github.com/agadman/project-labyrinth",
         "description": "Our task was to create a chatbot >>>",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Redux"],
