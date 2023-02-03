@@ -47,11 +47,21 @@ export const OtherProjects = () => {
 
 const Other = styled.div`
   margin: 1rem 0;
+  padding: 0;
+  
+  @media (min-width: 1025px) {
+    
+    p {
+      max-width: 60%;
+    }
+  }
+  
 `
 
 const Link = styled.a`
   font-weight: bold;
   color: #555;
+  font-family: Montserrat;
 
   &:hover {
     color: #BA4C08;

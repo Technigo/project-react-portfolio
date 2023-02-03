@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { ProjectCard, Image, OuterWrapper, InnerWrapper, MainHeadline } from 'styles/GlobalStyles';
 import compTalk from '../assets/compTalk.jpg';
-import eyeForDesign from '../assets/eyeForDesign.jpg';
+// import eyeForDesign from '../assets/eyeForDesign.jpg';
+import roadToMountain from '../assets/roadToMountain.jpg';
 
 export const MyThoughts = () => {
   return (
@@ -15,44 +16,46 @@ export const MyThoughts = () => {
             <p><HighLighted>NOV 2022</HighLighted></p>
             <h3>Taking a plunge into the deep end</h3>
             <p>What can I say, sometimes in life you surprise yourself.
-            That has certainly been the case with my newfound love for programming.
-            Thinking back to about five years ago, when I would ask my programmer
-            partner almost daily what was so interesting in that black screen with
-            the different coloured text (yet resisting most of his attempts to actually show me),
-            it’s not something I would’ve ever imagined enjoying.
+            That has certainly been the case with my newfound love for programming...
             <HighLighted><span>{' >'}{'>'}</span></HighLighted>
             </p>
           </a>
         </ProjectCard>
         <ProjectCard>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <Image src={eyeForDesign} alt="" />
-            <p><HighLighted>MMM YYYY</HighLighted></p>
-            <h3>Coming soon...</h3>
-            {/* Developing an eye for design */}
-            <p>Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Esse doloremque molestias asperiores
-          ipsa et aliquid non corrupti offici.
+          <a href="https://medium.com/@tinabruce42/imposter-syndrome-and-the-road-to-mastery-3fabe656a36e" target="_blank" rel="noopener noreferrer">
+            <ImageWrap>
+              <Image src={roadToMountain} alt="" />
+            </ImageWrap>
+            <p><HighLighted>Jan 2023</HighLighted></p>
+            <h3>Imposter syndrome and the road to mastery</h3>
+            <RightParagaph>Having graduated from Technigo’s frontend development bootcamp,
+              I’ve reached a milestone in my software development career.
+              It makes me realise how much I’ve learnt, not only in the bootcamp...
             <HighLighted><span>{' >'}{'>'}</span></HighLighted>
-            </p>
+            </RightParagaph>
           </a>
         </ProjectCard>
       </InnerWrapper>
-
-      {/* <MediumHeadline color="#BA4C08">MORE THOUGHTS</MediumHeadline>
-      <AlignLeftWrapper>
-        <a href="#" target="_blank" rel="noopener noreferrer">
-          <p>
-            <HighLighted>MMM YYYY.
-            </HighLighted> COMING SOON...Lorem ipsum dolor sit amet.
-            <HighLighted>{'>'}{'>'}</HighLighted>
-          </p>
-        </a>
-      </AlignLeftWrapper> */}
     </OuterWrapper>
   )
 }
 
 const HighLighted = styled.span`
   color: #BA4C08;
+`
+
+const ImageWrap = styled.div`
+  width: 100%;
+
+  @media (min-width: 1025px) {
+    width: 70%;
+  }
+`
+
+const RightParagaph = styled.p`
+  width: 100%;
+
+  @media (min-width: 1025px) {
+    width: 70%;
+  }
 `

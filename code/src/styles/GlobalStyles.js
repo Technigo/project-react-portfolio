@@ -7,7 +7,11 @@ export const OuterWrapper = styled.section`
   padding: 2rem 0;
 
   @media (min-width: 668px) {
-    padding: 3.5rem 0;
+    padding: 3.5rem 1rem;
+  }
+
+  @media (min-width: 1025px) {
+    padding: 3.5rem 3rem;
   }
 `
 export const HeaderWrapper = styled.section`
@@ -108,7 +112,12 @@ export const ProjectCard = styled.section`
   margin-top: 1rem;
   text-decoration: none;
   text-align: left;
+  border-radius: 5px;
 
+  a {
+    border-radius: 5px;
+  }
+  
   @media (min-width: 668px) and (max-width:1024px) {
     width: 35vw;
   }
@@ -120,6 +129,7 @@ export const ProjectCard = styled.section`
 
 export const Image = styled.img`
   width: 100%;
+  border-radius: 5px;
 `
 
 export const Tags = styled.div`

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BASE_URL, PROJECT_THUMBNAIL } from 'utils/urls';
+import { BASE_URL, PROJECT_THUMBNAIL, AUTH_THUMBNAIL } from 'utils/urls';
 import styled from 'styled-components/macro';
 import { ProjectCard, Image, SmallHeadline, Tags, Tag } from 'styles/GlobalStyles';
 
@@ -77,7 +77,7 @@ export const MainProjects = () => {
             <a href={project.homepage} target="_blank" rel="noopener noreferrer">
               <ImageContainer>
                 <ImageOverlay />
-                <Image src={PROJECT_THUMBNAIL(project.name)} alt="" />
+                <Image src={project.name === 'project-auth' ? AUTH_THUMBNAIL(project.name) : PROJECT_THUMBNAIL(project.name)} alt="" />
                 <OverlayTitle className="title">{project.name.replace('project-', '').replace('-', ' ')}</OverlayTitle>
               </ImageContainer>
             </a>
@@ -99,6 +99,7 @@ const ImageContainer = styled.div`
   position: relative;
   /* This transition will cause the text to fade */
   transition: 0.5s ease;
+  border-radius: 5px;
 
   &:hover > .title {
     color: transparent;
@@ -113,6 +114,7 @@ const ImageOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   /* This will cause the overlay to fade */
   transition: 0.5s ease;
+  border-radius: 5px;
 
   &:hover {
     background-color: transparent;
@@ -134,6 +136,7 @@ const OverlayTitle = styled.p`
 const Link = styled.a`
   font-weight: bold;
   color: #555;
+  font-family: Montserrat;
 
   &:hover {
     color: #BA4C08;
