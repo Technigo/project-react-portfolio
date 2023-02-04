@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
  background-size: cover; // make a background picture cover the whole page
  border-bottom:  5px solid  black;
  display: flex;
-    height: 40vh;
+    height: 400px;
     left: 0px;
     top: 0px;
     background-repeat: no-repeat;
@@ -33,16 +33,15 @@ const StyledHeader = styled.header`
     justify-content: center;
     flex-direction: column;
 img {
-    display: flex;
-    justify-items: flex-end;
-    position: absolute;
+
+  position: absolute;
     right: 24px;
-    top: 230px;
+    top: 320px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border:solid black;
+    border: solid black;
 }
 
 .headerTitle h1 {
@@ -59,7 +58,7 @@ img {
 
 @media screen and (min-width: 1024px) {
     img {
-    top: 200px;
+    top: 250px;
     right: 50px;
     position: absolute;
     width: 200px;
