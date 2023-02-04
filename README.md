@@ -1,6 +1,6 @@
 # React Portfolio
 
-An updated version of my portfolio, now using React and styled components. Previous version can be found (here)[https://github.com/a-well/project-portfolio].
+An updated version of my portfolio, now using React and styled components. Previous version can be found [here](https://github.com/a-well/project-portfolio).
 
 
 ### Technologies used:
