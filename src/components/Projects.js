@@ -29,7 +29,8 @@ const Projects = () => {
               description={project.description}
               tags={project.tags}
               image={project.image}
-              url={project.url}
+              liveurl={project.liveurl}
+              githuburl={project.githuburl}
               featured />
           ))}
         </FeaturedProjectContainer>
@@ -43,7 +44,8 @@ const Projects = () => {
             description={project.description}
             tags={project.tags}
             image={project.image}
-            url={project.url} />
+            liveurl={project.liveurl}
+            githuburl={project.githuburl} />
         ))}
 
       </Wrapper>

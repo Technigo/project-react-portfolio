@@ -1,7 +1,7 @@
 [
     {
         "name": "Cloud Weather",
-        "title": "Weather app built in JavaScript",
+        "title": "Weather app in JavaScript",
         "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
         "tags": [
             "HTML5",
@@ -10,19 +10,20 @@
             "APIs"
         ],
         "image": "/assets/images/projects/cloud.jpg",
-        "url": "https://github.com/a-well/project-weather-app",
+        "liveurl": "https://catnews.netlify.app/",
+        "githuburl": "https://github.com/a-well/project-weather-app",
         "featured": true
     },
     {
         "name": "Catnews",
         "title": "Made up news about cats",
-        "description": "A website for an imaginary news magazine, using HTML and CSS only.",
+        "description": "My application to Technigo. A site for a fictional newspaper, Catnews.",
         "tags": [
             "HTML5",
             "CSS3"
         ],
         "image": "/assets/images/projects/catnews.jpg",
-        "url": "https://github.com/a-well/project-news-site",
+        "liveurl": "https://github.com/a-well/project-news-site",
         "featured": true
     },
     {
@@ -35,12 +36,12 @@
             "JavaScript"
         ],
         "image": "/assets/images/projects/guesswho.jpg",
-        "url": "https://github.com/a-well/project-guess-who",
+        "liveurl": "https://github.com/a-well/project-guess-who",
         "featured": true
     },
     {
         "name": "Tablebooker",
-        "title": "Chat bot helping you book your table",
+        "title": "Friendly chat bot",
         "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
         "tags": [
             "HTML5",
@@ -48,7 +49,7 @@
             "JavaScript"
         ],
         "image": "/assets/images/projects/tablebooker.jpg",
-        "url": "https://github.com/a-well/project-chatbot",
+        "liveurl": "https://github.com/a-well/project-chatbot",
         "featured": true
     },
     {
@@ -60,7 +61,7 @@
             "CSS3"
         ],
         "image": "",
-        "url": "https://github.com/a-well/project-business-site",
+        "liveurl": "https://github.com/a-well/project-business-site",
         "featured": false
     }
 ]

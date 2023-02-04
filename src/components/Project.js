@@ -78,13 +78,28 @@ const ProjectTag = styled.span`
 `
 
 const ProjectLink = styled.a`
-text-decoration: none;
-color: var(--black);
+  text-decoration: none;
+  color: var(--black);
 `
 
-const Project = ({ title, name, description, tags, image, url, featured }) => {
+const GithubLink = styled.a`
+  text-transform: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--sectionbg);
+  margin-left: 10px;
+  background-color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  line-height: 0.75rem;
+  padding: 3px 9px;
+  border-radius: 20px;
+`
+
+const Project = ({ title, name, description, tags, image, liveurl, featured, githuburl }) => {
   return (
-    <ProjectLink href={url} target="_blank" rel="noreferrer">
+    <ProjectLink href={liveurl} target="_blank" rel="noreferrer">
 
       <ProjectCard>
         {featured && (
@@ -95,9 +110,16 @@ const Project = ({ title, name, description, tags, image, url, featured }) => {
             </ProjectNameWrapper>
           </ProjectHeader>
         )}
-        <ProjectTitle>{title}</ProjectTitle>
+        <ProjectTitle>
+          {title}
+          <GithubLink href={githuburl} title="Go to GitHub page">
+            🐈 View code
+          </GithubLink>
+        </ProjectTitle>
 
-        <ProjectDescription>{description}</ProjectDescription>
+        <ProjectDescription>
+          {description}
+        </ProjectDescription>
 
         <p>
           {tags.map((tag) => (<ProjectTag key={tag}>{tag}</ProjectTag>))}
