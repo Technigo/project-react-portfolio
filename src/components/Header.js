@@ -37,8 +37,8 @@ img {
   position: absolute;
     right: 24px;
     top: 320px;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: solid black;
