@@ -1,13 +1,6 @@
 # React Portfolio
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-
---
-
-This is a React version of this project https://github.com/a-well/project-portfolio
+An updated version of my portfolio, now using React and styled components. Previous version can be found (here)[https://github.com/a-well/project-portfolio].
 
 
 ### Technologies used:
@@ -23,7 +16,7 @@ This is a React version of this project https://github.com/a-well/project-portfo
 
 ## View it live
 
-[https://amandasdev.netlify.app/](https://amandasdev.netlify.app/ )
+[https://amandasdev.netlify.app/](https://amandasdev.netlify.app/)
 
 ## Running locally
 
