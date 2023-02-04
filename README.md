@@ -16,7 +16,7 @@ An updated version of my portfolio, now using React and styled components. Previ
 
 ## View it live
 
-[https://amandasdev.netlify.app/](https://amandasdev.netlify.app/)
+[https://amandas.dev/](https://amandas.dev/)
 
 ## Running locally
 
