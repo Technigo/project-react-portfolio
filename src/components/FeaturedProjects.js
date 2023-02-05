@@ -69,12 +69,13 @@ const ProjectsWrapper = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 3vw;
   column-gap: 3vw;
+  
   a {
     position: relative;
     display: block;
   }
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
   } `
 
 const ImageOverlay = styled.div`

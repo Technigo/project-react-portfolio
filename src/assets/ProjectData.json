@@ -2,10 +2,10 @@
       {
         "featured": true,
         "display": true,
-        "name": "Kulturligtvis",
-        "overlayname": "Fullstack project",
+        "name": "Kulturligtvis (Culturally)",
+        "overlayname": "Kulturligtvis",
         "description": "A fullstack project where people can find new friends through meetups",
-        "tags": ["HTML","Styled Components", "JavaScript", "API", "React", "Redux", "MongoDB", "Mongoose"],
+        "tags": ["Styled Components", "API", "React", "Redux", "MongoDB", "Mongoose"],
         "image": "./assets/kulturligtvis2.png",
         "netlify": "https://kulturligtvis.netlify.app/",
         "github": "https://github.com/jesshansson/final-project"
@@ -16,7 +16,7 @@
         "name": "Happy Thoughts",
         "overlayname": "Happy Thoughts",
         "description": "App to collect happy thoughts, in a twitter-like feed, using React and API.",
-        "tags": ["HTML", "CSS", "JavaScript", "API"],
+        "tags": ["CSS", "JavaScript", "API", "Fullstack"],
         "image": "./assets/happythoughts.png",
         "netlify": "https://our-happy-thoughts.netlify.app/",
         "github": "https://github.com/jesshansson/project-happy-thoughts"
@@ -27,7 +27,7 @@
         "name": "Find-a-Friend survey",
         "overlayname": "React Survey",
         "description": "A Typeform-like survey built with React state",
-        "tags": ["HTML", "CSS", "JavaScript", "React"],
+        "tags": [ "HTML", "CSS", "JavaScript", "React"],
         "image": "./assets/survey.png",
         "netlify": "https://find-a-friend-survey.netlify.app/",
         "github": "https://github.com/jesshansson/project-survey"
@@ -38,7 +38,7 @@
         "name": "Redux Todo-list",
         "overlayname": "Todo-list",
         "description": "An interactive app where the user can create a to-do list, built with Redux",
-        "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+        "tags": ["Styled Components", "JavaScript", "React", "Redux"],
         "image": "./assets/todos.png",
         "netlify": "https://the-todos.netlify.app/",
         "github": "https://github.com/jesshansson/project-todos1"
@@ -46,13 +46,13 @@
     {
         "featured": true,
         "display": true,
-        "name": "The Amazing maze",
-        "overlayname": "Redux Maze",
-        "description": "An interactive labyrint built with Redux, where the user navigates through a text-based adventure.",
-        "tags": ["HTML", "CSS", "JavaScript", "React", "Redux"],
-        "image": "./assets/amazingmaze.jpg",
-        "netlify": "https://the-amazing-maze.netlify.app/",
-        "github": "https://github.com/jesshansson/project-labyrinth"
+        "name": "Login/logout site",
+        "overlayname": "Authorization",
+        "description": "Backend and frontend project, building an API with authentication and a frontend site for registration and login/logout",
+        "tags": ["Styled Components", "JavaScript", "React", "Redux", "Fullstack", "API"],
+        "image": "./assets/auth.png",
+        "netlify": "https://registertologin.netlify.app/login",
+        "github": "https://github.com/jesshansson/project-auth"
     },    
     {
       "featured": true,
@@ -60,7 +60,7 @@
       "name": "Popular movies",
       "overlayname": "Movies chart",
       "description": "A website that shows the currently most popular movies in the US, built with React components, fetching the data from an API.",
-      "tags": ["HTML","CSS", "JavaScript", "API", "React", "API"],
+      "tags": ["HTML","CSS", "JavaScript", "API", "React"],
       "image": "./assets/movies2.png",
       "netlify": "https://popularmovies-us.netlify.app/",
       "github": "https://github.com/jesshansson/project-movies"

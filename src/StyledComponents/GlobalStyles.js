@@ -15,13 +15,15 @@ export const InnerWrapper = styled.section`
     display: flex; 
     flex-direction: column;
 
-    @media (min-width: 668px) {
-        width: 60%;
-    }
-
-    @media (min-width: 1025px) {
-        width: 50%;
-    }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    width: 60%;
+  }
+  @media (min-width: 1025px){ 
+    width: 60%;
+  }
+  @media (min-width: 1600px) {
+    width: 50%;
+  }
 `;
 
 export const P = styled.p`
