@@ -49,7 +49,7 @@ const ThoughtsHeadline = styled.h4`
     line-height: 30px;
 `
 const BlogPic = styled.img`
-  width: 60%;
+  width: 70%;
   display: flex;
   align-self:center;
   margin: 30px;

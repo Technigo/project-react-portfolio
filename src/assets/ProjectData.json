@@ -2,7 +2,7 @@
       {
         "featured": true,
         "display": true,
-        "name": "Kulturligtvis (Culturally)",
+        "name": "Kulturligtvis",
         "overlayname": "Kulturligtvis",
         "description": "A fullstack project where people can find new friends through meetups",
         "tags": ["Styled Components", "API", "React", "Redux", "MongoDB", "Mongoose"],
