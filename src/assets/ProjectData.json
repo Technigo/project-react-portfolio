@@ -51,7 +51,7 @@
         "description": "Backend and frontend project, building an API with authentication and a frontend site for registration and login/logout",
         "tags": ["Styled Components", "JavaScript", "React", "Redux", "Fullstack", "API"],
         "image": "./assets/auth.png",
-        "netlify": "https://registertologin.netlify.app/login",
+        "netlify": "https://registertologin.netlify.app",
         "github": "https://github.com/jesshansson/project-auth"
     },    
     {
