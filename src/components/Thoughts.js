@@ -55,7 +55,7 @@ const BlogPic = styled.img`
   margin: 30px;
   border-radius : 15px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 668px) {
     width: 50%;
     }
 `
