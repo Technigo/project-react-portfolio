@@ -57,6 +57,7 @@ const ProjectInfo = styled.div`
   img {
     width: 100%;
     display: block;
+    border-radius: 10px;
   }
 `
 
@@ -84,6 +85,7 @@ const ImageOverlay = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 
   p {
     font-family: 'Montserrat';

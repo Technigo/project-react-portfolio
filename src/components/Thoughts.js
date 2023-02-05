@@ -54,6 +54,10 @@ const BlogPic = styled.img`
   align-self:center;
   margin: 30px;
   border-radius : 15px;
+
+  @media (min-width: 800px) {
+    width: 50%;
+    }
 `
 
 export default Thoughts

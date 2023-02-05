@@ -49,12 +49,13 @@ export const SectionHeading = styled.h2`
     color: white;
     line-height: 27px;
     background-color: #7c5f74;
-    padding: 5px;
+    padding: 7px;
     align-self: center;
     justify-self: center;
     text-align: center;
     display: inline-block;
     margin-bottom: 4vh;
+    border-radius: 4px;
 `;
 
 export const SubHeading = styled.h2`
