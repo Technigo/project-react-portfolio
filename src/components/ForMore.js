@@ -51,6 +51,7 @@ const ForMoreParent = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-evenly;
 }
 `;
 
@@ -60,7 +61,7 @@ const ForMoreBox = styled.div`
     align-items: center;
 
     @media (max-width: 800px) {
-        width: 30%;
+        width: 40%;
     }
 `;
 
