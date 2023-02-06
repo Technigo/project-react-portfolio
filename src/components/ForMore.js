@@ -45,7 +45,6 @@ const SkillsContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 55vw;
 `;
 
 const ForMoreParent = styled.div`
