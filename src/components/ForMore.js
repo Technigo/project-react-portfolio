@@ -15,16 +15,16 @@ const ForMore = ({ color }) => {
         <SkillsContainer>
           <ForMoreParent>
             <ForMoreBox>
-              <LinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+              <ClonedLinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialLinkedin} alt="LinkedIn icon" />
                 <ForMoreTitle>LinkedIn</ForMoreTitle>
-              </LinkNoLine>
+              </ClonedLinkNoLine>
             </ForMoreBox>
             <ForMoreBox>
-              <LinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
+              <ClonedLinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialGithub} alt="Github icon" />
                 <ForMoreTitle>Github</ForMoreTitle>
-              </LinkNoLine>
+              </ClonedLinkNoLine>
             </ForMoreBox>
             <ForMoreBox>
               <LinkNoLine href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
@@ -94,6 +94,12 @@ const ForMoreTitle = styled.h4`
     @media (max-width: 800px) {
       font-size: 16px;
       line-height: 1.4;
+`;
+
+const ClonedLinkNoLine = styled(LinkNoLine)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const ClonedOuterWrapper = styled(OuterWrapper)`
