@@ -50,6 +50,7 @@ const SkillsContainer = styled.div`
 const ForMoreParent = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 `;
