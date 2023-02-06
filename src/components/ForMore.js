@@ -15,16 +15,16 @@ const ForMore = ({ color }) => {
         <SkillsContainer>
           <ForMoreParent>
             <ForMoreBox>
-              <ClonedLinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+              <LinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialLinkedin} alt="LinkedIn icon" />
                 <ForMoreTitle>LinkedIn</ForMoreTitle>
-              </ClonedLinkNoLine>
+              </LinkNoLine>
             </ForMoreBox>
             <ForMoreBox>
-              <ClonedLinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
+              <LinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialGithub} alt="Github icon" />
                 <ForMoreTitle>Github</ForMoreTitle>
-              </ClonedLinkNoLine>
+              </LinkNoLine>
             </ForMoreBox>
             <ForMoreBox>
               <LinkNoLine href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
@@ -59,6 +59,7 @@ const ForMoreBox = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 800px) {
         width: 30%;
@@ -94,12 +95,6 @@ const ForMoreTitle = styled.h4`
     @media (max-width: 800px) {
       font-size: 16px;
       line-height: 1.4;
-`;
-
-const ClonedLinkNoLine = styled(LinkNoLine)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `;
 
 const ClonedOuterWrapper = styled(OuterWrapper)`
