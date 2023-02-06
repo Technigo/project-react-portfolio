@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderIcons>
-        <LineHeaderIcons href="https://stately-snickerdoodle-c346a9.netlify.app/www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+        <LineHeaderIcons href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
           <IconsPaintBrush src={heroLinkedin} alt="LinkedIn icon for the header" />
         </LineHeaderIcons>
         <LineHeaderIcons href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">

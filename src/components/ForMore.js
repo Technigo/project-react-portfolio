@@ -15,7 +15,7 @@ const ForMore = ({ color }) => {
         <SkillsContainer>
           <ForMoreParent>
             <ForMoreBox>
-              <LinkNoLine href="https://stately-snickerdoodle-c346a9.netlify.app/www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+              <LinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialLinkedin} alt="LinkedIn icon" />
                 <ForMoreTitle>LinkedIn</ForMoreTitle>
               </LinkNoLine>
@@ -51,7 +51,6 @@ const ForMoreParent = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
 }
 `;
 
@@ -61,7 +60,7 @@ const ForMoreBox = styled.div`
     align-items: center;
 
     @media (max-width: 800px) {
-        width: 40%;
+        width: 30%;
     }
 `;
 

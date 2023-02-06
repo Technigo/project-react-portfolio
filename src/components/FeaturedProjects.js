@@ -57,6 +57,7 @@ const ProjectTags = styled.li`
   display: inline;
   font-size: 16px;
   margin-right: 5px;
+  margin-top: 2px;
 
   @media (max-width: 800px) {
     padding: 2px;
