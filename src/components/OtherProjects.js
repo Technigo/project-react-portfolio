@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import OtherProject from '../data/OtherProject.json'
 import { ProjectTags, SectionHeader, SubParagraphArrows, InnerWrapper } from './GlobalStyleComponents'
 
@@ -24,9 +24,9 @@ const OtherProjects = ({ tagColor }) => {
           </a> {/* eslint-disable-line */}
               <SkillTagContainer>
                 {project.tags.map((tag) => (
-                  <ProjectTags key={tag} tagColor={tagColor}>
+                  <ClonedProjectTags key={tag} tagColor={tagColor}>
                     {tag}
-                  </ProjectTags>
+                  </ClonedProjectTags>
                 ))}
               </SkillTagContainer>
               </>
@@ -64,6 +64,7 @@ const InfoContainer = styled.div`
 
 const SkillTagContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 2%;
 `;
 
@@ -104,3 +105,6 @@ const SubParagraph = styled.p`
     line-height: 1.4;
 `;
 
+const ClonedProjectTags = styled(ProjectTags)`
+  margin: 2px 3px;
+`;

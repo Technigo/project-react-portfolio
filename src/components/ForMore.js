@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { OuterWrapper, InnerWrapper, SectionHeader, LinkNoLine } from './GlobalStyleComponents';
 import socialLinkedin from './images/socialLinkedin.png'
 import socialGithub from './images/socialGithub.png'
@@ -29,7 +29,7 @@ const ForMore = ({ color }) => {
             <ForMoreBox>
               <LinkNoLine href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
                 <ForMoreImg src={socialStackoverflow} alt="Stack Overflow icon" />
-                <ForMoreTitle>StackOverflow</ForMoreTitle>
+                <ForMoreTitle>Stack</ForMoreTitle>
               </LinkNoLine>
             </ForMoreBox>
           </ForMoreParent>
@@ -45,6 +45,7 @@ const SkillsContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 55vw;
 `;
 
 const ForMoreParent = styled.div`

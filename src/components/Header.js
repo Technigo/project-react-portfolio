@@ -166,7 +166,7 @@ const HeaderImage = styled.div`
     width: 170px;
     height: 170px;
     position: absolute;
-    bottom: -10%;
+    bottom: -7%;
     right: 10%;
   }
 

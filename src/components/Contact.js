@@ -35,7 +35,7 @@ const ForMoreBox = styled.div`
     align-items: center;
 
     @media (max-width: 800px) {
-        width: 40%;
+        width: 60%;
     }
 `;
 const ForMoreTitle = styled.h2`
