@@ -24,7 +24,7 @@ const ForMore = () => {
   const iconSize = isMobile ? 50 : 90
 
   return (
-    <PageSection>
+    <PageSection backgroundColor="var(--sectionbg)">
       <Heading>
         For more
       </Heading>

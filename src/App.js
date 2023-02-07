@@ -4,7 +4,7 @@ import Projects from 'components/Projects'
 import Skills from 'components/Skills'
 import Summary from 'components/Summary'
 import Tech from 'components/Tech'
-import Thoughts from 'components/Thoughts'
+// import Thoughts from 'components/Thoughts'
 import ForMore from 'components/ForMore'
 import React from 'react'
 
@@ -15,7 +15,7 @@ export const App = () => {
       <Summary />
       <Tech />
       <Projects />
-      <Thoughts />
+      {/* <Thoughts /> */}
       <Skills />
       <ForMore />
       <Contact />

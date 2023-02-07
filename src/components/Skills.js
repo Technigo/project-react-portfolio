@@ -33,7 +33,7 @@ const SkillsContainer = styled.div`
 
 const Skills = () => {
   return (
-    <PageSection backgroundColor="var(--sectionbg)">
+    <PageSection>
       <Wrapper>
         <Heading>Skills</Heading>
         <SkillsContainer>
