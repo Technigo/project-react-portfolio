@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components/macro'
 
 const ProjectNameWrapper = styled.div`
@@ -55,13 +55,14 @@ const ProjectTitle = styled.h3`
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: var(--accent);
-  padding-top: 22px;
-  line-height: 1.6;
+  padding-top: 15px;
+  line-height: 1.2;
 `
 
 const ProjectDescription = styled.p`
   font-family: "Roboto", sans-serif;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 6px;
   line-height: 1.5;
 `
 
@@ -79,42 +80,33 @@ const ProjectTag = styled.span`
 
 const ProjectLink = styled.a`
   text-decoration: none;
-  color: var(--black);
-`
-
-const GithubLink = styled.a`
-  text-transform: none;
-  text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: var(--sectionbg);
-  margin-left: 10px;
-  background-color: var(--accent);
-  text-decoration: none;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background-color: var(--sectionbg);
   letter-spacing: 0.5px;
-  line-height: 0.75rem;
   padding: 3px 9px;
   border-radius: 20px;
 `
 
-const Project = ({ title, name, description, tags, image, liveurl, featured, githuburl }) => {
+const Project = ({ title, name, description, tags, date, image, liveurl, featured, githuburl }) => {
   return (
-    <ProjectLink href={liveurl} target="_blank" rel="noreferrer">
-
+    <a href={liveurl} target="_blank" rel="noreferrer" style={{ color: 'var(--black)', textDecoration: 'none' }}>
       <ProjectCard>
         {featured && (
           <ProjectHeader>
             <ProjectImage src={image} />
             <ProjectNameWrapper>
-              <ProjectName>{name}</ProjectName>
+              <ProjectName>
+                {name}
+              </ProjectName>
             </ProjectNameWrapper>
           </ProjectHeader>
         )}
         <ProjectTitle>
-          {title}
-          <GithubLink href={githuburl} title="Go to GitHub page">
-            🐈 View code
-          </GithubLink>
+          {title} <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>| {date}</span>
         </ProjectTitle>
 
         <ProjectDescription>
@@ -125,8 +117,17 @@ const Project = ({ title, name, description, tags, image, liveurl, featured, git
           {tags.map((tag) => (<ProjectTag key={tag}>{tag}</ProjectTag>))}
         </p>
 
+        <div style={{ paddingTop: '21px', paddingBottom: '15px' }}>
+          <ProjectLink href={liveurl} title="See it up and running" style={{ marginRight: '10px' }}>
+            🌐 Live demo
+          </ProjectLink>
+          <ProjectLink href={githuburl} title="Go to GitHub page">
+            🐈 View the code
+          </ProjectLink>
+        </div>
+
       </ProjectCard>
-    </ProjectLink>
+    </a>
   )
 }
 export default Project
