@@ -12,28 +12,26 @@ const ForMore = ({ color }) => {
     <ClonedOuterWrapper>
       <ClonedInnerWrapper>
         <SectionHeader color={color}>FOR MORE</SectionHeader>
-        <SkillsContainer>
-          <ForMoreParent>
-            <ForMoreBox>
-              <LinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
-                <ForMoreImg src={socialLinkedin} alt="LinkedIn icon" />
-                <ForMoreTitle>LinkedIn</ForMoreTitle>
-              </LinkNoLine>
-            </ForMoreBox>
-            <ForMoreBox>
-              <LinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
-                <ForMoreImg src={socialGithub} alt="Github icon" />
-                <ForMoreTitle>Github</ForMoreTitle>
-              </LinkNoLine>
-            </ForMoreBox>
-            <ForMoreBox>
-              <LinkNoLine href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
-                <ForMoreImg src={socialStackoverflow} alt="Stack Overflow icon" />
-                <ForMoreTitle>Stack</ForMoreTitle>
-              </LinkNoLine>
-            </ForMoreBox>
-          </ForMoreParent>
-        </SkillsContainer>
+        <ForMoreContainer>
+          <ForMoreIcons>
+            <LinkNoLine href="www.linkedin.com/in/viktor-svensson-9a55891b2" target="_blank" rel="noreferrer">
+              <img className="icon" src={socialLinkedin} alt="LinkedIn icon" />
+              <ForMoreTitle>LinkedIn</ForMoreTitle>
+            </LinkNoLine>
+          </ForMoreIcons>
+          <ForMoreIcons>
+            <LinkNoLine href="https://github.com/ViktorSvenssonN" target="_blank" rel="noreferrer">
+              <img className="icon" src={socialGithub} alt="Github icon" />
+              <ForMoreTitle>Github</ForMoreTitle>
+            </LinkNoLine>
+          </ForMoreIcons>
+          <ForMoreIcons>
+            <LinkNoLine href="https://stackoverflow.com/users/apps/19384384" target="_blank" rel="noreferrer">
+              <img className="icon" src={socialStackoverflow} alt="Stack Overflow icon" />
+              <ForMoreTitle>Stack</ForMoreTitle>
+            </LinkNoLine>
+          </ForMoreIcons>
+        </ForMoreContainer>
       </ClonedInnerWrapper>
     </ClonedOuterWrapper>
   );
@@ -41,43 +39,28 @@ const ForMore = ({ color }) => {
 
 /* localy stored styled components */
 
-const SkillsContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+const ForMoreContainer = styled.div`
+display: flex;
+justify-content: space-evenly;
 `;
 
-const ForMoreParent = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+/* icons and their links */
+const ForMoreIcons = styled.div`
+width: 25%;
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-`;
-
-const ForMoreBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media (max-width: 800px) {
-        width: 40%;
-    }
-`;
-
-const ForMoreImg = styled.img`
-  height: 45%;
+a:hover {
+  opacity: 0.5;
+}
+.icon {
+  width: 75%;
   filter: brightness(0) saturate(100%) invert(100%) sepia(91%) saturate(5523%) hue-rotate(316deg) brightness(99%) contrast(96%);
-
-  &:hover {
-    border-radius: 50%;
-    transform: scale(0.8);
-    transition: 700ms linear;
-    }
-    
-  @media (max-width: 800px) {
-      height: 22%; 
-    } 
+}
 `;
 
 const ForMoreTitle = styled.h4`
@@ -85,7 +68,6 @@ const ForMoreTitle = styled.h4`
     color: #f0a04b;
     font-size: 24px;
     line-height: 1.4;
-
     &:hover {
       text-decoration: underline;
       text-decoration-color: #f6c453;
