@@ -83,8 +83,8 @@ const ProjectLink = styled.a`
   font-size: 0.95rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: var(--projectlink);
+  border: 1px solid var(--projectlink);
   background-color: var(--sectionbg);
   letter-spacing: 0.5px;
   padding: 3px 9px;
