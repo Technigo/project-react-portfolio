@@ -27,8 +27,32 @@ const TextWrapper = styled.div`
   max-width: 300px;
 `
 const ImageWrapper = styled.div`
-  /* padding-top: 5px; */
   justify-content: left;
+`
+const Name = styled.h1`
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+`
+
+const Title = styled.h1`
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+  color: var(--black);
+  font-size: 46px;
+  padding-top: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+`
+
+const OtherTitle = styled.h1`
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+  color: var(--black);
+  font-size: 24px;
+  padding-top: 10px;
+  font-weight: 700;
+  line-height: 1.2;
 `
 
 const Hero = () => {
@@ -41,9 +65,9 @@ const Hero = () => {
           {/* <Icon variant="stackoverflow" size={40} color="black" /> */}
         </IconContainer>
         <TextWrapper>
-          <h1 className="header-text-name">Portfolio: Amanda W.</h1>
-          <h1 className="header-text-title">Frontend Developer</h1>
-          <h1 className="header-text-other-title">With A Fashion Background</h1>
+          <Name>Portfolio: Amanda W.</Name>
+          <Title>Frontend Developer</Title>
+          <OtherTitle>With A Fashion Background</OtherTitle>
         </TextWrapper>
         <ImageWrapper>
           <ProfileImage src="./assets/images/me.jpg" />
