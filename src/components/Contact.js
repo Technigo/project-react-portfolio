@@ -12,7 +12,7 @@ const FooterText = styled.p`
     line-height: 1.6;
     `
 
-const EmailLink = styled.a`
+const ContactLink = styled.a`
 font-family: "Montserrat", sans-serif;
 font-weight: 400;
 font-size: 1.1rem;
@@ -34,7 +34,16 @@ const Contact = () => {
     <PageSection backgroundColor="var(--accent)">
       <FooterText>
         <Subheading>Contact</Subheading>
-        <EmailLink href="mailto:amanda@amandas.dev">amanda@amandas.dev</EmailLink>
+        <p>
+          <ContactLink href="tel:0046790421910">
+          +46(0)790 42 19 10
+          </ContactLink>
+        </p>
+        <p>
+          <ContactLink href="mailto:amanda@amandas.dev">
+          amanda@amandas.dev
+          </ContactLink>
+        </p>
       </FooterText>
     </PageSection>
   )
