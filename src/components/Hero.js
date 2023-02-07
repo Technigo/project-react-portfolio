@@ -15,7 +15,7 @@ const MainHeader = styled.header`
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 40px);
+  grid-template-columns: repeat(2, 40px);
   justify-content: right;
   gap: 10px;
   padding-top: 40px;
@@ -38,7 +38,7 @@ const Hero = () => {
         <IconContainer>
           <Icon variant="linkedin" size={40} color="black" />
           <Icon variant="github" size={40} color="black" />
-          <Icon variant="stackoverflow" size={40} color="black" />
+          {/* <Icon variant="stackoverflow" size={40} color="black" /> */}
         </IconContainer>
         <TextWrapper>
           <h1 className="header-text-name">Portfolio: Amanda W.</h1>

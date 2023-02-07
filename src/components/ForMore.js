@@ -8,7 +8,7 @@ import Icon from './Icon'
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 130px);
+  grid-template-columns: repeat(2, 130px);
   justify-content: center;
   gap: 30px;
 
@@ -31,7 +31,7 @@ const ForMore = () => {
       <IconContainer>
         <Icon variant="linkedin" showText size={iconSize} />
         <Icon variant="github" showText size={iconSize} />
-        <Icon variant="stackoverflow" showText size={iconSize} />
+        {/* <Icon variant="stackoverflow" showText size={iconSize} /> */}
       </IconContainer>
     </PageSection>
   )
