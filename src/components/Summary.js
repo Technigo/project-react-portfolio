@@ -15,12 +15,8 @@ const Summary = () => {
       <Wrapper>
         <SummaryText>
           <Lollipop />
-          Hi there! I like writing code, it&apos;s really great fun.
-          Cat ipsum dolor sit amet, british shorthair persian.
-          Malkin himalayan for donskoy scottish fold yet panther siamese.
-          Lion turkish angora. Lynx. Turkish angora panther yet birman bobcat cougar
-          american bobtail maine coon.
-          Tomcat manx.
+          Hi there! I&apos;m Amanda and I like building neat looking things for the web.
+          Based in Stockholm, Sweden.
         </SummaryText>
       </Wrapper>
     </PageSection>

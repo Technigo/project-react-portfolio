@@ -27,14 +27,7 @@ const SkillsContainer = styled.div`
 
    /* tablet and larger -v */
    @media (min-width: 668px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-`
-
-const SkillsMore = styled.div`
-   /* hide section on mobile */
-   @media (max-width: 669px) {
-     display: none;
+    grid-template-columns: repeat(4, 1fr);
   }
 `
 
@@ -47,35 +40,40 @@ const Skills = () => {
           <div>
             <SkillsSubheading>Code</SkillsSubheading>
             <SkillsList>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript ES6</li>
-              <li>GitHub</li>
-              <li>Bootstrap</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node.js</li>
             </SkillsList>
           </div>
           <div>
             <SkillsSubheading>Toolbox</SkillsSubheading>
             <SkillsList>
+              <li>Figma</li>
+              <li>Postman</li>
               <li>VS Code</li>
               <li>Slack</li>
+              <li>Notion</li>
+              <li>MongoDB Compass</li>
+              <li>Google Cloud Run</li>
             </SkillsList>
           </div>
-          <SkillsMore>
+          <div>
             <SkillsSubheading>More</SkillsSubheading>
+            <SkillsList>
+              <li>Branding</li>
+              <li>and</li>
+              <li>stuff</li>
+            </SkillsList>
+          </div>
+          <div>
+            <SkillsSubheading>Upcoming</SkillsSubheading>
             <SkillsList>
               <li>Lorem</li>
               <li>to the</li>
               <li>ipsum</li>
-            </SkillsList>
-          </SkillsMore>
-          <div>
-            <SkillsSubheading>Upcoming</SkillsSubheading>
-            <SkillsList>
-              <li>React</li>
-              <li>Redux</li>
-              <li>Styled Components</li>
-              <li>Node.js</li>
             </SkillsList>
           </div>
         </SkillsContainer>

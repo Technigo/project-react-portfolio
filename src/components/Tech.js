@@ -24,19 +24,21 @@ const Tech = () => {
         <TechText>
           HTML,
           CSS,
-          Flexbox,
           Bootstrap,
-          <Highlight> JavaScript ES6</Highlight>,
+          Ant Design,
+          <Highlight> JavaScript</Highlight>,
           JSX,
           <Highlight> React</Highlight>,
           <Highlight> React Hooks</Highlight>,
           <Highlight> Redux</Highlight>,
           Node.js,
-          Mongo DB,
+          Express,
+          swr,
+          styled components,
+          MongoDB,
           Web Accessibility,
-          API:s,
-          pair-programming,
-          Github.
+          APIs,
+          pair-programming.
         </TechText>
       </Wrapper>
     </PageSection>
