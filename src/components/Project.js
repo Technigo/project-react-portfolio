@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import Pill from './Pill'
 
 const ProjectNameWrapper = styled.div`
   position: absolute;
@@ -78,23 +79,10 @@ const ProjectTag = styled.span`
   margin: 6px 6px 0 0;
 `
 
-const ProjectLink = styled.a`
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  color: var(--projectlink);
-  border: 1px solid var(--projectlink);
-  background-color: var(--sectionbg);
-  letter-spacing: 0.5px;
-  padding: 3px 9px;
-  border-radius: 20px;
-`
-
 const Project = ({ title, name, description, tags, date, image, liveurl, featured, githuburl }) => {
   return (
-    <a href={liveurl} target="_blank" rel="noreferrer" style={{ color: 'var(--black)', textDecoration: 'none' }}>
-      <ProjectCard>
+    <ProjectCard>
+      <a href={liveurl} target="_blank" rel="noreferrer" style={{ color: 'var(--black)', textDecoration: 'none' }}>
         {featured && (
           <ProjectHeader>
             <ProjectImage src={image} />
@@ -106,28 +94,23 @@ const Project = ({ title, name, description, tags, date, image, liveurl, feature
           </ProjectHeader>
         )}
         <ProjectTitle>
-          {title} <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>| {date}</span>
+          {title} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
         </ProjectTitle>
 
         <ProjectDescription>
           {description}
         </ProjectDescription>
+      </a>
+      <p>
+        {tags.map((tag) => (<ProjectTag key={tag}>{tag}</ProjectTag>))}
+      </p>
 
-        <p>
-          {tags.map((tag) => (<ProjectTag key={tag}>{tag}</ProjectTag>))}
-        </p>
+      <div style={{ paddingTop: '12px', paddingBottom: '15px' }}>
+        <Pill variant="web" href={liveurl} />
+        <Pill variant="github" href={githuburl} />
+      </div>
 
-        <div style={{ paddingTop: '21px', paddingBottom: '15px' }}>
-          <ProjectLink href={liveurl} title="See it up and running" style={{ marginRight: '10px' }}>
-            🌐 Live demo
-          </ProjectLink>
-          <ProjectLink href={githuburl} title="Go to GitHub page">
-            🐈 View the code
-          </ProjectLink>
-        </div>
-
-      </ProjectCard>
-    </a>
+    </ProjectCard>
   )
 }
 export default Project
