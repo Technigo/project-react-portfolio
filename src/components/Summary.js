@@ -15,8 +15,8 @@ const Summary = () => {
       <Wrapper>
         <SummaryText>
           <Lollipop />
-          Hi there! I&apos;m Amanda and I like building neat looking things for the web.
-          Based in Stockholm, Sweden.
+          Hi there! My name is Amanda and I like building neat looking things for the web.
+          I&apos;m based in Stockholm, Sweden and currently looking for a job :)
         </SummaryText>
       </Wrapper>
     </PageSection>
