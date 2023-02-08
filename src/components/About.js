@@ -6,7 +6,8 @@ export const About = () => {
     <OuterWrapper>
       <InnerWrapper centertext>
         <p>Welcome! My name&apos;s Nick, and I&apos;m a frontend developer with a
-           background in freelance translation and a passion for problem-solving and languages.
+           background in freelance translation and a knack for problem-solving,
+           communication and collaboration.
         </p>
         <p>I spent nearly a decade working with natural languages as a freelance
          translator, and as my interest in the world of programming languages grew,
