@@ -4,8 +4,6 @@
         "title": "Trade finder for PokémonGO",
         "description": "My final project for Technigo 6 month frontend course.",
         "tags": [
-            "HTML",
-            "CSS",
             "JavaScript",
             "APIs",
             "React",
