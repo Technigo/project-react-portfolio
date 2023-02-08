@@ -46,7 +46,7 @@
             "APIs"
         ],
         "date": "November 2022",
-        "image": "http://placekitten.com/g/300/300",
+        "image": "/assets/images/projects/themaze.png",
         "liveurl": "https://play-the-maze.netlify.app",
         "githuburl": "https://github.com/a-well/project-labyrinth",
         "featured": true
