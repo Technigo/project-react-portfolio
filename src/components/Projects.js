@@ -40,7 +40,8 @@ const Projects = () => {
         {projectData.filter((project) => !project.featured).map((project) => (
           <Project
             key={project.name}
-            title={project.name}
+            name={project.name}
+            title={project.title}
             description={project.description}
             tags={project.tags}
             date={project.date}

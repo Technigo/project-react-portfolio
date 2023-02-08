@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-closing-tag-location */
+
 import React from 'react'
 import styled from 'styled-components/macro'
 import Pill from './Pill'
@@ -19,19 +21,16 @@ const ProjectImage = styled.img`
   transition: all 300ms ease-out;
 `
 
-const ProjectCard = styled.article`
+const ProjectHeader = styled.header`
+  height: 200px;
+  position: relative;
+  overflow: hidden;
   &:hover ${ProjectNameWrapper} {
     opacity: 0;
   }
   &:hover ${ProjectImage} {
     transform: scale(1.05);
   }
-`
-
-const ProjectHeader = styled.header`
-  height: 200px;
-  position: relative;
-  overflow: hidden;
 `
 
 const ProjectName = styled.h2`  
@@ -81,9 +80,10 @@ const ProjectTag = styled.span`
 
 const Project = ({ title, name, description, tags, date, image, liveurl, featured, githuburl }) => {
   return (
-    <ProjectCard>
+    <article>
       <a href={liveurl} target="_blank" rel="noreferrer" style={{ color: 'var(--black)', textDecoration: 'none' }}>
-        {featured && (
+        {featured
+        && <>
           <ProjectHeader>
             <ProjectImage src={image} />
             <ProjectNameWrapper>
@@ -92,10 +92,16 @@ const Project = ({ title, name, description, tags, date, image, liveurl, feature
               </ProjectName>
             </ProjectNameWrapper>
           </ProjectHeader>
+          <ProjectTitle>
+            {title} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
+          </ProjectTitle>
+        </>}
+
+        {!featured && (
+          <ProjectTitle>
+            {name} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
+          </ProjectTitle>
         )}
-        <ProjectTitle>
-          {title} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
-        </ProjectTitle>
 
         <ProjectDescription>
           {description}
@@ -109,8 +115,7 @@ const Project = ({ title, name, description, tags, date, image, liveurl, feature
         <Pill variant="web" href={liveurl} />
         <Pill variant="github" href={githuburl} />
       </div>
-
-    </ProjectCard>
+    </article>
   )
 }
 export default Project
