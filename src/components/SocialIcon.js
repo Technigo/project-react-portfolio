@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
 import styled from 'styled-components/macro'
 
@@ -54,7 +53,7 @@ const variants = {
   }
 }
 
-const Icon = ({ variant, showText = false, size = 80, color = 'var(--heading)' }) => {
+const SocialIcon = ({ variant, showText = false, size = 80, color = 'var(--heading)' }) => {
   if (!variants[variant]) {
     throw new Error('Invalid variant passed to Icon component')
   }
@@ -79,4 +78,4 @@ const Icon = ({ variant, showText = false, size = 80, color = 'var(--heading)' }
   )
 }
 
-export default Icon
+export default SocialIcon

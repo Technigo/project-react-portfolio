@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import Icon from './Icon'
+import SocialIcon from './SocialIcon'
 import { ProfileImage, Wrapper } from './ComponentLibrary'
 
 const MainHeader = styled.header`
@@ -60,8 +60,8 @@ const Hero = () => {
     <MainHeader>
       <Wrapper>
         <IconContainer>
-          <Icon variant="linkedin" size={40} color="black" />
-          <Icon variant="github" size={40} color="black" />
+          <SocialIcon variant="linkedin" size={40} color="black" />
+          <SocialIcon variant="github" size={40} color="black" />
           {/* <Icon variant="stackoverflow" size={40} color="black" /> */}
         </IconContainer>
         <TextWrapper>

@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import styled from 'styled-components/macro'
 import { Heading } from './ComponentLibrary'
 import PageSection from './PageSection'
-import Icon from './Icon'
+import SocialIcon from './SocialIcon'
 
 const IconContainer = styled.div`
   display: grid;
@@ -29,8 +29,8 @@ const ForMore = () => {
         For more
       </Heading>
       <IconContainer>
-        <Icon variant="linkedin" showText size={iconSize} />
-        <Icon variant="github" showText size={iconSize} />
+        <SocialIcon variant="linkedin" showText size={iconSize} />
+        <SocialIcon variant="github" showText size={iconSize} />
         {/* <Icon variant="stackoverflow" showText size={iconSize} /> */}
       </IconContainer>
     </PageSection>
