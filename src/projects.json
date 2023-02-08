@@ -13,7 +13,7 @@
             "Mongo DB"
         ],
         "date": "January 2023",
-        "image": "http://placekitten.com/g/200/300",
+        "image": "/assets/images/projects/pokeyay.png",
         "liveurl": "https://aw-pokeyay.netlify.app/",
         "githuburl": "https://github.com/a-well/final-project",
         "featured": true
@@ -64,8 +64,8 @@
         ],
         "date": "October 2022",
         "image": "http://placekitten.com/g/200/300",
-        "liveurl": "https://happythoughtsproject.netlify.app/",
-        "githuburl": "https://github.com/a-well/project-happy-thoughts/",
+        "liveurl": "https://happythoughtsproject.netlify.app",
+        "githuburl": "https://github.com/a-well/project-happy-thoughts",
         "featured": false
     },
     {
@@ -80,7 +80,7 @@
         ],
         "date": "September 2022",
         "image": "/assets/images/projects/cloud.jpg",
-        "liveurl": "https://catnews.netlify.app",
+        "liveurl": "https://cloud-weather-app.netlify.app",
         "githuburl": "https://github.com/a-well/project-weather-app",
         "featured": true
     },
