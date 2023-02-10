@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components'
 import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
 
-import { SectionTitle, Container } from './StyleComp'
-import projects from './projects.json'
+import { SectionTitle, Container } from './Globalstyles.styled'
+import projects from '../data/projects.json'
 
 const FeaturedProjects = () => {
   return (
@@ -29,7 +29,7 @@ const FeaturedProjects = () => {
                   <a
                     href={project.repo_link}
                     target="_blank"
-                    rel="noreferrer"><TagRepo>GitHub Repo</TagRepo>
+                    rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
                   </a>
                 </TagWrapper>
               </div>
@@ -50,11 +50,12 @@ const FeaturedProjectsStyled = styled(Container)`
 const FeaturedProjectWrapper = styled(ProjectWrapper)`
     display: grid;
     grid-template-columns: 1fr;
-    position:relative;
+    gap: 2rem;
+    position: relative;
   
   @media (min-width: 1025px) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3vw;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 `
 const ImgWrapper = styled.div`

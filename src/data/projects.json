@@ -1,201 +1,220 @@
 [
     {
-          "title": "Weather App",
-          "id": 1,
-          "project_description": "A weather app that tells today's weather and a 5-day forecast using data from Open Weather API. Pair-programmed.",
-          "repo_link": "https://github.com/juliaostedt/project-weather-app",
-          "netlify_link": "https://stockholm-weather.netlify.app/",
-          "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-          "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          },
-          {
-          "id": 4,
-          "tech": "API"
-          }
-
-      ]
-      },
-      {
-          "title": "Guess Who",
-          "id": 2,
-          "project_description": "Digital version of the board game 'Guess Who' built in JavaScript that filters characters based on user guesses.",
-          "repo_link": "https://github.com/juliaostedt/project-guess-who",
-          "netlify_link": "https://guess-who-julia-ostedt.netlify.app/",
-          "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
-         "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          }
-      ]
-      },
-      {
-          "title": "PT Chatbot",
-          "id": 3,
-          "project_description": "Simple chatbot for workout recommendations built in JavaScript. Pair-programmed.",
-          "repo_link": "https://github.com/juliaostedt/project-chatbot",
-          "netlify_link": "https://pt-chat-bot.netlify.app/",
-          "project_img": "",
-          "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          }
-      ]
-      },
-      {
-          "title": "Music Releases",
-          "id": 4,
-          "project_description": "A responsive website using data from Spotify to show album and single releases. Pair-programmed.",
-          "repo_link": "https://github.com/juliaostedt/project-music-releases",
-          "netlify_link": "https://music-releases-petra-julia.netlify.app/",
-          "project_img": "",
-          "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          }
-          ,
-          {
-          "id": 4,
-          "tech": "React"
-          }
-      ]
-      },
-      {
-          "title": "Survey",
-          "id": 5,
-          "project_description": "Survey made with React to practice useState and conditional rendering.",
-          "repo_link": "https://github.com/juliaostedt/project-survey",
-          "netlify_link": "https://box-subscription-survey.netlify.app/",
-          "project_img": "",
-           "tags": [
-          {
-          "id": 1,
-          "tech": "JavaScript"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          }
-          ,
-          {
-          "id": 4,
-          "tech": "React"
-          }
-      ]
-      },
-         {
-          "title": "Happy Thoughts",
-          "id": 6,
-          "project_description": "A responsive website fetching and sending data to show happy thoughts.",
-          "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
-          "netlify_link": "https://happy-thoughts-julia.netlify.app/",
-          "project_img": "",
-         "tags": [
+        "title": "Weather App",
+        "id": 1,
+        "project_description": "A weather app that tells today's weather and a 5-day forecast using data from Open Weather API. Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-weather-app",
+        "netlify_link": "https://stockholm-weather.netlify.app/",
+        "project_img": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/793/original/weather-app.png?1676041678",
+        "tags": [
             {
-            "id": 1,
-            "tech": "React"
+                "id": 1,
+                "tech": "JavaScript"
             },
             {
-            "id": 2,
-            "tech": "HTML"
+                "id": 2,
+                "tech": "HTML"
             },
             {
-            "id": 3,
-            "tech": "CSS"
+                "id": 3,
+                "tech": "CSS"
             },
             {
-            "id": 4,
-            "tech": "API"
+                "id": 4,
+                "tech": "API"
             }
-      ]
-      },
-      {
-          "title": "Top Rated Movies",
-          "id": 7,
-          "project_description": "A site built in React where you can see an overview of top-rated movies. Pair-programmed.",
-          "repo_link": "https://github.com/juliaostedt/project-movies",
-          "netlify_link": "https://top-rated-movies-2afa29.netlify.app/",
-          "project_img": "",
-          "tags": [
-          {
-          "id": 1,
-          "tech": "React"
-          },
-          {
-          "id": 2,
-          "tech": "HTML"
-          },
-          {
-          "id": 3,
-          "tech": "CSS"
-          },
-          {
-          "id": 4,
-          "tech": "API"
-          }
-      ]
-      },
-      {
-          "title": "Space Trivia Quiz",
-          "id": 8,
-          "project_description": "A quiz built in React Redux to test your space knowledge. Mob- and Pair-programmed.",
-          "repo_link": "https://github.com/juliaostedt/project-redux-quiz",
-          "netlify_link": "https://space-trivia.netlify.app/",
-          "project_img": "",
-          "tags": [
-          {
-          "id": 1,
-          "tech": "React"
-          },
-          {
-          "id": 2,
-          "tech": "Redux"
-          },
-          {
-          "id": 3,
-          "tech": "Styled components"
-          }
-      ]
-      } 
+        ]
+    },
+    {
+        "title": "To-Do list",
+        "id": 2,
+        "project_description": "A todo app built in React Redux where users can add, remove and check their tasks.",
+        "repo_link": "https://github.com/juliaostedt/project-todos",
+        "netlify_link": "https://whatcha-doing.netlify.app/",
+        "project_img": "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/066/794/original/whatcha-doing.png?1676041794",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "React"
+            },
+            {
+                "id": 2,
+                "tech": "Redux"
+            },
+            {
+                "id": 3,
+                "tech": "Styled components"
+            }
+        ]
+    },
+    {
+        "title": "Guess Who",
+        "id": 9,
+        "project_description": "Digital version of the board game 'Guess Who' built in JavaScript that filters characters based on user guesses.",
+        "repo_link": "https://github.com/juliaostedt/project-guess-who",
+        "netlify_link": "https://guess-who-julia-ostedt.netlify.app/",
+        "project_img": "https://s3-alpha.figma.com/hub/file/948140848/1f4d8ea7-e9d9-48b7-b70c-819482fb10fb-cover.png",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "JavaScript"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            }
+        ]
+    },
+    {
+        "title": "PT Chatbot",
+        "id": 3,
+        "project_description": "Simple chatbot for workout recommendations built in JavaScript. Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-chatbot",
+        "netlify_link": "https://pt-chat-bot.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "JavaScript"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            }
+        ]
+    },
+    {
+        "title": "Music Releases",
+        "id": 4,
+        "project_description": "A responsive website using data from Spotify to show album and single releases. Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-music-releases",
+        "netlify_link": "https://music-releases-petra-julia.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "JavaScript"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            },
+            {
+                "id": 4,
+                "tech": "React"
+            }
+        ]
+    },
+    {
+        "title": "Survey",
+        "id": 5,
+        "project_description": "Survey made with React to practice useState and conditional rendering.",
+        "repo_link": "https://github.com/juliaostedt/project-survey",
+        "netlify_link": "https://box-subscription-survey.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "JavaScript"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            },
+            {
+                "id": 4,
+                "tech": "React"
+            }
+        ]
+    },
+    {
+        "title": "Happy Thoughts",
+        "id": 6,
+        "project_description": "A responsive website fetching and sending data to show happy thoughts.",
+        "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
+        "netlify_link": "https://happy-thoughts-julia.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "React"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            },
+            {
+                "id": 4,
+                "tech": "API"
+            }
+        ]
+    },
+    {
+        "title": "Top Rated Movies",
+        "id": 7,
+        "project_description": "A site built in React where you can see an overview of top-rated movies. Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-movies",
+        "netlify_link": "https://top-rated-movies-2afa29.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "React"
+            },
+            {
+                "id": 2,
+                "tech": "HTML"
+            },
+            {
+                "id": 3,
+                "tech": "CSS"
+            },
+            {
+                "id": 4,
+                "tech": "API"
+            }
+        ]
+    },
+    {
+        "title": "Space Trivia Quiz",
+        "id": 8,
+        "project_description": "A quiz built in React Redux to test your space knowledge. Mob- and Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-redux-quiz",
+        "netlify_link": "https://space-trivia.netlify.app/",
+        "project_img": "",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "React"
+            },
+            {
+                "id": 2,
+                "tech": "Redux"
+            },
+            {
+                "id": 3,
+                "tech": "Styled components"
+            }
+        ]
+    }
 ]

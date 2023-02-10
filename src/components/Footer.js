@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Icons } from './StyleComp.js'
+import { Icons } from './Globalstyles.styled.js'
 
 const Footer = ({ linkedinLogo, githubLogo }) => {
   return (
@@ -9,7 +9,7 @@ const Footer = ({ linkedinLogo, githubLogo }) => {
       <h2>Contact</h2>
       <p>Julia Östedt</p>
       <a href="mailto:julia.ostedt@gmail.com">
-          julia.ostedt@gmail.com
+        julia.ostedt@gmail.com
       </a>
       <FooterIcons>
         <a href="https://www.linkedin.com/in/juliaostedt/" aria-label="Link to LinkedIn profile">

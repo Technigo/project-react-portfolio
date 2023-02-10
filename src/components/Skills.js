@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionTitle, Container } from './StyleComp'
+import { SectionTitle, Container } from './Globalstyles.styled'
 
 const Skills = () => {
   return (
@@ -10,23 +10,22 @@ const Skills = () => {
       <StyledSkills>
         <ul>
           <SkillTitle>Code</SkillTitle>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>JavaScript ES6</li>
           <li>React</li>
-          <li>JavaScript</li>
+          <li>Redux</li>
+          <li>Node.js</li>
+          <li>HTML5</li>
+          <li>CSS</li>
           <li>Styled components</li>
         </ul>
         <ul>
           <SkillTitle>Tools</SkillTitle>
           <li>VS Code</li>
           <li>GitHub</li>
-          <li>Slack</li>
+          <li>Google Cloud</li>
+          <li>MongoDB</li>
+          <li>Figma</li>
           <li>Trello</li>
-        </ul>
-        <ul>
-          <SkillTitle>Upcoming</SkillTitle>
-          <li>Redux</li>
-          <li>Node.js</li>
         </ul>
       </StyledSkills>
     </StyledSkillsContainer>
@@ -43,7 +42,7 @@ const StyledSkillsContainer = styled(Container)`
 `
 const StyledSkills = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   
   @media screen and (min-width: 667px) {
     gap: 4em;

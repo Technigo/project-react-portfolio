@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import profileImg from '../assets/profile-img.jpg'
 import backgroundImg from '../assets/hero-1.jpg'
-import { Icons } from './StyleComp.js'
+import { Icons } from './Globalstyles.styled.js'
 
 const Header = ({ linkedinLogo, githubLogo }) => {
   return (
@@ -47,7 +47,7 @@ const HeaderStyling = styled.header`
   background-size:cover;
   background-repeat: no-repeat;
   color: white;
-  height: 45vh;
+  height: 50vh;
   width: 100%;
   position: relative;
 
@@ -56,7 +56,7 @@ const HeaderStyling = styled.header`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 60vh;
+    height: 45vh;
   }
 `
 const HeaderText = styled.div`
@@ -93,6 +93,7 @@ const HeaderText = styled.div`
   }
   @media screen and (min-width: 1024px) {
     left: 30%;
+    top: 40%;
     max-width: 20%;
     transform: scale(1.3)
   }

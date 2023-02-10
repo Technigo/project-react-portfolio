@@ -1,13 +1,16 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from './StyleComp';
+import { Container } from './Globalstyles.styled';
 
 const Intro = () => {
   return (
     <StyledIntro>
       <IntroText>
-        <Line /><Dot />Hi! I am Julia, I’m a creative-minded explorer with a love for new technologies and design. I strive to constantly grow while solving problems that matter and creating engaging solutions for products that people love! I stay motivated by collaborating with like-minded and with a curiosity about learning new things.
+        <Line /><Dot />Hi! I am Julia, I’m a creative-minded explorer with a love for new technologies and design.
+        I strive to constantly grow while solving problems that matter and creating engaging solutions for products that people love!
+        I stay motivated by collaborating with like-minded and with a curiosity about learning new things.
       </IntroText>
     </StyledIntro>
   )
@@ -16,11 +19,11 @@ const Intro = () => {
 export default Intro
 
 const StyledIntro = styled(Container)`
-  height: 25vh;
+  min-height: 25vh;
   background-color: var(--color-grey);
 
   @media screen and (min-width: 667px) {
-    height: 20vh;
+    min-height: 20vh;
   }
   `
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionSubTitle, Container } from './StyleComp'
-import projects from './projects.json'
+import { SectionSubTitle, Container } from './Globalstyles.styled'
+import projects from '../data/projects.json'
 
 const OtherProjects = () => {
   return (
@@ -25,7 +25,7 @@ const OtherProjects = () => {
               <a
                 href={projectList.repo_link}
                 target="_blank"
-                rel="noreferrer"><TagRepo>GitHub Repo</TagRepo>
+                rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
               </a>
             </TagWrapper>
           </ProjectWrapper>
