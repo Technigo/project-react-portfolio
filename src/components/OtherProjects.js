@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionSubTitle, Container } from './Globalstyles.styled'
+import { SectionSubTitle, Container } from './Globalstyles'
 import projects from '../data/projects.json'
 
 const OtherProjects = () => {

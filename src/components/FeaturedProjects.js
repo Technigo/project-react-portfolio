@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
 
-import { SectionTitle, Container } from './Globalstyles.styled'
+import { SectionTitle, Container } from './Globalstyles'
 import projects from '../data/projects.json'
 
 const FeaturedProjects = () => {
@@ -54,8 +54,8 @@ const FeaturedProjectWrapper = styled(ProjectWrapper)`
     position: relative;
   
   @media (min-width: 1025px) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    /* grid-template-columns: 1fr;
+    gap: 3rem; */
   }
 `
 const ImgWrapper = styled.div`

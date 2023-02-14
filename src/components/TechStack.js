@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionTitle, Container } from './Globalstyles.styled'
+import { SectionTitle, Container } from './Globalstyles'
 
 const TechStack = () => {
   return (

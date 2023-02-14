@@ -2,13 +2,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from './Globalstyles.styled';
+import { Container } from './Globalstyles';
 
 const Intro = () => {
   return (
     <StyledIntro>
       <IntroText>
-        <Line /><Dot />Hi! I am Julia, I’m a creative-minded explorer with a love for new technologies and design.
+        <Line /><Dot />Hi! I am Julia,  a creative-minded team player with a love for new technologies and design.
         I strive to constantly grow while solving problems that matter and creating engaging solutions for products that people love!
         I stay motivated by collaborating with like-minded and with a curiosity about learning new things.
       </IntroText>

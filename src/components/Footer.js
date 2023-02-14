@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Icons } from './Globalstyles.styled.js'
+import { Icons } from './Globalstyles.js'
 
 const Footer = ({ linkedinLogo, githubLogo }) => {
   return (
