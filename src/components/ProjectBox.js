@@ -30,9 +30,9 @@ export const ProjectBox = ({ list }) => {
             href={filteredProjects.html_url}
             target="_blank"
             rel="noreferrer">
-            <h2>{filteredProjects.name}</h2>
-            <img src={ProjectPicture} alt="coding" />
-            <p>{filteredProjects.description}</p>
+            <h2>{filteredProjects.name.replaceAll('-', ' ').replaceAll('project', '')}</h2>
+            <img src={`https://raw.githubusercontent.com/KajaWilbik/${filteredProjects.name}/master/thumbnail.png`} alt="thumbnail of project" />
+            {/* <p>{filteredProjects.description}</p> */}
           </a>
           <div className="tags">
               {/* fetched tags from Github. First => make a changes in githib in each project */}
@@ -67,6 +67,10 @@ const StyledProjectBox = styled.div`
     img {
     padding-top: 10px;
     width: 100%;
+    }
+
+    h2 {
+      text-transform: uppercase
     }
 
     .tags {
@@ -111,6 +115,7 @@ const StyledProjectBox = styled.div`
     h2 {
       text-align: center;
       font-size: 35px;
+
     }
 
     p {
@@ -118,10 +123,11 @@ const StyledProjectBox = styled.div`
     }
     
     img {
-      width: 50%;
-      height: 50%;
       align-content:center;
+      
     }
+
+
 
     .tags {
       padding: 7px;

@@ -11,12 +11,12 @@ import { Skills } from './components/Skills'
 import { GlobalStyling } from './components/Globalstyling'
 import { TitleBarStyling } from './components/Globalstyling'
 
-export const App = ({secondary}) => {
+export const App = () => {
   return (
   <GlobalStyling>
       <div>
       <Header />
-      <Pitch secondary />
+      <Pitch />
       <TitleBarStyling>
       <TitleBar name="tech" />
       </TitleBarStyling>
@@ -25,10 +25,6 @@ export const App = ({secondary}) => {
       <TitleBar name="projects" />
       </TitleBarStyling>
       <ProjectBox />
-      {/* <TitleBarStyling>
-      <TitleBar name="My thoughts" />
-      </TitleBarStyling>
-      <MyThoughts /> */}
       <TitleBarStyling>
       <TitleBar name="Skills" />
       </TitleBarStyling>
