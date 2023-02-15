@@ -17,6 +17,7 @@ font-family: 'Montserrat', sans-serif;
 
 export const ClonedRedTitle = styled(RedTitle)`
   font-weight: bold;
+  text-transform: uppercase;
 `
 
 export const Arrow = styled.span`
@@ -33,7 +34,7 @@ const OtherProjects = () => {
       .then((data) => SetOtherProjects(data))
   })
 
-  const filteredProjects = otherProjects.filter((project) => (project.name === 'project-happy-thoughts-api') || (project.name.includes('guess')) || (project.name.includes('redux')) || (project.name.includes('mongo-api')) || (project.name.includes('express')) || (project.name.includes('weather')))
+  const filteredProjects = otherProjects.filter((project) => (project.name === 'project-happy-thoughts-api') || (project.name.includes('guess')) || (project.name.includes('auth')) || (project.name.includes('mongo-api')) || (project.name.includes('express')) || (project.name.includes('weather')))
   return (
     <OuterWrapper>
       <InnerWrapper>

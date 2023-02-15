@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Kulturligtvis",
+        "projectname": "Final Project",
+        "homepage": "https://kulturligtvis.netlify.app/",
+        "description": "We created a website where people with an interest in culture and/or nature, can discover new places in Stockholm which are a bit unknown. We have listed a selection of different landmarks, and all registered users can connect with others who wants to visit the same location.",
+        "topics": ["HTML", "CSS", "Javascript", "Styled Components", "API", "React", "Redux", "MongoDB", "Mongoose"],
+        "image": "https://i.postimg.cc/rF3CY0wM/kulturligtvis.jpg"
+    },
+    {
+        "name": "Twitter Clone",
+        "projectname": "Project Happy Thoughts",
+        "homepage": "https://thehappiestthougths.netlify.app/",
+        "description": "This is a Twitter inspired feed full of happy thoughts, built with React, HTML and CSS. I build and backend API, witch I fetched the thoughts from.",
+        "topics": ["Animation", "Api", "Backend", "Css3", "Google-Cloud-Platform", "Html5", "Javascript", "Mongodb", "Mongoose", "Node", "React"],
+        "image": "https://i.postimg.cc/zfRvBvCD/happythoughts.jpg"
+    },
+    {
+        "name": "Netflix Clone",
+        "projectname": "Project Movies",
+        "homepage": "https://popular-new-movies.netlify.app/",
+        "description": "A React built website that shows the most popular movies in the US, where we fetched the data from an API",
+        "topics": ["Api","Css3", "Html5", "Javascript", "Pair-Programming", "React"],
+        "image": "https://i.postimg.cc/1zfgxMCd/movies.jpg"
+    },
+    {
+        "name": "Spotify Clone",
+        "projectname": "Project Music Releases",
+        "homepage": "https://top50music.netlify.app/",
+        "description": "A website that shows the 50 most popular albums on Spotify right now. It's built with React, and we fetched an API from Spotify.",
+        "topics": ["Api","Css3", "Html5", "Javascript", "Pair-Programming", "React"],
+        "image": "https://i.postimg.cc/25FtDF14/albums.jpg"
+    },
+    {
+        "name": "Tolkien Wishlist",
+        "projectname": "Project Survey",
+        "homepage": "https://astonishing-halva-8728d8.netlify.app/",
+        "description": "An accessible website where you can make your own wishlist of Tolkien books, built with React.",
+        "topics": ["Api","Css3", "Html5", "Javascript", "Styled Components", "React"],
+        "image": "https://i.postimg.cc/2yHLWJVC/tolkien.jpg"
+    },
+    {
+        "name": "To do list",
+        "projectname": "Project todos",
+        "homepage": "https://dottedtodo.netlify.app/",
+        "description": "A website with a to do list that counts how many tasks you have done, and how many's left. Built with React.",
+        "topics": ["Api","Css3", "Html5", "Javascript", "Styled Components", "Redux", "React"],
+        "image": "https://i.postimg.cc/Kzz9BXYY/todo.jpg"
+    },
+    {
+        "name": "Halloween Quiz",
+        "projectname": "Project Redux Quiz",
+        "homepage": "https://wonderful-macaron-ea2dd4.netlify.app/",
+        "description": "A Halloween quiz with 8 questions, built in React and Redux.",
+        "topics": ["Css3", "Html5", "Javascript", "Styled Components", "React", "Redux", "Mob-programming"],
+        "image": "https://i.postimg.cc/02sc8Jqn/quiz.jpg"
+    },
+    {
+        "name": "Labyrinth Game",
+        "projectname": "Project Labyrinth",
+        "homepage": "https://theamazingmaze.netlify.app/",
+        "description": "A labyrinth game built with React and Redux, using an API to handle the different game states.",
+        "topics": ["Api","Css3", "Html5", "Pair-Programming","Javascript", "Styled Components", "Redux", "React"],
+        "image": "https://i.postimg.cc/br59QdBC/labyrinth.jpg"
+    }
+]

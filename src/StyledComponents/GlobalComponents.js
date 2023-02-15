@@ -52,7 +52,6 @@ export const RedTitle = styled.h1`
   font-size: 24px;
   margin-top: 15px;
   font-weight:bold;
-
 `
 export const Link = styled.a`
   text-decoration: none;
@@ -72,12 +71,12 @@ i {
 
 export const TagsContainer = styled.div`
 display: flex;
-flex-direction: row;
+justify-content: flex-start;
 flex-wrap: wrap;
 margin: 15px;
 `
 
-export const Tags = styled.div`
+export const Tags = styled.span`
 font-family: "Roboto", sans-serif;
   font-weight: bold;
   background-color: #D7E3DA;
