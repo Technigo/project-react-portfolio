@@ -1,7 +1,7 @@
 import React from 'react'
 import './skills.css'
 import { BsTerminal, BsPatchCheckFill } from 'react-icons/bs'
-import { AiOutlineHtml5 } from 'react-icons/ai'
+import { AiOutlineHtml5, AiOutlineCloud } from 'react-icons/ai'
 import { DiJavascript } from 'react-icons/di'
 import { GrGroup } from 'react-icons/gr'
 import { SiRedux, SiSolidity, SiTailwindcss, SiMongodb, SiAntdesign, SiMysql } from 'react-icons/si'
@@ -112,6 +112,13 @@ const Skills = () => {
               <div>
                 <GrGroup />
                 <h4>Mob programming</h4>
+              </div>
+            </article>
+            <article className="skills__details">
+              <BsPatchCheckFill className="skills__details-icon" />
+              <div>
+                <AiOutlineCloud />
+                <h4>Devops: Google cloud and Azure</h4>
               </div>
             </article>
           </div>
