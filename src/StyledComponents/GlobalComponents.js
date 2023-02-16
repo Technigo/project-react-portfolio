@@ -64,9 +64,24 @@ a {
   color: white;
 }
 i {
-  margin: 5px;
-  font-size: 24px;
+  margin: 10px;
+  font-size: 30px;
+  text-shadow: 3px 1px 1px black;
+  :hover {
+    color: #233126;
+    transform: scale(1.2);
+  }
+  @media (min-width: 668px) and (max-width: 1024px) {
+    font-size: 34px;
+  }
+  @media (min-width: 1025px){ 
+    font-size: 44px;
+  }
+  @media (min-width: 1600px) {
+    font-size: 54px;
+  }
 }
+
 `
 
 export const TagsContainer = styled.div`

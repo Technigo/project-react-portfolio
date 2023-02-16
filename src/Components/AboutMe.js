@@ -36,11 +36,12 @@ const AboutMe = () => {
       <InnerWrapper>
         <BackgroundInfo>
 
-          <p> <Line /><Dot /> Hello! I'm an aspiring frontend developer with 8 years of
-        experience within office- and care administration.
-        Autumn of 2021 I decided that I wanted to switch career into tech, and joined
-        Technigos bootcamp in august 2022. I pay a lot of attention to details, and I also
-        really like to socialize, which makes coding the perfect fit for me.
+          <p> <Line /><Dot /> Hello! I'm a frontend developer who's motivated
+          by creativity and learning new things.
+          I have 8 years of experience within administration,
+          where customer service and being a system superuser has been a big part.
+          I love to read books (currently re-reading LOTR),
+          and socialize with friends and family.
           </p>
         </BackgroundInfo>
       </InnerWrapper>

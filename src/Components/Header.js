@@ -15,33 +15,32 @@ width: 100%;
     background-size: cover;
 
     h3 {
-      font-size: 24pt;
-      font-style: normal;
+    font-style: normal;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 19px;
     line-height: 18px;
     letter-spacing: 0.04em;
     width: 220px;
+    text-shadow: 3px 1px 1px black;
     }
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       font-weight: 700;
-    font-size: 40px;
     line-height: 49px;
     letter-spacing: 0.04em;
     font-family: 'Montserrat', sans-serif;
     width: 220px;
+    text-shadow: 3px 1px 1px black;
     }
     h2 {
-      font-size: 24pt;
-      font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.04em;
     width: 220px;
-  
+    text-shadow: 3px 1px 1px black;
     }
 `;
 
@@ -73,10 +72,16 @@ const Header = () => {
     <OuterWrapper>
       <Headerbackground>
         <ClonedSoMeIcons>
-          <a href="https://github.com/CeciliaMichele">
+          <a
+            href="https://github.com/CeciliaMichele"
+            target="_blank"
+            rel="noopener noreferrer">
             <i className="fa-brands fa-github" />
           </a>
-          <a href="https://www.linkedin.com/in/ceciliaraden/">
+          <a
+            href="https://www.linkedin.com/in/ceciliaraden/"
+            target="_blank"
+            rel="noopener noreferrer">
             <i className="fa-brands fa-linkedin-in" />
           </a>
         </ClonedSoMeIcons>
@@ -92,13 +97,3 @@ const Header = () => {
 }
 
 export default Header
-
-/*
-const NameOfElement = styled.div `
-background-color: red;
-`
-
-  <p lang="se">Portfolio: Cecilia Rådén</p>
-        <h1 class="title" tabindex="3">frontend developer</h1>
-        <h2 class="second-title">with an background within culture</h2>
-*/

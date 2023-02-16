@@ -5,6 +5,8 @@ import { SoMeIcons } from 'StyledComponents/GlobalComponents'
 
 const ForMore = styled.div`
 height: 5vh;
+padding: 15px;
+margin: 15px;
 `
 
 const ContactContainer = styled.div`
@@ -26,9 +28,10 @@ const ClonedSoMeIcons = styled(SoMeIcons)`
 display: flex;
 justify-content: center;
 align-items: center;
-color: black;
+bottom: 20%;
+
 a {
-  color: black;
+  color: #D7E3DA;;
 }
 `
 
