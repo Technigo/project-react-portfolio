@@ -13,9 +13,10 @@ export const About = () => {
          translator, and as my interest in the world of programming languages grew,
           I eventually decided to pursue a career in the tech sector.
         </p>
-        <p>I graduated from Technigo&apos;s comprehensive Frontend Developer
-         Bootcamp in January 2023, and I&apos;m currently looking for a
-         role in a workplace with a great learning environment.
+        <p>I&apos;ve taken a project-based approach to learning programming, and samples of my work
+          can be found below. I&apos;m currently looking for a junior developer position, and
+          I&apos;m always open to learning new things, so if you think I
+          might be a good fit for your team, please don&apos;t hesitate to get in touch!
         </p>
       </InnerWrapper>
     </OuterWrapper>
