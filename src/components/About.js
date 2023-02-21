@@ -43,14 +43,17 @@ export const LinkedBtn = styled.button`
 background-color: transparent;
 border: none;
 font-size: 2rem;
+img{
+width: 60%;
+}
 &:hover{
-  transform: scale(2);
+  transform: scale(1.2);
   cursor: pointer;
 }
 `
 
 export const About = styled.p`
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   font-size: 1.2rem;
   margin: 0 auto;
   color: #DCCFB4;
