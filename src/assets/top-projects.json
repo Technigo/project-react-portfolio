@@ -1,12 +1,12 @@
 [
 		{
 		  "title": "Project Gripp",
-		  "overlay": "Final Project",
+		  "overlay": "Card Game",
 		  "id": "1",
 		  "image": "https://i.imgur.com/0egM6dq.png",
 		  "netlify": "https://gripp.netlify.app",
 		  "github": "https://github.com/Sneezan/project-gripp",
-		  "description": "A simple card game to promote mental health",
+		  "description": "A project featuring a card game to promote mental health. Backend in Node.js and MongoDB, Express and frontend in React Native.",
 		  "tools": ["React NATIVE", "Node.js", "MongoDB", "Express API"]
 		},
 	{
@@ -16,7 +16,7 @@
 	  "image": "https://images2.imgbox.com/97/4c/W7s0RLHd_o.png",
 	  "netlify": "https://newly-release-movies.netlify.app/",
 	  "github": "https://github.com/Sneezan/project-movies",
-	  "description": "Bring drinks and snacks, movies & chill coming up!",
+	  "description": "Recent popular movie releases all collected. Here you can find inspiration for the next movie night! Just bring the snacks.",
 	  "tools": ["React", "JavaScript ES6", "Node.js", "CSS", "APIs"]
 	},
 	{
@@ -26,7 +26,7 @@
 		"image": "  https://i.imgur.com/aXEAZ0J.png",
 		"netlify": "https://authenticated.netlify.app/",
 		"github": "https://github.com/Sneezan/project-auth",
-		"description": "A log in page that authenticates the user and encrypts passwords.",
+		"description": "Mini fullstack project with an authenticated and encrypted backend. The user can create an account and log in.",
 		"tools": ["Backend", "Node.js", "JavaScript ES6", "Fullstack"]
 	  },
 	{
@@ -36,7 +36,7 @@
 	  "image": "https://images2.imgbox.com/04/b3/cxsi9iCr_o.png",
 	  "netlify": "https://the-music-release-project.netlify.app",
 	  "github": "https://github.com/Sneezan/project-music-releases",
-	  "description": "With react components, you can time travel to fall 2019.",
+	  "description": "What do you do with an old Spotify API? You of course collect the most popular songs of fall 2019. ",
 	  "tools": ["React", "Node", "CSS", "JavaScript ES6", "API"]
 	},
 	{
@@ -46,8 +46,8 @@
 	  "image": "https://i.imgur.com/h2tJ5f5.png",
 	  "netlify": "https://complete-today.netlify.app",
 	  "github": "https://github.com/Sneezan/project-todos",
-	  "description": "A todo app built with react and redux, packaged beautifully.",
-	  "tools": ["React", "Redux", "JavaScript ES6", "FAB" ]
+	  "description": "A todo app built with react and redux, packaged beautifully in bright orange. Here one can add tasks and tick them off.",
+	  "tools": ["React", "Redux", "JavaScript ES6", "FAB", "Local storage" ]
 	},
 	{
 		"title": "Happy Thoughts",
@@ -56,7 +56,7 @@
 		"image": "https://i.imgur.com/fiIiv4d.png",
 		"netlify": "https://onlyhappythoughts.netlify.app",
 		"github": "https://github.com/Sneezan/project-happy-thoughts",
-		"description": "Happy thoughts project was updated with a shiny, new backend.",
+		"description": "Full stack project. The Happy Thoughts project was updated with a shiny, new backend. Now all entries are saved in a database.",
 		"tools": ["Backend", "Fullstack", "JavaScript ES6", "API", "CSS"]
 	  },
 	{
@@ -76,7 +76,7 @@
 	"image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
 	"netlify": "https://selfassesment.netlify.app",
 	"github": "https://github.com/Sneezan/project-survey",
-	"description": "An homage to my previous career, now patients can self-assess.",
+	"description": "An homage to my previous career, now patients can self-asses with this little survey before the visist.",
 	"tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
   }
   ]
