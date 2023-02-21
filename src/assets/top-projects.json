@@ -1,14 +1,4 @@
 [
-		{
-		  "title": "Project Gripp",
-		  "overlay": "Card Game",
-		  "id": "1",
-		  "image": "https://i.imgur.com/0egM6dq.png",
-		  "netlify": "https://gripp.netlify.app",
-		  "github": "https://github.com/Sneezan/project-gripp",
-		  "description": "A project featuring a card game to promote mental health. Backend in Node.js and MongoDB, Express and frontend in React Native.",
-		  "tools": ["React NATIVE", "Node.js", "MongoDB", "Express API"]
-		},
 	{
 	  "title": "Newest movie releases",
 	  "overlay": "new movies",
@@ -20,19 +10,59 @@
 	  "tools": ["React", "JavaScript ES6", "Node.js", "CSS", "APIs"]
 	},
 	{
+		"title": "Gripp - Alpha version 1.0",
+		"overlay": "Gripp App",
+		"id": "9",
+		"image": "https://i.imgur.com/jgpJlDa.png",
+		"netlify": "https://grippapp.netlify.app",
+		"github": "https://github.com/Sneezan/gripp-app",
+		"description": "Project Gripp's Frontend - Get a grip(p), a cardgame to promote mental health. Built in React Native. Create a user and log in!",
+		"tools": ["React Native", "Redux", "EXPO", "React Native Navigation"]
+	  },		
+	{
+		"title": "Project Gripp",
+		"overlay": "Card Game",
+		"id": "2",
+		"image": "https://i.imgur.com/0egM6dq.png",
+		"netlify": "https://gripp.netlify.app",
+		"github": "https://github.com/Sneezan/project-gripp",
+		"description": "A project featuring a card game to promote mental health. Backend in Node.js and MongoDB, Express and frontend in React Native.",
+		"tools": ["React NATIVE", "Node.js", "MongoDB", "Express API"]
+	  },
+	{
 		"title": "Authenticated",
 		"overlay": "log in ",
-		"id": "7",
-		"image": "  https://i.imgur.com/aXEAZ0J.png",
+		"id": "3",
+		"image": "https://i.imgur.com/auOOpTm.png",
 		"netlify": "https://authenticated.netlify.app/",
 		"github": "https://github.com/Sneezan/project-auth",
 		"description": "Mini fullstack project with an authenticated and encrypted backend. The user can create an account and log in.",
 		"tools": ["Backend", "Node.js", "JavaScript ES6", "Fullstack"]
 	  },
+	  {
+		"title": "Todo today",
+		"overlay": "todo app",
+		"id": "4",
+		"image": "https://i.imgur.com/h2tJ5f5.png",
+		"netlify": "https://complete-today.netlify.app",
+		"github": "https://github.com/Sneezan/project-todos",
+		"description": "A todo app built with react and redux, packaged beautifully in bright orange. Here one can add tasks and tick them off.",
+		"tools": ["React", "Redux", "JavaScript ES6", "FAB", "Local storage" ]
+	  },
+	  {
+		"title": "Create, Read, Update & Delete",
+		"overlay": "CRUD",
+		"id": "5",
+		"image": "https://i.imgur.com/t3Vj24j.png",
+		"netlify": "https://crud-sneezan.netlify.app",
+		"github": "https://github.com/Sneezan/CRUD-test",
+		"description": "Create a user, read, search, filter, update and delete. A project packed with functionality and less design.",
+		"tools": ["React", "Styled components", "JavaScript", "Redux", "Filter"]
+	  },
 	{
 	  "title": "Music releases",
 	  "overlay": "new music releases",
-	  "id": "2",
+	  "id": "6",
 	  "image": "https://images2.imgbox.com/04/b3/cxsi9iCr_o.png",
 	  "netlify": "https://the-music-release-project.netlify.app",
 	  "github": "https://github.com/Sneezan/project-music-releases",
@@ -40,45 +70,15 @@
 	  "tools": ["React", "Node", "CSS", "JavaScript ES6", "API"]
 	},
 	{
-	  "title": "Todo today",
-	  "overlay": "todo app",
-	  "id": "3",
-	  "image": "https://i.imgur.com/h2tJ5f5.png",
-	  "netlify": "https://complete-today.netlify.app",
-	  "github": "https://github.com/Sneezan/project-todos",
-	  "description": "A todo app built with react and redux, packaged beautifully in bright orange. Here one can add tasks and tick them off.",
-	  "tools": ["React", "Redux", "JavaScript ES6", "FAB", "Local storage" ]
-	},
-	{
 		"title": "Happy Thoughts",
 		"overlay": "the nice twitter",
-		"id": "8",
+		"id": "7",
 		"image": "https://i.imgur.com/fiIiv4d.png",
 		"netlify": "https://onlyhappythoughts.netlify.app",
 		"github": "https://github.com/Sneezan/project-happy-thoughts",
 		"description": "Full stack project. The Happy Thoughts project was updated with a shiny, new backend. Now all entries are saved in a database.",
 		"tools": ["Backend", "Fullstack", "JavaScript ES6", "API", "CSS"]
-	  },
-	{
-	"title": "Cecilia's portfolio",
-	"overlay": "The portfolio",
-	"id": "4",
-	"image": "https://i.imgur.com/fxVCs5d.png",
-	"netlify": "https://github.com/Sneezan/project-react-portfolio",
-	"github": "https://github.com/Sneezan/project-react-portfolio",
-	"description": "You are actually viewing this project live right now! Click to view on GitHub",
-	"tools": ["React", "Styled components", "JavaScript"]
-  },
-  {
-	"title": "Dental self assessment",
-	"overlay": "The Self Assessment",
-	"id": "5",
-	"image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
-	"netlify": "https://selfassesment.netlify.app",
-	"github": "https://github.com/Sneezan/project-survey",
-	"description": "An homage to my previous career, now patients can self-asses with this little survey before the visist.",
-	"tools": ["React", "CSS", "JavaScript ES6", "Loops", "Arrays"]
-  }
+	  }
   ]
 
 

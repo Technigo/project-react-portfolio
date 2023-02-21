@@ -1,20 +1,11 @@
 [
   {
-    "title": "Gripp - Frontend in React Native",
-    "id": "9",
-    "image": "",
-    "netlify": "https://grippapp.netlify.app",
-    "github": "https://github.com/Sneezan/gripp-app",
-    "description": "The final project in native!",
-    "tools": ["React Native", "Redux", "EXPO", "React Native Navigation"]
-  },
-  {
     "title": "Gripp - Backend",
     "id": "9",
     "image": "",
     "netlify": "",
     "github": "https://github.com/Sneezan/gripp-backend",
-    "description": "The backend built for project Gripp App",
+    "description": "The backend built in Node.js for project Gripp App. The data is stored in MongoDB.",
     "tools": ["Authentication", "Node.js", "EspressAPI", "MongoDB"]
   },
   {
@@ -23,8 +14,8 @@
     "image": "",
     "netlify": "https://onlyhappythoughts.netlify.app/",
     "github": "https://github.com/Sneezan/project-happy-thoughts",
-    "description": "A new personal backend built and added to the happy thoughts project",
-    "tools": ["Backend", "Node.js", "EspressAPI", "MongoDB"]
+    "description": "The happy thoughts project got a face-lift. A new color scheme that's bright pink as well as a backend.",
+    "tools": ["JavaScript", "React", "Styled components", "Fullstack"]
   },
   {
     "title": "Happy Thoughts Backend",
@@ -32,7 +23,7 @@
     "image": "",
     "netlify": "",
     "github": "https://github.com/Sneezan/happy-thoughts-backend",
-    "description": "This is the backend built for the Happy Thoughts project ",
+    "description": "This is the backend built for the Happy Thoughts project. Now the messages stays displayed in the feed it's posted.",
     "tools": ["Backend", "Node.js", "RESTapi", "MongoDB"]
   },
   {
@@ -42,16 +33,45 @@
     "image": "https://i.imgur.com/iATc4NK.png",
     "netlify": "https://weatherclouds.netlify.app",
     "github": "https://github.com/Sneezan/project-weather-app",
-    "description": "Simple and stylish weather app built with JavaScript & open weather API",
-    "tools": ["JavaScript ES6", "API", "CSS"]
+    "description": "One of the first JS projects, a stylish yet simple weather app built with JavaScript & open weather API. You can search for a city and the colorscheme changes depending on the forecast.",
+    "tools": ["JavaScript", "API", "CSS"]
   },
+  {
+    "title": "Cecilia's portfolio",
+    "overlay": "The portfolio",
+    "id": "4",
+    "image": "https://i.imgur.com/fxVCs5d.png",
+    "netlify": "https://github.com/Sneezan/project-react-portfolio",
+    "github": "https://github.com/Sneezan/project-react-portfolio",
+    "description": "You are actually viewing this project live right now! Click to view the code on GitHub",
+    "tools": ["React", "Styled components", "JavaScript"]
+    },
+    {
+      "title": "Dental self assessment",
+      "overlay": "The Self Assessment",
+      "id": "8",
+      "image": "https://images2.imgbox.com/58/67/3mMcAGOy_o.png",
+      "netlify": "https://selfassesment.netlify.app",
+      "github": "https://github.com/Sneezan/project-survey",
+      "description": "An homage to my previous career, now patients can self-asses with this little survey before the visist.",
+      "tools": ["React", "CSS", "JavaScript", "Loops", "Arrays"]
+      },
+      { 
+        "title": "AI RENDERED IMAGES QUIZ",
+        "id": "7",
+        "image": "",
+        "netlify": "https://quiz-ai.netlify.app/",
+        "github": "https://github.com/Sneezan/project-redux-quiz",
+        "description": "Do you really have a better eye than an AI? Redux mob-programming project.",
+        "tools": ["React", "Redux", "JavaScript", "mob-programming", "routes"]
+      },
   {
     "title": "Labyrinth game",
     "id": "6",
     "image": "",
     "netlify": "https://developerslabyrinth.netlify.app",
     "github": "https://github.com/Sneezan/project-labyrinth",
-    "description": "Navigate through the semi-fun developers labyrinth",
+    "description": "Navigate through the semi-fun developers labyrinth with buttons. There are more fun games out there - you've been warned.",
     "tools": ["React", "Redux", "JavaScript", "pair-programming"]
   },
   {
@@ -60,18 +80,18 @@
     "image": "",
     "netlify": "",
     "github": "https://github.com/Sneezan/project-express-api",
-    "description": "Backend project building an API with multiple RESTful endpoints",
-    "tools": ["Backend", "Node.js", "RESTapi"]
+    "description": "Small backend project. First time building an API with multiple RESTful endpoints and deploying on GCP",
+    "tools": ["Backend", "Node.js", "RESTapi", "Google Cloud"]
   },
-      { 
-        "title": "AI RENDERED IMAGES QUIZ",
-        "id": "7",
-        "image": "",
-        "netlify": "https://quiz-ai.netlify.app/",
-        "github": "https://github.com/Sneezan/project-redux-quiz",
-        "description": "Do you really have a better eye than an AI?",
-        "tools": ["React", "Redux", "JavaScript", "mob-programming", "routes"]
-      },
+  {
+    "title": "Frontend Test",
+    "id": "13",
+    "image": "",
+    "netlify": "https://frontendtest-cecilia.netlify.app",
+    "github": "https://github.com/Sneezan/frontend-test",
+    "description": "A simple test in frontend skills for a company specializing in the use of CMS - November 2022.",
+    "tools": ["JavaScript", "CSS", "HTML"]
+  },
       {
         "title": "Guess Who Game",
         "id": "12",
@@ -79,7 +99,7 @@
         "netlify": "https://guess-who-ceciliaf.netlify.app",
         "github": "https://github.com/Sneezan/project-guess-who-game",
         "description": "A mildly entertaining turn of Guess Who",
-        "tools": ["JavaScript ES6", "Arrays", "Loops"]
+        "tools": ["JavaScript", "Arrays", "Loops"]
       },
       {
         "title": "The PepBot",
@@ -88,7 +108,7 @@
         "netlify": "https://thepepbot.netlify.app",
         "github": "https://github.com/Sneezan/project-chatbot",
         "description": "A simple collapsible bot-style chat, one of the first JS projects",
-        "tools": ["JavaScript ES6", "CSS", "Collapsible"]
+        "tools": ["JavaScript", "CSS", "Collapsible"]
       },
       {
         "title": "Interstellar Academy",
@@ -106,8 +126,8 @@
         "image": "",
         "netlify": "https://storied-choux-872962.netlify.app/",
         "github": "https://github.com/Sneezan/project-news-site",
-        "description": "Here it is - the first project - it can only go up from here",
-        "tools": ["CSS", "HTML", "Flex & Grid"]
+        "description": "Here it is - the first project - it can only go up from here. My pre-project for starting the bootcamp.",
+        "tools": ["CSS", "HTML", "Flex & Grid", "No JS"]
       },
       {
         "title": "NEW YORK DOG WALKER",
@@ -115,7 +135,7 @@
         "image": "",
         "netlify": "https://coruscating-sopapillas-e37efd.netlify.app",
         "github": "https://github.com/Sneezan/project-business-site",
-        "description": "Business front built in our first mob-programming session",
-        "tools": ["HTML", "CSS"]
+        "description": "Business front/ landing page built in a mob-programming session",
+        "tools": ["HTML", "CSS", "JavaScript"]
       }
   ]
