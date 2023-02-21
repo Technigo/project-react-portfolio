@@ -21,7 +21,7 @@ padding-right: 25%;
 
 export const Line = styled.span`
     width: 30px;
-    border: 1px solid var(--lightRose);
+    border: 1px solid #337F96;
     display: inline-block;
     margin-bottom: 4px;
 `;
@@ -29,7 +29,7 @@ export const Line = styled.span`
 export const Dot = styled.span`
     height: 10px;
     width: 10px;
-    background-color: var(--lightRose);
+    background-color: #337F96;
     border-radius: 50%;
     display: inline-block;
 `;
@@ -44,15 +44,16 @@ background-color: transparent;
 border: none;
 font-size: 2rem;
 &:hover{
-  font-size: 2.4rem;
+  transform: scale(2);
+  cursor: pointer;
 }
 `
 
 export const About = styled.p`
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   font-size: 1.2rem;
   margin: 0 auto;
-  color: white;
+  color: #DCCFB4;
 
 @media (min-width: 1200px) {
   line-height: 1.8rem;

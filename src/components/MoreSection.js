@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Section, TextWrapper } from 'components/Section';
 
-import GitHub from '../images/1.png'
-import LInkedIn from '../images/2.png'
+import GitHub from '../images/cat1.png'
+import LInkedIn from '../images/link1.png'
 
 const MoreSection = () => {
   return (
@@ -38,7 +38,7 @@ display: flex;
 `;
 
 const IconSection = styled(Section)`
-background-color: var(--vivaMagentaDark);
+background-color: var(--mudSlide);
 `;
 
 const IconContainer = styled.div`

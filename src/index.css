@@ -1,14 +1,12 @@
 :root {
-  --darkBurgundy: #7D0202;
-  --mineShaft: #242424; 
-  --tundora: #464646;
-  --mineShaft: #242424; 
+  --darkChocolate: #31272a; 
+  --mudSlide: #5D4748; 
   --warmWhite: #F4F2F2;
-  --milanoPink: #f66099; 
-  --vivaMagenta: #BE284C; 
-  --vivaMagentaDark: #7b1930; 
-  --rose: #E7447B; 
-  --lightRose: #f8ccdb; 
+  --lightMudSlide: #a28889; 
+
+  --mineShaft: #181012; 
+  --purpleHighlight: #3D7183; 
+  --steelBlue: #294f5c; 
 }
 
 body {
@@ -17,7 +15,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7b1930;
+  background-color: var(--mudSlide);
 }
 
 code {

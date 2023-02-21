@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, SectionTitle, TextWrapper, Wrapper, Span } from './Section';
-import ArticleMockup from '../images/finishedvideo.png'
+import ArticleMockup from '../images/finished.png'
 
 const Thoughts = () => {
   return (
@@ -13,7 +13,7 @@ const Thoughts = () => {
             <ArticleImg src={ArticleMockup} />
           </ImageWrapper>
           <ArticleWrapper>
-            <Date>17 November</Date>
+            <Date>21 February 2023</Date>
             <a
               href="https://medium.com/@ceciliafraanlund/confessions-of-a-good-girl-ff3babcbb2ca"
               target="_blank"
@@ -25,7 +25,7 @@ const Thoughts = () => {
               days to come up with a fullstack project <Span>&gt;&gt;</Span>
               </p>
             </a>
-            <Date>16 October</Date>
+            <Date>16 October 2022</Date>
             <a
               href="https://medium.com/@ceciliafraanlund/8-things-i-wish-i-knew-before-starting-a-tech-boot-camp-cca7e03bf133"
               target="_blank"
@@ -47,7 +47,7 @@ const Thoughts = () => {
 export default Thoughts;
 
 const ThoughtsSection = styled(Section)`
-background-color: var(--vivaMagenta);
+background-color: var(--darkChocolate);
 `
 
 const ArticleWrapper = styled.div`
@@ -58,7 +58,7 @@ padding: 5%;
     text-transform: uppercase;
   }
   span {
-    color: var(--mineShaft);
+    color: var(--lightMudSlide);
     font-weight: 800;
   }
   a {
@@ -87,7 +87,7 @@ const ImageWrapper = styled.div`
 display:flex;
 `;
 const Date = styled.h4`
-color: var(--mineShaft);
+color: var(--lightMudSlide);
 text-transform: uppercase;
 `;
 

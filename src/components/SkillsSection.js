@@ -9,7 +9,7 @@ const SkillSection = () => {
       <CenterSkills>
         <SkillWrapper>
           <SkillsBox>
-            <h5> CODE </h5>
+            <SkillTitle> CODE </SkillTitle>
             <ul>
               <li>JavaScript</li>
               <li>React</li>
@@ -25,17 +25,34 @@ const SkillSection = () => {
             </ul>
           </SkillsBox>
           <SkillsBox>
-            <h5>Toolbox</h5>
+            <SkillTitle>Toolbox</SkillTitle>
             <ul>
               <li>Figma & Figjam</li>
               <li>Adobe Photoshop</li>
               <li>Canva</li>
               <li>Slack</li>
-              <li>Github</li>
+              <li>GitHub</li>
               <li>VScode</li>
               <li>Google Cloud</li>
               <li>Postman</li>
               <li>Adobe Illustrator</li>
+            </ul>
+          </SkillsBox>
+          <SkillsBox>
+            <SkillTitle>Soft Skills</SkillTitle>
+            <ul>
+              <li>Team-player</li>
+              <li>Leadership skills</li>
+              <li>Caring</li>
+              <li>Social</li>
+              <li>Extrovert</li>
+            </ul>
+          </SkillsBox>
+          <SkillsBox>
+            <SkillTitle>Next up</SkillTitle>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
             </ul>
           </SkillsBox>
         </SkillWrapper>
@@ -52,6 +69,12 @@ padding-right: 20%;
 }
 `;
 
+const SkillTitle = styled.p`
+color: #DCCFB4;
+font-weight: 700;
+font-size: 1.2rem;
+text-transform: uppercase;
+`
 const SkillWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

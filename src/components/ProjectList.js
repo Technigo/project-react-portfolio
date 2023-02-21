@@ -37,7 +37,7 @@ margin: 2px;
 `;
 
 const OtherSectionTitile = styled(SectionTitle)`
-color: var(--vivaMagenta);
+color: var(--darkChocolate);
 padding-top: 50px;
 font-size: 1.7rem;
 `;
@@ -46,4 +46,7 @@ const ListDescription = styled(ProjectDescription)`
 color: var(--mineShaft);;
 font-size: 1.3rem;
 font-weight: 500;
+&:hover{
+  color: var(--purpleHighlight);
+}
 `;

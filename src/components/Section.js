@@ -22,24 +22,14 @@ export const SectionTitle = styled.h2`
   padding: 10px;
   margin: 10px auto;
   margin-bottom: 20px;
-  color: white;
-`;
-
-export const SubTitle = styled.h2`
-  font-family: 'Montserrat', sans-serif;
-  width: fit-content;
-  text-transform: uppercase;
-  padding: 10px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  color: black;
+  color: var(--warmWhite);
 `;
 
 /* ----DECORATIONS--- */
 
 export const Span = styled.span`
 font-weight: 900;
-color: var(--mineShaft);
+color: var(--purpleHighlight);
 `;
 
 export const Highlight = styled.span`

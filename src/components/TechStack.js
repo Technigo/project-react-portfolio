@@ -9,7 +9,8 @@ padding-right: 10%;
 padding: 6%;
 text-align: center;
 font-size: 1.3rem;
-color: var(--milanoPink);
+color: var(--lightMudSlide);
+font-weight: 500;
 @media (min-width: 800px) {
 padding-left: 25%;
 padding-right: 25%;
@@ -23,16 +24,16 @@ font-size: 1.7rem;
 `;
 
 const TechSection = styled(Section)`
-background-color: var(--vivaMagenta);
+background-color: var(--darkChocolate);
 `
 
 const TechStack = () => {
   return (
     <TechSection>
       <Wrapper>
-        <SectionTitle>Tech Stack</SectionTitle>
+        <SectionTitle>some of my skills</SectionTitle>
         <TechStackWrap>
-          <Highlight>JavaScript ES6 </Highlight>| HTML5 |<Highlight> React </Highlight> |
+          <Highlight>JavaScript </Highlight>| HTML5 |<Highlight> React </Highlight> |
           <Highlight> CSS </Highlight>| Redux | <Highlight> Node.js </Highlight> | Flexbox | APIs |
           <Highlight> Agile Methodologies</Highlight>  |  mob-programming |  MongoDB & Mongoose |
          Git |  <Highlight>Pair-programming</Highlight> | web Accessibility |

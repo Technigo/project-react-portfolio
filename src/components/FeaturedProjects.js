@@ -37,8 +37,8 @@ padding-right: 25%;
 `;
 
 const FeaturedTitle = styled(SectionTitle)`
-color: var(--vivaMagenta);
-border: 3.5px solid var(--vivaMagenta);
+color: var(--darkChocolate);
+border: 3.5px solid var(--darkChocolate);
 margin-top: 30px;
 margin-bottom: 40px;
 `

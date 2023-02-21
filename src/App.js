@@ -17,9 +17,9 @@ export const App = () => {
       <AboutSection />
       <TechStack />
       <FeaturedProjects />
-      <Thoughts />
       <SkillSection />
       <MoreSection />
+      <Thoughts />
       <ContactFooter />
     </div>
   )

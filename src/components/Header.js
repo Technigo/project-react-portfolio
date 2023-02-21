@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
-import Cecilia from '../images/profile.png'
-import GitHub from '../images/1m.png'
-import LInkedIn from '../images/2m.png'
-import BackgroundImage from '../images/pinksilk.png'
+import Cecilia from '../images/profileimg.png'
+import GitHub from '../images/cat1.png'
+import LInkedIn from '../images/link1.png'
+import BackgroundImage from '../images/SpaceHeader4.png'
 
 const Header = () => {
   return (
@@ -28,8 +28,8 @@ const Header = () => {
           </a>
         </IconsContainer>
         <BackgroundImg src={BackgroundImage} />
-        <Name>Cecilia Frånlund</Name>
-        <Title>frontend developer</Title>
+        <Name>Frontend developer</Name>
+        <Title>Cecilia Frånlund</Title>
       </Background>
       <a
         href="https://www.linkedin.com/in/ceciliafranlund/"
@@ -43,7 +43,7 @@ const Header = () => {
 export default Header;
 
 const Background = styled.header`
-  background-color: var(--rose);
+  background-color: var(--mudSlide);
   width: 100%;
   height: 450px;
   display: flex;
@@ -54,6 +54,7 @@ const Background = styled.header`
 
 const BackgroundImg = styled.img`
   background-size: cover;
+  opacity: 80%;
   @media (max-width: 455px) {
     height: 100%;
   }
@@ -67,6 +68,7 @@ const IconsContainer = styled.div`
   position: absolute;
   top: 2.5rem;
   right: 4.5rem;
+  z-index: 2;
   & img {
     height: auto;
     width: 55px;
@@ -87,11 +89,11 @@ const Title = styled.h1`
     width: 300px;
     top: 35%;
     left: 10%;
-    color: var(--mineShaft);
+    color: var(--warmWhite);
     font-size: 3rem;
     line-height: 2.8rem;
     font-family: roboto;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 1px white;
   @media (min-width: 900px) {
     font-size: 4.9rem;
     line-height: 3.9rem;
@@ -132,13 +134,13 @@ const ProfileImage = styled.img`
     right: -20px;
     top: 230px;
     border-radius: 50%;
-    border: 5px solid var(--vivaMagentaDark);
+    border: 5px solid var(--mudSlide);
 
     @media (min-width: 770px) {
       right: 20px;
       &:hover {
       filter: blur(2px);
-      border: 5px solid var(--rose);
+      border: 5px solid #643036;
     }
   }
   @media (min-width: 900px) {

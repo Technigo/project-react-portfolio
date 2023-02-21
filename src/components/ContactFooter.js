@@ -38,5 +38,5 @@ h2{
 `;
 
 const Footer = styled(Section)`
-background-color: var(--mineShaft);
+background-color: var(--darkChocolate);
 `;
