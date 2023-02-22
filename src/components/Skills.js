@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import { Headings } from './Reusable/Headings';
 
 import { OuterWrapper } from './Styles/Globalstyles'

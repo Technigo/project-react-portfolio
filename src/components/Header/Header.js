@@ -1,49 +1,50 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 import profileImg from '../../assets/profile-img.jpg'
 import backgroundImg from '../../assets/hero-1.jpg'
-import { Icons } from '../Styles/Globalstyles.js'
+import { Icons, InnerWrapper, OuterWrapper } from '../Styles/Globalstyles.js'
 
 const Header = ({ linkedinLogo, githubLogo }) => {
   return (
     <StyledHeader>
-      <HeaderIcons>
-        <a
-          href="https://www.linkedin.com/in/juliaostedt/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to LinkedIn profile">
-          <img src={linkedinLogo} alt="LinkedIn logo" />
-        </a>
-        <a
-          href="https://github.com/juliaostedt"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link to LinkedIn profile">
-          <img src={githubLogo} alt="github logo" />
-        </a>
-      </HeaderIcons>
-      <HeadingsContainer>
-        <h1>Portfolio: <span>Julia Östedt</span></h1>
-        <h2>frontend developer</h2>
-        <h3>with an executive assistant background</h3>
-      </HeadingsContainer>
-      <ProfileImg
-        src={profileImg}
-        alt="headshot-of-Julia" />
+      <InnerWrapper>
+        <HeaderIcons>
+          <a
+            href="https://www.linkedin.com/in/juliaostedt/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Link to LinkedIn profile">
+            <img src={linkedinLogo} alt="LinkedIn logo" />
+          </a>
+          <a
+            href="https://github.com/juliaostedt"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Link to LinkedIn profile">
+            <img src={githubLogo} alt="github logo" />
+          </a>
+        </HeaderIcons>
+        <HeadingsContainer>
+          <h1>Portfolio: <span>Julia Östedt</span></h1>
+          <h2>frontend developer</h2>
+          <h3>with an executive assistant background</h3>
+        </HeadingsContainer>
+        <ProfileImg
+          src={profileImg}
+          alt="headshot-of-Julia" />
+      </InnerWrapper>
     </StyledHeader>
   )
 }
 
 export default Header
 
-const StyledHeader = styled.header`
+const StyledHeader = styled(OuterWrapper)`
   background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImg});
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
-  width: 100%;
   position: relative;
 
   @media (min-width: 667px) and (max-width: 1024px) {
@@ -57,11 +58,10 @@ const StyledHeader = styled.header`
 
 const HeadingsContainer = styled.div`
   position: absolute;
+  max-width: 55%;
   color: whitesmoke;
   top: 30%;
-  left: 8%;
-  max-width: 55%;
-  font-family: "Montserrat", sans-serif;
+  left: 10%;
 
   & h1 {
   font-family: "Roboto", sans-serif;
@@ -75,13 +75,12 @@ const HeadingsContainer = styled.div`
 
   & h2 {
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-size: 2em;
   }
 
   & h3 {
   line-height: 1.5em;
-  font-size: 1rem
   }
 
   @media (min-width: 667px) and (max-width: 1024px) {
@@ -105,7 +104,6 @@ const ProfileImg = styled.img`
   opacity: 93%;
   border-radius: 50%;
   width: 160px;
-  height: auto;
 
   @media (min-width: 667px) and (max-width: 1024px) {
     right: 20%;
@@ -130,11 +128,7 @@ const HeaderIcons = styled(Icons)`
   }
   @media screen and (min-width: 1024px) {
     right: 30%;
-    
-    & :hover {
-      opacity: 75%;
-      transition: 0.3s ease;
-    }
+
   }
 
 `

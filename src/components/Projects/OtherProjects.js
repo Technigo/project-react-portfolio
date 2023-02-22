@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { OuterWrapper } from './Styles/Globalstyles'
-import { Headings } from './Reusable/Headings';
-import projects from '../data/projects.json'
+import { OuterWrapper } from '../Styles/Globalstyles'
+import projects from '../../data/projects.json'
+import { Headings } from '../Reusable/Headings';
 
 const OtherProjects = () => {
   return (

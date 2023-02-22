@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Intro from './Intro/Intro'
-import TechStack from './TechStack'
-import FeaturedProjects from './FeaturedProjects'
+import TechStack from './Tech/TechStack'
+import FeaturedProjects from './Projects/FeaturedProjects'
 /* import Thoughts from './Thoughts'
  */import Skills from './Skills'
 

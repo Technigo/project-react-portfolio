@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 import { Icons, OuterWrapper } from './Styles/Globalstyles.js'
 import { Headings } from './Reusable/Headings';
@@ -16,7 +16,7 @@ const Footer = ({ linkedinLogo, githubLogo }) => {
         <a href="https://www.linkedin.com/in/juliaostedt/" aria-label="Link to LinkedIn profile">
           <img src={linkedinLogo} alt="LinkedIn logo" />
         </a>
-        <a href="https://github.com/juliaostedt" aria-label="Link to LinkedIn profile">
+        <a href="https://github.com/juliaostedt" aria-label="Link to GitHub profile">
           <img src={githubLogo} alt="github logo" />
         </a>
       </FooterIcons>
@@ -32,7 +32,7 @@ color: white;
 
 @media screen and (min-width: 1024px) {
   a:hover {
-    border-bottom: 2px solid #fff;
+    font-weight: 700;
   }
 }
 `

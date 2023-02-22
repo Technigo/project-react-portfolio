@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components'
-import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
+import styled from 'styled-components/macro'
+import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title } from './OtherProjects';
 
-import { OuterWrapper } from './Styles/Globalstyles'
-import { Headings } from './Reusable/Headings';
-import projects from '../data/projects.json'
+import { OuterWrapper } from '../Styles/Globalstyles'
+import { Headings } from '../Reusable/Headings';
+import projects from '../../data/projects.json'
 
 const FeaturedProjects = () => {
   return (
@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
         <Headings heading="Featured Projects" />
         <div>
           {projects.slice(0, 2).map((project) => (
-            <FeaturedProjectWrapper key={project.id}>
+            <div key={project.id}>
               <div>
                 <a href={project.netlify_link} target="_blank" rel="noreferrer">
                   <ImgWrapper>
@@ -34,7 +34,7 @@ const FeaturedProjects = () => {
                   </a>
                 </TagWrapper>
               </div>
-            </FeaturedProjectWrapper>
+            </div>
           ))}
         </div>
       </FeaturedProjectsStyled>
@@ -48,17 +48,17 @@ const FeaturedProjectsStyled = styled(OuterWrapper)`
   background-color: var(--color-grey);
   line-height: 1.2em;
 `
-const FeaturedProjectWrapper = styled(ProjectWrapper)`
+/* const FeaturedProjectWrapper = styled(ProjectWrapper)`
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
     position: relative;
-  
+
   @media (min-width: 1025px) {
-    /* grid-template-columns: 1fr;
-    gap: 3rem; */
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
-`
+` */
 const ImgWrapper = styled.div`
   display: flex;
   justify-content: center;

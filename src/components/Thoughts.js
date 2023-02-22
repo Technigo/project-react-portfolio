@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import MoreThoughts from './MoreThoughts';
 
 import { OuterWrapper } from './Styles/Globalstyles'

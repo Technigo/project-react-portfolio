@@ -1,9 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export const OuterWrapper = styled.div`
-  width: 100vw;
-  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  min-height: 25vh;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -13,6 +14,16 @@ export const OuterWrapper = styled.div`
 
 export const InnerWrapper = styled.div`
   width: 80vw;
+  line-height: 1.3rem;
+  text-align: left;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    width: 60vw;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 45vw;
+  }
 `
 
 export const SectionTitle = styled.h2`
@@ -47,4 +58,10 @@ export const Icons = styled.div`
   & img {
    height: 50px;
 }
+  @media screen and (min-width: 1024px) {    
+    & :hover {
+      opacity: 75%;
+      transition: 0.3s ease;
+    }
+  }
 `
