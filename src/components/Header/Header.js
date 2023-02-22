@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import profileImg from '../../assets/profile-img.jpg'
 import backgroundImg from '../../assets/hero-1.jpg'
-import { Icons } from '../Globalstyles.js'
+import { Icons } from '../Styles/Globalstyles.js'
 
 const Header = ({ linkedinLogo, githubLogo }) => {
   return (

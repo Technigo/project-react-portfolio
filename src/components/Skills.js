@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
+import { Headings } from './Reusable/Headings';
 
-import { SectionTitle, OuterWrapper } from './Globalstyles'
+import { OuterWrapper } from './Styles/Globalstyles'
 
 const Skills = () => {
   return (
     <StyledSkillsContainer>
-      <SectionTitle>Skills</SectionTitle>
+      <Headings heading="Skills" />
       <StyledSkills>
         <ul>
           <SkillTitle>Code</SkillTitle>

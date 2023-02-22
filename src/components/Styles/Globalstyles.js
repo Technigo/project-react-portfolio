@@ -20,18 +20,19 @@ export const SectionTitle = styled.h2`
   font-weight: 700;
   font-size: 1.5rem;
   color: #fff;
-  background-color: #5f7161;
+  background-color: var(--color-darkGreen);
   display: table;
   text-align: center;
   padding: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
   border-radius: 3px;
+  
 `
 export const SectionSubTitle = styled.h3`
   font-size: 1.8rem;
   font-weight: 900;
-  color: #5f7161;
+  color: var(--color-darkGreen);
   padding: 0 5px;
   margin: 40px 0 20px;
   text-transform: uppercase;

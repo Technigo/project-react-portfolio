@@ -2,14 +2,15 @@ import React from 'react';
 import styled from 'styled-components'
 import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
 
-import { SectionTitle, OuterWrapper } from './Globalstyles'
+import { OuterWrapper } from './Styles/Globalstyles'
+import { Headings } from './Reusable/Headings';
 import projects from '../data/projects.json'
 
 const FeaturedProjects = () => {
   return (
     <>
       <FeaturedProjectsStyled>
-        <SectionTitle>Featured Projects</SectionTitle>
+        <Headings heading="Featured Projects" />
         <div>
           {projects.slice(0, 2).map((project) => (
             <FeaturedProjectWrapper key={project.id}>

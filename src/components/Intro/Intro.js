@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { OuterWrapper } from '../Globalstyles';
+import { OuterWrapper } from '../Styles/Globalstyles';
 
 const Intro = () => {
   return (

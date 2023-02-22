@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components'
 import MoreThoughts from './MoreThoughts';
 
-import { SectionTitle, OuterWrapper } from './Globalstyles'
+import { OuterWrapper } from './Styles/Globalstyles'
+import { Headings } from './Reusable/Headings';
 
 const Thoughts = () => {
   return (
     <>
       <StyledThoughts>
-        <SectionTitle>My Thoughts</SectionTitle>
+        <Headings heading="My Thoughts" />
       </StyledThoughts>
       <MoreThoughts />
     </>
