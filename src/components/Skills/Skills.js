@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/macro'
-import { Headings } from './Reusable/Headings';
+import { Headings } from '../Reusable/Headings';
 
-import { OuterWrapper } from './Styles/Globalstyles'
+import { OuterWrapper } from '../Styles/Globalstyles'
 
 const Skills = () => {
   return (

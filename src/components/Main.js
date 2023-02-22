@@ -4,7 +4,7 @@ import Intro from './Intro/Intro'
 import TechStack from './Tech/TechStack'
 import FeaturedProjects from './Projects/FeaturedProjects'
 /* import Thoughts from './Thoughts'
- */import Skills from './Skills'
+ */import Skills from './Skills/Skills'
 
 const Main = () => {
   return (

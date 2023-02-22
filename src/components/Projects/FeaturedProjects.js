@@ -2,63 +2,47 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title } from './OtherProjects';
 
-import { OuterWrapper } from '../Styles/Globalstyles'
+import { InnerWrapper, OuterWrapper } from '../Styles/Globalstyles'
 import { Headings } from '../Reusable/Headings';
-import projects from '../../data/projects.json'
+import projects from './data/projects.json'
 
 const FeaturedProjects = () => {
   return (
-    <>
-      <FeaturedProjectsStyled>
-        <Headings heading="Featured Projects" />
-        <div>
-          {projects.slice(0, 2).map((project) => (
-            <div key={project.id}>
-              <div>
-                <a href={project.netlify_link} target="_blank" rel="noreferrer">
-                  <ImgWrapper>
-                    <Image src={project.project_img} alt="project" />
-                    <Overlay>{project.title}</Overlay>
-                  </ImgWrapper>
-                  <Title>{project.title}</Title>
-                  <p>{project.project_description}</p>
-                </a>
-                <TagWrapper>
-                  {project.tags.map((tag) => (
-                    <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
-                  ))}
-                  <a
-                    href={project.repo_link}
-                    target="_blank"
-                    rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
-                  </a>
-                </TagWrapper>
-              </div>
-            </div>
-          ))}
-        </div>
-      </FeaturedProjectsStyled>
+    <FeaturedProjectsStyled>
+      <Headings heading="Featured Projects" />
+      <InnerWrapper>
+        {projects.slice(0, 2).map((project) => (
+          <div key={project.id}>
+            <a href={project.netlify_link} target="_blank" rel="noreferrer">
+              <ImgWrapper>
+                <Image src={project.project_img} alt="project" />
+                <Overlay>{project.title}</Overlay>
+              </ImgWrapper>
+            </a>
+            <Title>{project.title}</Title>
+            <p>{project.project_description}</p>
+            <TagWrapper>
+              {project.tags.map((tag) => (
+                <TagWrapperText key={tag.id}>{tag.tech}</TagWrapperText>
+              ))}
+              <a
+                href={project.repo_link}
+                target="_blank"
+                rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
+              </a>
+            </TagWrapper>
+          </div>
+        ))}
+      </InnerWrapper>
       <OtherProjects />
-    </>
+    </FeaturedProjectsStyled>
   )
 }
 export default FeaturedProjects
 
 const FeaturedProjectsStyled = styled(OuterWrapper)`
   background-color: var(--color-grey);
-  line-height: 1.2em;
 `
-/* const FeaturedProjectWrapper = styled(ProjectWrapper)`
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    position: relative;
-
-  @media (min-width: 1025px) {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-` */
 const ImgWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -71,6 +55,7 @@ const Image = styled.img`
 `
 const Overlay = styled.div`
   display: none;
+  
 @media screen and (min-width: 1024px) {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;

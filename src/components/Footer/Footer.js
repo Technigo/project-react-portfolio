@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 
-import { Icons, OuterWrapper } from './Styles/Globalstyles.js'
-import { Headings } from './Reusable/Headings';
+import { Icons, OuterWrapper } from '../Styles/Globalstyles.js'
+import { Headings } from '../Reusable/Headings';
 
 const Footer = ({ linkedinLogo, githubLogo }) => {
   return (

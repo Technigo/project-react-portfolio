@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from 'components/Header/Header'
 import Main from 'components/Main'
-import Footer from 'components/Footer'
+import Footer from 'components/Footer/Footer'
 import linkedinLogo from 'assets/icon-linkedin.svg'
 import githubLogo from 'assets/icon-github.svg'
 

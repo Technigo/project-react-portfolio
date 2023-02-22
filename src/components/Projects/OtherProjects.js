@@ -1,17 +1,17 @@
+import { InnerWrapper } from 'components/Styles/Globalstyles';
 import React from 'react';
 import styled from 'styled-components'
 
-import { OuterWrapper } from '../Styles/Globalstyles'
-import projects from '../../data/projects.json'
+import projects from './data/projects.json'
 import { Headings } from '../Reusable/Headings';
 
 const OtherProjects = () => {
   return (
-    <StyledOtherProjects>
+    <section>
       <Headings subheading="Other Projects" />
-      <div>
+      <InnerWrapper>
         {projects.slice(2, 8).map((projectList) => (
-          <ProjectWrapper key={projectList.id}>
+          <div key={projectList.id}>
             <a
               href={projectList.netlify_link}
               target="_blank"
@@ -29,31 +29,15 @@ const OtherProjects = () => {
                 rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
               </a>
             </TagWrapper>
-          </ProjectWrapper>
+          </div>
         ))}
-      </div>
-    </StyledOtherProjects>
+      </InnerWrapper>
+    </section>
   )
 }
 
 export default OtherProjects
 
-const StyledOtherProjects = styled(OuterWrapper)`
-  background-color: var(--color-grey);
-`
-export const ProjectWrapper = styled.div`
-  margin-bottom: 1.5em;
-  max-width: 80vw;
-  line-height: 1.2rem;
-
-  @media (min-width: 667px) and (max-width: 1024px) {
-    width: 60vw;
-    
-  }
-  @media screen and (min-width: 1024px) {
-    width: 40vw;
-  }
-`
 export const Title = styled.h3`
   color: var(--color-darkGreen);
   font-weight: 700;
