@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import MoreThoughts from './MoreThoughts';
 
-import { SectionTitle, Container } from './Globalstyles'
+import { SectionTitle, OuterWrapper } from './Globalstyles'
 
 const Thoughts = () => {
   return (
@@ -17,6 +17,6 @@ const Thoughts = () => {
 
 export default Thoughts
 
-const StyledThoughts = styled(Container)`
+const StyledThoughts = styled(OuterWrapper)`
  
 `

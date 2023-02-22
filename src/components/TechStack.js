@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionTitle, Container } from './Globalstyles'
+import { SectionTitle, OuterWrapper } from './Globalstyles'
 
 const TechStack = () => {
   return (
@@ -16,7 +16,7 @@ const TechStack = () => {
 
 export default TechStack;
 
-const StyledTechSection = styled(Container)`
+const StyledTechSection = styled(OuterWrapper)`
   flex-direction: column;
   height: 20vh;
   max-width: 80vw;

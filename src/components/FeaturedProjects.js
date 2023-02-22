@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import OtherProjects, { TagWrapper, TagWrapperText, TagRepo, Title, ProjectWrapper } from './OtherProjects';
 
-import { SectionTitle, Container } from './Globalstyles'
+import { SectionTitle, OuterWrapper } from './Globalstyles'
 import projects from '../data/projects.json'
 
 const FeaturedProjects = () => {
@@ -43,7 +43,7 @@ const FeaturedProjects = () => {
 }
 export default FeaturedProjects
 
-const FeaturedProjectsStyled = styled(Container)`
+const FeaturedProjectsStyled = styled(OuterWrapper)`
   background-color: var(--color-grey);
   line-height: 1.2em;
 `

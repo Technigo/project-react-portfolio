@@ -1,25 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import profileImg from '../assets/profile-img.jpg'
-import backgroundImg from '../assets/hero-1.jpg'
-import { Icons } from './Globalstyles.js'
+import profileImg from '../../assets/profile-img.jpg'
+import backgroundImg from '../../assets/hero-1.jpg'
+import { Icons } from '../Globalstyles.js'
 
 const Header = ({ linkedinLogo, githubLogo }) => {
   return (
-    <HeaderStyling>
-      <div>
-        <HeaderText>
-          <p>Portfolio: <span>Julia Östedt</span></p>
-          <h1>frontend developer</h1>
-          <h2>with an executive assistant background</h2>
-        </HeaderText>
-        <ImgContainer>
-          <ProfileImg
-            src={profileImg}
-            alt="headshot-of-Julia" />
-        </ImgContainer>
-      </div>
+    <StyledHeader>
       <HeaderIcons>
         <a
           href="https://www.linkedin.com/in/juliaostedt/"
@@ -36,17 +24,24 @@ const Header = ({ linkedinLogo, githubLogo }) => {
           <img src={githubLogo} alt="github logo" />
         </a>
       </HeaderIcons>
-    </HeaderStyling>
+      <HeadingsContainer>
+        <h1>Portfolio: <span>Julia Östedt</span></h1>
+        <h2>frontend developer</h2>
+        <h3>with an executive assistant background</h3>
+      </HeadingsContainer>
+      <ProfileImg
+        src={profileImg}
+        alt="headshot-of-Julia" />
+    </StyledHeader>
   )
 }
 
 export default Header
 
-const HeaderStyling = styled.header`
+const StyledHeader = styled.header`
   background: linear-gradient(rgba(82, 81, 81, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImg});
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  color: white;
   height: 50vh;
   width: 100%;
   position: relative;
@@ -59,38 +54,42 @@ const HeaderStyling = styled.header`
     height: 45vh;
   }
 `
-const HeaderText = styled.div`
+
+const HeadingsContainer = styled.div`
   position: absolute;
+  color: whitesmoke;
   top: 30%;
   left: 8%;
   max-width: 55%;
   font-family: "Montserrat", sans-serif;
 
   & h1 {
-    font-weight: 700;
-    line-height: 1.1em;
-    font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  }
+  
+  & span {
+  font-weight: 700;
   }
 
   & h2 {
-    line-height: 1.5em;
-    font-size: 1rem
+  font-weight: 700;
+  line-height: 1.1em;
+  font-size: 2em;
   }
 
-  & p {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    color: white;
-  }
-  & span {
-    font-weight: 700;
+  & h3 {
+  line-height: 1.5em;
+  font-size: 1rem
   }
 
-   @media (min-width: 667px) and (max-width: 1024px) {
-    left: 20%;
-    max-width: 30%;
-    transform: scale(1.2) ;
+  @media (min-width: 667px) and (max-width: 1024px) {
+  left: 20%;
+  max-width: 30%;
+  transform: scale(1.2) ;
   }
+
   @media screen and (min-width: 1024px) {
     left: 30%;
     top: 40%;
@@ -98,29 +97,28 @@ const HeaderText = styled.div`
     transform: scale(1.3)
   }
 `
-const ImgContainer = styled.div`
-  position: absolute;
-  bottom: -5%;
-  right: 8%;
 
- @media (min-width: 667px) and (max-width: 1024px) {
-    right: 20%;
-    bottom: 0;
-  }
-  @media screen and (min-width: 1024px) {
-    bottom: -2%;
-    right: 30%;
-  }
-`
 const ProfileImg = styled.img`
-  height: 160px;
-  width: 160px;
-  border-radius: 50%;
+ position: absolute;
+  right: 8%;
+  bottom: -5%;
   opacity: 93%;
+  border-radius: 50%;
+  width: 160px;
+  height: auto;
 
-  @media screen and (min-width: 768px) {
-  transform: scale(1.4);
-}
+  @media (min-width: 667px) and (max-width: 1024px) {
+    right: 20%;
+    bottom: -3%;
+    transform: scale(1.2);
+  }
+
+  @media screen and (min-width: 1024px) {
+    right: 30%;
+    bottom: 0;
+    transform: scale(1.4);
+
+  }
 `
 const HeaderIcons = styled(Icons)`
   position: absolute;

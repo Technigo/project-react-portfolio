@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionTitle, Container } from './Globalstyles'
+import { SectionTitle, OuterWrapper } from './Globalstyles'
 
 const Skills = () => {
   return (
@@ -34,7 +34,7 @@ const Skills = () => {
 
 export default Skills
 
-const StyledSkillsContainer = styled(Container)`
+const StyledSkillsContainer = styled(OuterWrapper)`
   width: 80vw;
   height: 30vh;
   line-height: 1.5rem;

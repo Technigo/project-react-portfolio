@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  width: 100%;
+export const OuterWrapper = styled.div`
+  width: 100vw;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   align-items: center;
@@ -9,6 +9,10 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem 0;
+`
+
+export const InnerWrapper = styled.div`
+  width: 80vw;
 `
 
 export const SectionTitle = styled.h2`

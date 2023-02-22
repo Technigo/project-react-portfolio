@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { SectionSubTitle, Container } from './Globalstyles'
+import { SectionSubTitle, OuterWrapper } from './Globalstyles'
 import projects from '../data/projects.json'
 
 const OtherProjects = () => {
@@ -37,7 +37,7 @@ const OtherProjects = () => {
 
 export default OtherProjects
 
-const StyledOtherProjects = styled(Container)`
+const StyledOtherProjects = styled(OuterWrapper)`
   background-color: var(--color-grey);
 `
 export const ProjectWrapper = styled.div`

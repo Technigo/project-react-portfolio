@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Container } from './Globalstyles';
+import { OuterWrapper } from '../Globalstyles';
 
 const Intro = () => {
   return (
@@ -18,7 +18,7 @@ const Intro = () => {
 
 export default Intro
 
-const StyledIntro = styled(Container)`
+const StyledIntro = styled(OuterWrapper)`
   min-height: 25vh;
   background-color: var(--color-grey);
 
