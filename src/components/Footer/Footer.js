@@ -39,6 +39,7 @@ export default Footer
 const FooterStyle = styled(OuterWrapper)`
 background-color: var(--color-darkGreen);
 color: white;
+line-height: 1.5em;
 
 @media screen and (min-width: 1024px) {
   a:hover {
@@ -47,7 +48,7 @@ color: white;
 }
 `
 const FooterIcons = styled(Icons)`
-  padding: 2rem;
+  padding: 2.8em;
   justify-content: center;
 
    & :hover {
