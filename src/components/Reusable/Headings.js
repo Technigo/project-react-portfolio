@@ -1,11 +1,25 @@
 import React from 'react'
-import { SectionTitle, SectionSubTitle } from '../Styles/Globalstyles'
+import styled from 'styled-components/macro'
 
-export const Headings = ({ subheading, heading }) => {
+export const Headings = ({ heading }) => {
   return (
     <div>
       {heading && <SectionTitle>{heading}</SectionTitle>}
-      {subheading && <SectionSubTitle>{subheading}</SectionSubTitle>}
     </div>
   )
 }
+
+export const SectionTitle = styled.h2`
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--color-darkGreen);
+  display: table;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  
+`

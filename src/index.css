@@ -7,26 +7,6 @@
   --color-grey: #D0C9C0;
 }
 
-/* 
-body {
-  font-family: 'Montserrat, serif';
-  background-color: whitesmoke;
-}
-
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
-}
-
-p {
-  line-height: 1.6;
-} */
-
 a {
   color: inherit;
   cursor: pointer;

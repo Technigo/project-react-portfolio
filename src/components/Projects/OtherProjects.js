@@ -1,4 +1,4 @@
-import { InnerWrapper } from 'components/Styles/Globalstyles';
+import { InnerWrapper, OuterWrapper } from 'components/Styles/Globalstyles';
 import React from 'react';
 import styled from 'styled-components'
 
@@ -7,13 +7,14 @@ import { Headings } from '../Reusable/Headings';
 
 const OtherProjects = () => {
   return (
-    <section>
-      <Headings subheading="Other Projects" />
+    <OuterWrapper>
+      <Headings heading="Other Projects" />
       <InnerWrapper>
         {projects.slice(2, 8).map((projectList) => (
           <div key={projectList.id}>
             <a
               href={projectList.netlify_link}
+              title="Click to view it live"
               target="_blank"
               rel="noreferrer">
               <Title>{projectList.title}</Title>
@@ -25,6 +26,7 @@ const OtherProjects = () => {
               ))}
               <a
                 href={projectList.repo_link}
+                title="Link to GitHub repo"
                 target="_blank"
                 rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
               </a>
@@ -32,7 +34,7 @@ const OtherProjects = () => {
           </div>
         ))}
       </InnerWrapper>
-    </section>
+    </OuterWrapper>
   )
 }
 
@@ -40,11 +42,10 @@ export default OtherProjects
 
 export const Title = styled.h3`
   color: var(--color-darkGreen);
-  font-weight: 700;
-  font-size: 1.3rem;
   text-transform: uppercase;
-  text-align: left;
-  margin: .5rem 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: .8rem 0;
 `
 export const TagWrapper = styled.div`
   display: flex;

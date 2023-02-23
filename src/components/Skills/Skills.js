@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro'
 import { Headings } from '../Reusable/Headings';
 
-import { OuterWrapper } from '../Styles/Globalstyles'
+import { InnerWrapper, OuterWrapper } from '../Styles/Globalstyles'
 
 const Skills = () => {
   return (
@@ -11,18 +11,18 @@ const Skills = () => {
       <StyledSkills>
         <ul>
           <SkillTitle>Code</SkillTitle>
-          <li>JavaScript ES6</li>
+          <li>JavaScript</li>
           <li>React</li>
           <li>Redux</li>
           <li>Node.js</li>
-          <li>HTML5</li>
-          <li>CSS</li>
+          <li>Express.js</li>
+          <li>REST APIs</li>
           <li>Styled components</li>
         </ul>
         <ul>
           <SkillTitle>Tools</SkillTitle>
           <li>VS Code</li>
-          <li>GitHub</li>
+          <li>Git</li>
           <li>Google Cloud</li>
           <li>MongoDB</li>
           <li>Figma</li>
@@ -41,14 +41,12 @@ const StyledSkillsContainer = styled(OuterWrapper)`
   line-height: 1.5rem;
   text-align: center;
 `
-const StyledSkills = styled.div`
+const StyledSkills = styled(InnerWrapper)`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
-  @media screen and (min-width: 667px) {
-    gap: 4em;
-  }
-  `
+  text-align: center;
+`
+
 const SkillTitle = styled.h4`
   color: var(--color-darkGreen);
   font-weight: 700;

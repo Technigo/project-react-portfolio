@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
       <InnerWrapper>
         {projects.slice(0, 2).map((project) => (
           <div key={project.id}>
-            <a href={project.netlify_link} target="_blank" rel="noreferrer">
+            <a href={project.netlify_link} title="Click to view it live" target="_blank" rel="noreferrer">
               <ImgWrapper>
                 <Image src={project.project_img} alt="project" />
                 <Overlay>{project.title}</Overlay>
@@ -27,6 +27,7 @@ const FeaturedProjects = () => {
               ))}
               <a
                 href={project.repo_link}
+                title="Link to GitHub repo"
                 target="_blank"
                 rel="noreferrer"><TagRepo>GitHub Repo 👈</TagRepo>
               </a>

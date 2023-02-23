@@ -12,6 +12,7 @@ const Header = ({ linkedinLogo, githubLogo }) => {
         <HeaderIcons>
           <a
             href="https://www.linkedin.com/in/juliaostedt/"
+            title="Link to LinkedIn Profile"
             target="_blank"
             rel="noreferrer"
             aria-label="Link to LinkedIn profile">
@@ -19,10 +20,11 @@ const Header = ({ linkedinLogo, githubLogo }) => {
           </a>
           <a
             href="https://github.com/juliaostedt"
+            title="Link to GitHub Profile"
             target="_blank"
             rel="noreferrer"
             aria-label="Link to LinkedIn profile">
-            <img src={githubLogo} alt="github logo" />
+            <img src={githubLogo} alt="GitHub logo" />
           </a>
         </HeaderIcons>
         <HeadingsContainer>
