@@ -20,7 +20,7 @@ export default Intro
 
 const StyledIntro = styled(OuterWrapper)`
   background-color: var(--color-grey);
-  `
+`
 
 const Line = styled.span`
   border: 1px solid var(--color-darkGreen);

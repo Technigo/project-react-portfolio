@@ -2,14 +2,13 @@ import styled from 'styled-components/macro'
 
 export const OuterWrapper = styled.div`
   font-family: 'Montserrat', sans-serif;
-  width: 100vw;
-  min-height: 20vh;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 15vh;
+  padding: 2em 0;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0;
 `
 
 export const InnerWrapper = styled.div`

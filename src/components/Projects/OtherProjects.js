@@ -44,8 +44,8 @@ export const Title = styled.h3`
   color: var(--color-darkGreen);
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
-  margin: .8rem 0;
+  font-size: 1.2em;
+  margin: .5em 0;
 `
 export const TagWrapper = styled.div`
   display: flex;
@@ -56,10 +56,10 @@ export const TagWrapperText = styled.p`
     color: white;
     font-weight: bold;
     background-color: var(--color-darkGreen);
-    font-size: .8rem;
-    line-height: .9em;
+    font-size: .8em;
+    line-height: 1em;
     padding: .5em;
-    margin: .5em .2em .2em 0;
+    margin: .5em .2em 1.8em 0;
     border-radius: 5px;
   `
 export const TagRepo = styled(TagWrapperText)`

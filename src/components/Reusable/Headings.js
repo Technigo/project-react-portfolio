@@ -12,14 +12,13 @@ export const Headings = ({ heading }) => {
 export const SectionTitle = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1.5em;
+  color: white;
   background-color: var(--color-darkGreen);
-  display: table;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: .4em;
+  margin-bottom: 2em;
   text-transform: uppercase;
   border-radius: 3px;
-  
+  letter-spacing: .1em;
 `

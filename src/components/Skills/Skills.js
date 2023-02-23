@@ -6,7 +6,7 @@ import { InnerWrapper, OuterWrapper } from '../Styles/Globalstyles'
 
 const Skills = () => {
   return (
-    <StyledSkillsContainer>
+    <OuterWrapper>
       <Headings heading="Skills" />
       <StyledSkills>
         <ul>
@@ -29,18 +29,12 @@ const Skills = () => {
           <li>Trello</li>
         </ul>
       </StyledSkills>
-    </StyledSkillsContainer>
+    </OuterWrapper>
   )
 }
 
 export default Skills
 
-const StyledSkillsContainer = styled(OuterWrapper)`
-  width: 80vw;
-  height: 30vh;
-  line-height: 1.5rem;
-  text-align: center;
-`
 const StyledSkills = styled(InnerWrapper)`
   display: grid;
   grid-template-columns: 1fr 1fr;

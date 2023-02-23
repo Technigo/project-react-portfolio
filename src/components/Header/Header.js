@@ -92,10 +92,10 @@ const HeadingsContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    left: 30%;
-    top: 40%;
-    max-width: 20%;
-    transform: scale(1.3)
+  left: 30%;
+  top: 40%;
+  max-width: 20%;
+  transform: scale(1.3)
   }
 `
 
