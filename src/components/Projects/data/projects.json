@@ -146,7 +146,7 @@
     {
         "title": "Happy Thoughts",
         "id": 6,
-        "project_description": "A responsive website fetching and sending data to show happy thoughts.",
+        "project_description": "A fullstack project. A twitter-like site where users can post, read and like other users posts. Built in React.",
         "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
         "netlify_link": "https://happy-thoughts-julia.netlify.app/",
         "project_img": "",
@@ -165,16 +165,16 @@
             },
             {
                 "id": 4,
-                "tech": "API"
+                "tech": "REST API"
             }
         ]
     },
     {
-        "title": "Top Rated Movies",
+        "title": "Project Auth",
         "id": 7,
-        "project_description": "A site built in React where you can see an overview of top-rated movies. Pair-programmed.",
-        "repo_link": "https://github.com/juliaostedt/project-movies",
-        "netlify_link": "https://top-rated-movies-2afa29.netlify.app/",
+        "project_description": "Fullstack project. An API including authentication of users and a safe way of storing/handling passwords. Pair-programmed.",
+        "repo_link": "https://github.com/juliaostedt/project-auth",
+        "netlify_link": "https://auth-week16.netlify.app/",
         "project_img": "",
         "tags": [
             {
@@ -183,15 +183,15 @@
             },
             {
                 "id": 2,
-                "tech": "HTML"
+                "tech": "Express.js"
             },
             {
                 "id": 3,
-                "tech": "CSS"
+                "tech": "MongoDB"
             },
             {
                 "id": 4,
-                "tech": "API"
+                "tech": "REST API"
             }
         ]
     },
