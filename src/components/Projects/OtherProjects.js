@@ -42,6 +42,7 @@ export default OtherProjects
 
 export const Title = styled.h3`
   color: var(--color-darkGreen);
+  text-shadow: .5px .5px var(--color-beige);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2em;

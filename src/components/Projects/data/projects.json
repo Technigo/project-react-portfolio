@@ -1,7 +1,37 @@
 [
     {
-        "title": "Weather App",
+        "title": "Final Project: Blissful Beginnings",
         "id": 1,
+        "project_description": "A fullstack project for wedding couples to create a stunning, personalized landing page for their special day.",
+        "repo_link": "https://github.com/juliaostedt/project-final",
+        "netlify_link": "https://blissful-beginnings.netlify.com/",
+        "project_img": "https://user-images.githubusercontent.com/102091458/213151819-90d8a60f-6580-423f-abb8-dac096a86320.png",
+        "tags": [
+            {
+                "id": 1,
+                "tech": "React"
+            },
+            {
+                "id": 2,
+                "tech": "Redux"
+            },
+            {
+                "id": 3,
+                "tech": "Express.js"
+            },
+            {
+                "id": 4,
+                "tech": "MongoDB Mongoose"
+            },
+            {
+                "id": 5,
+                "tech": "Styled components"
+            }
+        ]
+    },
+    {
+        "title": "Weather App",
+        "id": 2,
         "project_description": "A weather app that tells today's weather and a 5-day forecast using data from Open Weather API. Pair-programmed.",
         "repo_link": "https://github.com/juliaostedt/project-weather-app",
         "netlify_link": "https://stockholm-weather.netlify.app/",
@@ -27,7 +57,7 @@
     },
     {
         "title": "To-Do list",
-        "id": 2,
+        "id": 3,
         "project_description": "A todo app built in React Redux where users can add, remove and check their tasks.",
         "repo_link": "https://github.com/juliaostedt/project-todos",
         "netlify_link": "https://whatcha-doing.netlify.app/",
@@ -49,7 +79,7 @@
     },
     {
         "title": "Guess Who",
-        "id": 9,
+        "id": 4,
         "project_description": "Digital version of the board game 'Guess Who' built in JavaScript that filters characters based on user guesses.",
         "repo_link": "https://github.com/juliaostedt/project-guess-who",
         "netlify_link": "https://guess-who-julia-ostedt.netlify.app/",
@@ -71,7 +101,7 @@
     },
     {
         "title": "PT Chatbot",
-        "id": 3,
+        "id": 5,
         "project_description": "Simple chatbot for workout recommendations built in JavaScript. Pair-programmed.",
         "repo_link": "https://github.com/juliaostedt/project-chatbot",
         "netlify_link": "https://pt-chat-bot.netlify.app/",
@@ -93,7 +123,7 @@
     },
     {
         "title": "Music Releases",
-        "id": 4,
+        "id": 6,
         "project_description": "A responsive website using data from Spotify to show album and single releases. Pair-programmed.",
         "repo_link": "https://github.com/juliaostedt/project-music-releases",
         "netlify_link": "https://music-releases-petra-julia.netlify.app/",
@@ -119,7 +149,7 @@
     },
     {
         "title": "Survey",
-        "id": 5,
+        "id": 7,
         "project_description": "Survey made with React to practice useState and conditional rendering.",
         "repo_link": "https://github.com/juliaostedt/project-survey",
         "netlify_link": "https://box-subscription-survey.netlify.app/",
@@ -145,7 +175,7 @@
     },
     {
         "title": "Happy Thoughts",
-        "id": 6,
+        "id": 8,
         "project_description": "A fullstack project. A twitter-like site where users can post, read and like other users posts. Built in React.",
         "repo_link": "https://github.com/juliaostedt/project-happy-thoughts",
         "netlify_link": "https://happy-thoughts-julia.netlify.app/",
@@ -171,7 +201,7 @@
     },
     {
         "title": "Project Auth",
-        "id": 7,
+        "id": 9,
         "project_description": "Fullstack project. An API including authentication of users and a safe way of storing/handling passwords. Pair-programmed.",
         "repo_link": "https://github.com/juliaostedt/project-auth",
         "netlify_link": "https://auth-week16.netlify.app/",
@@ -197,7 +227,7 @@
     },
     {
         "title": "Space Trivia Quiz",
-        "id": 8,
+        "id": 10,
         "project_description": "A quiz built in React Redux to test your space knowledge. Mob- and Pair-programmed.",
         "repo_link": "https://github.com/juliaostedt/project-redux-quiz",
         "netlify_link": "https://space-trivia.netlify.app/",

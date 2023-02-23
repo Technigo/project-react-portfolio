@@ -46,5 +46,5 @@ const SkillTitle = styled.h4`
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.1rem;
-  text-shadow: .5px .5px #5f7161;
+  text-shadow: .5px .5px var(--color-beige);
 `
