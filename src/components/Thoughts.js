@@ -103,7 +103,7 @@ export const ThoughtsCard = styled.div`
 `;
 
 export const DateTitle = styled.p`
-  color: rgb(10,37,37);
+  color: var(--green);
   font-size: 15px;
   font-weight: 700;
 `;
@@ -117,7 +117,7 @@ export const BlogTitle = styled.p`
 
 export const BlogText = styled.p`
   font-family: Montserrat, sans-serif;
-  color: rgb(135,47,0);
+  color: var(--orange);
   font-size: 16px;
   line-height: 1.4;
 
@@ -134,5 +134,5 @@ export const BlogText = styled.p`
 export const EndingArrows = styled.p`
   font-size: 20px;
   font-weight: 700;
-  color: rgb(10,37,37);
+  color: var(--green);
 `;

@@ -42,7 +42,7 @@ export const ForMore = () => {
 };
 
 export const ForMoreOuterWrapper = styled.section`
-    background-color: var(--orange);
+    background-color: rgb(135,47,0,0.6);
     width: 100%;
     height: 50vh;
     display: flex;
@@ -97,11 +97,11 @@ export const SingleIconContainer = styled.div`
     }
 
     :hover {
-      border: solid var(--white);
+      border: solid white;
     }
 
     p {
-      color: var(--white);
+      color: white;
       margin-top: 40px;
       font-size: 12px;
     }

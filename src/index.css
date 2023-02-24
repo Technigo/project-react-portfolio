@@ -14,10 +14,10 @@ code {
 
 
 :root {
-  --white: #ffffff;
+  --white: rgb(227,221,218);
   --orange: rgb(135,47,0);
   --green: rgb(10,37,37);
-  --yellow: rgb(162,208,59);
+  --yellow: rgb(162,208,59,0.6);
 }
 
 p {

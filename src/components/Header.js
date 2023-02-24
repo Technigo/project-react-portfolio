@@ -73,7 +73,7 @@ export const HeaderIcons = styled.div`
   }
 
   a:hover {
-    background-color: rgb(10,37,37);
+    background-color: var(--green);
   }
 
 @media (min-width: 668px) and (max-width: 1023px){

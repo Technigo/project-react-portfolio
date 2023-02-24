@@ -14,7 +14,7 @@ export const Contact = () => {
 }
 
 export const ContactOuterWrapper = styled.div`
-  background-color: var(--yellow);
+  background-color: rgb(162,208,59,0.7);
   width: 100%;
   height: 300px;
   display: flex;

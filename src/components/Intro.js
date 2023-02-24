@@ -23,7 +23,7 @@ export const IntroOuterWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  background: rgb(10,37,37);
+  background: var(--green);
 `;
 
 export const IntroInnerWrapper = styled.div`
@@ -33,7 +33,10 @@ export const IntroInnerWrapper = styled.div`
   display: flex;
   align-items: center;
   line-height: 25px;
-  color: rgb(135,47,0,0.6);
+
+  p {
+    color: var(--yellow);
+  }
 
   @media (min-width: 668px) {
     font-size: 18px;
