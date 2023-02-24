@@ -25,7 +25,7 @@ export const OtherProjects = () => {
 };
 
 export const OtherProjectOuterWrapper = styled.div`
-  background-color: var(--pink);
+  background-color: var(--yellow);
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ export const OtherProjectInnerWrapper = styled.div`
 
   h6 {
     font-family: Montserrat;
-    color: rgb(215,140,117);
+    color: rgb(135,47,0);
     font-size: 22px;
   }
 
@@ -70,7 +70,7 @@ export const SkillTag = styled.p`
   font-family: "Roboto", sans-serif;
   color: #ffff;
   border-radius: 3px;
-  background-color: rgb(215,140,117);
+  background-color: rgb(135,47,0);
   display: inline;
   font-size: 14px;
   font-weight: 700;

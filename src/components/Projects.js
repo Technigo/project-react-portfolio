@@ -41,7 +41,7 @@ export const Projects = () => {
 };
 
 const ProjectOuterWrapper = styled.div`
-  background-color: rgb(240, 172, 194);
+  background-color: rgb(162,208,59);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ const ThumbnailTitle = styled.h2`
 const ProjectInfoHeader = styled.h3`
   font-family: "Roboto Bold", sans-serif;
   font-size: 20px;
-  color: rgb(215,140,117);
+  color: rgb(135,47,0);
   margin: 0;
 
   ${ProjectCard}:hover & {
@@ -128,7 +128,7 @@ const ProjectInfoHeader = styled.h3`
 
 const ProjectInfo = styled.p`
   font-family: Montserrat, sans-serif;
-  color: rgb(215,140,117);
+  color: rgb(135,47,0);
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
@@ -150,7 +150,7 @@ const ProjectTags = styled.li`
   font-family: "Roboto", sans-serif;
   color: #ffff;
   border-radius: 3px;
-  background-color: rgb(215,140,117);
+  background-color: rgb(135,47,0);
   display: inline;
   font-size: 14px;
   font-weight: 700;

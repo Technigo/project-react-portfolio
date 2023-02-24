@@ -98,17 +98,19 @@ export const HeaderTitle = styled.div`
   position: absolute;
   top: 30%;
   left: 10%;
-  color: white;
+  color: rgb(222,217,211);
   line-height: 15px;
 
   h3 {
     font-size: 15px;
     font-weight: 400;
     font-family: Roboto;
+    color: white;
   }
   
   span {
-    font-weight: 700; 
+    font-weight: 700;
+    color: white;
   }
 
   h1 {

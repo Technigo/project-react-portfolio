@@ -116,7 +116,7 @@ export const BlogTitle = styled.p`
 
 export const BlogText = styled.p`
   font-family: Montserrat, sans-serif;
-  color: rgb(215,140,117);
+  color: rgb(135,47,0);
   font-size: 16px;
   line-height: 1.4;
 

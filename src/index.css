@@ -15,9 +15,9 @@ code {
 
 :root {
   --white: #ffffff;
-  --orange: rgb(215,140,117);
+  --orange: rgb(135,47,0);
   --green: rgb(10,37,37);
-  --pink: rgb(240, 172, 194);
+  --yellow: rgb(162,208,59);
 }
 
 p {
