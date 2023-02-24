@@ -7,9 +7,10 @@ export const Tech = () => {
       <TechInnerWrapper>
         <h5>TECH</h5>
         <p>HTML, CSS, Flexbox, CSS Grid, <span>JavaScript</span>, JSX,
-          <span> React</span>, React Hooks,<span> Redux</span>, 
-        Node.js, <span> API:s, JSON</span>, MongoDB, Mongoose, REST, Express, CORS, bcrypt, CryptoJS, 
-        Web Accessibility, mob-programming, pair-programming & GitHub.
+        <span> React</span>, React Hooks,<span> Redux</span>, 
+        Node.js, <span> API:s, JSON</span>, MongoDB, Mongoose, REST, Express, CORS, 
+        bcrypt, CryptoJS, Web Accessibility, mob-programming,
+        pair-programming & GitHub.
         </p>
       </TechInnerWrapper>
     </TechOuterWrapper>
