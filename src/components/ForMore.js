@@ -42,7 +42,7 @@ export const ForMore = () => {
 };
 
 export const ForMoreOuterWrapper = styled.section`
-    background-color: rgb(135,47,0,0.6);
+    background-color: var(--orange);
     width: 100%;
     height: 50vh;
     display: flex;
