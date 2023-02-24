@@ -44,6 +44,7 @@ export const Thoughts = () => {
 };
 
 export const ThoughtsOuterWrapper = styled.section`
+  background-color: var(--white);
   width: 100%;
   display: flex;
   flex-direction: column;

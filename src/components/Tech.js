@@ -8,7 +8,7 @@ export const Tech = () => {
         <h5>TECH</h5>
         <p>HTML, CSS, Flexbox, CSS Grid, <span>JavaScript</span>, JSX,
           <span> React, React Hooks, Redux, </span>
-        Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming & Github.
+        Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming & GitHub.
         </p>
       </TechInnerWrapper>
     </TechOuterWrapper>
@@ -16,6 +16,7 @@ export const Tech = () => {
 }
 
 export const TechOuterWrapper = styled.div`
+  background-color: var(--white);
   width: 100%;
   height: 40vh;
   min-height: 350px;

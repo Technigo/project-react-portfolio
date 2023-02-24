@@ -41,7 +41,7 @@ export const Projects = () => {
 };
 
 const ProjectOuterWrapper = styled.div`
-  background-color: rgb(162,208,59);
+  background-color: rgb(162,208,59,0.6);
   width: 100%;
   display: flex;
   flex-direction: column;
