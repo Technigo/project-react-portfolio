@@ -14,7 +14,7 @@ export const Contact = () => {
 }
 
 export const ContactOuterWrapper = styled.div`
-  background-color: rgb(162,208,59,0.7);
+  background-color: var(--white);
   width: 100%;
   height: 300px;
   display: flex;
@@ -31,6 +31,10 @@ export const ContactInnerWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   line-height: 25px;
+
+  h5 {
+    color: rgb(162,208,59);
+  }
 
   p {
     margin: 0;
