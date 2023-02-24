@@ -4,4 +4,4 @@ This project is my very own accessible portfolio, built with; HTML, CSS, JavaScr
 
 ## View it live
 
-https://maria-wellanders-react-portfolio.netlify.app/
+https://maria-wellander-portfolio.netlify.app/
