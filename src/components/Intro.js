@@ -23,7 +23,7 @@ export const IntroOuterWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  background: rgb(89,42,72);
+  background: rgb(10,37,37);
 `;
 
 export const IntroInnerWrapper = styled.div`

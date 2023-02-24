@@ -90,7 +90,7 @@ export const SubTitle = styled.h4`
 `;
 
 export const SubParagraph = styled.p`
-  color: black;
+  color: rgb(10,37,37);
   text-decoration: none;
   font-size: 18px;
   margin-block-end: 1em;

@@ -23,7 +23,7 @@ export const Header = () => {
         </a>
       </HeaderIcons>
       <HeaderTitle>
-        <h3>PORTFOLIO: <span>MARIA WELLANDER</span></h3>
+        <h3>PORTFOLIO:   <span>MARIA WELLANDER</span></h3>
         <h1>frontend</h1>
         <h1>developer</h1>
         <h4>+ financial assistent</h4>
@@ -60,7 +60,7 @@ export const HeaderIcons = styled.div`
   }
 
   a {
-    background-color: rgba(41, 58, 79, 0.6);
+    background-color: rgb(10,37,37,0.6);
     width: 45px;
     height: 45px;
     padding: 5px;
@@ -73,7 +73,7 @@ export const HeaderIcons = styled.div`
   }
 
   a:hover {
-    background-color: rgb(41, 58, 79);
+    background-color: rgb(10,37,37);
   }
 
 @media (min-width: 668px) and (max-width: 1023px){

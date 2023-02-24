@@ -38,7 +38,7 @@ export const Skills = () => {
 }
 
 export const SkillsOuterWrapper = styled.div`
-  background-color: var(--purple);
+  background-color: var(--green);
   width: 100%;
   height: 70vh;
   display: flex;

@@ -32,7 +32,7 @@ export const Thoughts = () => {
               <DateTitle>OCT 2022</DateTitle>
               <BlogTitle>Smooth week</BlogTitle>
               <BlogText>This week has been really fun and smooth.
-                As said before: It i a roller coaster. I am in the clouds now.
+                As said before: It is a roller coaster. I am in the clouds now.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>
@@ -102,7 +102,7 @@ export const ThoughtsCard = styled.div`
 `;
 
 export const DateTitle = styled.p`
-  color: rgb(89,42,72);
+  color: rgb(10,37,37);
   font-size: 15px;
   font-weight: 700;
 `;
@@ -133,5 +133,5 @@ export const BlogText = styled.p`
 export const EndingArrows = styled.p`
   font-size: 20px;
   font-weight: 700;
-  color: rgb(89,42,72);
+  color: rgb(10,37,37);
 `;
