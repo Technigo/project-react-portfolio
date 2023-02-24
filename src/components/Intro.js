@@ -5,11 +5,16 @@ export const Intro = () => {
   return (
     <IntroOuterWrapper>
       <IntroInnerWrapper>
-        <p> Hello! I am a Frontend Developer - but I have not always been.
-            I have a background in accounting and studies in
-            French international business and administration.
-            In programming, I adore the combo of logic and creativity to produce robust,
-            readable and reliable code.
+        <p> Hello! As a recent graduate in Frontend Development,
+          I bring a unique background in accounting and
+          French international business and economics to the table.
+          I have a comprehensive understanding of the challenges faced by 
+          both the finance and IT departments, allowing me to effectively
+          communicate and collaborate with professionals from both fields.
+          When coding, I always keep in mind the importance of
+          user-friendliness and the company's financial goals.
+          With my skills and perspective, I am confident in my ability to
+          create reliable and profitable software solutions.
         </p>
       </IntroInnerWrapper>
     </IntroOuterWrapper>
