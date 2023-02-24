@@ -105,12 +105,12 @@ export const HeaderTitle = styled.div`
     font-size: 15px;
     font-weight: 400;
     font-family: Roboto;
-    color: var(--yellow);
+    color: rgb(162,208,59);
   }
   
   span {
     font-weight: 700;
-    color: var(--yellow);
+    color: rgb(162,208,59);
   }
 
   h1 {
