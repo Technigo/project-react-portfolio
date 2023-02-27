@@ -24,7 +24,7 @@ export const Header = () => {
       </HeaderIcons>
       <HeaderTitle>
         <h3>PORTFOLIO:   <span>MARIA WELLANDER</span></h3>
-        <h1>frontend</h1>
+        <h1>web</h1>
         <h1>developer</h1>
         <h4>+ financial assistent</h4>
       </HeaderTitle>
