@@ -23,8 +23,8 @@ const Tech = () => {
           <TitleContainer>
             <Title>Tech</Title>
           </TitleContainer>
-          <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX,
-            React, React Hooks, Redux, Node.js, Web accessibility,
+          <p>HTML, CSS, React, JavaScript, ES6, JSX, Flexbox, Git,
+            React Hooks, Redux, Node.js, Web accessibility,
             API:s, mob-programming, pair-programming, GitHub, Agile Methodologies,
              Google Cloud Platform (GCP), MongoDB
           </p>

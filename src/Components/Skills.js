@@ -4,50 +4,23 @@ import styled from 'styled-components'
 import { OuterWrapper, InnerWrapper, Title, RedTitle } from 'StyledComponents/GlobalComponents'
 
 const SkillList = styled.div`
-font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 50px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
-    padding: 15px;
-    @media (min-width: 1025px) {
-  display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 18px;
+    letter-spacing: 0em;
+    
+    @media (min-width: 668px) {
+      grid-template-columns: 1fr 1fr;
     }
 `
-
-const Code = styled.div`
-display: flex;
-flex-direction: column;
-@media (min-width: 1025px) {
-  display: grid;
-  grid-column: 1 / 1;
-  align-self: flex-start;
-    }
-
-`
-const Toolbox = styled.div`
-display: flex;
-flex-direction: column;
-@media (min-width: 1025px) {
-  display: grid;
-  grid-column: 2 / 2;
-  align-self: flex-start;
-    }
-
-`
-const More = styled.div`
-display: flex;
-flex-direction: column;
-@media (min-width: 1025px) {
-  display: grid;
-  grid-column: 3 / 3;
-  align-self: flex-start;
-    }
+const Code = styled.li`
+ font-weight: 400;
+    line-height: 29px;
+    list-style-type: none;
 `
 
 const Skills = () => {
@@ -66,7 +39,7 @@ const Skills = () => {
             <ul>Node</ul>
             <ul>Mongoose</ul>
           </Code>
-          <Toolbox>
+          <Code>
             <RedTitle>TOOLBOX</RedTitle>
             <ul>Slack</ul>
             <ul>Figma</ul>
@@ -77,11 +50,7 @@ const Skills = () => {
             <ul>Postman</ul>
             <ul>Atlas</ul>
             <ul>Google Cloud Platform</ul>
-          </Toolbox>
-          <More>
-            <RedTitle>UPCOMING</RedTitle>
-            <ul>More backend coming soon...</ul>
-          </More>
+          </Code>
         </SkillList>
       </InnerWrapper>
     </OuterWrapper>

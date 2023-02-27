@@ -17,10 +17,7 @@ export const InnerWrapper = styled.div`
   padding-bottom: 7vh;
   display: flex; 
   flex-direction: column;
-  @media (min-width: 668px) and (max-width: 1024px) {
-    width: 70%;
-  }
-  @media (min-width: 1025px){ 
+  @media (min-width: 668px) and (max-width: 1599px) {
     width: 70%;
   }
   @media (min-width: 1600px) {

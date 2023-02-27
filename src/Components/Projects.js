@@ -21,7 +21,8 @@ display: grid;
   }
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
-  } `
+  } 
+`
 
 const TextContainerProjects = styled.h1`
  padding-bottom: 20px;
@@ -36,16 +37,6 @@ const TextContainerProjects = styled.h1`
     display: block;
   }
 `
-
-/* const ImageContainer = styled.div`
-  transition: 0.5s ease;
-
-` */
-/* const Thumbnail = styled.img`
-   display: block;
-    width: 100%;
-    filter: brightness(0.50);
-` */
 
 const ImgOverlay = styled.div`
   position: absolute;
@@ -78,16 +69,6 @@ const ImgOverlay = styled.div`
 `
 
 const Projects = () => {
-  /* const [projects, SetProjects] = useState([])
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/ceciliamichele/repos')
-      .then((res) => res.json())
-      .then((data) => SetProjects(data))
-  })
-
-  const filteredProjects = projects.filter((project) => (project.name.includes('todo')) || (project.name === 'final-project') || (project.name === 'project-happy-thoughts') || (project.name.includes('movies')) || (project.name.includes('survey')) || (project.name.includes('music')))
-*/
   return (
     <OuterWrapper>
       <InnerWrapper>
