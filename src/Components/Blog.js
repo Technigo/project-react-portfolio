@@ -12,6 +12,7 @@ font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 50px;
+padding: 5%;
  
 `
 const ArticleContainer = styled.div`
@@ -19,6 +20,7 @@ const ArticleContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 15px;
+
     
 
     h4 {
@@ -33,6 +35,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 color: black;
+width: 80%;
+padding: 5%;
 `
 
 const Blog = () => {

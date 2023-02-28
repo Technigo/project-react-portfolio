@@ -15,34 +15,27 @@ width: 100%;
     background-size: cover;
 
     h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    width: 220px;
-    text-shadow: 3px 1px 1px black;
+      font-size: 15px;
+  margin-bottom: 3%;
+@media (min-width: 1025px) {
+  font-size: 20px;
+}
     }
     h1 {
-      font-size: 50px;
-      font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0.04em;
-    font-family: 'Montserrat', sans-serif;
-    width: 220px;
-    text-shadow: 3px 1px 1px black;
+      font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 3%;
+@media (min-width: 1025px) {
+  font-size: 45px;
+}
     }
     h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: 0.04em;
-    width: 220px;
-    text-shadow: 3px 1px 1px black;
+      font-size: 20x;
+@media (min-width: 1025px) {
+  font-size: 30px;
+}
     }
-`;
+`
 
 const ProfileImage = styled.img`
 position: absolute;
@@ -63,8 +56,8 @@ left: 24px;
 `
 const ClonedSoMeIcons = styled(SoMeIcons)`
 position: absolute;
-    right: 20%;
-    top: 10%;
+    right: 5%;
+    top: 5%;
 `
 
 const Header = () => {
