@@ -60,13 +60,11 @@ export const GridWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    margin-bottom: 20px;
 
     @media (max-width: 800px) {
         display: grid;
         grid-template-columns: 1fr;
         gap: 40px;
-        margin-bottom: 50px;
     }
 `;
 

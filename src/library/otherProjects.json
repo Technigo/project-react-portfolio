@@ -17,14 +17,14 @@
     "id": 13,  
     "title": "REDUX QUIZ",
     "description": "Mob programmed quiz with a redux store",
-    "netlify": "https://hippos-movie-quote-quiz.netlify.app/",
+    "url": "https://hippos-movie-quote-quiz.netlify.app/",
     "tags": ["HTML", "CSS", "JavaScript ES6", "Redux", "Styled Components"]
   }, 
   {
     "id": 14,  
     "title": "LABYRINTH",
     "description": "A text based game created by pair programming to learn Redux",
-    "netlify": "https://github.com/Sofia-Andersson/project-happy-thoughts-api",
+    "url": "https://lostducklabyrinth.netlify.app/",
     "tags": ["React", "Redux", "API", "Restful API", "JavaScript ES6", "Pair programming", "Styled Components" ]
   }
 ]
