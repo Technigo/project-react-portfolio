@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading, TopicsContainer } from './Styling'
+import {
+  OuterWrapper,
+  InnerWrapper,
+  Heading,
+  Topics,
+  ProjectsHeading,
+  TopicsContainer
+} from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 
@@ -25,9 +32,9 @@ export const FeaturedProjects = () => {
               <ProjectLink href={prop.homepage} alt="Link to project" target="_blank">
                 <ImageAndName>
                   <BigProjectsImage alt="project-img" src={`https://raw.githubusercontent.com/marwebdesign/${prop.name}/master/code/Thumbnail/thumbnail.png`} />
-                  <ProjectNameOverImage>{prop.name}</ProjectNameOverImage>
+                  <ProjectNameOverImage>{prop.name.replace(/project-/g, '').replace(/-/g, ' ').toUpperCase()}</ProjectNameOverImage>
                 </ImageAndName>
-                <ProjectsHeading>{prop.name}</ProjectsHeading>
+                <ProjectsHeading>{prop.name.replace(/-/g, ' ').toUpperCase()}</ProjectsHeading>
               </ProjectLink>
               <ProjectLink href={prop.html_url} alt="Link to project" target="_blank">{prop.description}</ProjectLink>
               <TopicsContainer>
@@ -49,7 +56,8 @@ const FeaturedProjectsContent = styled.div`
   font-family:'Roboto', sans-serif;
   line-height: 30px;
   margin-bottom: 20px;
-@media (min-width: 1025px) {
+
+  @media (min-width: 1025px) {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5%;
   }
@@ -78,7 +86,7 @@ const ProjectNameOverImage = styled.h2`
   text-transform: uppercase;
   position: absolute;
   background-color: #D36B00;
-  padding: 0px 4px;
+  padding: 2px 6px;
   display: inline;
   font-size: 22px;
   border-radius: 5px;

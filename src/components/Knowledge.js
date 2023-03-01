@@ -8,7 +8,7 @@ export const Knowledge = () => {
       <InnerWrapper>
         <KnowledgeContent>
           <Heading dark>TECH</Heading>
-          <KnowledgeText>HTML, CSS, Flexbox, <OrangeText>JavaScript</OrangeText>, ES6,
+          <KnowledgeText>HTML5, CSS3, Flexbox, <OrangeText>JavaScript</OrangeText>, ES6,
             JSX,  <OrangeText>React, React Hooks, Redux,</OrangeText> Node.js, Mongo DB,
             Web Accessibly, API:s, mob-programming, pair-programming, Github.
           </KnowledgeText>

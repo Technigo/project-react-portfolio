@@ -11,25 +11,31 @@ export const Skills = () => {
           <SkillsColumn>
             <SkillsHeader>CODE</SkillsHeader>
             <SkillsText>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
               <li>ES6</li>
-              <li>React</li>
+              <li>CSS3</li>
+              <li>HTML5</li>
+              <li>JavaScript</li>
               <li>Styled Components</li>
+              <li>Mongoose</li>
+              <li>Node.js</li>
+              <li>React</li>
+              <li>Redux</li>
+
             </SkillsText>
           </SkillsColumn>
           <SkillsColumn>
-            <SkillsHeader>CODE</SkillsHeader>
-            <SkillsText>
-              <li>Redux</li>
-              <li>Node.js</li>
-            </SkillsText>
             <SkillsHeader>TOOLBOX</SkillsHeader>
             <SkillsText>
-              <li>Figma</li>
               <li>Slack</li>
+              <li>Figma</li>
               <li>Discord</li>
+              <li>MONGO DB</li>
+              <li>Google Cloud Platform</li>
+              <li>Postman</li>
+              <li>VS Code</li>
+              <li>Github</li>
+              <li>Atlas</li>
+
             </SkillsText>
           </SkillsColumn>
         </SkillsContent>

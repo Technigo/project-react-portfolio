@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { OuterWrapper, InnerWrapper, Heading, Topics, ProjectsHeading, ProjectsParagraph, TopicsContainer } from './Styling'
+import {
+  OuterWrapper,
+  InnerWrapper,
+  Heading,
+  Topics,
+  ProjectsHeading,
+  ProjectsParagraph,
+  TopicsContainer
+} from './Styling'
 
 const GithubAPI = 'https://api.github.com/users/marwebdesign/repos'
 
@@ -15,7 +23,7 @@ export const OtherProjects = () => {
       })
   }, [])
 
-  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-happy-thoughts-api') || (secondProjects.name === 'project-mongo-api') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-auth') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site') || (secondProjects.name === 'project-survey') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-guess-who'));
+  const SmallProjects = otherProjects.filter((secondProjects) => (secondProjects.name === 'project-happy-thoughts-api') || (secondProjects.name === 'project-mongo-api') || (secondProjects.name === 'project-music-releases') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-auth') || (secondProjects.name === 'project-weather-app') || (secondProjects.name === 'project-news-site') || (secondProjects.name === 'project-survey') || (secondProjects.name === 'project-chatbot') || (secondProjects.name === 'project-guess-who'));
   return (
     <OuterWrapper>
       <InnerWrapper>
@@ -24,7 +32,7 @@ export const OtherProjects = () => {
           {SmallProjects.map((prop) => (
             <OtherProjectsContainer key={prop.id}>
               <OtherProjectLink href={prop.homepage} alt="Link to project" target="_blank">
-                <ProjectsHeading>{prop.name}</ProjectsHeading>
+                <ProjectsHeading>{prop.name.replace(/-/g, ' ').toUpperCase()}</ProjectsHeading>
               </OtherProjectLink>
               <OtherProjectLink href={prop.html_url} alt="Link to project" target="_blank">
                 <ProjectsParagraph>{prop.description}</ProjectsParagraph>

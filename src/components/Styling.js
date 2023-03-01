@@ -43,7 +43,7 @@ export const Topics = styled.p`
   display: inline;
   text-decoration: none;
   line-height: 12px;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
 @media (min-width: 1025px) {
   font-size: 17px;
