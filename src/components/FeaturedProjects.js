@@ -21,7 +21,7 @@ export const FeaturedProjects = () => {
         setFeaturedProjects(data)
       })
   }, [])
-  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-happy-thoughts') || (firstProjects.name === 'project-labyrinth') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-redux-quiz'));
+  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-happy-thoughts') || (firstProjects.name === 'project-labyrinth') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-redux-quiz') || (firstProjects.name === 'project-music-releases') || (firstProjects.name === 'project-movies'));
   return (
     <OuterWrapper beige>
       <Heading dark>FEATURED PROJECTS</Heading>
@@ -74,11 +74,12 @@ const ImageAndName = styled.div`
 
 const BigProjectsImage = styled.img`
   width: 100%;
-  border: 2px solid #D36B00;
+  border: 4px solid #D36B00;
   border-radius: 10px;
-  opacity: 0.7;
+  opacity: 0.5;
 &:hover {
   opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 `
 
