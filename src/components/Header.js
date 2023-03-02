@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { InnerWrapper } from './Styling'
 import github from './images/icons/github.svg'
 import linkedin from './images/icons/linkedin.svg'
-import profileimg from './images/profileimg.png'
+import profile from './images/profile.jpg'
 import headerpicture from './images/headerpicture.jpg'
 
 export const Header = () => {
@@ -19,7 +19,7 @@ export const Header = () => {
           <HeaderFrontEnd>frontend developer</HeaderFrontEnd>
           <HeaderBackground>+ objects conservator</HeaderBackground>
         </HeaderText>
-        <ProfileImage src={profileimg} alt="profile" />
+        <ProfileImage src={profile} alt="profile" />
       </InnerWrapper>
     </HeaderWrapper>
   )
