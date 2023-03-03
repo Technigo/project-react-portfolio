@@ -53,7 +53,7 @@ const LinkImage = styled.img`
   @media ${Devices.laptop} {
     padding-bottom: 2%;
   &:hover {
-    filter: invert(25%)
+    filter: invert(5%);
   }
 }
 

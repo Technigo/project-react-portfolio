@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices } from 'styles/mainStyles';
 import linksImg from '../Images/SoMe-white.png';
-import backgroundImageSmall from '../Images/pexels-tara-winstead-small.jpg';
-import backgroundImageLarge from '../Images/pexels-tara-winstead-large.jpg';
+import backgroundImageSmall from '../Images/pexels-tara-winstead-smallNY.jpg';
+import backgroundImageLarge from '../Images/pexels-tara-winstead-largeNY.jpg';
 import ProfileImage from '../Images/Linda.jpg';
 
 const Header = () => {
