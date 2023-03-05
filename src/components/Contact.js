@@ -10,6 +10,7 @@ const FooterText = styled.p`
     text-align: center;
     color: var(--white);
     line-height: 1.6;
+    padding-bottom: 50px;
     `
 
 const ContactLink = styled.a`
@@ -22,7 +23,7 @@ line-height: 1.6;
 
 &:hover,
 &:focus{
-    color: var(--white);
+    color: var(--black);
 };
 &:active{
     color: var(--white);
