@@ -23,9 +23,12 @@ const ProjectPill = styled.a`
   letter-spacing: 0.5px;
   padding: 3px 9px 2px 10px;
   border-radius: 30px;
-  margin-right: 8px;
+  margin-right: 11px;
   height: 25px;
   line-height: 25px;
+  &:hover {
+    background-color: var(--black);
+  }
 `
 
 const variants = {
