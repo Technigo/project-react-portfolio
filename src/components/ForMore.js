@@ -13,7 +13,7 @@ const IconContainer = styled.div`
   gap: 30px;
 
   @media (max-width: 669px) {
-    grid-template-columns: repeat(3, 90px);
+    grid-template-columns: repeat(2, 90px);
     gap: 10px;
   }
 `
