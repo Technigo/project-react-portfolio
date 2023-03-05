@@ -61,9 +61,10 @@ const ProjectTitle = styled.h3`
 
 const ProjectDescription = styled.p`
   font-family: "Roboto", sans-serif;
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 9px;
   line-height: 1.5;
+  font-size:0.975rem;
 `
 
 const ProjectTag = styled.span`
@@ -111,7 +112,7 @@ const Project = ({ title, name, description, tags, date, image, liveurl, feature
         {tags.map((tag) => (<ProjectTag key={tag}>{tag}</ProjectTag>))}
       </p>
 
-      <div style={{ paddingTop: '12px', paddingBottom: '15px' }}>
+      <div style={{ paddingTop: '16px', paddingBottom: '15px' }}>
         <Pill variant="web" href={liveurl} />
         <Pill variant="github" href={githuburl} />
       </div>
