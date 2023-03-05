@@ -37,8 +37,7 @@ const Tech = () => {
           styled components,
           MongoDB,
           Web Accessibility,
-          APIs,
-          pair-programming.
+          APIs.
         </TechText>
       </Wrapper>
     </PageSection>
