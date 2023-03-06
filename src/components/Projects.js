@@ -74,13 +74,11 @@ const Projects = () => {
     && (project.name !== 'project-weather-app')
     && (project.name !== 'project-chatbot')
     && (project.name !== 'project-music-releases')
-    && (project.name !== 'project-labyrinth')
     && (project.name !== 'project-movies')
     && (project.name !== 'project-express-api')
     && (project.name !== 'project-mongo-api')
     && (project.name !== 'project-happy-thoughts-api')
     && (project.name !== 'project-auth')
-    && (project.name !== 'project-todos')
   );
 
   // Filtered list of other projects for tablet/desktop view
@@ -94,6 +92,7 @@ const Projects = () => {
     && (project.name !== 'project-happy-thoughts-api')
     && (project.name !== 'project-auth')
     && (project.name !== 'project-math-app')
+    && (project.name !== 'project-labyrinth')
   );
 
   // Function that sets the code-tags into separate units
