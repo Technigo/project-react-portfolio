@@ -9,12 +9,12 @@ const TechSkills = () => {
     'JavaScript ES6',
     'React',
     'Redux',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'APIs',
     'HTML',
-    'CSS',
-    'API:s',
-    'GitHub',
-    'mob-programming',
-    'pair-programming'
+    'CSS'
   ]
 
   return (

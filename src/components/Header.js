@@ -4,10 +4,9 @@ import styled from 'styled-components/macro';
 
 import linkedInIcon from 'assets/linkedin-color-icon-white.svg'
 import gitHubIcon from 'assets/github-icon-white.svg'
-import stackOverflowIcon from 'assets/stackoverflow-icon-white.svg'
 import profilePic from 'assets/profile-pic.webp'
 
-import { gitHubLink, linkedInLink, stackOverflowLink } from 'utils/Urls';
+import { gitHubLink, linkedInLink } from 'utils/Urls';
 import { OuterWrapper, InnerWrapper } from 'styles/ProjectStyles';
 
 const Header = () => {
@@ -21,11 +20,6 @@ const Header = () => {
       name: 'Github',
       link: gitHubLink,
       image: gitHubIcon
-    },
-    {
-      name: 'Stackoverflow',
-      link: stackOverflowLink,
-      image: stackOverflowIcon
     }
   ]
   return (
@@ -55,7 +49,7 @@ const Header = () => {
         <InfoHeader tabIndex="0">
           <p>PORTFOLIO: <span>DAVID BALLESTER</span></p>
           <h1>frontend developer</h1>
-          <h2>+ leading</h2>
+          <h2>+ design & lead</h2>
         </InfoHeader>
       </InnerWrapper>
     </OuterWrapper>

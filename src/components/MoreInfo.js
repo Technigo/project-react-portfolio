@@ -3,10 +3,9 @@ import styled from 'styled-components/macro';
 
 import linkedInIcon from 'assets/linkedin-color-icon.svg'
 import gitHubIcon from 'assets/github-icon.svg'
-import stackOverflowIcon from 'assets/stackoverflow-icon.svg'
 
 import { BlueTitle, InnerWrapperSection, OuterWrapperSection } from 'styles/ProjectStyles';
-import { gitHubLink, linkedInLink, stackOverflowLink } from 'utils/Urls';
+import { gitHubLink, linkedInLink } from 'utils/Urls';
 
 const MoreInfo = () => {
   const socialLinks = [
@@ -19,11 +18,6 @@ const MoreInfo = () => {
       name: 'github',
       link: gitHubLink,
       icon: gitHubIcon
-    },
-    {
-      name: 'stackoverflow',
-      link: stackOverflowLink,
-      icon: stackOverflowIcon
     }
   ]
 

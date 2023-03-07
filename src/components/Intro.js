@@ -10,13 +10,18 @@ const Intro = () => {
       <InnerWrapperSection>
         <IntroStyle tabIndex="0">
           <SpanLine /><SpanDot />
-          Hello! I&apos;m a frontend developer with a background in interior and
+          {/* Hello! I&apos;m a frontend developer with a background in interior and
           graphic design. I consider myself as flexible and social and a good
           team player. I have always been a person who tries to create
           conditions for everyone to develop. I am passionate about creating a
           &quot;team feeling&quot; within the group. I have the ability to see the big
           picture of situations without forgetting the details. I keep calm in
-          stressful situations and I&apos;m used to working with deadlines.
+          stressful situations and I&apos;m used to working with deadlines. */}
+          Hello! I&apos;m a frontend developer (with fullstack ambitions)
+          trained in modern Javascript, React and Redux, and always motivated by
+          continuous learning new skills, both professional and personal.
+          I speak four languages and I have a background in interior and
+          graphic design.
         </IntroStyle>
       </InnerWrapperSection>
     </OuterWrapperSection>
