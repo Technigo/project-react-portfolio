@@ -66,6 +66,13 @@ code {
 
 } 
 
+mark {
+  background-color: #e9722d;
+  color: white;
+  padding: 1% 2%;
+  border-radius: 2px;
+}
+
 /* TABLET */
 @media (min-width: 668px) and (max-width:1024px) {
 

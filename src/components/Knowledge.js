@@ -6,7 +6,7 @@ const Knowledge = () => {
   return (
     <MainSections>
       <InnerWrapper>
-        <MainHeader>TECH</MainHeader>
+        <MainHeader><mark>TECH</mark></MainHeader>
         <MainText>
         HTML, CSS, Flexbox, JavaScript, JSX, React, React Hooks, Redux,
         </MainText>

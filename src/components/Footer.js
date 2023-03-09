@@ -31,7 +31,7 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   height: 350px; 
   width: 100vw;
-  background: #48a0a4; 
+  background: #98a9e2;
   font-family: 'Montserrat', sans-serif;
 
   @media ${Devices.tablet} {

@@ -3,18 +3,18 @@ import styled from 'styled-components/macro';
 import { InnerWrapper, Devices, MainHeader, MainSections, LinkedItems } from 'styles/mainStyles';
 import LinkedInImg from '../Images/linked-in.png';
 import GithubImg from '../Images/github.png';
-import StackOverflowImg from '../Images/stack-overflow.png';
+// import StackOverflowImg from '../Images/stack-overflow.png';
 
 // Links found on the bottom of the page
 const BottomLinks = () => {
   return (
     <MainSections>
       <InnerWrapper>
-        <MainHeader>FOR MORE</MainHeader>
+        <MainHeader><mark>FOR MORE</mark></MainHeader>
         <LinkWrapper>
           <BottomLink href="https://www.linkedin.com/in/linda-malm-7aa8866b/"><LinkImage src={LinkedInImg} alt="linked in" />LINKED IN</BottomLink>
           <BottomLink href="https://github.com/malmen237"><LinkImage src={GithubImg} alt="github" />GITHUB</BottomLink>
-          <BottomLink href="https://stackoverflow.com/c/technigo/users/362"><LinkImage src={StackOverflowImg} alt="stack overflow" />STACK OVERFLOW</BottomLink>
+          {/* <BottomLink href="https://stackoverflow.com/c/technigo/users/362"><LinkImage src={StackOverflowImg} alt="stack overflow" />STACK OVERFLOW</BottomLink> */}
         </LinkWrapper>
       </InnerWrapper>
     </MainSections>
@@ -27,7 +27,7 @@ const LinkWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10%;
+  padding: 5%;
 `
 
 const BottomLink = styled(LinkedItems)`

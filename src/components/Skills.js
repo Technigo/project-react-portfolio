@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <MainSections coloredBackground>
       <InnerWrapper>
-        <MainHeader>SKILLS</MainHeader>
+        <MainHeader><mark>SKILLS</mark></MainHeader>
         <Grid>
           <SkillsColumns>
             <SkillsTitel>CODE</SkillsTitel>

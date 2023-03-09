@@ -126,7 +126,7 @@ const Projects = () => {
   return (
     <MainSections coloredBackground>
       <InnerWrapper>
-        <MainHeader>FEATURED PROJECTS</MainHeader>
+        <MainHeader><mark>FEATURED PROJECTS</mark></MainHeader>
         <FeatureWrapMobile>
           {renderProjects(FeaturedProjectsMobile, true)}
         </FeatureWrapMobile>

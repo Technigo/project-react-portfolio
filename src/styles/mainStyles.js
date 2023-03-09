@@ -73,16 +73,11 @@ export const LinkedItems = styled.a`
 `
 
 export const MainHeader = styled.h2`
-  color: white;
   font-weight: bold;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 5% 10%;
-
-  &:first-line {
-    background-color: #e9722d;
-  }
 
   @media ${Devices.tablet} {
   font-size: 25px;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { InnerWrapper, Devices } from 'styles/mainStyles';
-import linksImg from '../Images/SoMe-white.png';
-import backgroundImageSmall from '../Images/pexels-tara-winstead-smallNY.jpg';
-import backgroundImageLarge from '../Images/pexels-tara-winstead-largeNY.jpg';
+import linksImg from '../Images/SoMe-top.png';
+import backgroundImageSmall from '../Images/duck-mobile-bg.jpeg';
+import backgroundImageLarge from '../Images/duck-bg.jpeg';
 import ProfileImage from '../Images/Linda.jpg';
 
 const Header = () => {
@@ -39,6 +39,14 @@ const Background = styled.div`
     background-position: center;
 
     @media ${Devices.tablet} {
+      height: 500px;
+      background: url(${backgroundImageLarge});
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    @media ${Devices.desktop} {
       height: 500px;
       background: url(${backgroundImageLarge});
       background-repeat: no-repeat;
