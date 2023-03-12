@@ -27,7 +27,7 @@ export const Header = () => {
         <h1>web</h1>
         <h1>developer</h1>
         <h4>+ international business</h4>
-        <h4> and economics</h4>
+        <h4>  and economics</h4>
       </HeaderTitle>
       <ProfileImage>
         <img src={profileImage} alt="Profile" />
@@ -162,8 +162,8 @@ export const ProfileImage = styled.div`
     object-position: top center;
     border-radius: 50%;
     border: 4px solid white;
-    width: 170px;
-    height: 170px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     bottom: -5%;
     right: 10%;
