@@ -46,6 +46,10 @@ export const SkillsOuterWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
+
+@media (min-width: 1024px) {
+  height: 80vh;
+}
 `;
 
 export const SkillsInnerWrapper = styled.div`  
