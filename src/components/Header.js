@@ -121,7 +121,6 @@ export const HeaderTitle = styled.div`
 
   h4 {
     font-size: 25px;
-    margin-bottom: 5px;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {
@@ -163,8 +162,8 @@ export const ProfileImage = styled.div`
     object-position: top center;
     border-radius: 50%;
     border: 4px solid white;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     position: absolute;
     bottom: -5%;
     right: 10%;
