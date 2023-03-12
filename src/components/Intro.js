@@ -13,7 +13,6 @@ export const Intro = () => {
           <br />
           When coding, I always keep in mind the importance of
           user-friendliness and the company&apos;s financial goals.<br />
-          <br />
           With my skills and perspective, I am confident in my ability to
           create reliable and profitable software solutions.
         </p>
