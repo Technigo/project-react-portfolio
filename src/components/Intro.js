@@ -10,7 +10,7 @@ export const Intro = () => {
           I bring a unique background in International Business
           and Economics &#40;French&#41; and Accounting to the table.
           When coding, I always keep in mind the importance of
-          user-friendliness and the company&apos;s financial goals.{'\n'}
+          user-friendliness and the company&apos;s financial goals.<br/>
           With my skills and perspective, I am confident in my ability to
           create reliable and profitable software solutions.
         </p>
