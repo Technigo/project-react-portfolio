@@ -121,6 +121,7 @@ export const HeaderTitle = styled.div`
 
   h4 {
     font-size: 25px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {

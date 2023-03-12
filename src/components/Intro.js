@@ -8,7 +8,7 @@ export const Intro = () => {
         <p>
           Hello! As a recent graduate in Web Development,
           I bring a unique background in International Business
-          and Economics &#40;French&#41; and accounting to the table.
+          and Economics &#40;French&#41; and Accounting to the table.
           When coding, I always keep in mind the importance of
           user-friendliness and the company&apos;s financial goals.
           With my skills and perspective, I am confident in my ability to
@@ -21,7 +21,7 @@ export const Intro = () => {
 
 export const IntroOuterWrapper = styled.div`
   width: 100%;
-  height: 300px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-content: center;
