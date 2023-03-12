@@ -6,10 +6,12 @@ export const Tech = () => {
     <TechOuterWrapper>
       <TechInnerWrapper>
         <h5>TECH</h5>
-        <p>HTML, CSS, Flexbox, CSS Grid, <span>JavaScript</span>, JSX,<span> React</span>
-        , React Hooks,<span> Redux</span>, Node.js,<span> API:s, JSON</span>
-        , MongoDB, Mongoose, Google Cloud, REST, Express, CORS, bcrypt, CryptoJS
-        , Web Accessibility, mob-programming, pair-programming & GitHub.
+        <p>HTML, CSS, Flexbox, CSS Grid, Styled-Components, <span>JavaScript</span>
+        , <span>React.js</span>, React Hooks, JSX, <span>Redux.js</span>, Node.js
+        , <span>API</span>, <span>JSON</span>, <span>Google Cloud</span>
+        , <span>MongoDB</span>, Mongoose, Postman, REST API, Express, CORS
+        , bcrypt, Crypto.js, ESLint, Git, GitHub, Netlify, Accessibility
+        , pair-programming & mob-programming.
         </p>
       </TechInnerWrapper>
     </TechOuterWrapper>

@@ -13,23 +13,24 @@ export const Skills = () => {
             <p>CSS</p>
             <p>JavaScript</p>
             <p>React</p>
-            <p>Styled Components</p>
-            <p>GitHub</p>
+            <p>Redux</p>
+            <p>Node</p>
           </SkillList>
           <SkillList>
             <h7>TOOLBOX</h7>
             <p>Figma</p>
-            <p>Slack</p>
+            <p>MongoDB</p>
+            <p>Google Cloud</p>
             <p>IFS</p>
             <p>Agresso Unit4</p>
-            <p>Visma PX</p>
           </SkillList>
           <SkillList className="More">
             <h7>MORE</h7>
             <p>Business</p>
-            <p>Marketing</p>
-            <p>Finance</p>
+            <p>Economics</p>
             <p>French</p>
+            <p>Accounting</p>
+            <p>Sales</p>
           </SkillList>
         </SkillsContainer>
       </SkillsInnerWrapper>

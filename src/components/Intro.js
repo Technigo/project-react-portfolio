@@ -5,9 +5,10 @@ export const Intro = () => {
   return (
     <IntroOuterWrapper>
       <IntroInnerWrapper>
-        <p>Hello! As a recent graduate in Web Development,
-          I bring a unique background in accounting and
-          French international business and economics to the table.
+        <p>
+          Hello! As a recent graduate in Web Development,
+          I bring a unique background in International Business
+          and Economics &lpar;French&rpar; and accounting to the table.
           When coding, I always keep in mind the importance of
           user-friendliness and the company&apos;s financial goals.
           With my skills and perspective, I am confident in my ability to
