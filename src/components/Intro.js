@@ -6,7 +6,8 @@ export const Intro = () => {
     <IntroOuterWrapper>
       <IntroInnerWrapper>
         <p>
-          Hello! As a recent graduate in Web Development,
+          Hello!<br />
+          As a recent graduate in Web Development,
           I bring a unique background in International Business
           and Economics &#40;French&#41; and Accounting to the table.<br />
           <br />
