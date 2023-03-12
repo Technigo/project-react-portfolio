@@ -9,15 +9,15 @@ export const Thoughts = () => {
         <AllMyThoughtsCards>
           <ThoughtsCard>
             <a
-              href="https://www.google.com"
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7038863071229988864/"
               target="_blank"
               rel="noreferrer"
               alt="bild">
-              <img src="./Thumbnails/thoughts_thumbnail1.jpg" lang="eng" alt="Girhub project" />
-              <DateTitle>OCT 2022</DateTitle>
-              <BlogTitle>Though week</BlogTitle>
-              <BlogText>This week has been really though.
-                This really is a roller coaster. Right now I am in the valley of it.
+              <img src="./Thumbnails/thoughts_thumbnail1.jpg" lang="eng" alt="GitHub project" />
+              <DateTitle>MAR 2023</DateTitle>
+              <BlogTitle>Certificate of Completion</BlogTitle>
+              <BlogText>Like many of you, I'm not that comfortable with this LinkedIn-way 
+                of expressing yourself. Though, I'm up for a challenge.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>
@@ -28,11 +28,11 @@ export const Thoughts = () => {
               target="_blank"
               rel="noreferrer"
               alt="bild">
-              <img src="./Thumbnails/thoughts_thumbnail1.jpg" lang="eng" alt="Girhub project" />
-              <DateTitle>OCT 2022</DateTitle>
-              <BlogTitle>Smooth week</BlogTitle>
-              <BlogText>This week has been really fun and smooth.
-                As said before: It is a roller coaster. I am in the clouds now.
+              <img src="./Thumbnails/thoughts_thumbnail1.jpg" lang="eng" alt="GitHub project" />
+              <DateTitle>JAN 2023</DateTitle>
+              <BlogTitle>Boot Camp finalization</BlogTitle>
+              <BlogText>Phew - I&apos;m done!
+                It&apos;s hard to grasp it but now late January I&apos;m actually done.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>
