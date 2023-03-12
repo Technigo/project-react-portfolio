@@ -29,6 +29,14 @@ export const IntroOuterWrapper = styled.div`
   align-content: center;
   align-items: center;
   background: var(--green);
+
+@media (min-width: 668px) {
+  height: 350px;
+}
+
+ @media (min-width: 1024px) {
+  height: 300px;
+ }
 `;
 
 export const IntroInnerWrapper = styled.div`
