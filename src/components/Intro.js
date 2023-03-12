@@ -23,7 +23,7 @@ export const Intro = () => {
 
 export const IntroOuterWrapper = styled.div`
   width: 100%;
-  height: 380px;
+  height: 420px;
   display: flex;
   justify-content: center;
   align-content: center;

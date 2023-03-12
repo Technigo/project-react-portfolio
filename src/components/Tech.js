@@ -21,7 +21,7 @@ export const Tech = () => {
 export const TechOuterWrapper = styled.div`
   background-color: var(--white);
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   min-height: 350px;
   display: flex;
   justify-content: center;
