@@ -16,8 +16,8 @@ export const Thoughts = () => {
               <img src="./Thumbnails/thoughts_thumbnail1.jpg" lang="eng" alt="GitHub project" />
               <DateTitle>MAR 2023</DateTitle>
               <BlogTitle>Certificate of Completion</BlogTitle>
-              <BlogText>Like many of you, I'm not that comfortable with this LinkedIn-way 
-                of expressing yourself. Though, I'm up for a challenge.
+              <BlogText>Like many of you, I&apos;m not that comfortable with this LinkedIn way 
+                of expressing yourself. Though, I&apos;m up for a challenge.
               </BlogText>
               <EndingArrows>{'>>'}</EndingArrows>
             </a>
