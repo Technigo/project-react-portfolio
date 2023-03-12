@@ -27,7 +27,8 @@ export const Header = () => {
         <h1>web</h1>
         <h1>developer</h1>
         <h4>+ international business<br />
-        &nbsp;&nbsp;&nbsp;and economics</h4>
+        &nbsp;&nbsp;&nbsp;and economics
+        </h4>
       </HeaderTitle>
       <ProfileImage>
         <img src={profileImage} alt="Profile" />
