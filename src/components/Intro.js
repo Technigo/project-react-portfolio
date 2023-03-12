@@ -6,12 +6,13 @@ export const Intro = () => {
     <IntroOuterWrapper>
       <IntroInnerWrapper>
         <p>
-          Hello!<br />
-          As a recent graduate in Web Development,
+          Hello! As a recent graduate in Web Development,
           I bring a unique background in International Business
           and Economics &#40;French&#41; and Accounting to the table.<br />
+          <br />
           When coding, I always keep in mind the importance of
           user-friendliness and the company&apos;s financial goals.<br />
+          <br />
           With my skills and perspective, I am confident in my ability to
           create reliable and profitable software solutions.
         </p>
