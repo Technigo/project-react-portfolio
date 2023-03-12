@@ -27,6 +27,7 @@ export const Header = () => {
         <h1>web</h1>
         <h1>developer</h1>
         <h4>+ international business<br />
+        <br />
         &nbsp;&nbsp;&nbsp;and economics
         </h4>
       </HeaderTitle>
@@ -122,7 +123,6 @@ export const HeaderTitle = styled.div`
 
   h4 {
     font-size: 25px;
-    margin-bottom: 5px;
   }
 
   @media (min-width: 668px) and (max-width: 1023px) {
