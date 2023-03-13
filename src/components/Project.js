@@ -72,7 +72,7 @@ const ProjectTag = styled.span`
   color: var(--white);
   font-weight: 500;
   letter-spacing: 0.2px;
-  background-color: var(--tagbg);
+  background-color: var(--accent);
   text-decoration: none;
   font-size: 0.8rem;
   line-height: 0.8rem;

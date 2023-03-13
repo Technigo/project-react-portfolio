@@ -12,6 +12,7 @@ const TechText = styled.p`
 
 const Highlight = styled.span`
     color: var(--accent);
+    font-weight: 450;
 `
 
 const Tech = () => {
@@ -22,8 +23,8 @@ const Tech = () => {
           Tech
         </Heading>
         <TechText>
-          HTML,
-          CSS,
+          HTML5,
+          CSS3,
           Bootstrap,
           Ant Design,
           <Highlight> JavaScript</Highlight>,
@@ -37,7 +38,7 @@ const Tech = () => {
           styled components,
           MongoDB,
           Web Accessibility,
-          APIs.
+          APIs
         </TechText>
       </Wrapper>
     </PageSection>

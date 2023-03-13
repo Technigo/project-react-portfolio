@@ -7,14 +7,8 @@ import SocialIcon from './SocialIcon'
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 130px);
+  grid-template-columns: repeat(2, 110px);
   justify-content: center;
-  gap: 30px;
-
-  @media (max-width: 669px) {
-    grid-template-columns: repeat(2, 90px);
-    gap: 10px;
-  }
 `
 
 const ContactText = styled.p`
@@ -30,12 +24,12 @@ const ContactText = styled.p`
 const LetsTalk = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 669px)' })
 
-  const iconSize = isMobile ? 50 : 40
+  const iconSize = isMobile ? 50 : 45
 
   return (
     <PageSection backgroundColor="var(--accent)">
       <ContactText>
-        <Heading>Let&apos;s talk!</Heading>
+        <Heading>Let&apos;s talk! 🤩</Heading>
         <ContactCard />
 
       </ContactText>

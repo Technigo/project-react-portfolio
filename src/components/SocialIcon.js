@@ -10,9 +10,8 @@ const IconTitle = styled.div`
   font-family: "Roboto Flex", sans-serif;
   color: ${(props) => props.color};
   text-align: center;
-  padding-top: 15px;
+  padding-top: 12px;
   font-size: 0.95rem;
-  line-height: 1.3;
   letter-spacing: 0.3px;
 `
 
@@ -54,7 +53,7 @@ const variants = {
   }
 }
 
-const SocialIcon = ({ variant, showText = false, size = 80, color = 'var(--heading)' }) => {
+const SocialIcon = ({ variant, showText = false, size = 45, color = 'var(--heading)' }) => {
   if (!variants[variant]) {
     throw new Error('Invalid variant passed to Icon component')
   }

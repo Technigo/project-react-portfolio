@@ -8,7 +8,7 @@ export const ProfileImage = styled.img`
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 0px solid var(--imageframe);
+  border: 0px;
   overflow: hidden;
 `
 
@@ -43,12 +43,12 @@ const Title = styled.h2`
     padding-top: 10px;
     padding-bottom: 45px;
     letter-spacing: 1px;
-    color: white;
+    color: var(--white);
 `
 
 const TitleBackground = styled.span`
     background-color: var(--heading);
-    padding: 3px;
+    padding: 2px 8px;
 `
 
 export const Heading = ({ children }) => (
@@ -62,7 +62,7 @@ export const Heading = ({ children }) => (
 export const Subheading = styled.h2`
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 60px;

@@ -15,7 +15,7 @@ const MainHeader = styled.header`
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 40px);
+  grid-template-columns: repeat(2, 45px);
   justify-content: right;
   gap: 10px;
   padding-top: 40px;
