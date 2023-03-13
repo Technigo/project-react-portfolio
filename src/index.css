@@ -49,17 +49,28 @@ table {
 }
 /* end of reset */
 
+/*
+pink #F2A2C0
+purple #F28DCF
+darkyellow #F2D16D
+lightyellow #F2DBAE
+apricot #F2B9AC
+*/
+
 :root {
     --black: #1e1e1e;
     --white: #ffffff;
-    --heading: #88635c;
-    --tagbg: #88635c;
-    --imageframe: #f5f5f5;
-    --headerfallback: #dfa0a9;
-    --sectionbg: #fdf5f8;
+    --gray: #808080;
+    --apricot: #F2B9AC;
+    --darkyellow: #F2D16D;
+    --heading: #1e1e1e;
+    --tagbg: #e677bf;
+    --imageframe: #f5f5f5; /*delete?*/
+    --headerfallback: #F2A2C0;
+    --sectionbg: #fef1ce;
 		--sectionbg2: #ffffff;
-    --accent: #d54887;
-		--projectpill: #d54887;
+    --accent: #e677bf;
+		--projectpill: #1e1e1e;
 }
 
 body {
