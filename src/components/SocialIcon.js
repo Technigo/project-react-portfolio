@@ -7,12 +7,13 @@ const IconWrapper = styled.div`
 const IconTitle = styled.div`
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   color: ${(props) => props.color};
   text-align: center;
   padding-top: 15px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.3;
+  letter-spacing: 0.3px;
 `
 
 const IconBorder = styled.div`

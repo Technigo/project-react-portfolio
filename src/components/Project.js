@@ -53,14 +53,14 @@ const ProjectName = styled.h2`
 const ProjectTitle = styled.h3`
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  color: var(--accent);
+  font-family: "Roboto Flex", sans-serif;
+  color: var(--black);
   padding-top: 15px;
   line-height: 1.2;
 `
 
 const ProjectDescription = styled.p`
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   padding-top: 6px;
   padding-bottom: 9px;
   line-height: 1.5;
@@ -68,15 +68,16 @@ const ProjectDescription = styled.p`
 `
 
 const ProjectTag = styled.span`
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   color: var(--white);
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.2px;
   background-color: var(--tagbg);
   text-decoration: none;
-  font-size: 0.75rem;
-  line-height: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   padding: 4px 6px;
-  margin: 6px 6px 0 0;
+  margin: 5px 5px 0 0;
 `
 
 const Project = ({ title, name, description, tags, date, image, liveurl, featured, githuburl }) => {

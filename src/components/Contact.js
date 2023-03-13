@@ -8,7 +8,7 @@ const FooterText = styled.p`
     font-weight: 400;
     font-size: 1.1rem;
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     line-height: 1.6;
     padding-bottom: 50px;
     `
@@ -18,12 +18,12 @@ font-family: "Montserrat", sans-serif;
 font-weight: 400;
 font-size: 1.1rem;
 text-align: center;
-color: var(--white);
+color: var(--black);
 line-height: 1.6;
 
 &:hover,
 &:focus{
-    color: var(--black);
+    color: var(--white);
 };
 &:active{
     color: var(--white);
@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <PageSection backgroundColor="var(--accent)">
       <FooterText>
-        <Subheading>Contact</Subheading>
+        <Subheading>Get in touch</Subheading>
         <p>
           <ContactLink href="tel:0046790421910">
           +46(0)790 42 19 10

@@ -8,7 +8,7 @@ export const ProfileImage = styled.img`
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: 3px solid var(--imageframe);
+  border: 0px solid var(--imageframe);
   overflow: hidden;
 `
 
@@ -37,7 +37,7 @@ export const Lollipop = () => (
 const Title = styled.h2`
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 10px;

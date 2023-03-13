@@ -6,7 +6,7 @@ import { ProfileImage, Wrapper } from './ComponentLibrary'
 const MainHeader = styled.header`
   width: 100%;
   height: 475px;
-  background-image: url("assets/images/header_crop.jpg");
+  background-image: url("assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash_original.jpg");
   background-color: var(--headerfallback);
   position: relative;
   background-size: cover;
@@ -29,8 +29,9 @@ const TextWrapper = styled.div`
 const ImageWrapper = styled.div`
   justify-content: left;
 `
+
 const Name = styled.h1`
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   text-transform: uppercase;
   color: var(--black);
 `
@@ -39,7 +40,7 @@ const Title = styled.h1`
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
   color: var(--black);
-  font-size: 46px;
+  font-size: 2.9rem;
   padding-top: 10px;
   font-weight: 700;
   line-height: 1.2;
@@ -49,7 +50,7 @@ const OtherTitle = styled.h1`
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
   color: var(--black);
-  font-size: 24px;
+  font-size: 1.5rem;
   padding-top: 10px;
   font-weight: 700;
   line-height: 1.2;

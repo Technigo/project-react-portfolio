@@ -16,7 +16,7 @@ const ProjectPill = styled.a`
   text-decoration: none;
   text-transform: none;
   font-size: 0.95rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   color: var(--white);
   background-color: var(--projectpill);
@@ -27,7 +27,7 @@ const ProjectPill = styled.a`
   height: 25px;
   line-height: 25px;
   &:hover {
-    background-color: var(--black);
+    background-color: var(--gray);
   }
 `
 
