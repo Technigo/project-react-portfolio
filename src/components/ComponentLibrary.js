@@ -80,3 +80,35 @@ width: 90%;
 max-width: 800px;
 margin: 0 auto;
 `
+
+const ContactLink = styled.a`
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+font-size: 1.3rem;
+text-align: center;
+color: var(--black);
+line-height: 2;
+
+&:hover,
+&:focus{
+    color: var(--white);
+};
+&:active{
+    color: var(--white);
+};
+`
+
+export const ContactCard = () => (
+  <>
+    <p>
+      <ContactLink href="tel:0046790421910">
+          +46(0)790 42 19 10
+      </ContactLink>
+    </p>
+    <p>
+      <ContactLink href="mailto:amanda@amandas.dev">
+          amanda@amandas.dev
+      </ContactLink>
+    </p>
+  </>
+)
