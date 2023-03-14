@@ -9,8 +9,9 @@ import { ClonedSectionWrapper, InnerWrapper, HeadH4, H5Head, SectionWrapper, Hea
 
 const FetchedInfo = () => {
   const [repos, setRepos] = useState([]);
-  const featuredForDisplay = ['project-redux-quiz', 'project-happy-thoughts', 'project-movies', 'project-music-releases', 'project-guess-who', 'project-weather-app']
-  const otherForDisplay = ['project-survey', 'project-chatbot', 'project-portfolio', 'project-business-site', 'project-news-site']
+  const featuredForDisplay = ['project-todos', 'project-labyrinth', 'project-redux-quiz', 'project-happy-thoughts', 'final-project-quiz', 'project-music-releases', 'project-guess-who', 'project-weather-app']
+  const otherForDisplay = ['project-survey', 'project-chatbot', 'project-portfolio', 'project-business-site', 'project-news-site', 'project-movies']
+  const backendForDisplay = ['project-happy-thoughts-api', 'project-mongo-api', 'project-express-api', 'project-auth']
 
   useEffect(() => {
     fetch(BASE_URL)
@@ -21,6 +22,7 @@ const FetchedInfo = () => {
 
   const featured = (repos.filter((repo) => featuredForDisplay.includes(repo.name)));
   const other = (repos.filter((repo) => otherForDisplay.includes(repo.name)));
+  const backend = (repos.filter((repo) => backendForDisplay.includes(repo.name)));
 
   const allFeatured = featured.map((repo) => {
     const imageLink = `https://raw.githubusercontent.com/${APIKey}/${repo.name}/${repo.default_branch}/code/src/assets/featured-image.webp`
@@ -30,7 +32,7 @@ const FetchedInfo = () => {
         key={repo.id}
         deployedLink={repo.homepage}
         projectImage={imageLink}
-        projectTitle={repo.name.replace(/project-/, '').replace(/redux/, '').replace(/-/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
+        projectTitle={repo.name.replace(/project-/, '').replace(/redux/, '').replace(/-/, ' ').replace(/final/, ' ').replace(/ app/, '').concat(' app').toUpperCase()}
         projectDescription={repo.description}
         techTags={repo.topics}
         repoLink={repo.html_url} />
@@ -38,6 +40,19 @@ const FetchedInfo = () => {
   })
 
   const allOther = other.map((repo) => {
+    return (
+
+      <OtherProjects
+        key={repo.id}
+        deployedLink={repo.homepage}
+        projectTitle={repo.name.replace(/project-/, '').replace(/-/, ' ').replace(/ app/, '').toUpperCase()}
+        projectDescription={repo.description}
+        techTags={repo.topics}
+        repoLink={repo.html_url} />
+    )
+  })
+
+  const allBackend = backend.map((repo) => {
     return (
 
       <OtherProjects
@@ -69,6 +84,12 @@ const FetchedInfo = () => {
           </HeadWrapper>
           <OtherWrapper>
             {allOther}
+          </OtherWrapper>
+          <HeadWrapper>
+            <H5Head>Backend projects</H5Head>
+          </HeadWrapper>
+          <OtherWrapper>
+            {allBackend}
           </OtherWrapper>
         </InnerWrapper>
       </SectionWrapper>
