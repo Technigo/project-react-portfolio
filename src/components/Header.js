@@ -40,7 +40,7 @@ const HeaderBackground = styled.header`
   width: 100%;
 
   @media (min-width: 1024px) {
-    height: 65vh;
+    height: 55vh;
   }
 `;
 // --- Links ---
