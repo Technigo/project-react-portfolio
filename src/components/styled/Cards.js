@@ -13,8 +13,9 @@ export const CardholderDiv = styled.div`
 export const CardDiv = styled.div`
   background-color: whitesmoke;
   border-radius: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.25s;
   
@@ -47,7 +48,6 @@ export const CardImage = styled.img`
 export const TagDiv = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
   flex-wrap: wrap;
 
   & div {
