@@ -4,7 +4,6 @@ export const IconGroup = styled.div`
   display: flex;
   justify-content: ${(props) => (props.header ? 'flex-end' : 'center')};
 `
-
 export const SoMeIcon = styled.img`
   height: ${(props) => (props.header ? '2rem' : '3rem')};
   max-width: auto;

@@ -10,102 +10,93 @@ export const Projects = () => {
       <InnerWrapper>
         <SectionHeading>FEATURED PROJECTS</SectionHeading>
         <CardholderDiv>
-          <CardDiv>
-            <a href="https://github.com/jnbjensen/hobit-frontend-fork">
-              <div>
-                <CardImage
-                  src="images/hobit-1200x700.png"
-                  alt="hobit project"
-                  title="View project on GitHub" />
-              </div>
-              <CardTextDiv>
-                <h4>Hobit</h4>
-                <p>A full-stack app that gamifies the building of healthy habits through daily challenges. Includes user registration/login & authentication.
-                </p>
-              </CardTextDiv>
-              <TagDiv card>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>React</div>
-                <div>Redux</div>
-                <div>APIs</div>
-                <div>Express</div>
-                <div>MongoDB</div>
-              </TagDiv>
-            </a>
+          <CardDiv href="https://github.com/jnbjensen/hobit-frontend-fork">
+            <div>
+              <CardImage
+                src="images/hobit-1200x700.png"
+                alt="hobit project"
+                title="View project on GitHub" />
+            </div>
+            <CardTextDiv>
+              <h4>Hobit</h4>
+              <p>A full-stack app that gamifies the building of healthy habits through daily challenges. Includes user registration/login & authentication.
+              </p>
+            </CardTextDiv>
+            <TagDiv card>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>Redux</div>
+              <div>APIs</div>
+              <div>Express</div>
+              <div>MongoDB</div>
+            </TagDiv>
           </CardDiv>
-
-          <CardDiv>
-            <a href="https://github.com/jnbjensen/project-happy-thoughts">
-              <div>
-                <CardImage
-                  src="images/happythoughts-1200x700.png"
-                  alt="happy thoughts project"
-                  title="View project on GitHub" />
-              </div>
-              <CardTextDiv>
-                <h4>Happy Thoughts</h4>
-                <p>A Twitter-inspired app that
+          <CardDiv href="https://github.com/jnbjensen/project-happy-thoughts">
+            <div>
+              <CardImage
+                src="images/happythoughts-1200x700.png"
+                alt="happy thoughts project"
+                title="View project on GitHub" />
+            </div>
+            <CardTextDiv>
+              <h4>Happy Thoughts</h4>
+              <p>A Twitter-inspired app that
                   allows you to post &apos;happy thoughts&apos; to an API and view the
                    20 most recent happy thoughts posted to the API.
-                </p>
-              </CardTextDiv>
-              <TagDiv card>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>React</div>
-                <div>Redux</div>
-                <div>APIs</div>
-                <div>Express</div>
-                <div>MongoDB</div>
-              </TagDiv>
-            </a>
+              </p>
+            </CardTextDiv>
+            <TagDiv card>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>Redux</div>
+              <div>APIs</div>
+              <div>Express</div>
+              <div>MongoDB</div>
+            </TagDiv>
           </CardDiv>
-          <CardDiv>
-            <a href="https://github.com/jnbjensen/project-todos">
-              <div>
-                <CardImage
-                  src="images/tasklist-1200x700.png"
-                  alt="tasklist project"
-                  title="View project on GitHub" />
-              </div>
-              <CardTextDiv>
-                <h4>Tasklist</h4>
-                <p>A minimalistic tasklist app that allows the user to create/delete tasks and change their status to completed.
-                </p>
-              </CardTextDiv>
-              <TagDiv card>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>React</div>
-                <div>Redux</div>
-              </TagDiv>
-            </a>
+          <CardDiv href="https://github.com/jnbjensen/project-todos">
+            <div>
+              <CardImage
+                src="images/tasklist-1200x700.png"
+                alt="tasklist project"
+                title="View project on GitHub" />
+            </div>
+            <CardTextDiv>
+              <h4>Tasklist</h4>
+              <p>A minimalistic tasklist app that allows the user to create/delete tasks and change their status to completed.
+              </p>
+            </CardTextDiv>
+            <TagDiv card>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>Redux</div>
+            </TagDiv>
           </CardDiv>
-          <CardDiv>
-            <a href="https://github.com/jnbjensen/project-redux-quiz">
-              <div>
-                <CardImage
-                  src="images/reduxquiz-1200x700.png"
-                  alt="redux quiz project"
-                  title="View project on GitHub" />
-              </div>
-              <CardTextDiv>
-                <h4>Coding Quiz</h4>
-                <p>A quiz with five multiple-choice questions, a progress counter and a summary page at the end, all of which are built around Redux state management.
-                </p>
-              </CardTextDiv>
-              <TagDiv card>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>React</div>
-                <div>Redux</div>
-              </TagDiv>
-            </a>
+          <CardDiv href="https://github.com/jnbjensen/project-redux-quiz">
+            <div>
+              <CardImage
+                src="images/reduxquiz-1200x700.png"
+                alt="redux quiz project"
+                title="View project on GitHub" />
+            </div>
+            <CardTextDiv>
+              <h4>Coding Quiz</h4>
+              <p>A quiz with five multiple-choice questions, a progress counter and a summary page at the end, all of which are built around Redux state management.
+              </p>
+            </CardTextDiv>
+            <TagDiv card>
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+              <div>React</div>
+              <div>Redux</div>
+            </TagDiv>
           </CardDiv>
         </CardholderDiv>
         <SubsectionHeading>OTHER PROJECTS</SubsectionHeading>

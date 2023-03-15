@@ -10,7 +10,7 @@ export const CardholderDiv = styled.div`
   }
 `
 
-export const CardDiv = styled.div`
+export const CardDiv = styled.a`
   background-color: whitesmoke;
   border-radius: 1rem;
   display: flex;
