@@ -112,3 +112,7 @@ export const ContactCard = () => (
     </p>
   </>
 )
+
+export const Space = () => (
+  <div style={{ height: '35px' }} />
+)

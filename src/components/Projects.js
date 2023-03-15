@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Heading, Subheading, Wrapper } from './ComponentLibrary'
+import { Heading, Space, Wrapper } from './ComponentLibrary'
 import PageSection from './PageSection'
 import Project from './Project'
 import projectData from '../projects.json'
@@ -35,8 +35,7 @@ const Projects = () => {
               featured />
           ))}
         </FeaturedProjectContainer>
-
-        <Subheading> </Subheading>
+        <Space />
         {projectData.filter((project) => !project.featured).map((project) => (
           <Project
             key={project.name}
