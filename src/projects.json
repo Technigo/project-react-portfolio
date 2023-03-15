@@ -2,7 +2,7 @@
     {
         "name": "PokeYay",
         "title": "Trade finder for PokémonGO",
-        "description": "My final project for Technigo 6 month frontend course.",
+        "description": "My final project for the 6 month front end course at Technigo. ",
         "tags": [
             "JavaScript",
             "APIs",
@@ -44,7 +44,7 @@
             "APIs"
         ],
         "date": "November 2022",
-        "image": "/assets/images/projects/themaze.png",
+        "image": "/assets/images/projects/themaze2.png",
         "liveurl": "https://play-the-maze.netlify.app",
         "githuburl": "https://github.com/a-well/project-labyrinth",
         "featured": true
@@ -77,7 +77,7 @@
             "APIs"
         ],
         "date": "September 2022",
-        "image": "/assets/images/projects/cloud.jpg",
+        "image": "/assets/images/projects/cloud.png",
         "liveurl": "https://cloud-weather-app.netlify.app",
         "githuburl": "https://github.com/a-well/project-weather-app",
         "featured": true
@@ -106,7 +106,7 @@
             "CSS"
         ],
         "date": "August 2022",
-        "image": "/assets/images/projects/catnews.jpg",
+        "image": "/assets/images/projects/catnews1.png",
         "liveurl": "https://catnews.netlify.app",
         "githuburl": "https://github.com/a-well/project-news-site",
         "featured": true

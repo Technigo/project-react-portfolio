@@ -22,7 +22,7 @@ const ProjectImage = styled.img`
 `
 
 const ProjectHeader = styled.header`
-  height: 200px;
+  height: 225px;
   position: relative;
   overflow: hidden;
   &:hover ${ProjectNameWrapper} {
