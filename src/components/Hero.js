@@ -3,15 +3,20 @@ import styled from 'styled-components/macro'
 import SocialIcon from './SocialIcon'
 import { ProfileImage, Wrapper } from './ComponentLibrary'
 
-const MainHeader = styled.header`
-  width: 100%;
+const MainHeader = styled.div`
   height: 475px;
-  background-image: url("assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash_original.jpg");
   background-color: var(--headerfallback);
   position: relative;
-  background-size: cover;
-  background-position: 40% 60%;
-  `
+  z-index: 1;
+`
+
+const HeroImage = styled.img`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+`
 
 const IconContainer = styled.div`
   display: grid;
@@ -59,6 +64,15 @@ const OtherTitle = styled.h1`
 const Hero = () => {
   return (
     <MainHeader>
+      <HeroImage
+        alt="Hero"
+        srcSet="
+      assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash-small.jpg 1577w,
+      assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash-medium.jpg 2202w,
+      assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash-large.jpg 3384w
+    "
+        src="assets/images/kilimanjaro-studioz-_8mos_CBmBM-unsplash-small.jpg" />
+
       <Wrapper>
         <IconContainer>
           <SocialIcon variant="linkedin" size={40} color="black" />
@@ -71,7 +85,7 @@ const Hero = () => {
           <OtherTitle>With A Fashion Background</OtherTitle>
         </TextWrapper>
         <ImageWrapper>
-          <ProfileImage src="./assets/images/me.jpg" />
+          <ProfileImage src="./assets/images/me.jpg" style={{ zIndex: '3' }} />
         </ImageWrapper>
       </Wrapper>
     </MainHeader>
