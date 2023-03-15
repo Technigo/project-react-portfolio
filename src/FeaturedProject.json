@@ -19,8 +19,8 @@
     },
     {
       "title": "Business site",
-      "title-description": "A business site using HTML & CSS",
-      "project-description": "A business-site, mobile-first approach",
+      "title-description": "A business site",
+      "project-description": "A business site using HTML & CSS, mobile-first approach",
       "repo-name": "Kilafors-padel",
       "netlify-name": "https://kilafors-padel.netlify.app/",
       "tags": ["HTML", "CSS"],
