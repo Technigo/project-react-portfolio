@@ -37,12 +37,12 @@ export const Lollipop = () => (
 const Title = styled.h2`
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.9rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 675;
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 45px;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     color: var(--white);
 `
 

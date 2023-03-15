@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <PageSection backgroundColor="var(--sectionbg)">
       <Wrapper>
-        <Heading>Featured Projects</Heading>
+        <Heading>Projects</Heading>
         <FeaturedProjectContainer>
           {projectData.filter((project) => project.featured).map((project) => (
             <Project
@@ -36,7 +36,7 @@ const Projects = () => {
           ))}
         </FeaturedProjectContainer>
 
-        <Subheading>Other Projects</Subheading>
+        <Subheading> </Subheading>
         {projectData.filter((project) => !project.featured).map((project) => (
           <Project
             key={project.name}

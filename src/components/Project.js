@@ -95,13 +95,13 @@ const Project = ({ title, name, description, tags, date, image, liveurl, feature
             </ProjectNameWrapper>
           </ProjectHeader>
           <ProjectTitle>
-            {title} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
+            {title} <span style={{ fontWeight: '400' }}>|</span> <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
           </ProjectTitle>
         </>}
 
         {!featured && (
           <ProjectTitle>
-            {name} | <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
+            {name} <span style={{ fontWeight: '400' }}>|</span> <span style={{ fontWeight: '400', textTransform: 'none', marginRight: '2px', fontSize: '0.9rem' }}>{date}</span>
           </ProjectTitle>
         )}
 
