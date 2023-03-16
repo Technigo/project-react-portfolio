@@ -29,7 +29,7 @@ const LetsTalk = () => {
   return (
     <PageSection backgroundColor="var(--accent)">
       <ContactText>
-        <Heading>Let&apos;s talk! 🤩</Heading>
+        <Heading>Let&apos;s talk! 😀</Heading>
         <ContactCard />
 
       </ContactText>
