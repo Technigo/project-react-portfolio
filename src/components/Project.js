@@ -77,7 +77,7 @@ const ProjectTag = styled.span`
   font-size: 0.75rem;
   line-height: 0.9rem;
   padding: 4px 6px;
-  margin: 5px 5px 0 0;
+  margin: 0 5px 0 0;
   display:inline-block;
 `
 
