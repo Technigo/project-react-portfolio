@@ -2,7 +2,7 @@
     {
         "name": "PokeYay",
         "title": "Trade finder for PokémonGO",
-        "description": "My final project for the 6 month front end course at Technigo. ",
+        "description": "My final project for the 6 month front end course at Technigo. Users can sign up and post listings for Pokemons they want to trade.",
         "tags": [
             "JavaScript",
             "APIs",
@@ -17,59 +17,27 @@
         "featured": true
     },
     {
-        "name": "Never Ending Post-It",
-        "title": "A to-do app",
-        "description": "Thanks to technology, you will never have to run out of space on your to-do list notes ever again.",
-        "tags": [
-            "HTML",
-            "CSS",
-            "React",
-            "Redux"
-        ],
-        "date": "November 2022",
-        "image": "http://placekitten.com/g/200/400",
-        "liveurl": "https://neverendingpostit.netlify.app",
-        "githuburl": "https://github.com/a-well/project-todos",
-        "featured": false
-    },
-    {
         "name": "The Maze",
         "title": "Browser game",
-        "description": "Images were rendered using AI.",
+        "description": "A game built to practice using APIs. Images rendered using AI.",
         "tags": [
-            "HTML",
             "CSS",
             "JavaScript",
             "React",
-            "APIs"
+            "Redux",
+            "APIs",
+            "styled components"
         ],
         "date": "November 2022",
-        "image": "/assets/images/projects/themaze2.png",
+        "image": "/assets/images/projects/themaze4.png",
         "liveurl": "https://play-the-maze.netlify.app",
         "githuburl": "https://github.com/a-well/project-labyrinth",
         "featured": true
     },
     {
-        "name": "Happy Thoughts",
-        "title": "Yay happy thoughts!",
-        "description": "It's like Twitter but happy!",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "APIs"
-        ],
-        "date": "October 2022",
-        "image": "http://placekitten.com/g/200/300",
-        "liveurl": "https://happythoughtsproject.netlify.app",
-        "githuburl": "https://github.com/a-well/project-happy-thoughts",
-        "featured": false
-    },
-    {
         "name": "Cloud Weather",
-        "title": "Weather app in JavaScript",
-        "description": "Responsive web app using HTML, CSS and JavaScript ES6.",
+        "title": "Weather app",
+        "description": "A web app where users can select a city to see the weather forecast for today, and five days ahead. Colour scheme changes according to current weather.",
         "tags": [
             "HTML",
             "CSS",
@@ -83,9 +51,75 @@
         "featured": true
     },
     {
-        "name": "Tablebooker",
-        "title": "Friendly chat bot",
-        "description": "Responsive web site using HTML, CSS and JavaScript ES6.",
+        "name": "Catnews",
+        "title": "News site",
+        "description": "My application to Technigo. A fictional news site featuring nothing but articles on very cute cats. Responsive layout and stuff.",
+        "tags": [
+            "HTML",
+            "CSS"
+        ],
+        "date": "August 2022",
+        "image": "/assets/images/projects/catnews1.png",
+        "liveurl": "https://catnews.netlify.app",
+        "githuburl": "https://github.com/a-well/project-news-site",
+        "featured": true
+    },
+    {
+        "name": "Portfolio",
+        "title": "amandas.dev",
+        "description": "You're looking at it right now! Head over to Github to check out the code.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "React",
+            "styled components"
+        ],
+        "date": "March 2023",
+        "image": "null",
+        "liveurl": "https://amandas.dev",
+        "githuburl": "https://github.com/a-well/project-react-portfolio",
+        "featured": false
+    },
+    {
+        "name": "To-do List",
+        "title": "Never Ending Post-It",
+        "description": "A little to-do list one pager where users can add, check off, and delete tasks.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "React",
+            "Redux",
+            "styled components"
+        ],
+        "date": "November 2022",
+        "image": "http://placekitten.com/g/200/400",
+        "liveurl": "https://neverendingpostit.netlify.app",
+        "githuburl": "https://github.com/a-well/project-todos",
+        "featured": false
+    },
+    {
+        "name": "Twitter-style web app",
+        "title": "Happy Thoughts",
+        "description": "Users can read, post and like messages.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "APIs",
+            "Mongoose",
+            "Mongo DB"
+        ],
+        "date": "October 2022",
+        "image": "http://placekitten.com/g/200/300",
+        "liveurl": "https://happythoughtsproject.netlify.app",
+        "githuburl": "https://github.com/a-well/project-happy-thoughts",
+        "featured": false
+    },
+    {
+        "name": "Chat bot",
+        "title": "Tablebooker",
+        "description": "A responsive web app that helps users book tables at resturants.",
         "tags": [
             "HTML",
             "CSS",
@@ -96,19 +130,5 @@
         "liveurl": "https://tablebooker.netlify.app",
         "githuburl": "https://github.com/a-well/project-chatbot",
         "featured": false
-    },
-    {
-        "name": "Catnews",
-        "title": "Fictional news site",
-        "description": "My application to Technigo. A made up news site featuring nothing but articles on very cute cats.",
-        "tags": [
-            "HTML",
-            "CSS"
-        ],
-        "date": "August 2022",
-        "image": "/assets/images/projects/catnews1.png",
-        "liveurl": "https://catnews.netlify.app",
-        "githuburl": "https://github.com/a-well/project-news-site",
-        "featured": true
     }
 ]

@@ -29,7 +29,7 @@ const ProjectHeader = styled.header`
     opacity: 0;
   }
   &:hover ${ProjectImage} {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
 `
 
@@ -64,17 +64,17 @@ const ProjectDescription = styled.p`
   padding-top: 6px;
   padding-bottom: 9px;
   line-height: 1.5;
-  font-size:0.975rem;
+  font-size: 0.975rem;
 `
 
 const ProjectTag = styled.span`
   font-family: "Roboto Flex", sans-serif;
   color: var(--white);
   font-weight: 500;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.15px;
   background-color: var(--accent);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 0.8rem;
   padding: 4px 6px;
   margin: 5px 5px 0 0;
