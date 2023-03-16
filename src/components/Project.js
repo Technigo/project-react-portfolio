@@ -71,13 +71,14 @@ const ProjectTag = styled.span`
   font-family: "Roboto Flex", sans-serif;
   color: var(--white);
   font-weight: 500;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.2px;
   background-color: var(--accent);
   text-decoration: none;
   font-size: 0.75rem;
-  line-height: 0.8rem;
+  line-height: 0.9rem;
   padding: 4px 6px;
   margin: 5px 5px 0 0;
+  display:inline-block;
 `
 
 const Project = ({ title, name, description, tags, date, image, liveurl, featured, githuburl }) => {
