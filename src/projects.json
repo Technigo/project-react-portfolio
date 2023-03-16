@@ -29,7 +29,7 @@
             "styled components"
         ],
         "date": "November 2022",
-        "image": "/assets/images/projects/themaze4.png",
+        "image": "/assets/images/projects/themaze.png",
         "liveurl": "https://play-the-maze.netlify.app",
         "githuburl": "https://github.com/a-well/project-labyrinth",
         "featured": true
@@ -59,7 +59,7 @@
             "CSS"
         ],
         "date": "August 2022",
-        "image": "/assets/images/projects/catnews1.png",
+        "image": "/assets/images/projects/catnews.png",
         "liveurl": "https://catnews.netlify.app",
         "githuburl": "https://github.com/a-well/project-news-site",
         "featured": true
@@ -75,7 +75,7 @@
             "styled components"
         ],
         "date": "March 2023",
-        "image": "null",
+        "image": "",
         "liveurl": "https://amandas.dev",
         "githuburl": "https://github.com/a-well/project-react-portfolio",
         "featured": false
@@ -92,7 +92,7 @@
             "styled components"
         ],
         "date": "November 2022",
-        "image": "http://placekitten.com/g/200/400",
+        "image": "",
         "liveurl": "https://neverendingpostit.netlify.app",
         "githuburl": "https://github.com/a-well/project-todos",
         "featured": false
@@ -111,7 +111,7 @@
             "Mongo DB"
         ],
         "date": "October 2022",
-        "image": "http://placekitten.com/g/200/300",
+        "image": "",
         "liveurl": "https://happythoughtsproject.netlify.app",
         "githuburl": "https://github.com/a-well/project-happy-thoughts",
         "featured": false
@@ -126,7 +126,7 @@
             "JavaScript"
         ],
         "date": "August 2022",
-        "image": "/assets/images/projects/tablebooker.jpg",
+        "image": "",
         "liveurl": "https://tablebooker.netlify.app",
         "githuburl": "https://github.com/a-well/project-chatbot",
         "featured": false
