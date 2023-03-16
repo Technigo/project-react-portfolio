@@ -20,7 +20,7 @@
     {
         "name": "The Maze",
         "title": "Browser game",
-        "description": "A game built to practice using APIs. Images rendered using AI.",
+        "description": "A game built to practice using APIs, in which the user navigates their way through a maze. Images rendered using AI bring the text based adventure to life.",
         "tags": [
             "CSS",
             "JavaScript",
@@ -54,7 +54,7 @@
     {
         "name": "Catnews",
         "title": "News site",
-        "description": "My application to Technigo. A fictional news site featuring nothing but articles on very cute cats. Responsive layout and stuff.",
+        "description": "My application to Technigo. A responsive news site, featuring nothing but fictional (yet nevertheless noteworthy) articles about very cute cats.",
         "tags": [
             "HTML",
             "CSS"
