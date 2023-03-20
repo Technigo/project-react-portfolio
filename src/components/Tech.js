@@ -23,8 +23,8 @@ const Tech = () => {
           Tech
         </Heading>
         <TechText>
-          HTML5,
-          CSS3,
+          HTML,
+          CSS,
           Bootstrap,
           Ant Design,
           <Highlight> JavaScript</Highlight>,

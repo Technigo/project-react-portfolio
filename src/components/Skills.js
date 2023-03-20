@@ -21,13 +21,13 @@ const SkillsSubheading = styled.h3`
 
 const SkillsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: fit-content;
   gap: 10px;
 
-   /* tablet and larger -v */
-   @media (min-width: 668px) {
-    grid-template-columns: repeat(3, 1fr);
+   @media (max-width: 668px) {
+    font-size: 0.9rem;
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 `
 
@@ -38,44 +38,34 @@ const Skills = () => {
         <Heading>Skills</Heading>
         <SkillsContainer>
           <div>
-            <SkillsSubheading>Code</SkillsSubheading>
+            <SkillsSubheading>Frontend</SkillsSubheading>
             <SkillsList>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>React</li>
               <li>Redux</li>
-              <li>Node.js</li>
             </SkillsList>
           </div>
           <div>
-            <SkillsSubheading>Toolbox</SkillsSubheading>
+            <SkillsSubheading>Backend</SkillsSubheading>
+            <SkillsList>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Express</li>
+            </SkillsList>
+          </div>
+          <div>
+            <SkillsSubheading>Tools</SkillsSubheading>
             <SkillsList>
               <li>Figma</li>
               <li>Postman</li>
               <li>VS Code</li>
+              <li>GCP</li>
               <li>Slack</li>
               <li>Notion</li>
-              <li>MongoDB Compass</li>
-              <li>Google Cloud Run</li>
             </SkillsList>
           </div>
-          <div>
-            <SkillsSubheading>More</SkillsSubheading>
-            <SkillsList>
-              <li>Branding</li>
-              <li>and</li>
-              <li>stuff</li>
-            </SkillsList>
-          </div>
-          {/* <div>
-            <SkillsSubheading>Upcoming</SkillsSubheading>
-            <SkillsList>
-              <li>Lorem</li>
-              <li>to the</li>
-              <li>ipsum</li>
-            </SkillsList>
-          </div> */}
         </SkillsContainer>
       </Wrapper>
     </PageSection>
