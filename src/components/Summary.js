@@ -16,7 +16,7 @@ const Summary = () => {
         <SummaryText>
           <Lollipop />
           Hi there! 👋 My name is Amanda and I like building neat looking things for the web.
-          I&apos;m based in Stockholm, Sweden and currently looking for a job 🚨
+          I&apos;m based in Stockholm, Sweden and currently looking for a remote or hybrid job 🚨
         </SummaryText>
       </Wrapper>
     </PageSection>
