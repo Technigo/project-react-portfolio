@@ -63,7 +63,7 @@ export const Projects = () => {
       border: 3px solid grey;
       p {
         color: white;
-        background-color: var(---primary);
+        background-color: grey;
       }
     }
   `;
@@ -90,7 +90,7 @@ export const Projects = () => {
     height: auto;
     margin: 10px 0px;
     h4 {
-      color: var(---primary);
+      color: black;
       text-transform: uppercase;
       }
     p {

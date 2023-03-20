@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
@@ -24,14 +25,14 @@ export const Intro = () => {
     display: inline-block;
     width: 30px;
     margin-bottom: 4px;
-    border: 1px solid var(---highlight);
+    border: 1px solid var(---primary);
   `;
 
   const Dot = styled.span`
     display: inline-block;
     height: 10px;
     width: 10px;
-    background-color: var(---highlight);
+    background-color: var(---primary);
     border-radius: 50%;
   `;
 
@@ -43,9 +44,11 @@ export const Intro = () => {
             <p><Line /><Dot />
               <em> Previous Ops leader turned Frontend Developer,
               who made a career leap to explore how technology
-              can be used to solve meaningful problems for people. Excited to grow my
-              skills in building memorable user experiences, with a long term ambition
-                to go back into leadership, leading tech teams.
+              can be used to solve meaningful problems for people.
+               I have a special interest in UI and how to
+                translate customer insights into technical delivery.
+               Excited to grow my skills in building memorable
+                user experiences together with great people.
               </em>
             </p>
           </IntroText>

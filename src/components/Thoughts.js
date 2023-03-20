@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
-import ThoughtsImg from '../images/Waterpink.jpg';
+import ThoughtsImg from '../images/blue.jpg';
 
 export const Thoughts = () => {
   const ThoughtsSection = styled.div`

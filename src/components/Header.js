@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 import Carro from '../images/Carro.jpeg';
-import BackgroundImage from '../images/Waterpink.jpg';
+import BackgroundImage from '../images/dive2.jpg';
 import Linkedin from '../icons/linkedin602.png';
 import Github from '../icons/github602.png';
 
@@ -41,17 +41,18 @@ export const Header = () => {
 
   const HeaderText = styled.div`
     position: absolute;
-    width: 300px;
+    width: 400px;
     top: 185px;
-    left: 140px;
+    left: 175px;
     padding: 0;
     margin: 0;
-    color: var(---primary);
+    color: whitesmoke;
     h2 {
       line-height: 18px;
       letter-spacing: 0.04em;
       font-weight: 700;
       font-size: 18px;
+      // font-family: serif;
     }
     h1 {
       line-height: 45px;
@@ -86,10 +87,10 @@ export const Header = () => {
     border-radius: 50%;
     z-index: 1;
     right: 10%;
-    bottom: -10px;
+    bottom: 23px;
     @media (max-width: 820px) {
       height: 130px;
-    width: 130px;
+      width: 130px;
     }
   `;
 
@@ -122,9 +123,9 @@ export const Header = () => {
             </a>
           </IconsContainer>
           <HeaderText>
-            <h2>caroline söderström</h2>
             <h1>Frontend Developer</h1>
-            <h3>+ leadership & CX</h3>
+            <h2>Caroline Söderström</h2>
+            {/* <h3>+ leadership & CX</h3> */}
           </HeaderText>
           <ProfileImageWrapper>
             <ProfileImage src={Carro} alt="Profile picture" />

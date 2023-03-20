@@ -4,8 +4,7 @@ import { OuterWrapper, InnerWrapper } from './reusable/Wrappers';
 
 export const Footer = () => {
   const FooterBackground = styled.footer`
-    // border-top: solid 1px var(---primary);
-    background-color: var(---highlight);
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -16,8 +15,8 @@ export const Footer = () => {
     width: 280px;
     padding-bottom: 25px;
     text-align: center;
-    background-color: var(---highlight);
-    color: whitesmoke;
+    background-color: lightgrey;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     h4 {
@@ -34,8 +33,8 @@ export const Footer = () => {
     padding: 3px;
     text-decoration: none;
     line-height: 16px;
-    background-color: var(---highlight);
-    color: whitesmoke;
+    background-color: lightgrey;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;

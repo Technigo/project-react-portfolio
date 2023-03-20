@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import data from '../data.json';
 import { OuterWrapper, InnerWrapper, SectionTitle, Tag } from './reusable/Wrappers';
-import Github from '../icons/gitpink30.png';
+import Github from '../icons/github.png';
 
 export const OtherProjects = () => {
   const OtherProjectSection = styled.div`
@@ -27,7 +27,7 @@ export const OtherProjects = () => {
     text-decoration: none;
     margin: 25px 0;
     h4 {
-      color: grey;
+      color: black;
       text-transform: uppercase;
       }
     p {

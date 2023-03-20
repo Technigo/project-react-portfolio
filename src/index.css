@@ -1,10 +1,12 @@
 :root {
   /* ---primary:  #F2A2E4; another option for primary */
-  ---primary:  #eb72d5d1;
+  ---primary:  #357D9E;
+  /* ---primary:  #eb72d5d1; */
   ---secondary: #d4c4af;
   /* ---main: #dfd3c38a; another option for main */
   ---main: rgb(235, 234, 234);
-  ---highlight: #F090D9;
+  ---highlight: #65ACCD;
+  /* ---highlight: #F090D9; */
   ---accent: #C400FF;
 }
 
@@ -20,6 +22,9 @@ body {
   background-color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  @media (max-width: 760px) {
+    padding: 10px;
+  }
 }
 root > * {
   padding: 0 10px 0 10px;

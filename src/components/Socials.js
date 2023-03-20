@@ -8,7 +8,7 @@ export const Socials = () => {
   const SocialsSection = styled.div`
     text-align: center;
     padding: 0 0 50px 0;
-    background-color: var(---highlight);
+    background-color: lightgrey;
   `;
 
   const IconWrapper = styled.div`
