@@ -39,6 +39,21 @@ display: flex;
 justify-content: center;
 `
 
+export const Website = styled.span`
+font-weight: 700;
+& a, a:visited{
+  text-decoration: none ;
+  color: var(--purpleHighlight);
+}
+& a, a:active{
+  text-decoration: none ;
+  color: var(--purpleHighlight);
+}
+& a, :hover{
+  cursor: pointer;
+}
+`
+
 export const LinkedBtn = styled.button`
 background-color: transparent;
 border: none;

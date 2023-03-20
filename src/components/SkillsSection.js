@@ -49,10 +49,12 @@ const SkillSection = () => {
             </ul>
           </SkillsBox>
           <SkillsBox>
-            <SkillTitle>Next up</SkillTitle>
+            <SkillTitle>Currently Learning</SkillTitle>
             <ul>
-              <li>Python</li>
-              <li>SQL</li>
+              <li>TypeScript</li>
+              <li>React Query</li>
+              <li>Tailwind</li>
+              <li>Tanstack Query</li>
             </ul>
           </SkillsBox>
         </SkillWrapper>
