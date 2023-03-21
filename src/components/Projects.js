@@ -30,20 +30,21 @@ export const Projects = () => {
     width: 350px;
     margin: 10px;
     padding: 10px; 
-      img {
-        width: 80px;
-        height: 80px;
-        display: block;
-        margin-top: 17px;
-      }
+      // img {
+      //   width: 80px;
+      //   height: 80px;
+      //   display: block;
+      //   margin-top: 17px;
+      // }
   `;
 
   const ProjectBackground = styled.img`
-    position: relative;
+    position: absolute;
     display: flex;
-    width: 325px;
-    height: 325px; 
+    width: 100%;
+    height: 100%; 
     margin: 0 auto;
+    object-fit: cover;
   `;
 
   const CardOverlay = styled.div`
@@ -60,10 +61,11 @@ export const Projects = () => {
     border: 1px solid grey;
     &:hover{
       background: whitesmoke;
-      border: 3px solid grey;
+      border: 3px solid var(---highlight);
       p {
         color: white;
-        background-color: grey;
+        background-color: var(---highlight);
+        z-index: 1;
       }
     }
   `;
@@ -101,6 +103,14 @@ export const Projects = () => {
         h4 {
         // font-size: 17px;
         color: black;
+        }
+      }
+      @media (max-width: 760px) {
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 14px;
         }
       }
   `;

@@ -1,8 +1,8 @@
  [ 
   {
     "title": "Happy Thoughts Feed",
-    "sort": 1,
-    "image": "../imgs/feed.png",
+    "sort": 2,
+    "image": "../imgs/Box1.jpg",
     "netlify": "https://carolines-happy-thoughts.netlify.app",
     "github": "https://github.com/SoderstromC/project-happy-thoughts",
     "description": "Feed of Happy thoughts built in React",
@@ -11,8 +11,8 @@
   },
   {
     "title": "Guess Who Game",
-    "sort": 2,
-    "image": "../imgs/anonymity2.png",
+    "sort": 1,
+    "image": "../imgs/GuessWho.png",
     "overlay": "test",
     "netlify": "https://euphonious-dolphin-4826b9.netlify.app/",
     "github": "https://github.com/SoderstromC/project-guess-who",
@@ -23,7 +23,7 @@
   {
     "title": "Weather App",
     "sort": 3,
-    "image": "../imgs/rain.png",
+    "image": "../imgs/Weatherpic.png",
     "netlify": "https://silver-profiterole-7224fd.netlify.app/",
     "github": "https://github.com/SoderstromC/project-weather-app",
     "description": "A weather app built with Javascript",
@@ -33,7 +33,7 @@
   {
     "title": "Labyrinth",
     "sort": 4,
-    "image": "../imgs/maze.png",
+    "image": "../imgs/labyrinth.jpg",
     "netlify": "https://turtles-labyrinth.netlify.app/",
     "github": "https://github.com/SoderstromC/project-labyrinth",
     "description": "A labyrinth game using thunks",

@@ -37,7 +37,7 @@ export const OtherProjects = () => {
     img {
       margin: 3px;
     }
-    @media (max-width: 820px) {
+    @media (max-width: 760px) {
       margin: 25px 15px;
       h4 {
         font-size: 15px;
