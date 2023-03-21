@@ -31,6 +31,7 @@ export const Thoughts = () => {
     }
     @media (max-width: 760px) {
       width: 350px;
+      font-size: 15px;
     }
   `;
 

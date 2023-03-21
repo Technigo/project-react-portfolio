@@ -34,6 +34,12 @@ export const OtherProjects = () => {
       color: grey;
       font-size: 15px;
       }
+    img {
+      margin: 3px;
+    }
+    @media (max-width: 820px) {
+      margin: 25px 15px;
+    }
   `;
 
   return (

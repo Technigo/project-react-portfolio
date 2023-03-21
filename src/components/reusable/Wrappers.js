@@ -21,6 +21,9 @@ export const SectionTitle = styled.div`
     color: whitesmoke;
     font-size: 22px;
     font-weight: bold;
+    @media (max-width: 820px) {
+        font-size: 18px;
+      }
 `;
 export const Tag = styled.div`
     margin: 4px 3px 5px 0px;

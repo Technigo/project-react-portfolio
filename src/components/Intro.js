@@ -18,7 +18,7 @@ export const Intro = () => {
     font-weight: 500;
     @media (max-width: 760px) {
       padding: 120px 30px 50px 30px;
-      font-size: 16px;
+      font-size: 14px;
     }
   `;
   const Line = styled.span`

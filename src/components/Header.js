@@ -25,7 +25,7 @@ export const Header = () => {
     height: 100%;
 
     @media (max-width: 760px) {
-      
+      object-fit: cover;
     }
   `;
 
@@ -36,13 +36,14 @@ export const Header = () => {
     right: 91px;
     @media (max-width: 760px) {
       right: 40px;
+      top: 45px;
     }
   `;
 
   const HeaderText = styled.div`
     position: absolute;
     width: 400px;
-    top: 185px;
+    top: 169px;
     left: 175px;
     padding: 0;
     margin: 0;
@@ -63,12 +64,13 @@ export const Header = () => {
     h3 {
       line-height: 40px;
       font-weight: bold;
-      font-size: 28px;
+      font-size: 25px;
+      font-family: 'WindSong', cursive;
     }
-
     @media (max-width: 760px) {
       width: 243px;
       left: 70px;
+      top: 128px;
       h1 {
         line-height: 37px;
         font-size: 35px;
@@ -91,6 +93,8 @@ export const Header = () => {
     @media (max-width: 820px) {
       height: 130px;
       width: 130px;
+      right: 5%;
+      bottom: -35px;
     }
   `;
 
@@ -124,7 +128,7 @@ export const Header = () => {
           </IconsContainer>
           <HeaderText>
             <h1>Frontend Developer</h1>
-            <h2>Caroline Söderström</h2>
+            <h3>Caroline Söderström</h3>
             {/* <h3>+ leadership & CX</h3> */}
           </HeaderText>
           <ProfileImageWrapper>
