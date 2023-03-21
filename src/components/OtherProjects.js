@@ -39,6 +39,12 @@ export const OtherProjects = () => {
     }
     @media (max-width: 820px) {
       margin: 25px 15px;
+      h4 {
+        font-size: 15px;
+       }
+      p {
+        font-size: 14px;
+       }
     }
   `;
 
