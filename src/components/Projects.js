@@ -137,12 +137,12 @@ const OverlayText = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 0;
+    bottom: 3px;
     background-color: #484848a1;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
 
   h4 {
