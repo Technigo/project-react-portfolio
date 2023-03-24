@@ -20,7 +20,7 @@ const HeroImage = styled.img`
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 45px);
+  grid-template-columns: repeat(3, 45px);
   justify-content: right;
   gap: 10px;
   padding-top: 40px;
@@ -77,7 +77,7 @@ const Hero = () => {
         <IconContainer>
           <SocialIcon variant="linkedin" size={40} color="black" />
           <SocialIcon variant="github" size={40} color="black" />
-          {/* <Icon variant="stackoverflow" size={40} color="black" /> */}
+          <SocialIcon variant="cv" size={40} color="black" />
         </IconContainer>
         <TextWrapper>
           <Name>Portfolio: Amanda W.</Name>

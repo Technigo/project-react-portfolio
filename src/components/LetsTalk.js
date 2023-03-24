@@ -7,7 +7,7 @@ import SocialIcon from './SocialIcon'
 
 const IconContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 110px);
+  grid-template-columns: repeat(3, 110px);
   justify-content: center;
 `
 
@@ -36,6 +36,7 @@ const LetsTalk = () => {
       <IconContainer>
         <SocialIcon variant="linkedin" showText size={iconSize} />
         <SocialIcon variant="github" showText size={iconSize} />
+        <SocialIcon variant="cv" showText size={iconSize} />
       </IconContainer>
     </PageSection>
   )
