@@ -11,7 +11,7 @@ export const Tech = () => {
         , <span>API</span>, <span>JSON</span>, <span>Google Cloud</span>
         , <span>MongoDB</span>, Mongoose, Postman, REST API, Express, CORS
         , bcrypt, Crypto.js, ESLint, Git, GitHub, Netlify, Accessibility
-        , pair-programming & mob-programming.
+        , agile methodology, pair-programming & mob-programming.
         </p>
       </TechInnerWrapper>
     </TechOuterWrapper>
