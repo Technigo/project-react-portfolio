@@ -10,7 +10,7 @@
     },
     {
       "title": "Happy Thoughts",
-      "title-description": "Website to post and like happy thoughts",
+      "title-description": "A website to post and like happy thoughts",
       "project-description": "A React site fetching and posting data from my own API.",
       "repo-name": "project-happy-thoughts",
       "netlify-name": "https://maria-wellanders-happy-thoughts.netlify.app/",
