@@ -10,7 +10,7 @@
     },
     {
       "title": "Happy Thoughts",
-      "title-description": "Website to post and like happy thoughts.",
+      "title-description": "Website to post and like happy thoughts",
       "project-description": "A React site fetching and posting data from my own API.",
       "repo-name": "project-happy-thoughts",
       "netlify-name": "https://maria-wellanders-happy-thoughts.netlify.app/",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Authentication",
-      "title-description": "An authenticated site - unlock the Forest Witch's message!",
+      "title-description": "A Forest Adventure - unlock the Forest Witch's message!",
       "project-description": "A React site built on our own athentication API.",
       "repo-name": "project-auth",
       "netlify-name": "https://tika-and-marias-project-autho.netlify.app/",
