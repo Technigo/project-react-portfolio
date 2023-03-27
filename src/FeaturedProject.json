@@ -19,7 +19,7 @@
     },
     {
       "title": "Authentication",
-      "title-description": "A Forest Adventure - unlock the Forest Witch's message!",
+      "title-description": "A Forest Adventure - unlock the Forest Witch's message",
       "project-description": "A React site built on our own athentication API.",
       "repo-name": "project-auth",
       "netlify-name": "https://tika-and-marias-project-autho.netlify.app/",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Final Project",
-      "title-description": "Welly - Boost your well-being!",
+      "title-description": "Welly - Boost your well-being",
       "project-description": "A community to boost users' well-being.",
       "repo-name": "project-final-project",
       "netlify-name": "https://welly-app.netlify.app/",
