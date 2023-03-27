@@ -6,18 +6,18 @@ export const OtherProjects = () => {
     <OtherProjectOuterWrapper>
       <OtherProjectInnerWrapper>
         <h6 className="otherProjects">OTHER PROJECTS</h6>
-        <a href="https://sensational-cocada-846c34.netlify.app/">
+        <a href="https://linda-and-marias-movies-app.netlify.app/">
           <InfoContainer>
-            <SubTitle>Weather App</SubTitle>
+            <SubTitle>Movies</SubTitle>
             <SubParagraph>
-              A site to display the weather with info from an API.
+              Movie site listing 50 top rated movies.
             </SubParagraph>
           </InfoContainer>
         </a>
         <SkillTagContainer>
-          <SkillTag>HTML</SkillTag>
-          <SkillTag>CSS</SkillTag>
-          <SkillTag>JavaScript</SkillTag>
+          <SkillTag>React</SkillTag>
+          <SkillTag>API</SkillTag>
+          <SkillTag>Pair-programming</SkillTag>
         </SkillTagContainer>
       </OtherProjectInnerWrapper>
     </OtherProjectOuterWrapper>
