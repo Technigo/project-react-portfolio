@@ -12,7 +12,7 @@ export const ForMore = () => {
         <h5>FOR MORE</h5>
         <ForMoreIconsContainer>
           <SingleIconContainer>
-            <a href="https://www.linkedin.com/in/maria-wellander-87043b124/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/maria-wellander/" target="_blank" rel="noreferrer">
               <imgContainer>
                 <img src={heroLinkedin} lang="eng" alt="Linkedin icon" />
               </imgContainer>

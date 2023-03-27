@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <HeaderIcons>
-        <a href="https://www.linkedin.com/in/maria-wellander-87043b124/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/maria-wellander/" target="_blank" rel="noreferrer">
           <img src={heroLinkedin} alt="LinkedIn icon for the header" />
         </a>
         <a href="https://github.com/MariaWellander" target="_blank" rel="noreferrer">
