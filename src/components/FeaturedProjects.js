@@ -21,7 +21,7 @@ export const FeaturedProjects = () => {
         setFeaturedProjects(data)
       })
   }, [])
-  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'project-happy-thoughts') || (firstProjects.name === 'project-labyrinth') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-redux-quiz') || (firstProjects.name === 'project-music-releases') || (firstProjects.name === 'project-movies'));
+  const BigProjects = featuredProjects.filter((firstProjects) => (firstProjects.name === 'final-project') || (firstProjects.name === 'project-happy-thoughts') || (firstProjects.name === 'project-labyrinth') || (firstProjects.name === 'project-todos') || (firstProjects.name === 'project-redux-quiz') || (firstProjects.name === 'project-movies'));
   return (
     <OuterWrapper beige>
       <Heading dark>FEATURED PROJECTS</Heading>
@@ -50,11 +50,6 @@ export const FeaturedProjects = () => {
   )
 }
 
-const FinalWrapper = styled.div`
-display: flex; 
-align-items: center;
-`
-
 const FeaturedProjectsContent = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -77,16 +72,6 @@ const ImageAndName = styled.div`
   position: relative;
 `
 
-const FinalImage = styled.img`
-  width: 60%;
-  border: 4px solid #D36B00;
-  border-radius: 10px;
-  opacity: 0.5;
-&:hover {
-  opacity: 1;
-  transition: 0.5s ease-in-out;
-}
-`
 const BigProjectsImage = styled.img`
   width: 100%;
   border: 4px solid #D36B00;
