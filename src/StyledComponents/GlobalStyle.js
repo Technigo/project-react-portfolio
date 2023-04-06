@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,10 +17,11 @@ body {
 export const SectionContainer = styled.section`
 	background-color: ${(props) => props.backgroundColor};
 	width: 100vw;
-	height: 50vh;
+	height: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+	padding: 25px 80px 25px 80px;
 	overflow: auto;
 `;
 
@@ -42,16 +42,18 @@ export const Title = styled.div`
 	align-self: center;
 	padding: 0.8rem;
 	border-radius: 10px;
+	margin-bottom: 15px;
 `;
 
 export const SubTitle = styled.h2`
-	color: #21130d;
+	margin-bottom: 20px;
 `;
 
 export const ProjectDesc = styled.p`
-	color: #21130d;
+	color: grey;
 	font-weight: 550;
 	line-height: 150%;
+	padding: 20px;
 `;
 
 export const TagWrapper = styled.div`

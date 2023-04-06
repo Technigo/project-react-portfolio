@@ -1,109 +1,107 @@
 [
-    {
-        "id":1,
-        "title": "Movie Selector",
-        "img":"/img/movie-selector.png",
-        "project_description": "Filter movies by popularity, release time and rating. Build with React Hooks, Routes and API",
-        "repo_name": "project-movies",
-        "netlify_name": "week8-film-selector-jessnmo",
-        "url": "https://week8-film-selector-jessnmo.netlify.app/",
-        "tags": [
-            {
+	{
+		"id": 1,
+		"title": "Movie Selector",
+		"img": "/img/movie-selector.png",
+		"project_description": "Filter movies by popularity, release time and rating. Build with React Hooks, Routes and API",
+		"repo_name": "project-movies",
+		"netlify_name": "film-selector-jessnmo",
+		"url": "https://week8-film-selector-jessnmo.netlify.app/",
+		"tags": [
+			{
 				"id": 1,
 				"name": "React Router"
-			  },
-			  {
+			},
+			{
 				"id": 2,
 				"name": "React Hooks"
-			  },
-			  {
+			},
+			{
 				"id": 3,
 				"name": "API"
-			  },
-			  {
+			},
+			{
 				"id": 4,
 				"name": "HTML5"
-			  },
-			  {
+			},
+			{
 				"id": 5,
 				"name": "CSS3"
-			  }
-          ]
-      },
-      {
-        "id":2,
-        "title": "Book A Workout",
-        "img":"/img/workout.png",
-        "project_description": "Select your desired workouts in different gym locations at your preferred time. Build with React Hooks",
-        "repo_name": "project-survey",
-        "netlify_name": "week6-jessnmo",
-        "url": "https://week8-film-selector-jessnmo.netlify.app/",
-        "tags": [
-            
-			  {
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "Book A Workout",
+		"img": "/img/workout.png",
+		"project_description": "Select your desired workouts in different gym locations at your preferred time. Build with React Hooks",
+		"repo_name": "project-survey",
+		"netlify_name": "week6-jessnmo",
+		"url": "https://week8-film-selector-jessnmo.netlify.app/",
+		"tags": [
+			{
 				"id": 1,
 				"name": "React.js"
-			  },
-			  
-			  {
+			},
+
+			{
 				"id": 2,
 				"name": "HTML5"
-			  },
-			  {
+			},
+			{
 				"id": 3,
 				"name": "CSS3"
-			  }
-          ]
-      },
-      {
-        "id":3,
-        "title": "Share a Happy Thought",
-        "img":"/img/happy-thoughts.png",
-        "project_description": "Post your happy thoughts and share with the world! Build with React using API",
-        "repo_name": "project-happy-thoughts",
-        "netlify_name": "jessmo-happy-thoughts",
-        "url": "https://week8-film-selector-jessnmo.netlify.app/",
-        "tags": [
-            {
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "Share a Happy Thought",
+		"img": "/img/happy-thoughts.png",
+		"project_description": "Post your happy thoughts and share with the world! Build with React using API",
+		"repo_name": "project-happy-thoughts",
+		"netlify_name": "jessmo-happy-thoughts",
+		"url": "https://week8-film-selector-jessnmo.netlify.app/",
+		"tags": [
+			{
 				"id": 1,
 				"name": "React.js"
-			  },
-			  {
+			},
+			{
 				"id": 2,
 				"name": "API"
-			  },
-			  {
+			},
+			{
 				"id": 3,
 				"name": "HTML5"
-			  },
-			  {
+			},
+			{
 				"id": 4,
 				"name": "CSS3"
-			  }
-          ]
-      },
-      {
-        "id":4,
-        "title": "Guess Who?",
-        "img":"/img/guess-who.png",
-        "project_description": "Single player online game, build with JavaScript ES6, CSS and HTML",
-        "repo_name": "project-guess-who",
-        "netlify_name": "week2-guess-who-jessnmo",
-        "url": "https://week8-film-selector-jessnmo.netlify.app/",
-        "tags": [
-            {
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "Guess Who?",
+		"img": "/img/guess-who.png",
+		"project_description": "Single player online game, build with JavaScript ES6, CSS and HTML",
+		"repo_name": "project-guess-who",
+		"netlify_name": "week2-guess-who-jessnmo",
+		"url": "https://week8-film-selector-jessnmo.netlify.app/",
+		"tags": [
+			{
 				"id": 1,
 				"name": "JavaScript ES6"
-			  },
-			  {
+			},
+			{
 				"id": 2,
 				"name": "HTML5"
-			  },
-			  {
+			},
+			{
 				"id": 3,
 				"name": "CSS3"
-			  }
-          ]
-      }
-    
-  ]
+			}
+		]
+	}
+]
