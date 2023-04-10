@@ -4,42 +4,46 @@ import {
 	SubSkillsContainer,
 	SkillsWrapper,
 } from 'StyledComponents/Skills.style';
+import { SectionContainer } from '../StyledComponents/GlobalStyle';
 
 const Skills = () => {
 	return (
-		<SkillsWrapper>
+		<SectionContainer backgroundColor="rgb(238, 238, 238)">
 			<Title>Skills</Title>
 			<SkillsContainer>
 				<SubSkillsContainer>
-					<SubTitle>CODE</SubTitle>
-					<p>HTML 5</p>
-					<p>CSS</p>
-					<p>JavaScript ES6</p>
+					<SubTitle>Frontend Skills</SubTitle>
 					<p>React.js</p>
+					<p>JavaScript</p>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>Redux</p>
+					<p>Node.js</p>
+					<p>Express.</p>
+				</SubSkillsContainer>
+				<SubSkillsContainer>
+					<SubTitle>Other Skills</SubTitle>
+					<p>Git</p>
+					<p>Project Management</p>
+					<p>Agile Working Environment</p>
+					<p>Stakeholder Management</p>
+					<p>Change Management</p>
+				</SubSkillsContainer>
+				<SubSkillsContainer>
+					<SubTitle>Backend Skills</SubTitle>
+					<p>node.js</p>
+					<p>express api</p>
 				</SubSkillsContainer>
 				<SubSkillsContainer>
 					<SubTitle>Tool Box</SubTitle>
 					<p>Figma</p>
 					<p>Jira</p>
-					<p>Miro</p>
 					<p>Github</p>
-				</SubSkillsContainer>
-				<SubSkillsContainer>
-					<SubTitle>Other</SubTitle>
-					<p>Project Management</p>
-					<p>Stakeholder Management</p>
-					<p>Effective Communication</p>
-					<p>Agile Workflow</p>
-				</SubSkillsContainer>
-				<SubSkillsContainer>
-					<SubTitle>Upcoming Code Skills</SubTitle>
-					<p>node.js</p>
-					<p>redux</p>
-					<p>TypeScript</p>
-					<p>Angular.js</p>
+					<p>Google Doc</p>
+					<p>Miro Board</p>
 				</SubSkillsContainer>
 			</SkillsContainer>
-		</SkillsWrapper>
+		</SectionContainer>
 	);
 };
 

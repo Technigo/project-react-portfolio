@@ -30,7 +30,7 @@ export const SectionParagraph = styled.p`
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 150%;
-	align-self: center;
+	align-items: center;
 	padding: 2rem;
 `;
 
@@ -46,19 +46,26 @@ export const Title = styled.div`
 `;
 
 export const SubTitle = styled.h2`
-	margin-bottom: 20px;
+	margin: 20px;
 `;
 
-export const ProjectDesc = styled.p`
+export const ProjectDesc = styled.a`
 	color: grey;
+	text-decoration: none;
 	font-weight: 550;
 	line-height: 150%;
 	padding: 20px;
+	cursor: pointer;
+
+	&:hover {
+		color: #5f9df7;
+	}
 `;
 
 export const TagWrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	margin: 10px;
 `;
 export const Tags = styled.p`
 	color: #fdf0e0;

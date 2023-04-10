@@ -25,7 +25,6 @@ const Card = styled.div`
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-bottom: 20px;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -52,7 +51,9 @@ const FeaturedProjects = () => {
 						<Card key={project.id} area={`card${index + 1}`}>
 							<SubTitle>{project.title}</SubTitle>
 							<Img img={project.img} src={project.repo_name} />
-							<ProjectDesc>{project.project_description}</ProjectDesc>
+							<ProjectDesc href={project.url} target="_blanket">
+								{project.project_description}
+							</ProjectDesc>
 							<TagWrapper>
 								{project.tags.map((tag) => {
 									return <Tags key={tag.id}>{tag.name}</Tags>;

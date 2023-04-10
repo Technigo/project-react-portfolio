@@ -44,7 +44,7 @@ const Header = () => {
 					<FaStackOverflow size="2rem" color="whitesmoke" />
 				</a>
 			</IconWrapper>
-			<Profile src="img/profile.jpg" />
+			<Profile src="img/profile.jpg" alt="profile pic" />
 			<HeaderIMG src="img/header.png" />
 		</StyledHeader>
 	);

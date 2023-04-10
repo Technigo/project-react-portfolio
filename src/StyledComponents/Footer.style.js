@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
-export const FooterP = styled.p`
-	color: #21130d;
+export const FooterP = styled.a`
+	color: #0008c1;
 	font-size: 1.2rem;
-	font-weight: 400;
+	font-weight: bold;
 	align-self: center;
 	padding: 10px;
+	text-decoration: none;
+
+	&:hover {
+		color: #5f9df7;
+	}
 `;
