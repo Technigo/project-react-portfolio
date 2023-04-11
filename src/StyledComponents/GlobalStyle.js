@@ -51,6 +51,7 @@ export const SubTitle = styled.h2`
 
 export const ProjectDesc = styled.a`
 	color: grey;
+	text-align: center;
 	text-decoration: none;
 	font-weight: 550;
 	line-height: 150%;
