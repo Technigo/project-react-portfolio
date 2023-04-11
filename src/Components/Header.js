@@ -32,15 +32,26 @@ const Header = () => {
 			</HeaderText>
 			<IconWrapper>
 				<a
+					className="icon-hover"
 					href="https://www.linkedin.com/in/jessica-mo-29508a85/"
 					target="blank"
 				>
 					<FaLinkedin size="2rem" color="whitesmoke" />
 				</a>
-				<a href="https://github.com/jessnmo" target="blank">
+
+				<a
+					className="icon-hover"
+					href="https://github.com/jessnmo"
+					target="blank"
+				>
 					<FaGithubSquare size="2rem" color="whitesmoke" />
 				</a>
-				<a href="https://stackoverflow.com/users/19384341/jmo" target="blank">
+
+				<a
+					className="icon-hover"
+					href="https://stackoverflow.com/users/19384341/jmo"
+					target="blank"
+				>
 					<FaStackOverflow size="2rem" color="whitesmoke" />
 				</a>
 			</IconWrapper>
