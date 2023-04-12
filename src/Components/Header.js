@@ -14,6 +14,7 @@ const Header = () => {
 			<HeaderText fontSize="3rem" fontWeight="800">
 				Jessica Mo
 				<span
+					className="animation"
 					style={{
 						fontWeight: '600',
 						fontSize: '2rem',

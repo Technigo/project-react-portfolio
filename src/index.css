@@ -22,3 +22,24 @@ code {
 	/* transform: translateY(50%); */
 	transform: scale(1.5);
 }
+/* 
+.card_front,
+.card_back {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5em 3em;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	display: grid;
+	align-content: center;
+}
+
+.card_front {
+}
+
+.card_back {
+}
+ */

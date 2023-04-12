@@ -9,7 +9,7 @@ const Tech = () => {
 		<SectionContainer backgroundColor="whitesmoke">
 			<Title>Tech</Title>
 			<SectionParagraph>
-				HTML, CSS, Flexbox, Grid, JavaScript ES6, React.js, JSX, React Hooks,
+				HTML, CSS, Flexbox, Grid, CSS animation, Git, JavaScript ES6, React.js,
 				Redux, API:s, mob/pair-programming, Github
 			</SectionParagraph>
 		</SectionContainer>
