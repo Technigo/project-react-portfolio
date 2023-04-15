@@ -46,7 +46,7 @@ const OtherProjects = () => {
 
 			<Container>
 				<ProjectDesc
-					href="https://react-tictactoe-jessnmo.netlify.app/"
+					href="https://react-tictactoe-jessnmo.netlify"
 					target="_blank"
 				>
 					Tic-Tac-Toe in React
