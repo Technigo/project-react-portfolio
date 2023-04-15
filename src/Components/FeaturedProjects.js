@@ -59,8 +59,6 @@ const CardFront = styled.div`
 const CardBack = styled.div`
 	position: absolute;
 	top: 30%;
-	//left: 50%;
-	//transform: translate(-50%, -50%);
 	backface-visibility: hidden;
 	transform-style: preserve-3d;
 	transform: rotateY(0.5turn);
@@ -91,8 +89,7 @@ const FeaturedProjects = () => {
 									<SubTitle>{project.title}</SubTitle>
 									<Img img={project.img} src={project.repo_name} />
 								</CardFront>
-								{/* </CardContent>
-							<CardContent> */}
+
 								<CardBack>
 									<ProjectDesc href={project.url} target="_blanket">
 										{project.project_description}

@@ -14,17 +14,6 @@ const Container = styled.div`
 	align-items: center;
 `;
 
-/* const SubContainer = styled.section`
-	background-color: ${(props) => props.backgroundColor};
-	width: 100vw;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 25px 80px 25px 80px;
-	overflow: auto;
-`; */
-
 const Paragraph = styled.h3`
 	text-align: center;
 	border-bottom: 1px solid #000000;
@@ -56,7 +45,10 @@ const OtherProjects = () => {
 			</Paragraph>
 
 			<Container>
-				<ProjectDesc href="#" target="_blank">
+				<ProjectDesc
+					href="https://react-tictactoe-jessnmo.netlify.app/"
+					target="_blank"
+				>
 					Tic-Tac-Toe in React
 				</ProjectDesc>
 				<p>
@@ -112,9 +104,9 @@ const OtherProjects = () => {
 					Quiz build in Redux
 				</ProjectDesc>
 				<p>
-					This is inspired by the React Document. I first followed the
-					instruction from the documentation, however, would also like to work
-					on it using another approach.
+					First project build in Redux. Used a boilerplate for the base set up.
+					In this project I learned how to use conditional statement in
+					className and assign different styles when it changes.
 				</p>
 				<TagWrapper>
 					<Tags>Redux</Tags>
