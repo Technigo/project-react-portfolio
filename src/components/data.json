@@ -2,7 +2,7 @@
     {
         "title": "Artesano Bakkerij",
         "id": 1,
-        "image": "src/Images/MockUps/Artesano.png",
+        "image": "General-Images/Artesano.png",
         "description": "A website for a bakery and cafe shop. Design based on logo and clients vision.",
         "repo-name": "project-artesano-bakkerij",
         "url": "https://www.artesanobakkerij.com/"
@@ -29,7 +29,7 @@
   {
       "title": "From Head to Toes",
       "id": 4,
-      "image": "General-Images/FromHeadtoToes.png",
+      "image": "General-Images/FHTT.png",
       "description": "A website designed for a massage company. Worked on all the design process, from branding to final website",
       "repo-name": "project-from-head-to-toes",
       "url": "https://www.fromheadtotoes.nl/"
@@ -38,7 +38,7 @@
   {
       "title": "Beata Linz Marketing",
       "id": 5,
-      "image": "General-Images/BeataLinz.png",
+      "image": "General-Images/Bea.png",
       "description": "Website built for email marketing expert. Website editing in SquareSpace",
       "repo-name": "project-beata-linz",
       "url": "https://www.beatalinz.com/"
@@ -54,29 +54,20 @@
   },
 
 {
-    "title": "Happy thoughts",
+    "title": "International Lactation Consultant ",
     "id": 7,
-    "image": "General-Images/HappyThoughts.png",
-    "description": "A social media site where you can post happy thoughts to other people. This site was built with React and works with an API to send and receive data.",
-    "repo-name": "project-happy-thoughts",
-    "url": "https://superlative-bombolone-a3b180.netlify.app/"
+    "image": "General-Images/ILC.png",
+    "description": "A website designed for a lactation consultant using Square Space. Worked on all the design process, from branding to final website.",
+    "repo-name": "project-ilc",
+    "url": "https://www.internationallactationsupport.com/home"
 },
   
 {
-    "title": "Guess the Animal",
+    "title": "Mandy Krause",
     "id": 8,
-    "image": "General-Images/GuesstheAnimal.png",
-    "description": "My own version of the populer Guess Who game. This Project uses objects, arrays and functions on JavaScript",
-    "repo-name": "project-guess-who",
-    "url": "https://soft-tiramisu-65c499.netlify.app"
+    "image": "General-Images/Mandy.png",
+    "description": "Portafolio for an Art Director. This project was co-designed with Mandy. ",
+    "repo-name": "project-mandy-krause",
+    "url": "https://www.mandykrause.com/"
 },
-
-{
-    "title": "Weather app",
-    "id": 9,
-    "image": "General-Images/WeatherApp.png",
-    "description": "A collaborative app for weather forecast. A simple weather app that changes design according to current weather.",
-    "repo-name": "project-weather-app",
-    "url": "https://tourmaline-sable-678f53.netlify.app/"
-}
 ]
