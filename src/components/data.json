@@ -2,7 +2,7 @@
     {
         "title": "Artesano Bakkerij",
         "id": 1,
-        "image": "General-Images/ArtesanoBakkerij.png",
+        "image": "src/Images/MockUps/Artesano.png",
         "description": "A website for a bakery and cafe shop. Design based on logo and clients vision.",
         "repo-name": "project-artesano-bakkerij",
         "url": "https://www.artesanobakkerij.com/"
