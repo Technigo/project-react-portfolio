@@ -12,7 +12,7 @@
         "title": "Figs & Grains",
         "id": 2,
         "image": "General-Images/FigsandGrains.png",
-        "description": "A website for a catering and delivery startup. Worked on all the design process, from branding to final website",
+        "description": "A website for a catering and delivery startup. Worked on the whole design process, from branding to final website.",
         "repo-name": "project-figs-and-grains",
         "url": "https://www.figsandgrains.com/"
     },
@@ -21,7 +21,7 @@
         "title": "Villa Maresme",
         "id": 3,
         "image": "General-Images/VillaMaresme.png",
-        "description": "A hotel website with a booking system incorporated. This site was designed with Wix and uses Wix hotel booking sytem",
+        "description": "A hotel website with a booking system incorporated. This site was designed with Wix and uses Cubilis Hotel Software.",
         "repo-name": "project-villa-maresme",
         "url": "https://www.villamaresme.com/"
     },
@@ -30,7 +30,7 @@
       "title": "From Head to Toes",
       "id": 4,
       "image": "General-Images/FHTT.png",
-      "description": "A website designed for a massage company. Worked on all the design process, from branding to final website",
+      "description": "A website designed for a massage company. Worked on all the design process, from branding to final website.",
       "repo-name": "project-from-head-to-toes",
       "url": "https://www.fromheadtotoes.nl/"
   },
@@ -48,7 +48,7 @@
       "title": "Boutique Hotel Vosje",
       "id": 6,
       "image": "General-Images/HotelVosje.png",
-      "description": "A website for a Small Boutique Hotel. This website is built on wix but uses an external booking system",
+      "description": "A website for a Small Boutique Hotel. This website is built using the Wix platform combined with Cubilis Hotel Software.",
       "repo-name": "project-hotel-vosje",
       "url": "https://www.hotelvosje.nl/"
   },
@@ -57,7 +57,7 @@
     "title": "International Lactation Consultant ",
     "id": 7,
     "image": "General-Images/ILC.png",
-    "description": "A website designed for a lactation consultant using Square Space. Worked on all the design process, from branding to final website.",
+    "description": "A website designed for a lactation consultant using Square Space. Worked on the whole design process, from branding to final website.",
     "repo-name": "project-ilc",
     "url": "https://www.internationallactationsupport.com/home"
 },
