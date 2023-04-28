@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <Header>Time to talk</Header>
-      <ProfileImg src="" />
+      <ProfileImg src="images/andrea.JPG" />
       <Name>Andrea Hedström</Name>
       <Title>
         <h1>Front End Developer</h1>
@@ -29,7 +29,10 @@ const Header = styled.div`
 font-size: 58px;
 `
 const ProfileImg = styled.img`
-
+width: 164px;
+height: 164px;
+object-fit: cover;
+border-radius: 100px;
 `
 const Name = styled.div`
 font-size: 20px;
