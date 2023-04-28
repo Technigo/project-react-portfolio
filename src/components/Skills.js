@@ -54,6 +54,7 @@ font-size: 25px;
 `
 const TechSkills = styled.div`
 font-size: 22px;
+font-family: 'EB Garamond';
 `
 const Code = styled.div`
 span {

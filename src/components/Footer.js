@@ -23,7 +23,7 @@ export default Footer;
 
 const FooterSection = styled.div`
 display: flex;
-flex-direction: flex-start;
+flex-direction: column;
 `
 const Header = styled.div`
 font-size: 58px;

@@ -31,6 +31,7 @@ font-size: 60px;
 color: rgb(3, 3, 194);
 `
 const TechText = styled.p`
+font-family: 'EB Garamond';
 font-size: 22px;
 `
 export default Tech;
