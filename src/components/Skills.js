@@ -52,3 +52,23 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 `
+const Header = styled.h1`
+font-size: 25px;
+`
+const TechSkills = styled.div`
+font-size: 22px;
+`
+const Code = styled.span`
+background-color: blue;
+`
+const Toolbox = styled.span`
+background-color: pink;
+`
+
+const More = styled.span`
+background-color: red;
+`
+
+const Upcoming = styled.span`
+background-color: yellow;
+`
