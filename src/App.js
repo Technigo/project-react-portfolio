@@ -2,6 +2,7 @@ import React from 'react'
 import Header from 'components/Header';
 import Tech from 'components/Tech';
 import Skills from 'components/Skills';
+import Footer from 'components/Footer';
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       <Header />
       <Tech />
       <Skills />
+      <Footer />
     </>
   )
 }

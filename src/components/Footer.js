@@ -26,7 +26,7 @@ display: flex;
 flex-direction: flex-start;
 `
 const Header = styled.div`
-font-size: 20px;
+font-size: 58px;
 `
 const ProfileImg = styled.img`
 

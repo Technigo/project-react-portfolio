@@ -25,15 +25,15 @@ const ProfileImg = styled.img`
 
 `
 const Name = styled.div`
-font-size: 20px;
+font-size: 28px;
 `
 
 const Title = styled.div`
-font-size: 25px;
+font-size: 32px;
 `
 
 const Introduktion = styled.div`
-font-size: 18px;
+font-size: 22px;
 `
 
 export default Header;
