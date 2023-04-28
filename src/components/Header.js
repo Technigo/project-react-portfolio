@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'style-components';
+import styled from 'styled-components';
 
-export const Header = () => {
+const Header = () => {
   return (
     <HeaderSection>
       <ProfileImg src="" />
@@ -29,9 +29,11 @@ font-size: 20px;
 `
 
 const Title = styled.div`
-
+font-size: 25px;
 `
 
 const Introduktion = styled.div`
 font-size: 18px;
 `
+
+export default Header;
