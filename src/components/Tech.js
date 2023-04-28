@@ -23,15 +23,18 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background-color: rgb(237, 200, 201);
-height: 430px;
+height: 470px;
+margin-bottom: 20px;
 `
 
 const Header = styled.h1`
-font-size: 60px;
+font-size: 43px;
+margin-bottom: -90px;
 color: rgb(3, 3, 194);
 `
 const TechText = styled.p`
 font-family: 'EB Garamond';
 font-size: 22px;
+margin: 20px;
 `
 export default Tech;

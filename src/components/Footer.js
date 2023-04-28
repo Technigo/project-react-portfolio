@@ -6,7 +6,7 @@ const Footer = () => {
     <FooterSection>
       <Header>Time to talk</Header>
       <ProfileImg src="images/andrea.JPG" />
-      <Name>Andrea Hedström</Name>
+      <Name><h1>Andrea Hedström</h1></Name>
       <Title>
         <h1>Front End Developer</h1>
         <h3>+ Digital communicator with UX-knowledge</h3>
@@ -35,13 +35,27 @@ object-fit: cover;
 border-radius: 100px;
 `
 const Name = styled.div`
-font-size: 20px;
+h1 {
+font-size: 28px;
 color: black;
+}
+margin-bottom: -40px;
 `
+
 const Title = styled.div`
-color: blue;
+h1 {
+font-size: 32px;
+color: #0b2dd4;
+margin-bottom: -20px;
+}
+h2 {
+font-size: 24px;
+color: #D0D0D0
+}
+margin-bottom: -30px;
 `
-const Contact = styled.p`
-font-size: 18px;
-color: black;
+const Contact = styled.div`
+p {
+    font-size: 15px;
+}
 `

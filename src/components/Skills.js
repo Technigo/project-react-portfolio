@@ -48,21 +48,28 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 list-style: none;
+text-align: center;
 `
 const Header = styled.h1`
-font-size: 25px;
+font-size: 43px;
+color: rgb(3, 3, 194);
+margin-top: -40px;
+margin-bottom: -20px;
 `
 const TechSkills = styled.div`
 font-size: 22px;
+line-height: 32px;
 font-family: 'EB Garamond';
 `
 const Code = styled.div`
+margin-bottom: 20px;
 span {
     background-color: #cdcf7f;
     color: white;
 }
 `
 const ToolBox = styled.div`
+margin-bottom: 20px;
 span {
     background-color: rgb(11, 11, 175);
     color: white;
@@ -70,6 +77,7 @@ span {
 `
 
 const More = styled.div`
+margin-bottom: 20px;
 span {
     background-color: rgb(124, 172, 193);
     color: white
