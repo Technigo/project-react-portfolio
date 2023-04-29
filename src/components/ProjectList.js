@@ -1,61 +1,62 @@
 import React from 'react';
+import FeaturedProjects from 'components/FeaturedProjects';
 
 const Projects = [
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: '<The Labyrinth /> Game',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Redux, React, Javascript, HTML5, CSS3',
         githubLink: '',
         liveLink: ''
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'ToDo App',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Redux, React, Javascript, HTML5, CSS3',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://backandforthlist.netlify.app/'
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'Color Quiz',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Redux, React, Javascript, HTML5, CSS3',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://great-color-quiz.netlify.app/'
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'Day dream survey',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Javascript, HTML5, CSS3, React',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://dream-party.netlify.app/'
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'Weather App',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Javascript, HTML5, CSS3',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://taupe-kitten-1e868d.netlify.app/'
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'Guess home',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Javascript, HTML5, CSS3',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://guess-home.netlify.app/'
     },
     {
         projectImg:'',
-        title: '',
-        text: '',
-        techLanguage: '',
+        title: 'Chatbot',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        techLanguage: 'Javascript, HTML5, CSS3',
         githubLink: '',
-        liveLink: ''
+        liveLink: 'https://shillyshallyartgallery.netlify.app/'
     },
 ]
 

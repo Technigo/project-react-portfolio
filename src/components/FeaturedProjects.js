@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ( { projectImg, title, text, techLanguage, githubLink, LiveLink  } ) => {
     return (
         <ProjectSection>
             <ProjectImg src={projectImg} alt='' />
             <Title><h1>{title}</h1></Title>
             <Text><p>{text}</p></Text>
-            <TechLanguage>{techlanguage}</TechLanguage>
+            <TechLanguage>{techLanguage}</TechLanguage>
             <Button></Button>
             <Button></Button>
         </ProjectSection>
