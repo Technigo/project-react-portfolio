@@ -24,6 +24,7 @@ export default Footer;
 const FooterSection = styled.div`
 display: flex;
 flex-direction: column;
+margin: 20px;
 `
 const Header = styled.div`
 font-size: 58px;
@@ -52,10 +53,11 @@ h2 {
 font-size: 24px;
 color: #D0D0D0
 }
-margin-bottom: -30px;
+margin-bottom: -10px;
 `
 const Contact = styled.div`
 p {
-    font-size: 15px;
+    font-size: 19px;
 }
+padding-bottom: 20px;
 `
