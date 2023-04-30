@@ -1,17 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FeaturedProjects = ( { projectImg, title, text, techLanguage, githubLink, LiveLink  } ) => {
-    return (
-        <ProjectSection>
-            <ProjectImg src={projectImg} alt='' />
-            <Title><h1>{title}</h1></Title>
-            <Text><p>{text}</p></Text>
-            <TechLanguage>{techLanguage}</TechLanguage>
-            <Button></Button>
-            <Button></Button>
-        </ProjectSection>
-    )
+const FeaturedProjects = ({ projectImg, title, text, techLanguage, githubLink, liveLink }) => {
+  return (
+    <ProjectSection>
+      <ProjectImg src={projectImg} alt='' />
+      <Title><h1>{title}</h1></Title>
+      <Text><p>{text}</p></Text>
+      <TechLanguage>{techLanguage}</TechLanguage>
+      <Button
+        type="button"
+        onClick={() => window.open(`${githubLink}`)}>
+        View the code
+      </Button>
+      <Button
+        type="button"
+        onClick={() => window.open(`${liveLink}`) }>
+        Live demo
+      </Button>
+    </ProjectSection>
+  )
 }
 
 export default FeaturedProjects;
@@ -46,4 +54,22 @@ background-color: black;
 color:white;
 padding: 2px 6px;
 `
-
+const Button = styled.button`
+display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 40px; 
+   padding: 30px, 0px, 0px, 30px;
+   color: rgb(0, 0, 0); 
+   font-size: 20px;
+   line-height: 27px;
+   text-decoration: none;
+   margin-bottom: 10px;
+   width: 170px;
+   height: 48px;
+   margin-top: 10px;
+   &:hover {
+    background-color: #e593a8;
+    color: white
+}
+`
