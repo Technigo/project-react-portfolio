@@ -9,7 +9,7 @@ const Skills = () => {
       </Header>
       <TechSkills>
         <Code>
-          <li><span>Code</span></li> 
+          <li><span>Code</span></li>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript</li>

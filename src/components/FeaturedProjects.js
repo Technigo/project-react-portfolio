@@ -1,24 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProjectList from 'components/ProjectList'
 
-const FeaturedProjects = ({ projectImg, title, text, techLanguage, githubLink, liveLink }) => {
+const FeaturedProjects = () => {
   return (
-    <ProjectSection>
-      <ProjectImg src={projectImg} alt='' />
-      <Title><h1>{title}</h1></Title>
-      <Text><p>{text}</p></Text>
-      <TechLanguage>{techLanguage}</TechLanguage>
+    <>
+      {ProjectList.map((project, index) => (
+        <ProjectSection>
+      <ProjectImg src={project.projectImg} alt="" />
+      <Title><h1>{project.title}</h1></Title>
+      <Text><p>{project.text}</p></Text>
+      <TechLanguage>
+      <ul>
+      {project.techLanguage.map((language, index) => (
+      <li key={index}>{language}</li>
+            ))}
+          </ul>
+      </TechLanguage>
       <Button
         type="button"
-        onClick={() => window.open(`${githubLink}`)}>
+        onClick={() => window.open({project.githubLink})}>
         View the code
       </Button>
       <Button
         type="button"
-        onClick={() => window.open(`${liveLink}`) }>
+        onClick={() => window.open({project.liveLink})}>
         Live demo
       </Button>
-    </ProjectSection>
+      </ProjectSection>
+      ))}
+    
+    </>
   )
 }
 
@@ -56,20 +68,20 @@ padding: 2px 6px;
 `
 const Button = styled.button`
 display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 40px; 
-   padding: 30px, 0px, 0px, 30px;
-   color: rgb(0, 0, 0); 
-   font-size: 20px;
-   line-height: 27px;
-   text-decoration: none;
-   margin-bottom: 10px;
-   width: 170px;
-   height: 48px;
-   margin-top: 10px;
-   &:hover {
-    background-color: #e593a8;
-    color: white
+align-items: center;
+justify-content: center;
+border-radius: 40px; 
+padding: 30px, 0px, 0px, 30px;
+color: rgb(0, 0, 0); 
+font-size: 20px;
+line-height: 27px;
+text-decoration: none;
+margin-bottom: 10px;
+width: 170px;
+height: 48px;
+margin-top: 10px;
+&:hover {
+background-color: #e593a8;
+color: white
 }
 `

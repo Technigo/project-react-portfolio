@@ -10,7 +10,7 @@ const Tech = () => {
       </Header>
       <TechText>
         <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX,React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,mob-programming, pair-programming, Github.  
+          HTML, CSS, Flexbox, JavaScript, ES6, JSX,React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,mob-programming, pair-programming, Github.
         </p>
       </TechText>
     </TechSection>
