@@ -7,29 +7,28 @@ const FeaturedProjects = () => {
     <>
       {ProjectList.map((project, index) => (
         <ProjectSection>
-      <ProjectImg src={project.projectImg} alt="" />
-      <Title><h1>{project.title}</h1></Title>
-      <Text><p>{project.text}</p></Text>
-      <TechLanguage>
-      <ul>
-      {project.techLanguage.map((language, index) => (
-      <li key={index}>{language}</li>
-            ))}
-          </ul>
-      </TechLanguage>
-      <Button
-        type="button"
-        onClick={() => window.open({project.githubLink})}>
+          <ProjectImg src={project.projectImg} alt="" />
+          <Title><h1>{project.title}</h1></Title>
+          <Text><p>{project.text}</p></Text>
+          <TechLanguage>
+            <ul>
+              {project.techLanguage.map((language, index) => (
+                <li key={index}>{language}</li>
+              ))}
+            </ul>
+          </TechLanguage>
+          <Button
+            type="button"
+            onClick={() => window.open(project.githubLink)}>
         View the code
-      </Button>
-      <Button
-        type="button"
-        onClick={() => window.open({project.liveLink})}>
+          </Button>
+          <Button
+            type="button"
+            onClick={() => window.open(project.liveLink)}>
         Live demo
-      </Button>
-      </ProjectSection>
+          </Button>
+        </ProjectSection>
       ))}
-    
     </>
   )
 }
