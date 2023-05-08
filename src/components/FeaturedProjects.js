@@ -39,7 +39,6 @@ const ProjectSection = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
 padding: 20px;
 `
 const ProjectImg = styled.img`
@@ -47,18 +46,23 @@ width: 327px;
 height: 280px;
 object-fit: cover;
 margin-top: 60px;
+margin-bottom: -30px;
 `
 const Title = styled.h1`
 font-family: 'Roboto', sans-serif;
-font-size: 32px;
+font-size: 19px;
+margin-bottom: -70px;
 `
 const Text = styled.p`
 font-family: 'EB Garamond';
 font-size: 22px;
-margin-bottom: 20px;
+margin-bottom: 10px;
 justify-content: center;
 `
-const TechLanguage = styled.div`
+const TechLanguage = styled.ul`
+display: flex;
+flex-direction: row;
+list-style: none;
 font-size: 16px;
 line-height: 22px;
 background-color: black;
@@ -69,7 +73,8 @@ const Button = styled.button`
 display: flex;
 align-items: center;
 justify-content: center;
-border-radius: 40px; 
+border-radius: 40px;
+border-style: none;
 padding: 30px, 0px, 0px, 30px;
 color: rgb(0, 0, 0); 
 font-size: 20px;
