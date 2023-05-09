@@ -1,10 +1,15 @@
-import Artsie from 'images/Artsie.png';
-import ColorQuiz from 'images/ColorQuiz.png'
-import GuessWho from 'images/GuessWho.png'
+// import Artsie from 'images/Artsie.png';
+// import ColorQuiz from 'images/ColorQuiz.png'
+// import GuessWho from 'images/GuessWho.png'
 import Labyrinth from 'images/Labyrinth.png'
 import WeatherApp1 from 'images/WeatherApp1.png'
 import PartyServey from 'images/PartyServey.png'
-import Backandforth from 'images/Backandforth.png'
+// import Backandforth from 'images/Backandforth.png'
+import Backforth from 'images/backforth.png'
+import QuizColor from 'images/QuizColor.png'
+import Home from 'images/Home.png'
+import ArtsieWall from 'images/ArtsieWall.png'
+import Weather from 'images/Weather.png'
 
 const ProjectList = [
   {
@@ -16,7 +21,7 @@ const ProjectList = [
     liveLink: 'https://reliable-sorbet-d720d3.netlify.app/'
   },
   {
-    projectImg: `${Backandforth}`,
+    projectImg: `${Backforth}`,
     title: 'ToDo App',
     text: 'checklist that helps parents get a better overview of which things are where.',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
@@ -24,7 +29,7 @@ const ProjectList = [
     liveLink: 'https://backandforthlist.netlify.app/'
   },
   {
-    projectImg: `${ColorQuiz}`,
+    projectImg: `${QuizColor}`,
     title: 'Color Quiz',
     text: 'A quiz for kids where they in a fun way could focus on learning instead of keeping score',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
@@ -40,7 +45,7 @@ const ProjectList = [
     liveLink: 'https://dream-party.netlify.app/'
   },
   {
-    projectImg: `${WeatherApp1}`,
+    projectImg: `${Weather}`,
     title: 'Weather App',
     text: 'Weather app that fetches data and where the design changes depending on todays weather',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
@@ -48,7 +53,7 @@ const ProjectList = [
     liveLink: 'https://taupe-kitten-1e868d.netlify.app/'
   },
   {
-    projectImg: `${GuessWho}`,
+    projectImg: `${Home}`,
     title: 'Guess home',
     text: 'A new take of the classig game Guess Who.',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
@@ -56,7 +61,7 @@ const ProjectList = [
     liveLink: 'https://guess-home.netlify.app/'
   },
   {
-    projectImg: `${Artsie}`,
+    projectImg: `${ArtsieWall}`,
     title: 'Chatbot',
     text: 'My very first project in Javascript - a chatbot that help you find art for your walls',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
