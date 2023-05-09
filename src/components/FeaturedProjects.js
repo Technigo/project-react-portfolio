@@ -12,8 +12,9 @@ const FeaturedProjects = () => {
           <Text><p>{project.text}</p></Text>
           <TechLanguage>
             {project.techLanguage.map((language) => (
-             <h3>
+             <h3><span>
              {language}
+             </span>
              </h3>
             ))}
           </TechLanguage>
@@ -64,13 +65,14 @@ justify-content: center;
 const TechLanguage = styled.div`
 display: flex;
 flex-direction: row;
-list-style: none;
+font-family: 'Satoshi';
 font-size: 16px;
-line-height: 22px;
-background-color: black;
 color:white;
-padding: 2px 6px;
 gap: 10px;
+span {
+  background: black;
+  padding: 2px 6px;
+}
 `
 const Button = styled.button`
 font-family: 'Satoshi';
