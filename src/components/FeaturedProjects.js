@@ -5,26 +5,28 @@ import ProjectList from 'components/ProjectList'
 const FeaturedProjects = () => {
   return (
     <>
-      {ProjectList.map((project, index) => (
+      {ProjectList.map((project) => (
         <ProjectSection>
           <ProjectImg src={project.projectImg} alt="" />
           <Title><h1>{project.title}</h1></Title>
           <Text><p>{project.text}</p></Text>
           <TechLanguage>
-            <ul>
-              {project.techLanguage.map((language, index) => (
-                <li key={index}>{language}</li>
-              ))}
-            </ul>
+            {project.techLanguage.map((language) => (
+             <h3>
+             {language}
+             </h3>
+            ))}
           </TechLanguage>
           <Button
             type="button"
             onClick={() => window.open(project.githubLink)}>
+            <i className="fa-brands fa-github" />
         View the code
           </Button>
           <Button
             type="button"
             onClick={() => window.open(project.liveLink)}>
+            <i className="fa-regular fa-globe" />
         Live demo
           </Button>
         </ProjectSection>
@@ -49,7 +51,7 @@ margin-top: 60px;
 margin-bottom: -30px;
 `
 const Title = styled.h1`
-font-family: 'Roboto', sans-serif;
+font-family: 'Satoshi';
 font-size: 19px;
 margin-bottom: -70px;
 `
@@ -59,7 +61,7 @@ font-size: 22px;
 margin-bottom: 10px;
 justify-content: center;
 `
-const TechLanguage = styled.ul`
+const TechLanguage = styled.div`
 display: flex;
 flex-direction: row;
 list-style: none;
@@ -68,16 +70,19 @@ line-height: 22px;
 background-color: black;
 color:white;
 padding: 2px 6px;
+gap: 10px;
 `
 const Button = styled.button`
+font-family: 'Satoshi';
 display: flex;
 align-items: center;
 justify-content: center;
+gap: 10px;
 border-radius: 40px;
 border-style: none;
 padding: 30px, 0px, 0px, 30px;
 color: rgb(0, 0, 0); 
-font-size: 20px;
+font-size: 18px;
 line-height: 27px;
 text-decoration: none;
 margin-bottom: 10px;

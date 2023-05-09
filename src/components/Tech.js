@@ -10,7 +10,7 @@ const Tech = () => {
       </Header>
       <TechText>
         <p>
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX,React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s,mob-programming, pair-programming, Github.
+          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.
         </p>
       </TechText>
     </TechSection>
@@ -28,6 +28,7 @@ margin-bottom: 20px;
 `
 
 const Header = styled.h1`
+font-family: 'Satoshi';
 font-size: 43px;
 margin-bottom: -90px;
 color: rgb(3, 3, 194);

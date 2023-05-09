@@ -13,11 +13,23 @@ const Header = () => {
       <Introduktion>
         <p>Hej hej</p>
       </Introduktion>
+      <Icons>
+        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/">
+          <i className="fa-brands fa-linkedin-in" />
+        </StyledA>
+        <StyledA href="https://github.com/AndreaHedstrom">
+          <i className="fa-brands fa-github" />
+        </StyledA>
+        <StyledA href="mailto:andrea.hedstrom@outlook.com">
+          <i className="fa-regular fa-envelope" />
+        </StyledA>
+      </Icons>
     </HeaderSection>
   )
 }
 
 const HeaderSection = styled.div`
+font-family: "Satoshi";
 display: flex;
 flex-direction: column;
 margin: 20px;
@@ -56,6 +68,20 @@ p {
 font-size: 22px;
 font-family: 'EB Garamond';
 }
+`
+
+const Icons = styled.div`
+display: flex;
+flex-direction: row;
+gap: 30px;
+`
+
+const StyledA = styled.div`
+color: #D0D0D0;
+&:hover {
+color: black;
+}
+font-size: 30px;
 `
 
 export default Header;

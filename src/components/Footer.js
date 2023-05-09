@@ -22,6 +22,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterSection = styled.div`
+font-family: 'Satoshi';
 display: flex;
 flex-direction: column;
 margin: 20px;

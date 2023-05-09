@@ -9,8 +9,8 @@ import Backandforth from 'images/Backandforth.png'
 const ProjectList = [
   {
     projectImg: `${Labyrinth}`,
-    title: '<The Labyrinth /> Game',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Labyrinth Game',
+    text: 'A labyrinth game',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-labyrinth',
     liveLink: 'https://reliable-sorbet-d720d3.netlify.app/'

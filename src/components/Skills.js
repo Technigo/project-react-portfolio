@@ -51,6 +51,7 @@ list-style: none;
 text-align: center;
 `
 const Header = styled.h1`
+font-family: 'Satoshi';
 font-size: 43px;
 color: rgb(3, 3, 194);
 margin-top: -40px;
