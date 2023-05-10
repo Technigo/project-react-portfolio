@@ -1,8 +1,8 @@
 // import Artsie from 'images/Artsie.png';
 // import ColorQuiz from 'images/ColorQuiz.png'
 // import GuessWho from 'images/GuessWho.png'
-import Labyrinth from 'images/Labyrinth.png'
-import WeatherApp1 from 'images/WeatherApp1.png'
+// import Labyrinth from 'images/Labyrinth.png'
+// import WeatherApp1 from 'images/WeatherApp1.png'
 import PartyServey from 'images/PartyServey.png'
 // import Backandforth from 'images/Backandforth.png'
 import Backforth from 'images/backforth.png'
@@ -10,10 +10,11 @@ import QuizColor from 'images/QuizColor.png'
 import Home from 'images/Home.png'
 import ArtsieWall from 'images/ArtsieWall.png'
 import Weather from 'images/Weather.png'
+import Labyrinth2 from 'images/Labyrinth2.png'
 
 const ProjectList = [
   {
-    projectImg: `${Labyrinth}`,
+    projectImg: `${Labyrinth2}`,
     title: 'Labyrinth Game',
     text: 'A labyrinth game',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],

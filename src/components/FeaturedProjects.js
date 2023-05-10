@@ -12,10 +12,11 @@ const FeaturedProjects = () => {
           <Text><p>{project.text}</p></Text>
           <TechLanguage>
             {project.techLanguage.map((language) => (
-             <h3><span>
-             {language}
-             </span>
-             </h3>
+              <h3>
+                <span>
+                  {language}
+                </span>
+              </h3>
             ))}
           </TechLanguage>
           <Button
@@ -92,7 +93,7 @@ width: 170px;
 height: 48px;
 margin-top: 10px;
 &:hover {
-background-color: #e593a8;
+background-color: rgb(214, 205, 140);
 color: white
 }
 `

@@ -14,13 +14,13 @@ const Header = () => {
         <p>Hej hej</p>
       </Introduktion>
       <Icons>
-        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/">
+        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-linkedin-in" />
         </StyledA>
-        <StyledA href="https://github.com/AndreaHedstrom">
+        <StyledA href="https://github.com/AndreaHedstrom" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-github" />
         </StyledA>
-        <StyledA href="mailto:andrea.hedstrom@outlook.com">
+        <StyledA href="mailto:andrea.hedstrom@outlook.com" target="_blank" rel="noopener noreferrer">
           <i className="fa-regular fa-envelope" />
         </StyledA>
       </Icons>
@@ -76,7 +76,7 @@ flex-direction: row;
 gap: 30px;
 `
 
-const StyledA = styled.div`
+const StyledA = styled.a`
 color: #D0D0D0;
 &:hover {
 color: black;
