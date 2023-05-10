@@ -11,6 +11,7 @@ import Home from 'images/Home.png'
 import ArtsieWall from 'images/ArtsieWall.png'
 import Weather from 'images/Weather.png'
 import Labyrinth2 from 'images/Labyrinth2.png'
+import Movies from 'images/Movies.png'
 
 const ProjectList = [
   {
@@ -36,6 +37,14 @@ const ProjectList = [
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/Redux-quiz',
     liveLink: 'https://great-color-quiz.netlify.app/'
+  },
+  {
+    projectImg: `${Movies}`,
+    title: 'Movie site',
+    text: 'movie movie',
+    techLanguage: ['React', 'Javascript', 'HTML5', 'CSS3'],
+    githubLink: 'https://github.com/AndreaHedstrom/project-movies',
+    liveLink: 'https://annandreas-popular-movies.netlify.app'
   },
   {
     projectImg: `${PartyServey}`,

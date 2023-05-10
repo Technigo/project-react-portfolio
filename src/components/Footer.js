@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import andrea from 'images/andrea.JPG'
 
 const Footer = () => {
   return (
     <FooterSection>
       <Header>Time to talk</Header>
-      <ProfileImg src="images/andrea.JPG" />
+      <ProfileImg src={andrea} />
       <Name><h1>Andrea Hedström</h1></Name>
       <Title>
         <h1>Front End Developer</h1>
