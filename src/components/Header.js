@@ -4,28 +4,31 @@ import andrea from 'images/andrea.JPG'
 
 const Header = () => {
   return (
-    <HeaderSection>
-      <ProfileImg src={andrea} />
-      <Name><h1>Andrea Hedström</h1></Name>
-      <Title>
-        <h1>Front End Developer</h1>
-        <h2>+ Digital communicator with UX-knowledge</h2>
-      </Title>
-      <Introduktion>
-        <p>Hej hej</p>
-      </Introduktion>
-      <Icons>
-        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">
-          <i className="fa-brands fa-linkedin-in" />
-        </StyledA>
-        <StyledA href="https://github.com/AndreaHedstrom" target="_blank" rel="noopener noreferrer">
-          <i className="fa-brands fa-github" />
-        </StyledA>
-        <StyledA href="mailto:andrea.hedstrom@outlook.com" target="_blank" rel="noopener noreferrer">
-          <i className="fa-regular fa-envelope" />
-        </StyledA>
-      </Icons>
-    </HeaderSection>
+    <HeaderWrapper>
+      <HeaderSection>
+        <ProfileImg src={andrea} />
+        <Name><h1>Andrea Hedström</h1></Name>
+        <Title>
+          <h1>Front End Developer</h1>
+          <h2>+ Digital communicator with UX-knowledge</h2>
+        </Title>
+        <Introduktion>
+          <p>Hej hej</p>
+        </Introduktion>
+        <Icons>
+          <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-linkedin-in" />
+          </StyledA>
+          <StyledA href="https://github.com/AndreaHedstrom" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-github" />
+          </StyledA>
+          <StyledA href="mailto:andrea.hedstrom@outlook.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-regular fa-envelope" />
+          </StyledA>
+        </Icons>
+      </HeaderSection>
+      <ImageSection />
+    </HeaderWrapper>
   )
 }
 
@@ -54,7 +57,7 @@ margin-bottom: -40px;
 const Title = styled.div`
 h1 {
 font-size: 32px;
-color: #0b2dd4;
+color: #C875DF;
 margin-bottom: -20px;
 }
 h2 {
@@ -83,6 +86,19 @@ color: #D0D0D0;
 color: black;
 }
 font-size: 30px;
+`
+const ImageSection = styled.div`
+display: none;
+@media (min-width: 668px){
+  background-color: pink;
+}
+`
+const HeaderWrapper = styled.div`
+@media (min-width: 668px) {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 668px) {
 `
 
 export default Header;

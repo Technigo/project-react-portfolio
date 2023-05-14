@@ -5,7 +5,11 @@ import andrea from 'images/andrea.JPG'
 const Footer = () => {
   return (
     <FooterSection>
-      <Header>Time to talk</Header>
+      <Header>
+        <h1>
+        Time to talk
+        </h1>
+      </Header>
       <ProfileImg src={andrea} />
       <Name><h1>Andrea Hedström</h1></Name>
       <Title>
@@ -13,9 +17,20 @@ const Footer = () => {
         <h3>+ Digital communicator with UX-knowledge</h3>
       </Title>
       <Contact>
-        <p>0762 62 42 59</p>
+        <p>+46(0) 762 62 42 59</p>
         <p>andrea.hedstrom@outlook.com</p>
       </Contact>
+      <Icons>
+        <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-linkedin-in" />
+        </StyledA>
+        <StyledA href="https://github.com/AndreaHedstrom" target="_blank" rel="noopener noreferrer">
+          <i className="fa-brands fa-github" />
+        </StyledA>
+        <StyledA href="mailto:andrea.hedstrom@outlook.com" target="_blank" rel="noopener noreferrer">
+          <i className="fa-regular fa-envelope" />
+        </StyledA>
+      </Icons>
     </FooterSection>
 
   )
@@ -28,8 +43,9 @@ display: flex;
 flex-direction: column;
 margin: 20px;
 `
-const Header = styled.div`
-font-size: 58px;
+const Header = styled.h1`
+font-family: 'Satoshi';
+font-size: 28px;
 `
 const ProfileImg = styled.img`
 width: 164px;
@@ -48,7 +64,7 @@ margin-bottom: -40px;
 const Title = styled.div`
 h1 {
 font-size: 32px;
-color: #0b2dd4;
+color: #C875DF;
 margin-bottom: -20px;
 }
 h2 {
@@ -62,4 +78,17 @@ p {
     font-size: 19px;
 }
 padding-bottom: 20px;
+`
+const Icons = styled.div`
+display: flex;
+flex-direction: row;
+gap: 30px;
+`
+
+const StyledA = styled.a`
+color: #D0D0D0;
+&:hover {
+color: black;
+}
+font-size: 30px;
 `

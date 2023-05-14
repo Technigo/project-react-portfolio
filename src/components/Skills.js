@@ -41,7 +41,7 @@ const Skills = () => {
 export default Skills;
 
 const SkillSection = styled.div`
-background-color: rgb(237, 200, 201);
+background-color: #F0EAD4;
 height: 900px;
 display: flex;
 flex-direction: column;
@@ -53,7 +53,7 @@ text-align: center;
 const Header = styled.h1`
 font-family: 'Satoshi';
 font-size: 43px;
-color: rgb(3, 3, 194);
+color: #7A896D;
 margin-top: -40px;
 margin-bottom: -20px;
 `
