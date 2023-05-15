@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+
 const Skills = () => {
   return (
     <SkillSection>
@@ -34,6 +36,15 @@ const Skills = () => {
           <li>Node.js</li>
         </Upcoming>
       </TechSkills>
+      <Lottie>
+        <Player
+          autoplay
+          loop
+          src="https://assets2.lottiefiles.com/packages/lf20_2BTmhJ.json"
+          style={{ height: '300px', width: '300px' }}>
+          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+        </Player>
+      </Lottie>
     </SkillSection>
   )
 }
@@ -49,18 +60,33 @@ align-items: center;
 justify-content: center;
 list-style: none;
 text-align: center;
+@media (min-width: 1000px) {
+  height: 500px;
+}
 `
+
 const Header = styled.h1`
 font-family: 'Satoshi';
 font-size: 43px;
 color: #7A896D;
 margin-top: -40px;
 margin-bottom: -20px;
+@media (min-width: 1000px) {
+  margin-top: -80px;
+  padding-left: 300px;
+}
 `
 const TechSkills = styled.div`
+display: flex;
+flex-direction: column;
 font-size: 22px;
 line-height: 32px;
 font-family: 'EB Garamond';
+@media (min-width: 1000px){
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 300px;
+}
 `
 const Code = styled.div`
 margin-bottom: 20px;
@@ -90,5 +116,13 @@ const Upcoming = styled.div`
 span {
     background-color: rgb(216, 148, 167);
     color:white;
+}
+`
+const Lottie = styled.div`
+display: none;
+@media (min-width: 1000px){ 
+display: block;
+position: absolute;
+margin-left: -800px;
 }
 `

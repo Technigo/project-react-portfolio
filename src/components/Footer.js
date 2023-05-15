@@ -42,6 +42,9 @@ font-family: 'Satoshi';
 display: flex;
 flex-direction: column;
 margin: 20px;
+@media (min-width: 1000px) {
+  align-items: center;
+}
 `
 const Header = styled.h1`
 font-family: 'Satoshi';
@@ -73,11 +76,24 @@ font-size: 24px;
 color: #D0D0D0
 }
 margin-bottom: -10px;
+@media (min-width: 1000px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 `
+
 const Contact = styled.div`
 p {
     font-size: 19px;
     margin-bottom: -20px;
+}
+@media (min-width: 1000px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 `
 const Icons = styled.div`

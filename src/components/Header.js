@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 import andrea from 'images/andrea.JPG'
@@ -14,7 +15,7 @@ const Header = () => {
           <h2>+ Digital communicator with UX-knowledge</h2>
         </Title>
         <Introduktion>
-          <p>With a background within LSS mixed with studies both in Swedish Sign Language, design and digital communication my goal is to "tie the bag together" with my new role as an Frontend Developer. With my experience about both deaf world and LSS I will always have in the back of my head that the design and code have to be userfriendly for everyone.</p>
+          <p>With a background working within LSS mixed with studies both in Swedish Sign Language, design and digital communication I now want to bring evertyhing together in my new role as an Frontend Developer. My ultimate goal is to merge my diverse skill set to create innovative and inclusive solutions that benefit all users.</p>
         </Introduktion>
         <Icons>
           <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">

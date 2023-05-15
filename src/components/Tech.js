@@ -44,4 +44,7 @@ span {
   width: 400px;
 }
 `
+
+
+
 export default Tech;
