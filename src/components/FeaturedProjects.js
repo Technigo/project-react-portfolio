@@ -79,9 +79,9 @@ const TechLanguage = styled.div`
 display: flex;
 flex-direction: row;
 font-family: 'Satoshi';
-font-size: 16px;
+font-size: 12px;
 color:white;
-gap: 10px;
+gap: 5px;
 span {
   background: black;
   padding: 2px 6px;
