@@ -1,21 +1,16 @@
 // import Artsie from 'images/Artsie.png';
-// import ColorQuiz from 'images/ColorQuiz.png'
-// import GuessWho from 'images/GuessWho.png'
-// import Labyrinth from 'images/Labyrinth.png'
-// import WeatherApp1 from 'images/WeatherApp1.png'
-import PartyServey from 'images/PartyServey.png'
-// import Backandforth from 'images/Backandforth.png'
-import Backforth from 'images/backforth.png'
-import QuizColor from 'images/QuizColor.png'
-import Home from 'images/Home.png'
+import Quizzy from 'images/Quizzy.png'
+import Labyrinth from 'images/Labyrinth.png'
+import WeatherApp1 from 'images/WeatherApp1.png'
+import Checklist from 'images/Checklist.png'
 import ArtsieWall from 'images/ArtsieWall.png'
-import Weather from 'images/Weather.png'
-import Labyrinth2 from 'images/Labyrinth2.png'
 import Movies from 'images/Movies.png'
+import PartyServey1 from 'images/PartyServey1.png'
+import GuessWindow from 'images/GuessWindow.png'
 
 const ProjectList = [
   {
-    projectImg: `${Labyrinth2}`,
+    projectImg: `${Labyrinth}`,
     title: 'Labyrinth Game',
     text: 'A labyrinth game',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
@@ -23,7 +18,7 @@ const ProjectList = [
     liveLink: 'https://reliable-sorbet-d720d3.netlify.app/'
   },
   {
-    projectImg: `${Backforth}`,
+    projectImg: `${Checklist}`,
     title: 'ToDo App',
     text: 'checklist that helps parents get a better overview of which things are where.',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
@@ -31,7 +26,7 @@ const ProjectList = [
     liveLink: 'https://backandforthlist.netlify.app/'
   },
   {
-    projectImg: `${QuizColor}`,
+    projectImg: `${Quizzy}`,
     title: 'Color Quiz',
     text: 'A quiz for kids where they in a fun way could focus on learning instead of keeping score',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
@@ -47,7 +42,7 @@ const ProjectList = [
     liveLink: 'https://annandreas-popular-movies.netlify.app'
   },
   {
-    projectImg: `${PartyServey}`,
+    projectImg: `${PartyServey1}`,
     title: 'Day dream survey',
     text: 'A small survey about planning an imaginary party',
     techLanguage: ['Javascript', 'HTML5', 'CSS3', 'React'],
@@ -55,7 +50,7 @@ const ProjectList = [
     liveLink: 'https://dream-party.netlify.app/'
   },
   {
-    projectImg: `${Weather}`,
+    projectImg: `${WeatherApp1}`,
     title: 'Weather App',
     text: 'Weather app that fetches data and where the design changes depending on todays weather',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
@@ -63,7 +58,7 @@ const ProjectList = [
     liveLink: 'https://taupe-kitten-1e868d.netlify.app/'
   },
   {
-    projectImg: `${Home}`,
+    projectImg: `${GuessWindow}`,
     title: 'Guess home',
     text: 'A new take of the classig game Guess Who.',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
