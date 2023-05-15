@@ -7,7 +7,7 @@ const Footer = () => {
     <FooterSection>
       <Header>
         <h1>
-        Let's have a coffee!
+        Let &apos;s have a coffee!
         </h1>
       </Header>
       <ProfileImg src={andrea} />
