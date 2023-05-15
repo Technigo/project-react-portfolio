@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectList from 'components/ProjectList'
-import Line from 'images/Line.png';
+import BlueLine from 'images/BlueLine.png';
 
 const FeaturedProjects = () => {
   return (
@@ -39,7 +39,7 @@ const FeaturedProjects = () => {
         Live demo
             </Button>
           </Buttons>
-          <LineImg src={Line} alt="" />
+          <LineImg src={BlueLine} alt="" />
         </ProjectSection>
       ))}
     </>
@@ -69,13 +69,13 @@ padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 `
 const ProjectImg = styled.img`
 width: 327px;
 height: 280px;
 object-fit: cover;
-margin-top: 30px;
 margin-bottom: -30px;
 
 @media (min-width: 768px) {
@@ -143,10 +143,9 @@ const Buttons = styled.div`
 
 const LineImg = styled.img`
 height: 100%;
-width: 300px;
-margin-top: 50px;
+width: 600px;
 align-self: center;
 @media (min-width: 768px) {
-  width: 800px;
+  width: 100%;
 }
 `
