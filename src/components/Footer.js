@@ -77,13 +77,14 @@ margin-bottom: -10px;
 const Contact = styled.div`
 p {
     font-size: 19px;
+    margin-bottom: -20px;
 }
-padding-bottom: 20px;
 `
 const Icons = styled.div`
 display: flex;
 flex-direction: row;
 gap: 30px;
+margin-top: 30px;
 `
 
 const StyledA = styled.a`
