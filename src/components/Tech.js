@@ -24,6 +24,7 @@ justify-content: center;
 align-items: center;
 background-color: #F0EAD4;
 height: 470px;
+width: 100%;
 margin-bottom: 20px;
 `
 
