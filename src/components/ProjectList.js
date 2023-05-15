@@ -1,7 +1,7 @@
 // import Artsie from 'images/Artsie.png';
 import Quizzy from 'images/Quizzy.png'
 import Labyrinth from 'images/Labyrinth.png'
-import WeatherApp1 from 'images/WeatherApp1.png'
+import WeatherLondon from 'images/WeatherLondon.png'
 import Checklist from 'images/Checklist.png'
 import ArtsieWall from 'images/ArtsieWall.png'
 import Movies from 'images/Movies.png'
@@ -50,7 +50,7 @@ const ProjectList = [
     liveLink: 'https://dream-party.netlify.app/'
   },
   {
-    projectImg: `${WeatherApp1}`,
+    projectImg: `${WeatherLondon}`,
     title: 'Weather App',
     text: 'Weather app that fetches data and where the design changes depending on todays weather',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
