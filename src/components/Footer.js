@@ -46,6 +46,7 @@ margin: 20px;
 const Header = styled.h1`
 font-family: 'Satoshi';
 font-size: 28px;
+margin-bottom: -20px;
 `
 const ProfileImg = styled.img`
 width: 164px;

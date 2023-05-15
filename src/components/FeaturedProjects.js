@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectList from 'components/ProjectList'
+import Line from 'images/Line.png';
 
 const FeaturedProjects = () => {
   return (
     <>
+      <FeaturedHeader>
+        <h1>
+        Featured Projects
+        </h1>
+      </FeaturedHeader>
       {ProjectList.map((project) => (
         <ProjectSection>
           <ProjectImg src={project.projectImg} alt="" />
@@ -23,7 +29,7 @@ const FeaturedProjects = () => {
             type="button"
             onClick={() => window.open(project.githubLink)}>
             <i className="fa-brands fa-github" />
-        View the code
+        View code
           </Button>
           <Button
             type="button"
@@ -31,6 +37,7 @@ const FeaturedProjects = () => {
             <i className="fa-regular fa-globe" />
         Live demo
           </Button>
+          <LineImg src={Line} alt="" />
         </ProjectSection>
       ))}
     </>
@@ -38,6 +45,11 @@ const FeaturedProjects = () => {
 }
 
 export default FeaturedProjects;
+
+const FeaturedHeader = styled.h1`
+font-family: 'Satoshi';
+font-size: 30px;
+`
 
 const ProjectSection = styled.div`
 display: flex;
@@ -49,7 +61,7 @@ const ProjectImg = styled.img`
 width: 327px;
 height: 280px;
 object-fit: cover;
-margin-top: 60px;
+margin-top: 30px;
 margin-bottom: -30px;
 `
 const Title = styled.h1`
@@ -60,7 +72,7 @@ margin-bottom: -70px;
 const Text = styled.p`
 font-family: 'EB Garamond';
 font-size: 22px;
-margin-bottom: 10px;
+margin-bottom: -30px;
 justify-content: center;
 `
 const TechLanguage = styled.div`
@@ -97,4 +109,10 @@ margin-top: 10px;
 background-color: rgb(214, 205, 140);
 color: white
 }
+`
+const LineImg = styled.img`
+height: 100%;
+width: 200px;
+margin-top: 50px;
+align-self: center;
 `
