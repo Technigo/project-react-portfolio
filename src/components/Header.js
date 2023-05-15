@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import andrea from 'images/andrea.JPG'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 const Header = () => {
   return (
@@ -27,7 +28,15 @@ const Header = () => {
           </StyledA>
         </Icons>
       </HeaderSection>
-      <ImageSection />
+      <ImageSection>
+        <Player
+          autoplay
+          loop
+          src="https://assets9.lottiefiles.com/private_files/lf30_inPNOM.json"
+          style={{ height: '700px', width: '900px' }}>
+          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+        </Player>
+      </ImageSection>
     </HeaderWrapper>
   )
 }
@@ -96,16 +105,20 @@ font-size: 30px;
 `
 const ImageSection = styled.div`
 display: none;
-@media (min-width: 668px){
-  background-color: pink;
+@media (min-width: 1000px){
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 730px;;
+  background-color: white;
 }
 `
+
 const HeaderWrapper = styled.div`
 @media (min-width: 668px) {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-@media (min-width: 668px) {
 `
 
 export default Header;
