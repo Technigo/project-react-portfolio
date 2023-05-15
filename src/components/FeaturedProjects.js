@@ -25,18 +25,20 @@ const FeaturedProjects = () => {
               </h3>
             ))}
           </TechLanguage>
-          <Button
-            type="button"
-            onClick={() => window.open(project.githubLink)}>
-            <i className="fa-brands fa-github" />
+          <Buttons>
+            <Button
+              type="button"
+              onClick={() => window.open(project.githubLink)}>
+              <i className="fa-brands fa-github" />
         View code
-          </Button>
-          <Button
-            type="button"
-            onClick={() => window.open(project.liveLink)}>
-            <i className="fa-regular fa-globe" />
+            </Button>
+            <Button
+              type="button"
+              onClick={() => window.open(project.liveLink)}>
+              <i className="fa-regular fa-globe" />
         Live demo
-          </Button>
+            </Button>
+          </Buttons>
           <LineImg src={Line} alt="" />
         </ProjectSection>
       ))}
@@ -70,6 +72,11 @@ height: 280px;
 object-fit: cover;
 margin-top: 30px;
 margin-bottom: -30px;
+
+@media (min-width: 768px) {
+  width: 427px;
+  height: 380px;
+}
 `
 const Title = styled.h1`
 font-family: 'Satoshi';
@@ -79,7 +86,7 @@ margin-bottom: -70px;
 const Text = styled.p`
 font-family: 'EB Garamond';
 font-size: 22px;
-margin-bottom: -30px;
+margin-bottom: -20px;
 justify-content: center;
 
 @media (min-width: 768px) {
@@ -121,6 +128,14 @@ background-color: rgb(214, 205, 140);
 color: white
 }
 `
+const Buttons = styled.div`
+@media (min-width: 768px) {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+`
+
 const LineImg = styled.img`
 height: 100%;
 width: 200px;
