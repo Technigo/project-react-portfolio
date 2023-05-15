@@ -57,6 +57,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding: 20px;
+
+@media (min-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 `
 const ProjectImg = styled.img`
 width: 327px;
@@ -75,6 +81,10 @@ font-family: 'EB Garamond';
 font-size: 22px;
 margin-bottom: -30px;
 justify-content: center;
+
+@media (min-width: 768px) {
+  width: 400px;
+}
 `
 const TechLanguage = styled.div`
 display: flex;

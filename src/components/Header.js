@@ -13,7 +13,7 @@ const Header = () => {
           <h2>+ Digital communicator with UX-knowledge</h2>
         </Title>
         <Introduktion>
-          <p>Hej hej</p>
+          <p>With a background within LSS mixed with studies both in Swedish Sign Language, design and digital communication my goal is to "tie the bag together" with my new role as an Frontend Developer. With my experience about both deaf world and LSS I will always have in the back of my head that the design and code have to be userfriendly for everyone.</p>
         </Introduktion>
         <Icons>
           <StyledA href="https://www.linkedin.com/in/andrea-hedstr%C3%B6m-3549a516b/" target="_blank" rel="noopener noreferrer">

@@ -26,8 +26,8 @@ const Skills = () => {
         </ToolBox>
         <More>
           <li><span>More</span></li>
-          <li>Design lead</li>
-          <li>Branding</li>
+          <li>UX-design</li>
+          <li>Ready to learn more</li>
         </More>
         <Upcoming>
           <li><span>Upcoming</span></li>
