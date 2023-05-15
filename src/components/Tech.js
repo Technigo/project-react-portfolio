@@ -40,5 +40,8 @@ margin: 20px;
 span {
   background: #D6A9E2;
 }
+@media (min-width: 768px) {
+  width: 400px;
+}
 `
 export default Tech;

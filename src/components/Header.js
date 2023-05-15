@@ -45,6 +45,10 @@ width: 164px;
 height: 164px;
 object-fit: cover;
 border-radius: 100px;
+
+@media (min-width: 768px) {
+  align-self: flex-start;
+}
 `
 const Name = styled.div`
 h1 {
@@ -71,6 +75,9 @@ const Introduktion = styled.div`
 p {
 font-size: 22px;
 font-family: 'EB Garamond';
+}
+@media (min-width: 768px) {
+  width: 500px;
 }
 `
 
