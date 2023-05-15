@@ -142,10 +142,5 @@ const Buttons = styled.div`
 `
 
 const LineImg = styled.img`
-height: 100%;
-width: 600px;
-align-self: center;
-@media (min-width: 768px) {
-  width: 100%;
-}
+width: 100%;
 `
