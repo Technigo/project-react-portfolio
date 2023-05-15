@@ -1,10 +1,10 @@
 // import Artsie from 'images/Artsie.png';
 import Quizzy from 'images/Quizzy.png'
-import Labyrinth from 'images/Labyrinth.png'
+import Labyrinth from 'images/labyrinth-mockup.png'
 import WeatherLondon from 'images/WeatherLondon.png'
 import Checklist from 'images/Checklist.png'
 import ArtsieWall from 'images/ArtsieWall.png'
-import Movies from 'images/Movies.png'
+import MovieMovie from 'images/MovieMovie.png'
 import PartyServey1 from 'images/PartyServey1.png'
 import GuessWindow from 'images/GuessWindow.png'
 
@@ -34,7 +34,7 @@ const ProjectList = [
     liveLink: 'https://great-color-quiz.netlify.app/'
   },
   {
-    projectImg: `${Movies}`,
+    projectImg: `${MovieMovie}`,
     title: 'Movie site',
     text: 'movie movie',
     techLanguage: ['React', 'Javascript', 'HTML5', 'CSS3'],
