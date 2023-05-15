@@ -11,7 +11,7 @@ import GuessWindow from 'images/GuessWindow.png'
 const ProjectList = [
   {
     projectImg: `${Labyrinth}`,
-    title: '<Labyrinth />',
+    title: '<The Labyrinth />',
     text: 'A labyrinth game built with React and Redux with an old school design, inspired by some code elements.',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-labyrinth',

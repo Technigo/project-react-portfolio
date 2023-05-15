@@ -52,6 +52,11 @@ const FeaturedHeader = styled.h1`
 font-family: 'Satoshi';
 font-size: 30px;
 margin: 20px;
+@media (min-width: 768px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 `
 
 const ProjectSection = styled.div`
@@ -138,7 +143,10 @@ const Buttons = styled.div`
 
 const LineImg = styled.img`
 height: 100%;
-width: 200px;
+width: 300px;
 margin-top: 50px;
 align-self: center;
+@media (min-width: 768px) {
+  width: 800px;
+}
 `
