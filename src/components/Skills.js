@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 const Skills = () => {
@@ -36,7 +35,7 @@ const Skills = () => {
           <li>Node.js</li>
         </Upcoming>
       </TechSkills>
-      <Lottie>
+      <Computer>
         <Player
           autoplay
           loop
@@ -44,7 +43,7 @@ const Skills = () => {
           style={{ height: '300px', width: '300px' }}>
           <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
         </Player>
-      </Lottie>
+      </Computer>
     </SkillSection>
   )
 }
@@ -118,7 +117,7 @@ span {
     color:white;
 }
 `
-const Lottie = styled.div`
+const Computer = styled.div`
 display: none;
 @media (min-width: 1000px){ 
 display: block;
