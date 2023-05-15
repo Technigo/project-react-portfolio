@@ -49,6 +49,7 @@ export default FeaturedProjects;
 const FeaturedHeader = styled.h1`
 font-family: 'Satoshi';
 font-size: 30px;
+margin: 20px;
 `
 
 const ProjectSection = styled.div`
