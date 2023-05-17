@@ -87,7 +87,8 @@ const Title = styled.h1`
 font-family: 'Satoshi';
 font-size: 19px;
 margin-bottom: -70px;
-padding: 20px;
+padding-left: 20px;
+padding-rigth: 20px;
 `
 const Text = styled.p`
 font-family: 'EB Garamond';
