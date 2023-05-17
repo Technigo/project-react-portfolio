@@ -51,6 +51,7 @@ export default FeaturedProjects;
 const FeaturedHeader = styled.h1`
 font-family: 'Satoshi';
 font-size: 30px;
+padding: 20px;
 @media (min-width: 768px) {
   display: flex;
   align-items: center;
