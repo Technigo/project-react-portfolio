@@ -30,13 +30,15 @@ const Header = () => {
         </Icons>
       </HeaderSection>
       <ImageSection>
-        <Player
-          autoplay
-          loop
-          src="https://assets9.lottiefiles.com/private_files/lf30_inPNOM.json"
-          style={{ height: '700px', width: '900px' }}>
-          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-        </Player>
+        <Coder>
+          <Player
+            autoplay
+            loop
+            src="https://assets9.lottiefiles.com/private_files/lf30_inPNOM.json"
+            style={{ height: '600px', width: '800px' }}>
+            <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+          </Player>
+        </Coder>
       </ImageSection>
     </HeaderWrapper>
   )
@@ -107,11 +109,7 @@ font-size: 30px;
 const ImageSection = styled.div`
 display: none;
 @media (min-width: 1000px){
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 730px;;
-  background-color: white;
+  display: block;
 }
 `
 
@@ -120,6 +118,12 @@ const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
 }
+`
+const Coder = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: -40px;
 `
 
 export default Header;
