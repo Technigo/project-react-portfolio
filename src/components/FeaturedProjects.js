@@ -120,8 +120,8 @@ const Button = styled.button`
 font-family: 'Satoshi';
 display: flex;
 align-items: center;
-justify-content: center;
-gap: 10px;
+justify-content: flex-start;
+gap: 15px;
 border-radius: 40px;
 border-style: none;
 padding: 30px, 0px, 0px, 30px;
