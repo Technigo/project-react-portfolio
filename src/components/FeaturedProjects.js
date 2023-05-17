@@ -51,7 +51,6 @@ export default FeaturedProjects;
 const FeaturedHeader = styled.h1`
 font-family: 'Satoshi';
 font-size: 30px;
-margin: 20px;
 @media (min-width: 768px) {
   display: flex;
   align-items: center;
@@ -63,7 +62,7 @@ const ProjectSection = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding: 20px;
+
 
 @media (min-width: 768px) {
   display: flex;
@@ -77,6 +76,7 @@ width: 327px;
 height: 280px;
 object-fit: cover;
 margin-bottom: -30px;
+padding: 20px;
 
 @media (min-width: 768px) {
   width: 427px;
@@ -87,12 +87,15 @@ const Title = styled.h1`
 font-family: 'Satoshi';
 font-size: 19px;
 margin-bottom: -70px;
+padding: 20px;
 `
 const Text = styled.p`
 font-family: 'EB Garamond';
 font-size: 22px;
 margin-bottom: -20px;
 justify-content: center;
+padding-left: 20px;
+padding-right: 20px;
 
 @media (min-width: 768px) {
   width: 400px;
@@ -104,6 +107,8 @@ flex-direction: row;
 font-family: 'Satoshi';
 font-size: 12px;
 color:white;
+padding-left: 20px;
+padding-right: 20px;
 gap: 5px;
 span {
   background: black;
@@ -122,6 +127,7 @@ padding: 30px, 0px, 0px, 30px;
 background: #D6A9E2;
 color: white;
 font-size: 18px;
+margin: 20px;
 line-height: 27px;
 text-decoration: none;
 margin-bottom: 10px;
