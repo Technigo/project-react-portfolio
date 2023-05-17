@@ -20,7 +20,7 @@ const ProjectList = [
   {
     projectImg: `${Checklist}`,
     title: 'Back & forth list',
-    text: 'A checklist made with React and Redux designed to help keep track on wich things are where. The everyday struggle as a parent.',
+    text: 'A checklist made with React and Redux designed to help keep track of wich clothes and items are at home and wich ones are at preschool. The everyday struggle as a parent.',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-todos',
     liveLink: 'https://backandforthlist.netlify.app/'
@@ -52,7 +52,7 @@ const ProjectList = [
   {
     projectImg: `${WeatherLondon}`,
     title: 'Weather App',
-    text: 'Weather app that fetches data and where the design changes depending on todays weather in London.',
+    text: 'A Weather app that fetches data via API to display the current weather in London. We were provided with a design template, which we used as a guide throughout the project.',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-weather-app',
     liveLink: 'https://taupe-kitten-1e868d.netlify.app/'
