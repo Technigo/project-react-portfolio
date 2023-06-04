@@ -1,14 +1,14 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
-import andrea from 'images/andrea.JPG'
+import andrea2 from 'images/andrea2.jpeg'
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 
 const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderSection>
-        <ProfileImg src={andrea} />
+        <ProfileImg src={andrea2} />
         <Name><h1>Andrea Hedström</h1></Name>
         <Title>
           <h1>Front End Developer</h1>

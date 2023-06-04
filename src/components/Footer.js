@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import andrea from 'images/andrea.JPG'
+import andrea2 from 'images/andrea2.jpeg'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         Let &apos;s have a coffee!
         </h1>
       </Header>
-      <ProfileImg src={andrea} />
+      <ProfileImg src={andrea2} />
       <Name><h1>Andrea Hedström</h1></Name>
       <Title>
         <h1>Front End Developer</h1>
