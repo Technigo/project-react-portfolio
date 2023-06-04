@@ -147,7 +147,3 @@ const Buttons = styled.div`
   gap: 20px;
 }
 `
-
-const LineImg = styled.img`
-width: 100%;
-`
