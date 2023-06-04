@@ -59,6 +59,14 @@ align-items: center;
 justify-content: center;
 list-style: none;
 text-align: center;
+position: relative;
+--mask:
+    radial-gradient(65.38px at 50% 91.20px,#000 99%,#0000 101%) calc(50% - 76px) 0/152px 51% repeat-x,
+    radial-gradient(65.38px at 50% -53.2px,#0000 99%,#000 101%) 50% 38px/152px calc(51% - 38px) repeat-x,
+    radial-gradient(65.38px at 50% calc(100% - 91.20px),#000 99%,#0000 101%) calc(50% - 76px) 100%/152px 51% repeat-x,
+    radial-gradient(65.38px at 50% calc(100% + 53.20px),#0000 99%,#000 101%) 50% calc(100% - 38px)/152px calc(51% - 38px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
 @media (min-width: 1000px) {
   height: 500px;
 }

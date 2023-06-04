@@ -64,15 +64,16 @@ const ProjectList = [
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-guess-who',
     liveLink: 'https://guess-home.netlify.app/'
-  },
-  {
-    projectImg: `${ArtsieWall}`,
-    title: 'Chatbot',
-    text: 'My very first project in Javascript - A classic chatbot that help you find art for your walls',
-    techLanguage: ['Javascript', 'HTML5', 'CSS3'],
-    githubLink: 'https://github.com/AndreaHedstrom/project-chatbot',
-    liveLink: 'https://shillyshallyartgallery.netlify.app/'
   }
 ]
 
 export default ProjectList;
+
+/* {
+  projectImg: `${ArtsieWall}`,
+  title: 'Chatbot',
+  text: 'My very first project in Javascript - A classic chatbot that help you find art for your walls',
+  techLanguage: ['Javascript', 'HTML5', 'CSS3'],
+  githubLink: 'https://github.com/AndreaHedstrom/project-chatbot',
+  liveLink: 'https://shillyshallyartgallery.netlify.app/'
+} */

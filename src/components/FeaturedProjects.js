@@ -39,7 +39,6 @@ const FeaturedProjects = () => {
         Live demo
             </Button>
           </Buttons>
-          <LineImg src={BlueLine} alt="" />
         </ProjectSection>
       ))}
     </>
@@ -63,6 +62,7 @@ const ProjectSection = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-bottom: 30px;
 
 
 @media (min-width: 768px) {
@@ -76,7 +76,7 @@ const ProjectImg = styled.img`
 width: 327px;
 height: 280px;
 object-fit: cover;
-margin-bottom: -30px;
+margin-bottom: -50px;
 padding: 20px;
 
 @media (min-width: 768px) {
