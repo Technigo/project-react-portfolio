@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectList from 'components/ProjectList'
-import BlueLine from 'images/BlueLine.png';
 
 const FeaturedProjects = () => {
   return (
