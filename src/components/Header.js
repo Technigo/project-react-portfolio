@@ -34,7 +34,7 @@ const Header = () => {
           <Player
             autoplay
             loop
-            src="https://assets9.lottiefiles.com/private_files/lf30_inPNOM.json"
+            src="https://assets8.lottiefiles.com/packages/lf20_KTTSsGSbg1.json"
             style={{ height: '600px', width: '800px' }}>
             <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
           </Player>
