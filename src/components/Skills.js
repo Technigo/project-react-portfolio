@@ -28,7 +28,7 @@ const Skills = () => {
         <More>
           <li><span>More</span></li>
           <li>UX-design</li>
-          <li>Ready to learn more</li>
+          <li></li>
         </More>
         <Upcoming>
           <li><span>Upcoming</span></li>
@@ -52,7 +52,7 @@ export default Skills;
 
 const SkillSection = styled.div`
 background-color: #F0EAD4;
-height: 900px;
+height: 910px;
 display: flex;
 flex-direction: column;
 align-items: center;

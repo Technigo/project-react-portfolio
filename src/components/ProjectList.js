@@ -6,8 +6,17 @@ import Checklist from 'images/Checklist.png'
 import MovieMovie from 'images/moviess.png'
 import PartyServey1 from 'images/PartyServey1.png'
 import GuessWindow from 'images/GuessWindow.png'
+import AuthImg from 'images/AuthImg.png'
 
 const ProjectList = [
+  {
+    projectImg: `${AuthImg}`,
+    title: 'Authorization',
+    text: 'Login......',
+    techLanguage: ['Redux', 'React', 'Javascript'],
+    githubLink: 'https://github.com/AndreaHedstrom/project-labyrinth',
+    liveLink: 'https://flourishing-creponne-3b5e77.netlify.app/login'
+  },
   {
     projectImg: `${Labyrinth}`,
     title: '<The Labyrinth />',
