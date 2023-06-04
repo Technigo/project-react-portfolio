@@ -66,6 +66,9 @@ position: relative;
     radial-gradient(65.38px at 50% calc(100% + 53.20px),#0000 99%,#000 101%) 50% calc(100% - 38px)/152px calc(51% - 38px) repeat-x;
   -webkit-mask: var(--mask);
           mask: var(--mask);
+@media (min-width: 1000px){
+  height: 600px;
+}
 `
 
 const Header = styled.h1`
