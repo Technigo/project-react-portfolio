@@ -28,7 +28,6 @@ const Skills = () => {
         <More>
           <li><span>More</span></li>
           <li>UX-design</li>
-          <li></li>
         </More>
         <Upcoming>
           <li><span>Upcoming</span></li>
