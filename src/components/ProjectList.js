@@ -12,7 +12,7 @@ const ProjectList = [
   {
     projectImg: `${AuthImg}`,
     title: 'Authorization',
-    text: 'Login......',
+    text: 'API and frontend for user authentication. It uses bcrypt for secure password storage, validates user input, and enforces authentication for specific endpoints.',
     techLanguage: ['Redux', 'React', 'Javascript'],
     githubLink: 'https://github.com/AndreaHedstrom/project-labyrinth',
     liveLink: 'https://flourishing-creponne-3b5e77.netlify.app/login'
