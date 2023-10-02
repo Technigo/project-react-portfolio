@@ -7,13 +7,22 @@ import MovieMovie from 'images/moviess.png'
 import PartyServey1 from 'images/PartyServey1.png'
 import GuessWindow from 'images/GuessWindow.png'
 import AuthImg from 'images/AuthImg.png'
+import Guardians from 'images/Guardinas.png'
 
 const ProjectList = [
+  {
+    projectImg: `${Guardians}`,
+    title: 'Final Project',
+    text: 'Me and my teams final project for Technigo bootcamp. A fullstack project where we created an app that encourages people to do good things for the environment in a fun and positive way using gamification.',
+    techLanguage: ['Redux', 'React', 'Javascript', 'Node', 'Express', 'MongoDB'],
+    githubLink: '',
+    liveLink: 'https://papaya-concha-9783c6.netlify.app/login'
+  },
   {
     projectImg: `${AuthImg}`,
     title: 'Authorization',
     text: 'API and frontend for user authentication. It uses bcrypt for secure password storage, validates user input, and enforces authentication for specific endpoints.',
-    techLanguage: ['Redux', 'React', 'Javascript'],
+    techLanguage: ['Redux', 'React', 'Javascript', 'MongoDB'],
     githubLink: 'https://github.com/AndreaHedstrom/project-labyrinth',
     liveLink: 'https://flourishing-creponne-3b5e77.netlify.app/login'
   },
@@ -52,7 +61,7 @@ const ProjectList = [
   {
     projectImg: `${PartyServey1}`,
     title: 'Day dream survey',
-    text: 'A survey using React that leverages state management. Through the use of the useState hook, I have connected HTML form inputs to the application's state. This enables users to plan an imaginary party by interacting with form fields, and the application dynamically displays different components based on their progress within the survey.',
+    text: 'A survey using React that leverages state management. Through the use of the useState hook, I have connected HTML form inputs to the applications state. This enables users to plan an imaginary party by interacting with form fields, and the application dynamically displays different components based on their progress within the survey.',
     techLanguage: ['Javascript', 'HTML5', 'CSS3', 'React'],
     githubLink: 'https://github.com/AndreaHedstrom/project-survey',
     liveLink: 'https://dream-party.netlify.app/'
