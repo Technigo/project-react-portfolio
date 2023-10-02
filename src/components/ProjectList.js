@@ -36,7 +36,7 @@ const ProjectList = [
   {
     projectImg: `${Quizzy}`,
     title: 'Color Quiz',
-    text: 'A quiz for kids where they in a fun way learn a little bit about colors.',
+    text: 'A quiz, built with Redux, for kids where they in a fun way learn a little bit about colors.',
     techLanguage: ['Redux', 'React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/Redux-quiz',
     liveLink: 'https://great-color-quiz.netlify.app/'
@@ -44,7 +44,7 @@ const ProjectList = [
   {
     projectImg: `${MovieMovie}`,
     title: 'Movie site',
-    text: 'A classig movie site where I followed a given design',
+    text: 'A classic movie site where I followed a given design',
     techLanguage: ['React', 'Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-movies',
     liveLink: 'https://annandreas-popular-movies.netlify.app'
@@ -52,7 +52,7 @@ const ProjectList = [
   {
     projectImg: `${PartyServey1}`,
     title: 'Day dream survey',
-    text: 'A little survey where you plan an imaginary party',
+    text: 'A survey using React that leverages state management. Through the use of the useState hook, I have connected HTML form inputs to the application's state. This enables users to plan an imaginary party by interacting with form fields, and the application dynamically displays different components based on their progress within the survey.',
     techLanguage: ['Javascript', 'HTML5', 'CSS3', 'React'],
     githubLink: 'https://github.com/AndreaHedstrom/project-survey',
     liveLink: 'https://dream-party.netlify.app/'
@@ -68,7 +68,7 @@ const ProjectList = [
   {
     projectImg: `${GuessWindow}`,
     title: 'Guess home',
-    text: 'A new version of the classig game Guess Who. Wich home is the secret one?',
+    text: 'A new version of the classic game Guess Who using JavaScript. Wich home is the secret one? In the process, I have delved deep into JavaScript concepts like objects, arrays, and functions',
     techLanguage: ['Javascript', 'HTML5', 'CSS3'],
     githubLink: 'https://github.com/AndreaHedstrom/project-guess-who',
     liveLink: 'https://guess-home.netlify.app/'
