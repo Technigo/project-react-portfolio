@@ -1,9 +1,18 @@
 import React from 'react'
+import Header from 'components/Header';
+import Tech from 'components/Tech';
+import Skills from 'components/Skills';
+import Footer from 'components/Footer';
+import FeaturedProjects from 'components/FeaturedProjects';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <Header />
+      <Tech />
+      <FeaturedProjects />
+      <Skills />
+      <Footer />
+    </>
   )
 }
